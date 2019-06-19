@@ -1,0 +1,1 @@
+Get-ChildItem ($PSScriptRoot + "\..\..\addons\")  -Directory | ForEach-Object  {&($PSScriptRoot + "\..\programs\armake2.exe") pack -v "$($_.FullName)" ($PSScriptRoot + "\..\..\addons\$($_.Name).pbo")}
