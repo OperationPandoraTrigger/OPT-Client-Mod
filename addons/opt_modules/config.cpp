@@ -140,6 +140,90 @@ class CfgVehicles
                     };
                 };
             };
+            class ValidUntil : Combo
+            {
+                // Unique property, use "<moduleClass>_<attributeClass>" format to make sure the name is unique in the world
+                property = "opt_beamPoint_validUntil";
+                displayName = "Wann aktiv?";             // Argument label
+                tooltip = "Wie lange ist dieser Punkt aktiv?"; // Tooltip description
+                typeName = "STRING";             // Value type, can be "NUMBER", "STRING" or "BOOL"
+                defaultValue = """peace"""; // Default attribute value. WARNING: This is an expression, and its returned value will be used (50 in this case)
+                class Values
+                {
+                    class Peace
+                    {
+                        name = "Nur während Waffenruhe";
+                        value = "peace";
+                    };
+                    class Always
+                    {
+                        name = "Immer";
+                        value = "always";
+                    };
+                    class Never
+                    {
+                        name = "Nie";
+                        value = "never";
+                    };
+                };
+            };
+            
+            class ClassInfantry : Checkbox
+            {
+                property = "opt_beamPoint_allowedInfantry";
+                displayName = "Infanterie";
+                tooltip = "Darf Infanterie diesen Punkt nutzen?"; // Tooltip description
+                typeName = "BOOL";             // Value type, can be "NUMBER", "STRING" or "BOOL"
+                defaultValue = "true"; // Default attribute value. WARNING: This is an expression, and its returned value will be used (50 in this case)
+            };
+            class ClassLight : Checkbox
+            {
+                property = "opt_beamPoint_allowedLight";
+                displayName = "Leichte unbewaffnete Fzg";
+                tooltip = "Darf dieser Punkt von leichten (unbewaffneten) Fahrzeugen und Trucks genutzt werden?"; // Tooltip description
+                typeName = "BOOL";             // Value type, can be "NUMBER", "STRING" or "BOOL"
+                defaultValue = "true"; // Default attribute value. WARNING: This is an expression, and its returned value will be used (50 in this case)
+            };
+            class ClassArmed : Checkbox
+            {
+                property = "opt_beamPoint_allowedArmed";
+                displayName = "Leichte bewaffnete Fzg";
+                tooltip = "Darf dieser Punkt von leichten (bewaffneten) Fahrzeugen genutzt werden?"; // Tooltip description
+                typeName = "BOOL";             // Value type, can be "NUMBER", "STRING" or "BOOL"
+                defaultValue = "true"; // Default attribute value. WARNING: This is an expression, and its returned value will be used (50 in this case)
+            };
+            class ClassAPC : Checkbox
+            {
+                property = "opt_beamPoint_allowedAPC";
+                displayName = "APCs";
+                tooltip = "Darf dieser Punkt von APCs,IFVs und AA genutzt werden?"; // Tooltip description
+                typeName = "BOOL";             // Value type, can be "NUMBER", "STRING" or "BOOL"
+                defaultValue = "true"; // Default attribute value. WARNING: This is an expression, and its returned value will be used (50 in this case)
+            };
+            class ClassTank : Checkbox
+            {
+                property = "opt_beamPoint_allowedTank";
+                displayName = "Panzer";
+                tooltip = "Darf dieser Punkt von Panzern genutzt werden?"; // Tooltip description
+                typeName = "BOOL";             // Value type, can be "NUMBER", "STRING" or "BOOL"
+                defaultValue = "true"; // Default attribute value. WARNING: This is an expression, and its returned value will be used (50 in this case)
+            };
+            class ClassHeli : Checkbox
+            {
+                property = "opt_beamPoint_allowedHeli";
+                displayName = "Helikopter";
+                tooltip = "Darf dieser Punkt von Helikoptern genutzt werden?"; // Tooltip description
+                typeName = "BOOL";             // Value type, can be "NUMBER", "STRING" or "BOOL"
+                defaultValue = "false"; // Default attribute value. WARNING: This is an expression, and its returned value will be used (50 in this case)
+            };
+            class ClassPlane : Checkbox
+            {
+                property = "opt_beamPoint_allowedPlane";
+                displayName = "Plane";
+                tooltip = "Darf dieser Punkt von Flugzeugen genutzt werden?"; // Tooltip description
+                typeName = "BOOL";             // Value type, can be "NUMBER", "STRING" or "BOOL"
+                defaultValue = "false"; // Default attribute value. WARNING: This is an expression, and its returned value will be used (50 in this case)
+            };
             class ModuleDescription : ModuleDescription
             {
             }; // Module description should be shown last
@@ -160,15 +244,20 @@ class CfgVehicles
                 direction = 1;                         // Direction is taken into effect
                 optional = 0;                          // Synced entity is optional
                 duplicate = 0;                         // Multiple entities of this type can be synced
-                synced[] = {"BLUFORunit", "AnyBrain"}; // Pre-define entities like "AnyBrain" can be used. See the list below
-            };
-            class BLUFORunit
-            {
-                description = "Short description";
-                displayName = "Any BLUFOR unit"; // Custom name
-                icon = "iconMan";                // Custom icon (can be file path or CfgVehicleIcons entry)
-                side = 1;                        // Custom side (will determine icon color)
+                synced[] = {"EmptyDetector", "AnyStaticObject"}; // Pre-define entities like "AnyBrain" can be used. See the list below
             };
         };
     };
+};
+
+class CfgFunctions 
+{
+	class opt
+	{
+		class Effects
+		{
+			file = "\opt_modules\functions";
+			class moduleBeamPoint{};
+		};
+	};
 };
