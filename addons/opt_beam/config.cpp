@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class opt_modules
+    class opt_beam
     {
         units[] = {"OPT_BeamPoint"};
         weapons[] = {};

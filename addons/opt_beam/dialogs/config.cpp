@@ -1,5 +1,14 @@
 #include "\opt_core\dialogs\OPTDef.hpp"
 
+class CfgPatches {
+	class opt_beamDialog {
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.100000;
+		requiredAddons[] = {"a3_ui_f"};
+	};
+};
+
 //Refernce stuff at top, and you can use the classes below
 class RscPicture;
 class RscFrame;
@@ -14,14 +23,12 @@ class RscMapControl;
 class RscButtonMenuOK;
 class RscButtonMenuCancel;
 
-
-
-class OPTBeam
+class opt_beamDialog
 {
 	idd = IDD_BEAM;
-	name="OPTBeam";
+	name = "OPTBeam";
 	movingEnable = false;
-	
+
 	class ControlsBackground
 	{
 		class BeamBackground : RscText
@@ -43,7 +50,7 @@ class OPTBeam
 			x = safeZoneX + safeZoneW * 0.05;
 			y = safeZoneY + safeZoneH * 0.05;
 			w = safeZoneW * 0.69;
-			h = safeZoneH * 0.9 ;
+			h = safeZoneH * 0.9;
 			colorBackground[] = COLOR_MAP_BACK;
 		};
 	};
@@ -59,12 +66,11 @@ class OPTBeam
 			h = safeZoneH * 0.82;
 			class ListScrollBar
 			{
-				color[] = {1,1,1,1};
+				color[] = {1, 1, 1, 1};
 				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
 				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
 				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
-				
 			};
 		};
 		class BeamOK : RscButtonMenuOK
@@ -92,9 +98,8 @@ class OPTBeam
 			style = ST_CENTER;
 			text = "<t shadow='2' align='center'>Verlegung</t>";
 			size = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
-			colorText[] = {1,1,1,1};
-			colorBackground[] = {1,0,0,0};
-		};		
+			colorText[] = {1, 1, 1, 1};
+			colorBackground[] = {1, 0, 0, 0};
+		};
 	};
-	
 };
