@@ -26,7 +26,7 @@ class RscButtonMenuCancel;
 class opt_beamDialog
 {
 	idd = IDD_BEAM;
-	name = "OPTBeam";
+	name = "Beam Dialog";
 	movingEnable = false;
 
 	class ControlsBackground

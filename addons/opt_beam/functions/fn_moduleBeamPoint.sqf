@@ -7,10 +7,7 @@ _activated = param [2,true,[true]];
 // Module specific behavior. Function can extract arguments from logic and use them.
 if (_activated) then {
 
-	_name = _logic getVariable "Name";
-	diag_log(_name);
-	// Attribute values are saved in module's object space under their class names
-	hint format ["BeamPoint name is: %1", _name ]; // will display the bomb yield, once the game is started 
+	_logic setVariable ["unit", (_units select 0)];
 	if (isNil "opt_beam_Points") then {
 		opt_beam_Points = [_logic ];
 	} else {
@@ -18,5 +15,4 @@ if (_activated) then {
 	}
 };
 // Module function is executed by spawn command, so returned value is not necessary, but it's good practice.
-diag_log(opt_beam_Points);
 opt_beam_Points
