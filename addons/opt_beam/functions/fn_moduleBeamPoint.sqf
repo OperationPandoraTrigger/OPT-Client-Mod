@@ -8,6 +8,9 @@ _activated = param [2,true,[true]];
 if (_activated) then {
 
 	_logic setVariable ["unit", (_units select 0)];
+	// This should be unique enough, I hope
+	// Example: beamPoint_WEST_Salzsee_peace
+	_logic setVariable ["id", format ["beamPoint_%1_%2_%3_%4"], _logic getVariable "side", _logic getVariable "name", _logic getVariable "validUntil"];
 	if (isNil "opt_beam_Points") then {
 		opt_beam_Points = [_logic ];
 	} else {
