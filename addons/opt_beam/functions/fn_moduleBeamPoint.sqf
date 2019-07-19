@@ -10,7 +10,13 @@ if (_activated) then {
 	_logic setVariable ["unit", (_units select 0)];
 	// This should be unique enough, I hope
 	// Example: beamPoint_WEST_Salzsee_peace
-	_logic setVariable ["id", format ["beamPoint_%1_%2_%3_%4"], _logic getVariable "side", _logic getVariable "name", _logic getVariable "validUntil"];
+	
+	_bools = [_logic getVariable "ClassInfantry", _logic getVariable "ClassLight", _logic getVariable "ClassArmed",_logic getVariable "ClassAPC",_logic getVariable "ClassTank",_logic getVariable "ClassHeli",_logic getVariable "ClassPlane"];
+	_boolStr = "";
+	{
+		_boolStr = _boolStr + str parseNumber _x;
+	} forEach _bools;
+	_logic setVariable ["id", format ["beamPoint_%1_%2_%3_%4", _logic getVariable "side", _logic getVariable "name", _logic getVariable "validUntil", _boolStr]];
 	if (isNil "opt_beam_Points") then {
 		opt_beam_Points = [_logic ];
 	} else {
