@@ -11,8 +11,7 @@ IF EXIST "%~dp0.\..\..\@OPT-Client.old" (
 
 IF EXIST "%~dp0.\..\..\@OPT-Client\" (
 	ECHO Backing up old build ...
-	PUSHD
-	CD /D "%~dp0.\..\..\"
+	PUSHD "%~dp0.\..\..\"
 	REN @OPT-Client @OPT-Client.old
 	POPD
 )

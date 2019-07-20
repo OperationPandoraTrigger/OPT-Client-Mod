@@ -7,6 +7,11 @@ To build a Mod-folder including PBOs and stuff, simply run `tools\scripts\buildM
 For seamless integration you can add `noPause` as parameter, to exit the script when its done.
 
 
+Starting
+--------
+To start a local ArmA instance which connects to a local DevServer, simply execute `tools\scripts\client\restartClient.bat`
+
+
 Wiki
 ----
 Our knowledge base is hosted in a neighbor repository:
