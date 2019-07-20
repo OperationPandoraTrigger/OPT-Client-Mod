@@ -23,7 +23,7 @@ class RscMapControl;
 class RscButtonMenuOK;
 class RscButtonMenuCancel;
 
-class opt_beamDialog
+class DIALOG_BEAM
 {
 	idd = IDD_BEAM;
 	name = "Beam Dialog";
