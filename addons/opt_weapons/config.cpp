@@ -25,7 +25,7 @@ class CfgPatches
 					 "OPT_srifle_DMR_06_olive_KHS_BI_snds_F", "OPT_srifle_GM6_camo_LRPS_F", "OPT_srifle_LRR_LRPS_F", "OPT_srifle_LRR_tna_F", "OPT_srifle_LRR_tna_LRPS_F", "OPT_arifle_SPAR_01_blk_F", "OPT_arifle_SPAR_01_blk_C_F", "OPT_arifle_SPAR_01_GL_blk_F", "OPT_arifle_SPAR_02_blk_F",
 					 "OPT_arifle_CTAR_blk_C_F", "OPT_arifle_SPAR_03_blk_F", "OPT_arifle_CTAR_blk_F", "OPT_arifle_CTAR_GL_blk_F", "OPT_arifle_CTARS_blk_F", "OPT_arifle_ARX_blk_F", "OPT_srifle_DMR_07_blk_F", "OPT_launch_B_Titan_F",
 					 "OPT_launch_B_Titan_tna_F", "OPT_launch_B_Titan_short_F", "OPT_launch_B_Titan_short_tna_F", "OPT_launch_O_Titan_F", "OPT_launch_O_Titan_ghex_F", "OPT_launch_O_Titan_short_F",
-					 "OPT_launch_O_Titan_short_ghex_F", "OPT_launch_NLAW_F", "OPT_launch_NLAW_M_F", "OPT_launch_RPG32_F", "OPT_launch_RPG32_ghex_F", "OPT_Laserdesignator", "OPT_Laserdesignator_02"};
+					 "OPT_launch_O_Titan_short_ghex_F", "OPT_launch_NLAW_F", "OPT_launch_NLAW_M_F", "OPT_launch_RPG32_F", "OPT_launch_RPG32_ghex_F", "launch_MRAWS_olive_rail_F", "OPT_launch_MRAWS_green_rail_F", "OPT_Laserdesignator", "OPT_Laserdesignator_02"};
 
 		requiredVersion = 0.100000;
 
@@ -3273,6 +3273,7 @@ class CfgWeapons
 	class OPT_launch_B_Titan_F : launch_B_Titan_F
 	{
 		_generalMacro = "OPT_launch_B_Titan_F";
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3295,6 +3296,7 @@ class CfgWeapons
 	class OPT_launch_B_Titan_tna_F : launch_B_Titan_tna_F
 	{
 		_generalMacro = "OPT_launch_B_Titan_F";
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3328,6 +3330,7 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_B_Titan_short_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3351,6 +3354,7 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_B_Titan_short_tna_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3378,6 +3382,7 @@ class CfgWeapons
 	class OPT_launch_O_Titan_F : launch_O_Titan_F
 	{
 		_generalMacro = "OPT_launch_O_Titan_F";
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3405,6 +3410,7 @@ class CfgWeapons
 	class OPT_launch_O_Titan_ghex_F : launch_O_Titan_ghex_F
 	{
 		_generalMacro = "OPT_launch_O_Titan_ghex_F";
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3433,6 +3439,7 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_O_Titan_short_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3461,6 +3468,7 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_O_Titan_short_ghex_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3484,6 +3492,7 @@ class CfgWeapons
 	class OPT_launch_NLAW_F : launch_NLAW_F
 	{
 		_generalMacro = "OPT_launch_NLAW_F";
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3498,6 +3507,7 @@ class CfgWeapons
 		descriptionShort = "PCML-M-Raketenwerfer";
 		canLock = 0; // 2 //
 		magazines[] = {"OPT_NLAW_F"};
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3517,6 +3527,7 @@ class CfgWeapons
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 75; // 100 //
+			magazineReloadTime = 6;
 		};
 	};
 
@@ -3524,6 +3535,7 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_RPG32_F";
 		hiddenSelectionsTextures[] = {"opt_weapons\textures\rpg32\nato\rpg32_tropic.paa", "\a3\weapons_f\launchers\rpg32\data\rpg_32_optics_co.paa"};
+		magazineReloadTime = 6;
 	};
 
 	class launch_RPG32_ghex_F : launch_RPG32_F
@@ -3534,6 +3546,38 @@ class CfgWeapons
 	class OPT_launch_RPG32_ghex_F : launch_RPG32_ghex_F
 	{
 		_generalMacro = "OPT_launch_RPG32_F";
+		magazineReloadTime = 6;
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 75; // 100 //
+		};
+	};
+
+	class launch_MRAWS_base_F : Launcher_Base_F
+	{
+		class WeaponSlotsInfo;
+	};
+
+	class launch_MRAWS_olive_rail_F : launch_MRAWS_base_F
+	{
+	};
+
+	class OPT_launch_MRAWS_olive_rail_F : launch_MRAWS_olive_rail_F
+	{
+		_generalMacro = "launch_MRAWS_olive_rail_F";
+		magazineReloadTime = 6;
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 75; // 100 //
+		};
+	};
+
+	class OPT_launch_MRAWS_green_rail_F : launch_MRAWS_olive_rail_F
+	{
+		_generalMacro = "OPT_launch_MRAWS_green_rail_F";
+		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -5115,12 +5159,12 @@ class CfgVehicles
 		{
 			class _xx_OPT_srifle_DMR_02_F
 			{
-				name = "OPT_srifle_DMR_02_F";
+				weapon = "OPT_srifle_DMR_02_F";
 				count = 2;
 			};
 			class _xx_OPT_srifle_LRR_F
 			{
-				name = "OPT_srifle_LRR_F";
+				weapon = "OPT_srifle_LRR_F";
 				count = 2;
 			};
 		};
@@ -6271,14 +6315,14 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
-			class _xx_OPT_srifle_DMR_05_hex_F
+			class _xx_OPT_srifle_DMR_05_hex_F 
 			{
-				name = "OPT_srifle_DMR_05_hex_F";
+				weapon = "OPT_srifle_DMR_05_hex_F";
 				count = 2;
 			};
 			class _xx_OPT_srifle_GM6_camo_F
 			{
-				name = "OPT_srifle_GM6_camo_F";
+				weapon = "OPT_srifle_GM6_camo_F";
 				count = 2;
 			};
 		};
