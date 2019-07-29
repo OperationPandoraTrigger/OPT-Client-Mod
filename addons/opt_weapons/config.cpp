@@ -2312,7 +2312,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 270; // 360 //
+			// mass = 270; // 360 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2584,7 +2584,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 360; // 480 //
+			// mass = 360; // 480 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2666,7 +2666,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 315; // 420 //
+			// mass = 315; // 420 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -5113,6 +5113,16 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
+			class _xx_OPT_srifle_DMR_02_F
+			{
+				name = "OPT_srifle_DMR_02_F";
+				count = 2;
+			};
+			class _xx_OPT_srifle_LRR_F
+			{
+				name = "OPT_srifle_LRR_F";
+				count = 2;
+			};
 		};
 
 		class TransportItems
@@ -5181,7 +5191,7 @@ class CfgVehicles
 			class _xx_10Rnd_338_Mag
 			{
 				magazine = "10Rnd_338_Mag";
-				count = 0;
+				count = 60;
 			};
 
 			class _xx_130Rnd_338_Mag
@@ -6261,6 +6271,16 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
+			class _xx_OPT_srifle_DMR_05_hex_F
+			{
+				name = "OPT_srifle_DMR_05_hex_F";
+				count = 2;
+			};
+			class _xx_OPT_srifle_GM6_camo_F
+			{
+				name = "OPT_srifle_GM6_camo_F";
+				count = 2;
+			};
 		};
 
 		class TransportItems
@@ -6329,7 +6349,7 @@ class CfgVehicles
 			class _xx_10Rnd_93x64_DMR_05_Mag
 			{
 				magazine = "10Rnd_93x64_DMR_05_Mag";
-				count = 0;
+				count = 60;
 			};
 
 			class _xx_150Rnd_93x64_Mag
@@ -6363,6 +6383,11 @@ class CfgVehicles
 			};
 
 			class _xx_20Rnd_650x39_Cased_Mag_F
+			{
+				magazine = "20Rnd_650x39_Cased_Mag_F";
+				count = 60;
+			};
+			class _xx_OPT_srifle_GM6_camo_F
 			{
 				magazine = "20Rnd_650x39_Cased_Mag_F";
 				count = 60;
