@@ -2210,7 +2210,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 240; // 320 //
+			// mass = 240; // 320 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2269,7 +2269,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 270; // 360 //
+			// mass = 270; // 360 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2549,7 +2549,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 360; // 480 //
+			// mass = 360; // 480 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2627,7 +2627,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 315; // 420 //
+			// mass = 315; // 420 //
 
 			class CowsSlot : CowsSlot
 			{
