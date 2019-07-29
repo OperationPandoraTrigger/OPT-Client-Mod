@@ -6,7 +6,7 @@
         {
             "label": "Build & Move",
             "type": "shell",
-            "command": ".\\tools\\scripts\\buildMod.ps1",
+            "command": "./tools/scripts/buildMod_OPT-Client.bat",
             "windows": {},
             "problemMatcher": [],
             "group": {
