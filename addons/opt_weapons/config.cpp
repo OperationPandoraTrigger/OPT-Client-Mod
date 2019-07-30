@@ -3859,6 +3859,7 @@ class CfgWeapons
 	{
 		magazineReloadTime = 120;
 		weaponLockSystem = 8; // 2 //
+		canLock = 0; // Disabled
 		displayName = "Titan-Rakete";
 	};
 
@@ -3870,6 +3871,7 @@ class CfgWeapons
 	{
 		displayName = "Titan-Rakete";
 		magazineReloadTime = 60;
+		canLock = 0; // Disabled
 	};
 
 	class missiles_Vorona;
