@@ -832,10 +832,10 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		displayName = "Mi-290 Taru (Transport)";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		radarType = 4;		// 8 //
 		fuelCapacity = 330; // 2500 //
+		slingLoadMaxCargoMass = 13500; // 0 //
 
 		class TransportItems
 		{
@@ -906,12 +906,12 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		displayName = "Mi-290 Taru (Transport)";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		radarType = 4;		// 8 //
 		fuelCapacity = 330; // 2500 //
 		scope = 2;
 		scopeCurator = 2;
+		slingLoadMaxCargoMass = 13500; // 0 //
 
 		class TransportItems
 		{
