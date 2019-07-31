@@ -3251,7 +3251,6 @@ class CfgWeapons
 	class OPT_launch_B_Titan_F : launch_B_Titan_F
 	{
 		_generalMacro = "OPT_launch_B_Titan_F";
-		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3274,7 +3273,6 @@ class CfgWeapons
 	class OPT_launch_B_Titan_tna_F : launch_B_Titan_tna_F
 	{
 		_generalMacro = "OPT_launch_B_Titan_F";
-		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3308,7 +3306,6 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_B_Titan_short_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
-		magazineReloadTime = 6;
 		canLock = 0; // 2 //
 
 
@@ -3334,7 +3331,6 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_B_Titan_short_tna_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
-		magazineReloadTime = 6;
 		canLock = 0; // 2 //
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
@@ -3363,7 +3359,6 @@ class CfgWeapons
 	class OPT_launch_O_Titan_F : launch_O_Titan_F
 	{
 		_generalMacro = "OPT_launch_O_Titan_F";
-		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3391,7 +3386,6 @@ class CfgWeapons
 	class OPT_launch_O_Titan_ghex_F : launch_O_Titan_ghex_F
 	{
 		_generalMacro = "OPT_launch_O_Titan_ghex_F";
-		magazineReloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3420,8 +3414,6 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_O_Titan_short_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
-		magazineReloadTime = 6;
-		reloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3450,8 +3442,6 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_O_Titan_short_ghex_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
-		magazineReloadTime = 6;
-		reloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3475,8 +3465,6 @@ class CfgWeapons
 	class OPT_launch_NLAW_F : launch_NLAW_F
 	{
 		_generalMacro = "OPT_launch_NLAW_F";
-		magazineReloadTime = 6;
-		reloadTime = 6;
 		canLock = 0; // 2 //
 		magazines[] = {"NLAW_F", "OPT_NLAW_F"};
 		magazineWell[] = {"NLAW"};
@@ -3498,8 +3486,6 @@ class CfgWeapons
 	class OPT_launch_RPG32_F : launch_RPG32_F
 	{
 		_generalMacro = "OPT_launch_RPG32_F";
-		magazineReloadTime = 6;
-		reloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3511,8 +3497,7 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_RPG32_F";
 		hiddenSelectionsTextures[] = {"opt_weapons\textures\rpg32\nato\rpg32_tropic.paa", "\a3\weapons_f\launchers\rpg32\data\rpg_32_optics_co.paa"};
-		magazineReloadTime = 6;
-		reloadTime = 6;
+
 	};
 
 	class launch_RPG32_ghex_F : launch_RPG32_F
@@ -3523,8 +3508,6 @@ class CfgWeapons
 	class OPT_launch_RPG32_ghex_F : launch_RPG32_ghex_F
 	{
 		_generalMacro = "OPT_launch_RPG32_F";
-		magazineReloadTime = 6;
-		reloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3544,8 +3527,6 @@ class CfgWeapons
 	class OPT_launch_MRAWS_olive_rail_F : launch_MRAWS_olive_rail_F
 	{
 		_generalMacro = "launch_MRAWS_olive_rail_F";
-		magazineReloadTime = 6;
-		reloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3556,8 +3537,6 @@ class CfgWeapons
 	class OPT_launch_MRAWS_green_rail_F : launch_MRAWS_olive_rail_F
 	{
 		_generalMacro = "OPT_launch_MRAWS_green_rail_F";
-		magazineReloadTime = 6;
-		reloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3583,8 +3562,6 @@ class CfgWeapons
 	class OPT_launch_O_Vorona_green_F : launch_O_Vorona_green_F
 	{
 		_generalMacro = "launch_O_Vorona_green_F";
-		magazineReloadTime = 6;
-		reloadTime = 6;
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
