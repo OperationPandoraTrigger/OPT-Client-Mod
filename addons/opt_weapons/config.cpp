@@ -118,10 +118,6 @@ class CfgAmmo
 
 	class OPT_M_Titan_AT_long : M_Titan_AT_long
 	{
-		cost = 500;
-		hit = 700;
-		indirectHit = 50;
-		indirectHitRange = 8;
 	};
 
 	class M_Titan_AA_long;
@@ -139,9 +135,6 @@ class CfgAmmo
 	class OPT_M_PG_AT : M_PG_AT
 	{
 		cost = 1000; // 500 //
-		hit = 600;
-		indirectHit = 50;
-		indirectHitRange = 4;
 		irLock = 0; // 1 //
 		laserLock = 1;
 	};
@@ -151,9 +144,6 @@ class CfgAmmo
 	class OPT_M_AT : M_AT
 	{
 		cost = 500;
-		hit = 300;
-		indirectHit = 50;
-		indirectHitRange = 8;
 	};
 
 	class M_Scalpel_AT;
@@ -161,9 +151,6 @@ class CfgAmmo
 	class OPT_M_Scalpel_AT : M_Scalpel_AT
 	{
 		cost = 2000; // 1000
-		hit = 300;   // 1400
-		indirectHit = 50;
-		indirectHitRange = 6.500000;
 		irLock = 0; // 1
 	};
 
@@ -172,9 +159,6 @@ class CfgAmmo
 	class OPT_M_Jian_AT : M_Jian_AT
 	{
 		cost = 1800; // 1500
-		hit = 1600;
-		indirectHit = 90;
-		indirectHitRange = 7.5;
 		irLock = 0; // 1
 	};
 
@@ -197,9 +181,6 @@ class CfgAmmo
 	class OPT_Missile_AGM_01_F : Missile_AGM_01_F
 	{
 		cost = 2500; // 1500 //
-		hit = 700;   // 2200 //
-		indirectHit = 90;
-		indirectHitRange = 10;
 		irLock = 0;						 // 1 //
 		laserLock = 1;					 // 0 //
 		weaponLockSystem = "2 + 4 + 16"; // "2 + 16"//
@@ -255,9 +236,6 @@ class CfgAmmo
 	class OPT_Missile_AGM_02_F : Missile_AGM_02_F
 	{
 		cost = 2500; // 1500 //
-		hit = 1000;  // 2100 //
-		indirectHit = 85;
-		indirectHitRange = 8;
 		irLock = 0;						 // 1 //
 		laserLock = 1;					 // 0 //
 		weaponLockSystem = "2 + 4 + 16"; // "2 + 16"//
