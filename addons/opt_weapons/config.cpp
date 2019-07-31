@@ -7,8 +7,8 @@ class CfgPatches
 				   "OPT_B_Slingload_01_Medevac_F", "OPT_FlexibleTank_01_sand_F", "OPT_FlexibleTank_01_forest_F", "OPT_B_HMG_01_F", "OPT_O_HMG_01_F", "OPT_B_HMG_01_high_F", "OPT_O_HMG_01_high_F",
 				   "OPT_B_GMG_01_F", "OPT_O_GMG_01_F", "OPT_B_GMG_01_high_F", "OPT_O_GMG_01_high_F", "OPT_B_static_AA_F", "OPT_O_static_AA_F", "OPT_B_static_AT_F", "OPT_O_static_AT_F",
 				   "OPT_B_Static_Designator_01_F", "OPT_O_Static_Designator_02_F", "OPT_B_Mortar_01_F", "OPT_O_Mortar_01_F", "OPT_B_CargoNet_01_ammo_F", "OPT_B_supplyCrate_F", "OPT_Box_NATO_Ammo_F",
-				   "OPT_Box_NATO_WpsSpecial_F", "OPT_Box_NATO_WpsSpecial_AT_F", "OPT_Box_NATO_WpsSpecial_AT2_F", "OPT_Box_NATO_WpsSpecial_AA_F", "OPT_Box_NATO_WpsSpecial_Diver_F", "OPT_Box_NATO_WpsLaunch_F", "OPT_Box_NATO_Grenades_F",
-				   "OPT_O_CargoNet_01_ammo_F", "OPT_O_supplyCrate_F", "OPT_Box_East_Ammo_F", "OPT_Box_East_WpsLaunch_F", "OPT_Box_East_WpsSpecial_AA_F", "OPT_Box_East_WpsSpecial_Diver_F", "OPT_Box_East_WpsLaunch_F_F", "OPT_Box_East_Grenades_F",
+				   "OPT_Box_NATO_WpsSpecial_F", "OPT_Box_NATO_WpsSpecial_AT_F", "OPT_Box_NATO_WpsSpecial_AT_L1", "OPT_Box_NATO_WpsSpecial_AT_L2", "OPT_Box_NATO_WpsSpecial_AT_H1", "OPT_Box_NATO_WpsSpecial_AA_F", "OPT_Box_NATO_WpsSpecial_Diver_F", "OPT_Box_NATO_WpsLaunch_F", "OPT_Box_NATO_Grenades_F",
+				   "OPT_O_CargoNet_01_ammo_F", "OPT_O_supplyCrate_F", "OPT_Box_East_Ammo_F", "OPT_Box_East_WpsSpecial_F", "OPT_Box_East_WpsLaunch_F", "OPT_Box_East_WpsSpecial_AT_L1", "OPT_Box_East_WpsSpecial_AT_L2", "OPT_Box_East_WpsSpecial_AT_L3", "OPT_Box_East_WpsSpecial_AA_F", "OPT_Box_East_WpsSpecial_Diver_F", "OPT_Box_East_WpsLaunch_F_F", "OPT_Box_East_Grenades_F",
 				   "OPT_B_HMG_01_weapon_F", "OPT_B_HMG_01_high_weapon_F", "OPT_O_HMG_01_weapon_F", "OPT_O_HMG_01_high_weapon_F", "OPT_B_UAV_01_backpack_F", "OPT_O_UAV_01_backpack_F", "OPT_B_Static_Designator_01_weapon_F",
 				   "OPT_O_Static_Designator_02_weapon_F", "OPT_B_GMG_01_high_weapon_F", "OPT_O_GMG_01_high_weapon_F", "OPT_B_GMG_01_weapon_F", "OPT_O_GMG_01_weapon_F", "OPT_B_AA_01_weapon_F", "OPT_O_AA_01_weapon_F",
 				   "OPT_B_AT_01_weapon_F", "OPT_O_AT_01_weapon_F", "OPT_B_Mortar_01_weapon_F", "OPT_O_Mortar_01_weapon_F", "OPT_B_Kitbag_rgr_Eng", "OPT_B_Carryall_ocamo_Eng", "OPT_B_FieldPack_ocamo_AT", "OPT_B_FieldPack_ocamo_AA",
@@ -25,7 +25,7 @@ class CfgPatches
 					 "OPT_srifle_DMR_06_olive_KHS_BI_snds_F", "OPT_srifle_GM6_camo_LRPS_F", "OPT_srifle_LRR_LRPS_F", "OPT_srifle_LRR_tna_F", "OPT_srifle_LRR_tna_LRPS_F", "OPT_arifle_SPAR_01_blk_F", "OPT_arifle_SPAR_01_blk_C_F", "OPT_arifle_SPAR_01_GL_blk_F", "OPT_arifle_SPAR_02_blk_F",
 					 "OPT_arifle_CTAR_blk_C_F", "OPT_arifle_SPAR_03_blk_F", "OPT_arifle_CTAR_blk_F", "OPT_arifle_CTAR_GL_blk_F", "OPT_arifle_CTARS_blk_F", "OPT_arifle_ARX_blk_F", "OPT_srifle_DMR_07_blk_F", "OPT_launch_B_Titan_F",
 					 "OPT_launch_B_Titan_tna_F", "OPT_launch_B_Titan_short_F", "OPT_launch_B_Titan_short_tna_F", "OPT_launch_O_Titan_F", "OPT_launch_O_Titan_ghex_F", "OPT_launch_O_Titan_short_F",
-					 "OPT_launch_O_Titan_short_ghex_F", "OPT_launch_NLAW_F", "OPT_launch_NLAW_M_F", "OPT_launch_RPG32_F", "OPT_launch_RPG32_ghex_F", "launch_MRAWS_olive_rail_F", "OPT_launch_MRAWS_green_rail_F", "OPT_Laserdesignator", "OPT_Laserdesignator_02"};
+					 "OPT_launch_O_Titan_short_ghex_F", "OPT_launch_NLAW_F", "OPT_launch_RPG32_F", "OPT_launch_RPG32_ghex_F", "OPT_launch_MRAWS_olive_rail_F", "OPT_launch_MRAWS_green_rail_F", "OPT_launch_O_Vorona_green_F", "OPT_Laserdesignator", "OPT_Laserdesignator_02"};
 
 		requiredVersion = 0.100000;
 
@@ -3331,6 +3331,8 @@ class CfgWeapons
 		_generalMacro = "OPT_launch_B_Titan_short_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
 		magazineReloadTime = 6;
+		canLock = 0; // 2 //
+
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3355,6 +3357,7 @@ class CfgWeapons
 		_generalMacro = "OPT_launch_B_Titan_short_tna_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
 		magazineReloadTime = 6;
+		canLock = 0; // 2 //
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3496,22 +3499,12 @@ class CfgWeapons
 		_generalMacro = "OPT_launch_NLAW_F";
 		magazineReloadTime = 6;
 		reloadTime = 6;
-
-		class WeaponSlotsInfo : WeaponSlotsInfo
-		{
-			mass = 75; // 100 //
-		};
-	};
-
-	class OPT_launch_NLAW_M_F : launch_NLAW_F
-	{
-		_generalMacro = "launch_NLAW_M_F";
-		displayName = "PCML-M";
-		descriptionShort = "PCML-M-Raketenwerfer";
 		canLock = 0; // 2 //
-		magazines[] = {"OPT_NLAW_F"};
-		magazineReloadTime = 6;
-		reloadTime = 6;
+		magazines[] = {"NLAW_F", "OPT_NLAW_F"};
+		magazineWell[] = {"NLAW"};
+		ACE_UsedTube = "";
+		ace_nlaw_enabled = 0;
+		weaponInfoType = "RscWeaponEmpty";
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3593,6 +3586,42 @@ class CfgWeapons
 			mass = 75; // 100 //
 		};
 	};
+
+	class launch_Vorona_base_F : Launcher_Base_F
+	{
+		class OpticsModes;
+	};
+
+	class launch_O_Vorona_green_F : launch_Vorona_base_F
+	{
+		class WeaponSlotsInfo;
+		class OpticsModes : OpticsModes
+		{
+			class StepScope;
+		};
+
+	};
+
+	class OPT_launch_O_Vorona_green_F : launch_O_Vorona_green_F
+	{
+		_generalMacro = "launch_O_Vorona_green_F";
+		magazineReloadTime = 6;
+		reloadTime = 6;
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 75; // 100 //
+		};
+
+		class OpticsModes : OpticsModes
+		{
+			class StepScope : StepScope
+			{
+				visionMode[] = {"Normal", "NVG"};
+			};
+		};
+	};
+
 
 	class Binocular;
 
@@ -5273,14 +5302,20 @@ class CfgVehicles
 	{
 	};
 
-	class OPT_Box_NATO_WpsSpecial_AT_F : Box_NATO_WpsSpecial_F
+		class OPT_Box_NATO_WpsSpecial_AT_L1 : Box_NATO_WpsSpecial_F
 	{
-		displayName = "NATO Raketenkiste (PCML-M)";
-		maximumLoad = 2000;
+		displayName = "NATO Raketenkiste (MAAWS)";
+		maximumLoad = 5000;
 		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
 		class TransportWeapons
 		{
+			class _xx_OPT_launch_MRAWS_green_rail_F
+			{
+				weapon = "OPT_launch_MRAWS_green_rail_F";
+				count = 1;
+			};
 		};
 
 		class TransportItems
@@ -5293,26 +5328,33 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_OPT_NLAW_F
+			class _xx_MRAWS_HEAT_F
 			{
-				magazine = "OPT_NLAW_F";
-				count = 15;
+				magazine = "MRAWS_HEAT_F";
+				count = 10;
+			};
+
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 10;
 			};
 		};
 	};
 
-	class OPT_Box_NATO_WpsSpecial_AT2_F : Box_NATO_WpsSpecial_F
+	class OPT_Box_NATO_WpsSpecial_AT_L2 : Box_NATO_WpsSpecial_F
 	{
-		displayName = "NATO Raketenkiste (PCML)";
-		maximumLoad = 4000;
+		displayName = "NATO Raketenkiste (PCML-M)";
+		maximumLoad = 2000;
 		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\PCML.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
 		class TransportWeapons
 		{
 			class _xx_OPT_launch_NLAW_F
 			{
 				weapon = "OPT_launch_NLAW_F";
-				count = 3;
+				count = 1;
 			};
 		};
 
@@ -5334,14 +5376,20 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_Box_NATO_WpsSpecial_AT3_F : Box_NATO_WpsSpecial_F
+	class OPT_Box_NATO_WpsSpecial_AT_H1 : Box_NATO_WpsSpecial_F
 	{
-		displayName = "NATO Raketenkiste";
+		displayName = "NATO Raketenkiste (Titan)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\Titan.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
 		class TransportWeapons
 		{
+			class _xx_OPT_launch_B_Titan_short_tna_F
+			{
+				weapon = "OPT_launch_B_Titan_short_tna_F";
+				count = 1;
+			};
 		};
 
 		class TransportItems
@@ -5354,27 +5402,9 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_RPG32_HE_F
+			class _xx_OPT_Titan_AT
 			{
-				magazine = "RPG32_HE_F";
-				count = 15;
-			};
-
-			class _xx_RPG32_F
-			{
-				magazine = "RPG32_F";
-				count = 20;
-			};
-
-			class _xx_MRAWS_HEAT_F
-			{
-				magazine = "MRAWS_HEAT_F";
-				count = 5;
-			};
-
-			class _xx_MRAWS_HE_F
-			{
-				magazine = "MRAWS_HE_F";
+				magazine = "OPT_Titan_AT";
 				count = 10;
 			};
 		};
@@ -6454,14 +6484,20 @@ class CfgVehicles
 	{
 	};
 
-	class OPT_Box_East_WpsSpecial_AT_F : Box_East_WpsSpecial_F
+	class OPT_Box_East_WpsSpecial_AT_L1 : Box_East_WpsSpecial_F
 	{
-		displayName = "CSAT Raketenkiste";
+		displayName = "CSAT Raketenkiste (RPG-42 Alamut)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
 		class TransportWeapons
 		{
+			class _xx_OPT_launch_RPG32_F
+			{
+				weapon = "OPT_launch_RPG32_F";
+				count = 1;
+			};
 		};
 
 		class TransportItems
@@ -6477,24 +6513,80 @@ class CfgVehicles
 			class _xx_RPG32_HE_F
 			{
 				magazine = "RPG32_HE_F";
-				count = 15;
+				count = 10;
 			};
 
 			class _xx_RPG32_F
 			{
 				magazine = "RPG32_F";
-				count = 20;
+				count = 10;
 			};
+		};
+	};
 
-			class _xx_MRAWS_HEAT_F
+	class OPT_Box_East_WpsSpecial_AT_L2 : Box_East_WpsSpecial_F
+	{
+		displayName = "CSAT Raketenkiste (RPG-7)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_RPG32_F
 			{
-				magazine = "MRAWS_HEAT_F";
-				count = 5;
+				weapon = "launch_RPG7_F";
+				count = 1;
 			};
+		};
 
-			class _xx_MRAWS_HE_F
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_RPG7_F
 			{
-				magazine = "MRAWS_HE_F";
+				magazine = "RPG7_F";
+				count = 10;
+			};
+		};
+	};
+
+	class OPT_Box_East_WpsSpecial_AT_H1 : Box_East_WpsSpecial_F
+	{
+		displayName = "CSAT Raketenkiste (9M135 Vorona)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\Vorona.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_O_Vorona_green_F	
+			{
+				weapon = "OPT_launch_O_Vorona_green_F";
+				count = 1;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_Vorona_HEAT
+			{
+				magazine = "Vorona_HEAT";
 				count = 10;
 			};
 		};
