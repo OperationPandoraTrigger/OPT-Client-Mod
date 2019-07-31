@@ -3414,6 +3414,7 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_O_Titan_short_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
+		canLock = 0; // 2 //
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3442,6 +3443,7 @@ class CfgWeapons
 	{
 		_generalMacro = "OPT_launch_O_Titan_short_ghex_F";
 		magazines[] = {"OPT_Titan_AT", "Titan_AT", "Titan_AP"};
+		canLock = 0; // 2 //
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
