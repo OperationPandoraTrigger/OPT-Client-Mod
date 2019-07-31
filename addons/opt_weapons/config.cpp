@@ -6490,7 +6490,7 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
-			class _xx_OPT_launch_RPG32_F
+			class _xx_launch_RPG7_F
 			{
 				weapon = "launch_RPG7_F";
 				count = 1;
