@@ -5149,7 +5149,7 @@ class CfgVehicles
 	class OPT_Box_NATO_WpsSpecial_F : Land_PlasticCase_01_small_gray_F
 	{
 		displayName = "NATO Spezialkiste";
-		maximumLoad = 10000;
+		maximumLoad = 15000;
 		supplyRadius = 8;
 
 		class TransportWeapons
@@ -5195,6 +5195,12 @@ class CfgVehicles
 			class _xx_optic_AMS
 			{
 				name = "optic_AMS";
+				count = 50;
+			};
+
+			class _xx_optic_LRPS_tna_F
+			{
+				name = "optic_LRPS_tna_F";
 				count = 50;
 			};
 		};
@@ -6308,7 +6314,7 @@ class CfgVehicles
 	class OPT_Box_East_WpsSpecial_F : Land_PlasticCase_01_small_F
 	{
 		displayName = "CSAT Spezialkiste";
-		maximumLoad = 10000;
+		maximumLoad = 15000;
 		supplyRadius = 8;
 
 		class TransportWeapons
@@ -6354,6 +6360,12 @@ class CfgVehicles
 			class _xx_optic_AMS
 			{
 				name = "optic_AMS";
+				count = 50;
+			};
+
+			class _xx_optic_LRPS_ghex_F
+			{
+				name = "optic_LRPS_ghex_F";
 				count = 50;
 			};
 		};
