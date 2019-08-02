@@ -390,6 +390,7 @@ class CfgAmmo
 	{
 		cost = 500;
 	};
+	
 };
 
 class CfgMagazines
@@ -796,6 +797,19 @@ class CfgMagazines
 	{
 		ammo = "OPT_M_Jian_AT";
 	};
+
+	class 150Rnd_556x45_Drum_Mag_Tracer_F;
+
+	class OPT_150Rnd_556x45_Drum_Mag_Tracer_F : 150Rnd_556x45_Drum_Mag_Tracer_F
+	{
+	};
+
+	class 100Rnd_580x42_Mag_Tracer_F;
+
+	class OPT_100Rnd_580x42_Mag_Tracer_F : 100Rnd_580x42_Mag_Tracer_F
+	{
+	};
+
 };
 
 class CfgWeapons
@@ -2669,6 +2683,7 @@ class CfgWeapons
 
 	class arifle_SPAR_01_base_F : Rifle_Base_F
 	{
+		magazines[] = {"30Rnd_580x42_Mag_F"};
 		class WeaponSlotsInfo;
 	};
 
@@ -2868,6 +2883,8 @@ class CfgWeapons
 		displayName = "SPAR-16S 5,56 mm (Schwarz)";
 		baseWeapon = "OPT_arifle_SPAR_02_blk_F";
 
+		magazines[] = {"OPT_150Rnd_556x45_Drum_Mag_Tracer_F"};
+
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 82.5; // 110 //
@@ -2882,6 +2899,8 @@ class CfgWeapons
 	class OPT_arifle_SPAR_02_blk_ACO_Pointer_F : OPT_arifle_SPAR_02_blk_F
 	{
 		_generalMacro = "OPT_arifle_SPAR_02_blk_ACO_Pointer_F";
+
+		magazines[] = {"OPT_150Rnd_556x45_Drum_Mag_Tracer_F"};
 
 		class LinkedItems
 		{
@@ -2953,6 +2972,8 @@ class CfgWeapons
 		_generalMacro = "OPT_arifle_CTAR_blk_F";
 		displayName = "CAR-95 5,8 mm";
 		baseWeapon = "OPT_arifle_CTAR_blk_F";
+
+		magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_Tracer_F"};
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -3116,6 +3137,8 @@ class CfgWeapons
 		displayName = "CAR-95-1 5,8 mm (Schwarz)";
 		baseWeapon = "OPT_arifle_CTARS_blk_F";
 
+		magazines[] = {"OPT_100Rnd_580x42_Mag_Tracer_F"};
+
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 75; // 100 //
@@ -3130,6 +3153,8 @@ class CfgWeapons
 	class OPT_arifle_CTARS_blk_ACO_Pointer_F : OPT_arifle_CTARS_blk_F
 	{
 		_generalMacro = "OPT_arifle_CTARS_blk_ACO_Pointer_F";
+
+		magazines[] = {"OPT_100Rnd_580x42_Mag_Tracer_F"};
 
 		class LinkedItems
 		{
@@ -5110,9 +5135,9 @@ class CfgVehicles
 				count = 0;
 			};
 
-			class _xx_150Rnd_556x45_Drum_Mag_Tracer_F
+			class _xx_OPT_150Rnd_556x45_Drum_Mag_Tracer_F
 			{
-				magazine = "150Rnd_556x45_Drum_Mag_Tracer_F";
+				magazine = "OPT_150Rnd_556x45_Drum_Mag_Tracer_F";
 				count = 40;
 			};
 
@@ -6303,9 +6328,9 @@ class CfgVehicles
 				count = 0;
 			};
 
-			class _xx_100Rnd_580x42_Mag_Tracer_F
+			class _xx_OPT_100Rnd_580x42_Mag_Tracer_F
 			{
-				magazine = "100Rnd_580x42_Mag_Tracer_F";
+				magazine = "OPT_100Rnd_580x42_Mag_Tracer_F";
 				count = 40;
 			};
 		};
