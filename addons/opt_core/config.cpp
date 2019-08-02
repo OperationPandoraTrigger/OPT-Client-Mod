@@ -134,14 +134,3 @@ class CfgInGameUI
 		//cueFriendlyColor[] = { 0, 0, 0, 0 }; deaktiviert mit 1.73
 	};
 };
-
-class CfgVehicles
-{
-	class Logic;
-
-	class OPT_Core_require : Logic
-	{
-		displayName = "Benötigt OPT A3 Core";
-		vehicleClass = "Modules";
-	};
-};
