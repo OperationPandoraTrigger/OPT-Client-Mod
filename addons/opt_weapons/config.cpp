@@ -3883,6 +3883,14 @@ class CfgWeapons
 		displayName = "Titan-Rakete";
 	};
 
+	class OPT_missiles_titan_AA : missiles_titan
+	{
+		magazineReloadTime = 120;
+		weaponLockSystem = 8; // 2 //
+		canLock = 2; 
+		displayName = "Titan-Rakete";
+	};
+
 	class missiles_titan_static : missiles_titan
 	{
 	};
