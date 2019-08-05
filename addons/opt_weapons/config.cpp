@@ -3894,6 +3894,13 @@ class CfgWeapons
 		canLock = 0; // Disabled
 	};
 
+	class OPT_missiles_titan_static_AA : missiles_titan_static
+	{
+		displayName = "Titan-Rakete";
+		magazineReloadTime = 60;
+		canLock = 2; 
+	};
+
 	class missiles_Vorona;
 
 	class OPT_missiles_Vorona : missiles_Vorona
@@ -4595,7 +4602,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_missiles_titan_static"};
+				weapons[] = {"OPT_missiles_titan_static_AA"};
 				magazines[] = {"1Rnd_GAA_missiles", "1Rnd_GAA_missiles", "1Rnd_GAA_missiles", "1Rnd_GAA_missiles"};
 
 				class ViewOptics : ViewOptics
@@ -4624,7 +4631,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_missiles_titan_static"};
+				weapons[] = {"OPT_missiles_titan_static_AA"};
 				magazines[] = {"1Rnd_GAA_missiles", "1Rnd_GAA_missiles", "1Rnd_GAA_missiles", "1Rnd_GAA_missiles"};
 
 				class ViewOptics : ViewOptics
