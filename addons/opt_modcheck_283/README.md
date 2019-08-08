@@ -1,3 +1,3 @@
-# Core
+# opt_modcheck_XXX
 
-Contains global stuff such as mission images
+Check Objekt für den Eden Editor für die OPT Addons 
