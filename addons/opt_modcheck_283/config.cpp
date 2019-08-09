@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class opt_modcheck_282
+	class opt_modcheck_283
 	{
 		units[] = {};
 		weapons[] = {};
