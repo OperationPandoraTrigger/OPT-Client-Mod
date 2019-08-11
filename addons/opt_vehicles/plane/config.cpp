@@ -257,7 +257,7 @@ class CfgVehicles
 
 		class Components : Components
 		{
-			//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\aktivradar.hpp"
+			//#include "\opt_vehicles\aktivradar.hpp"
 
 			class TransportPylonsComponent : TransportPylonsComponent
 			{
@@ -729,11 +729,11 @@ class CfgVehicles
 		weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "Laserdesignator_pilotCamera", "CMFlareLauncher"};
 		magazines[] = {"OPT_500Rnd_Cannon_30mm_Plane_CAS_02_F", "Laserbatteries", "60Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 500; // 1000 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\bremsfallschirm.hpp"
+		//#include "\opt_vehicles\bremsfallschirm.hpp"
 
 		class Components : Components
 		{
-			//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\aktivradar.hpp"
+			//#include "\opt_vehicles\aktivradar.hpp"
 
 			class TransportPylonsComponent : TransportPylonsComponent
 			{

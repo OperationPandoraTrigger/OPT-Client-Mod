@@ -1,3 +1,5 @@
+#include "\opt\opt_client\addons\core\macros.hpp"
+
 class CfgPatches
 {
 	class opt_characters
@@ -24,6 +26,7 @@ class CfgPatches
 					 "OPT_V_BandollierB_ghex_F", "OPT_V_BandollierB_2_ghex_F", "OPT_V_Chestrig_khk", "OPT_V_Chestrig_rgr", "OPT_V_Chestrig_oli", "OPT_V_PlateCarrierL_CTRG", "OPT_V_PlateCarrier1_tna_F",
 					 "OPT_V_PlateCarrierH_CTRG", "OPT_V_PlateCarrier2_tna_F", "OPT_V_RebreatherB", "OPT_V_RebreatherIR"};
 		requiredVersion = 0.100000;
+		version = VERSION;
 		requiredAddons[] = {"opt_weapons", "A3_Characters_F_Beta", "A3_Characters_F_Gamma", "a3_characters_f_epa", "A3_Characters_F_EPB", "a3_characters_f_epc",
 							"A3_Characters_F_BLUFOR", "A3_Characters_F_OPFOR", "A3_Characters_F_INDEP", "A3_Characters_F_Bootcamp", "a3_characters_f_civil",
 							"A3_Characters_F_Exp_Vests", "A3_Characters_F_Exp_Headgear", "A3_Characters_F_Exp", "A3_Characters_F_Mark", "A3_Characters_F_Jets", "A3_Characters_F"};
@@ -1400,7 +1403,7 @@ class CfgVehicles
 		armorStructural = 0.5;	 // 0.25 //
 		explosionShielding = 0.05; // 0.25 //
 		uniformClass = "U_B_HeliPilotCoveralls";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
 	};
 
 	class OPT_NATO_Pilot_T : OPT_NATO_Pilot
@@ -1442,8 +1445,8 @@ class CfgVehicles
 		Items[] = {"FirstAidKit", "FirstAidKit"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_Soldier_base_F.hpp"
 		uniformClass = "U_B_Wetsuit";
 	};
 
@@ -1479,8 +1482,8 @@ class CfgVehicles
 		respawnMagazines[] = {"7Rnd_408_Mag", "7Rnd_408_Mag", "7Rnd_408_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShell"};
 		linkedItems[] = {"OPT_V_Chestrig_rgr", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_Chestrig_rgr", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_Soldier_base_F.hpp"
 	};
 
 	class OPT_NATO_Scharfschuetze_T : OPT_NATO_Scharfschuetze
@@ -1574,8 +1577,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_PlateCarrierH_CTRG", "OPT_H_HelmetB_light_snakeskin", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_PlateCarrierH_CTRG", "OPT_H_HelmetB_light_snakeskin", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
 	};
 
 	class OPT_NATO_Soldat_T : OPT_NATO_Soldat
@@ -1622,8 +1625,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_BandollierB_rgr", "H_HelmetCrew_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_BandollierB_rgr", "H_HelmetCrew_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "tf_rt1523g_big_bwmod";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
 	};
 
 	class OPT_NATO_Besatzungsmitglied_T : OPT_NATO_Besatzungsmitglied
@@ -1654,8 +1657,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_BandollierB_rgr", "H_Beret_Colonel", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_BandollierB_rgr", "H_Beret_Colonel", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "tf_rt1523g_big_bwmod";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
 	};
 
 	class OPT_NATO_Offizier_T : OPT_NATO_Offizier
@@ -1720,8 +1723,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "OPT_B_AssaultPack_rgr_Medic";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
 	};
 
 	class OPT_NATO_Sanitaeter_T : OPT_NATO_Sanitaeter
@@ -1755,8 +1758,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "OPT_B_Kitbag_rgr_Eng";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
 	};
 
 	class OPT_NATO_Sprengmeister : OPT_NATO_Pionier
@@ -1798,8 +1801,8 @@ class CfgVehicles
 		magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShell"};
 		respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShell"};
 		backpack = "tf_rt1523g_big_bwmod";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_AR_A_F.hpp"
 	};
 
 	class OPT_NATO_Operator_T : OPT_NATO_Operator
@@ -1992,8 +1995,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_Chestrig_rgr", "H_Cap_khaki_specops_UK", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_Chestrig_rgr", "H_Cap_khaki_specops_UK", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "tf_rt1523g_big_bwmod";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
 	};
 
 	class OPT_NATO_Aufklaerung_Truppfuehrer_T : OPT_NATO_Aufklaerung_Truppfuehrer
@@ -2022,8 +2025,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_Chestrig_rgr", "H_Booniehat_grn", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_Chestrig_rgr", "H_Booniehat_grn", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "OPT_B_Kitbag_rgr_Eng";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
 	};
 
 	class OPT_NATO_Aufklaerung_Sprengmeister_T : OPT_NATO_Aufklaerung_Sprengmeister
@@ -2054,8 +2057,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_Chestrig_rgr", "H_Watchcap_camo", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_Chestrig_rgr", "H_Watchcap_camo", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
 	};
 
 	class OPT_NATO_Aufklaerung_JTAC_T : OPT_NATO_Aufklaerung_JTAC
@@ -2093,8 +2096,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_Chestrig_rgr", "H_Booniehat_grn", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_Chestrig_rgr", "H_Booniehat_grn", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
 	};
 
 	class OPT_NATO_Aufklaerung_Scharfschutze_T : OPT_NATO_Aufklaerung_Scharfschutze
@@ -2140,8 +2143,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_Chestrig_rgr", "H_Watchcap_camo", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		respawnLinkedItems[] = {"OPT_V_Chestrig_rgr", "H_Watchcap_camo", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
 		backpack = "B_TacticalPack_blk";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\B_CTRG_soldier_GL_LAT_F.hpp"
 	};
 
 	class OPT_NATO_Aufklaerung_Spaeher_AT_T : OPT_NATO_Aufklaerung_Spaeher_AT
@@ -2210,8 +2213,8 @@ class CfgVehicles
 		Items[] = {"FirstAidKit", "FirstAidKit"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit"};
 		backpack = "tf_mr3000";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_02_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_02_F.hpp"
 	};
 
 	class OPT_CSAT_Pilot_T : OPT_CSAT_Pilot
@@ -2240,8 +2243,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_BandollierB_2_khk", "H_Beret_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		respawnLinkedItems[] = {"OPT_V_BandollierB_2_khk", "H_Beret_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		backpack = "tf_mr3000";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Offizier_T : OPT_CSAT_Offizier
@@ -2273,8 +2276,8 @@ class CfgVehicles
 		Items[] = {"FirstAidKit", "FirstAidKit"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class O_Soldier_SL_F : O_Soldier_base_F
@@ -2298,8 +2301,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetLeaderO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		respawnLinkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetLeaderO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		backpack = "tf_mr3000";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Truppfuehrer_T : OPT_CSAT_Truppfuehrer
@@ -2355,8 +2358,8 @@ class CfgVehicles
 		Items[] = {"FirstAidKit", "FirstAidKit"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Soldat_T : OPT_CSAT_Soldat
@@ -2562,8 +2565,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_Chestrig_khk", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		respawnLinkedItems[] = {"OPT_V_Chestrig_khk", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Scharfschuetze_T : OPT_CSAT_Scharfschuetze
@@ -2640,8 +2643,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		respawnLinkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		backpack = "OPT_B_Carryall_ocamo_Eng";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Sprengmeister : OPT_CSAT_Pionier
@@ -2684,8 +2687,8 @@ class CfgVehicles
 		items[] = {"FirstAidKit", "FirstAidKit"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit"};
 		backpack = "OPT_B_FieldPack_ocamo_ReconMedic";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Sanitaeter_T : OPT_CSAT_Sanitaeter
@@ -2714,8 +2717,8 @@ class CfgVehicles
 		items[] = {"FirstAidKit", "FirstAidKit"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit"};
 		backpack = "tf_mr3000_bwmod";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Besatzungsmitglied_T : OPT_CSAT_Besatzungsmitglied
@@ -2751,8 +2754,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_HarnessOGL_brn", "H_MilCap_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		respawnLinkedItems[] = {"OPT_V_HarnessOGL_brn", "H_MilCap_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Aufklaerung_Truppfuehrer_T : OPT_CSAT_Aufklaerung_Truppfuehrer
@@ -2782,8 +2785,8 @@ class CfgVehicles
 		Items[] = {"FirstAidKit", "FirstAidKit", "MineDetector"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit", "MineDetector"};
 		backpack = "OPT_B_Carryall_ocamo_Eng";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Aufklaerung_Sprengmeister_T : OPT_CSAT_Aufklaerung_Sprengmeister
@@ -2812,8 +2815,8 @@ class CfgVehicles
 		items[] = {"FirstAidKit", "FirstAidKit"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Aufklaerung_JTAC_T : OPT_CSAT_Aufklaerung_JTAC
@@ -2850,8 +2853,8 @@ class CfgVehicles
 		linkedItems[] = {"OPT_V_HarnessO_brn", "H_Watchcap_camo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		respawnLinkedItems[] = {"OPT_V_HarnessO_brn", "H_Watchcap_camo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
 		backpack = "";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Aufklaerung_Scharfschutze_2 : OPT_CSAT_Aufklaerung_Scharfschutze
@@ -2894,8 +2897,8 @@ class CfgVehicles
 		items[] = {"FirstAidKit", "FirstAidKit"};
 		respawnItems[] = {"FirstAidKit", "FirstAidKit"};
 		backpack = "B_FieldPack_ocamo";
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
-//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
+#include "\opt\opt_client\addons\characters\slot_hitpoint.hpp"
+#include "\opt\opt_client\addons\characters\O_Soldier_base_F.hpp"
 	};
 
 	class OPT_CSAT_Aufklaerung_Spaeher_AT_T : OPT_CSAT_Aufklaerung_Spaeher_AT

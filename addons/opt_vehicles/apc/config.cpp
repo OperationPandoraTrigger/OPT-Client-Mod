@@ -295,7 +295,7 @@ class CfgVehicles
 		displayName = "IFV-6c Panther";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -357,7 +357,7 @@ class CfgVehicles
 		displayName = "IFV-6a Cheetah";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -473,7 +473,7 @@ class CfgVehicles
 		displayName = "MSE-3 Marid";
 		maximumLoad = 2500;
 		fuelCapacity = 9; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\vehicles\Fahrzeug-Transport.hpp"
+		#include "\opt\opt_client\addons\vehicles\Fahrzeug-Transport.hpp"
 
 		class Turrets : Turrets
 		{
@@ -512,7 +512,7 @@ class CfgVehicles
 		displayName = "MSE-3 Marid";
 		maximumLoad = 2500;
 		fuelCapacity = 9; // 60 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\Fahrzeug-Transport.hpp"
+		//#include "\opt\opt_client\addons\vehicles\Fahrzeug-Transport.hpp"
 
 		class Turrets : Turrets
 		{
@@ -566,7 +566,7 @@ class CfgVehicles
 		displayName = "FV-720 Mora";
 		maximumLoad = 2500;
 		fuelCapacity = 5; // 60 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class TransportMagazines
 		{
@@ -701,7 +701,7 @@ class CfgVehicles
 		displayname = "BTR-K Kamysh (Titan)";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -827,7 +827,7 @@ class CfgVehicles
 		displayname = "BTR-K Kamysh (Titan)";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -966,7 +966,7 @@ class CfgVehicles
 		displayName = "ZSU-39 Tigris";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -1070,7 +1070,7 @@ class CfgVehicles
 		displayName = "ZSU-39 Tigris";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{

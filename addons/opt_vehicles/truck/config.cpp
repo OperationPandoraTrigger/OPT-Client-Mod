@@ -128,7 +128,7 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		transportRepair = 200000000;
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
+		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
 		{
@@ -280,7 +280,7 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 6; // 250 //
 		transportRepair = 200000000;
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
+		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
 		{
@@ -298,7 +298,7 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 6; // 250 //
 		transportRepair = 200000000;
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
+		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
 		{

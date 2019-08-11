@@ -1573,7 +1573,7 @@ class CfgVehicles
 		magazines[] = {"5000Rnd_762x51_Belt", "96Rnd_CMFlare_Chaff_Magazine"};
 		driverCanEject = 1;
 		fuelCapacity = 60; // 242 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt\opt_client\addons\vehicles\Hellcat_MFD.hpp"
+		#include "\opt\opt_client\addons\vehicles\Hellcat_MFD.hpp"
 		incomingMissileDetectionSystem = "8 + 16";
 		lockDetectionSystem = "8 + 4";
 

@@ -1,3 +1,5 @@
+#include "\opt\opt_client\addons\core\macros.hpp"
+
 class CfgPatches
 {
 	class opt_weapons
@@ -28,7 +30,7 @@ class CfgPatches
 					 "OPT_launch_O_Titan_short_ghex_F", "OPT_launch_NLAW_F", "OPT_launch_RPG32_F", "OPT_launch_RPG32_ghex_F", "OPT_launch_MRAWS_olive_rail_F", "OPT_launch_MRAWS_green_rail_F", "OPT_launch_O_Vorona_green_F", "OPT_Laserdesignator", "OPT_Laserdesignator_02"};
 
 		requiredVersion = 0.100000;
-
+		version = VERSION;
 		requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
 							"a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
 							"A3_Weapons_F_Jets"};
@@ -4196,7 +4198,7 @@ class CfgVehicles
 	{
 		transportRepair = 200000000;
 		disableInventory = 1;
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
+		//#include "\opt_vehicles\reparieren.hpp"
 	};
 
 	class OPT_Land_Pod_Heli_Transport_04_repair_radar_F : Land_Pod_Heli_Transport_04_repair_F
@@ -4212,7 +4214,7 @@ class CfgVehicles
 	{
 		transportRepair = 200000000;
 		disableInventory = 1;
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
+		//#include "\opt_vehicles\reparieren.hpp"
 		scope = 2;
 		scopeCurator = 2;
 	};
@@ -4230,7 +4232,7 @@ class CfgVehicles
 	{
 		transportRepair = 200000000;
 		disableInventory = 1;
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
+		//#include "\opt_vehicles\reparieren.hpp"
 	};
 
 	class OPT_B_Slingload_01_Repair_Radar_F : B_Slingload_01_Repair_F
