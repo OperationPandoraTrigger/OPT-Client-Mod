@@ -4196,7 +4196,7 @@ class CfgVehicles
 	{
 		transportRepair = 200000000;
 		disableInventory = 1;
-		//#include "\opt_vehicles\reparieren.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
 	};
 
 	class OPT_Land_Pod_Heli_Transport_04_repair_radar_F : Land_Pod_Heli_Transport_04_repair_F
@@ -4212,7 +4212,7 @@ class CfgVehicles
 	{
 		transportRepair = 200000000;
 		disableInventory = 1;
-		//#include "\opt_vehicles\reparieren.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
 		scope = 2;
 		scopeCurator = 2;
 	};
@@ -4230,7 +4230,7 @@ class CfgVehicles
 	{
 		transportRepair = 200000000;
 		disableInventory = 1;
-		//#include "\opt_vehicles\reparieren.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\reparieren.hpp"
 	};
 
 	class OPT_B_Slingload_01_Repair_Radar_F : B_Slingload_01_Repair_F

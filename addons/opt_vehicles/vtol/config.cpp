@@ -308,7 +308,7 @@ class CfgVehicles
 
 		class Components : Components
 		{
-			//#include "\opt_vehicles\kein_aktivradar.hpp"
+			//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\kein_aktivradar.hpp"
 
 			class TransportPylonsComponent : TransportPylonsComponent
 			{
@@ -566,7 +566,7 @@ class CfgVehicles
 
 		class Components : Components
 		{
-			//#include "\opt_vehicles\kein_aktivradar.hpp"
+			//#include "\opt\opt_client\addons\vehicles\berggang.hpp" "\opt_vehicles\kein_aktivradar.hpp"
 
 			class TransportPylonsComponent : TransportPylonsComponent
 			{
