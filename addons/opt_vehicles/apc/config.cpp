@@ -37,7 +37,10 @@ class CfgVehicles
 	{
 	};
 
-	class Car;
+	class Car : LandVehicle
+	{
+		class ACE_SelfActions;
+	};
 
 	class Car_F : Car
 	{
