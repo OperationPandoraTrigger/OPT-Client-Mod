@@ -58,7 +58,7 @@ class CfgVehicles
 		displayName = "M2A1 Slammer";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -156,7 +156,7 @@ class CfgVehicles
 		displayName = "M2A4 Slammer UP";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -260,7 +260,7 @@ class CfgVehicles
 		displayName = "M4 Scorcher";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -331,7 +331,7 @@ class CfgVehicles
 		displayName = "M5 Sandstorm MLRS";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -391,7 +391,7 @@ class CfgVehicles
 		displayName = "T-100 Varsuk";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -479,7 +479,7 @@ class CfgVehicles
 		displayName = "T-100 Varsuk";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -583,7 +583,7 @@ class CfgVehicles
 		displayName = "2S9 Sochor";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -641,7 +641,7 @@ class CfgVehicles
 		displayName = "2S9 Sochor";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -705,7 +705,7 @@ class CfgVehicles
 		displayName = "MBT-52 Kuma";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
