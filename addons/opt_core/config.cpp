@@ -1,3 +1,6 @@
+#include "macros.hpp"
+
+
 class CfgPatches
 {
 	class opt_core
@@ -5,6 +8,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.100000;
+		version = VERSION;
 		requiredAddons[] = {"A3_Ui_F", "A3_Ui_F_Data", "A3_Functions_F", "A3_UIFonts_F", "A3_Data_F"};
 	};
 };

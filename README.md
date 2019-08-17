@@ -1,15 +1,13 @@
 # OPT-Client-Mod
 
-Building
+Contains all the addons that are needed by the clients. This usually means any kind of art assets and class configs, which cannot be distributed any other way.
+
+Anything functional (scripts) should be placed in the CLib environment of our servermod!
+
+
+Building & Starting
 --------
-To build a Mod-folder including PBOs and stuff, simply run `tools\scripts\buildMod_OPT-Client.bat`
-
-For seamless integration you can add `noPause` as parameter, to exit the script when its done.
-
-
-Starting
---------
-To start a local ArmA instance which connects to a local DevServer, simply execute `tools\scripts\client\restartClient.bat`
+Use the scripts from our tools repository: https://github.com/OperationPandoraTrigger/OPT-Tools repository
 
 
 Wiki
