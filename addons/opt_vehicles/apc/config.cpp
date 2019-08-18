@@ -668,7 +668,7 @@ class CfgVehicles
 		faction = "OPT_NATO";
 		crew = "OPT_NATO_Besatzungsmitglied";
 		typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\mora\nato\TurretTexture.paa", "opt_vehicles\textures\mora\nato\BodyTexture.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mora\nato\TurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\mora\nato\BodyTexture.paa"};
 	};
 
 	class APC_Tracked_02_base_F : Tank_F
@@ -1281,7 +1281,7 @@ class CfgVehicles
 		typicalCargo[] = {"OPT_CSAT_Besatzungsmitglied"};
 		side = 0;
 		faction = "OPT_CSAT";
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "opt_vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "opt_vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "opt_vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
 
 		class Turrets : Turrets
 		{
