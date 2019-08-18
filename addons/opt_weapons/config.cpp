@@ -3525,7 +3525,7 @@ class CfgWeapons
 	class OPT_launch_B_RPG32_F : OPT_launch_RPG32_F
 	{
 		_generalMacro = "OPT_launch_RPG32_F";
-		hiddenSelectionsTextures[] = {"opt_weapons\textures\rpg32\nato\rpg32_tropic.paa", "\a3\weapons_f\launchers\rpg32\data\rpg_32_optics_co.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rpg32\nato\rpg32_tropic.paa", "\a3\weapons_f\launchers\rpg32\data\rpg_32_optics_co.paa"};
 
 	};
 
@@ -5312,7 +5312,7 @@ class CfgVehicles
 		displayName = "NATO Raketenkiste (MAAWS)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
 		class TransportWeapons
 		{
@@ -5352,7 +5352,7 @@ class CfgVehicles
 		displayName = "NATO Raketenkiste (PCML-M)";
 		maximumLoad = 2000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\PCML.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\PCML.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
 		class TransportWeapons
 		{
@@ -5386,7 +5386,7 @@ class CfgVehicles
 		displayName = "NATO Raketenkiste (Titan)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\Titan.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\Titan.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
 		class TransportWeapons
 		{
@@ -6500,7 +6500,7 @@ class CfgVehicles
 		displayName = "CSAT Raketenkiste (RPG-42 Alamut)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
 		class TransportWeapons
 		{
@@ -6540,7 +6540,7 @@ class CfgVehicles
 		displayName = "CSAT Raketenkiste (RPG-7)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
 		class TransportWeapons
 		{
@@ -6574,7 +6574,7 @@ class CfgVehicles
 		displayName = "CSAT Raketenkiste (9M135 Vorona)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"opt_weapons\textures\ammobox\Vorona.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\Vorona.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
 		class TransportWeapons
 		{

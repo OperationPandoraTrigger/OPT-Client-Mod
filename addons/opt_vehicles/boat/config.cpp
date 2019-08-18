@@ -252,7 +252,7 @@ class CfgVehicles
 		_generalMacro = "B_C_Boat_Transport_02_F";
 		faction = "OPT_NATO";
 		displayName = "RHIB";
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\rhib\nato\rhib_nato_0.paa", "opt_vehicles\textures\rhib\nato\rhib_nato_1.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\rhib\nato\rhib_nato_0.paa", "\opt\opt_client\addons\vehicles\textures\rhib\nato\rhib_nato_1.paa"};
 		textureList[] = {};
 		side = 1;
 		crew = "B_T_Soldier_F";
@@ -269,7 +269,7 @@ class CfgVehicles
 		_generalMacro = "O_C_Boat_Transport_02_F";
 		faction = "OPT_CSAT";
 		displayName = "RHIB";
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\rhib\csat\rhib_csat_0.paa", "opt_vehicles\textures\rhib\csat\rhib_csat_1.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\rhib\csat\rhib_csat_0.paa", "\opt\opt_client\addons\vehicles\textures\rhib\csat\rhib_csat_1.paa"};
 		textureList[] = {};
 		side = 0;
 		crew = "O_T_Soldier_F";

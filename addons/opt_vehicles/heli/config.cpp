@@ -1534,7 +1534,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		side = 0;
 		crew = "OPT_CSAT_Pilot";
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\mh9\csat\heli_light_01_csat.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mh9\csat\heli_light_01_csat.paa"};
 	};
 
 	class Heli_Light_01_armed_base_F : Heli_Light_01_base_F
@@ -1736,7 +1736,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		side = 0;
 		crew = "OPT_CSAT_Pilot";
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\mh9\csat\heli_light_01_csat.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mh9\csat\heli_light_01_csat.paa"};
 	};
 
 	class OPT_B_Heli_Light_01_armed_2_F : OPT_B_Heli_Light_01_armed_F
@@ -1857,7 +1857,7 @@ class CfgVehicles
 		crew = "OPT_NATO_Pilot";
 		slingLoadMaxCargoMass = 13500; // 4000 //
 		liftForceCoef = 1.4;		   // 1 //
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\mohawk\nato\blufor_mohawk_1.paa", "opt_vehicles\textures\mohawk\nato\blufor_mohawk_2.paa", "opt_vehicles\textures\mohawk\nato\blufor_mohawk_3.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mohawk\nato\blufor_mohawk_1.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\nato\blufor_mohawk_2.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\nato\blufor_mohawk_3.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
 	};
 
 	class OPT_O_Heli_Transport_02_F : OPT_I_Heli_Transport_02_F
@@ -1868,7 +1868,7 @@ class CfgVehicles
 		crew = "OPT_CSAT_Pilot";
 		slingLoadMaxCargoMass = 13500; // 4000 //
 		liftForceCoef = 1.4;		   // 1 //
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\mohawk\csat\Heli_Transport1_02_CSAT.paa", "opt_vehicles\textures\mohawk\csat\Heli_Transport2_02_CSAT.paa", "opt_vehicles\textures\mohawk\csat\Heli_Transport3_02_CSAT.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mohawk\csat\Heli_Transport1_02_CSAT.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\csat\Heli_Transport2_02_CSAT.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\csat\Heli_Transport3_02_CSAT.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
 	};
 
 	class Heli_light_03_base_F : Helicopter_Base_F
@@ -2051,7 +2051,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		crew = "OPT_CSAT_Pilot";
 		typicalCargo[] = {"OPT_CSAT_Pilot"};
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\hellcat\csat\Heli_light_03_CSAT.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\hellcat\csat\Heli_light_03_CSAT.paa"};
 		scope = 2;
 	};
 
@@ -2205,7 +2205,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		crew = "OPT_CSAT_Pilot";
 		typicalCargo[] = {"OPT_CSAT_Pilot"};
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\hellcat\csat\Heli_light_03_CSAT.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\hellcat\csat\Heli_light_03_CSAT.paa"};
 		scope = 2;
 	};
 
@@ -2323,7 +2323,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		crew = "OPT_CSAT_Pilot";
 		typicalCargo[] = {"OPT_CSAT_Pilot"};
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\hellcat\csat\Heli_light_03_CSAT.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\hellcat\csat\Heli_light_03_CSAT.paa"};
 	};
 
 	class OPT_O_Heli_light_03_unarmed_green_F : OPT_O_Heli_light_03_unarmed_F
