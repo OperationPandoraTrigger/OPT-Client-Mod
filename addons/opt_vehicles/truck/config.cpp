@@ -389,6 +389,8 @@ class CfgVehicles
 	class OPT_I_Truck_02_MRL_F : I_Truck_02_MRL_F
 	{
 		displayName = "Zamak MRL";
+		maximumLoad = 800;
+		fuelCapacity = 12; // 100 //
 
 		class TransportItems
 		{
@@ -398,6 +400,9 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
+				weapons[] = {"OPT_rockets_230mm_GAT"};
+				magazines[] = {"OPT_12Rnd_230mm_rockets"};
+
 				class OpticsIn : OpticsIn
 				{
 					class Medium : Medium
