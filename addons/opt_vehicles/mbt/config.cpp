@@ -789,6 +789,6 @@ class CfgVehicles
 		faction = "OPT_NATO";
 		crew = "OPT_NATO_Besatzungsmitglied";
 		typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\kuma\nato\TankBodyTexture.paa", "opt_vehicles\textures\kuma\nato\TankTurretTexture.paa", "opt_vehicles\textures\kuma\nato\TankTurretMGTexture.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\nato\TankBodyTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretMGTexture.paa"};
 	};
 };
