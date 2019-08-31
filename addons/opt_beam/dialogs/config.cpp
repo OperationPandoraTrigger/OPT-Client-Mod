@@ -1,4 +1,4 @@
-#include "\opt_core\dialogs\OPTDef.hpp"
+#include "\opt\opt_client\addons\core\dialogs\OPTDef.hpp"
 
 class CfgPatches {
 	class opt_beamDialog {
