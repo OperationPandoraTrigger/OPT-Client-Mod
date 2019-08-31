@@ -1,3 +1,5 @@
+#include "\opt\opt_client\addons\core\macros.hpp"
+
 class CfgPatches
 {
 	class opt_ace_flashsuppressors
@@ -5,6 +7,7 @@ class CfgPatches
 		units[] = {};
 		weapons[] = {};
 		requiredVersion = 0.100000;
+		version = VERSION;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "opt_vehicles", "ace_flashsuppressors"};
 	};
 };

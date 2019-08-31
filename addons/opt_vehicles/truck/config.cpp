@@ -127,7 +127,7 @@ class CfgVehicles
 		displayName = "HEMTT Instandsetzung";
 		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
-		transportRepair = 200000000;
+		transportRepair = 0; // 200000000;
 		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
@@ -279,7 +279,7 @@ class CfgVehicles
 		displayName = "Tempest Reparatur";
 		maximumLoad = 2500;
 		fuelCapacity = 6; // 250 //
-		transportRepair = 200000000;
+		transportRepair = 0; // 200000000;
 		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
@@ -297,7 +297,7 @@ class CfgVehicles
 		displayName = "Tempest Reparatur";
 		maximumLoad = 2500;
 		fuelCapacity = 6; // 250 //
-		transportRepair = 200000000;
+		transportRepair = 0; // 200000000;
 		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
@@ -398,6 +398,9 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
+				weapons[] = {"OPT_rockets_230mm_GAT"};
+				magazines[] = {"OPT_12Rnd_230mm_rockets"};
+
 				class OpticsIn : OpticsIn
 				{
 					class Medium : Medium

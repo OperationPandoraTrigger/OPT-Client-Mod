@@ -168,7 +168,7 @@ class CfgVehicles
 		faction = "OPT_CSAT_T";
 		crew = "OPT_CSAT_Pilot";
 		typicalCargo[] = {"OPT_CSAT_Pilot"};
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\blackfish\csat\VTOL_01_EXT01_SandNL_CO.paa", "opt_vehicles\textures\blackfish\csat\VTOL_01_EXT02_SandNL_CO.paa", "opt_vehicles\textures\blackfish\csat\VTOL_01_EXT03_SandNL_CO.paa", "opt_vehicles\textures\blackfish\csat\VTOL_01_EXT04_SandNL_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\blackfish\csat\VTOL_01_EXT01_SandNL_CO.paa", "\opt\opt_client\addons\vehicles\textures\blackfish\csat\VTOL_01_EXT02_SandNL_CO.paa", "\opt\opt_client\addons\vehicles\textures\blackfish\csat\VTOL_01_EXT03_SandNL_CO.paa", "\opt\opt_client\addons\vehicles\textures\blackfish\csat\VTOL_01_EXT04_SandNL_CO.paa"};
 	};
 
 	class VTOL_01_armed_base_F : VTOL_01_base_F

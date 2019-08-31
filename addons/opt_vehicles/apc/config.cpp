@@ -295,7 +295,7 @@ class CfgVehicles
 		displayName = "IFV-6c Panther";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -357,7 +357,7 @@ class CfgVehicles
 		displayName = "IFV-6a Cheetah";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -473,7 +473,7 @@ class CfgVehicles
 		displayName = "MSE-3 Marid";
 		maximumLoad = 2500;
 		fuelCapacity = 9; // 45 //
-#include "\opt_vehicles\Fahrzeug-Transport.hpp"
+		#include "\opt\opt_client\addons\vehicles\Fahrzeug-Transport.hpp"
 
 		class Turrets : Turrets
 		{
@@ -512,7 +512,7 @@ class CfgVehicles
 		displayName = "MSE-3 Marid";
 		maximumLoad = 2500;
 		fuelCapacity = 9; // 60 //
-		//#include "\opt_vehicles\Fahrzeug-Transport.hpp"
+		//#include "\opt\opt_client\addons\vehicles\Fahrzeug-Transport.hpp"
 
 		class Turrets : Turrets
 		{
@@ -566,7 +566,7 @@ class CfgVehicles
 		displayName = "FV-720 Mora";
 		maximumLoad = 2500;
 		fuelCapacity = 5; // 60 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class TransportMagazines
 		{
@@ -668,7 +668,7 @@ class CfgVehicles
 		faction = "OPT_NATO";
 		crew = "OPT_NATO_Besatzungsmitglied";
 		typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\mora\nato\TurretTexture.paa", "opt_vehicles\textures\mora\nato\BodyTexture.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mora\nato\TurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\mora\nato\BodyTexture.paa"};
 	};
 
 	class APC_Tracked_02_base_F : Tank_F
@@ -701,7 +701,7 @@ class CfgVehicles
 		displayname = "BTR-K Kamysh (Titan)";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -827,7 +827,7 @@ class CfgVehicles
 		displayname = "BTR-K Kamysh (Titan)";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -966,7 +966,7 @@ class CfgVehicles
 		displayName = "ZSU-39 Tigris";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -1070,7 +1070,7 @@ class CfgVehicles
 		displayName = "ZSU-39 Tigris";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt_vehicles\berggang.hpp"
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -1281,7 +1281,7 @@ class CfgVehicles
 		typicalCargo[] = {"OPT_CSAT_Besatzungsmitglied"};
 		side = 0;
 		faction = "OPT_CSAT";
-		hiddenSelectionsTextures[] = {"opt_vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "opt_vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "opt_vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "opt_vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
 
 		class Turrets : Turrets
 		{
