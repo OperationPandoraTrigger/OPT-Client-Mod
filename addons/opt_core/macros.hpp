@@ -1,1 +1,1 @@
-#define VERSION 2.87
+#define VERSION 2.88
