@@ -398,6 +398,9 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
+				weapons[] = {"OPT_rockets_230mm_GAT"};
+				magazines[] = {"OPT_12Rnd_230mm_rockets"};
+
 				class OpticsIn : OpticsIn
 				{
 					class Medium : Medium
