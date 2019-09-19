@@ -51,9 +51,6 @@ class CfgAmmo
 
 	class OPT_Gatling_30mm_HE_Plane_CAS_01_F : Gatling_30mm_HE_Plane_CAS_01_F
 	{
-		hit = 180;
-		indirectHit = 4;
-		indirectHitRange = 3;
 		airlock = 2; // 1 //
 		irLock = 0;  // 1 //
 		cost = 60;
