@@ -3787,7 +3787,6 @@ class CfgWeapons
 
 	class OPT_autocannon_40mm_CTWS : autocannon_40mm_CTWS
 	{
-		ballisticsComputer = "2"; //"1 + 2"//
 		displayName = "Geschütz 40 mm";
 
 		class HE : HE
