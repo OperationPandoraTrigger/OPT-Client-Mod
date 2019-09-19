@@ -4073,7 +4073,6 @@ class CfgWeapons
 	class OPT_weapon_R73Launcher : weapon_R73Launcher
 	{
 		magazines[] = {"OPT_PylonMissile_Missile_AA_R73_x1"};
-		weaponLockSystem = 8; // 2 //
 	};
 
 	class weapon_R77Launcher;
