@@ -69,9 +69,6 @@ class CfgAmmo
 
 	class OPT_ammo_Fighter01_Gun20mm_AA : ammo_Fighter01_Gun20mm_AA
 	{
-		hit = 60;
-		indirectHit = 6;
-		indirectHitRange = 0.4;
 		cost = 30;
 	};
 
