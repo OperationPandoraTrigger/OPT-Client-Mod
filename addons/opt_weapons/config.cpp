@@ -3841,7 +3841,6 @@ class CfgWeapons
 
 	class OPT_autocannon_30mm : autocannon_30mm
 	{
-		ballisticsComputer = "2"; //"1 + 2"//
 		displayName = "Geschütz 30 mm";
 
 		class HE : HE
