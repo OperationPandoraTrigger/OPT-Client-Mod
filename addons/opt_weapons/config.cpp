@@ -76,9 +76,6 @@ class CfgAmmo
 
 	class OPT_ammo_Fighter02_Gun30mm_AA : ammo_Fighter02_Gun30mm_AA
 	{
-		hit = 70;
-		indirectHit = 6;
-		indirectHitRange = 1;
 		cost = 30;
 	};
 
