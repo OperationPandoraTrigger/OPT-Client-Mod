@@ -43,9 +43,6 @@ class CfgAmmo
 
 	class OPT_B_20mm : B_20mm
 	{
-		hit = 100; // 60 //
-		indirectHit = 6;
-		indirectHitRange = 0.400000;
 		airLock = 2;
 		irLock = 0; // 1 //
 	};
