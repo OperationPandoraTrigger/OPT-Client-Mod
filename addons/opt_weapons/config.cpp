@@ -3791,13 +3791,13 @@ class CfgWeapons
 
 		class HE : HE
 		{
-			magazineReloadTime = 300;
+			magazineReloadTime = 120;
 			canLock = 0;
 		};
 
 		class AP : AP
 		{
-			magazineReloadTime = 300;
+			magazineReloadTime = 120;
 		};
 	};
 
