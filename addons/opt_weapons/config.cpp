@@ -4057,7 +4057,6 @@ class CfgWeapons
 	class OPT_weapon_BIM9xLauncher : weapon_BIM9xLauncher
 	{
 		magazines[] = {"OPT_PylonMissile_Missile_BIM9X_x1", "OPT_PylonRack_Missile_BIM9X_x2"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "BIM 9x";
 	};
 
