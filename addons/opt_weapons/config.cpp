@@ -3931,7 +3931,6 @@ class CfgWeapons
 	class OPT_Missile_AA_03_Plane_CAS_02_F : Missile_AA_03_Plane_CAS_02_F
 	{
 		magazines[] = {"2Rnd_Missile_AA_03_F", "OPT_PylonRack_1Rnd_Missile_AA_03_F", "PylonMissile_1Rnd_Missile_AA_03_F"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "Sahr-3";
 	};
 
