@@ -3858,7 +3858,6 @@ class CfgWeapons
 	class OPT_missiles_titan : missiles_titan
 	{
 		magazineReloadTime = 120;
-		weaponLockSystem = 8; // 2 //
 		canLock = 0; // Disabled
 		displayName = "Titan-Rakete";
 	};
