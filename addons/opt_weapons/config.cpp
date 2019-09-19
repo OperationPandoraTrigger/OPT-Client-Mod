@@ -3939,7 +3939,6 @@ class CfgWeapons
 	class OPT_Missile_AA_04_Plane_CAS_01_F : Missile_AA_04_Plane_CAS_01_F
 	{
 		magazines[] = {"2Rnd_Missile_AA_04_F", "OPT_PylonRack_1Rnd_Missile_AA_04_F", "PylonMissile_1Rnd_Missile_AA_04_F"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "Falchion-22";
 	};
 
