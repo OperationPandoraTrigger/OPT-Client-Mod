@@ -3923,7 +3923,6 @@ class CfgWeapons
 	class OPT_missiles_Zephyr : missiles_Zephyr
 	{
 		magazines[] = {"OPT_PylonRack_1Rnd_GAA_missiles"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "Zephyr";
 	};
 
