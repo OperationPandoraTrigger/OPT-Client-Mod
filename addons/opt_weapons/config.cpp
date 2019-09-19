@@ -3803,13 +3803,12 @@ class CfgWeapons
 
 	class OPT_autocannon_40mm_CTWS_HE : autocannon_40mm_CTWS
 	{
-		ballisticsComputer = "2"; //"1 + 2"//
 		displayName = "Geschütz 40 mm";
 		muzzles[] = {"HE"};
 
 		class HE : HE
 		{
-			magazineReloadTime = 300;
+			magazineReloadTime = 120;
 			canLock = 0;
 		};
 	};
