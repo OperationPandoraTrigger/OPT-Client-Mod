@@ -112,9 +112,6 @@ class CfgAmmo
 	class OPT_M_Titan_AA_long : M_Titan_AA_long
 	{
 		cost = 500;
-		hit = 500;
-		indirectHit = 75;
-		indirectHitRange = 10;
 	};
 
 	class M_PG_AT;
