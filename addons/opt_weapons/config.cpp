@@ -3915,7 +3915,6 @@ class CfgWeapons
 	class OPT_missiles_ASRAAM : missiles_ASRAAM
 	{
 		magazines[] = {"OPT_PylonRack_1Rnd_AAA_missiles", "OPT_PylonMissile_1Rnd_AAA_missiles"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "ASRAAM";
 	};
 
