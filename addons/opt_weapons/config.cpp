@@ -60,9 +60,6 @@ class CfgAmmo
 
 	class OPT_Cannon_30mm_HE_Plane_CAS_02_F : Cannon_30mm_HE_Plane_CAS_02_F
 	{
-		hit = 150;
-		indirectHit = 4;
-		indirectHitRange = 4;
 		airlock = 2; // 1 //
 		irLock = 0;  // 1 //
 		cost = 60;
