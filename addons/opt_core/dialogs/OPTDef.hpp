@@ -59,3 +59,6 @@
 #define GUI_GRID_H	(0.04)
 #define GUI_GRID_WAbs	(1)
 #define GUI_GRID_HAbs	(1)
+
+#define DEFAULTFONT			"PuristaMedium"
+#define SECONDARY_FONT		"Bitstream"
