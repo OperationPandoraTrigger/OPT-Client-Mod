@@ -86,7 +86,7 @@ class Dialogshopkaufen
 {
 	idd = 20000;
 	movingenable = false;
-	onLoad = "";
+	onLoad = "[""EVENT_SHOP_KAUF_ONLOAD""] call CLib_fnc_localEvent;";
 	
     class controlsBackground
 	{
