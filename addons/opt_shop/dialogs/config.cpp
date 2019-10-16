@@ -86,7 +86,7 @@ class Dialogshopkaufen
 {
 	idd = 20000;
 	movingenable = false;
-	onload = "[] execVM ""opt_shop\dialogs\onload.sqf"";";
+	onload = "";
 	
     class controlsBackground
 	{
