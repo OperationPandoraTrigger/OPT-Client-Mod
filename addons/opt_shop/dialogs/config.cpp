@@ -182,9 +182,9 @@ class Dialogshopkaufen
         {
             idc = 20005;
             text = "Verkaufen"; 
-            x = 1.03 * GUI_GRID_W + GUI_GRID_X;
+            x = 24.90 * GUI_GRID_W + GUI_GRID_X;
             y = 23.23 * GUI_GRID_H + GUI_GRID_Y;
-            w = 7.5 * GUI_GRID_W;
+            w = 6.8 * GUI_GRID_W;
             h = 1.5 * GUI_GRID_H;
             tooltip = "Verkaufe Fahrzeug auf dem Bestell-Pad";
 			action = "";
