@@ -227,6 +227,29 @@ class Dialogshopkaufen
 			action = "closeDialog 0";
             sizeEx = FONTSIZE;
         };
+		class RscTextPadBox: RscText
+        {
+            idc = 20009;
+            text = "BOX: "; 
+            x = 10 * GUI_GRID_W + GUI_GRID_X;
+            y = 3.0 * GUI_GRID_H + GUI_GRID_Y;
+            w = 10 * GUI_GRID_W;
+            h = 1.5 * GUI_GRID_H;
+            colorBackground[] = COLOR_BACK;
+            sizeEx = FONTSIZE;
+        };
+		class RscButtonMoveIn: RscButton
+        {
+            idc = 20010;
+            text = "Fahrzeug nicht besetzten"; 
+            x = 24 * GUI_GRID_W + GUI_GRID_X;
+            y = 3.0 * GUI_GRID_H + GUI_GRID_Y;
+            w = 15 * GUI_GRID_W;
+            h = 1.5 * GUI_GRID_H;
+            tooltip = "Käufer in das Fahrzeug setzen";
+			action = "";
+            sizeEx = FONTSIZE;
+        };
     };
 };
 
