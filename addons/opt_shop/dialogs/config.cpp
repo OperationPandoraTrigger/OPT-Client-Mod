@@ -241,7 +241,7 @@ class Dialogshopkaufen
 		class RscButtonMoveIn: RscButton
         {
             idc = 20010;
-            text = "Fahrzeug nicht besetzten"; 
+            text = "Fahrzeug besetzten"; 
             x = 24 * GUI_GRID_W + GUI_GRID_X;
             y = 3.0 * GUI_GRID_H + GUI_GRID_Y;
             w = 15 * GUI_GRID_W;
