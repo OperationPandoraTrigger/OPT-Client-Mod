@@ -291,12 +291,12 @@ class Dialogshopkonfig
 		{
 			idc = 22002;
 			style = ST_CENTER;
-			sizeEx = 0.1;
+			sizeEx = 0.2;
 			colorText[] = COLOR_TEXT;
 			colorBackground[] = COLOR_BACK;
 			x = 0.15;
 			y = 0.1;
-			w = 0.8;
+			w = 0.39;
 			h = 0.1;
 			text = "Fahrzeugname";
 			default = true;
@@ -318,10 +318,10 @@ class Dialogshopkonfig
 		class Bild : RscPicture
 		{
 			idc = 22004;
-			x = 0.33;
-			y = 0.3;
-			w = 0.45;
-			h = 0.6;
+			x = 0.35;
+			y = 0.25;
+			w = 0.3;
+			h = 0.3;
 			default = true;
 		};
 		class MuniBild1 : RscPicture
@@ -472,6 +472,19 @@ class Dialogshopkonfig
 			w = 0.25;
 			h = 0.05;
 			default = true;
+		};
+		class PadBox : RSCText
+		{
+			idc = 22018;
+			style = ST_CENTER;
+			sizeEx = 0.2;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.55;
+			y = 0.1;
+			w = 0.38;
+			h = 0.1;
+			text = "Box";
 		};
 		class buttonok : RSCButton
 		{
