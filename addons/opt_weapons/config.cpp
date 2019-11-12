@@ -1,4 +1,4 @@
-#include "\opt\opt_client\addons\core\macros.hpp"
+﻿#include "\opt\opt_client\addons\core\macros.hpp"
 
 class CfgPatches
 {
@@ -5217,6 +5217,12 @@ class CfgVehicles
 				name = "optic_LRPS_tna_F";
 				count = 50;
 			};
+
+			class _xx_ACE_Tripod
+			{
+				name = "ACE_Tripod";
+				count = 20;
+			};
 		};
 
 		class TransportBackpacks
@@ -6381,6 +6387,12 @@ class CfgVehicles
 			{
 				name = "optic_LRPS_ghex_F";
 				count = 50;
+			};
+
+			class _xx_ACE_Tripod
+			{
+				name = "ACE_Tripod";
+				count = 20;
 			};
 		};
 
