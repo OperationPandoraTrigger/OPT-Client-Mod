@@ -30,7 +30,9 @@ class CfgPatches
 					 "OPT_launch_O_Titan_short_ghex_F", "OPT_launch_NLAW_F", "OPT_launch_RPG32_F", "OPT_launch_RPG32_ghex_F", "OPT_launch_MRAWS_olive_rail_F", "OPT_launch_MRAWS_green_rail_F", "OPT_launch_O_Vorona_green_F", "OPT_Laserdesignator", "OPT_Laserdesignator_02"};
 
 		requiredVersion = 0.100000;
-		version = VERSION;
+        version = VERSION;
+        versionStr = QUOTE(VERSION);
+        versionAr[] = {VERSION_AR};
 		requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
 							"a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
 							"A3_Weapons_F_Jets"};
@@ -43,9 +45,6 @@ class CfgAmmo
 
 	class OPT_B_20mm : B_20mm
 	{
-		hit = 100; // 60 //
-		indirectHit = 6;
-		indirectHitRange = 0.400000;
 		airLock = 2;
 		irLock = 0; // 1 //
 	};
@@ -54,9 +53,6 @@ class CfgAmmo
 
 	class OPT_Gatling_30mm_HE_Plane_CAS_01_F : Gatling_30mm_HE_Plane_CAS_01_F
 	{
-		hit = 180;
-		indirectHit = 4;
-		indirectHitRange = 3;
 		airlock = 2; // 1 //
 		irLock = 0;  // 1 //
 		cost = 60;
@@ -66,9 +62,6 @@ class CfgAmmo
 
 	class OPT_Cannon_30mm_HE_Plane_CAS_02_F : Cannon_30mm_HE_Plane_CAS_02_F
 	{
-		hit = 150;
-		indirectHit = 4;
-		indirectHitRange = 4;
 		airlock = 2; // 1 //
 		irLock = 0;  // 1 //
 		cost = 60;
@@ -78,9 +71,6 @@ class CfgAmmo
 
 	class OPT_ammo_Fighter01_Gun20mm_AA : ammo_Fighter01_Gun20mm_AA
 	{
-		hit = 60;
-		indirectHit = 6;
-		indirectHitRange = 0.4;
 		cost = 30;
 	};
 
@@ -88,9 +78,6 @@ class CfgAmmo
 
 	class OPT_ammo_Fighter02_Gun30mm_AA : ammo_Fighter02_Gun30mm_AA
 	{
-		hit = 70;
-		indirectHit = 6;
-		indirectHitRange = 1;
 		cost = 30;
 	};
 
@@ -127,9 +114,6 @@ class CfgAmmo
 	class OPT_M_Titan_AA_long : M_Titan_AA_long
 	{
 		cost = 500;
-		hit = 500;
-		indirectHit = 75;
-		indirectHitRange = 10;
 	};
 
 	class M_PG_AT;
@@ -3805,30 +3789,28 @@ class CfgWeapons
 
 	class OPT_autocannon_40mm_CTWS : autocannon_40mm_CTWS
 	{
-		ballisticsComputer = "2"; //"1 + 2"//
 		displayName = "Geschütz 40 mm";
 
 		class HE : HE
 		{
-			magazineReloadTime = 300;
+			magazineReloadTime = 120;
 			canLock = 0;
 		};
 
 		class AP : AP
 		{
-			magazineReloadTime = 300;
+			magazineReloadTime = 120;
 		};
 	};
 
 	class OPT_autocannon_40mm_CTWS_HE : autocannon_40mm_CTWS
 	{
-		ballisticsComputer = "2"; //"1 + 2"//
 		displayName = "Geschütz 40 mm";
 		muzzles[] = {"HE"};
 
 		class HE : HE
 		{
-			magazineReloadTime = 300;
+			magazineReloadTime = 120;
 			canLock = 0;
 		};
 	};
@@ -3841,7 +3823,6 @@ class CfgWeapons
 
 	class OPT_autocannon_30mm_CTWS : autocannon_30mm_CTWS
 	{
-		ballisticsComputer = "2"; //"1 + 2"//
 		displayName = "CTWS-Geschütz 30 mm";
 
 		class HE : HE
@@ -3862,7 +3843,6 @@ class CfgWeapons
 
 	class OPT_autocannon_30mm : autocannon_30mm
 	{
-		ballisticsComputer = "2"; //"1 + 2"//
 		displayName = "Geschütz 30 mm";
 
 		class HE : HE
@@ -3880,7 +3860,6 @@ class CfgWeapons
 	class OPT_missiles_titan : missiles_titan
 	{
 		magazineReloadTime = 120;
-		weaponLockSystem = 8; // 2 //
 		canLock = 0; // Disabled
 		displayName = "Titan-Rakete";
 	};
@@ -3888,7 +3867,6 @@ class CfgWeapons
 	class OPT_missiles_titan_AA : missiles_titan
 	{
 		magazineReloadTime = 120;
-		weaponLockSystem = 8; // 2 //
 		canLock = 2; 
 		displayName = "Titan-Rakete";
 	};
@@ -3939,7 +3917,6 @@ class CfgWeapons
 	class OPT_missiles_ASRAAM : missiles_ASRAAM
 	{
 		magazines[] = {"OPT_PylonRack_1Rnd_AAA_missiles", "OPT_PylonMissile_1Rnd_AAA_missiles"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "ASRAAM";
 	};
 
@@ -3948,7 +3925,6 @@ class CfgWeapons
 	class OPT_missiles_Zephyr : missiles_Zephyr
 	{
 		magazines[] = {"OPT_PylonRack_1Rnd_GAA_missiles"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "Zephyr";
 	};
 
@@ -3957,7 +3933,6 @@ class CfgWeapons
 	class OPT_Missile_AA_03_Plane_CAS_02_F : Missile_AA_03_Plane_CAS_02_F
 	{
 		magazines[] = {"2Rnd_Missile_AA_03_F", "OPT_PylonRack_1Rnd_Missile_AA_03_F", "PylonMissile_1Rnd_Missile_AA_03_F"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "Sahr-3";
 	};
 
@@ -3966,7 +3941,6 @@ class CfgWeapons
 	class OPT_Missile_AA_04_Plane_CAS_01_F : Missile_AA_04_Plane_CAS_01_F
 	{
 		magazines[] = {"2Rnd_Missile_AA_04_F", "OPT_PylonRack_1Rnd_Missile_AA_04_F", "PylonMissile_1Rnd_Missile_AA_04_F"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "Falchion-22";
 	};
 
@@ -4085,7 +4059,6 @@ class CfgWeapons
 	class OPT_weapon_BIM9xLauncher : weapon_BIM9xLauncher
 	{
 		magazines[] = {"OPT_PylonMissile_Missile_BIM9X_x1", "OPT_PylonRack_Missile_BIM9X_x2"};
-		weaponLockSystem = 8; // 2 //
 		displayName = "BIM 9x";
 	};
 
@@ -4102,7 +4075,6 @@ class CfgWeapons
 	class OPT_weapon_R73Launcher : weapon_R73Launcher
 	{
 		magazines[] = {"OPT_PylonMissile_Missile_AA_R73_x1"};
-		weaponLockSystem = 8; // 2 //
 	};
 
 	class weapon_R77Launcher;
