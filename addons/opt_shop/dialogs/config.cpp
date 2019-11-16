@@ -291,7 +291,7 @@ class Dialogshopkonfig
 		{
 			idc = 22002;
 			style = ST_CENTER;
-			sizeEx = 0.2;
+			sizeEx = 0.05;
 			colorText[] = COLOR_TEXT;
 			colorBackground[] = COLOR_BACK;
 			x = 0.15;
@@ -477,7 +477,7 @@ class Dialogshopkonfig
 		{
 			idc = 22018;
 			style = ST_CENTER;
-			sizeEx = 0.2;
+			sizeEx = 0.05;
 			colorText[] = COLOR_TEXT;
 			colorBackground[] = COLOR_BACK;
 			x = 0.55;
