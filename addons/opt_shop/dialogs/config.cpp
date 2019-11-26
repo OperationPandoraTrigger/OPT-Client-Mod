@@ -495,7 +495,8 @@ class Dialogshopkonfig
 			y = 0.92;
 			w = 0.1;
 			h = 0.05;
-			text = "OK";
+			text = "Kaufen";
+			tooltip = "Zusammenstellung kaufen";
 			action = "";
 			default = true;
 		};
@@ -510,6 +511,7 @@ class Dialogshopkonfig
 			h = 0.05;
 			text = "Abbrechen";
 			action = "closeDialog 0";
+			tooltip = "Dialog schliessen";
 			default = true;
 		};
 		class Munitext1 : RSCText
