@@ -3,7 +3,7 @@ class CfgPatches
 	class opt_vehicles_apc
 	{
 		units[] = {"OPT_B_APC_Wheeled_01_cannon_F", "OPT_B_APC_Wheeled_01_cannon_light_F", "OPT_B_APC_Tracked_01_rcws_F", "OPT_B_APC_Tracked_01_AA_F", "OPT_O_APC_Wheeled_02_rcws_F", "OPT_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT_B_APC_tracked_03_cannon_F",
-				   "OPT_O_APC_Tracked_02_cannon_F", "OPT_O_APC_Tracked_02_cannon_light_F", "OPT_O_APC_Tracked_02_AA_F", "OPT_O_T_APC_Tracked_02_AA_ghex_F", "OPT_O_APC_Wheeled_03_cannon_F", "OPT_O_APC_Wheeled_03_cannon_light_F",
+				   "OPT_O_APC_Tracked_02_cannon_F", "OPT_O_APC_Tracked_02_cannon_light_F", "OPT_O_APC_Tracked_02_AA_F", "OPT_O_T_APC_Tracked_02_AA_ghex_F", "OPT_O_APC_Wheeled_03_cannon_F","OPT_O_APC_Wheeled_03_cannon_ghex_F", "OPT_O_APC_Wheeled_03_cannon_light_F",
 				   "OPT_O_T_APC_Tracked_02_cannon_ghex_F", "OPT_O_T_APC_Tracked_02_cannon_ghex_light_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
@@ -1282,6 +1282,94 @@ class CfgVehicles
 		side = 0;
 		faction = "OPT_CSAT";
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_40mm_CTWS", "LMG_M200"};
+				magazines[] = {"60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "40Rnd_40mm_APFSDS_Tracer_Green_shells", "40Rnd_40mm_APFSDS_Tracer_Green_shells", "2000Rnd_65x39_belt"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class muzzle_rot : muzzle_rot
+			{
+				weapon = "OPT_autocannon_40mm_CTWS";
+			};
+
+			class muzzle_hide : muzzle_hide
+			{
+				weapon = "OPT_autocannon_40mm_CTWS";
+			};
+		};
+	};
+
+	class OPT_O_APC_Wheeled_03_cannon_ghex_F : OPT_I_APC_Wheeled_03_cannon_F
+	{
+		crew = "OPT_CSAT_Besatzungsmitglied";
+		typicalCargo[] = {"OPT_CSAT_Besatzungsmitglied"};
+		side = 0;
+		faction = "OPT_CSAT_T";
+		textureList[] = {"Guerilla_01",0,"Guerilla_02",0,"Guerilla_03",1};
 
 		class Turrets : Turrets
 		{
