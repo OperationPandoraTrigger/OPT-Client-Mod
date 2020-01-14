@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"OPT_B_MRAP_01_F", "OPT_B_MRAP_01_gmg_F", "OPT_B_MRAP_01_hmg_F", "OPT_O_MRAP_02_F", "OPT_O_T_MRAP_02_ghex_F", "OPT_O_MRAP_02_hmg_F", "OPT_O_T_MRAP_02_hmg_ghex_F",
 				   "OPT_O_MRAP_02_gmg_F", "OPT_O_T_MRAP_02_gmg_ghex_F", "OPT_B_MRAP_03_F", "OPT_B_MRAP_03_hmg_F", "OPT_B_MRAP_03_gmg_F", "OPT_B_T_LSV_01_unarmed_F", "OPT_B_T_LSV_01_armed_F",
 				   "OPT_O_T_LSV_02_unarmed_F", "OPT_O_T_LSV_02_armed_F", "OPT_B_Quadbike_01_F", "OPT_O_Quadbike_01_F", "OPT_O_T_Quadbike_01_ghex_F", "OPT_B_G_Offroad_01_F",
-				   "OPT_O_G_Offroad_01_F", "OPT_B_G_Offroad_01_armed_F", "OPT_O_G_Offroad_01_armed_F", "OPT_B_UGV_01_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
+				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F", "OPT_O_G_Offroad_01_armed_F", "OPT_B_UGV_01_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03",
@@ -1406,6 +1406,23 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_O_G_Offroad_01_ghex_F : O_G_Offroad_01_F
+	{
+		scope = 2;
+		faction = "OPT_CSAT_T";
+		maximumLoad = 2500;
+		fuelCapacity = 4; // 45 //
+		textureList[] = {"EAF",1};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa"};
+		animationList[] = {"HideDoor1",0,"HideDoor2",0,"HideDoor3",0,"HideBumper1",0,"HideBumper2",0};
+
+		class TransportItems
+		{
+		};
+	};
+
 	class Offroad_01_armed_base_F : Offroad_01_military_base_F
 	{
 	};
@@ -1442,6 +1459,19 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"guerilla_08", 1};
+
+		class TransportItems
+		{
+		};
+	};
+
+	class OPT_O_G_Offroad_01_armed_ghex_F : O_G_Offroad_01_armed_F
+	{
+		scope = 2;
+		faction = "OPT_CSAT_T";
+		maximumLoad = 2500;
+		fuelCapacity = 4; // 45 //
+		textureList[] = {"EAF",1};
 
 		class TransportItems
 		{
