@@ -8,7 +8,7 @@ class CfgPatches
 				   "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Tracked_01_rcws_F", "OPT4_B_APC_Tracked_01_AA_F", "OPT4_B_MBT_01_cannon_F",
 				   "OPT4_B_MBT_01_TUSK_F", "OPT4_B_MBT_01_arty_F", "OPT4_B_MBT_01_mlrs_F", "OPT4_O_APC_Wheeled_02_rcws_F", "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT4_B_APC_tracked_03_cannon_F", "OPT4_O_APC_Tracked_02_cannon_F",
 				   "OPT4_O_T_APC_Tracked_02_cannon_ghex_F", "OPT4_O_APC_Tracked_02_AA_F", "OPT4_O_T_APC_Tracked_02_AA_ghex_F", "OPT4_O_MBT_02_cannon_F", "OPT4_O_T_MBT_02_cannon_ghex_F", "OPT4_O_MBT_02_arty_F", "OPT4_O_T_MBT_02_arty_ghex_F",
-				   "OPT4_O_APC_Wheeled_03_cannon_F", "OPT4_B_MBT_03_cannon_F", "OPT4_B_LSV_01_AT_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F"};
+				   "OPT4_O_APC_Wheeled_03_cannon_F", "OPT4_B_MBT_03_cannon_F", "OPT4_B_LSV_01_AT_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F","OPT4_O_LSV_02_AT_GHEX_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -1050,6 +1050,70 @@ class CfgVehicles
 		displayName = "Qilin (AT)";
 		fuelCapacity = 4; // 20 //
 		maximumLoad = 2500;
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class CargoTurret_01 : CargoTurret_01
+			{
+			};
+
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+
+			class CargoTurret_04 : CargoTurret_04
+			{
+			};
+
+			class CargoTurret_05 : CargoTurret_05
+			{
+			};
+
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+	};
+
+	class OPT4_O_LSV_02_AT_GHEX_F : O_LSV_02_AT_F
+	{
+		faction = "OPT_CSAT_T";
+		displayName = "Qilin (AT)";
+		fuelCapacity = 4; // 20 //
+		maximumLoad = 2500;
+
+		textureList[] = {"Black",0,"GreenHex",1,"Arid",0};
 
 		class TransportMagazines
 		{
