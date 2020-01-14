@@ -451,7 +451,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		side = 0;
 		crew = "OPT_CSAT_Pilot";
-		hiddenSelectionsTextures[] = {"opt_a3_vehicles\textures\mh9\csat\heli_light_01_csat.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mh9\csat\heli_light_01_csat.paa"};
 	};
 
 	//// WY-55 Hellcat ////
