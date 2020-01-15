@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class opt_vehicles_apc
 	{
-		units[] = {"OPT_B_APC_Wheeled_01_cannon_F", "OPT_B_APC_Wheeled_01_cannon_light_F", "OPT_B_APC_Tracked_01_rcws_F", "OPT_B_APC_Tracked_01_AA_F", "OPT_O_APC_Wheeled_02_rcws_F", "OPT_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT_B_APC_tracked_03_cannon_F",
+		units[] = {"OPT_B_APC_Wheeled_01_cannon_F", "OPT_B_APC_Wheeled_01_cannon_light_F","OPT_B_APC_Wheeled_01_cannon_ghex_F", "OPT_B_APC_Tracked_01_rcws_F","OPT_B_APC_Tracked_01_rcws_ghex_F", "OPT_B_APC_Tracked_01_AA_F", "OPT_O_APC_Wheeled_02_rcws_F", "OPT_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT_B_APC_tracked_03_cannon_F",
 				   "OPT_O_APC_Tracked_02_cannon_F", "OPT_O_APC_Tracked_02_cannon_light_F", "OPT_O_APC_Tracked_02_AA_F", "OPT_O_T_APC_Tracked_02_AA_ghex_F", "OPT_O_APC_Wheeled_03_cannon_F","OPT_O_APC_Wheeled_03_cannon_ghex_F", "OPT_O_APC_Wheeled_03_cannon_light_F",
 				   "OPT_O_T_APC_Tracked_02_cannon_ghex_F", "OPT_O_T_APC_Tracked_02_cannon_ghex_light_F"};
 		weapons[] = {};
@@ -271,6 +271,107 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_APC_Wheeled_01_cannon_ghex_F : B_APC_Wheeled_01_cannon_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "AMV-7 Marshall";
+		maximumLoad = 2500;
+		fuelCapacity = 8; // 60 //
+		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet","CamoSlat"};
+		hiddenSelectionsTextures[] = {"A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_base_olive_CO.paa","A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_adds_olive_co.paa","A3\Armor_F_Exp\APC_Wheeled_01\data\APC_Wheeled_01_tows_olive_co.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","a3\Armor_F\Data\cage_olive_CO.paa"};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_40mm_CTWS", "LMG_M200_body"};
+				magazines[] = {"60Rnd_40mm_GPR_Tracer_Red_shells", "60Rnd_40mm_GPR_Tracer_Red_shells", "60Rnd_40mm_GPR_Tracer_Red_shells", "60Rnd_40mm_GPR_Tracer_Red_shells", "40Rnd_40mm_APFSDS_Tracer_Red_shells", "40Rnd_40mm_APFSDS_Tracer_Red_shells", "2000Rnd_65x39_belt"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class muzzle_rot : muzzle_rot
+			{
+				weapon = "OPT_autocannon_40mm_CTWS";
+			};
+
+			class muzzle_hide : muzzle_hide
+			{
+				weapon = "OPT_autocannon_40mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
 	class APC_Tracked_01_base_F : Tank_F
 	{
 		class Turrets;
@@ -296,6 +397,53 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
 		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+
+			class CommanderOptics : CommanderOptics
+			{
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class ViewGunner : ViewGunner
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	class OPT_B_APC_Tracked_01_rcws_ghex_F : B_APC_Tracked_01_rcws_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "IFV-6c Panther";
+		maximumLoad = 2500;
+		fuelCapacity = 12; // 45 //
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
+		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet"};
+		hiddenSelectionsTextures[] = {"A3\Armor_F_exp\APC_Tracked_01\Data\APC_Tracked_01_body_olive_CO.paa","A3\Armor_F_exp\APC_Tracked_01\Data\mbt_01_body_olive_co.paa","A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
 
 		class Turrets : Turrets
 		{
