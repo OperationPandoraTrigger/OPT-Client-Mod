@@ -3,7 +3,7 @@ class CfgPatches
 	class opt_vehicles_apc
 	{
 		units[] = {"OPT_B_APC_Wheeled_01_cannon_F", "OPT_B_APC_Wheeled_01_cannon_light_F","OPT_B_APC_Wheeled_01_cannon_ghex_F", "OPT_B_APC_Tracked_01_rcws_F","OPT_B_APC_Tracked_01_rcws_ghex_F", "OPT_B_APC_Tracked_01_AA_F", "OPT_O_APC_Wheeled_02_rcws_F", "OPT_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT_B_APC_tracked_03_cannon_F",
-				   "OPT_O_APC_Tracked_02_cannon_F", "OPT_O_APC_Tracked_02_cannon_light_F", "OPT_O_APC_Tracked_02_AA_F", "OPT_O_T_APC_Tracked_02_AA_ghex_F", "OPT_O_APC_Wheeled_03_cannon_F","OPT_O_APC_Wheeled_03_cannon_ghex_F", "OPT_O_APC_Wheeled_03_cannon_light_F",
+				   "OPT_B_APC_tracked_03_cannon_ghex_F","OPT_O_APC_Tracked_02_cannon_F", "OPT_O_APC_Tracked_02_cannon_light_F", "OPT_O_APC_Tracked_02_AA_F", "OPT_O_T_APC_Tracked_02_AA_ghex_F", "OPT_O_APC_Wheeled_03_cannon_F","OPT_O_APC_Wheeled_03_cannon_ghex_F", "OPT_O_APC_Wheeled_03_cannon_light_F",
 				   "OPT_O_T_APC_Tracked_02_cannon_ghex_F", "OPT_O_T_APC_Tracked_02_cannon_ghex_light_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
@@ -817,6 +817,16 @@ class CfgVehicles
 		crew = "OPT_NATO_Besatzungsmitglied";
 		typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mora\nato\TurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\mora\nato\BodyTexture.paa"};
+	};
+
+	class OPT_B_APC_tracked_03_cannon_ghex_F : OPT_I_APC_tracked_03_cannon_F
+	{
+		side = 1;
+		faction = "OPT_NATO_T";
+		crew = "OPT_NATO_Besatzungsmitglied";
+		typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
+		textureList[] = {"EAF_01",1};
+		hiddenSelectionsTextures[] = {"A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext_eaf_co.paa","A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext2_eaf_co.paa","A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa","A3\Armor_F_Enoch\apc_tracked_03\data\cage_EAF_CO.paa"};		
 	};
 
 	class APC_Tracked_02_base_F : Tank_F
