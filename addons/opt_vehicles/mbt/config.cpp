@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class opt_vehicles_mbt
 	{
-		units[] = {"OPT_B_MBT_01_cannon_F", "OPT_B_MBT_01_TUSK_F", "OPT_B_MBT_01_arty_F", "OPT_B_MBT_01_mlrs_F",
+		units[] = {"OPT_B_MBT_01_cannon_F","OPT_B_MBT_01_cannon_ghex_F", "OPT_B_MBT_01_TUSK_F","OPT_B_MBT_01_TUSK_ghex_F", "OPT_B_MBT_01_arty_F", "OPT_B_MBT_01_mlrs_F",
 				   "OPT_O_MBT_02_cannon_F", "OPT_O_T_MBT_02_cannon_ghex_F", "OPT_O_MBT_02_arty_F", "OPT_O_T_MBT_02_arty_ghex_F", "OPT_B_MBT_03_cannon_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
@@ -136,6 +136,92 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_MBT_01_cannon_ghex_F : B_MBT_01_cannon_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "M2A1 Slammer";
+		maximumLoad = 2500;
+		fuelCapacity = 12; // 100 //
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
+		hiddenSelections[] = {"Camo1","Camo2","CamoNet"};
+		hiddenSelectionsTextures[] = {"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\MBT_01_tow_olive_CO.paa","A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
 	class B_MBT_01_TUSK_F : B_MBT_01_cannon_F
 	{
 		class Turrets;
@@ -157,6 +243,92 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 100 //
 		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	class OPT_B_MBT_01_TUSK_ghex_F : B_MBT_01_TUSK_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "M2A4 Slammer UP";
+		maximumLoad = 2500;
+		fuelCapacity = 12; // 100 //
+		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
+		hiddenSelections[] = {"Camo1","Camo2","Camo3","CamoNet"};
+		hiddenSelectionsTextures[] = {"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\MBT_01_tow_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\mbt_addons_olive_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
 
 		class Turrets : Turrets
 		{
