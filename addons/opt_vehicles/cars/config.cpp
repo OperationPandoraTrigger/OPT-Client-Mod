@@ -3,9 +3,9 @@ class CfgPatches
 	class opt_vehicles_cars
 	{
 		units[] = {"OPT_B_MRAP_01_F", "OPT_B_MRAP_01_gmg_F", "OPT_B_MRAP_01_hmg_F", "OPT_O_MRAP_02_F", "OPT_O_T_MRAP_02_ghex_F", "OPT_O_MRAP_02_hmg_F", "OPT_O_T_MRAP_02_hmg_ghex_F",
-				   "OPT_O_MRAP_02_gmg_F", "OPT_O_T_MRAP_02_gmg_ghex_F", "OPT_B_MRAP_03_F", "OPT_B_MRAP_03_hmg_F", "OPT_B_MRAP_03_gmg_F", "OPT_B_T_LSV_01_unarmed_F", "OPT_B_T_LSV_01_armed_F",
+				   "OPT_O_MRAP_02_gmg_F", "OPT_O_T_MRAP_02_gmg_ghex_F", "OPT_B_MRAP_03_F", "OPT_B_MRAP_03_hmg_F", "OPT_B_MRAP_03_gmg_F", "OPT_B_T_LSV_01_unarmed_F","OPT_B_T_LSV_01_unarmed_ghex_F", "OPT_B_T_LSV_01_armed_F","OPT_B_T_LSV_01_armed_ghex_F",
 				   "OPT_O_T_LSV_02_unarmed_F","OPT_O_T_LSV_02_unarmed_ghex_F", "OPT_O_T_LSV_02_armed_F","OPT_O_T_LSV_02_armed_ghex_F", "OPT_B_Quadbike_01_F", "OPT_O_Quadbike_01_F", "OPT_O_T_Quadbike_01_ghex_F", "OPT_B_G_Offroad_01_F",
-				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F", "OPT_O_G_Offroad_01_armed_F", "OPT_B_UGV_01_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
+				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F", "OPT_O_G_Offroad_01_armed_F", "OPT_B_UGV_01_F","OPT_B_UGV_01_ghex_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03",
@@ -1194,10 +1194,32 @@ class CfgVehicles
 
 	class OPT_B_T_LSV_01_unarmed_F : B_T_LSV_01_unarmed_F
 	{
+		faction = "OPT_NATO";
+		fuelCapacity = 3; // 45 //
+		maximumLoad = 2500;
+		displayName = "Prowler (Unbewaffnet)";
+		textureList[] = {"Black",0,"Olive",0,"Sand",1};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	class OPT_B_T_LSV_01_unarmed_ghex_F : B_T_LSV_01_unarmed_F
+	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 3; // 45 //
 		maximumLoad = 2500;
 		displayName = "Prowler (Unbewaffnet)";
+		textureList[] = {"Black",0,"Olive",1,"Sand",0};
 
 		class TransportMagazines
 		{
@@ -1220,10 +1242,32 @@ class CfgVehicles
 
 	class OPT_B_T_LSV_01_armed_F : B_T_LSV_01_armed_F
 	{
+		faction = "OPT_NATO";
+		fuelCapacity = 3; // 45 //
+		maximumLoad = 2500;
+		displayName = "Prowler (Bewaffnet)";
+		textureList[] = {"Black",0,"Olive",0,"Sand",1};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	class OPT_B_T_LSV_01_armed_ghex_F : B_T_LSV_01_armed_F
+	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 3; // 45 //
 		maximumLoad = 2500;
 		displayName = "Prowler (Bewaffnet)";
+		textureList[] = {"Black",0,"Olive",1,"Sand",0};
 
 		class TransportMagazines
 		{
@@ -1538,6 +1582,22 @@ class CfgVehicles
 	class OPT_B_UGV_01_F : B_UGV_01_F
 	{
 		faction = "OPT_NATO";
+		displayName = "UGV Stomper";
+		maximumLoad = 2500;
+		fuelCapacity = 50; // 4500 //
+
+		class TransportItems
+		{
+		};
+	};
+
+	class B_T_UGV_01_olive_F : UGV_01_base_F
+	{
+	};
+
+	class OPT_B_UGV_01_ghex_F : B_T_UGV_01_olive_F
+	{
+		faction = "OPT_NATO_T";
 		displayName = "UGV Stomper";
 		maximumLoad = 2500;
 		fuelCapacity = 50; // 4500 //
