@@ -3,7 +3,7 @@ class CfgPatches
 	class opt_vehicles_mbt
 	{
 		units[] = {"OPT_B_MBT_01_cannon_F","OPT_B_MBT_01_cannon_ghex_F", "OPT_B_MBT_01_TUSK_F","OPT_B_MBT_01_TUSK_ghex_F", "OPT_B_MBT_01_arty_F", "OPT_B_MBT_01_mlrs_F",
-				   "OPT_O_MBT_02_cannon_F", "OPT_O_T_MBT_02_cannon_ghex_F", "OPT_O_MBT_02_arty_F", "OPT_O_T_MBT_02_arty_ghex_F", "OPT_B_MBT_03_cannon_F"};
+				   "OPT_O_MBT_02_cannon_F", "OPT_O_T_MBT_02_cannon_ghex_F", "OPT_O_MBT_02_arty_F", "OPT_O_T_MBT_02_arty_ghex_F", "OPT_B_MBT_03_cannon_F","OPT_B_MBT_03_cannon_ghex_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_armor_f_slammer", "a3_armor_f_t100k", "a3_armor_f_amv"};
@@ -962,5 +962,15 @@ class CfgVehicles
 		crew = "OPT_NATO_Besatzungsmitglied";
 		typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\nato\TankBodyTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretMGTexture.paa"};
+	};
+
+	class OPT_B_MBT_03_cannon_ghex_F : OPT_I_MBT_03_cannon_F
+	{
+		side = 1;
+		faction = "OPT_NATO_T";
+		crew = "OPT_NATO_Besatzungsmitglied";
+		typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
+		//hiddenSelections[] = {"Camo1","Camo2","Camo3","CamoNet"};
+		//hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\nato\TankBodyTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretMGTexture.paa"};
 	};
 };
