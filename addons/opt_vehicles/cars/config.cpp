@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class opt_vehicles_cars
 	{
-		units[] = {"OPT_B_MRAP_01_F", "OPT_B_MRAP_01_gmg_F", "OPT_B_MRAP_01_hmg_F", "OPT_O_MRAP_02_F", "OPT_O_T_MRAP_02_ghex_F", "OPT_O_MRAP_02_hmg_F", "OPT_O_T_MRAP_02_hmg_ghex_F",
+		units[] = {"OPT_B_MRAP_01_F","OPT_B_MRAP_01_ghex_F", "OPT_B_MRAP_01_gmg_F","OPT_B_MRAP_01_gmg_ghex_F", "OPT_B_MRAP_01_hmg_F","OPT_B_MRAP_01_hmg_ghex_F", "OPT_O_MRAP_02_F", "OPT_O_T_MRAP_02_ghex_F", "OPT_O_MRAP_02_hmg_F", "OPT_O_T_MRAP_02_hmg_ghex_F",
 				   "OPT_O_MRAP_02_gmg_F", "OPT_O_T_MRAP_02_gmg_ghex_F", "OPT_B_MRAP_03_F", "OPT_B_MRAP_03_hmg_F", "OPT_B_MRAP_03_gmg_F", "OPT_B_T_LSV_01_unarmed_F","OPT_B_T_LSV_01_unarmed_ghex_F", "OPT_B_T_LSV_01_armed_F","OPT_B_T_LSV_01_armed_ghex_F",
 				   "OPT_O_T_LSV_02_unarmed_F","OPT_O_T_LSV_02_unarmed_ghex_F", "OPT_O_T_LSV_02_armed_F","OPT_O_T_LSV_02_armed_ghex_F", "OPT_B_Quadbike_01_F", "OPT_O_Quadbike_01_F", "OPT_O_T_Quadbike_01_ghex_F", "OPT_B_G_Offroad_01_F","OPT_B_G_Offroad_01_ghex_F",
 				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F","OPT_B_G_Offroad_01_armed_ghex_F", "OPT_O_G_Offroad_01_armed_F", "OPT_B_UGV_01_F","OPT_B_UGV_01_ghex_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
@@ -131,6 +131,33 @@ class CfgVehicles
 		};
 	};
 
+	class B_T_MRAP_01_F : MRAP_01_base_F
+	{
+	};
+
+	class OPT_B_MRAP_01_ghex_F : B_T_MRAP_01_F 
+	{
+		faction = "OPT_NATO_T";
+		displayName = "Hunter";
+		maximumLoad = 2500;
+		fuelCapacity = 4;					 // 94 //
+		incomingMissileDetectionSystem = 16; // 0 //
+		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
+		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
 	class B_MRAP_01_gmg_F : MRAP_01_gmg_base_F
 	{
 		class Turrets;
@@ -225,6 +252,99 @@ class CfgVehicles
 		};
 	};
 
+	class B_T_MRAP_01_gmg_F : MRAP_01_gmg_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class ViewOptics;
+		class ViewGunner;
+		class RenderTargets;
+		class Driver_display;
+		class Gunner_display;
+		class CameraView1;
+		class mirrors_Left;
+		class mirrors_Right;
+	};
+
+	class OPT_B_MRAP_01_gmg_ghex_F : B_T_MRAP_01_gmg_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "Hunter-GMG";
+		maximumLoad = 2500;
+		fuelCapacity = 4;					 // 94 //
+		incomingMissileDetectionSystem = 16; // 0 //
+		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
+		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class ViewOptics : ViewOptics
+				{
+					visionmode[] = {"Normal", "NVG"};
+				};
+
+				class ViewGunner : ViewGunner
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+
+		class RenderTargets : RenderTargets
+		{
+			class Driver_display : Driver_display
+			{
+				renderTarget = "rendertarget1";
+
+				class CameraView1 : CameraView1
+				{
+				};
+			};
+
+			class Gunner_display : Gunner_display
+			{
+				renderTarget = "rendertarget0";
+
+				class CameraView1 : CameraView1
+				{
+					renderVisionMode = 0;
+				};
+			};
+
+			class mirrors_Left : mirrors_Left
+			{
+				renderTarget = "rendertarget4";
+
+				class CameraView1 : CameraView1
+				{
+				};
+			};
+
+			class mirrors_Right : mirrors_Right
+			{
+				renderTarget = "rendertarget5";
+
+				class CameraView1 : CameraView1
+				{
+				};
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
 	class B_MRAP_01_hmg_F : MRAP_01_hmg_base_F
 	{
 		class Turrets;
@@ -243,6 +363,102 @@ class CfgVehicles
 	class OPT_B_MRAP_01_hmg_F : B_MRAP_01_hmg_F
 	{
 		faction = "OPT_NATO";
+		displayName = "Hunter-HMG";
+		maximumLoad = 2500;
+		fuelCapacity = 4;					 // 94 //
+		incomingMissileDetectionSystem = 16; // 0 //
+		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
+		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"HMG_127"};
+				magazines[] = {"500Rnd_127x99_mag_Tracer_Red"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionmode[] = {"Normal", "NVG"};
+				};
+
+				class ViewGunner : ViewGunner
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+
+		class RenderTargets : RenderTargets
+		{
+			class Driver_display : Driver_display
+			{
+				renderTarget = "rendertarget1";
+
+				class CameraView1 : CameraView1
+				{
+				};
+			};
+
+			class Gunner_display : Gunner_display
+			{
+				renderTarget = "rendertarget0";
+
+				class CameraView1 : CameraView1
+				{
+					renderVisionMode = 0;
+				};
+			};
+
+			class mirrors_Left : mirrors_Left
+			{
+				renderTarget = "rendertarget4";
+
+				class CameraView1 : CameraView1
+				{
+				};
+			};
+
+			class mirrors_Right : mirrors_Right
+			{
+				renderTarget = "rendertarget5";
+
+				class CameraView1 : CameraView1
+				{
+				};
+			};
+		};
+	};
+
+	class B_T_MRAP_01_hmg_F : MRAP_01_hmg_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class ViewOptics;
+		class ViewGunner;
+		class RenderTargets;
+		class Driver_display;
+		class Gunner_display;
+		class CameraView1;
+		class mirrors_Left;
+		class mirrors_Right;
+	};
+
+	class OPT_B_MRAP_01_hmg_ghex_F : B_T_MRAP_01_hmg_F
+	{
+		faction = "OPT_NATO_T";
 		displayName = "Hunter-HMG";
 		maximumLoad = 2500;
 		fuelCapacity = 4;					 // 94 //
