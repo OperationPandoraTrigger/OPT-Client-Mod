@@ -1626,6 +1626,18 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_Quadbike_01_ghex_F : B_Quadbike_01_F
+	{
+		faction = "OPT_NATO_T";
+		maximumLoad = 800;
+		fuelCapacity = 2; // 30 //
+		textureList[] = {"Olive",1};
+
+		class TransportItems
+		{
+		};
+	};
+
 	class O_Quadbike_01_F : Quadbike_01_base_F
 	{
 	};
