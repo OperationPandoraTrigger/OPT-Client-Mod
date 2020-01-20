@@ -131,6 +131,8 @@ class CfgVehicles
 		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"Olive",1};
+		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
+		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cargo_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cover_olive_co.paa"};
 
 		class TransportItems
 		{
