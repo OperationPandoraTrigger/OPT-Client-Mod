@@ -2,10 +2,10 @@ class CfgPatches
 {
 	class opt_vehicles_truck
 	{
-		units[] = {"OPT_B_Truck_01_transport_F", "OPT_B_Truck_01_covered_F", "OPT_B_Truck_01_medical_F",
-				   "OPT_B_Truck_01_ammo_F", "OPT_B_Truck_01_Repair_F", "OPT_B_Truck_01_fuel_F", "OPT_O_Truck_03_transport_F", "OPT_O_T_Truck_03_transport_ghex_F", "OPT_O_Truck_03_covered_F",
+		units[] = {"OPT_B_Truck_01_transport_F","OPT_B_Truck_01_transport_ghex_F", "OPT_B_Truck_01_covered_F","OPT_B_Truck_01_covered_ghex_F", "OPT_B_Truck_01_medical_F","OPT_B_Truck_01_medical_ghex_F",
+				   "OPT_B_Truck_01_ammo_F","OPT_B_Truck_01_ammo_ghex_F", "OPT_B_Truck_01_Repair_F","OPT_B_Truck_01_Repair_ghex_F", "OPT_B_Truck_01_fuel_F","OPT_B_Truck_01_fuel_ghex_F", "OPT_O_Truck_03_transport_F", "OPT_O_T_Truck_03_transport_ghex_F", "OPT_O_Truck_03_covered_F",
 				   "OPT_O_T_Truck_03_covered_ghex_F", "OPT_O_Truck_03_ammo_F", "OPT_O_T_Truck_03_ammo_ghex_F", "OPT_O_Truck_03_repair_F", "OPT_O_T_Truck_03_repair_ghex_F", "OPT_O_Truck_03_fuel_F",
-				   "OPT_O_T_Truck_03_fuel_ghex_F", "OPT_O_Truck_03_medical_F", "OPT_O_T_Truck_03_medical_ghex_F", "OPT_O_Truck_02_MRL_F", "OPT_B_UGV_01_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
+				   "OPT_O_T_Truck_03_fuel_ghex_F", "OPT_O_Truck_03_medical_F", "OPT_O_T_Truck_03_medical_ghex_F", "OPT_O_Truck_02_MRL_F","OPT_O_Truck_02_MRL_ghex_F", "OPT_B_UGV_01_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03"};
@@ -64,6 +64,24 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_Truck_01_transport_ghex_F : OPT_B_Truck_01_transport_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "HEMTT Transporter";
+		maximumLoad = 5000;
+		fuelCapacity = 4;	 // 45 //
+		transportSoldier = 1; // 15 //
+		textureList[] = {"Olive",1};
+
+		class TransportItems
+		{
+		};
+
+		class Turrets
+		{
+		};
+	};
+
 	//// HEMTT Transport (Covered) ////
 	class OPT_B_Truck_01_covered_F : B_Truck_01_covered_F
 	{
@@ -71,6 +89,19 @@ class CfgVehicles
 		displayName = "HEMTT Transporter (abgedeckt)";
 		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
+
+		class TransportItems
+		{
+		};
+	};
+
+	class OPT_B_Truck_01_covered_ghex_F : OPT_B_Truck_01_covered_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "HEMTT Transporter (abgedeckt)";
+		maximumLoad = 5000;
+		fuelCapacity = 4; // 45 //
+		textureList[] = {"Olive",1};
 
 		class TransportItems
 		{
@@ -87,7 +118,19 @@ class CfgVehicles
 		faction = "OPT_NATO";
 		displayName = "HEMTT Sanitätsfahrzeug";
 		maximumLoad = 5000;
+
+		class TransportItems
+		{
+		};
+	};
+
+	class OPT_B_Truck_01_medical_ghex_F : OPT_B_Truck_01_medical_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "HEMTT Sanitätsfahrzeug";
+		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
+		textureList[] = {"Olive",1};
 
 		class TransportItems
 		{
@@ -116,6 +159,20 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_Truck_01_ammo_ghex_F : OPT_B_Truck_01_ammo_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "HEMTT Munition";
+		maximumLoad = 5000;
+		fuelCapacity = 4; // 45 //
+		transportAmmo = 30000;
+		textureList[] = {"Olive",1};
+
+		class TransportItems
+		{
+		};
+	};
+
 	class B_Truck_01_Repair_F : B_Truck_01_mover_F
 	{
 	};
@@ -135,6 +192,21 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_Truck_01_Repair_ghex_F : OPT_B_Truck_01_Repair_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "HEMTT Instandsetzung";
+		maximumLoad = 2500;
+		fuelCapacity = 4; // 45 //
+		transportRepair = 0; // 200000000;
+		//#include "\opt_vehicles\reparieren.hpp"
+		textureList[] = {"Olive",1};
+
+		class TransportItems
+		{
+		};
+	};
+
 	class B_Truck_01_fuel_F : B_Truck_01_mover_F
 	{
 	};
@@ -147,6 +219,24 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 10; // 45 //
 		transportFuel = 3000;
+
+		class TransportItems
+		{
+		};
+	};
+
+	class B_T_Truck_01_fuel_F : B_Truck_01_fuel_F
+	{
+	};
+
+	class OPT_B_Truck_01_fuel_ghex_F : B_T_Truck_01_fuel_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "HEMTT Treibstoff";
+		maximumLoad = 2500;
+		fuelCapacity = 10; // 45 //
+		transportFuel = 3000;
+		textureList[] = {"Olive",1};
 
 		class TransportItems
 		{
@@ -430,5 +520,15 @@ class CfgVehicles
 		crew = "OPT_CSAT_Soldat";
 		typicalCargo[] = {"OPT_CSAT_Soldat"};
 		hiddenSelectionsTextures[] = {"A3\Soft_F_Beta\Truck_02\Data\truck_02_kab_OPFOR_CO.paa", "a3\soft_f_beta\truck_02\data\truck_02_int_co.paa", "a3\soft_f_gamma\truck_02\data\Truck_02_MRL_OPFOR_CO.paa"};
+	};
+
+	class OPT_O_Truck_02_MRL_ghex_F : OPT_I_Truck_02_MRL_F
+	{
+		maximumLoad = 2500;
+		side = 0;
+		faction = "OPT_CSAT_T";
+		crew = "OPT_CSAT_Soldat";
+		typicalCargo[] = {"OPT_CSAT_Soldat"};
+		hiddenSelectionsTextures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_MRL_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
 	};
 };
