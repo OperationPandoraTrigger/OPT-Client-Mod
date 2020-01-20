@@ -1634,6 +1634,8 @@ class CfgVehicles
 		side = 0;
 		faction = "OPT_CSAT_T";
 		textureList[] = {"Guerilla_01",0,"Guerilla_02",0,"Guerilla_03",1};
+		hiddenSelectionsTextures[] = {"A3\Data_F_Tacops\data\APC_Wheeled_03_Ext_IG_03_CO.paa","A3\Data_F_Tacops\data\APC_Wheeled_03_Ext2_IG_03_CO.paa","A3\Data_F_Tacops\data\RCWS30_IG_03_CO.paa","A3\Data_F_Tacops\data\APC_Wheeled_03_Ext_alpha_IG_03_CO.paa","A3\Armor_F\Data\camonet_AAF_FIA_green_CO.paa","A3\armor_f\data\cage_G3_co.paa"};
+
 
 		class Turrets : Turrets
 		{
