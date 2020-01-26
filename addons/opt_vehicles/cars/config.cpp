@@ -1801,19 +1801,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_B_G_Offroad_01_armed_ghex_F : B_G_Offroad_01_armed_F
-	{
-		scope = 2;
-		faction = "OPT_NATO_T";
-		maximumLoad = 2500;
-		fuelCapacity = 4; // 45 //
-		textureList[] = {"Guerilla_01",1};
-
-		class TransportItems
-		{
-		};
-	};
-
 	class O_G_Offroad_01_armed_F : I_G_Offroad_01_armed_F
 	{
 	};
@@ -1846,19 +1833,6 @@ class CfgVehicles
 		hiddenSelectionsMaterials[] = {};
 		hiddenSelectionsTextures[] = {"\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa"};
 		
-
-		class TransportItems
-		{
-		};
-	};
-
-	class OPT_O_G_Offroad_01_armed_ghex_F : O_G_Offroad_01_armed_F
-	{
-		scope = 2;
-		faction = "OPT_CSAT_T";
-		maximumLoad = 2500;
-		fuelCapacity = 4; // 45 //
-		textureList[] = {"EAF",1};
 
 		class TransportItems
 		{
