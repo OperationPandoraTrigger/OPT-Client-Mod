@@ -71,6 +71,8 @@ class CfgVehicles
 		maximumLoad = 5000;
 		fuelCapacity = 4;	 // 45 //
 		transportSoldier = 1; // 15 //
+		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
+		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cargo_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cover_olive_co.paa"};
 		textureList[] = {"Olive",1};
 
 		class TransportItems
@@ -101,6 +103,8 @@ class CfgVehicles
 		displayName = "HEMTT Transporter (abgedeckt)";
 		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
+		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
+		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cargo_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cover_olive_co.paa"};
 		textureList[] = {"Olive",1};
 
 		class TransportItems
@@ -169,6 +173,8 @@ class CfgVehicles
 		fuelCapacity = 4; // 45 //
 		transportAmmo = 30000;
 		textureList[] = {"Olive",1};
+		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
+		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cargo_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cover_olive_co.paa"};
 
 		class TransportItems
 		{
@@ -203,6 +209,8 @@ class CfgVehicles
 		transportRepair = 0; // 200000000;
 		//#include "\opt_vehicles\reparieren.hpp"
 		textureList[] = {"Olive",1};
+		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
+		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\A3\Soft_F_Exp\Truck_01\Data\truck_01_ammo_olive_CO.paa","\a3\structures_f\data\metal\containers\containers_02_set_co.paa"};
 
 		class TransportItems
 		{

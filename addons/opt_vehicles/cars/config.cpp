@@ -1707,9 +1707,11 @@ class CfgVehicles
 		faction = "OPT_NATO_T";
 		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
-		textureList[] = {"Guerilla_01",1};
 		animationList[] = {"HideDoor1",0,"HideDoor2",0,"HideDoor3",0,"HideBumper1",0,"HideBumper2",0};
-
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"A3\soft_f_bootcamp\Offroad_01\data\offroad_01_ext_IG_01_CO.paa"};
+		
 		class TransportItems
 		{
 		};
@@ -1772,6 +1774,27 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"guerilla_03", 1};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"A3\soft_f_bootcamp\Offroad_01\data\offroad_01_ext_IG_03_CO.paa"};
+		
+
+		class TransportItems
+		{
+		};
+	};
+
+	class OPT_B_G_Offroad_01_armed_ghex_F : B_G_Offroad_01_armed_F
+	{
+		scope = 2;
+		faction = "OPT_NATO_T";
+		maximumLoad = 2500;
+		fuelCapacity = 4; // 45 //
+		textureList[] = {"Guerilla_01",1};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"A3\soft_f_bootcamp\Offroad_01\data\offroad_01_ext_IG_01_CO.paa"};
+		
 
 		class TransportItems
 		{
@@ -1802,6 +1825,27 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"guerilla_08", 1};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"A3\soft_f_bootcamp\Offroad_01\data\offroad_01_ext_IG_08_CO.paa"};
+		
+
+		class TransportItems
+		{
+		};
+	};
+
+	class OPT_O_G_Offroad_01_armed_ghex_F : O_G_Offroad_01_armed_F
+	{
+		scope = 2;
+		faction = "OPT_CSAT_T";
+		maximumLoad = 2500;
+		fuelCapacity = 4; // 45 //
+		textureList[] = {"EAF",1};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa"};
+		
 
 		class TransportItems
 		{
