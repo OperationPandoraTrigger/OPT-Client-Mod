@@ -996,6 +996,8 @@ class CfgVehicles
 		driverCanEject = 1;
 		fuelCapacity = 300; // 1360 //
 		radarType = 4;		// 8 //
+		textureList[] = {"Green",1};
+		hiddenSelectionsTextures[] = {"\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext01_BLUFOR_CO.paa","\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext02_BLUFOR_CO.paa"};
 
 		class TransportItems
 		{
@@ -1063,6 +1065,7 @@ class CfgVehicles
 		driverCanEject = 1;
 		fuelCapacity = 300; // 1360 //
 		radarType = 4;		// 8 //
+		textureList[] = {"Green",1};
 
 		class TransportBackpacks
 		{
