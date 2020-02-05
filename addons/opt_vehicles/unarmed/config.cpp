@@ -733,8 +733,8 @@ class CfgVehicles
 						aimDown = -45;
 						class AirTarget 
 						{
-							maxRange = 5000;
-							minRange = 5000;
+							maxRange = 2500;
+							minRange = 2500;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = -1;
 						};
@@ -747,8 +747,8 @@ class CfgVehicles
 						groundNoiseDistanceCoef = 0.5;
 						class GroundTarget 
 						{
-							maxRange = 5000;
-							minRange = 5000;
+							maxRange = 2500;
+							minRange = 2500;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = -1;
 						};
@@ -1149,8 +1149,8 @@ class CfgVehicles
 						aimDown = -45;
 						class AirTarget 
 						{
-							maxRange = 5000;
-							minRange = 5000;
+							maxRange = 2500;
+							minRange = 2500;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = -1;
 						};
@@ -1163,8 +1163,8 @@ class CfgVehicles
 						groundNoiseDistanceCoef = 0.5;
 						class GroundTarget 
 						{
-							maxRange = 5000;
-							minRange = 5000;
+							maxRange = 2500;
+							minRange = 2500;
 							objectDistanceLimitCoef = -1;
 							viewDistanceLimitCoef = -1;
 						};
