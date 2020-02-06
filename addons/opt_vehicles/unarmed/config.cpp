@@ -702,6 +702,7 @@ class CfgVehicles
 		class Components;
 		class SensorTemplateActiveRadar;
 		class SensorTemplateDataLink;
+		class SensorTemplateMan;
 	};
 
 	class OPT4_B_APC_Tracked_01_AA_ghex_F : OPT_B_APC_Tracked_01_AA_ghex_F
@@ -721,6 +722,14 @@ class CfgVehicles
 	{
 		displayName = "SonderFahrzeug Radarersatz";
 		fuelCapacity = 0; 
+		editorPreview = "\A3\EditorPreviews_F_Sams\Data\Cfgvehicles\B_Radar_System_01_F.jpg";
+		icon = "\A3\Static_F_Sams\Radar_System_01\Data\UI\Radar_System_01_icon_CA.paa";
+		model = "\A3\Static_F_Sams\Radar_System_01\Radar_System_01_F.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"A3\Static_F_Sams\Radar_System_01\Data\Radar_system_01_mat_01_CO.paa","A3\Static_F_Sams\Radar_System_01\Data\Radar_system_01_mat_02_CO.paa"};
+		hiddenUnderwaterSelections[] = {};
+		hiddenUnderwaterSelectionsTextures[] = {};
 
 		class Components: Components 
 		{
@@ -728,6 +737,33 @@ class CfgVehicles
 			{
 				class Components 
 				{
+					class ManSensorComponent : SensorTemplateMan 
+					{
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 3000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 180;
+						nightRangeCoef = 1;
+						maxFogSeeThrough= -1;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						minSpeedThreshold = 0;
+						animDirection = "cannon_barrel";
+					};
 					class ActiveRadarSensorComponent: SensorTemplateActiveRadar 
 					{
 						aimDown = -45;
@@ -1116,6 +1152,7 @@ class CfgVehicles
 		class Components;
 		class SensorTemplateActiveRadar;
 		class SensorTemplateDataLink;
+		class SensorTemplateMan;
 		
 	};
 
@@ -1137,6 +1174,14 @@ class CfgVehicles
 		displayName = "SonderFahrzeug Radarersatz";
 		fuelCapacity = 0; 
 		faction = "OPT_CSAT_T";
+		editorPreview = "\A3\EditorPreviews_F_Sams\Data\Cfgvehicles\O_Radar_System_02_F.jpg";
+		icon = "\A3\Static_F_Sams\Radar_System_02\Data\UI\Radar_System_02_icon_CA.paa";
+		model = "\A3\Static_F_Sams\Radar_System_02\Radar_System_02_F.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"A3\Static_F_Sams\Radar_System_02\Data\Radar_system_02_mat_01_CO.paa","A3\Static_F_Sams\Radar_System_02\Data\Radar_system_02_mat_02_CO.paa"};
+		hiddenUnderwaterSelections[] = {};
+		hiddenUnderwaterSelectionsTextures[] = {};
 
 		class Components: Components 
 		{
@@ -1144,6 +1189,33 @@ class CfgVehicles
 			{
 				class Components 
 				{
+					class ManSensorComponent : SensorTemplateMan 
+					{
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 3000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 180;
+						nightRangeCoef = 1;
+						maxFogSeeThrough= -1;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						minSpeedThreshold = 0;
+						animDirection = "cannon_barrel";
+					};
+
 					class ActiveRadarSensorComponent: SensorTemplateActiveRadar 
 					{
 						aimDown = -45;
