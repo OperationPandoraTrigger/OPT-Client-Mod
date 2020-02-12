@@ -3,7 +3,7 @@ class CfgPatches
 	class opt_vehicles_plane
 	{
 		units[] = {"OPT_O_Plane_Fighter_03_CAS_F", "OPT_O_Plane_Fighter_03_AA_F", "OPT_B_Plane_CAS_01_F", "OPT_B_Plane_CAS_01_AA_F", "OPT_O_Plane_CAS_02_F",
-				   "OPT_O_Plane_CAS_02_AA_F"};
+				   "OPT_O_Plane_CAS_02_AA_F","OPT_O_Plane_Fighter_01_Stealth_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_air_f_gamma_plane_fighter_03", "a3_air_f_epc_plane_cas_02", "a3_air_f_epc_plane_cas_01", "A3_Air_F_Exp", "A3_Air_F_Exp_VTOL_01", "A3_Air_F_Exp_VTOL_02", "A3_Soft_F_Exp", "A3_Soft_F_Exp_LSV_01", "A3_Soft_F_Exp_LSV_02",
@@ -250,10 +250,10 @@ class CfgVehicles
 	class OPT_B_Plane_CAS_01_F : B_Plane_CAS_01_dynamicLoadout_F
 	{
 		faction = "OPT_NATO";
-		displayName = "A-164 Wipeout (Luftunterstützung)";
-		weapons[] = {"OPT_Gatling_30mm_Plane_CAS_01_F", "Laserdesignator_pilotCamera", "CMFlareLauncher"};
-		magazines[] = {"OPT_1000Rnd_Gatling_30mm_Plane_CAS_01_F", "Laserbatteries", "60Rnd_CMFlare_Chaff_Magazine"};
-		fuelCapacity = 500; // 1000 //
+		displayName = "A-164 Wipeout";
+		weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "OPT_CMFlareLauncher_Triples"};
+		magazines[] = {"OPT_500Rnd_Cannon_30mm_Plane_CAS_02_F", "OPT_30Rnd_CMFlare_Chaff_Magazine"};
+		fuelCapacity = 150; // 1000 //
 
 		class Components : Components
 		{
@@ -265,52 +265,52 @@ class CfgVehicles
 				{
 					class Pylons1 : Pylons1
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AA_04_F";
+						attachment = "";
 					};
 
 					class Pylons2 : Pylons2
 					{
-						attachment = "PylonRack_7Rnd_Rocket_04_HE_F";
+						attachment = "";
 					};
 
 					class Pylons3 : Pylons3
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AGM_02_F";
+						attachment = "";
 					};
 
 					class Pylons4 : Pylons4
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AGM_02_F";
+						attachment = "";
 					};
 
 					class Pylons5 : Pylons5
 					{
-						attachment = "OPT_PylonMissile_1Rnd_Bomb_04_F";
+						attachment = "";
 					};
 
 					class Pylons6 : Pylons6
 					{
-						attachment = "OPT_PylonMissile_1Rnd_Bomb_04_F";
+						attachment = "";
 					};
 
 					class Pylons7 : Pylons7
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AGM_02_F";
+						attachment = "";
 					};
 
 					class Pylons8 : Pylons8
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AGM_02_F";
+						attachment = "";
 					};
 
 					class Pylons9 : Pylons9
 					{
-						attachment = "PylonRack_7Rnd_Rocket_04_AP_F";
+						attachment = "";
 					};
 
 					class Pylons10 : Pylons10
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AA_04_F";
+						attachment = "";
 					};
 				};
 			};
@@ -602,9 +602,9 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		displayName = "F/A-181 Black Wasp II (Tarn)";
-		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "Laserdesignator_pilotCamera", "CMFlareLauncher_Singles"};
-		magazines[] = {"OPT_magazine_Fighter01_Gun20mm_AA_x450", "Laserbatteries", "60Rnd_CMFlare_Chaff_Magazine"};
-		fuelCapacity = 500; //1550 //
+		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher_Triples"};
+		magazines[] = {"OPT_magazine_Fighter01_Gun20mm_AA_x450", "OPT_30Rnd_CMFlare_Chaff_Magazine"};
+		fuelCapacity = 150; //1550 //
 		//hiddenSelectionsTextures[] = {"a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_01_Camo_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_02_Camo_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_01_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_02_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_03_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_05_co.paa"};
 		disableInventory = 0;
 
@@ -616,22 +616,22 @@ class CfgVehicles
 				{
 					class pylonBayCenter1 : pylonBayCenter1
 					{
-						attachment = "OPT_PylonMissile_Missile_AMRAAM_D_INT_x1";
+						attachment = "";
 					};
 
 					class pylonBayCenter2 : pylonBayCenter2
 					{
-						attachment = "OPT_PylonMissile_Missile_AMRAAM_D_INT_x1";
+						attachment = "";
 					};
 
 					class pylonBayCenter3 : pylonBayCenter3
 					{
-						attachment = "OPT_PylonMissile_Missile_AMRAAM_D_INT_x1";
+						attachment = "";
 					};
 
 					class pylonBayCenter4 : pylonBayCenter4
 					{
-						attachment = "OPT_PylonMissile_Missile_AMRAAM_D_INT_x1";
+						attachment = "";
 					};
 
 					class pylonBayCenter5 : pylonBayCenter5
@@ -641,17 +641,113 @@ class CfgVehicles
 
 					class pylonBayCenter6 : pylonBayCenter6
 					{
-						attachment = "OPT_PylonMissile_Bomb_GBU12_x1";
+						attachment = "";
 					};
 
 					class pylonBayLeft1 : pylonBayLeft1
 					{
-						attachment = "OPT_PylonMissile_Missile_BIM9X_x1";
+						attachment = "";
 					};
 
 					class pylonBayRight1 : pylonBayRight1
 					{
-						attachment = "OPT_PylonMissile_Missile_BIM9X_x1";
+						attachment = "";
+					};
+				};
+			};
+		};
+
+		class pilotCamera : pilotCamera
+		{
+			class OpticsIn : OpticsIn
+			{
+				class Wide : Wide
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class Medium : Medium
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class Narrow : Narrow
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+
+		class TransportItems
+		{
+			class _xx_H_PilotHelmetFighter_B
+			{
+				name = "H_PilotHelmetFighter_B";
+				count = 1;
+			};
+		};
+	};
+
+	class OPT_O_Plane_Fighter_01_Stealth_F : B_Plane_Fighter_01_Stealth_F
+	{
+		faction = "OPT_CSAT";
+		side = 0;
+		crew = "OPT_CSAT_Pilot";
+		typicalCargo[] = {"OPT_CSAT_Pilot"};
+		displayName = "F/A-181 Black Wasp II (Tarn)";
+		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher_Triples"};
+		magazines[] = {"OPT_magazine_Fighter01_Gun20mm_AA_x450", "OPT_30Rnd_CMFlare_Chaff_Magazine"};
+		fuelCapacity = 150; //1550 //
+
+		hiddenSelections[] = {"Camo1","Camo2","CamoGlass","camo_cockpit_1","camo_cockpit_2","camo_cockpit_3","camo_cockpit_5","number_01","number_02","number_03"};
+		hiddenSelectionsTextures[] = {"a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_01_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_02_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_01_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_02_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_03_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_05_co.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_00_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa"};
+		disableInventory = 0;
+		textureList[] = {"DarkGrey",0,"DarkGreyCamo",1};
+
+		class Components : Components
+		{
+			class TransportPylonsComponent : TransportPylonsComponent
+			{
+				class Pylons : Pylons
+				{
+					class pylonBayCenter1 : pylonBayCenter1
+					{
+						attachment = "";
+					};
+
+					class pylonBayCenter2 : pylonBayCenter2
+					{
+						attachment = "";
+					};
+
+					class pylonBayCenter3 : pylonBayCenter3
+					{
+						attachment = "";
+					};
+
+					class pylonBayCenter4 : pylonBayCenter4
+					{
+						attachment = "";
+					};
+
+					class pylonBayCenter5 : pylonBayCenter5
+					{
+						attachment = "";
+					};
+
+					class pylonBayCenter6 : pylonBayCenter6
+					{
+						attachment = "";
+					};
+
+					class pylonBayLeft1 : pylonBayLeft1
+					{
+						attachment = "";
+					};
+
+					class pylonBayRight1 : pylonBayRight1
+					{
+						attachment = "";
 					};
 				};
 			};
@@ -725,10 +821,10 @@ class CfgVehicles
 	class OPT_O_Plane_CAS_02_F : O_Plane_CAS_02_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "To-199 Neophron (Luftunterstützung)";
-		weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "Laserdesignator_pilotCamera", "CMFlareLauncher"};
-		magazines[] = {"OPT_500Rnd_Cannon_30mm_Plane_CAS_02_F", "Laserbatteries", "60Rnd_CMFlare_Chaff_Magazine"};
-		fuelCapacity = 500; // 1000 //
+		displayName = "To-199 Neophron";
+		weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "OPT_CMFlareLauncher_Triples"};
+		magazines[] = {"OPT_500Rnd_Cannon_30mm_Plane_CAS_02_F","OPT_30Rnd_CMFlare_Chaff_Magazine"};
+		fuelCapacity = 150; // 1000 //
 		//#include "\opt_vehicles\bremsfallschirm.hpp"
 
 		class Components : Components
@@ -741,52 +837,52 @@ class CfgVehicles
 				{
 					class Pylons1 : Pylons1
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AA_03_F";
+						attachment = "";
 					};
 
 					class Pylons2 : Pylons2
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AGM_01_F";
+						attachment = "";
 					};
 
 					class Pylons3 : Pylons3
 					{
-						attachment = "PylonRack_20Rnd_Rocket_03_HE_F";
+						attachment = "";
 					};
 
 					class Pylons4 : Pylons4
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AGM_01_F";
+						attachment = "";
 					};
 
 					class Pylons5 : Pylons5
 					{
-						attachment = "OPT_PylonMissile_1Rnd_Bomb_03_F";
+						attachment = "";
 					};
 
 					class Pylons6 : Pylons6
 					{
-						attachment = "OPT_PylonMissile_1Rnd_Bomb_03_F";
+						attachment = "";
 					};
 
 					class Pylons7 : Pylons7
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AGM_01_F";
+						attachment = "";
 					};
 
 					class Pylons8 : Pylons8
 					{
-						attachment = "PylonRack_20Rnd_Rocket_03_AP_F";
+						attachment = "";
 					};
 
 					class Pylons9 : Pylons9
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AGM_01_F";
+						attachment = "";
 					};
 
 					class Pylons10 : Pylons10
 					{
-						attachment = "OPT_PylonRack_1Rnd_Missile_AA_03_F";
+						attachment = "";
 					};
 				};
 			};
@@ -1082,10 +1178,10 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		displayName = "To-201 Shikra (Tarn)";
-		fuelCapacity = 500; //2540 //
-		weapons[] = {"OPT_weapon_Fighter_Gun_30mm", "Laserdesignator_pilotCamera", "CMFlareLauncher"};
-		magazines[] = {"OPT_magazine_Fighter02_Gun30mm_AA_x180", "Laserbatteries", "60Rnd_CMFlare_Chaff_Magazine"};
-		hiddenSelectionsTextures[] = {"a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_02_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_00_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa", "a3\data_f\clear_empty.paa"};
+		fuelCapacity = 150; //2540 //
+		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher_Triples"};
+		magazines[] = {"OPT_magazine_Fighter01_Gun20mm_AA_x450",  "OPT_30Rnd_CMFlare_Chaff_Magazine"};
+		//hiddenSelectionsTextures[] = {"a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_02_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_00_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa", "a3\data_f\clear_empty.paa"};
 		disableInventory = 0;
 
 		class Components : Components
@@ -1096,37 +1192,37 @@ class CfgVehicles
 				{
 					class pylonBayCenter1 : pylonBayCenter1
 					{
-						attachment = "OPT_PylonMissile_Missile_AA_R77_INT_x1";
+						attachment = "";
 					};
 
 					class pylonBayCenter2 : pylonBayCenter2
 					{
-						attachment = "OPT_PylonMissile_Missile_AA_R77_INT_x1";
+						attachment = "";
 					};
 
 					class pylonBayCenter3 : pylonBayCenter3
 					{
-						attachment = "OPT_PylonMissile_Bomb_KAB250_x1";
+						attachment = "";
 					};
 
 					class pylonBayLeft1 : pylonBayLeft1
 					{
-						attachment = "OPT_PylonMissile_Missile_AA_R73_x1";
+						attachment = "";
 					};
 
 					class pylonBayLeft2 : pylonBayLeft2
 					{
-						attachment = "OPT_PylonMissile_Missile_AA_R77_x1";
+						attachment = "";
 					};
 
 					class pylonBayRight1 : pylonBayRight1
 					{
-						attachment = "OPT_PylonMissile_Missile_AA_R73_x1";
+						attachment = "";
 					};
 
 					class pylonBayRight2 : pylonBayRight2
 					{
-						attachment = "OPT_PylonMissile_Missile_AA_R77_x1";
+						attachment = "";
 					};
 				};
 			};

@@ -521,7 +521,7 @@ class CfgVehicles
 			{
 				displayName = "Green";
 				factions[] = {"OPT_NATO"};
-				textures[] = {"\opt_vehicles\textures\xian\nato\VTOL_02_EXT01_green_CO.paa", "\opt_vehicles\textures\xian\nato\VTOL_02_EXT02_green_CO.paa", "\opt_vehicles\textures\xian\nato\VTOL_02_EXT03_L_green_CO.paa", "\opt_vehicles\textures\xian\nato\VTOL_02_EXT03_R_green_CO.paa"};
+				textures[] = {"\opt\opt_client\addons\vehicles\textures\xian\nato\VTOL_02_EXT01_green_CO.paa", "\opt\opt_client\addons\vehicles\textures\xian\nato\VTOL_02_EXT02_green_CO.paa", "\opt\opt_client\addons\vehicles\textures\xian\nato\VTOL_02_EXT03_L_green_CO.paa", "\opt\opt_client\addons\vehicles\textures\xian\nato\VTOL_02_EXT03_R_green_CO.paa"};
 			};
 		};
 
