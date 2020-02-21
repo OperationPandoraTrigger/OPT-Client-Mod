@@ -1393,8 +1393,8 @@ class CfgVehicles
 		maximumLoad = 800;
 		driverCanEject = 1;
 		fuelCapacity = 60; // 242 //
-		weapons[] = {};
-		magazines[] = {};
+		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
 		unitInfoType = "RscUnitInfoAir";
 		unitInfoTypeRTD = "RscUnitInfoAirRTDFullDigital";
 		incomingMissileDetectionSystem = "8 + 16";

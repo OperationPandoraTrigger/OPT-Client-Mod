@@ -3664,7 +3664,7 @@ class CfgWeapons
 
 	class OPT_CMFlareLauncher_Triples : CMFlareLauncher_Triples
 	{
-		magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine", "OPT_72Rnd_CMFlare_Chaff_Magazine", "60Rnd_CMFlareMagazine", "120Rnd_CMFlareMagazine", "240Rnd_CMFlareMagazine", "60Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "192Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine"};
+		magazines[] = {"OPT_12Rnd_CMFlare_Chaff_Magazine","OPT_20Rnd_CMFlare_Chaff_Magazine","OPT_30Rnd_CMFlare_Chaff_Magazine", "OPT_72Rnd_CMFlare_Chaff_Magazine", "60Rnd_CMFlareMagazine", "120Rnd_CMFlareMagazine", "240Rnd_CMFlareMagazine", "60Rnd_CMFlare_Chaff_Magazine", "120Rnd_CMFlare_Chaff_Magazine", "240Rnd_CMFlare_Chaff_Magazine", "192Rnd_CMFlare_Chaff_Magazine", "168Rnd_CMFlare_Chaff_Magazine", "300Rnd_CMFlare_Chaff_Magazine"};
 	};
 
 	class rockets_Skyfire;
