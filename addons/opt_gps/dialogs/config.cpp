@@ -141,4 +141,44 @@ class RscTitles
 			};
 		};
 	};
+
+	class DIALOG_GPS_MINIMAP
+	{
+		idd = IDD_GPS_MINIMAP;
+		duration = 1e+007;
+		fadein = 0;
+		fadeout = 0;
+		onLoad = "uiNamespace setVariable ['opt_ui_gps_minimap', _this select 0]";
+		onUnload = "";
+
+		objects[] = { };
+		controls[] = {GPS_Minimap};
+
+		class GPS_Minimap : RscMapControl
+		{
+			idc = IDC_GPS_MINIMAP_BOX;
+			type = 101;
+			style = 48;
+			x = "SafeZoneX + 0.0 * SafezoneW";
+			y = "SafeZoneY + 0.44 * SafeZoneH";
+			w = "0.18 * SafeZoneW";
+			h = "0.25 * SafeZoneH";
+			sizeEx = "0.07 * SafeZoneH";
+			size = "0.07 * SafeZoneH";
+
+			colorBackground[] = { 1.00, 1.00, 1.00, 0.40 };
+
+
+			class LineMarker
+			{
+				lineDistanceMin = 3e-005;
+				lineLengthMin = 5;
+				lineWidthThick = 0.014;
+				lineWidthThin = 0.008;
+				textureComboBoxColor = "#(argb,8,8,3)color(1,1,1,1)";
+			};
+		};	
+	};
+
 };	
+

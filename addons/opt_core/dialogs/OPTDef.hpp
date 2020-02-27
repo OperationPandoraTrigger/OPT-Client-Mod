@@ -19,3 +19,8 @@
 #define IDC_GPS_VEHICLENAME             912
 #define IDC_GPS_SEATCOUNT               913
 #define IDC_GPS_PASSENGERS              914
+
+#define DIALOG_GPS_MINIMAP          	opt_gps_minimap
+#define IDD_GPS_MINIMAP           		915
+#define IDC_GPS_MINIMAP_BOX             916
+
