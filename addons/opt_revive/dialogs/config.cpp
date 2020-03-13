@@ -93,17 +93,17 @@ class RscProgress_OPT
 	h = 0.03;
 };
 
-class DIALOG_REVIVE_BLACKSCREEN
+class opt_revive_blackscreen 
 {
 
-		idd = IDD_REVIVE_BLACKSCREEN;
+		idd = 5000;
 		movingEnable = false;
 
 		class controlsBackground
 		{
-			class opt_revive_OuterBackground: RscFrame
+			class opt_revive_OuterBackground : RscFrame
 			{
-				idc = -1;
+				idc = 5001;
 				type =  CT_STATIC; 
 				style = ST_LEFT;
 				colorText[] = Color_Black;
@@ -115,25 +115,20 @@ class DIALOG_REVIVE_BLACKSCREEN
 				text = "";
 			};
 			
-			class opt_revive_Skull: RscPicture
+			class opt_revive_Skull : RscPicture
 			{
-				idc = -1;
-				type =  CT_STATIC; 
-				style = ST_PICTURE;  
-				colorText[] = {1,1,1,0.15};
-				colorBackground[] = Color_NoColor;
-				font = "PuristaMedium";  
+				idc = 5002;
 				sizeEx = 0.1 * safezoneH;
 				x = 0.3 * safezoneW + safezoneX;
 				w = 0.4 * safezoneW;
 				y = 0.2 * safezoneH + safezoneY;
 				h = 0.6 * safezoneH;
-				text = "opt_revive\bilder\skull.paa";
+				text = "\opt\opt_client\addons\core\bilder\skull.paa";
 			};
 			
-			class opt_revive_WoundedLabel: RscText
+			class opt_revive_WoundedLabel : RscText
 			{
-				idc = -1;
+				idc = 5003;
 				type =  CT_STATIC;
 				style = ST_CENTER;
 				colorText[] = Color_White;
@@ -141,7 +136,7 @@ class DIALOG_REVIVE_BLACKSCREEN
 				font = "PuristaMedium"; 
 				sizeEx = 0.07 * safezoneH;
 				shadow = 1;
-				x = 0.3 * safezoneW + safezoneX; y= 0.25 * safezoneH + safezoneY;
+				x = 0.35 * safezoneW + safezoneX; y= 0.25 * safezoneH + safezoneY;
 				w = 0.4 * safezoneW; h = 0.07 * safezoneH;
 				text = "Sie sind verwundet.";
 			};
@@ -150,36 +145,22 @@ class DIALOG_REVIVE_BLACKSCREEN
 	class controls 
 	{
 
-		class opt_revive_Respawn: RscButton 
+		class opt_revive_Respawn : RscButton 
 		{
-			idc = IDC_REVIVE_BUTTON;
-			x = 0.43 * safezoneW + safezoneX; 
+			idc = 5011;
+			style = ST_CENTER;
+			colorBackground[] = Color_Red;
+			x = 0.40 * safezoneW + safezoneX; 
 			y= 0.75 * safezoneH + safezoneY;
-			w = 0.14 * safezoneW; h = 0.04 * safezoneH;
-			text = "";
+			w = 0.07 * safezoneW; 
+			h = 0.04 * safezoneH;
+			text = "Respwan";
 			action = "";
 		};
 				
-		class opt_revive_ReviveLabel: RscText 
+		class opt_revive_MedicNearLabel : RscText 
 		{
-			idc = IDC_REVIVE_REVIVELABEL;
-			type =  CT_STATIC;
-			style = ST_CENTER;
-			colorText[] = Color_White;
-			colorBackground[] = Color_NoColor;
-			font = "PuristaMedium"; 
-			sizeEx = 0.018 * safezoneH;
-			shadow = 1;
-			x = 0.4 * safezoneW + safezoneX; 
-			y= 0.7 * safezoneH + safezoneY;
-			w = 0.2 * safezoneW; 
-			h = 0.025 * safezoneH;
-			text = "";
-		};
-
-		class opt_revive_MedicNearLabel: RscText  
-		{
-			idc = IDC_REVIVE_MEDICNEARLABEL;
+			idc = 5012;
 			type =  CT_STATIC;
 			style = ST_CENTER;
 			colorText[] = Color_White;
@@ -188,43 +169,50 @@ class DIALOG_REVIVE_BLACKSCREEN
 			sizeEx = 0.023 * safezoneH;
 			shadow = 1;
 			x = 0.4 * safezoneW + safezoneX; 
-			y= 0.8 * safezoneH + safezoneY;
-			w = 0.2 * safezoneW;
-			h = 0.04 * safezoneH;
-			text = "";
+			y= 0.65 * safezoneH + safezoneY;
+			w = 0.2 * safezoneW; 
+			h = 0.025 * safezoneH;
+			text = "Nächster Sani";
 		};
-				
-		class opt_revive_WoundedLabel: RscText  
+
+		class opt_revive_MedicNearLabel_Meter : RscText  
 		{
-			idc = IDC_REVIVE_WOUNDEDLABEL;
+			idc = 5013;
 			type =  CT_STATIC;
 			style = ST_CENTER;
 			colorText[] = Color_White;
 			colorBackground[] = Color_NoColor;
 			font = "PuristaMedium"; 
-			sizeEx = 0.07 * safezoneH;
+			sizeEx = 0.023 * safezoneH;
 			shadow = 1;
-			x = 0.3 * safezoneW + safezoneX; y= 0.25 * safezoneH + safezoneY;
-			w = 0.4 * safezoneW; h = 0.07 * safezoneH;
-			text = "";
+			x = (0.5 * safezoneW + safezoneX) - 0.005; 
+			y= (0.65 * safezoneH + safezoneY) - 0.005;
+			w = (0.2 * safezoneW) + 0.01; 
+			h = (0.03 * safezoneH) + 0.01;
+			text = "500";
 		};
 				
-		class opt_revive_BleedoutBar: RscProgress_OPT 
+		class opt_revive_BleedoutBar : RscProgress_OPT 
 		{
-			idc = IDC_REVIVE_BLEEDOUTBAR;
+			idc = 5015;
 			colorText[] = Color_White;
 			colorBackground[] = Color_Bleedout;
-			x = (0.4 * safezoneW + safezoneX); y= (0.7 * safezoneH + safezoneY);
-			w = (0.2 * safezoneW); h = (0.03 * safezoneH);
+			x = (0.4 * safezoneW + safezoneX); 
+			y= (0.7 * safezoneH + safezoneY);
+			w = (0.2 * safezoneW); 
+			h = (0.03 * safezoneH);
 		};
 
-		class opt_revive_BleedoutBar_Text: RscText
+		class opt_revive_BleedoutBar_Text : RscText
 		{
-			idc = IDC_REVIVE_BLEEDOUTBAR_TEXT;
+			idc = 5016;
 			colorText[] = Color_White;
 			style = ST_FRAME;
-			x = (0.4 * safezoneW + safezoneX) - 0.005; y= (0.7 * safezoneH + safezoneY) - 0.005;
-			w = (0.2 * safezoneW) + 0.01; h = (0.03 * safezoneH) + 0.01;
+			x = 0.5 * safezoneW + safezoneX; 
+			y= 0.75 * safezoneH + safezoneY;
+			w = 0.14 * safezoneW; 
+			h = 0.04 * safezoneH;
+			text = "700";
 		};
 				
 	};

@@ -68,17 +68,6 @@
 #define IDD_GPS_MINIMAP           		915
 #define IDC_GPS_MINIMAP_BOX             916
 
-#define DIALOG_REVIVE_BLACKSCREEN       opt_revive_blackscreen 
-#define IDD_REVIVE_BLACKSCREEN			5000
-
-#define DIALOG_REVIVE_RESPWAN			opt_revive_respawn
-#define IDD_REVIVE_RESPWAN				5010
-#define IDC_REVIVE_BUTTON             	5011
-#define IDC_REVIVE_REVIVELABEL          5012
-#define IDC_REVIVE_MEDICNEARLABEL       5013
-#define IDC_REVIVE_WOUNDEDLABEL			5014
-#define IDC_REVIVE_BLEEDOUTBAR			5015
-#define IDC_REVIVE_BLEEDOUTBAR_TEXT		5016
 
 
 
