@@ -194,7 +194,7 @@ class opt_revive_blackscreen
 				
 		class opt_revive_BleedoutBar : RscProgress_OPT 
 		{
-			idc = 5015;
+			idc = 5014;
 			colorText[] = Color_White;
 			colorBackground[] = Color_Bleedout;
 			x = (0.4 * safezoneW + safezoneX); 
@@ -205,7 +205,7 @@ class opt_revive_blackscreen
 
 		class opt_revive_BleedoutBar_Text : RscText
 		{
-			idc = 5016;
+			idc = 5015;
 			colorText[] = Color_White;
 			style = ST_FRAME;
 			x = 0.5 * safezoneW + safezoneX; 
