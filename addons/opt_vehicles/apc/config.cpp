@@ -767,6 +767,7 @@ class CfgVehicles
 		maximumLoad = 2500;
 		fuelCapacity = 9; // 60 //
 		//#include "\opt\opt_client\addons\vehicles\Fahrzeug-Transport.hpp"
+		hiddenSelectionsTextures[] = {"a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_ghex_CO.paa","a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_ghex_CO.paa","a3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa","A3\armor_f\data\cage_csat_green_CO.paa"};
 
 		class Turrets : Turrets
 		{
