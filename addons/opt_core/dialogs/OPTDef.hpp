@@ -20,6 +20,10 @@
 #define IDC_GPS_SEATCOUNT               913
 #define IDC_GPS_PASSENGERS              914
 
+#define DIALOG_GPS_MINIMAP          	opt_gps_minimap
+#define IDD_GPS_MINIMAP           		915
+#define IDC_GPS_MINIMAP_BOX             916
+
 #define COLOR_BACK						{0.1,0.1,0.1,1}
 #define COLOR_LIST_BACK					{0.2,0.2,0.2,1}
 #define COLOR_LIST_TEXT					{0.2,0.2,0.2,1}
