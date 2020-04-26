@@ -136,7 +136,7 @@ class CfgAmmo
 
 	class OPT_M_Scalpel_AT : M_Scalpel_AT
 	{
-		cost = 10000; // 1000
+		cost = 60000; // 1000
 		irLock = 0; // 1
 	};
 
@@ -166,7 +166,7 @@ class CfgAmmo
 
 	class OPT_Missile_AGM_01_F : Missile_AGM_01_F
 	{
-		cost = 10000; // 1500 //
+		cost = 60000; // 1500 //
 		irLock = 0;						 // 1 //
 		laserLock = 1;					 // 0 //
 		weaponLockSystem = "2 + 4 + 16"; // "2 + 16"//
@@ -221,7 +221,7 @@ class CfgAmmo
 
 	class OPT_Missile_AGM_02_F : Missile_AGM_02_F
 	{
-		cost = 10000; // 1500 //
+		cost = 60000; // 1500 //
 		irLock = 0;						 // 1 //
 		laserLock = 1;					 // 0 //
 		weaponLockSystem = "2 + 4 + 16"; // "2 + 16"//
@@ -283,7 +283,7 @@ class CfgAmmo
 
 	class OPT_M_Zephyr : M_Zephyr
 	{
-		cost = 10000;
+		cost = 2000;
 	};
 
 	class ammo_Missile_AMRAAM_D;
