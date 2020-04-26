@@ -733,7 +733,7 @@ class CfgMagazines
 
 	class OPT_PylonRack_20Rnd_Rocket_03_HE_F : PylonRack_20Rnd_Rocket_03_HE_F
 	{
-		ammo = "Rocket_03_HE_F";
+		ammo = "OPT_Rocket_03_HE_F";
 		displayName = "OPT Tratnyr 20x HE";
 		pylonWeapon = "OPT_Rocket_03_HE_Plane_CAS_02_F";
 	};
@@ -742,7 +742,7 @@ class CfgMagazines
 
 	class OPT_PylonRack_20Rnd_Rocket_03_AP_F : PylonRack_20Rnd_Rocket_03_AP_F
 	{
-		ammo = "Rocket_03_AP_F";
+		ammo = "OPT_Rocket_03_AP_F";
 		displayName = "OPT Tratnyr 20x AP";
 		pylonWeapon = "OPT_Rocket_03_AP_Plane_CAS_02_F";
 	};
@@ -4032,6 +4032,8 @@ class CfgWeapons
 	{
 		showAimCursorInternal = 0;
 		displayName = "Shrieker";
+		magazines[] = {"7Rnd_Rocket_04_HE_F", "PylonRack_7Rnd_Rocket_04_HE_F", "OPT_PylonRack_7Rnd_Rocket_04_HE_F"};
+		
 	};
 
 	class Rocket_04_AP_Plane_CAS_01_F;
@@ -4040,6 +4042,7 @@ class CfgWeapons
 	{
 		showAimCursorInternal = 0;
 		displayName = "Shrieker";
+		magazines[] = {"7Rnd_Rocket_04_AP_F", "PylonRack_7Rnd_Rocket_04_AP_F", "OPT_PylonRack_7Rnd_Rocket_04_AP_F"};
 	};
 
 	class Rocket_03_HE_Plane_CAS_02_F;
@@ -4048,6 +4051,7 @@ class CfgWeapons
 	{
 		showAimCursorInternal = 0;
 		displayName = "Tratnyr";
+		magazines[] = {"20Rnd_Rocket_03_HE_F", "PylonRack_20Rnd_Rocket_03_HE_F", "OPT_PylonRack_20Rnd_Rocket_03_HE_F"};
 	};
 
 	class Rocket_03_AP_Plane_CAS_02_F;
@@ -4056,6 +4060,7 @@ class CfgWeapons
 	{
 		showAimCursorInternal = 0;
 		displayName = "Tratnyr";
+		magazines[] = {"20Rnd_Rocket_03_AP_F", "PylonRack_20Rnd_Rocket_03_AP_F" , "OPT_PylonRack_20Rnd_Rocket_03_AP_F"};
 	};
 
 	class Bomb_03_Plane_CAS_02_F;
