@@ -120,7 +120,7 @@ class CfgAmmo
 
 	class OPT_M_PG_AT : M_PG_AT
 	{
-		cost = 1000; // 500 //
+		cost = 10000; // 500 //
 		irLock = 0; // 1 //
 		laserLock = 1;
 	};
@@ -129,14 +129,14 @@ class CfgAmmo
 
 	class OPT_M_AT : M_AT
 	{
-		cost = 500;
+		cost = 10000;
 	};
 
 	class M_Scalpel_AT;
 
 	class OPT_M_Scalpel_AT : M_Scalpel_AT
 	{
-		cost = 2000; // 1000
+		cost = 60000; // 1000
 		irLock = 0; // 1
 	};
 
@@ -152,21 +152,21 @@ class CfgAmmo
 
 	class OPT_Missile_AA_03_F : Missile_AA_03_F
 	{
-		cost = 1000;
+		cost = 10000;
 	};
 
 	class Missile_AA_04_F;
 
 	class OPT_Missile_AA_04_F : Missile_AA_04_F
 	{
-		cost = 1000;
+		cost = 10000;
 	};
 
 	class Missile_AGM_01_F;
 
 	class OPT_Missile_AGM_01_F : Missile_AGM_01_F
 	{
-		cost = 2500; // 1500 //
+		cost = 60000; // 1500 //
 		irLock = 0;						 // 1 //
 		laserLock = 1;					 // 0 //
 		weaponLockSystem = "2 + 4 + 16"; // "2 + 16"//
@@ -221,7 +221,7 @@ class CfgAmmo
 
 	class OPT_Missile_AGM_02_F : Missile_AGM_02_F
 	{
-		cost = 2500; // 1500 //
+		cost = 60000; // 1500 //
 		irLock = 0;						 // 1 //
 		laserLock = 1;					 // 0 //
 		weaponLockSystem = "2 + 4 + 16"; // "2 + 16"//
@@ -276,7 +276,7 @@ class CfgAmmo
 
 	class OPT_M_Air_AA : M_Air_AA
 	{
-		cost = 1500;
+		cost = 10000;
 	};
 
 	class M_Zephyr;
@@ -290,28 +290,28 @@ class CfgAmmo
 
 	class OPT_ammo_Missile_AMRAAM_D : ammo_Missile_AMRAAM_D
 	{
-		cost = 1500;
+		cost = 10000;
 	};
 
 	class ammo_Missile_BIM9X;
 
 	class OPT_ammo_Missile_BIM9X : ammo_Missile_BIM9X
 	{
-		cost = 1000;
+		cost = 10000;
 	};
 
 	class ammo_Missile_AA_R73;
 
 	class OPT_ammo_Missile_AA_R73 : ammo_Missile_AA_R73
 	{
-		cost = 1000;
+		cost = 10000;
 	};
 
 	class ammo_Missile_AA_R77;
 
 	class OPT_ammo_Missile_AA_R77 : ammo_Missile_AA_R77
 	{
-		cost = 1500;
+		cost = 10000;
 	};
 
 	class Sh_82mm_AMOS;
@@ -346,35 +346,63 @@ class CfgAmmo
 
 	class OPT_Bo_GBU12_LGB : Bo_GBU12_LGB
 	{
-		cost = 1500; // 20000 //
+		cost = 10000; // 20000 //
 	};
 
 	class Bo_GBU12_LGB_MI10;
 
 	class OPT_Bo_GBU12_LGB_MI10 : Bo_GBU12_LGB_MI10
 	{
-		cost = 1500; // 20000 //
+		cost = 10000; // 20000 //
 	};
 
 	class Bomb_04_F;
 
 	class OPT_Bomb_04_F : Bomb_04_F
 	{
-		cost = 1500; // 20000 //
+		cost = 10000; // 20000 //
 	};
 
 	class Bomb_03_F;
 
 	class OPT_Bomb_03_F : Bomb_03_F
 	{
-		cost = 1500; // 20000 //
+		cost = 10000; // 20000 //
 	};
 
 	class R_80mm_HE;
 
 	class OPT_R_80mm_HE : R_80mm_HE
 	{
-		cost = 500;
+		cost = 10000;
+	};
+
+	class Rocket_04_HE_F;
+
+	class OPT_Rocket_04_HE_F : Rocket_04_HE_F 
+	{
+		cost = 10000;
+	};
+
+	class Rocket_04_AP_F;
+
+	class OPT_Rocket_04_AP_F : Rocket_04_AP_F
+	{
+		cost = 10000;
+	};
+
+	class Rocket_03_HE_F;
+
+	class OPT_Rocket_03_HE_F : Rocket_03_HE_F
+	{
+		cost = 10000;
+	};
+
+	class Rocket_03_AP_F;
+
+	class OPT_Rocket_03_AP_F : Rocket_03_AP_F
+	{
+		cost = 10000;
 	};
 	
 };
@@ -681,6 +709,42 @@ class CfgMagazines
 		ammo = "OPT_R_80mm_HE";
 		displayName = "OPT Skyfire 19x";
 		pylonWeapon = "OPT_rockets_Skyfire";
+	};
+
+	class PylonRack_7Rnd_Rocket_04_HE_F;
+
+	class OPT_PylonRack_7Rnd_Rocket_04_HE_F : PylonRack_7Rnd_Rocket_04_HE_F
+	{
+		ammo = "OPT_Rocket_04_HE_F";
+		displayName = "OPT Shrieker 7x HE";
+		pylonWeapon = "OPT_Rocket_04_HE_Plane_CAS_01_F";
+	};
+
+	class PylonRack_7Rnd_Rocket_04_AP_F;
+
+	class OPT_PylonRack_7Rnd_Rocket_04_AP_F : PylonRack_7Rnd_Rocket_04_AP_F
+	{
+		ammo = "OPT_Rocket_04_AP_F";
+		displayName = "OPT Shrieker 7x AP";
+		pylonWeapon = "OPT_Rocket_04_AP_Plane_CAS_01_F";
+	};
+
+	class PylonRack_20Rnd_Rocket_03_HE_F;
+
+	class OPT_PylonRack_20Rnd_Rocket_03_HE_F : PylonRack_20Rnd_Rocket_03_HE_F
+	{
+		ammo = "OPT_Rocket_03_HE_F";
+		displayName = "OPT Tratnyr 20x HE";
+		pylonWeapon = "OPT_Rocket_03_HE_Plane_CAS_02_F";
+	};
+
+	class PylonRack_20Rnd_Rocket_03_AP_F;
+
+	class OPT_PylonRack_20Rnd_Rocket_03_AP_F : PylonRack_20Rnd_Rocket_03_AP_F
+	{
+		ammo = "OPT_Rocket_03_AP_F";
+		displayName = "OPT Tratnyr 20x AP";
+		pylonWeapon = "OPT_Rocket_03_AP_Plane_CAS_02_F";
 	};
 
 	class 1000Rnd_Gatling_30mm_Plane_CAS_01_F;
@@ -3968,6 +4032,8 @@ class CfgWeapons
 	{
 		showAimCursorInternal = 0;
 		displayName = "Shrieker";
+		magazines[] = {"7Rnd_Rocket_04_HE_F", "PylonRack_7Rnd_Rocket_04_HE_F", "OPT_PylonRack_7Rnd_Rocket_04_HE_F"};
+		
 	};
 
 	class Rocket_04_AP_Plane_CAS_01_F;
@@ -3976,6 +4042,7 @@ class CfgWeapons
 	{
 		showAimCursorInternal = 0;
 		displayName = "Shrieker";
+		magazines[] = {"7Rnd_Rocket_04_AP_F", "PylonRack_7Rnd_Rocket_04_AP_F", "OPT_PylonRack_7Rnd_Rocket_04_AP_F"};
 	};
 
 	class Rocket_03_HE_Plane_CAS_02_F;
@@ -3984,6 +4051,7 @@ class CfgWeapons
 	{
 		showAimCursorInternal = 0;
 		displayName = "Tratnyr";
+		magazines[] = {"20Rnd_Rocket_03_HE_F", "PylonRack_20Rnd_Rocket_03_HE_F", "OPT_PylonRack_20Rnd_Rocket_03_HE_F"};
 	};
 
 	class Rocket_03_AP_Plane_CAS_02_F;
@@ -3992,6 +4060,7 @@ class CfgWeapons
 	{
 		showAimCursorInternal = 0;
 		displayName = "Tratnyr";
+		magazines[] = {"20Rnd_Rocket_03_AP_F", "PylonRack_20Rnd_Rocket_03_AP_F" , "OPT_PylonRack_20Rnd_Rocket_03_AP_F"};
 	};
 
 	class Bomb_03_Plane_CAS_02_F;
