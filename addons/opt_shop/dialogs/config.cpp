@@ -268,6 +268,7 @@ class Dialogshopkonfig
 			 y = 0.10;
 			 w = 0.9;
 			 h = 0.9;
+			 colorBackground[] = {0.2, 0.2, 0.2, 0.5};
 		};
 
 		class name : RscFrame
@@ -596,12 +597,13 @@ class Dialogshopkonfig
 		{
 			idc = 22037;
 			style = ST_LEFT;
-			sizeEx = 0.025;
+			sizeEx = 0.035;
 			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
 			x = 0.15;
-			y = 0.58;
-			w = 0.24;
-			h = 0.02;
+			y = 0.56;
+			w = 0.25;
+			h = 0.03;
 			text = "";
 			default = true;
 		};
@@ -609,12 +611,13 @@ class Dialogshopkonfig
 		{
 			idc = 22038;
 			style = ST_LEFT;
-			sizeEx = 0.025;
+			sizeEx = 0.035;
 			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
 			x = 0.15;
-			y = 0.68;
-			w = 0.24;
-			h = 0.02;
+			y = 0.66;
+			w = 0.25;
+			h = 0.03;
 			text = "";
 			default = true;
 		};
@@ -622,12 +625,13 @@ class Dialogshopkonfig
 		{
 			idc = 22039;
 			style = ST_LEFT;
-			sizeEx = 0.025;
+			sizeEx = 0.035;
 			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
 			x = 0.15;
-			y = 0.78;
-			w = 0.24;
-			h = 0.02;
+			y = 0.76;
+			w = 0.25;
+			h = 0.03;
 			text = "";
 			default = true;
 		};
@@ -635,12 +639,13 @@ class Dialogshopkonfig
 		{
 			idc = 22040;
 			style = ST_LEFT;
-			sizeEx = 0.025;
+			sizeEx = 0.035;
 			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
 			x = 0.7;
-			y = 0.58;
-			w = 0.24;
-			h = 0.02;
+			y = 0.56;
+			w = 0.25;
+			h = 0.03;
 			text = "";
 			default = true;
 		};
@@ -648,12 +653,13 @@ class Dialogshopkonfig
 		{
 			idc = 22041;
 			style = ST_LEFT;
-			sizeEx = 0.025;
+			sizeEx = 0.035;
 			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
 			x = 0.7;
-			y = 0.68;
-			w = 0.24;
-			h = 0.02;
+			y = 0.66;
+			w = 0.25;
+			h = 0.03;
 			text = "";
 			default = true;
 		};
@@ -661,12 +667,13 @@ class Dialogshopkonfig
 		{
 			idc = 22042;
 			style = ST_LEFT;
-			sizeEx = 0.025;
+			sizeEx = 0.035;
 			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
 			x = 0.7;
-			y = 0.78;
-			w = 0.24;
-			h = 0.02;
+			y = 0.76;
+			w = 0.25;
+			h = 0.03;
 			text = "";
 			default = true;
 		};
@@ -674,15 +681,29 @@ class Dialogshopkonfig
 		{
 			idc = 22043;
 			style = ST_LEFT;
-			sizeEx = 0.025;
+			sizeEx = 0.035;
 			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
 			x = 0.42;
-			y = 0.78;
-			w = 0.24;
-			h = 0.02;
+			y = 0.76;
+			w = 0.25;
+			h = 0.03;
 			text = "";
 			default = true;
 		};
+		class RscButtonMoveIn: RscButton
+        {
+            idc = 22044;
+            style = ST_CENTER;
+			sizeEx = 0.03;
+			x = 0.42;
+			y = 0.92;
+			w = 0.2;
+			h = 0.05;
+			text = "Fahrzeug besetzten"; 
+            tooltip = "Käufer in das Fahrzeug setzen";
+			action = "";
+        };
 	};
 };
 
