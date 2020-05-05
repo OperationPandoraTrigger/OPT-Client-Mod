@@ -319,7 +319,7 @@ class Dialogshopkonfig
 		class Bild : RscPicture
 		{
 			idc = 22004;
-			x = 0.35;
+			x = 0.40;
 			y = 0.25;
 			w = 0.3;
 			h = 0.3;
