@@ -25,6 +25,7 @@ class RscMapControl;
 class RscButtonMenuOK;
 class RscButtonMenuCancel;
 class IGUIBack;
+class RscShortcutButton;
 
 class RscListBox_OPT 
 {
@@ -102,7 +103,7 @@ class Dialogshopkaufen
 
 		class name : RscFrame
 		{
-			idc = 20001;
+			idc = 20101;
 			style = ST_CENTER;
 			sizeEx = 0.05;
 			colorText[] = COLOR_TEXT;
@@ -113,25 +114,313 @@ class Dialogshopkaufen
 			text = "Shop";
 			default = true;
 		};	
+		class KBB1 : RscPicture
+		{
+			idc = 20102;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.10;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB2 : RscPicture
+		{
+			idc = 20103;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.25;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB3 : RscPicture
+		{
+			idc = 20104;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.40;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB4 : RscPicture
+		{
+			idc = 20105;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.55;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB5 : RscPicture
+		{
+			idc = 20106;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.70;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB6 : RscPicture
+		{
+			idc = 20107;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.85;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB7 : RscPicture
+		{
+			idc = 20108;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.10;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB8 : RscPicture
+		{
+			idc = 20109;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.25;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB9 : RscPicture
+		{
+			idc = 20110;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.40;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB10 : RscPicture
+		{
+			idc = 20111;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.55;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB11 : RscPicture
+		{
+			idc = 20112;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.70;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB12 : RscPicture
+		{
+			idc = 20113;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.85;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB13 : RscPicture
+		{
+			idc = 20114;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.10;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB14 : RscPicture
+		{
+			idc = 20115;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.25;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB15 : RscPicture
+		{
+			idc = 20116;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.40;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB16 : RscPicture
+		{
+			idc = 20117;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.55;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB17 : RscPicture
+		{
+			idc = 20118;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.70;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB18 : RscPicture
+		{
+			idc = 20119;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.85;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB19 : RscPicture
+		{
+			idc = 20120;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.10;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB20 : RscPicture
+		{
+			idc = 20121;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.25;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB21 : RscPicture
+		{
+			idc = 20122;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.40;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB22 : RscPicture
+		{
+			idc = 20123;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.55;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB23 : RscPicture
+		{
+			idc = 20124;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.70;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
+		class KBB24 : RscPicture
+		{
+			idc = 20125;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.85;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+			default = true;
+		};
 	};		
 
     class controls 
 	{
 		class Flagge : RscPicture
 		{
-			idc = 20002;
+			idc = 20001;
 			colorText[] = COLOR_TEXT;
 			colorBackground[] = COLOR_BACK;
 			x = 0.15;
 			y = 0.1;
-			w = 0.39;
-			h = 0.1;
+			w = 0.2;
+			h = 0.2;
 			text = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
 			default = true;
 		};
 		class Kosten : RSCText
 		{
-			idc = 20003;
+			idc = 20002;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -145,20 +434,20 @@ class Dialogshopkaufen
 		};
 		class PadBox : RSCText
 		{
-			idc = 20004;
+			idc = 20003;
 			style = ST_CENTER;
-			sizeEx = 0.05;
+			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
 			colorBackground[] = COLOR_BACK;
 			x = 0.55;
 			y = 0.1;
-			w = 0.38;
-			h = 0.1;
+			w = 0.4;
+			h = 0.08;
 			text = "Box";
 		};
 		class buttonok : RSCButton
 		{
-			idc = 20005;
+			idc = 20004;
 			style = ST_CENTER;
 			sizeEx = 0.03;
 			x = 0.15;
@@ -172,7 +461,7 @@ class Dialogshopkaufen
 		};
 		class buttonAB : RSCButton
 		{
-			idc = 20006;
+			idc = 20005;
 			style = ST_CENTER;
 			sizeEx = 0.03;
 			x = 0.22;
@@ -186,7 +475,7 @@ class Dialogshopkaufen
 		};		
 		class RscButtonMoveIn: RscButton
         {
-            idc = 20007;
+            idc = 20006;
             style = ST_CENTER;
 			sizeEx = 0.03;
 			x = 0.50;
@@ -199,7 +488,7 @@ class Dialogshopkaufen
         };
 		class buttonkonfig : RSCButton
 		{
-			idc = 20008;
+			idc = 20007;
 			style = ST_CENTER;
 			sizeEx = 0.03;
 			x = 0.31;
@@ -214,7 +503,7 @@ class Dialogshopkaufen
 		};
 		class buttonraeumen : RSCButton
 		{
-			idc = 20009;
+			idc = 20008;
 			style = ST_CENTER;
 			sizeEx = 0.03;
 			x = 0.41;
@@ -226,6 +515,355 @@ class Dialogshopkaufen
 			tooltip = "Pad Räumen";
 			action = "";
 			default = true;
+		};
+		class Geld : RSCText
+		{
+			idc = 20009;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.55;
+			y = 0.2;
+			w = 0.4;
+			h = 0.08;
+			text = "10000000";
+		};
+		class KB1 : RSCButton
+		{
+			idc = 20010;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.10;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB2 : RSCButton
+		{
+			idc = 20011;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.25;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB3 : RSCButton
+		{
+			idc = 20012;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.40;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB4 : RSCButton
+		{
+			idc = 20013;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.55;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB5 : RSCButton
+		{
+			idc = 20014;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.70;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB6 : RSCButton
+		{
+			idc = 20015;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.85;
+			y = 0.31;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB7 : RSCButton
+		{
+			idc = 20016;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.10;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB8 : RSCButton
+		{
+			idc = 20017;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.25;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB9 : RSCButton
+		{
+			idc = 20018;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.40;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB10 : RSCButton
+		{
+			idc = 20019;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.55;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB11 : RSCButton
+		{
+			idc = 20020;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.70;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB12 : RSCButton
+		{
+			idc = 20021;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.85;
+			y = 0.46;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB13 : RSCButton
+		{
+			idc = 20022;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.10;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB14 : RSCButton
+		{
+			idc = 20023;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.25;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB15 : RSCButton
+		{
+			idc = 20024;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.40;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB16 : RSCButton
+		{
+			idc = 20025;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.55;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB17 : RSCButton
+		{
+			idc = 20026;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.70;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB18 : RSCButton
+		{
+			idc = 20027;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.85;
+			y = 0.61;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB19 : RSCButton
+		{
+			idc = 20028;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.10;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB20 : RSCButton
+		{
+			idc = 20029;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.25;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB21 : RSCButton
+		{
+			idc = 20030;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.40;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB22 : RSCButton
+		{
+			idc = 20031;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.55;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB23 : RSCButton
+		{
+			idc = 20032;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.70;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
+		};
+		class KB24 : RSCButton
+		{
+			idc = 20033;
+			style = ST_DOWN;
+			size = 0.03;
+			x = 0.85;
+			y = 0.76;
+			w = 0.15;
+			h = 0.15;
+			colorBackground[] = Color_NoColor;
+			text = "360.000 €";
+			tooltip = "";
+			action = "hint ""Good choice!""";
 		};
 	};
 };
