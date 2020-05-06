@@ -88,169 +88,146 @@ class Dialogshopkaufen
 	movingenable = false;
 	onload = "";
 	
-    class controlsBackground
+	class controlsBackground
 	{
-        class IGUIBack_Main: IGUIBack
-        {
-            idc = 20100;
-            x = 0 * GUI_GRID_W + GUI_GRID_X;
-            y = 0 * GUI_GRID_H + GUI_GRID_Y;
-            w = 40 * GUI_GRID_W;
-            h = 25.1 * GUI_GRID_H;
-        };
-        class RscFrame_Main: RscFrame
-        {
-            idc = 20101;
-            text = "Bestellsystem"; 
-            x = 0 * GUI_GRID_W + GUI_GRID_X;
-            y = -0.83 * GUI_GRID_H + GUI_GRID_Y;
-            w = 40 * GUI_GRID_W;
-            h = 26 * GUI_GRID_H;
-            colorText[] = {1,1,1,1};
-            sizeEx = 1.5 * FONTSIZE;
-        };
-        class RscPictureFlag: RscPicture
-        {
-            idc = 20102;
-            text = "#(argb,8,8,3)color(1,1,1,1)";
-            x = 1 * GUI_GRID_W + GUI_GRID_X;
-            y = 1 * GUI_GRID_H + GUI_GRID_Y;
-            w = 8 * GUI_GRID_W;
-            h = 3.5 * GUI_GRID_H;
-        };
-        class RscFrame_Vehicle: RscFrame
-        {
-            idc = 20103;
-            x = 1 * GUI_GRID_W + GUI_GRID_X;
-            y = 5 * GUI_GRID_H + GUI_GRID_Y;
-            w = 38 * GUI_GRID_W;
-            h = 18 * GUI_GRID_H;
-        };
-    };
+		class BACKGROUND3 : IGUIBack
+		{
+			 text = ;
+			 x = 0.10;
+			 y = 0.10;
+			 w = 0.9;
+			 h = 0.9;
+			 colorBackground[] = {0.2, 0.2, 0.2, 0.5};
+		};
+
+		class name : RscFrame
+		{
+			idc = 20001;
+			style = ST_CENTER;
+			sizeEx = 0.05;
+			colorText[] = COLOR_TEXT;
+			x = 0.05;
+			y = 0.00;
+			w = 0.5;
+			h = 0.15;
+			text = "Shop";
+			default = true;
+		};	
+	};		
 
     class controls 
 	{
-        class RscTextBudget: RscText
-        {
-            idc = 20001;
-            text = "Budget: "; 
-            x = 10 * GUI_GRID_W + GUI_GRID_X;
-            y = 1 * GUI_GRID_H + GUI_GRID_Y;
-            w = 29 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
-            colorBackground[] = COLOR_BACK;
-            sizeEx = FONTSIZE;
-        };
- 
-        class RscListboxVehicleList: RscListBox_OPT
-        {
-            idc = 20002;
-            x = 1 * GUI_GRID_W + GUI_GRID_X;
-            y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
-            w = 23 * GUI_GRID_W;
-            h = 16.5 * GUI_GRID_H;
-            onLBSelChanged =  "";
-            sizeEx = FONTSIZE;
-            colorBackground[] = COLOR_BACK;
-            rowHeight = 0.06;
-
-        };
-        class RscTextVehicleInfo: RscStructuredText
-        {
-            idc = 20003;
-            text = "Infobereich..."; 
-            x = 24 * GUI_GRID_W + GUI_GRID_X;
-            y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
-            w = 15 * GUI_GRID_W;
-            h = 16.5 * GUI_GRID_H;
-            sizeEx = FONTSIZE;
-            colorBackground[] = COLOR_BACK;
-        };
-        class RscButtonBuy: RscButton
-        {
-            idc = 20004;
-            text = "Bestellen"; 
-            x = 1.03 * GUI_GRID_W + GUI_GRID_X;
-            y = 23.23 * GUI_GRID_H + GUI_GRID_Y;
-            w = 7.5 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
-            tooltip = "Ausgewähltes Fahrzeug bestellen";
+		class Flagge : RscPicture
+		{
+			idc = 20002;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.15;
+			y = 0.1;
+			w = 0.39;
+			h = 0.1;
+			text = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
+			default = true;
+		};
+		class Kosten : RSCText
+		{
+			idc = 20003;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.71;
+			y = 0.92;
+			w = 0.2;
+			h = 0.05;
+			text = "10000";
+			default = true;
+		};
+		class PadBox : RSCText
+		{
+			idc = 20004;
+			style = ST_CENTER;
+			sizeEx = 0.05;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = COLOR_BACK;
+			x = 0.55;
+			y = 0.1;
+			w = 0.38;
+			h = 0.1;
+			text = "Box";
+		};
+		class buttonok : RSCButton
+		{
+			idc = 20005;
+			style = ST_CENTER;
+			sizeEx = 0.03;
+			x = 0.15;
+			y = 0.92;
+			w = 0.06;
+			h = 0.05;
+			text = "Kaufen";
+			tooltip = "Fahrzeug kaufen";
 			action = "";
-            sizeEx = FONTSIZE;
-        };
-        class RscButtonSell: RscButton
-        {
-            idc = 20005;
-            text = "Verkaufen"; 
-            x = 24.90 * GUI_GRID_W + GUI_GRID_X;
-            y = 23.23 * GUI_GRID_H + GUI_GRID_Y;
-            w = 6.8 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
-            tooltip = "Verkaufe Fahrzeug auf dem Bestell-Pad";
-			action = "";
-            sizeEx = FONTSIZE;
-        };
-         class RscButtonClear: RscButton
-        {
-            idc = 20006;
-            text = "Räumen"; 
-            x = 9 * GUI_GRID_W + GUI_GRID_X;
-            y = 23.23 * GUI_GRID_H + GUI_GRID_Y;
-            w = 7.5 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
-            tooltip = "Löscht alle Fahrzeuge um das Bestell-Pad (kein Verkauf!)";
-			action = "";
-            sizeEx = FONTSIZE;
-            colorBackground[] = Color_DarkRed;
-        };
-		class RscButtonconfig: RscButton
-        {
-            idc = 20007;
-            text = "Konfigurieren"; 
-            x = 17 * GUI_GRID_W + GUI_GRID_X;
-            y = 23.23 * GUI_GRID_H + GUI_GRID_Y;
-            w = 7.5 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
-            tooltip = "Das Ausgewählte Fahrzeug Konfigurieren";
-			action = "";
-            sizeEx = FONTSIZE;
-        };
-        class RscButtonCancel: RscButton
-        {
-            idc = 20008;
-            text = "Schließen"; 
-            x = 32 * GUI_GRID_W + GUI_GRID_X;
-            y = 23.2 * GUI_GRID_H + GUI_GRID_Y;
-            w = 7 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
-            tooltip = "Dialog schliessen";
+			default = true;
+		};
+		class buttonAB : RSCButton
+		{
+			idc = 20006;
+			style = ST_CENTER;
+			sizeEx = 0.03;
+			x = 0.22;
+			y = 0.92;
+			w = 0.08;
+			h = 0.05;
+			text = "Abbrechen";
 			action = "closeDialog 0";
-            sizeEx = FONTSIZE;
-        };
-		class RscTextPadBox: RscText
-        {
-            idc = 20009;
-            text = "BOX: "; 
-            x = 10 * GUI_GRID_W + GUI_GRID_X;
-            y = 3.0 * GUI_GRID_H + GUI_GRID_Y;
-            w = 10 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
-            colorBackground[] = COLOR_BACK;
-            sizeEx = FONTSIZE;
-        };
+			tooltip = "Dialog schliessen";
+			default = true;
+		};		
 		class RscButtonMoveIn: RscButton
         {
-            idc = 20010;
-            text = "Fahrzeug besetzten"; 
-            x = 24 * GUI_GRID_W + GUI_GRID_X;
-            y = 3.0 * GUI_GRID_H + GUI_GRID_Y;
-            w = 15 * GUI_GRID_W;
-            h = 1.5 * GUI_GRID_H;
+            idc = 20007;
+            style = ST_CENTER;
+			sizeEx = 0.03;
+			x = 0.50;
+			y = 0.92;
+			w = 0.2;
+			h = 0.05;
+			text = "Fahrzeug besetzten"; 
             tooltip = "Käufer in das Fahrzeug setzen";
 			action = "";
-            sizeEx = FONTSIZE;
         };
-    };
+		class buttonkonfig : RSCButton
+		{
+			idc = 20008;
+			style = ST_CENTER;
+			sizeEx = 0.03;
+			x = 0.31;
+			y = 0.92;
+			w = 0.09;
+			h = 0.05;
+			colorBackground[] = Color_Green;
+			text = "Konfig";
+			tooltip = "Fahrzeug konfiguieren";
+			action = "";
+			default = true;
+		};
+		class buttonraeumen : RSCButton
+		{
+			idc = 20009;
+			style = ST_CENTER;
+			sizeEx = 0.03;
+			x = 0.41;
+			y = 0.92;
+			w = 0.08;
+			h = 0.05;
+			colorBackground[] = Color_Red;
+			text = "Räumen";
+			tooltip = "Pad Räumen";
+			action = "";
+			default = true;
+		};
+	};
 };
 
 class Dialogshopkonfig
@@ -309,7 +286,7 @@ class Dialogshopkonfig
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
 			colorBackground[] = COLOR_BACK;
-			x = 0.7;
+			x = 0.71;
 			y = 0.92;
 			w = 0.2;
 			h = 0.05;
@@ -494,7 +471,7 @@ class Dialogshopkonfig
 			sizeEx = 0.03;
 			x = 0.15;
 			y = 0.92;
-			w = 0.1;
+			w = 0.06;
 			h = 0.05;
 			text = "Kaufen";
 			tooltip = "Zusammenstellung kaufen";
@@ -506,9 +483,9 @@ class Dialogshopkonfig
 			idc = 22021;
 			style = ST_CENTER;
 			sizeEx = 0.03;
-			x = 0.28;
+			x = 0.22;
 			y = 0.92;
-			w = 0.1;
+			w = 0.08;
 			h = 0.05;
 			text = "Abbrechen";
 			action = "closeDialog 0";
@@ -696,7 +673,7 @@ class Dialogshopkonfig
             idc = 22044;
             style = ST_CENTER;
 			sizeEx = 0.03;
-			x = 0.42;
+			x = 0.50;
 			y = 0.92;
 			w = 0.2;
 			h = 0.05;
