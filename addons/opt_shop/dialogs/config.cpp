@@ -402,6 +402,342 @@ class Dialogshopkaufen
 			text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
 			default = true;
 		};
+		class KBT1 : RSCText
+		{
+			idc = 20126;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.10;
+			y = 0.41;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT2 : RSCText
+		{
+			idc = 20127;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.25;
+			y = 0.41;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT3 : RSCText
+		{
+			idc = 20128;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.40;
+			y = 0.41;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT4 : RSCText
+		{
+			idc = 20129;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.55;
+			y = 0.41;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT5 : RSCText
+		{
+			idc = 20130;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.70;
+			y = 0.41;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT6 : RSCText
+		{
+			idc = 20131;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.85;
+			y = 0.41;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT7 : RSCText
+		{
+			idc = 20131;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.10;
+			y = 0.56;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT8 : RSCText
+		{
+			idc = 20132;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.25;
+			y = 0.56;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT9 : RSCText
+		{
+			idc = 20133;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.40;
+			y = 0.56;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT10 : RSCText
+		{
+			idc = 20134;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.55;
+			y = 0.56;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT11 : RSCText
+		{
+			idc = 20135;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.70;
+			y = 0.56;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT12 : RSCText
+		{
+			idc = 20136;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.85;
+			y = 0.56;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT13 : RSCText
+		{
+			idc = 20137;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.10;
+			y = 0.71;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT14 : RSCText
+		{
+			idc = 20138;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.25;
+			y = 0.71;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT15 : RSCText
+		{
+			idc = 20139;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.40;
+			y = 0.71;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT16 : RSCText
+		{
+			idc = 20140;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.55;
+			y = 0.71;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT17 : RSCText
+		{
+			idc = 20141;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.70;
+			y = 0.71;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT18 : RSCText
+		{
+			idc = 20142;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.85;
+			y = 0.71;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT19 : RSCText
+		{
+			idc = 20143;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.10;
+			y = 0.86;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT20 : RSCText
+		{
+			idc = 20144;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.25;
+			y = 0.86;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT21 : RSCText
+		{
+			idc = 20145;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.40;
+			y = 0.86;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT22 : RSCText
+		{
+			idc = 20146;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.55;
+			y = 0.86;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT23 : RSCText
+		{
+			idc = 20147;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.70;
+			y = 0.86;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
+		class KBT24 : RSCText
+		{
+			idc = 20148;
+			style = ST_CENTER;
+			sizeEx = 0.04;
+			colorText[] = COLOR_TEXT;
+			colorBackground[] = Color_NoColor;
+			x = 0.85;
+			y = 0.86;
+			w = 0.15;
+			h = 0.05;
+			text = "360.000 €";
+			default = true;
+		};
 	};		
 
     class controls 
@@ -429,7 +765,7 @@ class Dialogshopkaufen
 			y = 0.92;
 			w = 0.2;
 			h = 0.05;
-			text = "10000";
+			text = "360.000 €";
 			default = true;
 		};
 		class PadBox : RSCText
@@ -482,7 +818,7 @@ class Dialogshopkaufen
 			y = 0.92;
 			w = 0.2;
 			h = 0.05;
-			text = "Fahrzeug besetzten"; 
+			text = "Fahrzeug besetzen"; 
             tooltip = "Käufer in das Fahrzeug setzen";
 			action = "";
         };
@@ -539,9 +875,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB2 : RSCButton
 		{
@@ -553,9 +889,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB3 : RSCButton
 		{
@@ -567,9 +903,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB4 : RSCButton
 		{
@@ -581,9 +917,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB5 : RSCButton
 		{
@@ -595,9 +931,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB6 : RSCButton
 		{
@@ -609,9 +945,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB7 : RSCButton
 		{
@@ -623,9 +959,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB8 : RSCButton
 		{
@@ -637,9 +973,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB9 : RSCButton
 		{
@@ -651,9 +987,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB10 : RSCButton
 		{
@@ -665,9 +1001,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB11 : RSCButton
 		{
@@ -679,9 +1015,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB12 : RSCButton
 		{
@@ -693,9 +1029,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB13 : RSCButton
 		{
@@ -707,9 +1043,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB14 : RSCButton
 		{
@@ -721,9 +1057,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB15 : RSCButton
 		{
@@ -735,9 +1071,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB16 : RSCButton
 		{
@@ -749,9 +1085,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB17 : RSCButton
 		{
@@ -763,9 +1099,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB18 : RSCButton
 		{
@@ -777,9 +1113,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB19 : RSCButton
 		{
@@ -791,9 +1127,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB20 : RSCButton
 		{
@@ -805,9 +1141,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB21 : RSCButton
 		{
@@ -819,9 +1155,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB22 : RSCButton
 		{
@@ -833,9 +1169,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB23 : RSCButton
 		{
@@ -847,9 +1183,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 		class KB24 : RSCButton
 		{
@@ -861,9 +1197,9 @@ class Dialogshopkaufen
 			w = 0.15;
 			h = 0.15;
 			colorBackground[] = Color_NoColor;
-			text = "360.000 €";
+			text = "T-100 Varsuk";
 			tooltip = "";
-			action = "hint ""Good choice!""";
+			action = "";
 		};
 	};
 };
@@ -1315,7 +1651,7 @@ class Dialogshopkonfig
 			y = 0.92;
 			w = 0.2;
 			h = 0.05;
-			text = "Fahrzeug besetzten"; 
+			text = "Fahrzeug besetzen"; 
             tooltip = "Käufer in das Fahrzeug setzen";
 			action = "";
         };
