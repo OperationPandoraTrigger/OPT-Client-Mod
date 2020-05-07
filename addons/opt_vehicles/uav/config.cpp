@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class opt_vehicles_uav
 	{
-		units[] = {"OPT_B_UAV_02_F", "OPT_B_UAV_02_light_F", "OPT_B_UAV_02_CAS_F", "OPT_O_UAV_02_F", "OPT_O_UAV_02_light_F", "OPT_O_UAV_02_CAS_F", "OPT_B_UAV_01_F", "OPT_O_UAV_01_F"};
+		units[] = {"OPT_B_UAV_02_F", "OPT_B_UAV_02_light_F", "OPT_B_UAV_02_CAS_F", "OPT_O_UAV_02_F", "OPT_O_UAV_02_light_F", "OPT_O_UAV_02_CAS_F", "OPT_B_UAV_01_F", "OPT_O_UAV_01_F","OPT_B_Radar_System_01_F","OPT_O_Radar_System_02_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -684,6 +684,248 @@ class CfgVehicles
 					class Narrow : Narrow
 					{
 						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+	};
+
+	// Radardrohne NATO
+	class  Radar_System_01_base_F;
+
+	class B_Radar_System_01_F : Radar_System_01_base_F
+	{
+		class Components;
+		class SensorTemplateActiveRadar;
+		class SensorTemplateDataLink;
+		class SensorTemplateMan;
+	};
+
+	class OPT_B_Radar_System_01_F : B_Radar_System_01_F
+	{
+		displayName = "Radarersatz";
+		faction = "OPT_NATO_T";
+
+		class Components: Components 
+		{
+			class SensorsManagerComponent 
+			{
+				class Components 
+				{
+					class ManSensorComponent : SensorTemplateMan 
+					{
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 3000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 180;
+						nightRangeCoef = 1;
+						maxFogSeeThrough= -1;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						minSpeedThreshold = 0;
+						animDirection = "cannon_barrel";
+					};
+
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar 
+					{
+						aimDown = -45;
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 100;
+						animDirection = "";
+						color[] = {0,1,1,1};
+						componentType = "ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef = 0.5;
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxGroundNoiseDistance = 200;
+						maxSpeedThreshold = 27.7778;
+						maxTrackableATL = 1e+010;
+						maxTrackableSpeed = 694.444;
+						minSpeedThreshold = 20.8333;
+						minTrackableATL = -1e+010;
+						minTrackableSpeed = -1e+010;
+						typeRecognitionDistance = 6000;
+					};
+
+					class DataLinkSensorComponent: SensorTemplateDataLink 
+					{
+						aimDown = 0;
+						class AirTarget 
+						{
+							maxRange = 16000;
+							minRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "DataLinkSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						class GroundTarget 
+						{
+							maxRange = 16000;
+							minRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+010;
+						maxTrackableSpeed = 1e+010;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+010;
+						minTrackableSpeed = -1e+010;
+						typeRecognitionDistance = 0;
+					};
+				};
+			};
+		};
+	};
+
+	// Radardrohne CSAT
+	class  Radar_System_02_base_F;
+
+	class O_Radar_System_02_F : Radar_System_02_base_F
+	{
+		class Components;
+		class SensorTemplateActiveRadar;
+		class SensorTemplateDataLink;
+		class SensorTemplateMan;
+	};
+
+	class OPT_O_Radar_System_02_F : O_Radar_System_02_F
+	{
+		displayName = "Radarersatz";
+		faction = "OPT_CSAT_T";
+
+		class Components: Components 
+		{
+			class SensorsManagerComponent 
+			{
+				class Components 
+				{
+					class ManSensorComponent : SensorTemplateMan 
+					{
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 3000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 180;
+						nightRangeCoef = 1;
+						maxFogSeeThrough= -1;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						minSpeedThreshold = 0;
+						animDirection = "cannon_barrel";
+					};
+
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar 
+					{
+						aimDown = -45;
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 100;
+						animDirection = "";
+						color[] = {0,1,1,1};
+						componentType = "ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef = 0.5;
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxGroundNoiseDistance = 200;
+						maxSpeedThreshold = 27.7778;
+						maxTrackableATL = 1e+010;
+						maxTrackableSpeed = 694.444;
+						minSpeedThreshold = 20.8333;
+						minTrackableATL = -1e+010;
+						minTrackableSpeed = -1e+010;
+						typeRecognitionDistance = 6000;
+					};
+
+					class DataLinkSensorComponent: SensorTemplateDataLink 
+					{
+						aimDown = 0;
+						class AirTarget 
+						{
+							maxRange = 16000;
+							minRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "DataLinkSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						class GroundTarget 
+						{
+							maxRange = 16000;
+							minRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+010;
+						maxTrackableSpeed = 1e+010;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+010;
+						minTrackableSpeed = -1e+010;
+						typeRecognitionDistance = 0;
 					};
 				};
 			};

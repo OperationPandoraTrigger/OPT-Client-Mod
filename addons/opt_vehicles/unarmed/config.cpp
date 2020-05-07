@@ -2,13 +2,13 @@ class CfgPatches
 {
 	class opt_vehicles_unarmed
 	{
-		units[] = {"OPT4_B_MRAP_01_gmg_F", "OPT4_B_MRAP_01_hmg_F", "OPT4_O_MRAP_02_hmg_F", "OPT4_O_T_MRAP_02_hmg_ghex_F", "OPT4_O_MRAP_02_gmg_F", "OPT4_O_T_MRAP_02_gmg_ghex_F", "OPT4_B_MRAP_03_hmg_F", "OPT4_B_MRAP_03_gmg_F",
+		units[] = {"OPT4_B_MRAP_01_gmg_F","OPT4_B_MRAP_01_gmg_ghex_F", "OPT4_B_MRAP_01_hmg_F","OPT4_B_MRAP_01_hmg_ghex_F", "OPT4_O_MRAP_02_hmg_F", "OPT4_O_T_MRAP_02_hmg_ghex_F", "OPT4_O_MRAP_02_gmg_F", "OPT4_O_T_MRAP_02_gmg_ghex_F", "OPT4_B_MRAP_03_hmg_F", "OPT4_B_MRAP_03_gmg_F",
 				   "OPT4_O_Heli_Attack_02_F", "OPT4_O_Heli_Attack_02_black_F", "OPT4_B_Heli_Attack_01_F", "OPT4_B_Heli_Attack_01_F", "OPT4_B_Heli_Light_01_armed_F", "OPT4_O_Heli_Light_01_armed_F",
 				   "OPT4_O_Heli_light_03_F", " OPT4_O_Heli_light_03_green_F", "OPT4_O_Heli_Light_02_F", "OPT4_O_Heli_Light_02_black_F",
-				   "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Tracked_01_rcws_F", "OPT4_B_APC_Tracked_01_AA_F", "OPT4_B_MBT_01_cannon_F",
-				   "OPT4_B_MBT_01_TUSK_F", "OPT4_B_MBT_01_arty_F", "OPT4_B_MBT_01_mlrs_F", "OPT4_O_APC_Wheeled_02_rcws_F", "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT4_B_APC_tracked_03_cannon_F", "OPT4_O_APC_Tracked_02_cannon_F",
-				   "OPT4_O_T_APC_Tracked_02_cannon_ghex_F", "OPT4_O_APC_Tracked_02_AA_F", "OPT4_O_T_APC_Tracked_02_AA_ghex_F", "OPT4_O_MBT_02_cannon_F", "OPT4_O_T_MBT_02_cannon_ghex_F", "OPT4_O_MBT_02_arty_F", "OPT4_O_T_MBT_02_arty_ghex_F",
-				   "OPT4_O_APC_Wheeled_03_cannon_F", "OPT4_B_MBT_03_cannon_F", "OPT4_B_LSV_01_AT_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F"};
+				   "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Wheeled_01_cannon_ghex_F", "OPT4_B_APC_Tracked_01_rcws_F","OPT4_B_APC_Tracked_01_rcws_ghex_F", "OPT4_B_APC_Tracked_01_AA_F","OPT_B_APC_Tracked_01_AA_ghex_F","OPT_B_APC_Tracked_01_AA_ghex_F2", "OPT4_B_MBT_01_cannon_F","OPT4_B_MBT_01_cannon_ghex_F",
+				   "OPT4_B_MBT_01_TUSK_F","OPT_B_MBT_01_TUSK_ghex_F", "OPT4_B_MBT_01_arty_F","OPT4_B_MBT_01_arty_ghex_F", "OPT4_B_MBT_01_mlrs_F","OPT4_B_MBT_01_mlrs_ghex_F", "OPT4_O_APC_Wheeled_02_rcws_F", "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT4_B_APC_tracked_03_cannon_F","OPT4_B_APC_tracked_03_cannon_ghex_F", "OPT4_O_APC_Tracked_02_cannon_F",
+				   "OPT4_O_T_APC_Tracked_02_cannon_ghex_F", "OPT4_O_APC_Tracked_02_AA_F", "OPT4_O_T_APC_Tracked_02_AA_ghex_F","OPT4_O_T_APC_Tracked_02_AA_ghex_F2", "OPT4_O_MBT_02_cannon_F", "OPT4_O_T_MBT_02_cannon_ghex_F", "OPT4_O_MBT_02_arty_F", "OPT4_O_T_MBT_02_arty_ghex_F",
+				   "OPT4_O_APC_Wheeled_03_cannon_F","OPT4_O_APC_Wheeled_03_cannon_ghex_F", "OPT4_B_MBT_03_cannon_F","OPT4_B_MBT_03_cannon_ghex_F", "OPT4_B_LSV_01_AT_F","OPT4_B_LSV_01_AT_ghex_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F","OPT4_O_LSV_02_AT_GHEX_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -46,6 +46,26 @@ class CfgVehicles
 		};
 	};
 
+	class B_T_MRAP_01_gmg_F;
+
+	class OPT_B_MRAP_01_gmg_ghex_F : B_T_MRAP_01_gmg_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_MRAP_01_gmg_ghex_F : OPT_B_MRAP_01_gmg_ghex_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+			};
+		};
+	};
+
 	//// Hunter HMG ////
 	class B_MRAP_01_hmg_F;
 
@@ -56,6 +76,26 @@ class CfgVehicles
 	};
 
 	class OPT4_B_MRAP_01_hmg_F : OPT_B_MRAP_01_hmg_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+			};
+		};
+	};
+
+	class B_T_MRAP_01_hmg_F;
+
+	class OPT_B_MRAP_01_hmg_ghex_F : B_T_MRAP_01_hmg_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_MRAP_01_hmg_ghex_F : OPT_B_MRAP_01_hmg_ghex_F
 	{
 		class Turrets : Turrets
 		{
@@ -451,7 +491,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		side = 0;
 		crew = "OPT_CSAT_Pilot";
-		hiddenSelectionsTextures[] = {"opt_a3_vehicles\textures\mh9\csat\heli_light_01_csat.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mh9\csat\heli_light_01_csat.paa"};
 	};
 
 	//// WY-55 Hellcat ////
@@ -576,6 +616,25 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_APC_Wheeled_01_cannon_ghex_F : B_APC_Wheeled_01_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_APC_Wheeled_01_cannon_ghex_F : OPT_B_APC_Wheeled_01_cannon_ghex_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+
 	//// IFV-6c Panther ////
 	class B_APC_Tracked_01_rcws_F;
 
@@ -586,6 +645,24 @@ class CfgVehicles
 	};
 
 	class OPT4_B_APC_Tracked_01_rcws_F : OPT_B_APC_Tracked_01_rcws_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	class OPT_B_APC_Tracked_01_rcws_ghex_F : B_APC_Tracked_01_rcws_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_APC_Tracked_01_rcws_ghex_F : OPT_B_APC_Tracked_01_rcws_ghex_F
 	{
 		class Turrets : Turrets
 		{
@@ -618,6 +695,155 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_APC_Tracked_01_AA_ghex_F : B_APC_Tracked_01_AA_F
+	{
+		class Turrets;
+		class MainTurret;
+		class Components;
+		class SensorTemplateActiveRadar;
+		class SensorTemplateDataLink;
+		class SensorTemplateMan;
+	};
+
+	class OPT4_B_APC_Tracked_01_AA_ghex_F : OPT_B_APC_Tracked_01_AA_ghex_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	// Sonderfahrzeug als Radarersatz
+	class OPT4_B_APC_Tracked_01_AA_ghex_F2 : OPT_B_APC_Tracked_01_AA_ghex_F
+	{
+		displayName = "SonderFahrzeug Radarersatz";
+		fuelCapacity = 0; 
+		editorPreview = "\A3\EditorPreviews_F_Sams\Data\Cfgvehicles\B_Radar_System_01_F.jpg";
+		icon = "\A3\Static_F_Sams\Radar_System_01\Data\UI\Radar_System_01_icon_CA.paa";
+		model = "\A3\Static_F_Sams\Radar_System_01\Radar_System_01_F.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"A3\Static_F_Sams\Radar_System_01\Data\Radar_system_01_mat_01_CO.paa","A3\Static_F_Sams\Radar_System_01\Data\Radar_system_01_mat_02_CO.paa"};
+		hiddenUnderwaterSelections[] = {};
+		hiddenUnderwaterSelectionsTextures[] = {};
+
+		class Components: Components 
+		{
+			class SensorsManagerComponent 
+			{
+				class Components 
+				{
+					class ManSensorComponent : SensorTemplateMan 
+					{
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 3000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 180;
+						nightRangeCoef = 1;
+						maxFogSeeThrough= -1;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						minSpeedThreshold = 0;
+						animDirection = "cannon_barrel";
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar 
+					{
+						aimDown = -45;
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 100;
+						animDirection = "";
+						color[] = {0,1,1,1};
+						componentType = "ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef = 0.5;
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxGroundNoiseDistance = 200;
+						maxSpeedThreshold = 27.7778;
+						maxTrackableATL = 1e+010;
+						maxTrackableSpeed = 694.444;
+						minSpeedThreshold = 20.8333;
+						minTrackableATL = -1e+010;
+						minTrackableSpeed = -1e+010;
+						typeRecognitionDistance = 6000;
+					};
+					class DataLinkSensorComponent: SensorTemplateDataLink 
+					{
+						aimDown = 0;
+						class AirTarget 
+						{
+							maxRange = 16000;
+							minRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "DataLinkSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						class GroundTarget 
+						{
+							maxRange = 16000;
+							minRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+010;
+						maxTrackableSpeed = 1e+010;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+010;
+						minTrackableSpeed = -1e+010;
+						typeRecognitionDistance = 0;
+					};
+				};
+			};
+		};
+				
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
 	//// M2A1 Slammer ////
 	class B_MBT_01_cannon_F;
 
@@ -628,6 +854,24 @@ class CfgVehicles
 	};
 
 	class OPT4_B_MBT_01_cannon_F : OPT_B_MBT_01_cannon_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	class OPT_B_MBT_01_cannon_ghex_F : B_MBT_01_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_MBT_01_cannon_ghex_F : OPT_B_MBT_01_cannon_ghex_F
 	{
 		class Turrets : Turrets
 		{
@@ -660,6 +904,24 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_MBT_01_TUSK_ghex_F : B_MBT_01_TUSK_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_MBT_01_TUSK_ghex_F : OPT_B_MBT_01_TUSK_ghex_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
 	//// M4 Scorcher ////
 	class B_MBT_01_arty_F;
 
@@ -681,6 +943,24 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_MBT_01_arty_ghex_F : B_MBT_01_arty_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_MBT_01_arty_ghex_F : OPT_B_MBT_01_arty_ghex_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
 	//// M5 Sandstorm MLRS ////
 	class B_MBT_01_mlrs_F;
 
@@ -691,6 +971,24 @@ class CfgVehicles
 	};
 
 	class OPT4_B_MBT_01_mlrs_F : OPT_B_MBT_01_mlrs_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	class OPT_B_MBT_01_mlrs_ghex_F : B_MBT_01_mlrs_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_MBT_01_mlrs_ghex_F : OPT_B_MBT_01_mlrs_ghex_F
 	{
 		class Turrets : Turrets
 		{
@@ -754,6 +1052,24 @@ class CfgVehicles
 	};
 
 	class OPT4_B_APC_tracked_03_cannon_F : OPT_B_APC_tracked_03_cannon_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	class OPT_B_APC_tracked_03_cannon_ghex_F : OPT_I_APC_tracked_03_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_APC_tracked_03_cannon_ghex_F : OPT_B_APC_tracked_03_cannon_ghex_F
 	{
 		class Turrets : Turrets
 		{
@@ -833,10 +1149,143 @@ class CfgVehicles
 	{
 		class Turrets;
 		class MainTurret;
+		class Components;
+		class SensorTemplateActiveRadar;
+		class SensorTemplateDataLink;
+		class SensorTemplateMan;
+		
 	};
 
 	class OPT4_O_T_APC_Tracked_02_AA_ghex_F : OPT_O_T_APC_Tracked_02_AA_ghex_F
 	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	//Sonderfahrzeug als Radarersatz
+	class OPT4_O_T_APC_Tracked_02_AA_ghex_F2 : OPT_O_T_APC_Tracked_02_AA_ghex_F
+	{
+		displayName = "SonderFahrzeug Radarersatz";
+		fuelCapacity = 0; 
+		faction = "OPT_CSAT_T";
+		editorPreview = "\A3\EditorPreviews_F_Sams\Data\Cfgvehicles\O_Radar_System_02_F.jpg";
+		icon = "\A3\Static_F_Sams\Radar_System_02\Data\UI\Radar_System_02_icon_CA.paa";
+		model = "\A3\Static_F_Sams\Radar_System_02\Radar_System_02_F.p3d";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsMaterials[] = {};
+		hiddenSelectionsTextures[] = {"A3\Static_F_Sams\Radar_System_02\Data\Radar_system_02_mat_01_CO.paa","A3\Static_F_Sams\Radar_System_02\Data\Radar_system_02_mat_02_CO.paa"};
+		hiddenUnderwaterSelections[] = {};
+		hiddenUnderwaterSelectionsTextures[] = {};
+
+		class Components: Components 
+		{
+			class SensorsManagerComponent 
+			{
+				class Components 
+				{
+					class ManSensorComponent : SensorTemplateMan 
+					{
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 3000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 180;
+						nightRangeCoef = 1;
+						maxFogSeeThrough= -1;
+						groundNoiseDistanceCoef = -1;
+						maxGroundNoiseDistance = -1;
+						minSpeedThreshold = 0;
+						animDirection = "cannon_barrel";
+					};
+
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar 
+					{
+						aimDown = -45;
+						class AirTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 100;
+						animDirection = "";
+						color[] = {0,1,1,1};
+						componentType = "ActiveRadarSensorComponent";
+						groundNoiseDistanceCoef = 0.5;
+						class GroundTarget 
+						{
+							maxRange = 2500;
+							minRange = 2500;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxGroundNoiseDistance = 200;
+						maxSpeedThreshold = 27.7778;
+						maxTrackableATL = 1e+010;
+						maxTrackableSpeed = 694.444;
+						minSpeedThreshold = 20.8333;
+						minTrackableATL = -1e+010;
+						minTrackableSpeed = -1e+010;
+						typeRecognitionDistance = 6000;
+					};
+					class DataLinkSensorComponent: SensorTemplateDataLink 
+					{
+						aimDown = 0;
+						class AirTarget 
+						{
+							maxRange = 16000;
+							minRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						allowsMarking = 1;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 360;
+						animDirection = "";
+						color[] = {1,1,1,0};
+						componentType = "DataLinkSensorComponent";
+						groundNoiseDistanceCoef = -1;
+						class GroundTarget 
+						{
+							maxRange = 16000;
+							minRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						maxGroundNoiseDistance = -1;
+						maxSpeedThreshold = 0;
+						maxTrackableATL = 1e+010;
+						maxTrackableSpeed = 1e+010;
+						minSpeedThreshold = 0;
+						minTrackableATL = -1e+010;
+						minTrackableSpeed = -1e+010;
+						typeRecognitionDistance = 0;
+					};
+				};
+			};
+		};
+		
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -938,6 +1387,26 @@ class CfgVehicles
 
 	class OPT4_O_APC_Wheeled_03_cannon_F : OPT_O_APC_Wheeled_03_cannon_F
 	{
+		textureList[] = {"Guerilla_01",0,"Guerilla_02",0,"Guerilla_03",1};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	class OPT_O_APC_Wheeled_03_cannon_ghex_F : OPT_I_APC_Wheeled_03_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_O_APC_Wheeled_03_cannon_ghex_F : OPT_O_APC_Wheeled_03_cannon_ghex_F 
+	{
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -969,6 +1438,24 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_B_MBT_03_cannon_ghex_F : OPT_I_MBT_03_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_B_MBT_03_cannon_ghex_F : OPT_B_MBT_03_cannon_ghex_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
 	class LSV_01_AT_base_F;
 
 	class B_LSV_01_AT_F : LSV_01_AT_base_F
@@ -987,6 +1474,54 @@ class CfgVehicles
 		displayName = "Prowler (AT)";
 		fuelCapacity = 3; // 20 //
 		maximumLoad = 2500;
+		textureList[] = {"Black",0,"Olive",0,"Sand",1};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+
+			class CodRiverTurret : CodRiverTurret
+			{
+			};
+
+			class TopTurret : TopTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+	};
+
+	class OPT4_B_LSV_01_AT_ghex_F : B_LSV_01_AT_F
+	{
+		faction = "OPT_NATO_T";
+		displayName = "Prowler (AT)";
+		fuelCapacity = 3; // 20 //
+		maximumLoad = 2500;
+		textureList[] = {"Black",0,"Olive",1,"Sand",0};
 
 		class TransportMagazines
 		{
@@ -1051,6 +1586,71 @@ class CfgVehicles
 		fuelCapacity = 4; // 20 //
 		maximumLoad = 2500;
 
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class CargoTurret_01 : CargoTurret_01
+			{
+			};
+
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+
+			class CargoTurret_04 : CargoTurret_04
+			{
+			};
+
+			class CargoTurret_05 : CargoTurret_05
+			{
+			};
+
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+	};
+
+	class OPT4_O_LSV_02_AT_GHEX_F : O_LSV_02_AT_F
+	{
+		faction = "OPT_CSAT_T";
+		displayName = "Qilin (AT)";
+		fuelCapacity = 4; // 20 //
+		maximumLoad = 2500;
+
+		textureList[] = {"Black",0,"GreenHex",1,"Arid",0};
+		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
+	
 		class TransportMagazines
 		{
 		};
