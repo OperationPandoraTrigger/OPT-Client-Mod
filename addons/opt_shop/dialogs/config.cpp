@@ -869,7 +869,7 @@ class Dialogshopkaufen
 		{
 			idc = 20010;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.10;
 			y = 0.31;
 			w = 0.15;
@@ -883,7 +883,7 @@ class Dialogshopkaufen
 		{
 			idc = 20011;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.25;
 			y = 0.31;
 			w = 0.15;
@@ -897,7 +897,7 @@ class Dialogshopkaufen
 		{
 			idc = 20012;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.40;
 			y = 0.31;
 			w = 0.15;
@@ -911,7 +911,7 @@ class Dialogshopkaufen
 		{
 			idc = 20013;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.55;
 			y = 0.31;
 			w = 0.15;
@@ -925,7 +925,7 @@ class Dialogshopkaufen
 		{
 			idc = 20014;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.70;
 			y = 0.31;
 			w = 0.15;
@@ -939,7 +939,7 @@ class Dialogshopkaufen
 		{
 			idc = 20015;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.85;
 			y = 0.31;
 			w = 0.15;
@@ -953,7 +953,7 @@ class Dialogshopkaufen
 		{
 			idc = 20016;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.10;
 			y = 0.46;
 			w = 0.15;
@@ -967,7 +967,7 @@ class Dialogshopkaufen
 		{
 			idc = 20017;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.25;
 			y = 0.46;
 			w = 0.15;
@@ -981,7 +981,7 @@ class Dialogshopkaufen
 		{
 			idc = 20018;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.40;
 			y = 0.46;
 			w = 0.15;
@@ -995,7 +995,7 @@ class Dialogshopkaufen
 		{
 			idc = 20019;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.55;
 			y = 0.46;
 			w = 0.15;
@@ -1009,7 +1009,7 @@ class Dialogshopkaufen
 		{
 			idc = 20020;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.70;
 			y = 0.46;
 			w = 0.15;
@@ -1023,7 +1023,7 @@ class Dialogshopkaufen
 		{
 			idc = 20021;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.85;
 			y = 0.46;
 			w = 0.15;
@@ -1037,7 +1037,7 @@ class Dialogshopkaufen
 		{
 			idc = 20022;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.10;
 			y = 0.61;
 			w = 0.15;
@@ -1051,7 +1051,7 @@ class Dialogshopkaufen
 		{
 			idc = 20023;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.25;
 			y = 0.61;
 			w = 0.15;
@@ -1065,7 +1065,7 @@ class Dialogshopkaufen
 		{
 			idc = 20024;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.40;
 			y = 0.61;
 			w = 0.15;
@@ -1079,7 +1079,7 @@ class Dialogshopkaufen
 		{
 			idc = 20025;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.55;
 			y = 0.61;
 			w = 0.15;
@@ -1093,7 +1093,7 @@ class Dialogshopkaufen
 		{
 			idc = 20026;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.70;
 			y = 0.61;
 			w = 0.15;
@@ -1107,7 +1107,7 @@ class Dialogshopkaufen
 		{
 			idc = 20027;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.85;
 			y = 0.61;
 			w = 0.15;
@@ -1121,7 +1121,7 @@ class Dialogshopkaufen
 		{
 			idc = 20028;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.10;
 			y = 0.76;
 			w = 0.15;
@@ -1135,7 +1135,7 @@ class Dialogshopkaufen
 		{
 			idc = 20029;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.25;
 			y = 0.76;
 			w = 0.15;
@@ -1149,7 +1149,7 @@ class Dialogshopkaufen
 		{
 			idc = 20030;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.40;
 			y = 0.76;
 			w = 0.15;
@@ -1163,7 +1163,7 @@ class Dialogshopkaufen
 		{
 			idc = 20031;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.55;
 			y = 0.76;
 			w = 0.15;
@@ -1177,7 +1177,7 @@ class Dialogshopkaufen
 		{
 			idc = 20032;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.70;
 			y = 0.76;
 			w = 0.15;
@@ -1191,7 +1191,7 @@ class Dialogshopkaufen
 		{
 			idc = 20033;
 			style = ST_DOWN;
-			size = 0.03;
+			sizeEx = 0.03;
 			x = 0.85;
 			y = 0.76;
 			w = 0.15;
