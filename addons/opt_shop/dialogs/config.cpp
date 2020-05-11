@@ -488,7 +488,7 @@ class Dialogshopkaufen
 		};
 		class KBT7 : RSCText
 		{
-			idc = 20131;
+			idc = 20132;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -502,7 +502,7 @@ class Dialogshopkaufen
 		};
 		class KBT8 : RSCText
 		{
-			idc = 20132;
+			idc = 20133;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -516,7 +516,7 @@ class Dialogshopkaufen
 		};
 		class KBT9 : RSCText
 		{
-			idc = 20133;
+			idc = 20134;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -530,7 +530,7 @@ class Dialogshopkaufen
 		};
 		class KBT10 : RSCText
 		{
-			idc = 20134;
+			idc = 20135;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -544,7 +544,7 @@ class Dialogshopkaufen
 		};
 		class KBT11 : RSCText
 		{
-			idc = 20135;
+			idc = 20136;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -558,7 +558,7 @@ class Dialogshopkaufen
 		};
 		class KBT12 : RSCText
 		{
-			idc = 20136;
+			idc = 20137;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -572,7 +572,7 @@ class Dialogshopkaufen
 		};
 		class KBT13 : RSCText
 		{
-			idc = 20137;
+			idc = 20138;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -586,7 +586,7 @@ class Dialogshopkaufen
 		};
 		class KBT14 : RSCText
 		{
-			idc = 20138;
+			idc = 20139;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -600,7 +600,7 @@ class Dialogshopkaufen
 		};
 		class KBT15 : RSCText
 		{
-			idc = 20139;
+			idc = 20140;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -614,7 +614,7 @@ class Dialogshopkaufen
 		};
 		class KBT16 : RSCText
 		{
-			idc = 20140;
+			idc = 20141;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -628,7 +628,7 @@ class Dialogshopkaufen
 		};
 		class KBT17 : RSCText
 		{
-			idc = 20141;
+			idc = 20142;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -642,7 +642,7 @@ class Dialogshopkaufen
 		};
 		class KBT18 : RSCText
 		{
-			idc = 20142;
+			idc = 20143;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -656,7 +656,7 @@ class Dialogshopkaufen
 		};
 		class KBT19 : RSCText
 		{
-			idc = 20143;
+			idc = 20144;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -670,7 +670,7 @@ class Dialogshopkaufen
 		};
 		class KBT20 : RSCText
 		{
-			idc = 20144;
+			idc = 20145;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -684,7 +684,7 @@ class Dialogshopkaufen
 		};
 		class KBT21 : RSCText
 		{
-			idc = 20145;
+			idc = 20146;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -698,7 +698,7 @@ class Dialogshopkaufen
 		};
 		class KBT22 : RSCText
 		{
-			idc = 20146;
+			idc = 20147;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -712,7 +712,7 @@ class Dialogshopkaufen
 		};
 		class KBT23 : RSCText
 		{
-			idc = 20147;
+			idc = 20148;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
@@ -726,7 +726,7 @@ class Dialogshopkaufen
 		};
 		class KBT24 : RSCText
 		{
-			idc = 20148;
+			idc = 20149;
 			style = ST_CENTER;
 			sizeEx = 0.04;
 			colorText[] = COLOR_TEXT;
