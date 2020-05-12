@@ -1657,5 +1657,113 @@ class Dialogshopkonfig
         };
 	};
 };
+class DialogVerkaufs
+{
+	idd = 23000;
+	onload = "";
+	movingEnable = true;
+	
+    class controlsBackground
+	{
+        class IGUIBack_Main: IGUIBack
+        {
+            idc = 23001;
+            x = 0 * GUI_GRID_W + GUI_GRID_X;
+            y = 0 * GUI_GRID_H + GUI_GRID_Y;
+            w = 40 * GUI_GRID_W;
+            h = 25.1 * GUI_GRID_H;
+        };
+        class RscFrame_Main: RscFrame
+        {
+            idc = 23002;
+            text = "Bestellsystem"; //--- ToDo: Localize;
+            x = 0 * GUI_GRID_W + GUI_GRID_X;
+            y = -0.83 * GUI_GRID_H + GUI_GRID_Y;
+            w = 40 * GUI_GRID_W;
+            h = 26 * GUI_GRID_H;
+            colorText[] = {1,1,1,1};
+            sizeEx = 1.5 * FONTSIZE;
+        };
+        class RscPictureFlag: RscPicture
+        {
+            idc = 23003;
+            text = "";
+            x = 1 * GUI_GRID_W + GUI_GRID_X;
+            y = 1 * GUI_GRID_H + GUI_GRID_Y;
+            w = 8 * GUI_GRID_W;
+            h = 3.5 * GUI_GRID_H;
+        };
+        class RscFrame_Vehicle: RscFrame
+        {
+            idc = 23004;
+            x = 1 * GUI_GRID_W + GUI_GRID_X;
+            y = 5 * GUI_GRID_H + GUI_GRID_Y;
+            w = 38 * GUI_GRID_W;
+            h = 18 * GUI_GRID_H;
+        };
+    };
+
+    class controls 
+	{
+        class RscTextBudget: RscText
+        {
+            idc = 23100;
+            text = "Budget: ";
+            x = 10 * GUI_GRID_W + GUI_GRID_X;
+            y = 1 * GUI_GRID_H + GUI_GRID_Y;
+            w = 29 * GUI_GRID_W;
+            h = 1.5 * GUI_GRID_H;
+            colorBackground[] = COLOR_BACK;
+            sizeEx = FONTSIZE;
+        };
+        class RscListboxVehicleList: RscListBox_OPT
+        {
+            idc = 23101;
+            x = 1 * GUI_GRID_W + GUI_GRID_X;
+            y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
+            w = 23 * GUI_GRID_W;
+            h = 16.5 * GUI_GRID_H;
+            sizeEx = FONTSIZE;
+            colorBackground[] = COLOR_BACK;
+            rowHeight = 0.06;
+
+        };
+        class RscTextVehicleInfo: RscStructuredText
+        {
+            idc = 23102;
+            text = "Infobereich...";
+            x = 24 * GUI_GRID_W + GUI_GRID_X;
+            y = 6.5 * GUI_GRID_H + GUI_GRID_Y;
+            w = 15 * GUI_GRID_W;
+            h = 16.5 * GUI_GRID_H;
+            sizeEx = FONTSIZE;
+            colorBackground[] = COLOR_BACK;
+        };
+        class RscButtonSell: RscButton
+        {
+            idc = 23103;
+            text = "Verkaufen"; 
+            x = 1.03 * GUI_GRID_W + GUI_GRID_X;
+            y = 23.23 * GUI_GRID_H + GUI_GRID_Y;
+            w = 7.5 * GUI_GRID_W;
+            h = 1.5 * GUI_GRID_H;
+            tooltip = "Verkaufe Fahrzeug auf dem Bestell-Pad";
+			action = "";
+            sizeEx = FONTSIZE;
+        };        
+        class RscButtonCancel: RscButton
+        {
+            idc = 23104;
+            text = "Schließen";
+            x = 32 * GUI_GRID_W + GUI_GRID_X;
+            y = 23.2 * GUI_GRID_H + GUI_GRID_Y;
+            w = 7 * GUI_GRID_W;
+            h = 1.5 * GUI_GRID_H;
+            tooltip = "Dialog schliessen";
+			action = "closeDialog 0";
+            sizeEx = FONTSIZE;
+        };
+    };
+};
 
 
