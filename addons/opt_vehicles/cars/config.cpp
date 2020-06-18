@@ -5,7 +5,7 @@ class CfgPatches
 		units[] = {"OPT_B_MRAP_01_F","OPT_B_MRAP_01_ghex_F", "OPT_B_MRAP_01_gmg_F","OPT_B_MRAP_01_gmg_ghex_F", "OPT_B_MRAP_01_hmg_F","OPT_B_MRAP_01_hmg_ghex_F", "OPT_O_MRAP_02_F", "OPT_O_T_MRAP_02_ghex_F", "OPT_O_MRAP_02_hmg_F", "OPT_O_T_MRAP_02_hmg_ghex_F",
 				   "OPT_O_MRAP_02_gmg_F", "OPT_O_T_MRAP_02_gmg_ghex_F", "OPT_B_MRAP_03_F", "OPT_B_MRAP_03_hmg_F", "OPT_B_MRAP_03_gmg_F", "OPT_B_T_LSV_01_unarmed_F","OPT_B_T_LSV_01_unarmed_ghex_F", "OPT_B_T_LSV_01_armed_F","OPT_B_T_LSV_01_armed_ghex_F",
 				   "OPT_O_T_LSV_02_unarmed_F","OPT_O_T_LSV_02_unarmed_ghex_F", "OPT_O_T_LSV_02_armed_F","OPT_O_T_LSV_02_armed_ghex_F", "OPT_B_Quadbike_01_F","OPT_I_Quadbike_01_F", "OPT_O_Quadbike_01_F", "OPT_O_T_Quadbike_01_ghex_F", "OPT_B_G_Offroad_01_F","OPT_B_G_Offroad_01_ghex_F",
-				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F","OPT_B_G_Offroad_01_armed_ghex_F", "OPT_O_G_Offroad_01_armed_F", "OPT_B_UGV_01_F","OPT_B_UGV_01_ghex_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
+				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F","OPT_B_G_Offroad_01_armed_ghex_F", "OPT_O_G_Offroad_01_armed_F","OPT_I_C_Offroad_02_unarmed_olive_F", "OPT_B_UGV_01_F","OPT_B_UGV_01_ghex_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03",
@@ -1849,6 +1849,22 @@ class CfgVehicles
 		{
 		};
 	};
+
+	//// MB 4WD (Olive) ////
+	class I_C_Offroad_02_unarmed_olive_F;
+
+	class OPT_I_C_Offroad_02_unarmed_olive_F : I_C_Offroad_02_unarmed_olive_F
+	{
+		faction = "OPT_AAF";
+		maximumLoad = 2500;
+		fuelCapacity = 4; // 45 //
+	
+		class TransportItems
+		{
+		};
+	};
+
+
 
 	class UGV_01_base_F : Car_F
 	{
