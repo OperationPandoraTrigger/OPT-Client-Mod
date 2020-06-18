@@ -4,7 +4,7 @@ class CfgPatches
 	{
 		units[] = {"OPT_B_MRAP_01_F","OPT_B_MRAP_01_ghex_F", "OPT_B_MRAP_01_gmg_F","OPT_B_MRAP_01_gmg_ghex_F", "OPT_B_MRAP_01_hmg_F","OPT_B_MRAP_01_hmg_ghex_F", "OPT_O_MRAP_02_F", "OPT_O_T_MRAP_02_ghex_F", "OPT_O_MRAP_02_hmg_F", "OPT_O_T_MRAP_02_hmg_ghex_F",
 				   "OPT_O_MRAP_02_gmg_F", "OPT_O_T_MRAP_02_gmg_ghex_F", "OPT_B_MRAP_03_F", "OPT_B_MRAP_03_hmg_F", "OPT_B_MRAP_03_gmg_F", "OPT_B_T_LSV_01_unarmed_F","OPT_B_T_LSV_01_unarmed_ghex_F", "OPT_B_T_LSV_01_armed_F","OPT_B_T_LSV_01_armed_ghex_F",
-				   "OPT_O_T_LSV_02_unarmed_F","OPT_O_T_LSV_02_unarmed_ghex_F", "OPT_O_T_LSV_02_armed_F","OPT_O_T_LSV_02_armed_ghex_F", "OPT_B_Quadbike_01_F", "OPT_O_Quadbike_01_F", "OPT_O_T_Quadbike_01_ghex_F", "OPT_B_G_Offroad_01_F","OPT_B_G_Offroad_01_ghex_F",
+				   "OPT_O_T_LSV_02_unarmed_F","OPT_O_T_LSV_02_unarmed_ghex_F", "OPT_O_T_LSV_02_armed_F","OPT_O_T_LSV_02_armed_ghex_F", "OPT_B_Quadbike_01_F","OPT_I_Quadbike_01_F", "OPT_O_Quadbike_01_F", "OPT_O_T_Quadbike_01_ghex_F", "OPT_B_G_Offroad_01_F","OPT_B_G_Offroad_01_ghex_F",
 				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F","OPT_B_G_Offroad_01_armed_ghex_F", "OPT_O_G_Offroad_01_armed_F", "OPT_B_UGV_01_F","OPT_B_UGV_01_ghex_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
@@ -1632,6 +1632,17 @@ class CfgVehicles
 		maximumLoad = 800;
 		fuelCapacity = 2; // 30 //
 		textureList[] = {"Olive",1};
+
+		class TransportItems
+		{
+		};
+	};
+
+	class OPT_I_Quadbike_01_F : B_Quadbike_01_F
+	{
+		faction = "OPT_AAF";
+		maximumLoad = 800;
+		fuelCapacity = 2; // 30 //
 
 		class TransportItems
 		{
