@@ -815,6 +815,7 @@ class CfgVehicles
 		class AnimationSources;
 	};
 
+	//// FV-720 Mora ////
 	class OPT_I_APC_tracked_03_cannon_F : I_APC_tracked_03_cannon_F
 	{
 		faction = "OPT_AAF";
