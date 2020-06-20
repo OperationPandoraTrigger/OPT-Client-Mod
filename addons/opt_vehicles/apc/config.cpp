@@ -1804,7 +1804,23 @@ class CfgVehicles
 	};
 
 	//// AWC 301 Nyx (AT) ////
-	class I_LT_01_AT_F;
+	class LT_01_AT_base_F;
+
+	class I_LT_01_AT_F : LT_01_AT_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderOptics;
+		class ViewOptics;
+		class OpticsIn;
+		class ViewGunner;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class AnimationSources;
+		class muzzle_rot;
+		class muzzle_hide;
+	};
 
 	class OPT_I_LT_01_AT_F : I_LT_01_AT_F
 	{
@@ -1839,7 +1855,22 @@ class CfgVehicles
 	};
 
 	//// AWC 303 Nyx (Recon) ////
-	class I_LT_01_scout_F;
+
+	class I_LT_01_scout_F : LT_01_AT_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderOptics;
+		class ViewOptics;
+		class OpticsIn;
+		class ViewGunner;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class AnimationSources;
+		class muzzle_rot;
+		class muzzle_hide;
+	};
 
 	class OPT_I_LT_01_scout_F : I_LT_01_scout_F
 	{
@@ -1871,7 +1902,22 @@ class CfgVehicles
 	};
 
 	//// AWC 302 Nyx (AA) ////
-	class I_LT_01_AA_F;
+	
+	class I_LT_01_AA_F : LT_01_AT_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderOptics;
+		class ViewOptics;
+		class OpticsIn;
+		class ViewGunner;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class AnimationSources;
+		class muzzle_rot;
+		class muzzle_hide;
+	};
 
 	class OPT_I_LT_01_AA_F : I_LT_01_AA_F
 	{

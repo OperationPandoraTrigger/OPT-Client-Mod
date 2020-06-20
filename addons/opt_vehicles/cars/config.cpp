@@ -1638,7 +1638,15 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_Quadbike_01_F : B_Quadbike_01_F
+	class Quadbike_01_base_F : Car_F
+	{
+	};
+
+	class I_Quadbike_01_F : Quadbike_01_base_F
+	{
+	};
+
+	class OPT_I_Quadbike_01_F : I_Quadbike_01_F
 	{
 		faction = "OPT_AAF";
 		maximumLoad = 800;

@@ -8,7 +8,7 @@ class CfgPatches
 				   "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Wheeled_01_cannon_ghex_F", "OPT4_B_APC_Tracked_01_rcws_F","OPT4_B_APC_Tracked_01_rcws_ghex_F", "OPT4_B_APC_Tracked_01_AA_F","OPT_B_APC_Tracked_01_AA_ghex_F","OPT_B_APC_Tracked_01_AA_ghex_F2", "OPT4_B_MBT_01_cannon_F","OPT4_B_MBT_01_cannon_ghex_F",
 				   "OPT4_B_MBT_01_TUSK_F","OPT_B_MBT_01_TUSK_ghex_F", "OPT4_B_MBT_01_arty_F","OPT4_B_MBT_01_arty_ghex_F", "OPT4_B_MBT_01_mlrs_F","OPT4_B_MBT_01_mlrs_ghex_F", "OPT4_O_APC_Wheeled_02_rcws_F", "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT4_B_APC_tracked_03_cannon_F","OPT4_I_APC_tracked_03_cannon_F","OPT4_B_APC_tracked_03_cannon_ghex_F", "OPT4_O_APC_Tracked_02_cannon_F",
 				   "OPT4_O_T_APC_Tracked_02_cannon_ghex_F", "OPT4_O_APC_Tracked_02_AA_F", "OPT4_O_T_APC_Tracked_02_AA_ghex_F","OPT4_O_T_APC_Tracked_02_AA_ghex_F2", "OPT4_O_MBT_02_cannon_F", "OPT4_O_T_MBT_02_cannon_ghex_F", "OPT4_O_MBT_02_arty_F", "OPT4_O_T_MBT_02_arty_ghex_F",
-				   "OPT4_O_APC_Wheeled_03_cannon_F","OPT4_I_APC_Wheeled_03_cannon_F","OPT4_O_APC_Wheeled_03_cannon_ghex_F", "OPT4_B_MBT_03_cannon_F","OPT4_B_MBT_03_cannon_ghex_F", "OPT4_B_LSV_01_AT_F","OPT4_B_LSV_01_AT_ghex_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F","OPT4_O_LSV_02_AT_GHEX_F","OPT4_I_LT_01_AT_F","OPT4_I_LT_01_AA_F"};
+				   "OPT4_O_APC_Wheeled_03_cannon_F","OPT4_I_APC_Wheeled_03_cannon_F","OPT4_O_APC_Wheeled_03_cannon_ghex_F", "OPT4_B_MBT_03_cannon_F","OPT4_B_MBT_03_cannon_ghex_F","OPT4_I_MBT_03_cannon_F", "OPT4_B_LSV_01_AT_F","OPT4_B_LSV_01_AT_ghex_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F","OPT4_O_LSV_02_AT_GHEX_F","OPT4_I_LT_01_AT_F","OPT4_I_LT_01_AA_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -188,6 +188,7 @@ class CfgVehicles
 		};
 	};
 
+	//// Strider HMG ////
 	class OPT_I_MRAP_03_hmg_F;
 
 	class OPT_B_MRAP_03_hmg_F : OPT_I_MRAP_03_hmg_F
@@ -213,8 +214,14 @@ class CfgVehicles
 		};
 	};
 
-	//// Strider HMG ////
-	class OPT4_I_MRAP_03_hmg_F : OPT_I_MRAP_03_hmg_F
+	class OPT_I_MRAP_03_hmg_F2 : OPT_I_MRAP_03_hmg_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderTurret;
+	};
+
+	class OPT4_I_MRAP_03_hmg_F : OPT_I_MRAP_03_hmg_F2
 	{
 		class Turrets : Turrets
 		{
@@ -1120,7 +1127,13 @@ class CfgVehicles
 		};
 	};
 
-	class OPT4_I_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F
+	class OPT_I_APC_tracked_03_cannon_F2 : OPT_I_APC_tracked_03_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F2
 	{
 		class Turrets : Turrets
 		{
@@ -1451,10 +1464,14 @@ class CfgVehicles
 		};
 	};
 
-	class OPT4_I_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F
+	class OPT_I_APC_Wheeled_03_cannon_F2 : OPT_I_APC_Wheeled_03_cannon_F
 	{
-		textureList[] = {"Guerilla_01",0,"Guerilla_02",0,"Guerilla_03",1};
+		class Turrets;
+		class MainTurret;
+	};
 
+	class OPT4_I_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F2
+	{
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1511,6 +1528,24 @@ class CfgVehicles
 	};
 
 	class OPT4_B_MBT_03_cannon_ghex_F : OPT_B_MBT_03_cannon_ghex_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	class OPT_I_MBT_03_cannon_F2 : OPT_I_MBT_03_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F2
 	{
 		class Turrets : Turrets
 		{
@@ -1795,7 +1830,13 @@ class CfgVehicles
 	//// AWC 301 Nyx (AT) ////
 	class OPT_I_LT_01_AT_F;
 
-	class OPT4_I_LT_01_AT_F : OPT_I_LT_01_AT_F
+	class OPT_I_LT_01_AT_F2 : OPT_I_LT_01_AT_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_LT_01_AT_F : OPT_I_LT_01_AT_F2
 	{
 		class Turrets : Turrets
 		{
@@ -1810,7 +1851,13 @@ class CfgVehicles
 	//// AWC 302 Nyx (AA) ////
 	class OPT_I_LT_01_AA_F;
 
-	class OPT4_I_LT_01_AA_F : OPT_I_LT_01_AA_F
+	class OPT_I_LT_01_AA_F2 : OPT_I_LT_01_AA_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_LT_01_AA_F : OPT_I_LT_01_AA_F2
 	{
 		class Turrets : Turrets
 		{
