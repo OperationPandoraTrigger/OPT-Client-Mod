@@ -569,7 +569,7 @@ class CfgVehicles
 
 	class OPT_I_Truck_02_MRL_F : I_Truck_02_MRL_F
 	{
-		displayName = "Zamak MRL";
+		faction = "OPT_AAF";
 
 		class TransportItems
 		{
