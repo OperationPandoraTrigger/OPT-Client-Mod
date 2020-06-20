@@ -27,7 +27,7 @@ class CfgPatches
 					 "OPT_srifle_DMR_06_olive_KHS_BI_snds_F", "OPT_srifle_GM6_camo_LRPS_F", "OPT_srifle_LRR_LRPS_F", "OPT_srifle_LRR_tna_F", "OPT_srifle_LRR_tna_LRPS_F", "OPT_arifle_SPAR_01_blk_F", "OPT_arifle_SPAR_01_blk_C_F", "OPT_arifle_SPAR_01_GL_blk_F", "OPT_arifle_SPAR_02_blk_F",
 					 "OPT_arifle_CTAR_blk_C_F", "OPT_arifle_SPAR_03_blk_F", "OPT_arifle_CTAR_blk_F", "OPT_arifle_CTAR_GL_blk_F", "OPT_arifle_CTARS_blk_F", "OPT_arifle_ARX_blk_F", "OPT_srifle_DMR_07_blk_F", "OPT_launch_B_Titan_F",
 					 "OPT_launch_B_Titan_tna_F", "OPT_launch_B_Titan_short_F", "OPT_launch_B_Titan_short_tna_F", "OPT_launch_O_Titan_F", "OPT_launch_O_Titan_ghex_F", "OPT_launch_O_Titan_short_F",
-					 "OPT_launch_O_Titan_short_ghex_F", "OPT_launch_NLAW_F", "OPT_launch_RPG32_F", "OPT_launch_RPG32_ghex_F", "OPT_launch_MRAWS_olive_rail_F", "OPT_launch_MRAWS_green_rail_F", "OPT_launch_O_Vorona_green_F", "OPT_Laserdesignator", "OPT_Laserdesignator_02"};
+					 "OPT_launch_O_Titan_short_ghex_F", "OPT_launch_NLAW_F", "OPT_launch_RPG32_F", "OPT_launch_RPG32_ghex_F", "OPT_launch_MRAWS_olive_rail_F", "OPT_launch_MRAWS_green_rail_F","OPT_missiles_Firefist", "OPT_launch_O_Vorona_green_F", "OPT_Laserdesignator", "OPT_Laserdesignator_02"};
 
 		requiredVersion = 0.100000;
         version = VERSION;
@@ -3959,6 +3959,13 @@ class CfgWeapons
 	{
 		displayName = "9M135 Vorona";
 		magazineReloadTime = 60;
+	};
+
+	class missiles_Firefist;
+
+	class OPT_missiles_Firefist : missiles_Firefist
+	{
+		canLock = 0; // Disabled
 	};
 
 	class M134_minigun;
