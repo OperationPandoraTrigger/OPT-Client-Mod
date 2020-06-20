@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class opt_vehicles_uav
 	{
-		units[] = {"OPT_B_UAV_02_F", "OPT_B_UAV_02_light_F", "OPT_B_UAV_02_CAS_F", "OPT_O_UAV_02_F", "OPT_O_UAV_02_light_F", "OPT_O_UAV_02_CAS_F", "OPT_B_UAV_01_F", "OPT_O_UAV_01_F","OPT_B_Radar_System_01_F","OPT_O_Radar_System_02_F"};
+		units[] = {"OPT_B_UAV_02_F", "OPT_B_UAV_02_light_F", "OPT_B_UAV_02_CAS_F", "OPT_O_UAV_02_F", "OPT_O_UAV_02_light_F", "OPT_O_UAV_02_CAS_F", "OPT_B_UAV_01_F", "OPT_O_UAV_01_F","OPT_B_Radar_System_01_F","OPT_O_Radar_System_02_F","OPT_I_UAV_02_light_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -179,6 +179,15 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class OPT_I_UAV_02_light_F : OPT_B_UAV_02_light_F
+	{
+		displayName = "MQ-4A Greyhawk (Unbewaffnet)";
+		fuelCapacity = 1000;
+		faction = "OPT_AAF";	
+	};
+
+
 
 	class OPT_B_UAV_02_CAS_F : OPT_B_UAV_02_F
 	{
