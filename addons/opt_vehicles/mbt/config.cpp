@@ -970,10 +970,8 @@ class CfgVehicles
 	class OPT_I_MBT_03_cannon_F : I_MBT_03_cannon_F
 	{
 		faction = "OPT_AAF";
-		displayName = "MBT-52 Kuma";
 		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -1066,7 +1064,7 @@ class CfgVehicles
 		faction = "OPT_NATO_T";
 		crew = "OPT_NATO_Besatzungsmitglied";
 		typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-		//hiddenSelections[] = {"Camo1","Camo2","Camo3","CamoNet"};
-		//hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\nato\TankBodyTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretMGTexture.paa"};
+		hiddenSelections[] = {"Camo1","Camo2","Camo3","CamoNet"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\nato\TankBodyTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretMGTexture.paa"};
 	};
 };
