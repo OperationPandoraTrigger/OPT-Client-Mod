@@ -1913,11 +1913,10 @@ class CfgVehicles
 	class OPT_I_Heli_light_03_F : I_Heli_light_03_dynamicLoadout_F
 	{
 		faction = "OPT_AAF";
-		displayname = "WY-55 Hellcat";
 		maximumLoad = 2500;
 		driverCanEject = 1;
-		weapons[] = {"OPT_M134_minigun", "CMFlareLauncher"};
-		magazines[] = {"5000Rnd_762x51_Yellow_Belt", "168Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"CMFlareLauncher"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 190;			  // 742 //
 		slingLoadMaxCargoMass = 1000; // 2000 //
 
@@ -1929,12 +1928,12 @@ class CfgVehicles
 				{
 					class PylonLeft1 : PylonLeft1
 					{
-						attachment = "OPT_PylonRack_12Rnd_missiles";
+						attachment = "";
 					};
 
 					class PylonRight1 : PylonRight1
 					{
-						attachment = "OPT_PylonRack_12Rnd_missiles";
+						attachment = "";
 					};
 				};
 			};
@@ -2050,7 +2049,6 @@ class CfgVehicles
 	class OPT_O_Heli_light_03_F : OPT_I_Heli_light_03_F
 	{
 		side = 0;
-		displayName = "WY-55 Hellcat (DAR)";
 		faction = "OPT_CSAT";
 		crew = "OPT_CSAT_Pilot";
 		typicalCargo[] = {"OPT_CSAT_Pilot"};
@@ -2067,7 +2065,6 @@ class CfgVehicles
 	class OPT_I_Heli_light_03_Scalpel_F : I_Heli_light_03_dynamicLoadout_F
 	{
 		faction = "OPT_AAF";
-		displayname = "WY-55 Hellcat (Scalpel)";
 		maximumLoad = 2500;
 		driverCanEject = 1;
 		weapons[] = {"OPT_M134_minigun", "CMFlareLauncher"};

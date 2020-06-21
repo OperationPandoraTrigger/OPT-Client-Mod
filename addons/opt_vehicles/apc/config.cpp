@@ -1752,7 +1752,7 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				weapons[] = {"SmokeLauncher", "HMG_127", "OPT_missiles_Firefist"};
-				magazines[] = {"SmokeLauncherMag", "100Rnd_127x99_mag_Tracer_Red","100Rnd_127x99_mag_Tracer_Red","100Rnd_127x99_mag_Tracer_Red","100Rnd_127x99_mag_Tracer_Red", "2Rnd_127mm_Firefist_missiles", "2Rnd_127mm_Firefist_missiles"};
+				magazines[] = {"SmokeLauncherMag", "500Rnd_127x99_mag","500Rnd_127x99_mag", "2Rnd_127mm_Firefist_missiles", "2Rnd_127mm_Firefist_missiles"};
 
 				class ViewOptics : ViewOptics
 				{
@@ -1852,7 +1852,7 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				weapons[] = {"SmokeLauncher", "HMG_127", "missiles_SAAMI"};
-				magazines[] = {"SmokeLauncherMag", "100Rnd_127x99_mag_Tracer_Red","100Rnd_127x99_mag_Tracer_Red","100Rnd_127x99_mag_Tracer_Red","100Rnd_127x99_mag_Tracer_Red", "4Rnd_70mm_SAAMI_missiles", "4Rnd_70mm_SAAMI_missiles"};
+				magazines[] = {"SmokeLauncherMag","500Rnd_127x99_mag","500Rnd_127x99_mag", "4Rnd_70mm_SAAMI_missiles", "4Rnd_70mm_SAAMI_missiles"};
 
 				class ViewOptics : ViewOptics
 				{
