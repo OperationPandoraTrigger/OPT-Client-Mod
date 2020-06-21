@@ -1580,6 +1580,8 @@ class CfgVehicles
 		};
 	};
 
+	//// Prowler (AT) ////
+
 	class LSV_01_AT_base_F;
 
 	class B_LSV_01_AT_F : LSV_01_AT_base_F
@@ -1686,7 +1688,23 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_LSV_02_AT_F;
+	//// Qilin (AT) ////
+	class O_LSV_02_AT_F;
+
+	class OPT_O_LSV_02_AT_F : O_LSV_02_AT_F
+	{
+		class Turrets;
+		class CargoTurret_01;
+		class CargoTurret_02;
+		class CargoTurret_03;
+		class CargoTurret_04;
+		class CargoTurret_05;
+		class MainTurret;
+		class ViewOptics;
+		class OpticsIn;
+		class Narrow;
+		class Wide;
+	};
 
 	class OPT4_O_LSV_02_AT_F : OPT_O_LSV_02_AT_F
 	{
