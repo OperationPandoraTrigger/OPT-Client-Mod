@@ -766,7 +766,6 @@ class CfgVehicles
 		displayName = "MSE-3 Marid";
 		maximumLoad = 2500;
 		fuelCapacity = 9; // 60 //
-		//#include "\opt\opt_client\addons\vehicles\Fahrzeug-Transport.hpp"
 		hiddenSelectionsTextures[] = {"a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_ghex_CO.paa","a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_ghex_CO.paa","a3\Data_F_Exp\Vehicles\Turret_ghex_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa","A3\armor_f\data\cage_csat_green_CO.paa"};
 
 		class Turrets : Turrets
@@ -822,7 +821,6 @@ class CfgVehicles
 		displayName = "FV-720 Mora";
 		maximumLoad = 2500;
 		fuelCapacity = 5; // 60 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class TransportMagazines
 		{
@@ -840,8 +838,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_30mm", "LMG_coax"};
-				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "1000Rnd_762x51_Belt_Yellow", "1000Rnd_762x51_Belt_Yellow"};
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt"};
 
 				class Turrets : Turrets
 				{
@@ -899,21 +897,6 @@ class CfgVehicles
 						visionMode[] = {"Normal", "NVG"};
 					};
 				};
-			};
-		};
-
-		class AnimationSources : AnimationSources
-		{
-			class muzzle_hide
-			{
-				source = "reload";
-				weapon = "OPT_autocannon_30mm";
-			};
-
-			class muzzle_rot
-			{
-				source = "ammorandom";
-				weapon = "OPT_autocannon_30mm";
 			};
 		};
 	};
@@ -964,17 +947,15 @@ class CfgVehicles
 	class OPT_O_APC_Tracked_02_cannon_F : O_APC_Tracked_02_cannon_F
 	{
 		faction = "OPT_CSAT";
-		displayname = "BTR-K Kamysh (Titan)";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_M200", "OPT_missiles_titan"};
-				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Green", "60Rnd_30mm_APFSDS_shells_Tracer_Green", "1000Rnd_65x39_Belt_Green", "2Rnd_GAT_missiles", "2Rnd_GAT_missiles"};
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt", "2Rnd_GAT_missiles"};
 
 				class Turrets : Turrets
 				{
@@ -1066,20 +1047,6 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
-		};
-	};
-
-	class OPT_O_APC_Tracked_02_cannon_light_F : OPT_O_APC_Tracked_02_cannon_F
-	{
-		displayname = "BTR-K Kamysh";
-
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_M200"};
-				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Green", "60Rnd_30mm_APFSDS_shells_Tracer_Green", "1000Rnd_65x39_Belt_Green"};
-			};
 		};
 	};
 
@@ -1090,17 +1057,15 @@ class CfgVehicles
 	class OPT_O_T_APC_Tracked_02_cannon_ghex_F : O_T_APC_Tracked_02_cannon_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayname = "BTR-K Kamysh (Titan)";
 		maximumLoad = 2500;
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_M200", "OPT_missiles_titan"};
-				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Green", "60Rnd_30mm_APFSDS_shells_Tracer_Green", "1000Rnd_65x39_Belt_Green", "2Rnd_GAT_missiles", "2Rnd_GAT_missiles"};
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt", "2Rnd_GAT_missiles"};
 
 				class Turrets : Turrets
 				{
@@ -1192,20 +1157,6 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
-		};
-	};
-
-	class OPT_O_T_APC_Tracked_02_cannon_ghex_light_F : OPT_O_T_APC_Tracked_02_cannon_ghex_F
-	{
-		displayname = "BTR-K Kamysh";
-
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
-			{
-				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_M200"};
-				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Green", "60Rnd_30mm_APFSDS_shells_Tracer_Green", "1000Rnd_65x39_Belt_Green"};
-			};
 		};
 	};
 
@@ -1458,7 +1409,6 @@ class CfgVehicles
 	class OPT_I_APC_Wheeled_03_cannon_F : I_APC_Wheeled_03_cannon_F
 	{
 		faction = "OPT_AAF";
-		displayName = "AFV-4 Gorgon";
 		maximumLoad = 2500;
 		fuelCapacity = 9; // 60 //
 
@@ -1466,8 +1416,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"autocannon_30mm_CTWS", "LMG_M200", "missiles_titan"};
-				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "1000Rnd_65x39_Belt_Yellow", "2Rnd_GAT_missiles"};
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt", "2Rnd_GAT_missiles"};
 
 				class Turrets : Turrets
 				{
@@ -1525,6 +1475,27 @@ class CfgVehicles
 						visionMode[] = {"Normal", "NVG"};
 					};
 				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
+			};
+
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
 			};
 		};
 
@@ -1553,8 +1524,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_40mm_CTWS", "LMG_M200"};
-				magazines[] = {"60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "40Rnd_40mm_APFSDS_Tracer_Green_shells", "40Rnd_40mm_APFSDS_Tracer_Green_shells", "2000Rnd_65x39_belt"};
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt", "2Rnd_GAT_missiles"};
 
 				class Turrets : Turrets
 				{
@@ -1617,16 +1588,25 @@ class CfgVehicles
 
 		class AnimationSources : AnimationSources
 		{
-			class muzzle_rot : muzzle_rot
+			class Missiles_revolving
 			{
-				weapon = "OPT_autocannon_40mm_CTWS";
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
 			};
 
-			class muzzle_hide : muzzle_hide
+			class muzzle_hide
 			{
-				weapon = "OPT_autocannon_40mm_CTWS";
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
 			};
 		};
+
 	};
 
 	class OPT_O_APC_Wheeled_03_cannon_ghex_F : OPT_I_APC_Wheeled_03_cannon_F
@@ -1643,8 +1623,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_40mm_CTWS", "LMG_M200"};
-				magazines[] = {"60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "40Rnd_40mm_APFSDS_Tracer_Green_shells", "40Rnd_40mm_APFSDS_Tracer_Green_shells", "2000Rnd_65x39_belt"};
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt", "2Rnd_GAT_missiles"};
 
 				class Turrets : Turrets
 				{
@@ -1707,100 +1687,25 @@ class CfgVehicles
 
 		class AnimationSources : AnimationSources
 		{
-			class muzzle_rot : muzzle_rot
+			class Missiles_revolving
 			{
-				weapon = "OPT_autocannon_40mm_CTWS";
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
 			};
 
-			class muzzle_hide : muzzle_hide
+			class muzzle_hide
 			{
-				weapon = "OPT_autocannon_40mm_CTWS";
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
 			};
-		};
-	};
 
-	class OPT_O_APC_Wheeled_03_cannon_light_F : OPT_O_APC_Wheeled_03_cannon_F
-	{
-		displayName = "AFV-4 Gorgon (Leicht)";
-
-		class Turrets : Turrets
-		{
-			class MainTurret : MainTurret
+			class muzzle_rot
 			{
-				weapons[] = {"OPT_autocannon_40mm_CTWS_HE", "LMG_M200"};
-				magazines[] = {"60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "60Rnd_40mm_GPR_Tracer_Green_shells", "2000Rnd_65x39_belt"};
-
-				class Turrets : Turrets
-				{
-					class CommanderOptics : CommanderOptics
-					{
-						class ViewGunner : ViewGunner
-						{
-							visionMode[] = {"Normal", "NVG"};
-						};
-
-						class ViewOptics : ViewOptics
-						{
-							visionMode[] = {"Normal", "NVG"};
-						};
-
-						class OpticsIn : OpticsIn
-						{
-							class Wide : Wide
-							{
-								visionMode[] = {"Normal", "NVG"};
-							};
-
-							class Medium : Medium
-							{
-								visionMode[] = {"Normal", "NVG"};
-							};
-
-							class Narrow : Narrow
-							{
-								visionMode[] = {"Normal", "NVG"};
-							};
-						};
-					};
-				};
-
-				class ViewOptics : ViewOptics
-				{
-					visionMode[] = {"Normal", "NVG"};
-				};
-
-				class OpticsIn : OpticsIn
-				{
-					class Wide : Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-
-					class Medium : Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-
-					class Narrow : Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-				};
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
 			};
 		};
 
-		class AnimationSources : AnimationSources
-		{
-			class muzzle_rot : muzzle_rot
-			{
-				weapon = "OPT_autocannon_40mm_CTWS_HE";
-			};
-
-			class muzzle_hide : muzzle_hide
-			{
-				weapon = "OPT_autocannon_40mm_CTWS_HE";
-			};
-		};
 	};
 
 	//// AWC 301 Nyx (AT) ////
