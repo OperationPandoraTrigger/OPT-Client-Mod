@@ -1856,7 +1856,9 @@ class CfgVehicles
 
 	//// AWC 303 Nyx (Recon) ////
 
-	class I_LT_01_scout_F : LT_01_AT_base_F
+	class LT_01_scout_base_F;
+	
+	class I_LT_01_scout_F : LT_01_scout_base_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1902,8 +1904,9 @@ class CfgVehicles
 	};
 
 	//// AWC 302 Nyx (AA) ////
+	class LT_01_AA_base_F;
 	
-	class I_LT_01_AA_F : LT_01_AT_base_F
+	class I_LT_01_AA_F : LT_01_AA_base_F
 	{
 		class Turrets;
 		class MainTurret;

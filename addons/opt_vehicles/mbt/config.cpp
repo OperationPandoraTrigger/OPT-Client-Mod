@@ -3,7 +3,7 @@ class CfgPatches
 	class opt_vehicles_mbt
 	{
 		units[] = {"OPT_B_MBT_01_cannon_F","OPT_B_MBT_01_cannon_ghex_F", "OPT_B_MBT_01_TUSK_F","OPT_B_MBT_01_TUSK_ghex_F", "OPT_B_MBT_01_arty_F","OPT_B_MBT_01_arty_ghex_F", "OPT_B_MBT_01_mlrs_F","OPT_B_MBT_01_mlrs_ghex_F",
-				   "OPT_O_MBT_02_cannon_F", "OPT_O_T_MBT_02_cannon_ghex_F", "OPT_O_MBT_02_arty_F", "OPT_O_T_MBT_02_arty_ghex_F", "OPT_B_MBT_03_cannon_F","OPT_B_MBT_03_cannon_ghex_F"};
+				   "OPT_O_MBT_02_cannon_F", "OPT_O_T_MBT_02_cannon_ghex_F", "OPT_O_MBT_02_arty_F", "OPT_O_T_MBT_02_arty_ghex_F", "OPT_B_MBT_03_cannon_F","OPT_B_MBT_03_cannon_ghex_F","OPT_O_MBT_04_cannon_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_armor_f_slammer", "a3_armor_f_t100k", "a3_armor_f_amv"};
@@ -749,6 +749,110 @@ class CfgVehicles
 		fuelCapacity = 12; // 75 //
 		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	class MBT_04_base_F : Tank_F
+	{
+	};
+
+	class MBT_04_cannon_base_F : MBT_04_base_F
+	{
+	};
+
+	class O_MBT_04_cannon_F : MBT_04_cannon_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderOptics;
+		class ViewOptics;
+		class OpticsIn;
+		class ViewGunner;
+		class Wide;
+		class Medium;
+		class Narrow;
+	};
+
+	//// T-140 Angara ////
+	class OPT_O_MBT_04_cannon_F : O_MBT_04_cannon_F
+	{
+		faction = "OPT_CSAT";
+		maximumLoad = 800;
+		fuelCapacity = 12; // 75 //
+	
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret

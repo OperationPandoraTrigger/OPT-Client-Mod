@@ -4,8 +4,8 @@ class CfgPatches
 	{
 		units[] = {"OPT_B_MRAP_01_F","OPT_B_MRAP_01_ghex_F", "OPT_B_MRAP_01_gmg_F","OPT_B_MRAP_01_gmg_ghex_F", "OPT_B_MRAP_01_hmg_F","OPT_B_MRAP_01_hmg_ghex_F", "OPT_O_MRAP_02_F", "OPT_O_T_MRAP_02_ghex_F", "OPT_O_MRAP_02_hmg_F", "OPT_O_T_MRAP_02_hmg_ghex_F",
 				   "OPT_O_MRAP_02_gmg_F", "OPT_O_T_MRAP_02_gmg_ghex_F", "OPT_B_MRAP_03_F", "OPT_B_MRAP_03_hmg_F", "OPT_B_MRAP_03_gmg_F", "OPT_B_T_LSV_01_unarmed_F","OPT_B_T_LSV_01_unarmed_ghex_F", "OPT_B_T_LSV_01_armed_F","OPT_B_T_LSV_01_armed_ghex_F",
-				   "OPT_O_T_LSV_02_unarmed_F","OPT_O_T_LSV_02_unarmed_ghex_F", "OPT_O_T_LSV_02_armed_F","OPT_O_T_LSV_02_armed_ghex_F", "OPT_B_Quadbike_01_F","OPT_I_Quadbike_01_F", "OPT_O_Quadbike_01_F", "OPT_O_T_Quadbike_01_ghex_F", "OPT_B_G_Offroad_01_F","OPT_B_G_Offroad_01_ghex_F",
-				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F","OPT_B_G_Offroad_01_armed_ghex_F", "OPT_O_G_Offroad_01_armed_F","OPT_I_C_Offroad_02_unarmed_olive_F","OPT_I_C_Offroad_02_LMG_F","OPT_I_C_Offroad_02_AT_F", "OPT_B_UGV_01_F","OPT_B_UGV_01_ghex_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F"};
+				   "OPT_O_T_LSV_02_unarmed_F","OPT_O_T_LSV_02_unarmed_ghex_F", "OPT_O_T_LSV_02_armed_F","OPT_O_T_LSV_02_armed_ghex_F","OPT_O_LSV_02_AT_F", "OPT_B_Quadbike_01_F","OPT_I_Quadbike_01_F", "OPT_O_Quadbike_01_F", "OPT_O_T_Quadbike_01_ghex_F", "OPT_B_G_Offroad_01_F","OPT_B_G_Offroad_01_ghex_F",
+				   "OPT_O_G_Offroad_01_F","OPT_O_G_Offroad_01_ghex_F", "OPT_B_G_Offroad_01_armed_F","OPT_B_G_Offroad_01_armed_ghex_F", "OPT_O_G_Offroad_01_armed_F","OPT_I_C_Offroad_02_unarmed_F","OPT_I_C_Offroad_02_LMG_F","OPT_I_C_Offroad_02_AT_F", "OPT_B_UGV_01_F","OPT_B_UGV_01_ghex_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F","OPT_I_UGV_01_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03",
@@ -1606,6 +1606,143 @@ class CfgVehicles
 		};
 	};
 
+	class LSV_02_AT_base_F;
+
+	class O_LSV_02_AT_F : LSV_02_AT_base_F
+	{
+		class Turrets;
+		class CargoTurret_01;
+		class CargoTurret_02;
+		class CargoTurret_03;
+		class CargoTurret_04;
+		class CargoTurret_05;
+		class MainTurret;
+		class ViewOptics;
+		class OpticsIn;
+		class Narrow;
+		class Wide;
+	};
+
+	class OPT_O_LSV_02_AT_F : O_LSV_02_AT_F
+	{
+		faction = "OPT_CSAT";
+		fuelCapacity = 4; // 20 //
+		maximumLoad = 2500;
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class CargoTurret_01 : CargoTurret_01
+			{
+			};
+
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+
+			class CargoTurret_04 : CargoTurret_04
+			{
+			};
+
+			class CargoTurret_05 : CargoTurret_05
+			{
+			};
+
+			class MainTurret : MainTurret
+			{
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+	};
+
+	class OPT_O_LSV_02_AT_GHEX_F : O_LSV_02_AT_F
+	{
+		faction = "OPT_CSAT_T";
+		fuelCapacity = 4; // 20 //
+		maximumLoad = 2500;
+
+		textureList[] = {"Black",0,"GreenHex",1,"Arid",0};
+		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
+	
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class CargoTurret_01 : CargoTurret_01
+			{
+			};
+
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+
+			class CargoTurret_04 : CargoTurret_04
+			{
+			};
+
+			class CargoTurret_05 : CargoTurret_05
+			{
+			};
+
+			class MainTurret : MainTurret
+			{
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+	};
+
 	class Quadbike_01_base_F : Car_F
 	{
 	};
@@ -1636,10 +1773,6 @@ class CfgVehicles
 		class TransportItems
 		{
 		};
-	};
-
-	class Quadbike_01_base_F : Car_F
-	{
 	};
 
 	class I_Quadbike_01_F : Quadbike_01_base_F
@@ -1858,15 +1991,17 @@ class CfgVehicles
 		};
 	};
 
-	//// MB 4WD (Olive) ////
-	class I_C_Offroad_02_unarmed_olive_F;
+	//// MB 4WD ////
+	class I_C_Offroad_02_unarmed_F;
 
-	class OPT_I_C_Offroad_02_unarmed_olive_F : I_C_Offroad_02_unarmed_olive_F
+	class OPT_I_C_Offroad_02_unarmed_F : I_C_Offroad_02_unarmed_F
 	{
 		faction = "OPT_AAF";
 		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
-	
+		textureList[] = {"Brown",0,"Olive",1};
+		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
+			
 		class TransportItems
 		{
 		};
@@ -1880,6 +2015,8 @@ class CfgVehicles
 		faction = "OPT_AAF";
 		fuelCapacity = 3; // 45 //
 		maximumLoad = 2500;
+		textureList[] = {"Brown",0,"Olive",1};
+		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
 
 		class TransportMagazines
 		{
@@ -1902,6 +2039,8 @@ class CfgVehicles
 		faction = "OPT_AAF";
 		fuelCapacity = 3; // 45 //
 		maximumLoad = 2500;
+		textureList[] = {"Brown",0,"Olive",1};
+		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
 
 		class TransportMagazines
 		{
@@ -1956,6 +2095,20 @@ class CfgVehicles
 		{
 		};
 	};
+
+	class I_UGV_01_F;
+
+	class OPT_I_UGV_01_F : I_UGV_01_F
+	{
+		faction = "OPT_AAF";
+		maximumLoad = 2500;
+		fuelCapacity = 50; // 4500 //
+
+		class TransportItems
+		{
+		};
+	};
+
 
 	class O_UGV_01_F : UGV_01_base_F
 	{

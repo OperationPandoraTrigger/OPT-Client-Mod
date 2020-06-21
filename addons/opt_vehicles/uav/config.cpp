@@ -184,7 +184,8 @@ class CfgVehicles
 	{
 		displayName = "MQ-4A Greyhawk (Unbewaffnet)";
 		fuelCapacity = 1000;
-		faction = "OPT_AAF";	
+		faction = "OPT_AAF";
+		side = 2;	
 	};
 
 

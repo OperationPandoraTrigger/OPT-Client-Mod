@@ -8,7 +8,7 @@ class CfgPatches
 				   "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Wheeled_01_cannon_ghex_F", "OPT4_B_APC_Tracked_01_rcws_F","OPT4_B_APC_Tracked_01_rcws_ghex_F", "OPT4_B_APC_Tracked_01_AA_F","OPT_B_APC_Tracked_01_AA_ghex_F","OPT_B_APC_Tracked_01_AA_ghex_F2", "OPT4_B_MBT_01_cannon_F","OPT4_B_MBT_01_cannon_ghex_F",
 				   "OPT4_B_MBT_01_TUSK_F","OPT_B_MBT_01_TUSK_ghex_F", "OPT4_B_MBT_01_arty_F","OPT4_B_MBT_01_arty_ghex_F", "OPT4_B_MBT_01_mlrs_F","OPT4_B_MBT_01_mlrs_ghex_F", "OPT4_O_APC_Wheeled_02_rcws_F", "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT4_B_APC_tracked_03_cannon_F","OPT4_I_APC_tracked_03_cannon_F","OPT4_B_APC_tracked_03_cannon_ghex_F", "OPT4_O_APC_Tracked_02_cannon_F",
 				   "OPT4_O_T_APC_Tracked_02_cannon_ghex_F", "OPT4_O_APC_Tracked_02_AA_F", "OPT4_O_T_APC_Tracked_02_AA_ghex_F","OPT4_O_T_APC_Tracked_02_AA_ghex_F2", "OPT4_O_MBT_02_cannon_F", "OPT4_O_T_MBT_02_cannon_ghex_F", "OPT4_O_MBT_02_arty_F", "OPT4_O_T_MBT_02_arty_ghex_F",
-				   "OPT4_O_APC_Wheeled_03_cannon_F","OPT4_I_APC_Wheeled_03_cannon_F","OPT4_O_APC_Wheeled_03_cannon_ghex_F", "OPT4_B_MBT_03_cannon_F","OPT4_B_MBT_03_cannon_ghex_F","OPT4_I_MBT_03_cannon_F", "OPT4_B_LSV_01_AT_F","OPT4_B_LSV_01_AT_ghex_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F","OPT4_O_LSV_02_AT_GHEX_F","OPT4_I_LT_01_AT_F","OPT4_I_LT_01_AA_F"};
+				   "OPT4_O_APC_Wheeled_03_cannon_F","OPT4_I_APC_Wheeled_03_cannon_F","OPT4_O_APC_Wheeled_03_cannon_ghex_F", "OPT4_B_MBT_03_cannon_F","OPT4_B_MBT_03_cannon_ghex_F","OPT4_I_MBT_03_cannon_F", "OPT4_B_LSV_01_AT_F","OPT4_B_LSV_01_AT_ghex_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F","OPT4_O_LSV_02_AT_GHEX_F","OPT4_I_LT_01_AT_F","OPT4_I_LT_01_AA_F","OPT4_O_MBT_04_cannon_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -273,6 +273,8 @@ class CfgVehicles
 
 	class OPT4_I_C_Offroad_02_AT_F : OPT_I_C_Offroad_02_AT_F
 	{
+		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
+
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1089,9 +1091,9 @@ class CfgVehicles
 	};
 
 	//// FV-720 Mora ////
-	class OPT_I_APC_tracked_03_cannon_F;
+	class I_APC_tracked_03_cannon_F;
 
-	class OPT_B_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F
+	class OPT_B_APC_tracked_03_cannon_F : I_APC_tracked_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1109,7 +1111,7 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_B_APC_tracked_03_cannon_ghex_F : OPT_I_APC_tracked_03_cannon_F
+	class OPT_B_APC_tracked_03_cannon_ghex_F : I_APC_tracked_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1127,13 +1129,13 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_APC_tracked_03_cannon_F2 : OPT_I_APC_tracked_03_cannon_F
+	class OPT_I_APC_tracked_03_cannon_F : I_APC_tracked_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
 	};
 
-	class OPT4_I_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F2
+	class OPT4_I_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F
 	{
 		class Turrets : Turrets
 		{
@@ -1401,6 +1403,27 @@ class CfgVehicles
 		};
 	};
 
+	//// T-140 Angara ////
+	class O_MBT_04_cannon_F;
+
+	class OPT_O_MBT_04_cannon_F : O_MBT_04_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_O_MBT_04_cannon_F : OPT_O_MBT_04_cannon_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
 	class O_MBT_02_arty_F;
 
 	class OPT_O_MBT_02_arty_F : O_MBT_02_arty_F
@@ -1442,9 +1465,9 @@ class CfgVehicles
 	};
 
 	//// AFV-4 Gorgon //// 
-	class OPT_I_APC_Wheeled_03_cannon_F;
+	class I_APC_Wheeled_03_cannon_F;
 
-	class OPT_O_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F
+	class OPT_O_APC_Wheeled_03_cannon_F : I_APC_Wheeled_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1464,13 +1487,13 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_APC_Wheeled_03_cannon_F2 : OPT_I_APC_Wheeled_03_cannon_F
+	class OPT_I_APC_Wheeled_03_cannon_F : I_APC_Wheeled_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
 	};
 
-	class OPT4_I_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F2
+	class OPT4_I_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F
 	{
 		class Turrets : Turrets
 		{
@@ -1501,9 +1524,9 @@ class CfgVehicles
 	};
 
 	//// MBT-52 Kuma ////
-	class OPT_I_MBT_03_cannon_F;
+	class I_MBT_03_cannon_F;
 
-	class OPT_B_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F
+	class OPT_B_MBT_03_cannon_F : I_MBT_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1521,7 +1544,7 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_B_MBT_03_cannon_ghex_F : OPT_I_MBT_03_cannon_F
+	class OPT_B_MBT_03_cannon_ghex_F : I_MBT_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1539,13 +1562,13 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_MBT_03_cannon_F2 : OPT_I_MBT_03_cannon_F
+	class OPT_I_MBT_03_cannon_F : I_MBT_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
 	};
 
-	class OPT4_I_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F2
+	class OPT4_I_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F
 	{
 		class Turrets : Turrets
 		{
@@ -1663,27 +1686,11 @@ class CfgVehicles
 		};
 	};
 
-	class LSV_02_AT_base_F;
+	class OPT_O_LSV_02_AT_F;
 
-	class O_LSV_02_AT_F : LSV_02_AT_base_F
-	{
-		class Turrets;
-		class CargoTurret_01;
-		class CargoTurret_02;
-		class CargoTurret_03;
-		class CargoTurret_04;
-		class CargoTurret_05;
-		class MainTurret;
-		class ViewOptics;
-		class OpticsIn;
-		class Narrow;
-		class Wide;
-	};
-
-	class OPT4_O_LSV_02_AT_F : O_LSV_02_AT_F
+	class OPT4_O_LSV_02_AT_F : OPT_O_LSV_02_AT_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Qilin (AT)";
 		fuelCapacity = 4; // 20 //
 		maximumLoad = 2500;
 
@@ -1742,7 +1749,7 @@ class CfgVehicles
 		};
 	};
 
-	class OPT4_O_LSV_02_AT_GHEX_F : O_LSV_02_AT_F
+	class OPT4_O_LSV_02_AT_GHEX_F : OPT_O_LSV_02_AT_F
 	{
 		faction = "OPT_CSAT_T";
 		displayName = "Qilin (AT)";
@@ -1828,15 +1835,15 @@ class CfgVehicles
 	};
 
 	//// AWC 301 Nyx (AT) ////
-	class OPT_I_LT_01_AT_F;
+	class I_LT_01_AT_F;
 
-	class OPT_I_LT_01_AT_F2 : OPT_I_LT_01_AT_F
+	class OPT_I_LT_01_AT_F : I_LT_01_AT_F
 	{
 		class Turrets;
 		class MainTurret;
 	};
 
-	class OPT4_I_LT_01_AT_F : OPT_I_LT_01_AT_F2
+	class OPT4_I_LT_01_AT_F : OPT_I_LT_01_AT_F
 	{
 		class Turrets : Turrets
 		{
@@ -1849,15 +1856,15 @@ class CfgVehicles
 	};
 
 	//// AWC 302 Nyx (AA) ////
-	class OPT_I_LT_01_AA_F;
+	class I_LT_01_AA_F;
 
-	class OPT_I_LT_01_AA_F2 : OPT_I_LT_01_AA_F
+	class OPT_I_LT_01_AA_F : I_LT_01_AA_F
 	{
 		class Turrets;
 		class MainTurret;
 	};
 
-	class OPT4_I_LT_01_AA_F : OPT_I_LT_01_AA_F2
+	class OPT4_I_LT_01_AA_F : OPT_I_LT_01_AA_F
 	{
 		class Turrets : Turrets
 		{
