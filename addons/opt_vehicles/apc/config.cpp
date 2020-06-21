@@ -899,6 +899,21 @@ class CfgVehicles
 				};
 			};
 		};
+
+		class AnimationSources : AnimationSources
+		{
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
 	};
 
 	class OPT_B_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F
