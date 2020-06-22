@@ -2,7 +2,7 @@
 {
 	class opt_vehicles_uav
 	{
-		units[] = {"OPT_B_UAV_02_F", "OPT_B_UAV_02_light_F", "OPT_B_UAV_02_CAS_F", "OPT_O_UAV_02_F", "OPT_O_UAV_02_light_F", "OPT_O_UAV_02_CAS_F", "OPT_B_UAV_01_F", "OPT_O_UAV_01_F","OPT_B_Radar_System_01_F","OPT_O_Radar_System_02_F","OPT_I_E_Radar_System_01_F","OPT_I_UAV_02_light_F"};
+		units[] = {"OPT_B_UAV_02_F", "OPT_B_UAV_02_light_F", "OPT_B_UAV_02_CAS_F", "OPT_O_UAV_02_F", "OPT_O_UAV_02_light_F", "OPT_O_UAV_02_CAS_F", "OPT_B_UAV_01_F","OPT_I_UAV_01_F" ,"OPT_O_UAV_01_F","OPT_B_Radar_System_01_F","OPT_O_Radar_System_02_F","OPT_I_E_Radar_System_01_F","OPT_I_UAV_02_light_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -450,6 +450,73 @@ class CfgVehicles
 		class assembleInfo : assembleInfo
 		{
 			dissasembleTo[] = {"OPT_B_UAV_01_backpack_F"};
+		};
+
+		class Viewoptics : Viewoptics
+		{
+			visionMode[] = {"Normal", "NVG"};
+		};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						initFov = 0.057200;
+						minFov = 0.057200;
+						maxFov = 0.057200;
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+	};
+
+	class I_UAV_01_F : UAV_01_base_F
+	{
+		class assembleInfo;
+		class Turrets;
+		class MainTurret;
+		class Viewoptics;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class OpticsIn;
+		class Components;
+	};
+
+	//// AR-2 Darter AAF ////
+	class OPT_I_UAV_01_F : I_UAV_01_F
+	{
+		faction = "OPT_AAF";
+		fuelCapacity = 30; // 100 //
+
+		class Components : Components
+		{
+			class SensorsManagerComponent
+			{
+			};
+		};
+
+		class assembleInfo : assembleInfo
+		{
+			dissasembleTo[] = {"OPT_I_UAV_01_backpack_F"};
 		};
 
 		class Viewoptics : Viewoptics

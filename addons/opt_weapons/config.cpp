@@ -7380,6 +7380,21 @@ class CfgVehicles
 		};
 	};
 
+	
+	class I_UAV_01_backpack_F : Weapon_Bag_Base
+	{
+		class assembleInfo;
+	};
+
+	class OPT_I_UAV_01_backpack_F : I_UAV_01_backpack_F
+	{
+
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_I_UAV_01_F";
+		};
+	};
+
 	class O_UAV_01_backpack_F : B_UAV_01_backpack_F
 	{
 	};
