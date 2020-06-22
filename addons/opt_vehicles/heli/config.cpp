@@ -10,7 +10,10 @@
 			"OPT_O_Heli_Transport_04_F",
 			"OPT_O_Heli_Transport_04_black_F",
 			"OPT_O_Heli_Transport_04_bench_F",
-			"OPT_O_Heli_Transport_04_covered_F",,
+			"OPT_O_Heli_Transport_04_covered_F",
+			"OPT_O_Heli_Transport_04_box_F",
+			"OPT_O_Heli_Transport_04_ammo_F",
+			"OPT_O_Heli_Transport_04_fuel_F",
 			"OPT_O_Heli_Transport_02_F",
 			"OPT_O_Heli_light_03_F",
 			"OPT_O_Heli_light_03_green_F",
@@ -236,7 +239,6 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		radarType = 8; // 4 //
 		driverCanEject = 1;
-		displayName = "PO-30 Orca (Scalpel)";
 		weapons[] = {"CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 210; // 800 //
@@ -875,6 +877,238 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class O_Heli_Transport_04_box_F : Heli_Transport_04_base_F
+	{
+		class Turrets;
+		class CopilotTurret;
+		class LoadMasterTurret;
+		class OpticsIn;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class OpticsOut;
+		class Monocular;
+		class CargoTurret_01;
+		class CargoTurret_02;
+	};
+
+	//// Mi-290 Taru (Repair) ////
+	class OPT_O_Heli_Transport_04_box_F : O_Heli_Transport_04_box_F
+	{
+		faction = "OPT_CSAT";
+		displayName = "Mi-290 Taru (Repair)";
+		driverCanEject = 1;
+		radarType = 4;		// 8 //
+		fuelCapacity = 330; // 2500 //
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+			class _xx_B_Parachute
+			{
+				backpack = "B_Parachute";
+				count = 0;
+			};
+		};
+
+		class Turrets : Turrets
+		{
+			class CopilotTurret : CopilotTurret
+			{
+				canEject = 1;
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+
+				class OpticsOut : OpticsOut
+				{
+					class Monocular : Monocular
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+
+			class LoadMasterTurret : LoadMasterTurret
+			{
+				canEject = 1;
+			};
+		};
+	};	
+
+	class O_Heli_Transport_04_ammo_F : Heli_Transport_04_base_F
+	{
+		class Turrets;
+		class CopilotTurret;
+		class LoadMasterTurret;
+		class OpticsIn;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class OpticsOut;
+		class Monocular;
+		class CargoTurret_01;
+		class CargoTurret_02;
+	};
+
+	//// Mi-290 Taru (Ammo) ////
+	class OPT_O_Heli_Transport_04_ammo_F : O_Heli_Transport_04_ammo_F
+	{
+		faction = "OPT_CSAT";
+		displayName = "Mi-290 Taru (Ammo)";
+		driverCanEject = 1;
+		radarType = 4;		// 8 //
+		fuelCapacity = 330; // 2500 //
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+			class _xx_B_Parachute
+			{
+				backpack = "B_Parachute";
+				count = 0;
+			};
+		};
+
+		class Turrets : Turrets
+		{
+			class CopilotTurret : CopilotTurret
+			{
+				canEject = 1;
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+
+				class OpticsOut : OpticsOut
+				{
+					class Monocular : Monocular
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+
+			class LoadMasterTurret : LoadMasterTurret
+			{
+				canEject = 1;
+			};
+		};
+	};	
+
+	class O_Heli_Transport_04_fuel_F : Heli_Transport_04_base_F
+	{
+		class Turrets;
+		class CopilotTurret;
+		class LoadMasterTurret;
+		class OpticsIn;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class OpticsOut;
+		class Monocular;
+		class CargoTurret_01;
+		class CargoTurret_02;
+	};
+
+	//// Mi-290 Taru (Fuel) ////
+	class OPT_O_Heli_Transport_04_fuel_F : O_Heli_Transport_04_fuel_F
+	{
+		faction = "OPT_CSAT";
+		displayName = "Mi-290 Taru (Fuel)";
+		driverCanEject = 1;
+		radarType = 4;		// 8 //
+		fuelCapacity = 330; // 2500 //
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+			class _xx_B_Parachute
+			{
+				backpack = "B_Parachute";
+				count = 0;
+			};
+		};
+
+		class Turrets : Turrets
+		{
+			class CopilotTurret : CopilotTurret
+			{
+				canEject = 1;
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+
+				class OpticsOut : OpticsOut
+				{
+					class Monocular : Monocular
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+
+			class LoadMasterTurret : LoadMasterTurret
+			{
+				canEject = 1;
+			};
+
+		};
+	};	
 
 	class Heli_Transport_01_base_F : Helicopter_Base_H
 	{
