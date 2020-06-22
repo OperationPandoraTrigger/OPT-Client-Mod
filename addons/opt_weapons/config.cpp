@@ -3838,9 +3838,7 @@ class CfgWeapons
 
 	class OPT_autocannon_35mm : autocannon_35mm
 	{
-		magazineReloadTime = 300;
 		magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Red", "OPT_680Rnd_35mm_AA_shells_Tracer_Green"};
-		displayName = "Autokanone 35 mm";
 	};
 
 	class autocannon_Base_F;
@@ -3853,28 +3851,23 @@ class CfgWeapons
 
 	class OPT_autocannon_40mm_CTWS : autocannon_40mm_CTWS
 	{
-		displayName = "Geschütz 40 mm";
 
 		class HE : HE
 		{
-			magazineReloadTime = 120;
 			canLock = 0;
 		};
 
 		class AP : AP
 		{
-			magazineReloadTime = 120;
 		};
 	};
 
 	class OPT_autocannon_40mm_CTWS_HE : autocannon_40mm_CTWS
 	{
-		displayName = "Geschütz 40 mm";
 		muzzles[] = {"HE"};
 
 		class HE : HE
 		{
-			magazineReloadTime = 120;
 			canLock = 0;
 		};
 	};
@@ -3887,7 +3880,6 @@ class CfgWeapons
 
 	class OPT_autocannon_30mm_CTWS : autocannon_30mm_CTWS
 	{
-		displayName = "CTWS-Geschütz 30 mm";
 
 		class HE : HE
 		{
@@ -3907,7 +3899,6 @@ class CfgWeapons
 
 	class OPT_autocannon_30mm : autocannon_30mm
 	{
-		displayName = "Geschütz 30 mm";
 
 		class HE : HE
 		{
@@ -3923,16 +3914,12 @@ class CfgWeapons
 
 	class OPT_missiles_titan : missiles_titan
 	{
-		magazineReloadTime = 120;
 		canLock = 0; // Disabled
-		displayName = "Titan-Rakete";
 	};
 
 	class OPT_missiles_titan_AA : missiles_titan
 	{
-		magazineReloadTime = 120;
 		canLock = 2; 
-		displayName = "Titan-Rakete";
 	};
 
 	class missiles_titan_static : missiles_titan
@@ -3941,15 +3928,11 @@ class CfgWeapons
 
 	class OPT_missiles_titan_static : missiles_titan_static
 	{
-		displayName = "Titan-Rakete";
-		magazineReloadTime = 60;
 		canLock = 0; // Disabled
 	};
 
 	class OPT_missiles_titan_static_AA : missiles_titan_static
 	{
-		displayName = "Titan-Rakete";
-		magazineReloadTime = 60;
 		canLock = 2; 
 	};
 
@@ -3957,8 +3940,6 @@ class CfgWeapons
 
 	class OPT_missiles_Vorona : missiles_Vorona
 	{
-		displayName = "9M135 Vorona";
-		magazineReloadTime = 60;
 	};
 
 	class missiles_Firefist;
