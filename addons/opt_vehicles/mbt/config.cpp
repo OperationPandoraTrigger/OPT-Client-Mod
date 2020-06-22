@@ -1,4 +1,4 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class opt_vehicles_mbt
 	{
@@ -55,8 +55,6 @@ class CfgVehicles
 	class OPT_B_MBT_01_cannon_F : B_MBT_01_cannon_F
 	{
 		faction = "OPT_NATO";
-		displayName = "M2A1 Slammer";
-		maximumLoad = 2500;
 		fuelCapacity = 12; // 100 //
 		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
@@ -139,10 +137,7 @@ class CfgVehicles
 	class OPT_B_MBT_01_cannon_ghex_F : B_MBT_01_cannon_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "M2A1 Slammer";
-		maximumLoad = 2500;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 		hiddenSelections[] = {"Camo1","Camo2","CamoNet"};
 		hiddenSelectionsTextures[] = {"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\MBT_01_tow_olive_CO.paa","A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
 
@@ -239,10 +234,7 @@ class CfgVehicles
 	class OPT_B_MBT_01_TUSK_F : B_MBT_01_TUSK_F
 	{
 		faction = "OPT_NATO";
-		displayName = "M2A4 Slammer UP";
-		maximumLoad = 2500;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -323,10 +315,7 @@ class CfgVehicles
 	class OPT_B_MBT_01_TUSK_ghex_F : B_MBT_01_TUSK_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "M2A4 Slammer UP";
-		maximumLoad = 2500;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","CamoNet"};
 		hiddenSelectionsTextures[] = {"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\MBT_01_tow_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\mbt_addons_olive_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
 
@@ -429,10 +418,7 @@ class CfgVehicles
 	class OPT_B_MBT_01_arty_F : B_MBT_01_arty_F
 	{
 		faction = "OPT_NATO";
-		displayName = "M4 Scorcher";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -483,10 +469,7 @@ class CfgVehicles
 	class OPT_B_MBT_01_arty_ghex_F : B_MBT_01_arty_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "M4 Scorcher";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","CamoNet"};
 		hiddenSelectionsTextures[] = {"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\MBT_01_scorcher_olive_CO.paa","A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa","A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
 
@@ -556,10 +539,7 @@ class CfgVehicles
 	class OPT_B_MBT_01_mlrs_F : B_MBT_01_mlrs_F
 	{
 		faction = "OPT_NATO";
-		displayName = "M5 Sandstorm MLRS";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -594,10 +574,7 @@ class CfgVehicles
 	class OPT_B_MBT_01_mlrs_ghex_F : B_MBT_01_mlrs_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "M5 Sandstorm MLRS";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 		hiddenSelections[] = {"Camo1","Camo2","CamoNet"};
 		hiddenSelectionsTextures[] = {"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\MBT_01_MLRS_olive_co.paa","A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
 
@@ -656,10 +633,7 @@ class CfgVehicles
 	class OPT_O_MBT_02_cannon_F : O_MBT_02_cannon_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "T-100 Varsuk";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -744,10 +718,7 @@ class CfgVehicles
 	class OPT_O_T_MBT_02_cannon_ghex_F : O_T_MBT_02_cannon_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "T-100 Varsuk";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -850,7 +821,6 @@ class CfgVehicles
 	class OPT_O_MBT_04_cannon_F : O_MBT_04_cannon_F
 	{
 		faction = "OPT_CSAT";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
 	
 		class Turrets : Turrets
@@ -952,10 +922,7 @@ class CfgVehicles
 	class OPT_O_MBT_02_arty_F : O_MBT_02_arty_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "2S9 Sochor";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -1010,10 +977,7 @@ class CfgVehicles
 	class OPT_O_T_MBT_02_arty_ghex_F : O_T_MBT_02_arty_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "2S9 Sochor";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 75 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 
 		class Turrets : Turrets
 		{
@@ -1074,7 +1038,6 @@ class CfgVehicles
 	class OPT_I_MBT_03_cannon_F : I_MBT_03_cannon_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 800;
 		fuelCapacity = 12; // 100 //
 
 		class Turrets : Turrets

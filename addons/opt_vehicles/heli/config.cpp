@@ -1,22 +1,16 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class opt_vehicles_heli
 	{
 		units[] = {
 			"OPT_O_Heli_Attack_02_F",
-			"OPT_O_Heli_Attack_02_black_F",
 			"OPT_O_Heli_Light_02_F",
-			"OPT_O_Heli_Light_02_black_F",
 			"OPT_O_Heli_Light_02_v2_F",
-			"OPT_O_Heli_Light_02_v2_black_F",
 			"OPT_O_Heli_Light_02_unarmed_F",
-			"OPT_O_Heli_Light_02_unarmed_black_F",
 			"OPT_O_Heli_Transport_04_F",
 			"OPT_O_Heli_Transport_04_black_F",
 			"OPT_O_Heli_Transport_04_bench_F",
-			"OPT_O_Heli_Transport_04_bench_black_F",
-			"OPT_O_Heli_Transport_04_covered_F",
-			"OPT_O_Heli_Transport_04_covered_black_F",
+			"OPT_O_Heli_Transport_04_covered_F",,
 			"OPT_O_Heli_Transport_02_F",
 			"OPT_O_Heli_light_03_F",
 			"OPT_O_Heli_light_03_green_F",
@@ -33,6 +27,10 @@ class CfgPatches
 			"OPT_O_Heli_Light_01_armed_F",
 			"OPT_B_Heli_Light_01_armed_2_F",
 			"OPT_B_Heli_Transport_02_F",
+			"OPT_I_Heli_Transport_02_F",
+			"OPT_I_Heli_light_03_F",
+			"OPT_I_Heli_light_03_Scalpel_F",
+			"OPT_I_Heli_light_03_unarmed_F"
 		};
 		weapons[] = {};
 		requiredVersion = 0.100000;
@@ -97,8 +95,6 @@ class CfgVehicles
 	class OPT_O_Heli_Attack_02_F : O_Heli_Attack_02_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Mi-48 Kajman";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		weapons[] = {"CMFlareLauncher"};
 		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine"};
@@ -213,11 +209,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_Heli_Attack_02_black_F : OPT_O_Heli_Attack_02_F
-	{
-		displayName = "Mi-48 Kajman (schwarz)";
-		hiddenSelectionsTextures[] = {"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_black_CO.paa", "A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
-	};
 
 	//// PO-30 Orca ////
 	class Heli_Light_02_base_F : Helicopter_Base_H
@@ -243,7 +234,6 @@ class CfgVehicles
 	class OPT_O_Heli_Light_02_F : O_Heli_Light_02_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT";
-		maximumLoad = 2500;
 		radarType = 8; // 4 //
 		driverCanEject = 1;
 		displayName = "PO-30 Orca (Scalpel)";
@@ -338,17 +328,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_Heli_Light_02_black_F : OPT_O_Heli_Light_02_F
-	{
-		displayName = "PO-30 Orca (Scalpel) [Schwarz]";
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
-	};
-
-	class OPT_O_Heli_Light_02_Minigun_black_F : OPT_O_Heli_Light_02_Minigun_F
-	{
-		displayName = "PO-30 Orca (Minigun) [Schwarz]";
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
-	};
 
 	class OPT_O_Heli_Light_02_v2_F : OPT_O_Heli_Light_02_F
 	{
@@ -385,11 +364,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_Heli_Light_02_v2_black_F : OPT_O_Heli_Light_02_v2_F
-	{
-		displayName = "PO-30 Orca (Skyfire) [Schwarz]";
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
-	};
 
 	class Heli_Light_02_unarmed_base_F : Heli_Light_02_base_F
 	{
@@ -406,7 +380,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		displayName = "PO-30 Orca (Unbewaffnet)";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		radarType = 4;		// 8 //
 		fuelCapacity = 210; // 800 //
@@ -442,11 +415,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_Heli_Light_02_unarmed_black_F : OPT_O_Heli_Light_02_unarmed_F
-	{
-		displayName = "PO-30 Orca (Unbewaffnet) [Schwarz]";
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
-	};
 
 	class Heli_Transport_04_base_F : Helicopter_Base_H
 	{
@@ -528,73 +496,6 @@ class CfgVehicles
 		};
 	};
 
-	class O_Heli_Transport_04_black_F : O_Heli_Transport_04_F
-	{
-	};
-
-	class OPT_O_Heli_Transport_04_black_F : O_Heli_Transport_04_black_F
-	{
-		faction = "OPT_CSAT";
-		displayName = "Mi-290 Taru (schwarz)";
-		maximumLoad = 2500;
-		driverCanEject = 1;
-		radarType = 4;		// 8 //
-		fuelCapacity = 330; // 2500 //
-		scope = 2;
-		scopeCurator = 2;
-
-		class TransportItems
-		{
-		};
-
-		class TransportBackpacks
-		{
-			class _xx_B_Parachute
-			{
-				backpack = "B_Parachute";
-				count = 0;
-			};
-		};
-
-		class Turrets : Turrets
-		{
-			class CopilotTurret : CopilotTurret
-			{
-				canEject = 1;
-
-				class OpticsIn : OpticsIn
-				{
-					class Wide : Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-
-					class Medium : Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-
-					class Narrow : Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-				};
-
-				class OpticsOut : OpticsOut
-				{
-					class Monocular : Monocular
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-				};
-			};
-
-			class LoadMasterTurret : LoadMasterTurret
-			{
-				canEject = 1;
-			};
-		};
-	};
 
 	class O_Heli_Transport_04_bench_F : Heli_Transport_04_base_F
 	{
@@ -1808,8 +1709,6 @@ class CfgVehicles
 	{
 		_generalMacro = "OPT_I_Heli_Transport_02_F";
 		faction = "OPT_AAF";
-		displayName = "CH-49 Mohawk";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		fuelCapacity = 330; // 2500 //
 		radarType = 4;		// 8 //
@@ -1913,7 +1812,6 @@ class CfgVehicles
 	class OPT_I_Heli_light_03_F : I_Heli_light_03_dynamicLoadout_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		weapons[] = {"CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
@@ -2234,12 +2132,10 @@ class CfgVehicles
 		class Narrow;
 	};
 
-	//// WY-55 Hellcat (Green) ////
+	//// WY-55 Hellcat ////
 	class OPT_I_Heli_light_03_unarmed_F : I_Heli_light_03_unarmed_F
 	{
 		faction = "OPT_AAF";
-		displayname = "WY-55 Hellcat (Unbewaffnet)";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		fuelCapacity = 190; // 742 //
 		weapons[] = {"CMFlareLauncher"};

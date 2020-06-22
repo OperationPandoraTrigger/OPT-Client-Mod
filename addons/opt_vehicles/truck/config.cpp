@@ -1,4 +1,4 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class opt_vehicles_truck
 	{
@@ -51,8 +51,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_transport_F : B_Truck_01_transport_F
 	{
 		faction = "OPT_NATO";
-		displayName = "HEMTT Transporter";
-		maximumLoad = 5000;
 		fuelCapacity = 4;	 // 45 //
 		transportSoldier = 1; // 15 //
 
@@ -68,8 +66,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_transport_ghex_F : OPT_B_Truck_01_transport_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "HEMTT Transporter";
-		maximumLoad = 5000;
 		fuelCapacity = 4;	 // 45 //
 		transportSoldier = 1; // 15 //
 		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
@@ -89,8 +85,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_covered_F : B_Truck_01_covered_F
 	{
 		faction = "OPT_NATO";
-		displayName = "HEMTT Transporter (abgedeckt)";
-		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
 
 		class TransportItems
@@ -101,8 +95,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_covered_ghex_F : OPT_B_Truck_01_covered_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "HEMTT Transporter (abgedeckt)";
-		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cargo_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cover_olive_co.paa"};
@@ -121,9 +113,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_medical_F : B_Truck_01_medical_F
 	{
 		faction = "OPT_NATO";
-		displayName = "HEMTT Sanitätsfahrzeug";
-		maximumLoad = 5000;
-
 		class TransportItems
 		{
 		};
@@ -132,8 +121,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_medical_ghex_F : OPT_B_Truck_01_medical_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "HEMTT Sanitätsfahrzeug";
-		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"Olive",1};
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
@@ -156,8 +143,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_ammo_F : B_Truck_01_ammo_F
 	{
 		faction = "OPT_NATO";
-		displayName = "HEMTT Munition";
-		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
 		transportAmmo = 30000;
 
@@ -169,8 +154,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_ammo_ghex_F : OPT_B_Truck_01_ammo_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "HEMTT Munition";
-		maximumLoad = 5000;
 		fuelCapacity = 4; // 45 //
 		transportAmmo = 30000;
 		textureList[] = {"Olive",1};
@@ -190,11 +173,8 @@ class CfgVehicles
 	class OPT_B_Truck_01_Repair_F : B_Truck_01_Repair_F
 	{
 		faction = "OPT_NATO";
-		displayName = "HEMTT Instandsetzung";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		transportRepair = 0; // 200000000;
-		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
 		{
@@ -204,11 +184,8 @@ class CfgVehicles
 	class OPT_B_Truck_01_Repair_ghex_F : OPT_B_Truck_01_Repair_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "HEMTT Instandsetzung";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		transportRepair = 0; // 200000000;
-		//#include "\opt_vehicles\reparieren.hpp"
 		textureList[] = {"Olive",1};
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\A3\Soft_F_Exp\Truck_01\Data\truck_01_ammo_olive_CO.paa","\a3\structures_f\data\metal\containers\containers_02_set_co.paa"};
@@ -226,8 +203,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_fuel_F : B_Truck_01_fuel_F
 	{
 		faction = "OPT_NATO";
-		displayName = "HEMTT Treibstoff";
-		maximumLoad = 2500;
 		fuelCapacity = 10; // 45 //
 		transportFuel = 3000;
 
@@ -243,8 +218,6 @@ class CfgVehicles
 	class OPT_B_Truck_01_fuel_ghex_F : B_T_Truck_01_fuel_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "HEMTT Treibstoff";
-		maximumLoad = 2500;
 		fuelCapacity = 10; // 45 //
 		transportFuel = 3000;
 		textureList[] = {"Olive",1};
@@ -266,8 +239,6 @@ class CfgVehicles
 	class OPT_O_Truck_03_transport_F : O_Truck_03_transport_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Tempest-Transporter";
-		maximumLoad = 5000;
 		fuelCapacity = 6;	 // 250 //
 		transportSoldier = 1; // 11 //
 
@@ -287,8 +258,6 @@ class CfgVehicles
 	class OPT_O_T_Truck_03_transport_ghex_F : O_T_Truck_03_transport_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Tempest-Transporter";
-		maximumLoad = 5000;
 		fuelCapacity = 6;	 // 250 //
 		transportSoldier = 1; // 11 //
 
@@ -309,8 +278,6 @@ class CfgVehicles
 	class OPT_O_Truck_03_covered_F : O_Truck_03_covered_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Tempest-Transporter (abgedeckt)";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
 
 		class TransportItems
@@ -325,8 +292,6 @@ class CfgVehicles
 	class OPT_O_T_Truck_03_covered_ghex_F : O_T_Truck_03_covered_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Tempest-Transporter (abgedeckt)";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
 
 		class TransportItems
@@ -342,8 +307,6 @@ class CfgVehicles
 	class OPT_O_Truck_03_ammo_F : O_Truck_03_ammo_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Tempest Munition";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
 		transportAmmo = 30000;
 
@@ -359,8 +322,6 @@ class CfgVehicles
 	class OPT_O_T_Truck_03_ammo_ghex_F : O_T_Truck_03_ammo_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Tempest Munition";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
 		transportAmmo = 30000;
 
@@ -377,11 +338,8 @@ class CfgVehicles
 	class OPT_O_Truck_03_repair_F : O_Truck_03_repair_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Tempest Reparatur";
-		maximumLoad = 2500;
 		fuelCapacity = 6; // 250 //
 		transportRepair = 0; // 200000000;
-		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
 		{
@@ -395,11 +353,8 @@ class CfgVehicles
 	class OPT_O_T_Truck_03_repair_ghex_F : O_T_Truck_03_repair_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Tempest Reparatur";
-		maximumLoad = 2500;
 		fuelCapacity = 6; // 250 //
 		transportRepair = 0; // 200000000;
-		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
 		{
@@ -414,8 +369,6 @@ class CfgVehicles
 	class OPT_O_Truck_03_fuel_F : O_Truck_03_fuel_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Tempest Tanken";
-		maximumLoad = 2500;
 		fuelCapacity = 200; // 250 //
 		transportFuel = 3000;
 
@@ -431,8 +384,6 @@ class CfgVehicles
 	class OPT_O_T_Truck_03_fuel_ghex_F : O_T_Truck_03_fuel_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Tempest Tanken";
-		maximumLoad = 2500;
 		fuelCapacity = 200; // 250 //
 		transportFuel = 3000;
 
@@ -449,8 +400,6 @@ class CfgVehicles
 	class OPT_O_Truck_03_medical_F : O_Truck_03_medical_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Tempest Sanitätsfahrzeug";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
 
 		class TransportItems
@@ -465,8 +414,6 @@ class CfgVehicles
 	class OPT_O_T_Truck_03_medical_ghex_F : O_T_Truck_03_medical_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Tempest Sanitätsfahrzeug";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
 
 		class TransportItems
@@ -497,8 +444,8 @@ class CfgVehicles
 	{
 
 		faction = "OPT_AAF";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
+		transportSoldier = 1; // 11 //
 
 		class TransportItems
 		{
@@ -513,7 +460,6 @@ class CfgVehicles
 	{
 
 		faction = "OPT_AAF";
-		maximumLoad = 2500;
 		fuelCapacity = 200; // 250 //
 		transportFuel = 3000;
 
@@ -529,7 +475,6 @@ class CfgVehicles
 	class OPT_I_Truck_02_ammo_F : I_Truck_02_ammo_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
 		transportAmmo = 30000;
 
@@ -544,10 +489,8 @@ class CfgVehicles
 	class OPT_I_Truck_02_box_F : I_Truck_02_box_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 2500;
 		fuelCapacity = 6; // 250 //
 		transportRepair = 0; // 200000000;
-		//#include "\opt_vehicles\reparieren.hpp"
 
 		class TransportItems
 		{

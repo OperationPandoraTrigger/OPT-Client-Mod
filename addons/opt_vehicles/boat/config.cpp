@@ -1,4 +1,4 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class opt_vehicles_boat
 	{
@@ -47,7 +47,6 @@ class CfgVehicles
 	class OPT_B_Boat_Armed_01_minigun_F : B_Boat_Armed_01_minigun_F
 	{
 		faction = "OPT_NATO";
-		maximumLoad = 2500;
 
 		class TransportItems
 		{
@@ -128,7 +127,6 @@ class CfgVehicles
 	class OPT_O_Boat_Armed_01_hmg_F : O_Boat_Armed_01_hmg_F
 	{
 		faction = "OPT_CSAT";
-		maximumLoad = 2500;
 
 		class TransportItems
 		{
@@ -220,7 +218,6 @@ class CfgVehicles
 	class OPT_I_Boat_Armed_01_minigun_F : I_Boat_Armed_01_minigun_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 2500;
 
 		class TransportItems
 		{
@@ -295,7 +292,6 @@ class CfgVehicles
 	class OPT_B_Boat_Transport_01_F : B_Boat_Transport_01_F
 	{
 		faction = "OPT_NATO";
-		maximumLoad = 800;
 
 		class TransportItems
 		{
@@ -309,7 +305,6 @@ class CfgVehicles
 	class OPT_O_Boat_Transport_01_F : O_Boat_Transport_01_F
 	{
 		faction = "OPT_CSAT";
-		maximumLoad = 800;
 
 		class TransportItems
 		{
@@ -323,7 +318,6 @@ class CfgVehicles
 	class OPT_I_Boat_Transport_01_F : I_Boat_Transport_01_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 800;
 
 		class TransportItems
 		{
@@ -364,7 +358,6 @@ class CfgVehicles
 		side = 0;
 		crew = "O_T_Soldier_F";
 		typicalCargo[] = {"O_T_Soldier_F", "O_T_Soldier_F"};
-		maximumLoad = 2500;
 
 		class TransportItems
 		{
@@ -374,7 +367,6 @@ class CfgVehicles
 	class OPT_I_C_Boat_Transport_02_F : I_C_Boat_Transport_02_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 2500;
 
 		class TransportItems
 		{
@@ -431,7 +423,6 @@ class CfgVehicles
 	class OPT_O_SDV_01_F : O_SDV_01_F
 	{
 		faction = "OPT_CSAT";
-		maximumLoad = 800;
 
 		class TransportItems
 		{
@@ -465,7 +456,6 @@ class CfgVehicles
 	class OPT_I_SDV_01_F : I_SDV_01_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 800;
 
 		class TransportItems
 		{

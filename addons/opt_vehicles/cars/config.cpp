@@ -1,4 +1,4 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class opt_vehicles_cars
 	{
@@ -111,9 +111,7 @@ class CfgVehicles
 	class OPT_B_MRAP_01_F : B_MRAP_01_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Hunter";
-		maximumLoad = 2500;
-		fuelCapacity = 4;					 // 94 //
+		fuelCapacity = 4; // 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -138,8 +136,6 @@ class CfgVehicles
 	class OPT_B_MRAP_01_ghex_F : B_T_MRAP_01_F 
 	{
 		faction = "OPT_NATO_T";
-		displayName = "Hunter";
-		maximumLoad = 2500;
 		fuelCapacity = 4;					 // 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
@@ -176,8 +172,6 @@ class CfgVehicles
 	class OPT_B_MRAP_01_gmg_F : B_MRAP_01_gmg_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Hunter-GMG";
-		maximumLoad = 2500;
 		fuelCapacity = 4;					 // 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
@@ -269,9 +263,7 @@ class CfgVehicles
 	class OPT_B_MRAP_01_gmg_ghex_F : B_T_MRAP_01_gmg_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "Hunter-GMG";
-		maximumLoad = 2500;
-		fuelCapacity = 4;					 // 94 //
+		fuelCapacity = 4;// 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -363,9 +355,7 @@ class CfgVehicles
 	class OPT_B_MRAP_01_hmg_F : B_MRAP_01_hmg_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Hunter-HMG";
-		maximumLoad = 2500;
-		fuelCapacity = 4;					 // 94 //
+		fuelCapacity = 4;// 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -459,9 +449,7 @@ class CfgVehicles
 	class OPT_B_MRAP_01_hmg_ghex_F : B_T_MRAP_01_hmg_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "Hunter-HMG";
-		maximumLoad = 2500;
-		fuelCapacity = 4;					 // 94 //
+		fuelCapacity = 4;// 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -558,8 +546,6 @@ class CfgVehicles
 	class OPT_O_MRAP_02_F : O_MRAP_02_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Ifrit";
-		maximumLoad = 2500;
 		fuelCapacity = 4;					 // 94 //
 		incomingMissileDetectionSystem = 16; // 0//
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -585,8 +571,6 @@ class CfgVehicles
 	class OPT_O_T_MRAP_02_ghex_F : O_T_MRAP_02_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Ifrit";
-		maximumLoad = 2500;
 		fuelCapacity = 4;					 // 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -624,8 +608,6 @@ class CfgVehicles
 	class OPT_O_MRAP_02_hmg_F : O_MRAP_02_hmg_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Ifrit-HMG";
-		maximumLoad = 2500;
 		fuelCapacity = 4;					 // 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -730,9 +712,7 @@ class CfgVehicles
 	class OPT_O_T_MRAP_02_hmg_ghex_F : O_T_MRAP_02_hmg_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Ifrit-HMG";
-		maximumLoad = 2500;
-		fuelCapacity = 4;					 // 94 //
+		fuelCapacity = 4;// 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
@@ -837,9 +817,7 @@ class CfgVehicles
 	class OPT_O_MRAP_02_gmg_F : O_MRAP_02_gmg_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Ifrit-GMG";
-		maximumLoad = 2500;
-		fuelCapacity = 4;					 // 94 //
+		fuelCapacity = 4;// 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
@@ -940,8 +918,6 @@ class CfgVehicles
 	class OPT_O_T_MRAP_02_gmg_ghex_F : O_T_MRAP_02_gmg_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Ifrit-GMG";
-		maximumLoad = 2500;
 		fuelCapacity = 4;					 // 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -1055,9 +1031,7 @@ class CfgVehicles
 	class OPT_I_MRAP_03_F : I_MRAP_03_F
 	{
 		faction = "OPT_AAF";
-		displayName = "Strider";
-		maximumLoad = 2500;
-		fuelCapacity = 4;					 // 94 //
+		fuelCapacity = 4;// 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -1160,9 +1134,7 @@ class CfgVehicles
 	class OPT_I_MRAP_03_hmg_F : I_MRAP_03_hmg_F
 	{
 		faction = "OPT_AAF";
-		displayName = "Strider HMG";
-		maximumLoad = 2500;
-		fuelCapacity = 4;					 // 94 //
+		fuelCapacity = 4;// 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
 		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
@@ -1291,8 +1263,6 @@ class CfgVehicles
 	class OPT_I_MRAP_03_gmg_F : I_MRAP_03_gmg_F
 	{
 		faction = "OPT_AAF";
-		displayName = "Strider GMG";
-		maximumLoad = 2500;
 		fuelCapacity = 4;					 // 94 //
 		incomingMissileDetectionSystem = 16; // 0 //
 		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
@@ -1412,8 +1382,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 3; // 45 //
-		maximumLoad = 2500;
-		displayName = "Prowler (Unbewaffnet)";
 		textureList[] = {"Black",0,"Olive",0,"Sand",1};
 
 		class TransportMagazines
@@ -1433,8 +1401,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 3; // 45 //
-		maximumLoad = 2500;
-		displayName = "Prowler (Unbewaffnet)";
 		textureList[] = {"Black",0,"Olive",1,"Sand",0};
 
 		class TransportMagazines
@@ -1460,8 +1426,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 3; // 45 //
-		maximumLoad = 2500;
-		displayName = "Prowler (Bewaffnet)";
 		textureList[] = {"Black",0,"Olive",0,"Sand",1};
 
 		class TransportMagazines
@@ -1481,8 +1445,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 3; // 45 //
-		maximumLoad = 2500;
-		displayName = "Prowler (Bewaffnet)";
 		textureList[] = {"Black",0,"Olive",1,"Sand",0};
 
 		class TransportMagazines
@@ -1516,8 +1478,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4; // 55 //
-		maximumLoad = 2500;
-		displayName = "Qilin (Unbewaffnet)";
 		textureList[] = {"Black",0,"GreenHex",0,"Arid",1};
 
 		class TransportMagazines
@@ -1537,8 +1497,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4; // 55 //
-		maximumLoad = 2500;
-		displayName = "Qilin (Unbewaffnet)";
 		textureList[] = {"Black",0,"GreenHex",1,"Arid",0};
 
 		class TransportMagazines
@@ -1568,8 +1526,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4; // 55 //
-		maximumLoad = 2500;
-		displayName = "Qilin (Bewaffnet)";
 		textureList[] = {"Black",0,"GreenHex",1,"Arid",0};
 
 		class TransportMagazines
@@ -1589,8 +1545,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4; // 55 //
-		maximumLoad = 2500;
-		displayName = "Qilin (Bewaffnet)";
 		textureList[] = {"Black",0,"GreenHex",0,"Arid",1};
 
 		class TransportMagazines
@@ -1627,7 +1581,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4; // 20 //
-		maximumLoad = 2500;
 
 		class TransportMagazines
 		{
@@ -1686,7 +1639,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4; // 20 //
-		maximumLoad = 2500;
 
 		textureList[] = {"Black",0,"GreenHex",1,"Arid",0};
 		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
@@ -1755,7 +1707,6 @@ class CfgVehicles
 	class OPT_B_Quadbike_01_F : B_Quadbike_01_F
 	{
 		faction = "OPT_NATO";
-		maximumLoad = 800;
 		fuelCapacity = 2; // 30 //
 
 		class TransportItems
@@ -1766,7 +1717,6 @@ class CfgVehicles
 	class OPT_B_Quadbike_01_ghex_F : B_Quadbike_01_F
 	{
 		faction = "OPT_NATO_T";
-		maximumLoad = 800;
 		fuelCapacity = 2; // 30 //
 		textureList[] = {"Olive",1};
 
@@ -1782,7 +1732,6 @@ class CfgVehicles
 	class OPT_I_Quadbike_01_F : I_Quadbike_01_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 800;
 		fuelCapacity = 2; // 30 //
 
 		class TransportItems
@@ -1797,7 +1746,6 @@ class CfgVehicles
 	class OPT_O_Quadbike_01_F : O_Quadbike_01_F
 	{
 		faction = "OPT_CSAT";
-		maximumLoad = 800;
 		fuelCapacity = 2; // 30 //
 
 		class TransportItems
@@ -1812,7 +1760,6 @@ class CfgVehicles
 	class OPT_O_T_Quadbike_01_ghex_F : O_T_Quadbike_01_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		maximumLoad = 800;
 		fuelCapacity = 2; // 30 //
 
 		class TransportItems
@@ -1838,9 +1785,7 @@ class CfgVehicles
 
 	class OPT_B_G_Offroad_01_F : B_G_Offroad_01_F
 	{
-		scope = 2;
 		faction = "OPT_NATO";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {};
 		hiddenSelections[] = {"camo"};
@@ -1855,9 +1800,7 @@ class CfgVehicles
 
 	class OPT_B_G_Offroad_01_ghex_F : B_G_Offroad_01_F
 	{
-		scope = 2;
 		faction = "OPT_NATO_T";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		animationList[] = {"HideDoor1",0,"HideDoor2",0,"HideDoor3",0,"HideBumper1",0,"HideBumper2",0};
 		hiddenSelections[] = {"camo"};
@@ -1875,9 +1818,7 @@ class CfgVehicles
 
 	class OPT_O_G_Offroad_01_F : O_G_Offroad_01_F
 	{
-		scope = 2;
 		faction = "OPT_CSAT";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {};
 		hiddenSelections[] = {"camo"};
@@ -1892,9 +1833,7 @@ class CfgVehicles
 
 	class OPT_O_G_Offroad_01_ghex_F : O_G_Offroad_01_F
 	{
-		scope = 2;
 		faction = "OPT_CSAT_T";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"EAF",1};
 		hiddenSelections[] = {"camo"};
@@ -1921,9 +1860,7 @@ class CfgVehicles
 
 	class OPT_B_G_Offroad_01_armed_F : B_G_Offroad_01_armed_F
 	{
-		scope = 2;
 		faction = "OPT_NATO";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"guerilla_03", 1};
 		hiddenSelections[] = {"camo"};
@@ -1938,9 +1875,7 @@ class CfgVehicles
 
 	class OPT_B_G_Offroad_01_armed_ghex_F : B_G_Offroad_01_armed_F
 	{
-		scope = 2;
 		faction = "OPT_NATO_T";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"Guerilla_01",1};
 		hiddenSelections[] = {"camo"};
@@ -1959,9 +1894,7 @@ class CfgVehicles
 
 	class OPT_O_G_Offroad_01_armed_F : O_G_Offroad_01_armed_F
 	{
-		scope = 2;
 		faction = "OPT_CSAT";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"guerilla_08", 1};
 		hiddenSelections[] = {"camo"};
@@ -1976,9 +1909,7 @@ class CfgVehicles
 
 	class OPT_O_G_Offroad_01_armed_ghex_F : O_G_Offroad_01_armed_F
 	{
-		scope = 2;
 		faction = "OPT_CSAT_T";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"EAF",1};
 		hiddenSelections[] = {"camo"};
@@ -1997,7 +1928,6 @@ class CfgVehicles
 	class OPT_I_C_Offroad_02_unarmed_F : I_C_Offroad_02_unarmed_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 2500;
 		fuelCapacity = 4; // 45 //
 		textureList[] = {"Brown",0,"Olive",1};
 		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
@@ -2014,7 +1944,6 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		fuelCapacity = 3; // 45 //
-		maximumLoad = 2500;
 		textureList[] = {"Brown",0,"Olive",1};
 		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
 
@@ -2038,7 +1967,6 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		fuelCapacity = 3; // 45 //
-		maximumLoad = 2500;
 		textureList[] = {"Brown",0,"Olive",1};
 		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
 
@@ -2071,8 +1999,6 @@ class CfgVehicles
 	class OPT_B_UGV_01_F : B_UGV_01_F
 	{
 		faction = "OPT_NATO";
-		displayName = "UGV Stomper";
-		maximumLoad = 2500;
 		fuelCapacity = 50; // 4500 //
 
 		class TransportItems
@@ -2087,8 +2013,6 @@ class CfgVehicles
 	class OPT_B_UGV_01_ghex_F : B_T_UGV_01_olive_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "UGV Stomper";
-		maximumLoad = 2500;
 		fuelCapacity = 50; // 4500 //
 
 		class TransportItems
@@ -2101,7 +2025,6 @@ class CfgVehicles
 	class OPT_I_UGV_01_F : I_UGV_01_F
 	{
 		faction = "OPT_AAF";
-		maximumLoad = 2500;
 		fuelCapacity = 50; // 4500 //
 
 		class TransportItems
@@ -2118,8 +2041,6 @@ class CfgVehicles
 	class OPT_O_UGV_01_F : O_UGV_01_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "UBF Saif";
-		maximumLoad = 2500;
 		fuelCapacity = 50; // 4500 //
 
 		class TransportItems
@@ -2134,8 +2055,6 @@ class CfgVehicles
 	class OPT_O_T_UGV_01_ghex_F : O_T_UGV_01_ghex_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "UBF Saif";
-		maximumLoad = 2500;
 		fuelCapacity = 50; // 4500 //
 
 		class TransportItems

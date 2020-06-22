@@ -1,4 +1,4 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class opt_vehicles_unarmed
 	{
@@ -505,7 +505,6 @@ class CfgVehicles
 
 	class OPT4_B_Heli_Light_01_armed_F : OPT_B_Heli_Light_01_armed_F
 	{
-		displayName = "AH-9 Pawnee";
 		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
 
@@ -535,7 +534,6 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Light_01_armed_F : OPT4_B_Heli_Light_01_armed_F
 	{
-		displayName = "AH-9 Pawnee";
 		faction = "OPT_CSAT";
 		side = 0;
 		crew = "OPT_CSAT_Pilot";
@@ -609,7 +607,6 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Light_02_F : OPT_O_Heli_Light_02_F
 	{
-		displayName = "PO-30 Orca";
 		weapons[] = {"OPT_CMFlareLauncher_Triples"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 
@@ -639,7 +636,6 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Light_02_black_F : OPT4_O_Heli_Light_02_F
 	{
-		displayName = "PO-30 Orca (Schwarz)";
 		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
 	};
 
@@ -1579,6 +1575,7 @@ class CfgVehicles
 			};
 		};
 	};
+	
 
 	//// Prowler (AT) ////
 
@@ -1597,9 +1594,7 @@ class CfgVehicles
 	class OPT4_B_LSV_01_AT_F : B_LSV_01_AT_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Prowler (AT)";
 		fuelCapacity = 3; // 20 //
-		maximumLoad = 2500;
 		textureList[] = {"Black",0,"Olive",0,"Sand",1};
 
 		class TransportMagazines
@@ -1644,9 +1639,7 @@ class CfgVehicles
 	class OPT4_B_LSV_01_AT_ghex_F : B_LSV_01_AT_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "Prowler (AT)";
 		fuelCapacity = 3; // 20 //
-		maximumLoad = 2500;
 		textureList[] = {"Black",0,"Olive",1,"Sand",0};
 
 		class TransportMagazines
@@ -1710,7 +1703,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4; // 20 //
-		maximumLoad = 2500;
 
 		class TransportMagazines
 		{
@@ -1770,9 +1762,7 @@ class CfgVehicles
 	class OPT4_O_LSV_02_AT_GHEX_F : OPT_O_LSV_02_AT_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Qilin (AT)";
 		fuelCapacity = 4; // 20 //
-		maximumLoad = 2500;
 
 		textureList[] = {"Black",0,"GreenHex",1,"Arid",0};
 		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
