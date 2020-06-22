@@ -941,8 +941,6 @@ class CfgVehicles
 	};
 
 	// Radardrohne AAF
-	class  Radar_System_01_base_F;
-
 	class I_E_Radar_System_01_F : Radar_System_01_base_F
 	{
 		class Components;

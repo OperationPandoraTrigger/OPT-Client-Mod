@@ -84,8 +84,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_40mm_CTWS", "LMG_M200_body"};
-				magazines[] = {"60Rnd_40mm_GPR_Tracer_Red_shells", "60Rnd_40mm_GPR_Tracer_Red_shells", "60Rnd_40mm_GPR_Tracer_Red_shells", "60Rnd_40mm_GPR_Tracer_Red_shells", "40Rnd_40mm_APFSDS_Tracer_Red_shells", "40Rnd_40mm_APFSDS_Tracer_Red_shells", "2000Rnd_65x39_belt"};
+				weapons[] = {"OPT_autocannon_40mm_CTWS", "LMG_coax"};
+				magazines[] = {"60Rnd_40mm_GPR_shells", "40Rnd_40mm_APFSDS_shells","40Rnd_40mm_APFSDS_shells",  "2000Rnd_762x51_Belt"};
 
 				class Turrets : Turrets
 				{
@@ -184,8 +184,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_40mm_CTWS", "LMG_M200_body"};
-				magazines[] = {"60Rnd_40mm_GPR_Tracer_Red_shells", "40Rnd_40mm_APFSDS_Tracer_Red_shells", "40Rnd_40mm_APFSDS_Tracer_Red_shells", "2000Rnd_65x39_belt"};
+				weapons[] = {"OPT_autocannon_40mm_CTWS", "LMG_coax"};
+				magazines[] = {"60Rnd_40mm_GPR_shells", "40Rnd_40mm_APFSDS_shells","40Rnd_40mm_APFSDS_shells",  "2000Rnd_762x51_Belt"};
 
 				class Turrets : Turrets
 				{
@@ -498,7 +498,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 12; // 45 //
-		//#include "\opt\opt_client\addons\vehicles\berggang.hpp"
 		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet"};
 		hiddenSelectionsTextures[] = {"A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_aa_body_olive_co.paa","A3\Armor_F_exp\APC_Tracked_01\Data\mbt_01_body_olive_co.paa","A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_aa_tower_olive_co.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
 
@@ -722,7 +721,7 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax"};
-				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt"};
+				magazines[] = {"140Rnd_30mm_MP_shells", "60Rnd_30mm_APFSDS_shells","60Rnd_30mm_APFSDS_shells", "2000Rnd_762x51_Belt"};
 
 				class Turrets : Turrets
 				{
@@ -1606,6 +1605,7 @@ class CfgVehicles
 		class MainTurret;
 		class CommanderOptics;
 		class ViewOptics;
+		class RCWSOptics;
 		class OpticsIn;
 		class ViewGunner;
 		class Wide;
@@ -1659,6 +1659,7 @@ class CfgVehicles
 		class CommanderOptics;
 		class ViewOptics;
 		class OpticsIn;
+		class RCWSOptics;
 		class ViewGunner;
 		class Wide;
 		class Medium;
@@ -1708,6 +1709,7 @@ class CfgVehicles
 		class ViewOptics;
 		class OpticsIn;
 		class Optics_Gunner_AAA_01;
+		class RCWSOptics;
 		class ViewGunner;
 		class Wide;
 		class Medium;
@@ -1732,7 +1734,80 @@ class CfgVehicles
 				class ViewOptics : ViewOptics
 				{
 					visionMode[] = {"Normal", "NVG"};
-				};			
+				};	
+
+				class OpticsIn : Optics_Gunner_AAA_01
+				{
+					class Wide : Wide
+					{
+						gunnerOpticsEffect[] = {};
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_AAA_01_m_F.p3d";
+						initAngleX = 0;
+						initAngleY = 0;
+						initFov = "(36 / 120)";
+						maxAngleX = 30;
+						maxAngleY = 100;
+						maxFov = "(36 / 120)";
+						maxMoveX = 0;
+						maxMoveY = 0;
+						maxMoveZ = 0;
+						minAngleX = -30;
+						minAngleY = -100;
+						minFov = "(36 / 120)";
+						minMoveX = 0;
+						minMoveY = 0;
+						minMoveZ = 0;
+						thermalMode[] = {0,1};
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						gunnerOpticsEffect[] = {};
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_AAA_01_m_F.p3d";
+						initAngleX = 0;
+						initAngleY = 0;
+						initFov = "(150 * 0.05625 / 120)";
+						maxAngleX = 30;
+						maxAngleY = 100;
+						maxFov = "(150 * 0.05625 / 120)";
+						maxMoveX = 0;
+						maxMoveY = 0;
+						maxMoveZ = 0;
+						minAngleX = -30;
+						minAngleY = -100;
+						minFov = "(150 * 0.05625 / 120)";
+						minMoveX = 0;
+						minMoveY = 0;
+						minMoveZ = 0;
+						thermalMode[] = {0,1};
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						gunnerOpticsEffect[] = {};
+						gunnerOpticsModel = "\A3\Weapons_F\Reticle\Optics_Gunner_AAA_01_m_F.p3d";
+						initAngleX = 0;
+						initAngleY = 0;
+						initFov = "(60 * 0.05625 / 120)";
+						maxAngleX = 30;
+						maxAngleY = 100;
+						maxFov = "(60 * 0.05625 / 120)";
+						maxMoveX = 0;
+						maxMoveY = 0;
+						maxMoveZ = 0;
+						minAngleX = -30;
+						minAngleY = -100;
+						minFov = "(60 * 0.05625 / 120)";
+						minMoveX = 0;
+						minMoveY = 0;
+						minMoveZ = 0;
+						thermalMode[] = {0,1};
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+
 			};
 		};
 
