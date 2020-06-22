@@ -2,7 +2,7 @@
 {
 	class opt_vehicles_unarmed
 	{
-		units[] = {"OPT4_B_MRAP_01_gmg_F","OPT4_B_MRAP_01_gmg_ghex_F", "OPT4_B_MRAP_01_hmg_F","OPT4_B_MRAP_01_hmg_ghex_F", "OPT4_O_MRAP_02_hmg_F", "OPT4_O_T_MRAP_02_hmg_ghex_F", "OPT4_O_MRAP_02_gmg_F", "OPT4_O_T_MRAP_02_gmg_ghex_F", "OPT4_B_MRAP_03_hmg_F","OPT4_I_MRAP_03_hmg_F", "OPT4_B_MRAP_03_gmg_F","OPT4_I_C_Offroad_02_AT_F",
+		units[] = {"OPT4_B_MRAP_01_gmg_F","OPT4_B_MRAP_01_gmg_ghex_F", "OPT4_B_MRAP_01_hmg_F","OPT4_B_MRAP_01_hmg_ghex_F", "OPT4_O_MRAP_02_hmg_F", "OPT4_O_T_MRAP_02_hmg_ghex_F", "OPT4_O_MRAP_02_gmg_F", "OPT4_O_T_MRAP_02_gmg_ghex_F", "OPT4_B_MRAP_03_hmg_F","OPT4_I_MRAP_03_hmg_F", "OPT4_B_MRAP_03_gmg_F","OPT4_I_MRAP_03_gmg_F","OPT4_I_C_Offroad_02_AT_F",
 				   "OPT4_O_Heli_Attack_02_F", "OPT4_O_Heli_Attack_02_black_F", "OPT4_B_Heli_Attack_01_F", "OPT4_B_Heli_Attack_01_F", "OPT4_B_Heli_Light_01_armed_F", "OPT4_O_Heli_Light_01_armed_F",
 				   "OPT4_O_Heli_light_03_F", " OPT4_O_Heli_light_03_green_F", "OPT4_O_Heli_Light_02_F", "OPT4_O_Heli_Light_02_black_F",
 				   "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Wheeled_01_cannon_ghex_F", "OPT4_B_APC_Tracked_01_rcws_F","OPT4_B_APC_Tracked_01_rcws_ghex_F", "OPT4_B_APC_Tracked_01_AA_F","OPT_B_APC_Tracked_01_AA_ghex_F","OPT_B_APC_Tracked_01_AA_ghex_F2", "OPT4_B_MBT_01_cannon_F","OPT4_B_MBT_01_cannon_ghex_F",
@@ -189,9 +189,9 @@ class CfgVehicles
 	};
 
 	//// Strider HMG ////
-	class OPT_I_MRAP_03_hmg_F;
+	class I_MRAP_03_hmg_F;
 
-	class OPT_B_MRAP_03_hmg_F : OPT_I_MRAP_03_hmg_F
+	class OPT_B_MRAP_03_hmg_F : I_MRAP_03_hmg_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -214,14 +214,14 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_MRAP_03_hmg_F2 : OPT_I_MRAP_03_hmg_F
+	class OPT_I_MRAP_03_hmg_F : I_MRAP_03_hmg_F
 	{
 		class Turrets;
 		class MainTurret;
 		class CommanderTurret;
 	};
 
-	class OPT4_I_MRAP_03_hmg_F : OPT_I_MRAP_03_hmg_F2
+	class OPT4_I_MRAP_03_hmg_F : OPT_I_MRAP_03_hmg_F
 	{
 		class Turrets : Turrets
 		{
@@ -237,9 +237,9 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_MRAP_03_gmg_F;
+	class I_MRAP_03_gmg_F;
 
-	class OPT_B_MRAP_03_gmg_F : OPT_I_MRAP_03_gmg_F
+	class OPT_B_MRAP_03_gmg_F : I_MRAP_03_gmg_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -247,6 +247,29 @@ class CfgVehicles
 	};
 
 	class OPT4_B_MRAP_03_gmg_F : OPT_B_MRAP_03_gmg_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+			};
+
+			class CommanderTurret : CommanderTurret
+			{
+			};
+		};
+	};
+
+	class OPT_I_MRAP_03_gmg_F : I_MRAP_03_gmg_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderTurret;
+	};
+
+	class OPT4_I_MRAP_03_gmg_F : OPT_I_MRAP_03_gmg_F
 	{
 		class Turrets : Turrets
 		{
