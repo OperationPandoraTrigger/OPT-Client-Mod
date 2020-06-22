@@ -11,9 +11,9 @@ class CfgPatches
 				   "OPT_B_Static_Designator_01_F", "OPT_O_Static_Designator_02_F", "OPT_B_Mortar_01_F", "OPT_O_Mortar_01_F", "OPT_B_CargoNet_01_ammo_F", "OPT_B_supplyCrate_F", "OPT_Box_NATO_Ammo_F",
 				   "OPT_Box_NATO_WpsSpecial_F", "OPT_Box_NATO_WpsSpecial_AT_F", "OPT_Box_NATO_WpsSpecial_AT_L1", "OPT_Box_NATO_WpsSpecial_AT_L2", "OPT_Box_NATO_WpsSpecial_AT_H1", "OPT_Box_NATO_WpsSpecial_AA_F", "OPT_Box_NATO_WpsSpecial_Diver_F", "OPT_Box_NATO_WpsLaunch_F", "OPT_Box_NATO_Grenades_F",
 				   "OPT_O_CargoNet_01_ammo_F", "OPT_O_supplyCrate_F", "OPT_Box_East_Ammo_F", "OPT_Box_East_WpsSpecial_F", "OPT_Box_East_WpsLaunch_F", "OPT_Box_East_WpsSpecial_AT_L1", "OPT_Box_East_WpsSpecial_AT_L2", "OPT_Box_East_WpsSpecial_AT_L3", "OPT_Box_East_WpsSpecial_AA_F", "OPT_Box_East_WpsSpecial_Diver_F", "OPT_Box_East_WpsLaunch_F_F", "OPT_Box_East_Grenades_F",
-				   "OPT_B_HMG_01_weapon_F", "OPT_B_HMG_01_high_weapon_F", "OPT_O_HMG_01_weapon_F", "OPT_O_HMG_01_high_weapon_F", "OPT_B_UAV_01_backpack_F", "OPT_O_UAV_01_backpack_F", "OPT_B_Static_Designator_01_weapon_F",
-				   "OPT_O_Static_Designator_02_weapon_F", "OPT_B_GMG_01_high_weapon_F", "OPT_O_GMG_01_high_weapon_F", "OPT_B_GMG_01_weapon_F", "OPT_O_GMG_01_weapon_F", "OPT_B_AA_01_weapon_F", "OPT_O_AA_01_weapon_F",
-				   "OPT_B_AT_01_weapon_F", "OPT_O_AT_01_weapon_F", "OPT_B_Mortar_01_weapon_F", "OPT_O_Mortar_01_weapon_F", "OPT_B_Kitbag_rgr_Eng", "OPT_B_Carryall_ocamo_Eng", "OPT_B_FieldPack_ocamo_AT", "OPT_B_FieldPack_ocamo_AA",
+				   "OPT_B_HMG_01_weapon_F", "OPT_B_HMG_01_high_weapon_F", "OPT_I_HMG_01_weapon_F", "OPT_I_HMG_01_high_weapon_F","OPT_O_HMG_01_weapon_F", "OPT_O_HMG_01_high_weapon_F", "OPT_B_UAV_01_backpack_F", "OPT_O_UAV_01_backpack_F", "OPT_B_Static_Designator_01_weapon_F", "OPT_I_Static_Designator_01_weapon_F",
+				   "OPT_O_Static_Designator_02_weapon_F", "OPT_B_GMG_01_high_weapon_F","OPT_I_GMG_01_high_weapon_F", "OPT_O_GMG_01_high_weapon_F", "OPT_B_GMG_01_weapon_F", "OPT_I_GMG_01_weapon_F","OPT_O_GMG_01_weapon_F", "OPT_B_AA_01_weapon_F","OPT_I_AA_01_weapon_F", "OPT_O_AA_01_weapon_F",
+				   "OPT_B_AT_01_weapon_F", "OPT_I_AT_01_weapon_F","OPT_O_AT_01_weapon_F", "OPT_B_Mortar_01_weapon_F","OPT_I_Mortar_01_weapon_F", "OPT_O_Mortar_01_weapon_F", "OPT_B_Kitbag_rgr_Eng", "OPT_B_Carryall_ocamo_Eng", "OPT_B_FieldPack_ocamo_AT", "OPT_B_FieldPack_ocamo_AA",
 				   "OPT_B_FieldPack_ocamo_LAT", "OPT_B_TacticalPack_rgr", "OPT_B_TacticalPack_blk", "OPT_B_TacticalPack_blk_AA", "OPT_B_TacticalPack_blk_LAT", "OPT_B_TacticalPack_blk_AT", "OPT_B_AssaultPack_rgr_Medic",
 				   "OPT_B_AssaultPack_blk_Medic", "OPT_B_FieldPack_ocamo_ReconMedic", "OPT_tf_mr3000_bwmod", "OPT_tf_rt1523g_big_bwmod", "OPT_tf_fadak", "OPT_tf_anprc152", "OPT_ACE_Box_82mm_Mo_HE"};
 
@@ -4341,7 +4341,6 @@ class CfgVehicles
 	class OPT_B_HMG_01_F : B_HMG_01_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Mk30 HMG .50";
 
 		class Turrets : Turrets
 		{
@@ -4366,6 +4365,40 @@ class CfgVehicles
 		};
 	};
 
+	class I_HMG_01_F : HMG_01_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class ViewOptics;
+	};
+
+	class OPT_I_HMG_01_F : I_HMG_01_F
+	{
+		faction = "OPT_AAF";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"200Rnd_127x99_mag", "200Rnd_127x99_mag", "200Rnd_127x99_mag", "200Rnd_127x99_mag", "200Rnd_127x99_mag"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+
+		class assembleInfo
+		{
+			primary = 0;
+			base = "";
+			assembleTo = "";
+			dissasembleTo[] = {"OPT_I_HMG_01_weapon_F", "I_HMG_01_support_F"};
+			displayName = "";
+		};
+	};
+
 	class O_HMG_01_F : HMG_01_base_F
 	{
 		class Turrets;
@@ -4376,7 +4409,6 @@ class CfgVehicles
 	class OPT_O_HMG_01_F : O_HMG_01_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Mk30 HMG .50";
 
 		class Turrets : Turrets
 		{
@@ -4415,7 +4447,6 @@ class CfgVehicles
 	class OPT_B_HMG_01_high_F : B_HMG_01_high_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Mk30 HMG .50 (erhöht)";
 
 		class Turrets : Turrets
 		{
@@ -4440,6 +4471,40 @@ class CfgVehicles
 		};
 	};
 
+	class I_HMG_01_high_F : HMG_01_high_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class ViewOptics;
+	};
+
+	class OPT_I_HMG_01_high_F : I_HMG_01_high_F
+	{
+		faction = "OPT_AAF";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"200Rnd_127x99_mag", "200Rnd_127x99_mag", "200Rnd_127x99_mag", "200Rnd_127x99_mag", "200Rnd_127x99_mag"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+
+		class assembleInfo
+		{
+			primary = 0;
+			base = "";
+			assembleTo = "";
+			dissasembleTo[] = {"OPT_I_HMG_01_high_weapon_F", "I_HMG_01_support_high_F"};
+			displayName = "";
+		};
+	};
+
 	class O_HMG_01_high_F : HMG_01_high_base_F
 	{
 		class Turrets;
@@ -4450,7 +4515,6 @@ class CfgVehicles
 	class OPT_O_HMG_01_high_F : O_HMG_01_high_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Mk30 HMG .50 (erhöht)";
 
 		class Turrets : Turrets
 		{
@@ -4496,8 +4560,6 @@ class CfgVehicles
 	class OPT_B_GMG_01_F : B_GMG_01_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Mk32 GMG 20 mm";
-		descriptionShort = "Mk32 Statischer Granatwerfer";
 
 		class Turrets : Turrets
 		{
@@ -4525,6 +4587,41 @@ class CfgVehicles
 		};
 	};
 
+	class I_GMG_01_F : GMG_01_base_F
+	{
+	};
+
+	class OPT_I_GMG_01_F : I_GMG_01_F
+	{
+		faction = "OPT_AAF";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"40Rnd_20mm_g_belt", "40Rnd_20mm_g_belt", "40Rnd_20mm_g_belt"};
+
+				class OpticsIn : OpticsIn
+				{
+					class ViewOptics : ViewOptics
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class assembleInfo
+		{
+			primary = 0;
+			base = "";
+			assembleTo = "";
+			dissasembleTo[] = {"OPT_I_GMG_01_weapon_F", "I_HMG_01_support_F"};
+			displayName = "";
+		};
+	};
+
+
 	class O_GMG_01_F : GMG_01_base_F
 	{
 	};
@@ -4532,8 +4629,6 @@ class CfgVehicles
 	class OPT_O_GMG_01_F : O_GMG_01_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Mk32 GMG 20 mm";
-		descriptionShort = "Mk32 Statischer Granatwerfer";
 
 		class Turrets : Turrets
 		{
@@ -4572,8 +4667,6 @@ class CfgVehicles
 	class OPT_B_GMG_01_high_F : B_GMG_01_high_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Mk32 GMG 20 mm (erhöht)";
-		descriptionShort = "Mk32 Statischer Granatwerfer";
 
 		class Turrets : Turrets
 		{
@@ -4601,6 +4694,40 @@ class CfgVehicles
 		};
 	};
 
+	class I_GMG_01_high_F : GMG_01_high_base_F
+	{
+	};
+
+	class OPT_I_GMG_01_high_F : I_GMG_01_high_F
+	{
+		faction = "OPT_AAF";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {"40Rnd_20mm_g_belt", "40Rnd_20mm_g_belt", "40Rnd_20mm_g_belt"};
+
+				class OpticsIn : OpticsIn
+				{
+					class ViewOptics : ViewOptics
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class assembleInfo
+		{
+			primary = 0;
+			base = "";
+			assembleTo = "";
+			dissasembleTo[] = {"OPT_I_GMG_01_high_weapon_F", "I_HMG_01_support_high_F"};
+			displayName = "";
+		};
+	};
+
 	class O_GMG_01_high_F : GMG_01_high_base_F
 	{
 	};
@@ -4608,8 +4735,6 @@ class CfgVehicles
 	class OPT_O_GMG_01_high_F : O_GMG_01_high_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Mk32 GMG 20 mm (erhöht)";
-		descriptionShort = "Mk32 Statischer Granatwerfer";
 
 		class Turrets : Turrets
 		{
@@ -4654,7 +4779,6 @@ class CfgVehicles
 	class OPT_B_static_AA_F : B_static_AA_F
 	{
 		faction = "OPT_NATO";
-		displayname = "Statischer Titan-Werfer (AA) [NATO]";
 
 		class Turrets : Turrets
 		{
@@ -4676,6 +4800,34 @@ class CfgVehicles
 		};
 	};
 
+	class I_static_AA_F : AA_01_base_F
+	{
+	};
+
+	class OPT_I_static_AA_F : I_static_AA_F
+	{
+		faction = "OPT_AAF";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_missiles_titan_static_AA"};
+				magazines[] = {"1Rnd_GAA_missiles", "1Rnd_GAA_missiles", "1Rnd_GAA_missiles", "1Rnd_GAA_missiles"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+
+		class assembleInfo : assembleInfo
+		{
+			dissasembleTo[] = {"OPT_I_AA_01_weapon_F", "I_HMG_01_support_F"};
+		};
+	};
+
 	class O_static_AA_F : AA_01_base_F
 	{
 	};
@@ -4683,7 +4835,6 @@ class CfgVehicles
 	class OPT_O_static_AA_F : O_static_AA_F
 	{
 		faction = "OPT_CSAT";
-		displayname = "Statischer Titan-Werfer (AA) [CSAT]";
 
 		class Turrets : Turrets
 		{
@@ -4720,7 +4871,6 @@ class CfgVehicles
 	class OPT_B_static_AT_F : B_static_AT_F
 	{
 		faction = "OPT_NATO";
-		displayname = "Statischer Titan-Werfer (AT) [NATO]";
 
 		class Turrets : Turrets
 		{
@@ -4742,6 +4892,34 @@ class CfgVehicles
 		};
 	};
 
+	class I_static_AT_F : AT_01_base_F
+	{
+	};
+
+	class OPT_I_static_AT_F : I_static_AT_F
+	{
+		faction = "OPT_AAF";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_missiles_titan_static"};
+				magazines[] = {"1Rnd_GAT_missiles", "1Rnd_GAT_missiles", "1Rnd_GAT_missiles", "1Rnd_GAT_missiles"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+
+		class assembleInfo : assembleInfo
+		{
+			dissasembleTo[] = {"OPT_I_AT_01_weapon_F", "I_HMG_01_support_F"};
+		};
+	};
+
 	class O_static_AT_F : AT_01_base_F
 	{
 	};
@@ -4749,7 +4927,6 @@ class CfgVehicles
 	class OPT_O_static_AT_F : O_static_AT_F
 	{
 		faction = "OPT_CSAT";
-		displayname = "Statischer Titan-Werfer (AT) [CSAT]";
 
 		class Turrets : Turrets
 		{
@@ -4804,6 +4981,12 @@ class CfgVehicles
 		{
 			dissasembleTo[] = {"OPT_B_Static_Designator_01_weapon_F"};
 		};
+	};
+
+	class OPT_I_Static_Designator_01_F : B_Static_Designator_01_F
+	{
+		faction = "OPT_AAF";
+		Side = 2;
 	};
 
 	class Static_Designator_02_base_F : StaticWeapon
@@ -4861,6 +5044,32 @@ class CfgVehicles
 		class assembleInfo : assembleInfo
 		{
 			dissasembleTo[] = {"OPT_B_Mortar_01_weapon_F", "B_Mortar_01_support_F"};
+		};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_mortar_82mm"};
+				magazines[] = {"OPT_8Rnd_82mm_Mo_shells", "8Rnd_82mm_Mo_Flare_white", "8Rnd_82mm_Mo_Smoke_white"};
+			};
+		};
+	};
+
+	class I_Mortar_01_F : Mortar_01_base_F
+	{
+		class assembleInfo;
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT_I_Mortar_01_F : I_Mortar_01_F
+	{
+		faction = "OPT_AAF";
+
+		class assembleInfo : assembleInfo
+		{
+			dissasembleTo[] = {"OPT_I_Mortar_01_weapon_F", "I_Mortar_01_support_F"};
 		};
 
 		class Turrets : Turrets
@@ -7091,6 +7300,19 @@ class CfgVehicles
 		};
 	};
 
+	class I_HMG_01_weapon_F : B_HMG_01_weapon_F
+	{
+	};
+
+	class OPT_I_HMG_01_weapon_F : I_HMG_01_weapon_F
+	{
+
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_I_HMG_01_F";
+		};
+	};
+
 	class B_HMG_01_high_weapon_F : B_HMG_01_weapon_F
 	{
 	};
@@ -7101,6 +7323,19 @@ class CfgVehicles
 		class assembleInfo : assembleInfo
 		{
 			assembleTo = "OPT_B_HMG_01_high_F";
+		};
+	};
+
+	class I_HMG_01_high_weapon_F : B_HMG_01_high_weapon_F
+	{
+	};
+
+	class OPT_I_HMG_01_high_weapon_F : I_HMG_01_high_weapon_F
+	{
+
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_I_HMG_01_high_F";
 		};
 	};
 
@@ -7172,6 +7407,14 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_I_Static_Designator_01_weapon_F : B_Static_Designator_01_weapon_F
+	{
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_B_Static_Designator_01_F";
+		};
+	};
+
 	class O_Static_Designator_02_weapon_F : Weapon_Bag_Base
 	{
 		class assembleInfo;
@@ -7196,6 +7439,19 @@ class CfgVehicles
 		class assembleInfo : assembleInfo
 		{
 			assembleTo = "OPT_B_GMG_01_high_F";
+		};
+	};
+
+	class I_GMG_01_high_weapon_F : B_HMG_01_high_weapon_F
+	{
+	};
+
+	class OPT_I_GMG_01_high_weapon_F : I_GMG_01_high_weapon_F
+	{
+
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_I_GMG_01_high_F";
 		};
 	};
 
@@ -7225,6 +7481,19 @@ class CfgVehicles
 		};
 	};
 
+	class I_GMG_01_weapon_F : B_HMG_01_weapon_F
+	{
+	};
+
+	class OPT_I_GMG_01_weapon_F : I_GMG_01_weapon_F
+	{
+
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_I_GMG_01_F";
+		};
+	};
+
 	class O_GMG_01_weapon_F : B_GMG_01_weapon_F
 	{
 	};
@@ -7249,6 +7518,20 @@ class CfgVehicles
 		class assembleInfo : assembleInfo
 		{
 			assembleTo = "OPT_B_static_AA_F";
+		};
+	};
+
+	class I_AA_01_weapon_F : Weapon_Bag_Base
+	{
+		class assembleInfo;
+	};
+
+	class OPT_I_AA_01_weapon_F : I_AA_01_weapon_F
+	{
+
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_I_static_AA_F";
 		};
 	};
 
@@ -7280,6 +7563,20 @@ class CfgVehicles
 		};
 	};
 
+	class I_AT_01_weapon_F : Weapon_Bag_Base
+	{
+		class assembleInfo;
+	};
+
+	class OPT_I_AT_01_weapon_F : I_AT_01_weapon_F
+	{
+
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_I_static_AT_F";
+		};
+	};
+
 	class O_AT_01_weapon_F : Weapon_Bag_Base
 	{
 		class assembleInfo;
@@ -7305,6 +7602,20 @@ class CfgVehicles
 		class assembleInfo : assembleInfo
 		{
 			assembleTo = "OPT_B_Mortar_01_F";
+		};
+	};
+
+	class I_Mortar_01_weapon_F : Weapon_Bag_Base
+	{
+		class assembleInfo;
+	};
+
+	class OPT_I_Mortar_01_weapon_F : I_Mortar_01_weapon_F
+	{
+
+		class assembleInfo : assembleInfo
+		{
+			assembleTo = "OPT_I_Mortar_01_F";
 		};
 	};
 
