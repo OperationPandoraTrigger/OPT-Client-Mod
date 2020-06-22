@@ -1625,8 +1625,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"SmokeLauncher", "HMG_127", "OPT_missiles_Firefist"};
-				magazines[] = {"SmokeLauncherMag", "500Rnd_127x99_mag","500Rnd_127x99_mag", "2Rnd_127mm_Firefist_missiles", "2Rnd_127mm_Firefist_missiles"};
+				weapons[] = {"SmokeLauncher", "HMG_127", "OPT_missiles_titan"};
+				magazines[] = {"SmokeLauncherMag", "500Rnd_127x99_mag","500Rnd_127x99_mag", "2Rnd_GAT_missiles", "2Rnd_GAT_missiles"};
 
 				class ViewOptics : ViewOptics
 				{
