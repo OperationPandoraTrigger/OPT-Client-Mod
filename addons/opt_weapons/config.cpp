@@ -7444,7 +7444,41 @@ class CfgVehicles
 			class _xx_RPG7_F
 			{
 				magazine = "RPG7_F";
-				count = 10;
+				count = 5;
+			};
+		};
+	};
+
+	class OPT_Box_EAF_WpsSpecial_AT_L2 : Box_EAF_WpsSpecial_F
+	{
+		displayName = "AAF Raketenkiste (RPG-7)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_launch_RPG7_F
+			{
+				weapon = "launch_RPG7_F";
+				count = 1;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_RPG7_F
+			{
+				magazine = "RPG7_F";
+				count = 5;
 			};
 		};
 	};
