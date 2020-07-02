@@ -5363,9 +5363,9 @@ class CfgVehicles
 		};
 	};
 
-	class I_CargoNet_01_ammo_F;
+	class I_E_CargoNet_01_ammo_F;
 
-	class OPT_I_CargoNet_01_ammo_F : I_CargoNet_01_ammo_F
+	class OPT_I_CargoNet_01_ammo_F : I_E_CargoNet_01_ammo_F
 	{
 		displayName = "AAF Ausrüstungskiste";
 		maximumLoad = 30000;
@@ -5881,7 +5881,11 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_Box_EAF_WpsSpecial_F : Land_PlasticCase_01_small_F
+	class Land_PlasticCase_01_small_black_F : Land_PlasticCase_01_small_F
+	{
+	};
+
+	class OPT_Box_EAF_WpsSpecial_F : Land_PlasticCase_01_small_black_F
 	{
 		displayName = "AAF Spezialkiste";
 		maximumLoad = 15000;
@@ -6203,6 +6207,7 @@ class CfgVehicles
 		displayName = "AAF Taucherkiste";
 		maximumLoad = 2000;
 		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\a3\Supplies_F_Enoch\Ammoboxes\Data\uniforms_box_EAF_co.paa","\a3\Supplies_F_Enoch\Ammoboxes\Data\uniforms_box_EAF_ca.paa"};
 
 		class TransportWeapons
 		{
@@ -6662,12 +6667,17 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_EAF_Sprengstoffkiste : Land_PlasticCase_01_medium_gray_F
+	class Land_PlasticCase_01_medium_black_F : Land_PlasticCase_01_medium_F
+	{
+	};
+
+	class OPT_EAF_Sprengstoffkiste : Land_PlasticCase_01_medium_black_F
 	{
 		displayName = "AAF Sprengstoffkiste";
 		maximumLoad = 8500;
 		supplyRadius = 8;
-
+		hiddenSelectionsTextures[] = {"a3\Props_F_Enoch\Military\Supplies\Data\PlasticCase_01_black_CO.paa","a3\Props_F_Enoch\Military\Supplies\data\PlasticCase_01_Logo_01_CA"};
+	
 		class TransportWeapons
 		{
 		};
@@ -6707,7 +6717,7 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_EAF_Minenkiste : Land_PlasticCase_01_medium_gray_F
+	class OPT_EAF_Minenkiste : Land_PlasticCase_01_medium_black_F
 	{
 		displayName = "AAF Minenkiste";
 		maximumLoad = 8500;
@@ -7340,7 +7350,7 @@ class CfgVehicles
 		displayName = "CSAT Raketenkiste (RPG-42 Alamut)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
 		class TransportWeapons
 		{
@@ -7380,7 +7390,7 @@ class CfgVehicles
 		displayName = "AAF Raketenkiste (RPG-42 Alamut)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
 
 		class TransportWeapons
 		{
@@ -7454,7 +7464,7 @@ class CfgVehicles
 		displayName = "AAF Raketenkiste (RPG-7)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
 
 		class TransportWeapons
 		{
