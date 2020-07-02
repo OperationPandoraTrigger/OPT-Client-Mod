@@ -292,18 +292,106 @@ class CfgVehicles
 	{
 		class Turrets;
 		class MainTurret;
+		class AT_Turret;
+		class ViewOptics;
+		class viewGunner;
+		class CargoTurret_01;
+		class CargoTurret;
+		class dynamicViewLimits;
+		class TurnIn;
 	};
 
 	class OPT4_I_C_Offroad_02_AT_F : OPT_I_C_Offroad_02_AT_F
 	{
 		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
 
-		class Turrets : Turrets
+		class Turrets : Turrets 
 		{
-			class MainTurret : MainTurret
+			class AT_Turret : MainTurret 
 			{
-				magazines[] = {};
+				disableSoundAttenuation = 1;
+				gunnerLeftHandAnimName = "otocHlaven";
+				gunnerRightHandAnimName = "otocHlaven";
+				body = "mainTurret";
+				gun = "mainGun";
+				animationSourceBody = "mainTurret";
+				animationSourceGun = "mainGun";
 				weapons[] = {};
+				magazines[] = {};
+				minElev = -5;
+				maxElev = 14;
+				soundServo[] = {"A3\sounds_f\dummysound", db-120, 1.0};
+				gunnerAction = "Gunner_Offroad_02_AT_F";
+				gunnerCompartments = "Compartment1";
+				ejectDeadGunner = false;
+				castGunnerShadow = true;
+				stabilizedInAxes = 0;
+				gunEnd = "konec hlavne";	// chamber of the gun
+				gunBeg = "usti hlavne";	// endpoint of the gun
+				memoryPointGunnerOptics = "gunnerView";
+				gunnerOpticsModel = "\a3\Weapons_F_Tank\acc\reticle_SPG9.p3d";
+				memoryPointsGetInGunner = "pos cargo";
+				memoryPointsGetInGunnerDir = "pos cargo dir";
+				commanding = 1;
+				primaryGunner = 1;
+				optics = true;
+				gunnerForceOptics = false;
+				discreteDistance[] = {100, 200, 300, 400, 600, 800, 1000, 1200, 1500};
+				discreteDistanceInitIndex = 2;
+				turretInfoType = "RscOptics_Offroad_01";
+				
+				class ViewOptics : ViewOptics 
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.0625;
+					minFov = 0.0625;
+					maxFov = 0.0625;
+					visionMode[] = {"Normal"};
+				};
+				
+				class viewGunner : ViewOptics 
+				{
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+				};
+			};
+			
+			class CargoTurret_01 : CargoTurret 
+			{
+				gunnerInAction = "passenger_inside_2";
+				gunnerAction = "passenger_inside_2";
+				gunnerName = $STR_A3_TURRETS_CARGOTURRET_R1;
+				memoryPointsGetInGunner = "pos codriver";
+				memoryPointsGetInGunnerDir = "pos codriver dir";
+				gunnerCompartments = "Compartment1";
+				proxyIndex = 1;
+				isPersonTurret = 1;
+				canHideGunner = 0;
+				LODTurnedIn = 1200;
+				LODTurnedOut = -1;
+				outGunnerMayFire = false;
+				inGunnerMayFire = true;
+				
+				class dynamicViewLimits {};
+				
+				class TurnIn 
+				{
+					limitsArrayTop[] = {{17.1955, -93.583}, {11.1851, -27.2403}};
+					limitsArrayBottom[] = {{-21.5844, -94.9925}, {-14.3463, -29.4387}};
+					turnOffset = 0;
+				};
+				
+				class TurnOut : TurnIn 
+				{
+					limitsArrayTop[] = {{35.5209, -94.8698}, {32.1307, 95.0}};
+					limitsArrayBottom[] = {{-44.5208, -95.0}, {-34.5606, -5.0313}, {-32.2057, 12.7971}, {-33.5706, 33.2967}, {-31.542, 70.3073}, {-36.4877, 95.0}};
+				};
 			};
 		};
 	};
