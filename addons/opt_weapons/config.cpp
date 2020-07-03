@@ -880,7 +880,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 15; // 20 //
 		};
 	};
 
@@ -897,7 +896,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 15; // 20 //
 		};
 	};
 
@@ -914,7 +912,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 15; // 20 //
 		};
 	};
 
@@ -931,7 +928,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 15; // 20 //
 		};
 	};
 
@@ -949,7 +945,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 15; // 20 //
 		};
 	};
 
@@ -966,7 +961,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 15; // 20 //
 		};
 	};
 
@@ -984,7 +978,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 15; // 20 //
 		};
 	};
 
@@ -1001,7 +994,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 15; // 20 //
 		};
 	};
 
@@ -1037,7 +1029,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 30; // 40 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1087,7 +1078,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 37.5; // 50 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1129,7 +1119,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 60; // 80 //
 		};
 	};
 
@@ -1153,7 +1142,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 240; // 320 //
+
 
 			class CowsSlot : CowsSlot
 			{
@@ -1198,7 +1187,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 165; // 220 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1258,7 +1246,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 255; // 340 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1313,7 +1300,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 285; // 380 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1361,7 +1347,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 285; // 380 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1419,7 +1404,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // alt 100 // neu 120 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1511,7 +1495,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // alt 100 // neu 120 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1565,7 +1548,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 90; // 120 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1685,7 +1667,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1813,7 +1794,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 60; // 80 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1862,7 +1842,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 60; // 80 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -1907,7 +1886,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 90; // 120 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2004,7 +1982,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2133,7 +2110,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2226,7 +2202,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 135; // 180 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2287,7 +2262,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			// mass = 240; // 320 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2346,7 +2320,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			// mass = 270; // 360 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2389,7 +2362,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			// mass = 270; // 360 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2444,7 +2416,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 165; // 220 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2541,7 +2512,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 105; // 140 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2626,7 +2596,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			// mass = 360; // 480 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2661,7 +2630,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			// mass = 360; // 480 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2704,7 +2672,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			// mass = 315; // 420 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2743,7 +2710,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			// mass = 315; // 420 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2788,7 +2754,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 67.5; // 90 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2871,7 +2836,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 67.5; // 90 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2900,7 +2864,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 82.5; // 110 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -2972,7 +2935,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 82.5; // 110 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -3030,7 +2992,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 120; // 160 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -3062,7 +3023,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 60; // 80 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -3145,7 +3105,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 60;
 
 			class CowsSlot : CowsSlot
 			{
@@ -3174,7 +3133,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -3226,7 +3184,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -3277,7 +3234,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -3307,7 +3263,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 105; // 140 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -3336,7 +3291,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 90; // 120 //
 
 			class CowsSlot : CowsSlot
 			{
@@ -3393,7 +3347,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 105; // 140 //
 		};
 
 		class OpticsModes : OpticsModes
@@ -3415,7 +3368,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 105; // 140 //
 		};
 
 		class OpticsModes : OpticsModes
@@ -3450,7 +3402,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 90; // 120 //
 		};
 
 		class OpticsModes : OpticsModes
@@ -3474,7 +3425,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 90; // 120 //
 		};
 
 		class OpticsModes : OpticsModes
@@ -3501,7 +3451,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 105; // 140 //
 		};
 
 		class OpticsModes : OpticsModes
@@ -3528,7 +3477,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 105; // 140 //
 		};
 
 		class OpticsModes : OpticsModes
@@ -3557,7 +3505,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 90; // 120 //
 		};
 
 		class OpticsModes : OpticsModes
@@ -3586,7 +3533,7 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 90; // 120 //
+
 		};
 
 		class OpticsModes : OpticsModes
@@ -3615,7 +3562,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 		};
 	};
 
@@ -3630,7 +3576,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 		};
 	};
 
@@ -3652,7 +3597,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 		};
 	};
 
@@ -3671,7 +3615,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 		};
 	};
 
@@ -3681,7 +3624,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 		};
 	};
 
@@ -3706,7 +3648,6 @@ class CfgWeapons
 
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 75; // 100 //
 		};
 
 		class OpticsModes : OpticsModes
@@ -8500,7 +8441,6 @@ class CfgVehicles
 	{
 		displayName = "Seesack Eng. (grün)";
 		maximumLoad = 280;
-		mass = 50;
 		scope = 2;
 
 		class TransportMagazines
@@ -8523,7 +8463,6 @@ class CfgVehicles
 	{
 		displayName = "Grosser Rucksack Eng. (Hex-Camo)";
 		maximumLoad = 320;
-		mass = 60;
 		scope = 2;
 
 		class TransportMagazines
@@ -8546,7 +8485,6 @@ class CfgVehicles
 	{
 		displayName = "Grosser Rucksack Eng. (Ghex-Camo)";
 		maximumLoad = 320;
-		mass = 60;
 		scope = 2;
 
 		class TransportMagazines
@@ -8569,7 +8507,6 @@ class CfgVehicles
 	{
 		displayName = "Feldpack HAT (Hex-Camo)";
 		maximumLoad = 200;
-		mass = 30;
 
 		class TransportMagazines
 		{
@@ -8625,7 +8562,6 @@ class CfgVehicles
 	{
 		displayName = "Feldpack HAT (Ghex-Camo)";
 		maximumLoad = 200;
-		mass = 30;
 
 		class TransportMagazines
 		{
@@ -8681,7 +8617,6 @@ class CfgVehicles
 	{
 		displayName = "Taktischer Rucksack (grün)";
 		maximumLoad = 240;
-		mass = 35; //40//
 	};
 
 	class B_TacticalPack_blk;
@@ -8690,7 +8625,6 @@ class CfgVehicles
 	{
 		displayName = "Taktischer Rucksack (schwarz)";
 		maximumLoad = 240;
-		mass = 35; //40//
 	};
 
 	class OPT_B_TacticalPack_blk_AA : OPT_B_TacticalPack_blk
@@ -8741,7 +8675,6 @@ class CfgVehicles
 	{
 		displayName = "Angriffspack Med. (grün)";
 		maximumLoad = 160;
-		mass = 20;
 		scope = 2;
 
 		class TransportMagazines
@@ -8769,7 +8702,6 @@ class CfgVehicles
 	{
 		displayName = "Angriffspack Med. (schwarz)";
 		maximumLoad = 160;
-		mass = 20;
 
 		class TransportMagazines
 		{
@@ -8796,7 +8728,6 @@ class CfgVehicles
 	{
 		displayName = "Angriffspack Med. (tropisch)";
 		maximumLoad = 160;
-		mass = 20;
 
 		class TransportMagazines
 		{
@@ -8823,7 +8754,6 @@ class CfgVehicles
 	{
 		displayName = "Feldpack Med. (Hex-Camo)";
 		maximumLoad = 200;
-		mass = 30;
 
 		class TransportMagazines
 		{
@@ -8849,7 +8779,6 @@ class CfgVehicles
 	{
 		displayName = "Feldpack Med. (Ghex-Camo)";
 		maximumLoad = 200;
-		mass = 30;
 
 		class TransportMagazines
 		{
@@ -8876,7 +8805,6 @@ class CfgVehicles
 	class OPT_tf_mr3000_bwmod : tf_mr3000_bwmod
 	{
 		maximumLoad = 40; // 160 //
-		mass = 5;		  // 160 //
 		tf_range = 40000; // 20000 //
 		_generalMacro = "OPT_tf_mr3000_bwmod ";
 		displayName = "OPT RT-1523G (ASIP) Big BWMOD [Flecktarn]";
@@ -8888,7 +8816,6 @@ class CfgVehicles
 	class OPT_tf_rt1523g_big_bwmod : tf_rt1523g_big_bwmod
 	{
 		maximumLoad = 40; // 160 //
-		mass = 5;		  // 160 //
 		tf_range = 40000; // 20000 //
 		_generalMacro = "OPT_tf_rt1523g_big_bwmod";
 		displayName = "OPT MR3000 BWMOD [Flecktarn]";
