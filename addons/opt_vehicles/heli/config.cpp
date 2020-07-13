@@ -978,6 +978,7 @@ class CfgVehicles
 		driverCanEject = 1;
 		radarType = 4;		// 8 //
 		fuelCapacity = 330; // 2500 //
+		transportAmmo = 30000; // 1e+012 //
 
 		class TransportItems
 		{
