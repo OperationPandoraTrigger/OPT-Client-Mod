@@ -1651,7 +1651,7 @@ class Dialogshopkonfig
 			y = 0.92;
 			w = 0.2;
 			h = 0.05;
-			text = "Fahrzeug besetzen"; 
+			text = "[X]Fahrzeug besetzen"; 
             tooltip = "Käufer in das Fahrzeug setzen";
 			action = "";
         };
