@@ -5834,16 +5834,6 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
-			class _xx_OPT_srifle_DMR_02_F
-			{
-				weapon = "OPT_srifle_EBR_F";
-				count = 2;
-			};
-			class _xx_OPT_srifle_GM6_camo_F
-			{
-				weapon = "OPT_srifle_GM6_camo_F";
-				count = 2;
-			};
 		};
 
 		class TransportItems
@@ -5906,9 +5896,14 @@ class CfgVehicles
 			class _xx_5Rnd_127x108_APDS_Mag
 			{
 				magazine = "5Rnd_127x108_APDS_Mag";
-				count = 56;
+				count = 60;
 			};
 
+			class _xx_5Rnd_127x108_Mag
+			{
+				magazine = "5Rnd_127x108_Mag";
+				count = 60;
+			};
 
 		};
 	};
@@ -7094,11 +7089,6 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_6Rnd_45ACP_Cylinder
-			{
-				magazine = "6Rnd_45ACP_Cylinder";
-				count = 10;
-			};
 
 			class _xx_16Rnd_9x21_Mag
 			{
@@ -7118,16 +7108,10 @@ class CfgVehicles
 				count = 180;
 			};
 
-			class _xx_30Rnd_580x42_Mag_Tracer_F
+			class _xx_150Rnd_762x54_Box
 			{
-				magazine = "30Rnd_580x42_Mag_Tracer_F";
-				count = 0;
-			};
-
-			class _xx_100Rnd_580x42_Mag_F
-			{
-				magazine = "100Rnd_580x42_Mag_F";
-				count = 0;
+				magazine = "150Rnd_762x54_Box";
+				count = 40;
 			};
 
 			class _xx_OPT_100Rnd_580x42_Mag_Tracer_F
@@ -7146,16 +7130,6 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
-			class _xx_OPT_srifle_DMR_05_hex_F 
-			{
-				weapon = "OPT_srifle_DMR_05_hex_F";
-				count = 2;
-			};
-			class _xx_OPT_srifle_GM6_camo_F
-			{
-				weapon = "OPT_srifle_GM6_camo_F";
-				count = 2;
-			};
 		};
 
 		class TransportItems
@@ -7209,69 +7183,15 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_5Rnd_127x108_Mag
-			{
-				magazine = "5Rnd_127x108_Mag";
-				count = 0;
-			};
-
 			class _xx_5Rnd_127x108_APDS_Mag
 			{
 				magazine = "5Rnd_127x108_APDS_Mag";
-				count = 56;
-			};
-
-			class _xx_150Rnd_762x54_Box
-			{
-				magazine = "150Rnd_762x54_Box";
-				count = 0;
-			};
-
-			class _xx_150Rnd_762x54_Box_Tracer
-			{
-				magazine = "150Rnd_762x54_Box_Tracer";
-				count = 40;
-			};
-
-			class _xx_10Rnd_93x64_DMR_05_Mag
-			{
-				magazine = "10Rnd_93x64_DMR_05_Mag";
 				count = 60;
 			};
-
-			class _xx_150Rnd_93x64_Mag
+			
+			class _xx_5Rnd_127x108_Mag
 			{
-				magazine = "150Rnd_93x64_Mag";
-				count = 26;
-			};
-
-			class _xx_30Rnd_65x39_caseless_green
-			{
-				magazine = "30Rnd_65x39_caseless_green";
-				count = 40;
-			};
-
-			class _xx_30Rnd_65x39_caseless_green_mag_Tracer
-			{
-				magazine = "30Rnd_65x39_caseless_green_mag_Tracer";
-				count = 0;
-			};
-
-			class _xx_10Rnd_762x54_Mag
-			{
-				magazine = "10Rnd_762x54_Mag";
-				count = 0;
-			};
-
-			class _xx_20Rnd_762x51_Mag
-			{
-				magazine = "20Rnd_762x51_Mag";
-				count = 60;
-			};
-
-			class _xx_20Rnd_650x39_Cased_Mag_F
-			{
-				magazine = "20Rnd_650x39_Cased_Mag_F";
+				magazine = "5Rnd_127x108_Mag";
 				count = 60;
 			};
 			class _xx_OPT_srifle_GM6_camo_F
@@ -7315,13 +7235,13 @@ class CfgVehicles
 			class _xx_RPG32_HE_F
 			{
 				magazine = "RPG32_HE_F";
-				count = 10;
+				count = 2;
 			};
 
 			class _xx_RPG32_F
 			{
 				magazine = "RPG32_F";
-				count = 10;
+				count = 3;
 			};
 		};
 	};
