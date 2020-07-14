@@ -2062,11 +2062,15 @@ class CfgVehicles
 					class PylonLeft1 : PylonLeft1
 					{
 						attachment = "";
+						maxweight = 1000;
+						hardpoints[] = {"B_AMRAAM", "O_AMRAAM", "B_ASRAAM", "O_ASRAAM", "DAR", "DAGR", "O_MISSILE_PYLON", "B_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "B_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
 					};
 
 					class PylonRight1 : PylonRight1
 					{
 						attachment = "";
+						maxweight = 1000;
+						hardpoints[] = {"B_AMRAAM", "O_AMRAAM", "B_ASRAAM", "O_ASRAAM", "DAR", "DAGR", "O_MISSILE_PYLON", "B_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "B_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
 					};
 				};
 			};
