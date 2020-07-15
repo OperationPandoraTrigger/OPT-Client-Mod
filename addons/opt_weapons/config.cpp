@@ -3059,6 +3059,80 @@ class CfgWeapons
 		};
 	};
 
+	class arifle_Mk20_F : mk20_base_F
+	{
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot;
+		};
+	};
+
+	class OPT_arifle_Mk20_F : arifle_Mk20_F
+	{
+		_generalMacro = "OPT_arifle_Mk20_F";
+		baseWeapon = "OPT_arifle_Mk20_F";
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+
+			class CowsSlot : CowsSlot
+			{
+				compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+			};
+		};
+	};
+
+	class arifle_Mk20_GL_F : mk20_base_F
+	{
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot;
+		};
+	};
+
+	class OPT_arifle_Mk20_GL_F : arifle_Mk20_GL_F
+	{
+		_generalMacro = "OPT_arifle_Mk20_GL_F";
+		baseWeapon = "OPT_arifle_Mk20_GL_F";
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+
+			class CowsSlot : CowsSlot
+			{
+				compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+			};
+		};
+	};
+
+	class pdw2000_base_F : Rifle_Short_Base_F
+	{
+		class WeaponSlotsInfo;
+	};
+
+	class hgun_PDW2000_F : pdw2000_base_F
+	{
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot;
+		};
+	};
+
+	class OPT_hgun_PDW2000_F : hgun_PDW2000_F
+	{
+		_generalMacro = "OPT_hgun_PDW2000_F";
+		baseWeapon = "OPT_hgun_PDW2000_F";
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+
+			class CowsSlot : CowsSlot
+			{
+				compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+			};
+		};
+	};
+
 	class OPT_arifle_CTAR_blk_ERCO_Pointer_F : OPT_arifle_CTAR_blk_F
 	{
 		_generalMacro = "OPT_arifle_CTAR_blk_ERCO_Pointer_F";

@@ -97,4 +97,32 @@ class CfgWeapons
 			};
 		};
 	};
+
+	class arifle_Mk20_F : mk20_base_F
+	{
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : asdg_MuzzleSlot_58
+			{
+				class compatibleItems : compatibleItems
+				{
+					ACE_muzzle_mzls_L = 1;
+				};
+			};
+		};
+	};
+
+	class arifle_Mk20_GL_F : mk20_base_F
+	{
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : asdg_MuzzleSlot_58
+			{
+				class compatibleItems : compatibleItems
+				{
+					ACE_muzzle_mzls_L = 1;
+				};
+			};
+		};
+	};
 };
