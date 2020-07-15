@@ -3031,6 +3031,34 @@ class CfgWeapons
 		};
 	};
 
+	class mk20_base_F : Rifle_Base_F
+	{
+		class WeaponSlotsInfo;
+	};
+
+	class arifle_Mk20C_F : mk20_base_F
+	{
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot;
+		};
+	};
+
+	class OPT_arifle_Mk20C_F : arifle_Mk20C_F
+	{
+		_generalMacro = "OPT_arifle_Mk20C_F";
+		baseWeapon = "OPT_arifle_Mk20C_F";
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+
+			class CowsSlot : CowsSlot
+			{
+				compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+			};
+		};
+	};
+
 	class OPT_arifle_CTAR_blk_ERCO_Pointer_F : OPT_arifle_CTAR_blk_F
 	{
 		_generalMacro = "OPT_arifle_CTAR_blk_ERCO_Pointer_F";

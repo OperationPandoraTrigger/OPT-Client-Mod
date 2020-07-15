@@ -78,4 +78,23 @@ class CfgWeapons
 			};
 		};
 	};
+
+	class mk20_base_F : Rifle_Base_F
+	{
+		class WeaponSlotsInfo;
+	};
+
+	class arifle_Mk20C_F : mk20_base_F
+	{
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : asdg_MuzzleSlot_58
+			{
+				class compatibleItems : compatibleItems
+				{
+					ACE_muzzle_mzls_L = 1;
+				};
+			};
+		};
+	};
 };
