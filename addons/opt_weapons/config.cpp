@@ -6016,7 +6016,7 @@ class CfgVehicles
 
 	class OPT_Box_NATO_WpsSpecial_AT_L1 : Box_NATO_WpsSpecial_F
 	{
-		displayName = "NATO Raketenkiste (MAAWS)";
+		displayName = "MAAWS Raketenkiste (NATO)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -6056,7 +6056,7 @@ class CfgVehicles
 
 	class OPT_Box_NATO_WpsSpecial_AT_L2 : Box_NATO_WpsSpecial_F
 	{
-		displayName = "NATO Raketenkiste (PCML-M)";
+		displayName = "PCML-M Raketenkiste (NATO)";
 		maximumLoad = 2000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\PCML.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -6090,7 +6090,7 @@ class CfgVehicles
 
 	class OPT_Box_NATO_WpsSpecial_AT_H1 : Box_NATO_WpsSpecial_F
 	{
-		displayName = "NATO Raketenkiste (Titan)";
+		displayName = "Titan Raketenkiste (NATO)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\Titan.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -6154,7 +6154,7 @@ class CfgVehicles
 
 	class OPT_Box_EAF_WpsSpecial_AA_F : Box_EAF_WpsSpecial_F
 	{
-		displayName = "AAF Raketenkiste (AA)";
+		displayName = "AA Raketenkiste (AAF)";
 		maximumLoad = 2000;
 		supplyRadius = 8;
 
@@ -6303,7 +6303,7 @@ class CfgVehicles
 
 	class OPT_Box_NATO_WpsLaunch_F : Box_NATO_WpsLaunch_F
 	{
-		displayName = "NATO Raketenkiste (HAT)";
+		displayName = "HAT Raketenkiste (Nato)";
 		maximumLoad = 1000;
 		supplyRadius = 8;
 
@@ -7310,7 +7310,7 @@ class CfgVehicles
 
 	class OPT_Box_East_WpsSpecial_AT_L1 : Box_East_WpsSpecial_F
 	{
-		displayName = "CSAT Raketenkiste (RPG-42 Alamut)";
+		displayName = "RPG-42 Alamut Raketenkiste (CSAT)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
@@ -7350,16 +7350,16 @@ class CfgVehicles
 
 	class OPT_Box_EAF_WpsSpecial_AT_L1 : Box_EAF_WpsSpecial_F
 	{
-		displayName = "AAF Raketenkiste (RPG-42 Alamut)";
+		displayName = "MAAWS Raketenkiste (AAF)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
 
 		class TransportWeapons
 		{
-			class _xx_OPT_launch_RPG32_F
+			class _xx_OPT_launch_MRAWS_green_rail_F
 			{
-				weapon = "OPT_launch_B_RPG32_F";
+				weapon = "OPT_launch_MRAWS_green_rail_F";
 				count = 1;
 			};
 		};
@@ -7374,23 +7374,23 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_RPG32_HE_F
+			class _xx_MRAWS_HEAT_F
 			{
-				magazine = "RPG32_HE_F";
-				count = 2;
+				magazine = "MRAWS_HEAT_F";
+				count = 3;
 			};
 
-			class _xx_RPG32_F
+			class _xx_MRAWS_HE_F
 			{
-				magazine = "RPG32_F";
-				count = 3;
+				magazine = "MRAWS_HE_F";
+				count = 2;
 			};
 		};
 	};
 
 	class OPT_Box_East_WpsSpecial_AT_L2 : Box_East_WpsSpecial_F
 	{
-		displayName = "CSAT Raketenkiste (RPG-7)";
+		displayName = "RPG-7 Raketenkiste (CSAT)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
@@ -7424,7 +7424,7 @@ class CfgVehicles
 
 	class OPT_Box_EAF_WpsSpecial_AT_L2 : Box_EAF_WpsSpecial_F
 	{
-		displayName = "AAF Raketenkiste (RPG-7)";
+		displayName = "RPG-7 Raketenkiste (AAF)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
@@ -7458,7 +7458,7 @@ class CfgVehicles
 
 	class OPT_Box_East_WpsSpecial_AT_H1 : Box_East_WpsSpecial_F
 	{
-		displayName = "CSAT Raketenkiste (9M135 Vorona)";
+		displayName = "9M135 Vorona Raketenkiste (CSAT)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\Vorona.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
@@ -7492,7 +7492,7 @@ class CfgVehicles
 
 	class OPT_Box_East_WpsSpecial_AA_F : Box_East_WpsSpecial_F
 	{
-		displayName = "CSAT Raketenkiste (AA)";
+		displayName = "AA Raketenkiste (CSAT)";
 		maximumLoad = 2000;
 		supplyRadius = 8;
 
@@ -7584,7 +7584,7 @@ class CfgVehicles
 
 	class OPT_Box_East_WpsLaunch_F : Box_East_WpsLaunch_F
 	{
-		displayName = "CSAT Raketenkiste (HAT)";
+		displayName = "HAT Raketenkiste (CSAT)";
 		maximumLoad = 1000;
 		supplyRadius = 8;
 
