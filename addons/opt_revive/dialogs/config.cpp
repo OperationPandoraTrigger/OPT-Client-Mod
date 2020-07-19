@@ -107,7 +107,7 @@ class opt_revive_blackscreen
 				type =  CT_STATIC; 
 				style = ST_LEFT;
 				colorText[] = Color_Black;
-				colorBackground[] = Color_Black;
+				colorBackground[] = Color_NoColor;
 				font = "PuristaMedium"; 
 				sizeEx = 0.023;
 				x = -3; y = -3;
@@ -124,6 +124,8 @@ class opt_revive_blackscreen
 				y = 0.2 * safezoneH + safezoneY;
 				h = 0.6 * safezoneH;
 				text = "\opt\opt_client\addons\core\bilder\skull.paa";
+				colorText[] = {1,1,1,0.15};
+				colorBackground[] = Color_NoColor;
 			};
 			
 			class opt_revive_WoundedLabel : RscText
