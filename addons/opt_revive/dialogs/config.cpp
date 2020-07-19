@@ -154,7 +154,7 @@ class opt_revive_blackscreen
 			y= 0.75 * safezoneH + safezoneY;
 			w = 0.07 * safezoneW; 
 			h = 0.04 * safezoneH;
-			text = "Respwan";
+			text = "Respawn";
 			action = "";
 		};
 				
