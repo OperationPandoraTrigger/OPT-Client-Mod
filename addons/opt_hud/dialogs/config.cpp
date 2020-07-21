@@ -122,20 +122,6 @@ class opt_DefaultMenu
     };	
 
     // 2. Feld
-    class FrameDisplay : RSCText 
-    {
-        idc = 5102;
-        x = safezoneX + 1/6 * 0.9 * safezoneW;
-        y = safezoneY + safezoneH - 0.025 * safezoneH;
-        w = 1/6 * 0.9 * safezoneW;
-        h = 0.025 * safezoneH;
-        sizeEx = FONTSIZE;
-        shadow = 1;
-        colorText[] = Color_GrayLight;
-        text = "FPS:";
-    };	
-
-    // 3. Feld
     class BudgetDisplay : RSCText 
     {
         idc = 5103;
@@ -149,7 +135,7 @@ class opt_DefaultMenu
         text = "Budget:";
     };
 
-    // 4. Feld
+    // 3. Feld
     class ScoreDisplay : RSCText 
     {
         idc = 5104;
@@ -163,7 +149,7 @@ class opt_DefaultMenu
         text = "Punkte:";
     };
     
-    // 5. Feld
+    // 4. Feld
     class TimerDisplay : RSCText 
     {
         idc = 5105;
@@ -176,20 +162,6 @@ class opt_DefaultMenu
         shadow = 1;
         text = "Spielzeit:";
     };		
-
-    // 6. Feld
-    class EmptyDisplay : RSCText 
-    {
-        idc = 5106;
-        x = safezoneX + 0.1 * safezoneW +  5/6 * 0.9 * safezoneW;
-        y = safezoneY + safezoneH - 0.025 * safezoneH;
-        w = 1/6 * 0.9 * safezoneW;
-        h = 0.025 * safezoneH;
-        sizeEx = FONTSIZE;
-        colorText[] = Color_GrayLight;
-        shadow = 1;
-        text = "";
-    };	
     
 };
 
@@ -204,7 +176,7 @@ class opt_DefaultMenu
         duration = 15000;
         name = "";
         idd = 4999;			
-        onLoad = "";	
+        onLoad = "uiNamespace setVariable ['opt_hud_anzeige', _this select 0]";	
         movingEnable = false;
         moving = false;
         enableSimulation = true;
@@ -217,7 +189,7 @@ class opt_DefaultMenu
         // add BackgroundBar to have a nicer background
         controlsBackground[] = 
         {
-            BackgroundBar, ScoreDisplay, PlayersDisplay, TimerDisplay, FrameDisplay, BudgetDisplay
+            BackgroundBar, ScoreDisplay, PlayersDisplay, TimerDisplay, BudgetDisplay
         };			
     };
 };	
