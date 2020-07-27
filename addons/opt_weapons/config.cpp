@@ -4867,6 +4867,7 @@ class CfgVehicles
 	class OPT_B_static_AA_F : B_static_AA_F
 	{
 		faction = "OPT_NATO";
+		displayName = "Statischer AA Titan-Werfer (Nato)";
 
 		class Turrets : Turrets
 		{
@@ -4895,6 +4896,7 @@ class CfgVehicles
 	class OPT_I_static_AA_F : I_static_AA_F
 	{
 		faction = "OPT_AAF";
+		displayName = "Statischer AA Titan-Werfer (AAF)";
 
 		class Turrets : Turrets
 		{
@@ -4923,6 +4925,7 @@ class CfgVehicles
 	class OPT_O_static_AA_F : O_static_AA_F
 	{
 		faction = "OPT_CSAT";
+		displayName = "Statischer AA Titan-Werfer (CSAT)";
 
 		class Turrets : Turrets
 		{
@@ -4959,6 +4962,7 @@ class CfgVehicles
 	class OPT_B_static_AT_F : B_static_AT_F
 	{
 		faction = "OPT_NATO";
+		displayName = "Statischer AT Titan-Werfer (Nato)";
 
 		class Turrets : Turrets
 		{
@@ -4987,6 +4991,7 @@ class CfgVehicles
 	class OPT_I_static_AT_F : I_static_AT_F
 	{
 		faction = "OPT_AAF";
+		displayName = "Statischer AT Titan-Werfer (AAF)";
 
 		class Turrets : Turrets
 		{
@@ -5015,6 +5020,7 @@ class CfgVehicles
 	class OPT_O_static_AT_F : O_static_AT_F
 	{
 		faction = "OPT_CSAT";
+		displayName = "Statischer AT Titan-Werfer (CSAT)";
 
 		class Turrets : Turrets
 		{
