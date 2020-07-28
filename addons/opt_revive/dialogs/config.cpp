@@ -157,7 +157,7 @@ class opt_revive_blackscreen
 			w = 0.07 * safezoneW; 
 			h = 0.04 * safezoneH;
 			text = "Respawn";
-			action = "";
+			action = "player setDamage 1;1 enableChannel true;player allowDamage true;";
 		};
 				
 		class opt_revive_MedicNearLabel : RscText 
@@ -191,7 +191,7 @@ class opt_revive_blackscreen
 			y= (0.65 * safezoneH + safezoneY) - 0.005;
 			w = (0.2 * safezoneW) + 0.01; 
 			h = (0.03 * safezoneH) + 0.01;
-			text = "500";
+			text = "";
 		};
 				
 		class opt_revive_BleedoutBar : RscProgress_OPT 
@@ -214,7 +214,7 @@ class opt_revive_blackscreen
 			y= 0.75 * safezoneH + safezoneY;
 			w = 0.14 * safezoneW; 
 			h = 0.04 * safezoneH;
-			text = "700";
+			text = "";
 		};
 				
 	};
