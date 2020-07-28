@@ -302,7 +302,7 @@ class CfgVehicles
 	class OPT_O_T_VTOL_02_infantry_F : O_T_VTOL_02_infantry_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT_T";
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 500; //1000//
 
@@ -434,7 +434,7 @@ class CfgVehicles
 	class OPT_O_T_VTOL_02_infantry_unarmed_F : O_T_VTOL_02_infantry_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT_T";
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
 		displayName = "Y-32 Xi'an (Unbewaffnet)[Infanterie]";
 		fuelCapacity = 500; //1000//
@@ -560,7 +560,7 @@ class CfgVehicles
 	class OPT_O_T_VTOL_02_vehicle_F : O_T_VTOL_02_vehicle_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT_T";
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 500; //1000//
 
@@ -692,7 +692,7 @@ class CfgVehicles
 	class OPT_O_T_VTOL_02_vehicle_unarmed_F : O_T_VTOL_02_vehicle_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT_T";
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
 		displayName = "Y-32 Xi'an (Unbewaffnet)[Fahrzeug]";
 		fuelCapacity = 500; //1000//

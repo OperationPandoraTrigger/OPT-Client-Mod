@@ -415,7 +415,7 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Attack_02_F : OPT_O_Heli_Attack_02_F
 	{
-		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
 
 		class Turrets : Turrets
@@ -538,7 +538,7 @@ class CfgVehicles
 
 	class OPT4_B_Heli_Attack_01_F : OPT_B_Heli_Attack_01_F
 	{
-		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
 
 		class Turrets : Turrets
@@ -665,7 +665,7 @@ class CfgVehicles
 
 	class OPT4_O_Heli_light_03_F : OPT_O_Heli_light_03_F
 	{
-		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 
 		class Components : Components
@@ -718,7 +718,7 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Light_02_F : OPT_O_Heli_Light_02_F
 	{
-		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 
 		class Components : Components

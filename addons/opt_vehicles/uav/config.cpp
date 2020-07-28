@@ -71,7 +71,7 @@ class CfgVehicles
 		displayName = "MQ-4A Greyhawk (Scarpel)";
 		faction = "OPT_NATO";
 		fuelCapacity = 500; // 1000 //
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
 
 		class Viewoptics : Viewoptics
@@ -260,7 +260,7 @@ class CfgVehicles
 		displayName = "K40 Ababil-3 (Scarpel)";
 		faction = "OPT_CSAT";
 		fuelCapacity = 500; // 1000 //
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
 
 		class Viewoptics : Viewoptics

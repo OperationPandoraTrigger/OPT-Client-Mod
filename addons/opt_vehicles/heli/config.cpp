@@ -99,7 +99,7 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		driverCanEject = 1;
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 330; // 2500 //
 
@@ -239,7 +239,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		radarType = 8; // 4 //
 		driverCanEject = 1;
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 210; // 800 //
 		scope = 2;
@@ -305,7 +305,7 @@ class CfgVehicles
 	class OPT_O_Heli_Light_02_Minigun_F : OPT_O_Heli_Light_02_F
 	{
 		displayName = "PO-30 Orca (Minigun)";
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 210; // 800 //
 		scope = 2;
@@ -2048,7 +2048,7 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		driverCanEject = 1;
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 190;			  // 742 //
 		slingLoadMaxCargoMass = 1000; // 2000 //
@@ -2204,7 +2204,7 @@ class CfgVehicles
 		faction = "OPT_AAF";
 		maximumLoad = 2500;
 		driverCanEject = 1;
-		weapons[] = {"OPT_M134_minigun", "CMFlareLauncher"};
+		weapons[] = {"OPT_M134_minigun", "OPT_CMFlareLauncher"};
 		magazines[] = {"5000Rnd_762x51_Yellow_Belt", "168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 190;			  // 742 //
 		slingLoadMaxCargoMass = 1000; // 2000 //
@@ -2377,7 +2377,7 @@ class CfgVehicles
 		faction = "OPT_AAF";
 		driverCanEject = 1;
 		fuelCapacity = 190; // 742 //
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		slingLoadMaxCargoMass = 1000; // 2000 //
 		hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_INDP_CO.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};

@@ -64,7 +64,7 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		displayName = "A-143 Buzzard (CAS)";
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 500; // 1000 //
 
@@ -251,7 +251,7 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		displayName = "A-164 Wipeout";
-		weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_500Rnd_Cannon_30mm_Plane_CAS_02_F", "OPT_30Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 150; // 1000 //
 
@@ -602,7 +602,7 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		displayName = "F/A-181 Black Wasp II (Tarn)";
-		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_magazine_Fighter01_Gun20mm_AA_x450", "OPT_30Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 150; //1550 //
 		//hiddenSelectionsTextures[] = {"a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_01_Camo_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_fuselage_02_Camo_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_glass_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_01_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_02_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_03_co.paa","a3\air_f_jets\plane_fighter_01\data\fighter_01_cockpit_05_co.paa"};
@@ -695,7 +695,7 @@ class CfgVehicles
 		crew = "OPT_CSAT_Pilot";
 		typicalCargo[] = {"OPT_CSAT_Pilot"};
 		displayName = "F/A-181 Black Wasp II (Tarn)";
-		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_magazine_Fighter01_Gun20mm_AA_x450", "OPT_30Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 150; //1550 //
 
@@ -822,7 +822,7 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		displayName = "To-199 Neophron";
-		weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_500Rnd_Cannon_30mm_Plane_CAS_02_F","OPT_30Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 150; // 1000 //
 		//#include "\opt_vehicles\bremsfallschirm.hpp"
@@ -968,7 +968,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		displayName = "To-201 Shikra";
 		fuelCapacity = 500; //2540 //
-		weapons[] = {"OPT_weapon_Fighter_Gun_30mm", "Laserdesignator_pilotCamera", "CMFlareLauncher"};
+		weapons[] = {"OPT_weapon_Fighter_Gun_30mm", "Laserdesignator_pilotCamera", "OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_magazine_Fighter02_Gun30mm_AA_x180", "Laserbatteries", "60Rnd_CMFlare_Chaff_Magazine"};
 		//hiddenSelectionsTextures[] = {"a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa","a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_02_Blue_co.paa","a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_00_co.paa","a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa","a3\data_f\clear_empty.paa"};
 		disableInventory = 0;
@@ -1179,7 +1179,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		displayName = "To-201 Shikra (Tarn)";
 		fuelCapacity = 150; //2540 //
-		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_weapon_Fighter_Gun20mm_AA", "OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_magazine_Fighter01_Gun20mm_AA_x450",  "OPT_30Rnd_CMFlare_Chaff_Magazine"};
 		//hiddenSelectionsTextures[] = {"a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_02_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Fighter_02_fuselage_01_Blue_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_02_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_00_co.paa", "a3\air_f_jets\plane_fighter_02\data\Numbers\Fighter_02_number_01_co.paa", "a3\data_f\clear_empty.paa"};
 		disableInventory = 0;
