@@ -7302,9 +7302,9 @@ class CfgVehicles
 				magazine = "5Rnd_127x108_Mag";
 				count = 60;
 			};
-			class _xx_OPT_srifle_GM6_camo_F
+			class _xx_20Rnd_762x51_Mag
 			{
-				magazine = "20Rnd_650x39_Cased_Mag_F";
+				magazine = "20Rnd_762x51_Mag";
 				count = 60;
 			};
 		};
