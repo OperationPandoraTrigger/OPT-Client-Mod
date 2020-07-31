@@ -1824,4 +1824,56 @@ class CfgVehicles
 		};
 	};
 
+	//// AWC 301 Nyx (Autocannon) ////
+	class LT_01_cannon_base_F;
+
+	class I_LT_01_cannon_F : LT_01_cannon_base_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderOptics;
+		class ViewOptics;
+		class RCWSOptics;
+		class OpticsIn;
+		class ViewGunner;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class AnimationSources;
+		class muzzle_rot;
+		class muzzle_hide;
+	};
+
+	class OPT_I_LT_01_cannon_F : I_LT_01_cannon_F
+	{
+		faction = "OPT_AAF";
+		fuelCapacity = 9; // 60 //
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"SmokeLauncher", "LMG_coax_ext", "cannon_20mm"};
+				magazines[] = {"SmokeLauncherMag", "1000Rnd_762x51_Belt", "60Rnd_20mm_HE_shells", "60Rnd_20mm_HE_shells", "60Rnd_20mm_AP_shells", "60Rnd_20mm_AP_shells"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};				
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
 };
