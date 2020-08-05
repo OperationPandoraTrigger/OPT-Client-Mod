@@ -1171,8 +1171,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] = {"SmokeLauncher"};
+				magazines[] = {"SmokeLauncherMag"};
 			};
 		};
 	};
@@ -1191,8 +1191,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] = {"SmokeLauncher"};
+				magazines[] = {"SmokeLauncherMag"};
 			};
 		};
 	};
