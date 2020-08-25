@@ -1,14 +1,14 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class opt_vehicles_unarmed
 	{
-		units[] = {"OPT4_B_MRAP_01_gmg_F","OPT4_B_MRAP_01_gmg_ghex_F", "OPT4_B_MRAP_01_hmg_F","OPT4_B_MRAP_01_hmg_ghex_F", "OPT4_O_MRAP_02_hmg_F", "OPT4_O_T_MRAP_02_hmg_ghex_F", "OPT4_O_MRAP_02_gmg_F", "OPT4_O_T_MRAP_02_gmg_ghex_F", "OPT4_B_MRAP_03_hmg_F", "OPT4_B_MRAP_03_gmg_F",
+		units[] = {"OPT4_B_MRAP_01_gmg_F","OPT4_B_MRAP_01_gmg_ghex_F", "OPT4_B_MRAP_01_hmg_F","OPT4_B_MRAP_01_hmg_ghex_F", "OPT4_O_MRAP_02_hmg_F", "OPT4_O_T_MRAP_02_hmg_ghex_F", "OPT4_O_MRAP_02_gmg_F", "OPT4_O_T_MRAP_02_gmg_ghex_F", "OPT4_B_MRAP_03_hmg_F","OPT4_I_MRAP_03_hmg_F", "OPT4_B_MRAP_03_gmg_F","OPT4_I_MRAP_03_gmg_F","OPT4_I_C_Offroad_02_AT_F",
 				   "OPT4_O_Heli_Attack_02_F", "OPT4_O_Heli_Attack_02_black_F", "OPT4_B_Heli_Attack_01_F", "OPT4_B_Heli_Attack_01_F", "OPT4_B_Heli_Light_01_armed_F", "OPT4_O_Heli_Light_01_armed_F",
 				   "OPT4_O_Heli_light_03_F", " OPT4_O_Heli_light_03_green_F", "OPT4_O_Heli_Light_02_F", "OPT4_O_Heli_Light_02_black_F",
 				   "OPT4_B_APC_Wheeled_01_cannon_F", "OPT4_B_APC_Wheeled_01_cannon_ghex_F", "OPT4_B_APC_Tracked_01_rcws_F","OPT4_B_APC_Tracked_01_rcws_ghex_F", "OPT4_B_APC_Tracked_01_AA_F","OPT_B_APC_Tracked_01_AA_ghex_F","OPT_B_APC_Tracked_01_AA_ghex_F2", "OPT4_B_MBT_01_cannon_F","OPT4_B_MBT_01_cannon_ghex_F",
-				   "OPT4_B_MBT_01_TUSK_F","OPT_B_MBT_01_TUSK_ghex_F", "OPT4_B_MBT_01_arty_F","OPT4_B_MBT_01_arty_ghex_F", "OPT4_B_MBT_01_mlrs_F","OPT4_B_MBT_01_mlrs_ghex_F", "OPT4_O_APC_Wheeled_02_rcws_F", "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT4_B_APC_tracked_03_cannon_F","OPT4_B_APC_tracked_03_cannon_ghex_F", "OPT4_O_APC_Tracked_02_cannon_F",
+				   "OPT4_B_MBT_01_TUSK_F","OPT_B_MBT_01_TUSK_ghex_F", "OPT4_B_MBT_01_arty_F","OPT4_B_MBT_01_arty_ghex_F", "OPT4_B_MBT_01_mlrs_F","OPT4_B_MBT_01_mlrs_ghex_F", "OPT4_O_APC_Wheeled_02_rcws_F", "OPT4_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT4_B_APC_tracked_03_cannon_F","OPT4_I_APC_tracked_03_cannon_F","OPT4_B_APC_tracked_03_cannon_ghex_F", "OPT4_O_APC_Tracked_02_cannon_F",
 				   "OPT4_O_T_APC_Tracked_02_cannon_ghex_F", "OPT4_O_APC_Tracked_02_AA_F", "OPT4_O_T_APC_Tracked_02_AA_ghex_F","OPT4_O_T_APC_Tracked_02_AA_ghex_F2", "OPT4_O_MBT_02_cannon_F", "OPT4_O_T_MBT_02_cannon_ghex_F", "OPT4_O_MBT_02_arty_F", "OPT4_O_T_MBT_02_arty_ghex_F",
-				   "OPT4_O_APC_Wheeled_03_cannon_F","OPT4_O_APC_Wheeled_03_cannon_ghex_F", "OPT4_B_MBT_03_cannon_F","OPT4_B_MBT_03_cannon_ghex_F", "OPT4_B_LSV_01_AT_F","OPT4_B_LSV_01_AT_ghex_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F","OPT4_O_LSV_02_AT_GHEX_F"};
+				   "OPT4_O_APC_Wheeled_03_cannon_F","OPT4_I_APC_Wheeled_03_cannon_F","OPT4_O_APC_Wheeled_03_cannon_ghex_F", "OPT4_B_MBT_03_cannon_F","OPT4_B_MBT_03_cannon_ghex_F","OPT4_I_MBT_03_cannon_F", "OPT4_B_LSV_01_AT_F","OPT4_B_LSV_01_AT_ghex_F", "OPT4_O_LSV_02_AT_F", "OPT4_O_Truck_02_MRL_F","OPT4_O_LSV_02_AT_GHEX_F","OPT4_I_LT_01_AT_F","OPT4_I_LT_01_AA_F","OPT4_O_MBT_04_cannon_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -188,9 +188,10 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_MRAP_03_hmg_F;
+	//// Strider HMG ////
+	class I_MRAP_03_hmg_F;
 
-	class OPT_B_MRAP_03_hmg_F : OPT_I_MRAP_03_hmg_F
+	class OPT_B_MRAP_03_hmg_F : I_MRAP_03_hmg_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -213,9 +214,32 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_MRAP_03_gmg_F;
+	class OPT_I_MRAP_03_hmg_F : I_MRAP_03_hmg_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderTurret;
+	};
 
-	class OPT_B_MRAP_03_gmg_F : OPT_I_MRAP_03_gmg_F
+	class OPT4_I_MRAP_03_hmg_F : OPT_I_MRAP_03_hmg_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+			};
+
+			class CommanderTurret : CommanderTurret
+			{
+			};
+		};
+	};
+
+	class I_MRAP_03_gmg_F;
+
+	class OPT_B_MRAP_03_gmg_F : I_MRAP_03_gmg_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -238,6 +262,141 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_I_MRAP_03_gmg_F : I_MRAP_03_gmg_F
+	{
+		class Turrets;
+		class MainTurret;
+		class CommanderTurret;
+	};
+
+	class OPT4_I_MRAP_03_gmg_F : OPT_I_MRAP_03_gmg_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+			};
+
+			class CommanderTurret : CommanderTurret
+			{
+			};
+		};
+	};
+
+	//// MB 4WD (AT) ////
+	class I_C_Offroad_02_AT_F;
+
+	class OPT_I_C_Offroad_02_AT_F : I_C_Offroad_02_AT_F
+	{
+		class Turrets;
+		class MainTurret;
+		class AT_Turret;
+		class ViewOptics;
+		class viewGunner;
+		class CargoTurret_01;
+		class CargoTurret;
+		class dynamicViewLimits;
+		class TurnIn;
+	};
+
+	class OPT4_I_C_Offroad_02_AT_F : OPT_I_C_Offroad_02_AT_F
+	{
+		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_ext_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa","\A3\Soft_F_Exp\Offroad_02\Data\offroad_02_int_olive_co.paa"};
+
+		class Turrets : Turrets 
+		{
+			class AT_Turret : MainTurret 
+			{
+				disableSoundAttenuation = 1;
+				gunnerLeftHandAnimName = "otocHlaven";
+				gunnerRightHandAnimName = "otocHlaven";
+				body = "mainTurret";
+				gun = "mainGun";
+				animationSourceBody = "mainTurret";
+				animationSourceGun = "mainGun";
+				weapons[] = {};
+				magazines[] = {};
+				minElev = -5;
+				maxElev = 14;
+				soundServo[] = {"A3\sounds_f\dummysound", db-120, 1.0};
+				gunnerAction = "Gunner_Offroad_02_AT_F";
+				gunnerCompartments = "Compartment1";
+				ejectDeadGunner = false;
+				castGunnerShadow = true;
+				stabilizedInAxes = 0;
+				gunEnd = "konec hlavne";	// chamber of the gun
+				gunBeg = "usti hlavne";	// endpoint of the gun
+				memoryPointGunnerOptics = "gunnerView";
+				gunnerOpticsModel = "\a3\Weapons_F_Tank\acc\reticle_SPG9.p3d";
+				memoryPointsGetInGunner = "pos cargo";
+				memoryPointsGetInGunnerDir = "pos cargo dir";
+				commanding = 1;
+				primaryGunner = 1;
+				optics = true;
+				gunnerForceOptics = false;
+				discreteDistance[] = {100, 200, 300, 400, 600, 800, 1000, 1200, 1500};
+				discreteDistanceInitIndex = 2;
+				turretInfoType = "RscOptics_Offroad_01";
+				
+				class ViewOptics : ViewOptics 
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.0625;
+					minFov = 0.0625;
+					maxFov = 0.0625;
+					visionMode[] = {"Normal"};
+				};
+				
+				class viewGunner : ViewOptics 
+				{
+					minFov = 0.25;
+					maxFov = 1.25;
+					initFov = 0.75;
+				};
+			};
+			
+			class CargoTurret_01 : CargoTurret 
+			{
+				gunnerInAction = "passenger_inside_2";
+				gunnerAction = "passenger_inside_2";
+				gunnerName = $STR_A3_TURRETS_CARGOTURRET_R1;
+				memoryPointsGetInGunner = "pos codriver";
+				memoryPointsGetInGunnerDir = "pos codriver dir";
+				gunnerCompartments = "Compartment1";
+				proxyIndex = 1;
+				isPersonTurret = 1;
+				canHideGunner = 0;
+				LODTurnedIn = 1200;
+				LODTurnedOut = -1;
+				outGunnerMayFire = false;
+				inGunnerMayFire = true;
+				
+				class dynamicViewLimits {};
+				
+				class TurnIn 
+				{
+					limitsArrayTop[] = {{17.1955, -93.583}, {11.1851, -27.2403}};
+					limitsArrayBottom[] = {{-21.5844, -94.9925}, {-14.3463, -29.4387}};
+					turnOffset = 0;
+				};
+				
+				class TurnOut : TurnIn 
+				{
+					limitsArrayTop[] = {{35.5209, -94.8698}, {32.1307, 95.0}};
+					limitsArrayBottom[] = {{-44.5208, -95.0}, {-34.5606, -5.0313}, {-32.2057, 12.7971}, {-33.5706, 33.2967}, {-31.542, 70.3073}, {-36.4877, 95.0}};
+				};
+			};
+		};
+	};
+
+
 	//// Mi-48 Kajman ////
 	class O_Heli_Attack_02_dynamicLoadout_F;
 
@@ -256,7 +415,7 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Attack_02_F : OPT_O_Heli_Attack_02_F
 	{
-		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
 
 		class Turrets : Turrets
@@ -379,7 +538,7 @@ class CfgVehicles
 
 	class OPT4_B_Heli_Attack_01_F : OPT_B_Heli_Attack_01_F
 	{
-		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
 
 		class Turrets : Turrets
@@ -457,7 +616,6 @@ class CfgVehicles
 
 	class OPT4_B_Heli_Light_01_armed_F : OPT_B_Heli_Light_01_armed_F
 	{
-		displayName = "AH-9 Pawnee";
 		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
 
@@ -487,7 +645,6 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Light_01_armed_F : OPT4_B_Heli_Light_01_armed_F
 	{
-		displayName = "AH-9 Pawnee";
 		faction = "OPT_CSAT";
 		side = 0;
 		crew = "OPT_CSAT_Pilot";
@@ -508,7 +665,7 @@ class CfgVehicles
 
 	class OPT4_O_Heli_light_03_F : OPT_O_Heli_light_03_F
 	{
-		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 
 		class Components : Components
@@ -561,8 +718,7 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Light_02_F : OPT_O_Heli_Light_02_F
 	{
-		displayName = "PO-30 Orca";
-		weapons[] = {"OPT_CMFlareLauncher_Triples"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 
 		class Components : Components
@@ -591,7 +747,6 @@ class CfgVehicles
 
 	class OPT4_O_Heli_Light_02_black_F : OPT4_O_Heli_Light_02_F
 	{
-		displayName = "PO-30 Orca (Schwarz)";
 		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
 	};
 
@@ -1016,8 +1171,8 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] = {"SmokeLauncher"};
+				magazines[] = {"SmokeLauncherMag"};
 			};
 		};
 	};
@@ -1036,16 +1191,16 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {};
-				magazines[] = {};
+				weapons[] = {"SmokeLauncher"};
+				magazines[] = {"SmokeLauncherMag"};
 			};
 		};
 	};
 
 	//// FV-720 Mora ////
-	class OPT_I_APC_tracked_03_cannon_F;
+	class I_APC_tracked_03_cannon_F;
 
-	class OPT_B_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F
+	class OPT_B_APC_tracked_03_cannon_F : I_APC_tracked_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1063,13 +1218,31 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_B_APC_tracked_03_cannon_ghex_F : OPT_I_APC_tracked_03_cannon_F
+	class OPT_B_APC_tracked_03_cannon_ghex_F : I_APC_tracked_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
 	};
 
 	class OPT4_B_APC_tracked_03_cannon_ghex_F : OPT_B_APC_tracked_03_cannon_ghex_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	class OPT_I_APC_tracked_03_cannon_F : I_APC_tracked_03_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F
 	{
 		class Turrets : Turrets
 		{
@@ -1337,6 +1510,27 @@ class CfgVehicles
 		};
 	};
 
+	//// T-140 Angara ////
+	class O_MBT_04_cannon_F;
+
+	class OPT_O_MBT_04_cannon_F : O_MBT_04_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_O_MBT_04_cannon_F : OPT_O_MBT_04_cannon_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
 	class O_MBT_02_arty_F;
 
 	class OPT_O_MBT_02_arty_F : O_MBT_02_arty_F
@@ -1377,9 +1571,10 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_I_APC_Wheeled_03_cannon_F;
+	//// AFV-4 Gorgon //// 
+	class I_APC_Wheeled_03_cannon_F;
 
-	class OPT_O_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F
+	class OPT_O_APC_Wheeled_03_cannon_F : I_APC_Wheeled_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1389,6 +1584,24 @@ class CfgVehicles
 	{
 		textureList[] = {"Guerilla_01",0,"Guerilla_02",0,"Guerilla_03",1};
 
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+
+	class OPT_I_APC_Wheeled_03_cannon_F : I_APC_Wheeled_03_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F
+	{
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
@@ -1418,9 +1631,9 @@ class CfgVehicles
 	};
 
 	//// MBT-52 Kuma ////
-	class OPT_I_MBT_03_cannon_F;
+	class I_MBT_03_cannon_F;
 
-	class OPT_B_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F
+	class OPT_B_MBT_03_cannon_F : I_MBT_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1438,7 +1651,7 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_B_MBT_03_cannon_ghex_F : OPT_I_MBT_03_cannon_F
+	class OPT_B_MBT_03_cannon_ghex_F : I_MBT_03_cannon_F
 	{
 		class Turrets;
 		class MainTurret;
@@ -1456,6 +1669,27 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_I_MBT_03_cannon_F : I_MBT_03_cannon_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {};
+				magazines[] = {};
+			};
+		};
+	};
+	
+
+	//// Prowler (AT) ////
+
 	class LSV_01_AT_base_F;
 
 	class B_LSV_01_AT_F : LSV_01_AT_base_F
@@ -1471,9 +1705,7 @@ class CfgVehicles
 	class OPT4_B_LSV_01_AT_F : B_LSV_01_AT_F
 	{
 		faction = "OPT_NATO";
-		displayName = "Prowler (AT)";
 		fuelCapacity = 3; // 20 //
-		maximumLoad = 2500;
 		textureList[] = {"Black",0,"Olive",0,"Sand",1};
 
 		class TransportMagazines
@@ -1518,9 +1750,7 @@ class CfgVehicles
 	class OPT4_B_LSV_01_AT_ghex_F : B_LSV_01_AT_F
 	{
 		faction = "OPT_NATO_T";
-		displayName = "Prowler (AT)";
 		fuelCapacity = 3; // 20 //
-		maximumLoad = 2500;
 		textureList[] = {"Black",0,"Olive",1,"Sand",0};
 
 		class TransportMagazines
@@ -1562,9 +1792,10 @@ class CfgVehicles
 		};
 	};
 
-	class LSV_02_AT_base_F;
+	//// Qilin (AT) ////
+	class O_LSV_02_AT_F;
 
-	class O_LSV_02_AT_F : LSV_02_AT_base_F
+	class OPT_O_LSV_02_AT_F : O_LSV_02_AT_F
 	{
 		class Turrets;
 		class CargoTurret_01;
@@ -1579,12 +1810,10 @@ class CfgVehicles
 		class Wide;
 	};
 
-	class OPT4_O_LSV_02_AT_F : O_LSV_02_AT_F
+	class OPT4_O_LSV_02_AT_F : OPT_O_LSV_02_AT_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Qilin (AT)";
 		fuelCapacity = 4; // 20 //
-		maximumLoad = 2500;
 
 		class TransportMagazines
 		{
@@ -1641,12 +1870,10 @@ class CfgVehicles
 		};
 	};
 
-	class OPT4_O_LSV_02_AT_GHEX_F : O_LSV_02_AT_F
+	class OPT4_O_LSV_02_AT_GHEX_F : OPT_O_LSV_02_AT_F
 	{
 		faction = "OPT_CSAT_T";
-		displayName = "Qilin (AT)";
 		fuelCapacity = 4; // 20 //
-		maximumLoad = 2500;
 
 		textureList[] = {"Black",0,"GreenHex",1,"Arid",0};
 		hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_01_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_02_ghex_CO.paa","\A3\Soft_F_Exp\LSV_02\Data\CSAT_LSV_03_ghex_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa"};
@@ -1725,4 +1952,47 @@ class CfgVehicles
 			};
 		};
 	};
+
+	//// AWC 301 Nyx (AT) ////
+	class I_LT_01_AT_F;
+
+	class OPT_I_LT_01_AT_F : I_LT_01_AT_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_LT_01_AT_F : OPT_I_LT_01_AT_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+			};
+		};
+	};
+
+	//// AWC 302 Nyx (AA) ////
+	class I_LT_01_AA_F;
+
+	class OPT_I_LT_01_AA_F : I_LT_01_AA_F
+	{
+		class Turrets;
+		class MainTurret;
+	};
+
+	class OPT4_I_LT_01_AA_F : OPT_I_LT_01_AA_F
+	{
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				magazines[] = {};
+				weapons[] = {};
+			};
+		};
+	};
+
 };

@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-	class opt_gps
+	class opt_revive
 	{
 		units[] = {};
 		weapons[] = {};

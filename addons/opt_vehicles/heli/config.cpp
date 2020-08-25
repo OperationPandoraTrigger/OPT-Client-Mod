@@ -1,22 +1,19 @@
-class CfgPatches
+﻿class CfgPatches
 {
 	class opt_vehicles_heli
 	{
 		units[] = {
 			"OPT_O_Heli_Attack_02_F",
-			"OPT_O_Heli_Attack_02_black_F",
 			"OPT_O_Heli_Light_02_F",
-			"OPT_O_Heli_Light_02_black_F",
 			"OPT_O_Heli_Light_02_v2_F",
-			"OPT_O_Heli_Light_02_v2_black_F",
 			"OPT_O_Heli_Light_02_unarmed_F",
-			"OPT_O_Heli_Light_02_unarmed_black_F",
 			"OPT_O_Heli_Transport_04_F",
 			"OPT_O_Heli_Transport_04_black_F",
 			"OPT_O_Heli_Transport_04_bench_F",
-			"OPT_O_Heli_Transport_04_bench_black_F",
 			"OPT_O_Heli_Transport_04_covered_F",
-			"OPT_O_Heli_Transport_04_covered_black_F",
+			"OPT_O_Heli_Transport_04_box_F",
+			"OPT_O_Heli_Transport_04_ammo_F",
+			"OPT_O_Heli_Transport_04_fuel_F",
 			"OPT_O_Heli_Transport_02_F",
 			"OPT_O_Heli_light_03_F",
 			"OPT_O_Heli_light_03_green_F",
@@ -33,6 +30,10 @@ class CfgPatches
 			"OPT_O_Heli_Light_01_armed_F",
 			"OPT_B_Heli_Light_01_armed_2_F",
 			"OPT_B_Heli_Transport_02_F",
+			"OPT_I_Heli_Transport_02_F",
+			"OPT_I_Heli_light_03_F",
+			"OPT_I_Heli_light_03_Scalpel_F",
+			"OPT_I_Heli_light_03_unarmed_F"
 		};
 		weapons[] = {};
 		requiredVersion = 0.100000;
@@ -97,10 +98,8 @@ class CfgVehicles
 	class OPT_O_Heli_Attack_02_F : O_Heli_Attack_02_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT";
-		displayName = "Mi-48 Kajman";
-		maximumLoad = 2500;
 		driverCanEject = 1;
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"192Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 330; // 2500 //
 
@@ -213,11 +212,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_Heli_Attack_02_black_F : OPT_O_Heli_Attack_02_F
-	{
-		displayName = "Mi-48 Kajman (schwarz)";
-		hiddenSelectionsTextures[] = {"A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body1_black_CO.paa", "A3\Air_F_Beta\Heli_Attack_02\Data\Heli_Attack_02_body2_black_CO.paa"};
-	};
 
 	//// PO-30 Orca ////
 	class Heli_Light_02_base_F : Helicopter_Base_H
@@ -243,11 +237,9 @@ class CfgVehicles
 	class OPT_O_Heli_Light_02_F : O_Heli_Light_02_dynamicLoadout_F
 	{
 		faction = "OPT_CSAT";
-		maximumLoad = 2500;
 		radarType = 8; // 4 //
 		driverCanEject = 1;
-		displayName = "PO-30 Orca (Scalpel)";
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 210; // 800 //
 		scope = 2;
@@ -313,7 +305,7 @@ class CfgVehicles
 	class OPT_O_Heli_Light_02_Minigun_F : OPT_O_Heli_Light_02_F
 	{
 		displayName = "PO-30 Orca (Minigun)";
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 210; // 800 //
 		scope = 2;
@@ -338,17 +330,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_Heli_Light_02_black_F : OPT_O_Heli_Light_02_F
-	{
-		displayName = "PO-30 Orca (Scalpel) [Schwarz]";
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
-	};
-
-	class OPT_O_Heli_Light_02_Minigun_black_F : OPT_O_Heli_Light_02_Minigun_F
-	{
-		displayName = "PO-30 Orca (Minigun) [Schwarz]";
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
-	};
 
 	class OPT_O_Heli_Light_02_v2_F : OPT_O_Heli_Light_02_F
 	{
@@ -385,11 +366,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_Heli_Light_02_v2_black_F : OPT_O_Heli_Light_02_v2_F
-	{
-		displayName = "PO-30 Orca (Skyfire) [Schwarz]";
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
-	};
 
 	class Heli_Light_02_unarmed_base_F : Heli_Light_02_base_F
 	{
@@ -406,7 +382,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		displayName = "PO-30 Orca (Unbewaffnet)";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		radarType = 4;		// 8 //
 		fuelCapacity = 210; // 800 //
@@ -442,11 +417,6 @@ class CfgVehicles
 		};
 	};
 
-	class OPT_O_Heli_Light_02_unarmed_black_F : OPT_O_Heli_Light_02_unarmed_F
-	{
-		displayName = "PO-30 Orca (Unbewaffnet) [Schwarz]";
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
-	};
 
 	class Heli_Transport_04_base_F : Helicopter_Base_H
 	{
@@ -528,73 +498,6 @@ class CfgVehicles
 		};
 	};
 
-	class O_Heli_Transport_04_black_F : O_Heli_Transport_04_F
-	{
-	};
-
-	class OPT_O_Heli_Transport_04_black_F : O_Heli_Transport_04_black_F
-	{
-		faction = "OPT_CSAT";
-		displayName = "Mi-290 Taru (schwarz)";
-		maximumLoad = 2500;
-		driverCanEject = 1;
-		radarType = 4;		// 8 //
-		fuelCapacity = 330; // 2500 //
-		scope = 2;
-		scopeCurator = 2;
-
-		class TransportItems
-		{
-		};
-
-		class TransportBackpacks
-		{
-			class _xx_B_Parachute
-			{
-				backpack = "B_Parachute";
-				count = 0;
-			};
-		};
-
-		class Turrets : Turrets
-		{
-			class CopilotTurret : CopilotTurret
-			{
-				canEject = 1;
-
-				class OpticsIn : OpticsIn
-				{
-					class Wide : Wide
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-
-					class Medium : Medium
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-
-					class Narrow : Narrow
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-				};
-
-				class OpticsOut : OpticsOut
-				{
-					class Monocular : Monocular
-					{
-						visionMode[] = {"Normal", "NVG"};
-					};
-				};
-			};
-
-			class LoadMasterTurret : LoadMasterTurret
-			{
-				canEject = 1;
-			};
-		};
-	};
 
 	class O_Heli_Transport_04_bench_F : Heli_Transport_04_base_F
 	{
@@ -974,6 +877,239 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class O_Heli_Transport_04_box_F : Heli_Transport_04_base_F
+	{
+		class Turrets;
+		class CopilotTurret;
+		class LoadMasterTurret;
+		class OpticsIn;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class OpticsOut;
+		class Monocular;
+		class CargoTurret_01;
+		class CargoTurret_02;
+	};
+
+	//// Mi-290 Taru (Repair) ////
+	class OPT_O_Heli_Transport_04_box_F : O_Heli_Transport_04_box_F
+	{
+		faction = "OPT_CSAT";
+		displayName = "Mi-290 Taru (Repair)";
+		driverCanEject = 1;
+		radarType = 4;		// 8 //
+		fuelCapacity = 330; // 2500 //
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+			class _xx_B_Parachute
+			{
+				backpack = "B_Parachute";
+				count = 0;
+			};
+		};
+
+		class Turrets : Turrets
+		{
+			class CopilotTurret : CopilotTurret
+			{
+				canEject = 1;
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+
+				class OpticsOut : OpticsOut
+				{
+					class Monocular : Monocular
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+
+			class LoadMasterTurret : LoadMasterTurret
+			{
+				canEject = 1;
+			};
+		};
+	};	
+
+	class O_Heli_Transport_04_ammo_F : Heli_Transport_04_base_F
+	{
+		class Turrets;
+		class CopilotTurret;
+		class LoadMasterTurret;
+		class OpticsIn;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class OpticsOut;
+		class Monocular;
+		class CargoTurret_01;
+		class CargoTurret_02;
+	};
+
+	//// Mi-290 Taru (Ammo) ////
+	class OPT_O_Heli_Transport_04_ammo_F : O_Heli_Transport_04_ammo_F
+	{
+		faction = "OPT_CSAT";
+		displayName = "Mi-290 Taru (Ammo)";
+		driverCanEject = 1;
+		radarType = 4;		// 8 //
+		fuelCapacity = 330; // 2500 //
+		transportAmmo = 30000; // 1e+012 //
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+			class _xx_B_Parachute
+			{
+				backpack = "B_Parachute";
+				count = 0;
+			};
+		};
+
+		class Turrets : Turrets
+		{
+			class CopilotTurret : CopilotTurret
+			{
+				canEject = 1;
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+
+				class OpticsOut : OpticsOut
+				{
+					class Monocular : Monocular
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+
+			class LoadMasterTurret : LoadMasterTurret
+			{
+				canEject = 1;
+			};
+		};
+	};	
+
+	class O_Heli_Transport_04_fuel_F : Heli_Transport_04_base_F
+	{
+		class Turrets;
+		class CopilotTurret;
+		class LoadMasterTurret;
+		class OpticsIn;
+		class Wide;
+		class Medium;
+		class Narrow;
+		class OpticsOut;
+		class Monocular;
+		class CargoTurret_01;
+		class CargoTurret_02;
+	};
+
+	//// Mi-290 Taru (Fuel) ////
+	class OPT_O_Heli_Transport_04_fuel_F : O_Heli_Transport_04_fuel_F
+	{
+		faction = "OPT_CSAT";
+		displayName = "Mi-290 Taru (Fuel)";
+		driverCanEject = 1;
+		radarType = 4;		// 8 //
+		fuelCapacity = 330; // 2500 //
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+			class _xx_B_Parachute
+			{
+				backpack = "B_Parachute";
+				count = 0;
+			};
+		};
+
+		class Turrets : Turrets
+		{
+			class CopilotTurret : CopilotTurret
+			{
+				canEject = 1;
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+
+				class OpticsOut : OpticsOut
+				{
+					class Monocular : Monocular
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+
+			class LoadMasterTurret : LoadMasterTurret
+			{
+				canEject = 1;
+			};
+
+		};
+	};	
 
 	class Heli_Transport_01_base_F : Helicopter_Base_H
 	{
@@ -1808,8 +1944,6 @@ class CfgVehicles
 	{
 		_generalMacro = "OPT_I_Heli_Transport_02_F";
 		faction = "OPT_AAF";
-		displayName = "CH-49 Mohawk";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		fuelCapacity = 330; // 2500 //
 		radarType = 4;		// 8 //
@@ -1913,11 +2047,9 @@ class CfgVehicles
 	class OPT_I_Heli_light_03_F : I_Heli_light_03_dynamicLoadout_F
 	{
 		faction = "OPT_AAF";
-		displayname = "WY-55 Hellcat";
-		maximumLoad = 2500;
 		driverCanEject = 1;
-		weapons[] = {"OPT_M134_minigun", "CMFlareLauncher"};
-		magazines[] = {"5000Rnd_762x51_Yellow_Belt", "168Rnd_CMFlare_Chaff_Magazine"};
+		weapons[] = {"OPT_CMFlareLauncher"};
+		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 190;			  // 742 //
 		slingLoadMaxCargoMass = 1000; // 2000 //
 
@@ -1929,12 +2061,16 @@ class CfgVehicles
 				{
 					class PylonLeft1 : PylonLeft1
 					{
-						attachment = "OPT_PylonRack_12Rnd_missiles";
+						attachment = "";
+						maxweight = 1000;
+						hardpoints[] = {"B_AMRAAM", "O_AMRAAM", "B_ASRAAM", "O_ASRAAM", "DAR", "DAGR", "O_MISSILE_PYLON", "B_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "B_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
 					};
 
 					class PylonRight1 : PylonRight1
 					{
-						attachment = "OPT_PylonRack_12Rnd_missiles";
+						attachment = "";
+						maxweight = 1000;
+						hardpoints[] = {"B_AMRAAM", "O_AMRAAM", "B_ASRAAM", "O_ASRAAM", "DAR", "DAGR", "O_MISSILE_PYLON", "B_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "B_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
 					};
 				};
 			};
@@ -2050,7 +2186,6 @@ class CfgVehicles
 	class OPT_O_Heli_light_03_F : OPT_I_Heli_light_03_F
 	{
 		side = 0;
-		displayName = "WY-55 Hellcat (DAR)";
 		faction = "OPT_CSAT";
 		crew = "OPT_CSAT_Pilot";
 		typicalCargo[] = {"OPT_CSAT_Pilot"};
@@ -2067,10 +2202,9 @@ class CfgVehicles
 	class OPT_I_Heli_light_03_Scalpel_F : I_Heli_light_03_dynamicLoadout_F
 	{
 		faction = "OPT_AAF";
-		displayname = "WY-55 Hellcat (Scalpel)";
 		maximumLoad = 2500;
 		driverCanEject = 1;
-		weapons[] = {"OPT_M134_minigun", "CMFlareLauncher"};
+		weapons[] = {"OPT_M134_minigun", "OPT_CMFlareLauncher"};
 		magazines[] = {"5000Rnd_762x51_Yellow_Belt", "168Rnd_CMFlare_Chaff_Magazine"};
 		fuelCapacity = 190;			  // 742 //
 		slingLoadMaxCargoMass = 1000; // 2000 //
@@ -2237,17 +2371,16 @@ class CfgVehicles
 		class Narrow;
 	};
 
-	//// WY-55 Hellcat (Green) ////
+	//// WY-55 Hellcat ////
 	class OPT_I_Heli_light_03_unarmed_F : I_Heli_light_03_unarmed_F
 	{
 		faction = "OPT_AAF";
-		displayname = "WY-55 Hellcat (Unbewaffnet)";
-		maximumLoad = 2500;
 		driverCanEject = 1;
 		fuelCapacity = 190; // 742 //
-		weapons[] = {"CMFlareLauncher"};
+		weapons[] = {"OPT_CMFlareLauncher"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 		slingLoadMaxCargoMass = 1000; // 2000 //
+		hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_INDP_CO.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
 
 		class RenderTargets : RenderTargets
 		{

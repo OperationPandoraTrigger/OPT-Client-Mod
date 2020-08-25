@@ -53,7 +53,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 30 //
+
 
 			class HitpointsProtectionInfo
 			{
@@ -79,7 +79,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 30 //
+
 
 			class HitpointsProtectionInfo
 			{
@@ -107,7 +107,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 30 //
+
 
 			class HitpointsProtectionInfo
 			{
@@ -132,7 +132,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 30 //
+
 
 			class HitpointsProtectionInfo
 			{
@@ -158,7 +158,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 30 //
+
 
 			class HitpointsProtectionInfo
 			{
@@ -184,7 +184,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 40 //
+	
 
 			class HitpointsProtectionInfo
 			{
@@ -210,7 +210,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 40 //
+	
 
 			class HitpointsProtectionInfo
 			{
@@ -236,7 +236,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 60 //
+	
 
 			class HitpointsProtectionInfo
 			{
@@ -261,7 +261,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 60 //
+	
 
 			class HitpointsProtectionInfo
 			{
@@ -289,7 +289,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 50 //
+
 
 			class HitpointsProtectionInfo
 			{
@@ -315,7 +315,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 50 //
+
 
 			class HitpointsProtectionInfo
 			{
@@ -345,7 +345,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 20;
+
 			containerClass = "Supply160";
 
 			class HitpointsProtectionInfo
@@ -392,7 +392,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 15;
+
 			containerClass = "Supply120";
 
 			class HitpointsProtectionInfo
@@ -438,7 +438,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 15;
+
 			containerClass = "Supply120";
 
 			class HitpointsProtectionInfo
@@ -488,7 +488,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 20;
+	
 			containerClass = "Supply160";
 
 			class HitpointsProtectionInfo
@@ -537,7 +537,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 12; // 40 //
+
 			containerClass = "Supply100";
 
 			class HitpointsProtectionInfo
@@ -579,7 +579,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 12; // 40 //
+
 			containerClass = "Supply100";
 
 			class HitpointsProtectionInfo
@@ -626,7 +626,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 12; // 40 //
+
 			containerClass = "Supply100";
 
 			class HitpointsProtectionInfo
@@ -672,7 +672,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 12; // 40 //
+
 			containerClass = "Supply100";
 
 			class HitpointsProtectionInfo
@@ -714,7 +714,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 12; // 40 //
+
 			containerClass = "Supply100";
 
 			class HitpointsProtectionInfo
@@ -761,7 +761,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10;
+
 			containerClass = "Supply80";
 
 			class HitpointsProtectionInfo
@@ -803,7 +803,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10;
+
 			containerClass = "Supply80";
 
 			class HitpointsProtectionInfo
@@ -850,7 +850,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10;
+
 			containerClass = "Supply80";
 
 			class HitpointsProtectionInfo
@@ -896,7 +896,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10;
+
 			containerClass = "Supply80";
 
 			class HitpointsProtectionInfo
@@ -938,7 +938,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10;
+
 			containerClass = "Supply80";
 
 			class HitpointsProtectionInfo
@@ -985,7 +985,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 17; // 20 //
+	
 			containerClass = "Supply140";
 
 			class HitpointsProtectionInfo
@@ -1031,7 +1031,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 17; // 20 //
+
 			containerClass = "Supply140";
 
 			class HitpointsProtectionInfo
@@ -1078,7 +1078,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 17; // 20 //
+
 			containerClass = "Supply140";
 
 			class HitpointsProtectionInfo
@@ -1127,7 +1127,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 80 //
+	
 			containerClass = "Supply140";
 
 			class HitpointsProtectionInfo
@@ -1176,7 +1176,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 80 //
+
 			containerClass = "Supply140";
 
 			class HitpointsProtectionInfo
@@ -1225,7 +1225,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 12; // 100 //
+
 			containerClass = "Supply140";
 
 			class HitpointsProtectionInfo
@@ -1274,7 +1274,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 12; // 100 //
+
 			containerClass = "Supply140";
 
 			class HitpointsProtectionInfo
@@ -1320,7 +1320,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 80 //
+
 		};
 	};
 
@@ -1335,7 +1335,7 @@ class cfgWeapons
 
 		class ItemInfo : ItemInfo
 		{
-			mass = 10; // 80 //
+
 		};
 	};
 };
