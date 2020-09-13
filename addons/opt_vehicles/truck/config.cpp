@@ -53,6 +53,7 @@ class CfgVehicles
 		faction = "OPT_NATO";
 		fuelCapacity = 4;	 // 45 //
 		transportSoldier = 1; // 15 //
+		displayName = "HEMTT Logistik";
 
 		class TransportItems
 		{
@@ -71,6 +72,7 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo1","Camo2","Camo3"};
 		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cargo_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cover_olive_co.paa"};
 		textureList[] = {"Olive",1};
+		displayName = "HEMTT Logistik";
 
 		class TransportItems
 		{
@@ -86,6 +88,7 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 4; // 45 //
+		displayName = "HEMTT Infanterie";
 
 		class TransportItems
 		{
@@ -99,6 +102,7 @@ class CfgVehicles
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","Camo4"};
 		hiddenSelectionsTextures[] = {"\a3\soft_f_Exp\truck_01\data\truck_01_ext_01_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_ext_02_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cargo_olive_co.paa","\a3\soft_f_Exp\truck_01\data\truck_01_cover_olive_co.paa"};
 		textureList[] = {"Olive",1};
+		displayName = "HEMTT Infanterie";
 
 		class TransportItems
 		{
@@ -241,6 +245,7 @@ class CfgVehicles
 		faction = "OPT_CSAT";
 		fuelCapacity = 6;	 // 250 //
 		transportSoldier = 1; // 11 //
+		displayName = "Tempest Logistik";
 
 		class TransportItems
 		{
@@ -260,6 +265,7 @@ class CfgVehicles
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 6;	 // 250 //
 		transportSoldier = 1; // 11 //
+		displayName = "Tempest Logistik";
 
 		class TransportItems
 		{
@@ -279,6 +285,7 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 6; // 250 //
+		displayName = "Tempest Infanterie";
 
 		class TransportItems
 		{
@@ -293,6 +300,7 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 6; // 250 //
+		displayName = "Tempest Infanterie";
 
 		class TransportItems
 		{
@@ -430,6 +438,7 @@ class CfgVehicles
 		faction = "OPT_AAF";
 		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
+		displayName = "Zamak Infanterie";
 
 		class TransportItems
 		{
@@ -446,6 +455,7 @@ class CfgVehicles
 		faction = "OPT_AAF";
 		fuelCapacity = 6; // 250 //
 		transportSoldier = 1; // 11 //
+		displayName = "Zamak Logistik";
 
 		class TransportItems
 		{
