@@ -915,6 +915,14 @@ class CfgVehicles
 			};
 		};
 
+		class TransportMagazines
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
 		class Turrets : Turrets
 		{
 			class CopilotTurret : CopilotTurret
