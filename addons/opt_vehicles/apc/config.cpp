@@ -4,7 +4,7 @@
 	{
 		units[] = {"OPT_B_APC_Wheeled_01_cannon_F", "OPT_B_APC_Wheeled_01_cannon_light_F","OPT_B_APC_Wheeled_01_cannon_ghex_F", "OPT_B_APC_Tracked_01_rcws_F","OPT_B_APC_Tracked_01_rcws_ghex_F", "OPT_B_APC_Tracked_01_AA_F","OPT_B_APC_Tracked_01_AA_ghex_F", "OPT_O_APC_Wheeled_02_rcws_F", "OPT_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT_B_APC_tracked_03_cannon_F",
 				   "OPT_B_APC_tracked_03_cannon_ghex_F","OPT_O_APC_Tracked_02_cannon_F", "OPT_O_APC_Tracked_02_cannon_light_F", "OPT_O_APC_Tracked_02_AA_F", "OPT_O_T_APC_Tracked_02_AA_ghex_F", "OPT_O_APC_Wheeled_03_cannon_F","OPT_O_APC_Wheeled_03_cannon_ghex_F", "OPT_O_APC_Wheeled_03_cannon_light_F",
-				   "OPT_O_T_APC_Tracked_02_cannon_ghex_F", "OPT_O_T_APC_Tracked_02_cannon_ghex_light_F","OPT_I_LT_01_AT_F","OPT_I_LT_01_scout_F","OPT_I_LT_01_AA_F"};
+				   "OPT_O_T_APC_Tracked_02_cannon_ghex_F", "OPT_O_T_APC_Tracked_02_cannon_ghex_light_F","OPT_I_LT_01_AT_F","OPT_I_LT_01_scout_F","OPT_I_LT_01_AA_F","OPT_O_APC_Wheeled_01_cannon_F_INF","OPT_I_APC_tracked_03_cannon_F_INF","OPT_O_APC_Wheeled_01_cannon_F_INF","OPT_O_T_APC_Wheeled_01_cannon_F_INF"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -271,6 +271,208 @@ class CfgVehicles
 		{
 		};
 	};
+
+	////// CSAT AMV-7 Marshall Infanterie //////
+	class OPT_O_APC_Wheeled_01_cannon_F_INF : OPT_B_APC_Wheeled_01_cannon_F
+	{
+		faction = "OPT_CSAT";
+		side = 0;
+		fuelCapacity = 8; // 60 //
+		crew = "O_Soldier_F";
+		typicalCargo[] = {"O_Soldier_lite_F"};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax"};
+				magazines[] = {"140Rnd_30mm_MP_shells","140Rnd_30mm_MP_shells",  "1000Rnd_762x51_Belt"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class muzzle_rot : muzzle_rot
+			{
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_hide : muzzle_hide
+			{
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	class OPT_O_T_APC_Wheeled_01_cannon_F_INF : OPT_B_APC_Wheeled_01_cannon_ghex_F
+	{
+		faction = "OPT_CSAT_T";
+		side = 0;
+		fuelCapacity = 8; // 60 //
+		crew = "O_Soldier_F";
+		typicalCargo[] = {"O_Soldier_lite_F"};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax"};
+				magazines[] = {"140Rnd_30mm_MP_shells","140Rnd_30mm_MP_shells",  "1000Rnd_762x51_Belt"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class muzzle_rot : muzzle_rot
+			{
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_hide : muzzle_hide
+			{
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};		
+
 
 	class APC_Tracked_01_base_F : Tank_F
 	{
@@ -816,6 +1018,95 @@ class CfgVehicles
 		textureList[] = {"EAF_01",1};
 		hiddenSelectionsTextures[] = {"A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext_eaf_co.paa","A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext2_eaf_co.paa","A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa","A3\Armor_F_Enoch\apc_tracked_03\data\cage_EAF_CO.paa"};		
 	};
+
+	// Mora Infanterie 
+	class OPT_I_APC_tracked_03_cannon_F_INF : OPT_I_APC_tracked_03_cannon_F
+	{
+		displayName = "Mora (Infanterie)";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax"};
+				magazines[] = {"140Rnd_30mm_MP_shells", "140Rnd_30mm_MP_shells", "1000Rnd_762x51_Belt"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+	};
+
+
 
 	class APC_Tracked_02_base_F : Tank_F
 	{
