@@ -4,7 +4,8 @@
 	{
 		units[] = {"OPT_B_APC_Wheeled_01_cannon_F", "OPT_B_APC_Wheeled_01_cannon_light_F","OPT_B_APC_Wheeled_01_cannon_ghex_F", "OPT_B_APC_Tracked_01_rcws_F","OPT_B_APC_Tracked_01_rcws_ghex_F", "OPT_B_APC_Tracked_01_AA_F","OPT_B_APC_Tracked_01_AA_ghex_F", "OPT_O_APC_Wheeled_02_rcws_F", "OPT_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT_B_APC_tracked_03_cannon_F",
 				   "OPT_B_APC_tracked_03_cannon_ghex_F","OPT_O_APC_Tracked_02_cannon_F", "OPT_O_APC_Tracked_02_cannon_light_F", "OPT_O_APC_Tracked_02_AA_F", "OPT_O_T_APC_Tracked_02_AA_ghex_F", "OPT_O_APC_Wheeled_03_cannon_F","OPT_O_APC_Wheeled_03_cannon_ghex_F", "OPT_O_APC_Wheeled_03_cannon_light_F",
-				   "OPT_O_T_APC_Tracked_02_cannon_ghex_F", "OPT_O_T_APC_Tracked_02_cannon_ghex_light_F","OPT_I_LT_01_AT_F","OPT_I_LT_01_scout_F","OPT_I_LT_01_AA_F","OPT_O_APC_Wheeled_01_cannon_F_INF","OPT_I_APC_tracked_03_cannon_F_INF","OPT_O_APC_Wheeled_01_cannon_F_INF","OPT_O_T_APC_Wheeled_01_cannon_F_INF"};
+				   "OPT_O_T_APC_Tracked_02_cannon_ghex_F", "OPT_O_T_APC_Tracked_02_cannon_ghex_light_F","OPT_I_LT_01_AT_F","OPT_I_LT_01_scout_F","OPT_I_LT_01_AA_F","OPT_O_APC_Wheeled_01_cannon_F_INF","OPT_I_APC_tracked_03_cannon_F_INF","OPT_O_APC_Wheeled_01_cannon_F_INF","OPT_O_T_APC_Wheeled_01_cannon_F_INF","OPT_I_APC_Wheeled_03_cannon_F_VEH",
+				   "OPT_I_APC_Wheeled_03_cannon_F_AT","OPT_O_APC_Tracked_02_cannon_F_VEH","OPT_O_T_APC_Tracked_02_cannon_ghex_F_VEH","OPT_O_APC_Tracked_02_cannon_F_AT","OPT_O_T_APC_Tracked_02_cannon_ghex_F_AT"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -280,6 +281,7 @@ class CfgVehicles
 		fuelCapacity = 8; // 60 //
 		crew = "O_Soldier_F";
 		typicalCargo[] = {"O_Soldier_lite_F"};
+		displayName = "Marshall Infanterie";
 
 		class Turrets : Turrets
 		{
@@ -1346,6 +1348,435 @@ class CfgVehicles
 		};
 	};
 
+	// BTR-K Fahrzeug 
+	class OPT_O_APC_Tracked_02_cannon_F_VEH : OPT_O_APC_Tracked_02_cannon_F
+	{
+		faction = "OPT_CSAT";
+		fuelCapacity = 12; // 45 //
+		displayName = "BTR-K Veh";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan_static"};
+				magazines[] = {"60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow","60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "200Rnd_762x51_Belt", "1Rnd_GAT_missiles"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
+			};
+
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	// BTR-K Veh
+	class OPT_O_T_APC_Tracked_02_cannon_ghex_F_VEH : OPT_O_T_APC_Tracked_02_cannon_ghex_F
+	{
+		faction = "OPT_CSAT_T";
+		fuelCapacity = 12; // 45 //
+		displayName = "BTR-K Veh";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan_static"};
+				magazines[] = {"60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow","60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "200Rnd_762x51_Belt", "1Rnd_GAT_missiles"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
+			};
+
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	// BTR-K Tank
+	class OPT_O_APC_Tracked_02_cannon_F_AT : OPT_O_APC_Tracked_02_cannon_F
+	{
+		faction = "OPT_CSAT";
+		fuelCapacity = 12; // 45 //
+		displayName = "BTR-K AT";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "OPT_missiles_titan"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2Rnd_GAT_missiles", "2Rnd_GAT_missiles"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
+			};
+
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	// BTR-K Tank
+	class OPT_O_T_APC_Tracked_02_cannon_ghex_F_AT : OPT_O_T_APC_Tracked_02_cannon_ghex_F
+	{
+		faction = "OPT_CSAT_T";
+		fuelCapacity = 12; // 45 //
+		displayName = "BTR-K AT";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "OPT_missiles_titan"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2Rnd_GAT_missiles", "2Rnd_GAT_missiles"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
+			};
+
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+
 	class O_APC_Tracked_02_AA_F : O_APC_Tracked_02_base_F
 	{
 		class Turrets;
@@ -1886,6 +2317,222 @@ class CfgVehicles
 		};
 
 	};
+
+	//// AFV-4 Gorgon Fahrzeugjäger ////
+	class OPT_I_APC_Wheeled_03_cannon_F_VEH : I_APC_Wheeled_03_cannon_F
+	{
+		faction = "OPT_AAF";
+		fuelCapacity = 9; // 60 //
+		displayName = "AFV-4 Gorgon Veh";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan_static"};
+				magazines[] = {"60Rnd_30mm_APFSDS_shells_Tracer_Yellow","60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "200Rnd_762x51_Belt", "1Rnd_GAT_missiles"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
+			};
+
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+	//// AFV-4 Gorgon Tank////
+	class OPT_I_APC_Wheeled_03_cannon_F_AT : I_APC_Wheeled_03_cannon_F
+	{
+		faction = "OPT_AAF";
+		fuelCapacity = 9; // 60 //
+		displayName = "AFV-4 Gorgon AT";
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_30mm_CTWS", "OPT_missiles_titan"};
+				magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2Rnd_GAT_missiles","2Rnd_GAT_missiles"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class Missiles_revolving
+			{
+				source = "revolving";
+				weapon = "OPT_missiles_titan";
+			};
+
+			class muzzle_hide
+			{
+				source = "reload";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+
+			class muzzle_rot
+			{
+				source = "ammorandom";
+				weapon = "OPT_autocannon_30mm_CTWS";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
+
 
 	//// AWC 301 Nyx (AT) ////
 	class LT_01_AT_base_F;
