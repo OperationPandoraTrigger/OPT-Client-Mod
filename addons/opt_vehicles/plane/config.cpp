@@ -160,7 +160,6 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_brownhex_CO.paa", "A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_brownhex_CO.paa"};
 		//hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_1CSAT.paa","\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_2CSAT.paa"};
 		typicalCargo[] = {"OPT_CSAT_Pilot"};
-		scope = 2;
 	};
 
 	//// A-143 Buzzard (AA) ////

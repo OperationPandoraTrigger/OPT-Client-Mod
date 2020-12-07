@@ -112,9 +112,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 4; // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -137,9 +134,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -173,9 +167,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class Turrets : Turrets
 		{
@@ -264,9 +255,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class Turrets : Turrets
 		{
@@ -356,9 +344,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -450,9 +435,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -547,9 +529,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0//
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class TransportMagazines
 		{
@@ -572,9 +551,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class TransportMagazines
 		{
@@ -609,9 +585,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class TransportMagazines
 		{
@@ -713,9 +686,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class TransportMagazines
 		{
@@ -818,9 +788,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class Turrets : Turrets
 		{
@@ -919,9 +886,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class Turrets : Turrets
 		{
@@ -1032,9 +996,6 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class Turrets : Turrets
 		{
@@ -1135,9 +1096,6 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -1264,9 +1222,6 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class Turrets : Turrets
 		{
