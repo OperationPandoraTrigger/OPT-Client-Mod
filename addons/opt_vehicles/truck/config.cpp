@@ -6,7 +6,7 @@
 				   "OPT_B_Truck_01_ammo_F","OPT_B_Truck_01_ammo_ghex_F", "OPT_B_Truck_01_Repair_F","OPT_B_Truck_01_Repair_ghex_F", "OPT_B_Truck_01_fuel_F","OPT_B_Truck_01_fuel_ghex_F", "OPT_O_Truck_03_transport_F", "OPT_O_T_Truck_03_transport_ghex_F", "OPT_O_Truck_03_covered_F",
 				   "OPT_O_T_Truck_03_covered_ghex_F", "OPT_O_Truck_03_ammo_F", "OPT_O_T_Truck_03_ammo_ghex_F", "OPT_O_Truck_03_repair_F", "OPT_O_T_Truck_03_repair_ghex_F", "OPT_O_Truck_03_fuel_F",
 				   "OPT_O_T_Truck_03_fuel_ghex_F", "OPT_O_Truck_03_medical_F", "OPT_O_T_Truck_03_medical_ghex_F", "OPT_O_Truck_02_MRL_F","OPT_O_Truck_02_MRL_ghex_F", "OPT_B_UGV_01_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F",
-				   "OPT_I_Truck_02_covered_F","OPT_I_Truck_02_transport_F","OPT_I_Truck_02_fuel_F","OPT_I_Truck_02_ammo_F","OPT_I_Truck_02_box_F"};
+				   "OPT_I_Truck_02_covered_F","OPT_I_Truck_02_transport_F","OPT_I_Truck_02_fuel_F","OPT_I_Truck_02_ammo_F","OPT_I_Truck_02_box_F","OPT_O_Truck_02_covered_F","OPT_O_Truck_02_transport_F","OPT_O_Truck_02_fuel_F","OPT_O_Truck_02_ammo_F","OPT_O_Truck_02_box_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03"};
