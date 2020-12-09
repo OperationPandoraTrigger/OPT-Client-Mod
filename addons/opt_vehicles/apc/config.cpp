@@ -5,7 +5,7 @@
 		units[] = {"OPT_B_APC_Wheeled_01_cannon_F", "OPT_B_APC_Wheeled_01_cannon_light_F","OPT_B_APC_Wheeled_01_cannon_ghex_F", "OPT_B_APC_Tracked_01_rcws_F","OPT_B_APC_Tracked_01_rcws_ghex_F", "OPT_B_APC_Tracked_01_AA_F","OPT_B_APC_Tracked_01_AA_ghex_F", "OPT_O_APC_Wheeled_02_rcws_F", "OPT_O_T_APC_Wheeled_02_rcws_ghex_F", "OPT_B_APC_tracked_03_cannon_F",
 				   "OPT_B_APC_tracked_03_cannon_ghex_F","OPT_O_APC_Tracked_02_cannon_F", "OPT_O_APC_Tracked_02_cannon_light_F", "OPT_O_APC_Tracked_02_AA_F", "OPT_O_T_APC_Tracked_02_AA_ghex_F", "OPT_O_APC_Wheeled_03_cannon_F","OPT_O_APC_Wheeled_03_cannon_ghex_F", "OPT_O_APC_Wheeled_03_cannon_light_F",
 				   "OPT_O_T_APC_Tracked_02_cannon_ghex_F", "OPT_O_T_APC_Tracked_02_cannon_ghex_light_F","OPT_I_LT_01_AT_F","OPT_I_LT_01_scout_F","OPT_I_LT_01_AA_F","OPT_O_APC_Wheeled_01_cannon_F_INF","OPT_I_APC_tracked_03_cannon_F_INF","OPT_O_APC_Wheeled_01_cannon_F_INF","OPT_O_T_APC_Wheeled_01_cannon_F_INF","OPT_I_APC_Wheeled_03_cannon_F_VEH",
-				   "OPT_I_APC_Wheeled_03_cannon_F_AT","OPT_O_APC_Tracked_02_cannon_F_VEH","OPT_O_T_APC_Tracked_02_cannon_ghex_F_VEH","OPT_O_APC_Tracked_02_cannon_F_AT","OPT_O_T_APC_Tracked_02_cannon_ghex_F_AT"};
+				   "OPT_I_APC_Wheeled_03_cannon_F_AT","OPT_O_APC_Tracked_02_cannon_F_VEH","OPT_O_T_APC_Tracked_02_cannon_ghex_F_VEH","OPT_O_APC_Tracked_02_cannon_F_AT","OPT_O_T_APC_Tracked_02_cannon_ghex_F_AT","OPT_I_APC_Tracked_01_AA_ghex_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_soft_f", "a3_soft_f_mrap_01", "a3_soft_f_mrap_02", "a3_soft_f_mrap_03", "a3_armor_f_panther",
@@ -797,6 +797,109 @@ class CfgVehicles
 		};
 	};
 
+	// AAF IFV-6a Cheetah 
+	class OPT_I_APC_Tracked_01_AA_ghex_F : B_T_APC_Tracked_01_AA_F
+	{
+		faction = "OPT_AAF";
+		side = 2;
+		crew = "I_crew_F";
+		typicalCargo[] = {"I_crew_F"};
+		fuelCapacity = 12; // 45 //
+		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet"};
+		hiddenSelectionsTextures[] = {"A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_aa_body_olive_co.paa","A3\Armor_F_exp\APC_Tracked_01\Data\mbt_01_body_olive_co.paa","A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_aa_tower_olive_co.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+
+		class Turrets : Turrets
+		{
+			class MainTurret : MainTurret
+			{
+				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan"};
+				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Red", "4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
+
+				class Turrets : Turrets
+				{
+					class CommanderOptics : CommanderOptics
+					{
+						class ViewGunner : ViewGunner
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class ViewOptics : ViewOptics
+						{
+							visionMode[] = {"Normal", "NVG"};
+						};
+
+						class OpticsIn : OpticsIn
+						{
+							class Wide : Wide
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Medium : Medium
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+
+							class Narrow : Narrow
+							{
+								visionMode[] = {"Normal", "NVG"};
+							};
+						};
+					};
+				};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+
+				class OpticsIn : OpticsIn
+				{
+					class Wide : Wide
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Medium : Medium
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+
+					class Narrow : Narrow
+					{
+						visionMode[] = {"Normal", "NVG"};
+					};
+				};
+			};
+		};
+
+		class AnimationSources : AnimationSources
+		{
+			class muzzle_rot : muzzle_rot
+			{
+				weapon = "OPT_autocannon_35mm";
+			};
+
+			class Missiles_revolving : Missiles_revolving
+			{
+				weapon = "OPT_missiles_titan";
+			};
+		};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+	};
+
 	class APC_Wheeled_02_base_F : Wheeled_APC_F
 	{
 	};
@@ -817,7 +920,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 9; // 45 //
-		#include "\opt\opt_client\addons\vehicles\Fahrzeug-Transport.hpp"
 
 		class Turrets : Turrets
 		{
@@ -1804,7 +1906,7 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan"};
-				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Green", "OPT_680Rnd_35mm_AA_shells_Tracer_Green", "4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
+				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Green", "4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
 
 				class Turrets : Turrets
 				{
@@ -1905,7 +2007,7 @@ class CfgVehicles
 			class MainTurret : MainTurret
 			{
 				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan"};
-				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Green", "4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
+				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Green","4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
 
 				class Turrets : Turrets
 				{
