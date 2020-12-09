@@ -438,7 +438,7 @@ class CfgVehicles
 	class OPT_B_UAV_01_F : B_UAV_01_F
 	{
 		faction = "OPT_NATO";
-		fuelCapacity = 30; // 100 //
+		fuelCapacity = 10; // 100 //
 
 		class Components : Components
 		{
@@ -505,7 +505,7 @@ class CfgVehicles
 	class OPT_I_UAV_01_F : I_UAV_01_F
 	{
 		faction = "OPT_AAF";
-		fuelCapacity = 30; // 100 //
+		fuelCapacity = 10; // 100 //
 
 		class Components : Components
 		{
@@ -572,7 +572,7 @@ class CfgVehicles
 	class OPT_O_UAV_01_F : O_UAV_01_F
 	{
 		faction = "OPT_CSAT";
-		fuelCapacity = 30; // 100 //
+		fuelCapacity = 10; // 100 //
 
 		class Components : Components
 		{
