@@ -120,7 +120,7 @@ class CfgAmmo
 
 	class OPT_M_PG_AT : M_PG_AT
 	{
-		cost = 10000; // 500 //
+		cost = 1000; // 500 //
 		irLock = 0; // 1 //
 		laserLock = 1;
 	};
@@ -129,14 +129,14 @@ class CfgAmmo
 
 	class OPT_M_AT : M_AT
 	{
-		cost = 10000;
+		cost = 1000;
 	};
 
 	class M_Scalpel_AT;
 
 	class OPT_M_Scalpel_AT : M_Scalpel_AT
 	{
-		cost = 60000; // 1000
+		cost = 1000; // 1000
 		irLock = 0; // 1
 	};
 
@@ -144,7 +144,7 @@ class CfgAmmo
 
 	class OPT_M_Jian_AT : M_Jian_AT
 	{
-		cost = 1800; // 1500
+		cost = 10800; // 1500
 		irLock = 0; // 1
 	};
 
@@ -166,7 +166,7 @@ class CfgAmmo
 
 	class OPT_Missile_AGM_01_F : Missile_AGM_01_F
 	{
-		cost = 60000; // 1500 //
+		cost = 10000; // 1500 //
 		irLock = 0;						 // 1 //
 		laserLock = 1;					 // 0 //
 		weaponLockSystem = "2 + 4 + 16"; // "2 + 16"//
@@ -221,7 +221,7 @@ class CfgAmmo
 
 	class OPT_Missile_AGM_02_F : Missile_AGM_02_F
 	{
-		cost = 60000; // 1500 //
+		cost = 10000; // 1500 //
 		irLock = 0;						 // 1 //
 		laserLock = 1;					 // 0 //
 		weaponLockSystem = "2 + 4 + 16"; // "2 + 16"//
@@ -318,28 +318,28 @@ class CfgAmmo
 
 	class OPT_Sh_82mm_AMOS : Sh_82mm_AMOS
 	{
-		cost = 1200; //vorher 910 standart 200//
+		cost = 1000; //vorher 910 standart 200//
 	};
 
 	class Sh_155mm_AMOS;
 
 	class OPT_Sh_155mm_AMOS : Sh_155mm_AMOS
 	{
-		cost = 1430; //300//
+		cost = 500; //300//
 	};
 
 	class Cluster_155mm_AMOS;
 
 	class OPT_Cluster_155mm_AMOS : Cluster_155mm_AMOS
 	{
-		cost = 14300; // 200 //
+		cost = 15000; // 200 //
 	};
 
 	class R_230mm_HE;
 
 	class OPT_R_230mm_HE : R_230mm_HE
 	{
-		cost = 2950; // 1000 //
+		cost = 2500; // 1000 //
 	};
 
 	class Bo_GBU12_LGB;
@@ -374,35 +374,35 @@ class CfgAmmo
 
 	class OPT_R_80mm_HE : R_80mm_HE
 	{
-		cost = 10000;
+		cost = 1000;
 	};
 
 	class Rocket_04_HE_F;
 
 	class OPT_Rocket_04_HE_F : Rocket_04_HE_F 
 	{
-		cost = 10000;
+		cost = 1000;
 	};
 
 	class Rocket_04_AP_F;
 
 	class OPT_Rocket_04_AP_F : Rocket_04_AP_F
 	{
-		cost = 10000;
+		cost = 1000;
 	};
 
 	class Rocket_03_HE_F;
 
 	class OPT_Rocket_03_HE_F : Rocket_03_HE_F
 	{
-		cost = 10000;
+		cost = 1000;
 	};
 
 	class Rocket_03_AP_F;
 
 	class OPT_Rocket_03_AP_F : Rocket_03_AP_F
 	{
-		cost = 10000;
+		cost = 1000;
 	};
 	
 };
@@ -4278,7 +4278,7 @@ class CfgVehicles
 
 	class OPT_Land_Pod_Heli_Transport_04_ammo_F : Land_Pod_Heli_Transport_04_ammo_F
 	{
-		transportAmmo = 60000;
+		transportAmmo = 30000;
 		disableInventory = 1;
 	};
 
@@ -4286,7 +4286,7 @@ class CfgVehicles
 
 	class OPT_Land_Pod_Heli_Transport_04_ammo_black_F : Land_Pod_Heli_Transport_04_ammo_black_F
 	{
-		transportAmmo = 60000;
+		transportAmmo = 30000;
 		disableInventory = 1;
 		scope = 2;
 		scopeCurator = 2;
@@ -4324,17 +4324,14 @@ class CfgVehicles
 	{
 		transportSoldier = 0;
 		disableInventory = 1;
-		scope = 2;
-		scopeCurator = 2;
 	};
 
 	class Land_Pod_Heli_Transport_04_repair_F;
 
 	class OPT_Land_Pod_Heli_Transport_04_repair_F : Land_Pod_Heli_Transport_04_repair_F
 	{
-		transportRepair = 200000000;
+		transportRepair = 0;
 		disableInventory = 1;
-		//#include "\opt_vehicles\reparieren.hpp"
 	};
 
 	class OPT_Land_Pod_Heli_Transport_04_repair_radar_F : Land_Pod_Heli_Transport_04_repair_F
@@ -4348,11 +4345,8 @@ class CfgVehicles
 
 	class OPT_Land_Pod_Heli_Transport_04_repair_black_F : Land_Pod_Heli_Transport_04_repair_black_F
 	{
-		transportRepair = 200000000;
+		transportRepair = 0;
 		disableInventory = 1;
-		//#include "\opt_vehicles\reparieren.hpp"
-		scope = 2;
-		scopeCurator = 2;
 	};
 
 	class OPT_Land_Pod_Heli_Transport_04_repair_black_radar_F : OPT_Land_Pod_Heli_Transport_04_repair_black_F
@@ -4366,9 +4360,8 @@ class CfgVehicles
 
 	class OPT_B_Slingload_01_Repair_F : B_Slingload_01_Repair_F
 	{
-		transportRepair = 200000000;
+		transportRepair = 0;
 		disableInventory = 1;
-		//#include "\opt_vehicles\reparieren.hpp"
 	};
 
 	class OPT_B_Slingload_01_Repair_Radar_F : B_Slingload_01_Repair_F
@@ -4382,7 +4375,7 @@ class CfgVehicles
 
 	class OPT_B_Slingload_01_Ammo_F : B_Slingload_01_Ammo_F
 	{
-		transportAmmo = 60000;
+		transportAmmo = 30000;
 		disableInventory = 1;
 	};
 
