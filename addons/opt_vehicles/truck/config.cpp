@@ -6,7 +6,8 @@
 				   "OPT_B_Truck_01_ammo_F","OPT_B_Truck_01_ammo_ghex_F", "OPT_B_Truck_01_Repair_F","OPT_B_Truck_01_Repair_ghex_F", "OPT_B_Truck_01_fuel_F","OPT_B_Truck_01_fuel_ghex_F", "OPT_O_Truck_03_transport_F", "OPT_O_T_Truck_03_transport_ghex_F", "OPT_O_Truck_03_covered_F",
 				   "OPT_O_T_Truck_03_covered_ghex_F", "OPT_O_Truck_03_ammo_F", "OPT_O_T_Truck_03_ammo_ghex_F", "OPT_O_Truck_03_repair_F", "OPT_O_T_Truck_03_repair_ghex_F", "OPT_O_Truck_03_fuel_F",
 				   "OPT_O_T_Truck_03_fuel_ghex_F", "OPT_O_Truck_03_medical_F", "OPT_O_T_Truck_03_medical_ghex_F", "OPT_O_Truck_02_MRL_F","OPT_O_Truck_02_MRL_ghex_F", "OPT_B_UGV_01_F", "OPT_O_UGV_01_F", "OPT_O_T_UGV_01_ghex_F",
-				   "OPT_I_Truck_02_covered_F","OPT_I_Truck_02_transport_F","OPT_I_Truck_02_fuel_F","OPT_I_Truck_02_ammo_F","OPT_I_Truck_02_box_F"};
+				   "OPT_I_Truck_02_covered_F","OPT_I_Truck_02_transport_F","OPT_I_Truck_02_fuel_F","OPT_I_Truck_02_ammo_F","OPT_I_Truck_02_box_F","OPT_O_Truck_02_covered_F","OPT_O_Truck_02_transport_F","OPT_O_Truck_02_fuel_F","OPT_O_Truck_02_ammo_F","OPT_O_Truck_02_box_F",
+				   "OPT_O_T_Truck_02_F","OPT_O_T_Truck_02_transport_F","OPT_O_T_Truck_02_fuel_F","OPT_O_T_Truck_02_ammo_F","OPT_O_T_Truck_02_box_F"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03"};
@@ -436,7 +437,6 @@ class CfgVehicles
 	{
 
 		faction = "OPT_AAF";
-		maximumLoad = 5000;
 		fuelCapacity = 6; // 250 //
 		displayName = "Zamak Infanterie";
 
@@ -499,6 +499,160 @@ class CfgVehicles
 	class OPT_I_Truck_02_box_F : I_Truck_02_box_F
 	{
 		faction = "OPT_AAF";
+		fuelCapacity = 6; // 250 //
+		transportRepair = 0; // 200000000;
+
+		class TransportItems
+		{
+		};
+	};
+
+	//// Zamak Transport (Covered) ////
+	class O_Truck_02_covered_F;
+
+	class OPT_O_Truck_02_covered_F : O_Truck_02_covered_F
+	{
+
+		faction = "OPT_CSAT";
+		fuelCapacity = 6; // 250 //
+		displayName = "Zamak Infanterie";
+
+		class TransportItems
+		{
+		};
+
+	};
+
+	//// Zamak Transport ////
+	class O_Truck_02_transport_F;
+
+	class OPT_O_Truck_02_transport_F : O_Truck_02_transport_F
+	{
+
+		faction = "OPT_CSAT";
+		fuelCapacity = 6; // 250 //
+		transportSoldier = 1; // 11 //
+		displayName = "Zamak Logistik";
+
+		class TransportItems
+		{
+		};
+
+	};
+
+	//// Zamak Fuel ////
+	class O_Truck_02_fuel_F;
+
+	class OPT_O_Truck_02_fuel_F : O_Truck_02_fuel_F
+	{
+
+		faction = "OPT_CSAT";
+		fuelCapacity = 200; // 250 //
+		transportFuel = 3000;
+
+		class TransportItems
+		{
+		};
+
+	};
+
+	//// Zamak Ammo ////
+	class O_Truck_02_ammo_F;
+
+	class OPT_O_Truck_02_ammo_F : O_Truck_02_ammo_F
+	{
+		faction = "OPT_CSAT";
+		fuelCapacity = 6; // 250 //
+		transportAmmo = 30000;
+
+		class TransportItems
+		{
+		};
+	};
+
+	//// Zamak Repair ////
+	class O_Truck_02_box_F;
+
+	class OPT_O_Truck_02_box_F : O_Truck_02_box_F
+	{
+		faction = "OPT_CSAT";
+		fuelCapacity = 6; // 250 //
+		transportRepair = 0; // 200000000;
+
+		class TransportItems
+		{
+		};
+	};
+
+	//// Zamak Transport (Covered) ////
+	class O_T_Truck_02_F;
+
+	class OPT_O_T_Truck_02_F : O_T_Truck_02_F
+	{
+
+		faction = "OPT_CSAT_T";
+		fuelCapacity = 6; // 250 //
+		displayName = "Zamak Infanterie";
+
+		class TransportItems
+		{
+		};
+
+	};
+
+	//// Zamak Transport ////
+	class O_T_Truck_02_transport_F;
+
+	class OPT_O_T_Truck_02_transport_F : O_T_Truck_02_transport_F
+	{
+
+		faction = "OPT_CSAT_T";
+		fuelCapacity = 6; // 250 //
+		transportSoldier = 1; // 11 //
+		displayName = "Zamak Logistik";
+
+		class TransportItems
+		{
+		};
+
+	};
+
+	//// Zamak Fuel ////
+	class O_T_Truck_02_fuel_F;
+
+	class OPT_O_T_Truck_02_fuel_F : O_T_Truck_02_fuel_F
+	{
+
+		faction = "OPT_CSAT_T";
+		fuelCapacity = 200; // 250 //
+		transportFuel = 3000;
+
+		class TransportItems
+		{
+		};
+
+	};
+
+	//// Zamak Ammo ////
+	class O_T_Truck_02_ammo_F;
+
+	class OPT_O_T_Truck_02_ammo_F : O_T_Truck_02_ammo_F
+	{
+		faction = "OPT_CSAT_T";
+		fuelCapacity = 6; // 250 //
+		transportAmmo = 30000;
+
+		class TransportItems
+		{
+		};
+	};
+
+	//// Zamak Repair ////
+	class O_T_Truck_02_box_F;
+
+	class OPT_O_T_Truck_02_box_F : O_T_Truck_02_box_F
+	{
+		faction = "OPT_CSAT_T";
 		fuelCapacity = 6; // 250 //
 		transportRepair = 0; // 200000000;
 

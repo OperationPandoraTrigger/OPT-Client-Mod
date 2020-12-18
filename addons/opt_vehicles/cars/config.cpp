@@ -112,9 +112,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 4; // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -137,9 +134,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -173,9 +167,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class Turrets : Turrets
 		{
@@ -264,9 +255,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class Turrets : Turrets
 		{
@@ -356,9 +344,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -450,9 +435,6 @@ class CfgVehicles
 	{
 		faction = "OPT_NATO_T";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -547,9 +529,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0//
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class TransportMagazines
 		{
@@ -572,9 +551,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class TransportMagazines
 		{
@@ -609,9 +585,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class TransportMagazines
 		{
@@ -713,9 +686,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class TransportMagazines
 		{
@@ -818,9 +788,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class Turrets : Turrets
 		{
@@ -919,9 +886,6 @@ class CfgVehicles
 	{
 		faction = "OPT_CSAT_T";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_2", 0.316228, 1};
 
 		class Turrets : Turrets
 		{
@@ -1032,9 +996,6 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class Turrets : Turrets
 		{
@@ -1135,9 +1096,6 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		fuelCapacity = 4;// 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class TransportMagazines
 		{
@@ -1264,9 +1222,6 @@ class CfgVehicles
 	{
 		faction = "OPT_AAF";
 		fuelCapacity = 4;					 // 94 //
-		incomingMissileDetectionSystem = 16; // 0 //
-		soundIncommingMissile[] = {"\A3\Sounds_F\vehicles\air\noises\alarm_locked_by_missile_1", 0.316228, 1};
-		soundLocked[] = {"\A3\Sounds_F\weapons\Rockets\opfor_lock_1", 1, 1};
 
 		class Turrets : Turrets
 		{
@@ -1372,6 +1327,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"\A3\soft_f_beta\MRAP_03\Data\mrap_03_ext_co.paa", "\a3\data_f\vehicles\turret_co.paa"};
 	};
 
+	//Prowler unbewaffnet
 	class LSV_01_unarmed_base_F;
 
 	class B_T_LSV_01_unarmed_F : LSV_01_unarmed_base_F
@@ -1416,6 +1372,7 @@ class CfgVehicles
 		};
 	};
 
+	// Prowler Bewaffnet
 	class LSV_01_armed_base_F;
 
 	class B_T_LSV_01_armed_F : LSV_01_armed_base_F
@@ -1457,6 +1414,156 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
+		};
+	};
+
+	// Prowler AT
+	class LSV_01_AT_base_F;
+
+	class B_LSV_01_AT_F : LSV_01_AT_base_F
+	{
+		class Turrets;
+		class CargoTurret_02;
+		class CargoTurret_03;
+		class CodRiverTurret;
+		class TopTurret;
+		class ViewOptics;
+	};
+
+	class OPT_B_LSV_01_AT_F : B_LSV_01_AT_F
+	{
+		faction = "OPT_NATO";
+		fuelCapacity = 3; // 20 //
+		textureList[] = {"Black",0,"Olive",0,"Sand",1};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+
+			class CodRiverTurret : CodRiverTurret
+			{
+			};
+
+			class TopTurret : TopTurret
+			{
+				magazines[] = {"1Rnd_GAT_missiles","1Rnd_GAT_missiles"};
+				weapons[] = {"OPT_missiles_titan_static"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+	};
+
+	class OPT_B_LSV_01_AT_ghex_F : B_LSV_01_AT_F
+	{
+		faction = "OPT_NATO_T";
+		fuelCapacity = 3; // 20 //
+		textureList[] = {"Black",0,"Olive",1,"Sand",0};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+
+			class CodRiverTurret : CodRiverTurret
+			{
+			};
+
+			class TopTurret : TopTurret
+			{
+				magazines[] = {"1Rnd_GAT_missiles","1Rnd_GAT_missiles"};
+				weapons[] = {"OPT_missiles_titan_static"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
+		};
+	};
+
+	//// AAF Prowler AT 
+	class OPT_I_LSV_01_AT_ghex_F : B_LSV_01_AT_F
+	{
+		faction = "OPT_AAF";
+		side = 2;
+		fuelCapacity = 3; // 20 //
+		textureList[] = {"Black",0,"Olive",1,"Sand",0};
+
+		class TransportMagazines
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportWeapons
+		{
+		};
+
+		class Turrets : Turrets
+		{
+			class CargoTurret_02 : CargoTurret_02
+			{
+			};
+
+			class CargoTurret_03 : CargoTurret_03
+			{
+			};
+
+			class CodRiverTurret : CodRiverTurret
+			{
+			};
+
+			class TopTurret : TopTurret
+			{
+				magazines[] = {"1Rnd_GAT_missiles","1Rnd_GAT_missiles"};
+				weapons[] = {"OPT_missiles_titan_static"};
+
+				class ViewOptics : ViewOptics
+				{
+					visionMode[] = {"Normal", "NVG"};
+				};
+			};
 		};
 	};
 
@@ -1618,6 +1725,8 @@ class CfgVehicles
 
 			class MainTurret : MainTurret
 			{
+				magazines[] = {"1Rnd_GAT_missiles","1Rnd_GAT_missiles"};
+				weapons[] = {"OPT_missiles_titan_static"};
 
 				class OpticsIn : OpticsIn
 				{
@@ -1679,6 +1788,9 @@ class CfgVehicles
 
 			class MainTurret : MainTurret
 			{
+				magazines[] = {"1Rnd_GAT_missiles","1Rnd_GAT_missiles"};
+				weapons[] = {"OPT_missiles_titan_static"};
+				
 				class OpticsIn : OpticsIn
 				{
 					class Wide : Wide
