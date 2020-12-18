@@ -6343,9 +6343,9 @@ class CfgVehicles
 	{
 	};
 
-	class OPT_Box_NATO_Grenades_F : Box_NATO_Grenades_F
+	class OPT_Box_NATO_UGL_F : Box_NATO_Grenades_F
 	{
-		displayName = "NATO Granatenkiste";
+		displayName = "NATO Unterlaufgranatenkiste";
 		maximumLoad = 8500;
 		supplyRadius = 8;
 
@@ -6507,6 +6507,46 @@ class CfgVehicles
 				count = 30;
 			};
 
+			class _xx_3Rnd_HE_Grenade_shell
+			{
+				magazine = "3Rnd_HE_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_HE_Grenade_shell
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 20;
+			};
+
+			class _xx_ACE_HuntIR_M203
+			{
+				magazine = "ACE_HuntIR_M203";
+				count = 40;
+			};
+		};
+	};
+
+	class OPT_Box_NATO_Grenades_F : Box_NATO_Grenades_F
+	{
+		displayName = "NATO Granatenkiste";
+		maximumLoad = 8500;
+		supplyRadius = 8;
+
+		class TransportWeapons
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
 			class _xx_SmokeShell
 			{
 				magazine = "SmokeShell";
@@ -6579,18 +6619,6 @@ class CfgVehicles
 				count = 60;
 			};
 
-			class _xx_3Rnd_HE_Grenade_shell
-			{
-				magazine = "3Rnd_HE_Grenade_shell";
-				count = 0;
-			};
-
-			class _xx_1Rnd_HE_Grenade_shell
-			{
-				magazine = "1Rnd_HE_Grenade_shell";
-				count = 50;
-			};
-
 			class _xx_ACE_M14
 			{
 				magazine = "ACE_M14";
@@ -6600,12 +6628,6 @@ class CfgVehicles
 			class _xx_ACE_M84
 			{
 				magazine = "ACE_M84";
-				count = 40;
-			};
-
-			class _xx_ACE_HuntIR_M203
-			{
-				magazine = "ACE_HuntIR_M203";
 				count = 40;
 			};
 		};
@@ -6631,17 +6653,6 @@ class CfgVehicles
 
 		class TransportItems
 		{
-			class _xx_ACE_Clacker
-			{
-				name = "ACE_Clacker";
-				count = 10;
-			};
-
-			class _xx_ACE_M26_Clacker
-			{
-				name = "ACE_M26_Clacker";
-				count = 10;
-			};
 		};
 
 		class TransportBackpacks
@@ -6659,6 +6670,12 @@ class CfgVehicles
 			class _xx_DemoCharge_Remote_Mag
 			{
 				magazine = "DemoCharge_Remote_Mag";
+				count = 10;
+			};
+
+			class _xx_ClaymoreDirectionalMine_Remote_Mag
+			{
+				magazine = "ClaymoreDirectionalMine_Remote_Mag";
 				count = 10;
 			};
 		};
@@ -6684,16 +6701,10 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_APERSMine_Range_Mag
-			{
-				magazine = "APERSMine_Range_Mag";
-				count = 10;
-			};
-
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 10;
+				count = 5;
 			};
 
 			class _xx_ATMine_Range_Mag
@@ -6721,17 +6732,6 @@ class CfgVehicles
 
 		class TransportItems
 		{
-			class _xx_ACE_Clacker
-			{
-				name = "ACE_Clacker";
-				count = 10;
-			};
-
-			class _xx_ACE_M26_Clacker
-			{
-				name = "ACE_M26_Clacker";
-				count = 10;
-			};
 		};
 
 		class TransportBackpacks
@@ -6749,6 +6749,12 @@ class CfgVehicles
 			class _xx_DemoCharge_Remote_Mag
 			{
 				magazine = "DemoCharge_Remote_Mag";
+				count = 10;
+			};
+
+			class _xx_ClaymoreDirectionalMine_Remote_Mag
+			{
+				magazine = "ClaymoreDirectionalMine_Remote_Mag";
 				count = 10;
 			};
 		};
@@ -6774,16 +6780,10 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_APERSMine_Range_Mag
-			{
-				magazine = "APERSMine_Range_Mag";
-				count = 10;
-			};
-
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 10;
+				count = 5;
 			};
 
 			class _xx_ATMine_Range_Mag
@@ -7319,7 +7319,7 @@ class CfgVehicles
 			class _xx_OPT_launch_RPG32_F
 			{
 				weapon = "OPT_launch_RPG32_F";
-				count = 1;
+				count = 2;
 			};
 		};
 
@@ -7336,13 +7336,53 @@ class CfgVehicles
 			class _xx_RPG32_HE_F
 			{
 				magazine = "RPG32_HE_F";
-				count = 2;
+				count = 0;
 			};
 
 			class _xx_RPG32_F
 			{
 				magazine = "RPG32_F";
-				count = 3;
+				count = 5;
+			};
+		};
+	};
+
+	class OPT_Box_EAF_WpsSpecial_AT_L3 : Box_EAF_WpsSpecial_F
+	{
+		displayName = "RPG-42 Alamut Raketenkiste (AAF)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa",  "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_RPG32_F
+			{
+				weapon = "OPT_launch_RPG32_F";
+				count = 2;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_RPG32_HE_F
+			{
+				magazine = "RPG32_HE_F";
+				count = 0;
+			};
+
+			class _xx_RPG32_F
+			{
+				magazine = "RPG32_F";
+				count = 5;
 			};
 		};
 	};
@@ -7359,7 +7399,7 @@ class CfgVehicles
 			class _xx_OPT_launch_MRAWS_green_rail_F
 			{
 				weapon = "OPT_launch_MRAWS_green_rail_F";
-				count = 1;
+				count = 2;
 			};
 		};
 
@@ -7376,13 +7416,53 @@ class CfgVehicles
 			class _xx_MRAWS_HEAT_F
 			{
 				magazine = "MRAWS_HEAT_F";
-				count = 3;
+				count = 5;
 			};
 
 			class _xx_MRAWS_HE_F
 			{
 				magazine = "MRAWS_HE_F";
+				count = 0;
+			};
+		};
+	};
+
+	class OPT_Box_East_WpsSpecial_AT_L3 : Box_East_WpsSpecial_F
+	{
+		displayName = "MAAWS Raketenkiste (CSAT)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_MRAWS_green_rail_F
+			{
+				weapon = "OPT_launch_MRAWS_green_rail_F";
 				count = 2;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 5;
+			};
+
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 0;
 			};
 		};
 	};
@@ -7399,7 +7479,7 @@ class CfgVehicles
 			class _xx_launch_RPG7_F
 			{
 				weapon = "launch_RPG7_F";
-				count = 1;
+				count = 2;
 			};
 		};
 
@@ -7433,7 +7513,7 @@ class CfgVehicles
 			class _xx_launch_RPG7_F
 			{
 				weapon = "launch_RPG7_F";
-				count = 1;
+				count = 2;
 			};
 		};
 
@@ -7624,6 +7704,190 @@ class CfgVehicles
 	{
 	};
 
+	class OPT_Box_CSAT_UGL_F : Box_East_Grenades_F
+	{
+		displayName = "CSAT Unterlaufgranatenkiste";
+		maximumLoad = 8500;
+		supplyRadius = 8;
+
+		class TransportWeapons
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_3Rnd_Smoke_Grenade_shell
+			{
+				magazine = "3Rnd_Smoke_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_Smoke_Grenade_shell
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeRed_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeRed_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeRed_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeGreen_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeGreen_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeGreen_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeYellow_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeYellow_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeYellow_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeYellow_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokePurple_Grenade_shell
+			{
+				magazine = "3Rnd_SmokePurple_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokePurple_Grenade_shell
+			{
+				magazine = "1Rnd_SmokePurple_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeBlue_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeBlue_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeBlue_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeOrange_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeOrange_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeOrange_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeOrange_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareWhite_F
+			{
+				magazine = "3Rnd_UGL_FlareWhite_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareWhite_F
+			{
+				magazine = "UGL_FlareWhite_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareGreen_F
+			{
+				magazine = "3Rnd_UGL_FlareGreen_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareGreen_F
+			{
+				magazine = "UGL_FlareGreen_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareRed_F
+			{
+				magazine = "3Rnd_UGL_FlareRed_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareRed_F
+			{
+				magazine = "UGL_FlareRed_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareYellow_F
+			{
+				magazine = "3Rnd_UGL_FlareYellow_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareYellow_F
+			{
+				magazine = "UGL_FlareYellow_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareCIR_F
+			{
+				magazine = "3Rnd_UGL_FlareCIR_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareCIR_F
+			{
+				magazine = "UGL_FlareCIR_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_HE_Grenade_shell
+			{
+				magazine = "3Rnd_HE_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_HE_Grenade_shell
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 20;
+			};
+
+			class _xx_ACE_HuntIR_M203
+			{
+				magazine = "ACE_HuntIR_M203";
+				count = 40;
+			};
+		};
+	};
+
 	class OPT_Box_East_Grenades_F : Box_East_Grenades_F
 	{
 		displayName = "CSAT Granatenkiste";
@@ -7644,78 +7908,6 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_1Rnd_Smoke_Grenade_shell
-			{
-				magazine = "1Rnd_Smoke_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeRed_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeRed_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeGreen_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeGreen_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeYellow_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeYellow_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokePurple_Grenade_shell
-			{
-				magazine = "1Rnd_SmokePurple_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeBlue_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeBlue_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeOrange_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeOrange_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareWhite_F
-			{
-				magazine = "UGL_FlareWhite_F";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareGreen_F
-			{
-				magazine = "UGL_FlareGreen_F";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareRed_F
-			{
-				magazine = "UGL_FlareRed_F";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareYellow_F
-			{
-				magazine = "UGL_FlareYellow_F";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareCIR_F
-			{
-				magazine = "UGL_FlareCIR_F";
-				count = 30;
-			};
-
 			class _xx_SmokeShell
 			{
 				magazine = "SmokeShell";
@@ -7788,12 +7980,6 @@ class CfgVehicles
 				count = 60;
 			};
 
-			class _xx_1Rnd_HE_Grenade_shell
-			{
-				magazine = "1Rnd_HE_Grenade_shell";
-				count = 50;
-			};
-
 			class _xx_ACE_M14
 			{
 				magazine = "ACE_M14";
@@ -7805,6 +7991,186 @@ class CfgVehicles
 				magazine = "ACE_M84";
 				count = 40;
 			};
+		};
+	};
+
+	class Box_EAF_Grenades_F;
+
+	class OPT_Box_EAF_UGL_F : Box_EAF_Grenades_F
+	{
+		displayName = "AAF Unterlaufgranatenkiste";
+		maximumLoad = 8500;
+		supplyRadius = 8;
+
+		class TransportWeapons
+		{
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_3Rnd_Smoke_Grenade_shell
+			{
+				magazine = "3Rnd_Smoke_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_Smoke_Grenade_shell
+			{
+				magazine = "1Rnd_Smoke_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeRed_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeRed_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeRed_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeRed_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeGreen_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeGreen_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeGreen_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeGreen_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeYellow_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeYellow_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeYellow_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeYellow_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokePurple_Grenade_shell
+			{
+				magazine = "3Rnd_SmokePurple_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokePurple_Grenade_shell
+			{
+				magazine = "1Rnd_SmokePurple_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeBlue_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeBlue_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeBlue_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeBlue_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_SmokeOrange_Grenade_shell
+			{
+				magazine = "3Rnd_SmokeOrange_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_SmokeOrange_Grenade_shell
+			{
+				magazine = "1Rnd_SmokeOrange_Grenade_shell";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareWhite_F
+			{
+				magazine = "3Rnd_UGL_FlareWhite_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareWhite_F
+			{
+				magazine = "UGL_FlareWhite_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareGreen_F
+			{
+				magazine = "3Rnd_UGL_FlareGreen_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareGreen_F
+			{
+				magazine = "UGL_FlareGreen_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareRed_F
+			{
+				magazine = "3Rnd_UGL_FlareRed_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareRed_F
+			{
+				magazine = "UGL_FlareRed_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareYellow_F
+			{
+				magazine = "3Rnd_UGL_FlareYellow_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareYellow_F
+			{
+				magazine = "UGL_FlareYellow_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_UGL_FlareCIR_F
+			{
+				magazine = "3Rnd_UGL_FlareCIR_F";
+				count = 0;
+			};
+
+			class _xx_UGL_FlareCIR_F
+			{
+				magazine = "UGL_FlareCIR_F";
+				count = 30;
+			};
+
+			class _xx_3Rnd_HE_Grenade_shell
+			{
+				magazine = "3Rnd_HE_Grenade_shell";
+				count = 0;
+			};
+
+			class _xx_1Rnd_HE_Grenade_shell
+			{
+				magazine = "1Rnd_HE_Grenade_shell";
+				count = 20;
+			};
 
 			class _xx_ACE_HuntIR_M203
 			{
@@ -7813,8 +8179,6 @@ class CfgVehicles
 			};
 		};
 	};
-
-	class Box_EAF_Grenades_F;
 
 	class OPT_Box_EAF_Grenades_F : Box_EAF_Grenades_F
 	{
@@ -7836,78 +8200,6 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-			class _xx_1Rnd_Smoke_Grenade_shell
-			{
-				magazine = "1Rnd_Smoke_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeRed_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeRed_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeGreen_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeGreen_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeYellow_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeYellow_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokePurple_Grenade_shell
-			{
-				magazine = "1Rnd_SmokePurple_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeBlue_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeBlue_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_1Rnd_SmokeOrange_Grenade_shell
-			{
-				magazine = "1Rnd_SmokeOrange_Grenade_shell";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareWhite_F
-			{
-				magazine = "UGL_FlareWhite_F";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareGreen_F
-			{
-				magazine = "UGL_FlareGreen_F";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareRed_F
-			{
-				magazine = "UGL_FlareRed_F";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareYellow_F
-			{
-				magazine = "UGL_FlareYellow_F";
-				count = 30;
-			};
-
-			class _xx_UGL_FlareCIR_F
-			{
-				magazine = "UGL_FlareCIR_F";
-				count = 30;
-			};
-
 			class _xx_SmokeShell
 			{
 				magazine = "SmokeShell";
@@ -7980,12 +8272,6 @@ class CfgVehicles
 				count = 60;
 			};
 
-			class _xx_1Rnd_HE_Grenade_shell
-			{
-				magazine = "1Rnd_HE_Grenade_shell";
-				count = 50;
-			};
-
 			class _xx_ACE_M14
 			{
 				magazine = "ACE_M14";
@@ -7995,12 +8281,6 @@ class CfgVehicles
 			class _xx_ACE_M84
 			{
 				magazine = "ACE_M84";
-				count = 40;
-			};
-
-			class _xx_ACE_HuntIR_M203
-			{
-				magazine = "ACE_HuntIR_M203";
 				count = 40;
 			};
 		};
@@ -8018,17 +8298,6 @@ class CfgVehicles
 
 		class TransportItems
 		{
-			class _xx_ACE_Clacker
-			{
-				name = "ACE_Clacker";
-				count = 10;
-			};
-
-			class _xx_ACE_M26_Clacker
-			{
-				name = "ACE_M26_Clacker";
-				count = 10;
-			};
 		};
 
 		class TransportBackpacks
@@ -8046,6 +8315,12 @@ class CfgVehicles
 			class _xx_DemoCharge_Remote_Mag
 			{
 				magazine = "DemoCharge_Remote_Mag";
+				count = 10;
+			};
+
+			class _xx_ClaymoreDirectionalMine_Remote_Mag
+			{
+				magazine = "ClaymoreDirectionalMine_Remote_Mag";
 				count = 10;
 			};
 		};
@@ -8071,17 +8346,10 @@ class CfgVehicles
 
 		class TransportMagazines
 		{
-
-			class _xx_APERSMine_Range_Mag
-			{
-				magazine = "APERSMine_Range_Mag";
-				count = 10;
-			};
-
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 10;
+				count = 5;
 			};
 
 			class _xx_ATMine_Range_Mag
