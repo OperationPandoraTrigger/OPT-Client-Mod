@@ -2734,7 +2734,7 @@ class CfgWeapons
 
 	class arifle_SPAR_01_base_F : Rifle_Base_F
 	{
-		magazines[] = {"30Rnd_580x42_Mag_F"};
+		magazines[] = {"30Rnd_556x45_Stanag"};
 		class WeaponSlotsInfo;
 	};
 
@@ -5771,18 +5771,17 @@ class CfgVehicles
 				count = 180;
 			};
 
+			class _xx_OPT_150Rnd_556x45_Drum_Mag_Tracer_F
+			{
+				magazine = "OPT_150Rnd_556x45_Drum_Mag_Tracer_F";
+				count = 40;
+			};
+
 			class _xx_200Rnd_65x39_cased_Box
 			{
 				magazine = "200Rnd_65x39_cased_Box";
 				count = 40;
 			};
-
-			class _xx_200Rnd_556x45_Box_F
-			{
-				magazine = "200Rnd_556x45_Box_F";
-				count = 40;
-			};
-
 		};
 	};
 
@@ -6257,21 +6256,21 @@ class CfgVehicles
 
 		class TransportItems
 		{
-			class _xx_U_B_Wetsuit
+			class _xx_U_I_Wetsuit
 			{
-				name = "U_B_Wetsuit";
+				name = "U_I_Wetsuit";
 				count = 5;
 			};
 
-			class _xx_G_B_Diving
+			class _xx_G_I_Diving
 			{
-				name = "G_B_Diving";
+				name = "G_I_Diving";
 				count = 5;
 			};
 
-			class _xx_V_RebreatherB
+			class _xx_V_RebreatherIA
 			{
-				name = "V_RebreatherB";
+				name = "V_RebreatherIA";
 				count = 5;
 			};
 		};
