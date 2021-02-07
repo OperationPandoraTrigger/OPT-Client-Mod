@@ -6703,13 +6703,13 @@ class CfgVehicles
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 5;
+				count = 3;
 			};
 
 			class _xx_ATMine_Range_Mag
 			{
 				magazine = "ATMine_Range_Mag";
-				count = 10;
+				count = 5;
 			};
 		};
 	};
@@ -6782,13 +6782,13 @@ class CfgVehicles
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 5;
+				count = 3;
 			};
 
 			class _xx_ATMine_Range_Mag
 			{
 				magazine = "ATMine_Range_Mag";
-				count = 10;
+				count = 5;
 			};
 		};
 	};
@@ -8348,13 +8348,13 @@ class CfgVehicles
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 5;
+				count = 3;
 			};
 
 			class _xx_ATMine_Range_Mag
 			{
 				magazine = "ATMine_Range_Mag";
-				count = 10;
+				count = 5;
 			};
 		};
 	};
