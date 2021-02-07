@@ -6014,7 +6014,7 @@ class CfgVehicles
 
 	class OPT_Box_NATO_WpsSpecial_AT_L1 : Box_NATO_WpsSpecial_F
 	{
-		displayName = "MAAWS Raketenkiste (NATO)";
+		displayName = "MAAWS Mk4 Mod 0 Raketenkiste (NATO)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -6051,6 +6051,8 @@ class CfgVehicles
 			};
 		};
 	};
+
+	
 
 	class OPT_Box_NATO_WpsSpecial_AT_L2 : Box_NATO_WpsSpecial_F
 	{
@@ -7388,7 +7390,7 @@ class CfgVehicles
 
 	class OPT_Box_EAF_WpsSpecial_AT_L1 : Box_EAF_WpsSpecial_F
 	{
-		displayName = "MAAWS Raketenkiste (AAF)";
+		displayName = "MAAWS Mk4 Mod 0 Raketenkiste (AAF)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
@@ -7428,7 +7430,7 @@ class CfgVehicles
 
 	class OPT_Box_East_WpsSpecial_AT_L3 : Box_East_WpsSpecial_F
 	{
-		displayName = "MAAWS Raketenkiste (CSAT)";
+		displayName = "MAAWS Mk4 Mod 0 Raketenkiste (CSAT)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
