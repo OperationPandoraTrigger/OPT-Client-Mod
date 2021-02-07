@@ -3729,6 +3729,19 @@ class CfgWeapons
 		};
 	};
 
+	class launch_MRAWS_green_F : launch_MRAWS_base_F
+	{
+	};
+
+	class OPT_launch_MRAWS_green_F : launch_MRAWS_green_F
+	{
+		_generalMacro = "OPT_launch_MRAWS_green_F";
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+		};
+	};
+
 	class launch_Vorona_base_F : Launcher_Base_F
 	{
 		class OpticsModes;
@@ -6015,6 +6028,46 @@ class CfgVehicles
 	class OPT_Box_NATO_WpsSpecial_AT_L1 : Box_NATO_WpsSpecial_F
 	{
 		displayName = "MAAWS Mk4 Mod 0 Raketenkiste (NATO)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_MRAWS_green_rail_F
+			{
+				weapon = "OPT_launch_MRAWS_green_rail_F";
+				count = 1;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 10;
+			};
+
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 10;
+			};
+		};
+	};
+
+	class OPT_Box_NATO_WpsSpecial_AT_L1A : OPT_Box_NATO_WpsSpecial_AT_L1
+	{
+		displayName = "MAAWS Mk4 Mod 1 Raketenkiste (NATO)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
