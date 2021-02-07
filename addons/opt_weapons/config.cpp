@@ -3729,6 +3729,19 @@ class CfgWeapons
 		};
 	};
 
+	class launch_MRAWS_green_F : launch_MRAWS_base_F
+	{
+	};
+
+	class OPT_launch_MRAWS_green_F : launch_MRAWS_green_F
+	{
+		_generalMacro = "OPT_launch_MRAWS_green_F";
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+		};
+	};
+
 	class launch_Vorona_base_F : Launcher_Base_F
 	{
 		class OpticsModes;
@@ -6014,7 +6027,7 @@ class CfgVehicles
 
 	class OPT_Box_NATO_WpsSpecial_AT_L1 : Box_NATO_WpsSpecial_F
 	{
-		displayName = "MAAWS Raketenkiste (NATO)";
+		displayName = "MAAWS Mk4 Mod 0 Raketenkiste (NATO)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -6024,7 +6037,7 @@ class CfgVehicles
 			class _xx_OPT_launch_MRAWS_green_rail_F
 			{
 				weapon = "OPT_launch_MRAWS_green_rail_F";
-				count = 1;
+				count = 2;
 			};
 		};
 
@@ -6051,6 +6064,48 @@ class CfgVehicles
 			};
 		};
 	};
+
+	class OPT_Box_NATO_WpsSpecial_AT_L1A : OPT_Box_NATO_WpsSpecial_AT_L1
+	{
+		displayName = "MAAWS Mk4 Mod 1 Raketenkiste (NATO)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_MRAWS_green_F
+			{
+				weapon = "OPT_launch_MRAWS_green_F";
+				count = 2;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 10;
+			};
+
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 10;
+			};
+		};
+	};
+
+	
 
 	class OPT_Box_NATO_WpsSpecial_AT_L2 : Box_NATO_WpsSpecial_F
 	{
@@ -6703,13 +6758,13 @@ class CfgVehicles
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 5;
+				count = 3;
 			};
 
 			class _xx_ATMine_Range_Mag
 			{
 				magazine = "ATMine_Range_Mag";
-				count = 10;
+				count = 5;
 			};
 		};
 	};
@@ -6782,13 +6837,13 @@ class CfgVehicles
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 5;
+				count = 3;
 			};
 
 			class _xx_ATMine_Range_Mag
 			{
 				magazine = "ATMine_Range_Mag";
-				count = 10;
+				count = 5;
 			};
 		};
 	};
@@ -7388,7 +7443,7 @@ class CfgVehicles
 
 	class OPT_Box_EAF_WpsSpecial_AT_L1 : Box_EAF_WpsSpecial_F
 	{
-		displayName = "MAAWS Raketenkiste (AAF)";
+		displayName = "MAAWS Mk4 Mod 0 Raketenkiste (AAF)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
@@ -7426,9 +7481,49 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_Box_EAF_WpsSpecial_AT_L1A : OPT_Box_EAF_WpsSpecial_AT_L1
+	{
+		displayName = "MAAWS Mk4 Mod 1 Raketenkiste (AAF)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS3.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_MRAWS_green_F
+			{
+				weapon = "OPT_launch_MRAWS_green_F";
+				count = 2;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 5;
+			};
+
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 0;
+			};
+		};
+	};
+
 	class OPT_Box_East_WpsSpecial_AT_L3 : Box_East_WpsSpecial_F
 	{
-		displayName = "MAAWS Raketenkiste (CSAT)";
+		displayName = "MAAWS Mk4 Mod 0 Raketenkiste (CSAT)";
 		maximumLoad = 5000;
 		supplyRadius = 8;
 		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
@@ -7438,6 +7533,46 @@ class CfgVehicles
 			class _xx_OPT_launch_MRAWS_green_rail_F
 			{
 				weapon = "OPT_launch_MRAWS_green_rail_F";
+				count = 2;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 5;
+			};
+
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 0;
+			};
+		};
+	};
+
+	class OPT_Box_East_WpsSpecial_AT_L3A : Box_East_WpsSpecial_F
+	{
+		displayName = "MAAWS Mk4 Mod 1 Raketenkiste (CSAT)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_MRAWS_green_F
+			{
+				weapon = "OPT_launch_MRAWS_green_F";
 				count = 2;
 			};
 		};
@@ -8348,13 +8483,13 @@ class CfgVehicles
 			class _xx_SLAMDirectionalMine_Wire_Mag
 			{
 				magazine = "SLAMDirectionalMine_Wire_Mag";
-				count = 5;
+				count = 3;
 			};
 
 			class _xx_ATMine_Range_Mag
 			{
 				magazine = "ATMine_Range_Mag";
-				count = 10;
+				count = 5;
 			};
 		};
 	};
