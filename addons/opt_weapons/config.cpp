@@ -6037,7 +6037,7 @@ class CfgVehicles
 			class _xx_OPT_launch_MRAWS_green_rail_F
 			{
 				weapon = "OPT_launch_MRAWS_green_rail_F";
-				count = 1;
+				count = 2;
 			};
 		};
 
@@ -6074,10 +6074,10 @@ class CfgVehicles
 
 		class TransportWeapons
 		{
-			class _xx_OPT_launch_MRAWS_green_rail_F
+			class _xx_OPT_launch_MRAWS_green_F
 			{
-				weapon = "OPT_launch_MRAWS_green_rail_F";
-				count = 1;
+				weapon = "OPT_launch_MRAWS_green_F";
+				count = 2;
 			};
 		};
 
@@ -7481,6 +7481,46 @@ class CfgVehicles
 		};
 	};
 
+	class OPT_Box_EAF_WpsSpecial_AT_L1A : OPT_Box_EAF_WpsSpecial_AT_L1
+	{
+		displayName = "MAAWS Mk4 Mod 1 Raketenkiste (AAF)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_MRAWS_green_F
+			{
+				weapon = "OPT_launch_MRAWS_green_F";
+				count = 2;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 5;
+			};
+
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 0;
+			};
+		};
+	};
+
 	class OPT_Box_East_WpsSpecial_AT_L3 : Box_East_WpsSpecial_F
 	{
 		displayName = "MAAWS Mk4 Mod 0 Raketenkiste (CSAT)";
@@ -7493,6 +7533,46 @@ class CfgVehicles
 			class _xx_OPT_launch_MRAWS_green_rail_F
 			{
 				weapon = "OPT_launch_MRAWS_green_rail_F";
+				count = 2;
+			};
+		};
+
+		class TransportItems
+		{
+		};
+
+		class TransportBackpacks
+		{
+		};
+
+		class TransportMagazines
+		{
+			class _xx_MRAWS_HEAT_F
+			{
+				magazine = "MRAWS_HEAT_F";
+				count = 5;
+			};
+
+			class _xx_MRAWS_HE_F
+			{
+				magazine = "MRAWS_HE_F";
+				count = 0;
+			};
+		};
+	};
+
+	class OPT_Box_East_WpsSpecial_AT_L3A : Box_East_WpsSpecial_F
+	{
+		displayName = "MAAWS Mk4 Mod 1 Raketenkiste (CSAT)";
+		maximumLoad = 5000;
+		supplyRadius = 8;
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+
+		class TransportWeapons
+		{
+			class _xx_OPT_launch_MRAWS_green_F
+			{
+				weapon = "OPT_launch_MRAWS_green_F";
 				count = 2;
 			};
 		};
