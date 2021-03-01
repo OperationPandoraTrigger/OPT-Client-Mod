@@ -805,8 +805,7 @@ class CfgVehicles
 		crew = "I_crew_F";
 		typicalCargo[] = {"I_crew_F"};
 		fuelCapacity = 12; // 45 //
-		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet"};
-		hiddenSelectionsTextures[] = {"A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_aa_body_olive_co.paa","A3\Armor_F_exp\APC_Tracked_01\Data\mbt_01_body_olive_co.paa","A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_aa_tower_olive_co.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_0_body.paa","\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_1_body.paa","\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_2_Tower.paa"};
 
 		class Turrets : Turrets
 		{
