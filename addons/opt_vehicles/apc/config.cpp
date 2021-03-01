@@ -382,6 +382,7 @@ class CfgVehicles
 		fuelCapacity = 8; // 60 //
 		crew = "O_Soldier_F";
 		typicalCargo[] = {"O_Soldier_lite_F"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_0_base_hex_pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_1_adds_hex_Pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_2_tows_hex_Pazifik.paa"};
 
 		class Turrets : Turrets
 		{
