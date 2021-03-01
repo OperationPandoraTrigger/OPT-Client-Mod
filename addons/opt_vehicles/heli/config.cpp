@@ -364,7 +364,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -410,7 +410,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -450,7 +450,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -2471,7 +2471,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -2629,7 +2629,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -2760,7 +2760,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
