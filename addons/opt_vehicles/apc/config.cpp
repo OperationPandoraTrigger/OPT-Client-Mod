@@ -382,6 +382,7 @@ class CfgVehicles
 		fuelCapacity = 8; // 60 //
 		crew = "O_Soldier_F";
 		typicalCargo[] = {"O_Soldier_lite_F"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_0_base_hex_pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_1_adds_hex_Pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_2_tows_hex_Pazifik.paa"};
 
 		class Turrets : Turrets
 		{
@@ -606,7 +607,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan"};
+				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan_AA"};
 				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Red", "OPT_680Rnd_35mm_AA_shells_Tracer_Red", "4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
 
 				class Turrets : Turrets
@@ -709,7 +710,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan"};
+				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan_AA"};
 				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Red", "OPT_680Rnd_35mm_AA_shells_Tracer_Red", "4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
 
 				class Turrets : Turrets
@@ -805,14 +806,13 @@ class CfgVehicles
 		crew = "I_crew_F";
 		typicalCargo[] = {"I_crew_F"};
 		fuelCapacity = 12; // 45 //
-		hiddenSelections[] = {"camo1","camo2","camo3","CamoNet"};
-		hiddenSelectionsTextures[] = {"A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_aa_body_olive_co.paa","A3\Armor_F_exp\APC_Tracked_01\Data\mbt_01_body_olive_co.paa","A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_aa_tower_olive_co.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_0_body.paa","\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_1_body.paa","\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_2_Tower.paa"};
 
 		class Turrets : Turrets
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan"};
+				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan_AA"};
 				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Red", "4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
 
 				class Turrets : Turrets
@@ -1905,7 +1905,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan"};
+				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan_AA"};
 				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Green", "4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
 
 				class Turrets : Turrets
@@ -2006,7 +2006,7 @@ class CfgVehicles
 		{
 			class MainTurret : MainTurret
 			{
-				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan"};
+				weapons[] = {"OPT_autocannon_35mm", "OPT_missiles_titan_AA"};
 				magazines[] = {"OPT_680Rnd_35mm_AA_shells_Tracer_Green","4Rnd_Titan_long_missiles", "4Rnd_Titan_long_missiles"};
 
 				class Turrets : Turrets

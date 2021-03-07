@@ -8494,6 +8494,15 @@ class CfgVehicles
 		};
 	};
 
+	//TFAR CSAT Funke 
+	class TFAR_mr3000;
+
+	class OPT_TFAR_mr3000 : TFAR_mr3000
+	{
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\funk\tfar_mr3000.paa"};
+	};
+
+
 	class Weapon_Bag_Base;
 
 	class B_HMG_01_weapon_F : Weapon_Bag_Base

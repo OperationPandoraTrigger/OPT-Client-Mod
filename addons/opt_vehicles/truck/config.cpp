@@ -752,6 +752,6 @@ class CfgVehicles
 		faction = "OPT_CSAT_T";
 		crew = "OPT_CSAT_Soldat";
 		typicalCargo[] = {"OPT_CSAT_Soldat"};
-		hiddenSelectionsTextures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_MRL_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_kab_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_mrl_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
 	};
 };

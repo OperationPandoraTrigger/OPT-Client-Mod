@@ -528,7 +528,8 @@ class CfgVehicles
 		typicalCargo[] = {"I_crew_F"};
 		fuelCapacity = 12; // 100 //
 		hiddenSelections[] = {"Camo1","Camo2","Camo3","CamoNet"};
-		hiddenSelectionsTextures[] = {"A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa","A3\Armor_F_Exp\MBT_01\data\MBT_01_scorcher_olive_CO.paa","A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa","A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_01_body.paa","\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_01_turret.paa","\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_turret_rcws.paa","A3\Armor_F\Data\camonet_NATO_Green_CO.paa"};
+		
 
 		class Turrets : Turrets
 		{

@@ -1526,8 +1526,10 @@ class CfgVehicles
 		faction = "OPT_AAF";
 		side = 2;
 		fuelCapacity = 3; // 20 //
-		textureList[] = {"Black",0,"Olive",1,"Sand",0};
+		textureList[] = {"Black",0,"Olive",0,"Sand",0};
 
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_0_base.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_1_ext.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_black_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_black_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+	
 		class TransportMagazines
 		{
 		};

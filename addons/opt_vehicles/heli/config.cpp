@@ -338,7 +338,7 @@ class CfgVehicles
 		displayName = "PO-30 Orca (Light)";
 		weapons[] = {"OPT_CMFlareLauncher","OPT_M134_minigun"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Yellow_Belt"};
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_CO", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
 
 		class Components : Components
 		{
@@ -364,7 +364,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -384,7 +384,7 @@ class CfgVehicles
 		displayName = "PO-30 Orca (Heavy)";
 		weapons[] = {"OPT_CMFlareLauncher","OPT_M134_minigun"};
 		magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Yellow_Belt"};
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_CO", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
 
 		class Components : Components
 		{
@@ -410,7 +410,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -435,7 +435,7 @@ class CfgVehicles
 		driverCanEject = 1;
 		radarType = 4;		// 8 //
 		fuelCapacity = 210; // 800 //
-		hiddenSelectionsTextures[] = {"A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_CO"};
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa"};
 
 		class TransportItems
 		{
@@ -450,7 +450,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -2471,7 +2471,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -2629,7 +2629,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
@@ -2760,7 +2760,7 @@ class CfgVehicles
 			class _xx_B_Parachute
 			{
 				backpack = "B_Parachute";
-				count = 20;
+				count = 15;
 			};
 		};
 
