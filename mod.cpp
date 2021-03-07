@@ -1,4 +1,4 @@
-name = "OPT Client-Mod v2.9.9";
+name = "OPT Client-Mod v3.0.0";
 picture = "opt4_icon.paa";
 actionName = "Website";
 action = "http://www.operation-pandora.de";
