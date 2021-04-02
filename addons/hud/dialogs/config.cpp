@@ -192,4 +192,4 @@ class opt_DefaultMenu
             BackgroundBar, ScoreDisplay, PlayersDisplay, TimerDisplay, BudgetDisplay
         };			
     };
-};	
+};

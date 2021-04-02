@@ -60,5 +60,3 @@
 #define DIALOG_GPS_MINIMAP          	opt_gps_minimap
 #define IDD_GPS_MINIMAP           		915
 #define IDC_GPS_MINIMAP_BOX             916
-
-

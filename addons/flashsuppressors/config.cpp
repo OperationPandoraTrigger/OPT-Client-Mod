@@ -2,7 +2,7 @@
 
 class CfgPatches
 {
-	class opt_ace_flashsuppressors
+	class opt_flashsuppressors
 	{
 		units[] = {};
 		weapons[] = {};

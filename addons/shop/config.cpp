@@ -8,4 +8,3 @@ class CfgPatches
         requiredAddons[] = {"a3_ui_f"};
     };
 };
-

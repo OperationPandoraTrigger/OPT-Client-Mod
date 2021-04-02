@@ -98,4 +98,4 @@ class HitPoints : HitPoints
 				explosionShielding = 0.800000;				
 				minimalHit = 0.010000;			
 			};			
-		};				
+		};

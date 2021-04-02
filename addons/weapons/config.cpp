@@ -1,4 +1,4 @@
-﻿#include "\opt\opt_client\addons\core\macros.hpp"
+#include "\opt\opt_client\addons\core\macros.hpp"
 
 class CfgPatches
 {

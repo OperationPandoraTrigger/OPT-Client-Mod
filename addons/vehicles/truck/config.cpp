@@ -1,4 +1,4 @@
-﻿class CfgPatches
+class CfgPatches
 {
 	class opt_vehicles_truck
 	{

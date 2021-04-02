@@ -1765,5 +1765,3 @@ class DialogVerkaufs
         };
     };
 };
-
-

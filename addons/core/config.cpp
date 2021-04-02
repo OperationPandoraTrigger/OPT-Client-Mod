@@ -55,4 +55,3 @@ class CfgFactionClasses
 		priority = 4;
 	};
 };
-
