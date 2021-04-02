@@ -1,10 +1,10 @@
 class SensorsManagerComponent : SensorsManagerComponent
 {
-	class Components : Components
-	{		
-		class ActiveRadarSensorComponent : ActiveRadarSensorComponent
-		{
-			componentType = "PassiveRadarSensorComponent";
-		};							
-	};	
+    class Components : Components
+    {        
+        class ActiveRadarSensorComponent : ActiveRadarSensorComponent
+        {
+            componentType = "PassiveRadarSensorComponent";
+        };                            
+    };    
 };
