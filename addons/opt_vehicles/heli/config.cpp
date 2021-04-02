@@ -494,6 +494,8 @@ class CfgVehicles
 		driverCanEject = 1;
 		radarType = 4;		// 8 //
 		fuelCapacity = 330; // 2500 //
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa"};
+		textureList[] = {"Opfor",0};
 
 		class TransportItems
 		{
@@ -788,6 +790,8 @@ class CfgVehicles
 		displayName = "Mi-290 Taru (Transport)";
 		driverCanEject = 1;
 		fuelCapacity = 330; // 2500 //
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext02_pazifik.paa"};
+		textureList[] = {"Opfor",0};
 
 		class TransportItems
 		{
@@ -944,6 +948,8 @@ class CfgVehicles
 		displayName = "Mi-290 Taru (Repair)";
 		driverCanEject = 1;
 		fuelCapacity = 330; // 2500 //
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext02_pazifik.paa"};
+		textureList[] = {"Opfor",0};
 
 		class TransportItems
 		{
@@ -1029,6 +1035,8 @@ class CfgVehicles
 		driverCanEject = 1;
 		fuelCapacity = 330; // 2500 //
 		transportAmmo = 30000; // 1e+012 //
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext02_pazifik.paa"};
+		textureList[] = {"Opfor",0};
 
 		class TransportItems
 		{
@@ -1105,6 +1113,8 @@ class CfgVehicles
 		displayName = "Mi-290 Taru (Fuel)";
 		driverCanEject = 1;
 		fuelCapacity = 330; // 2500 //
+		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_04_fuel.paa"};
+		textureList[] = {"Opfor",0};
 
 		class TransportItems
 		{
