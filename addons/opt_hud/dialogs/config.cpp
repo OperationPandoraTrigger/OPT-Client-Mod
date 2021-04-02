@@ -105,7 +105,7 @@ class opt_DefaultMenu
         y = safezoneY + safezoneH - 0.025 * safezoneH;
         w = safezoneW;
         h = 0.025 * safezoneH;
-    }
+    };
 
     // 1. Feld
     class PlayersDisplay : RSCText

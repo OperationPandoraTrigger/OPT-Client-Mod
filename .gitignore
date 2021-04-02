@@ -1,4 +1,7 @@
 *.pbo
 @*
-setMetaData.bat
 *.lnk
+releases/*
+*.biprivatekey
+keys/*
+.hemtt/local
