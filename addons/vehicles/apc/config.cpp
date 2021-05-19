@@ -2916,4 +2916,44 @@ class CfgVehicles
         };
     };
 
+    //LAV C2
+    class CUP_B_LAV25_HQ_USMC;
+
+    class OPT_CUP_B_LAV25_HQ_USMC: CUP_B_LAV25_HQ_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //BTR-60 PB
+    class CUP_O_BTR60_RU;
+
+    class OPT_CUP_O_BTR60_RU: CUP_O_BTR60_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
 };
