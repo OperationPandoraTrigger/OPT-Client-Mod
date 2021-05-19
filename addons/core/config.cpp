@@ -54,4 +54,12 @@ class CfgFactionClasses
         displayName = "Maintainer";
         priority = 4;
     };
+    class OPT_WP : OPF_F
+    {
+        displayName = "OPT Warschauer Pakt";
+    };
+    class OPT_NATO_CUP : BLU_F
+    {
+        displayName = "OPT NATO kalter Krieg";
+    };
 };
