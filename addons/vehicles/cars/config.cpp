@@ -2199,4 +2199,28 @@ class CfgVehicles
         {
         };
     };
+
+    //Land Rover 110
+    class CUP_B_LR_Transport_GB_W;
+
+    class OPT_CUP_B_LR_Transport_GB_W: CUP_B_LR_Transport_GB_W
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //Motorrad TT650
+    class CUP_O_UAZ_Unarmed_RU;
+
+    class OPT_CUP_O_UAZ_Unarmed_RU: CUP_O_UAZ_Unarmed_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportItems
+        {
+        };
+    };
 };
