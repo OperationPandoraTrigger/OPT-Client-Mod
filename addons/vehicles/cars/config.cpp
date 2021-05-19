@@ -2175,4 +2175,28 @@ class CfgVehicles
         {
         };
     };
+
+    //Motorrad M1030
+    class CUP_B_M1030_USA;
+
+    class OPT_CUP_B_M1030_USA: CUP_B_M1030_USA
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //Motorrad TT650
+    class CUP_O_TT650_TKA;
+
+    class OPT_CUP_O_TT650_TKA: CUP_O_TT650_TKA
+    {
+        faction = "OPT_WP";
+
+        class TransportItems
+        {
+        };
+    };
 };
