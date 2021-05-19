@@ -754,4 +754,164 @@ class CfgVehicles
         typicalCargo[] = {"OPT_CSAT_Soldat"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_kab_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_mrl_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
     };
+
+    //MTVR
+    class CUP_B_MTVR_USMC;
+
+    class OPT_CUP_B_MTVR_USMC: CUP_B_MTVR_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //Ural
+    class CUP_O_Ural_TKA;
+
+    class OPT_CUP_O_Ural_TKA: CUP_O_Ural_TKA
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //MTVR Ammo
+    class CUP_B_MTVR_Ammo_USMC;
+
+    class OPT_CUP_B_MTVR_Ammo_USMC: CUP_B_MTVR_Ammo_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //Ural Ammo
+    class CUP_O_Ural_Reammo_TKA;
+
+    class OPT_CUP_O_Ural_Reammo_TKA: CUP_O_Ural_Reammo_TKA
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //MTVR Rep
+    class CUP_B_MTVR_Repair_USMC;
+
+    class OPT_CUP_B_MTVR_Repair_USMC: CUP_B_MTVR_Repair_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //Ural Rep
+    class CUP_O_Ural_Repair_TKA;
+
+    class OPT_CUP_O_Ural_Repair_TKA: CUP_O_Ural_Repair_TKA
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //MTVR Tank
+    class CUP_B_MTVR_Refuel_USMC;
+
+    class OPT_CUP_B_MTVR_Refuel_USMC: CUP_B_MTVR_Refuel_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //Ural Tank
+    class CUP_O_Ural_Refuel_TKA;
+
+    class OPT_CUP_O_Ural_Refuel_TKA: CUP_O_Ural_Refuel_TKA
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
 };
