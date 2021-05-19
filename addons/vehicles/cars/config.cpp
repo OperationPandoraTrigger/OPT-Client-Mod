@@ -2207,7 +2207,15 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2219,7 +2227,15 @@ class CfgVehicles
     {
         faction = "OPT_WP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2231,7 +2247,15 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2243,7 +2267,15 @@ class CfgVehicles
     {
         faction = "OPT_WP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2255,7 +2287,15 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2267,7 +2307,15 @@ class CfgVehicles
     {
         faction = "OPT_WP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2279,7 +2327,15 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2291,7 +2347,15 @@ class CfgVehicles
     {
         faction = "OPT_WP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2303,7 +2367,15 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
@@ -2315,7 +2387,15 @@ class CfgVehicles
     {
         faction = "OPT_WP";
 
+        class TransportMagazines
+        {
+        };
+
         class TransportItems
+        {
+        };
+
+        class TransportWeapons
         {
         };
     };
