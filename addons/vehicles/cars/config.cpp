@@ -2239,7 +2239,7 @@ class CfgVehicles
     //UAZ 469 DShKM
     class CUP_O_UAZ_MG_RU;
 
-    class OPT_UP_O_UAZ_MG_RU: UP_O_UAZ_MG_RU
+    class OPT_CUP_O_UAZ_MG_RU: CUP_O_UAZ_MG_RU
     {
         faction = "OPT_WP";
 
