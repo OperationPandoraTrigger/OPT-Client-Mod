@@ -2271,4 +2271,52 @@ class CfgVehicles
         {
         };
     };
+
+    //HMMWV M2
+    class CUP_B_HMMWV_M2_USMC;
+
+    class OPT_CUP_B_HMMWV_M2_USMC: CUP_B_HMMWV_M2_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //GAZ 3937 Vodnik 2xPKM
+    class CUP_O_GAZ_Vodnik_PK_RU;
+
+    class OPT_CUP_O_GAZ_Vodnik_PK_RU: CUP_O_GAZ_Vodnik_PK_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //HMMWV TOW
+    class CUP_B_HMMWV_TOW_USMC;
+
+    class OPT_CUP_B_HMMWV_TOW_USMC: CUP_B_HMMWV_TOW_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //BRDM-2 ATGM
+    class CUP_O_BRDM2_ATGM_RUS;
+
+    class OPT_CUP_O_BRDM2_ATGM_RUS: CUP_O_BRDM2_ATGM_RUS
+    {
+        faction = "OPT_WP";
+
+        class TransportItems
+        {
+        };
+    };
 };
