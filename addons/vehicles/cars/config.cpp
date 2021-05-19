@@ -2223,4 +2223,52 @@ class CfgVehicles
         {
         };
     };
+
+    //Land Rover M2
+    class CUP_B_LR_MG_GB_W;
+
+    class OPT_CUP_B_LR_MG_GB_W: CUP_B_LR_MG_GB_W
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //UAZ 469 DShKM
+    class CUP_O_UAZ_MG_RU;
+
+    class OPT_UP_O_UAZ_MG_RU: UP_O_UAZ_MG_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //HMMWV
+    class CUP_B_HMMWV_Unarmed_USMC;
+
+    class OPT_CUP_B_HMMWV_Unarmed_USMC: CUP_B_HMMWV_Unarmed_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //GAZ 3937 Vodnik
+    class CUP_O_GAZ_Vodnik_Unarmed_RU;
+
+    class OPT_CUP_O_GAZ_Vodnik_Unarmed_RU: CUP_O_GAZ_Vodnik_Unarmed_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportItems
+        {
+        };
+    };
 };
