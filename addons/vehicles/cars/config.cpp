@@ -2399,4 +2399,44 @@ class CfgVehicles
         {
         };
     };
+
+    //HMMWV Ambulance
+    class CUP_B_HMMWV_Ambulance_USMC;
+
+    class OPT_CUP_B_HMMWV_Ambulance_USMC: CUP_B_HMMWV_Ambulance_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //GAZ 3937 Vodnik Medic
+    class CUP_O_GAZ_Vodnik_MedEvac_RU;
+
+    class OPT_CUP_O_GAZ_Vodnik_MedEvac_RU: CUP_O_GAZ_Vodnik_MedEvac_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
 };
