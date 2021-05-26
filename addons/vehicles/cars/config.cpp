@@ -2439,4 +2439,47 @@ class CfgVehicles
         {
         };
     };
+
+    //Landrover AA
+    class CUP_I_LR_AA_RACS;
+
+    class OPT_CUP_B_LR_AA_RACS: CUP_I_LR_AA_RACS
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        rew = "CUP_B_USMC_Soldier_FROG_WDL";
+        typicalCargo[] = {"CUP_B_USMC_Soldier_FROG_WDL"};
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //UAZ AA
+    class CUP_O_LR_AA_TKA;
+
+    class OPT_CUP_O_LR_AA_TKA: CUP_O_LR_AA_TKA
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
 };
