@@ -7,7 +7,7 @@ class CfgPatches
                    "OPT_O_MBT_02_cannon_F_INF","OPT_O_T_MBT_02_cannon_ghex_F_INF","OPT_O_MBT_02_cannon_F_AT","OPT_O_T_MBT_02_cannon_ghex_F_AT","OPT_I_MBT_03_cannon_F_INF","OPT_I_MBT_03_cannon_F_AT"};
         weapons[] = {};
         requiredVersion = 0.100000;
-        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_armor_f_slammer", "a3_armor_f_t100k", "a3_armor_f_amv"};
+        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_armor_f_slammer", "a3_armor_f_t100k", "a3_armor_f_amv","CUP_TrackedVehicles_T90"};
     };
 };
 
@@ -1768,11 +1768,36 @@ class CfgVehicles
     };
 
     //T90A
-    class CUP_O_T72_RU;
+    class CUP_T90_Base;
 
-    class OPT_CUP_O_T72_RU: CUP_O_T72_RU
+    class CUP_O_T90_RU : CUP_T90_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
+
+    class OPT_CUP_O_T90_RU: CUP_O_T90_RU
     {
         faction = "OPT_WP";
+
+        class Turrets : Turrets 
+        {
+            class MainTurret : MainTurret 
+            {
+                weapons[] = {"CUP_Vcannon_2A46_Txx", "CUP_Vhmg_PKT_veh_Noeject_FCS"};
+                magazines[] = {"CUP_22Rnd_2A46_APFSDS_T_M", "CUP_12Rnd_2A46_HE_T_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M"};
+            };
+        };
 
         class TransportMagazines
         {
@@ -1785,6 +1810,7 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
     };
 
 };
