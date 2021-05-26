@@ -7,7 +7,7 @@ class CfgPatches
                    "OPT_O_MBT_02_cannon_F_INF","OPT_O_T_MBT_02_cannon_ghex_F_INF","OPT_O_MBT_02_cannon_F_AT","OPT_O_T_MBT_02_cannon_ghex_F_AT","OPT_I_MBT_03_cannon_F_INF","OPT_I_MBT_03_cannon_F_AT"};
         weapons[] = {};
         requiredVersion = 0.100000;
-        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_armor_f_slammer", "a3_armor_f_t100k", "a3_armor_f_amv","CUP_TrackedVehicles_T90"};
+        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "a3_armor_f_slammer", "a3_armor_f_t100k", "a3_armor_f_amv","CUP_TrackedVehicles_M60","CUP_TrackedVehicles_T72","CUP_TrackedVehicles_Leopard2","CUP_TrackedVehicles_T90"};
     };
 };
 
@@ -1708,11 +1708,54 @@ class CfgVehicles
     };
 
     //M60A3 TTS
-    class CUP_B_M60A3_TTS_USMC;
+    class CUP_M60A3_TTS_Base;
+
+    class CUP_B_M60A3_TTS_USMC : CUP_M60A3_TTS_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
 
     class OPT_CUP_B_M60A3_TTS_USMC: CUP_B_M60A3_TTS_USMC
     {
         faction = "OPT_NATO_CUP";
+
+		class Turrets : Turrets 
+		{
+			class MainTurret : MainTurret 
+			{
+				class Turrets : Turrets 
+				{
+					class CommanderOptics : CommanderOptics 
+					{
+						class ViewOptics : ViewOptics 
+						{
+							visionMode[] = {"Normal", NVG};
+							thermalMode[] = {};
+						};
+					};
+				};
+				
+				class OpticsIn : OpticsIn 
+				{
+					class Wide : Wide 
+					{
+						visionMode[] = {"Normal", NVG};
+						thermalMode[] = {};
+					};
+				};
+			};
+		};
 
         class TransportMagazines
         {
@@ -1728,7 +1771,23 @@ class CfgVehicles
     };
 
     //T72
-    class CUP_O_T72_RU;
+    class CUP_T72_Base;
+
+    class CUP_O_T72_RU : CUP_T72_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
 
     class OPT_CUP_O_T72_RU: CUP_O_T72_RU
     {
@@ -1748,11 +1807,62 @@ class CfgVehicles
     };
 
     //Leopard2A6
-    class CUP_B_Leopard2A6_GER;
+    class CUP_Leopard2_Base;
+
+    class CUP_B_Leopard2A6_GER: CUP_Leopard2_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
 
     class OPT_CUP_B_Leopard2A6_GER: CUP_B_Leopard2A6_GER
     {
         faction = "OPT_NATO_CUP";
+
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        class ViewOptics : ViewOptics
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+                    };
+                };
+
+                class OpticsIn : OpticsIn
+                {
+                    class Wide : Wide
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Medium : Medium
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Narrow : Narrow
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+                };
+            };
+        };
 
         class TransportMagazines
         {
@@ -1790,12 +1900,30 @@ class CfgVehicles
     {
         faction = "OPT_WP";
 
-        class Turrets : Turrets 
+        class Turrets : Turrets
         {
-            class MainTurret : MainTurret 
+            class MainTurret : MainTurret
             {
                 weapons[] = {"CUP_Vcannon_2A46_Txx", "CUP_Vhmg_PKT_veh_Noeject_FCS"};
                 magazines[] = {"CUP_22Rnd_2A46_APFSDS_T_M", "CUP_12Rnd_2A46_HE_T_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M"};
+ 
+                class OpticsIn : OpticsIn
+                {
+                    class Wide : Wide
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Medium : Medium
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Narrow : Narrow
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+                };
             };
         };
 
