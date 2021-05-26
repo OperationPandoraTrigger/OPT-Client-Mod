@@ -35,7 +35,7 @@ class CfgPatches
         versionAr[] = {VERSION_AR};
         requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
                             "a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
-                            "A3_Weapons_F_Jets"};
+                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons"};
     };
 };
 
@@ -858,6 +858,20 @@ class CfgMagazines
 
     class OPT_100Rnd_580x42_Mag_Tracer_F : 100Rnd_580x42_Mag_Tracer_F
     {
+    };
+
+    class CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M;
+
+    class OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M : CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M
+    {
+        count = 50;
+    };
+
+    class CUP_2000Rnd_23mm_AZP23_M;
+
+    class OPT_CUP_50Rnd_23mm_AZP23_M : CUP_2000Rnd_23mm_AZP23_M
+    {
+        count = 50;
     };
 
 };
@@ -4275,6 +4289,23 @@ class CfgWeapons
     {
         magazines[] = {"OPT_PylonMissile_Bomb_KAB250_x1"};
     };
+
+    class CUP_Vacannon_M168_M163VADS;
+
+    class OPT_CUP_Vacannon_M168_M163VADS : CUP_Vacannon_M168_M163VADS
+    {
+        magazineReloadTime=10;
+        magazines[] = {"CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M", "OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M"};
+    };
+
+    class CUP_Vacannon_AZP23_veh;
+
+    class OPT_CUP_Vacannon_AZP23_veh : CUP_Vacannon_AZP23_veh
+    {
+        magazineReloadTime=10;
+        magazines[] = {"CUP_2000Rnd_23mm_AZP23_M", "CUP_2000Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M"};
+    };
+
 };
 
 class CfgVehicles
