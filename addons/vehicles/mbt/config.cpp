@@ -1747,4 +1747,44 @@ class CfgVehicles
         };
     };
 
+    //Leopard2A6
+    class CUP_B_Leopard2A6_GER;
+
+    class OPT_CUP_B_Leopard2A6_GER: CUP_B_Leopard2A6_GER
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //T90A
+    class CUP_O_T72_RU;
+
+    class OPT_CUP_O_T72_RU: CUP_O_T72_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
 };

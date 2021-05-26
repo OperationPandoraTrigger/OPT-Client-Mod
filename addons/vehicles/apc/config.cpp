@@ -2999,9 +2999,9 @@ class CfgVehicles
     {
         faction = "OPT_WP";
 
-		class Turrets : Turrets 
+        class Turrets : Turrets 
         {
-			class MainTurret : MainTurret 
+            class MainTurret : MainTurret 
             {
 				weapons[] = {"CUP_Vacannon_2A42_veh", "CUP_Vhmg_PKT_veh_Noeject", "CUP_Vmlauncher_AT5_single_veh"};
 				magazines[] = {"CUP_250Rnd_TE1_Green_Tracer_30mmHE_2A42_M", "CUP_250Rnd_TE1_Green_Tracer_30mmAP_2A42_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_8Rnd_AT5_BMP2_M", "CUP_400Rnd_30mm_AGS17_M"};
@@ -3047,7 +3047,7 @@ class CfgVehicles
 
         class Turrets : Turrets 
         {
-			class MainTurret : MainTurret 
+            class MainTurret : MainTurret 
             {
 				weapons[] = {"OPT_CUP_Vacannon_M168_M163VADS", "SmokeLauncher"};
 				magazines[] = {"OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M", "SmokeLauncherMag"};
@@ -3090,9 +3090,9 @@ class CfgVehicles
     {
         faction = "OPT_WP";
 
-		class Turrets : Turrets 
+        class Turrets : Turrets 
         {
-			class MainTurret : MainTurret 
+            class MainTurret : MainTurret 
             {
 				weapons[] = {"OPT_CUP_Vacannon_AZP23_veh", "SmokeLauncher"};
 				magazines[] = {"OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M", "SmokeLauncherMag"};
