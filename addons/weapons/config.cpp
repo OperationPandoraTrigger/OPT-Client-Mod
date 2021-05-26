@@ -35,7 +35,7 @@ class CfgPatches
         versionAr[] = {VERSION_AR};
         requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
                             "a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
-                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons"};
+                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons","CUP_Weapons_Ammunition"};
     };
 };
 
@@ -403,6 +403,13 @@ class CfgAmmo
     class OPT_Rocket_03_AP_F : Rocket_03_AP_F
     {
         cost = 1000;
+    };
+
+    class CUP_R_GRAD_HE;
+
+    class OPT_CUP_R_GRAD_HE : CUP_R_GRAD_HE
+    {
+        cost = 100000;
     };
     
 };
@@ -872,6 +879,13 @@ class CfgMagazines
     class OPT_CUP_50Rnd_23mm_AZP23_M : CUP_2000Rnd_23mm_AZP23_M
     {
         count = 50;
+    };
+
+    class CUP_40Rnd_GRAD_HE;
+
+    class OPT_CUP_40Rnd_GRAD_HE: CUP_40Rnd_GRAD_HE
+    {
+        ammo = "OPT_CUP_R_GRAD_HE";
     };
 
 };
@@ -4304,6 +4318,13 @@ class CfgWeapons
     {
         magazineReloadTime=10;
         magazines[] = {"CUP_2000Rnd_23mm_AZP23_M", "CUP_2000Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M"};
+    };
+
+    class CUP_Vmlauncher_GRAD_ACR_veh;
+
+    class OPT_CUP_Vmlauncher_GRAD_ACR_veh : CUP_Vmlauncher_GRAD_ACR_veh
+    {
+        magazines[] = {"CUP_40Rnd_GRAD_HE","OPT_CUP_40Rnd_GRAD_HE"};
     };
 
 };

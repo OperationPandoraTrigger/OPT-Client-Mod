@@ -10,7 +10,7 @@ class CfgPatches
                    "OPT_O_T_Truck_02_F","OPT_O_T_Truck_02_transport_F","OPT_O_T_Truck_02_fuel_F","OPT_O_T_Truck_02_ammo_F","OPT_O_T_Truck_02_box_F","OPT_O_Truck_02_medical_F","OPT_O_T_Truck_02_Medical_F","OPT_I_Truck_02_medical_F"};
         weapons[] = {};
         requiredVersion = 0.100000;
-        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03"};
+        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03","CUP_WheeledVehicles_RM70","CUP_WheeledVehicles_Ural"};
     };
 };
 
@@ -913,5 +913,96 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+    };
+
+    //RM-70
+    class CUP_B_RM70_Base;
+
+    class CUP_B_RM70_CZ : CUP_B_RM70_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
+
+    class OPT_CUP_B_RM70_CZ: CUP_B_RM70_CZ
+    {
+        faction = "OPT_NATO_CUP";
+
+        class Turrets : Turrets 
+        {
+            class MainTurret : MainTurret 
+            {
+                weapons[] = {"OPT_CUP_Vmlauncher_GRAD_ACR_veh"};
+                magazines[] = {"OPT_CUP_40Rnd_GRAD_HE"};
+            };
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //BM21
+    class CUP_BM21_Base;
+
+    class CUP_O_BM21_RU : CUP_BM21_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
+
+    class OPT_CUP_O_BM21_RU: CUP_O_BM21_RU
+    {
+        faction = "OPT_WP";
+
+        class Turrets : Turrets 
+        {
+            class MainTurret : MainTurret 
+            {
+                weapons[] = {"OPT_CUP_Vmlauncher_GRAD_ACR_veh"};
+                magazines[] = {"OPT_CUP_40Rnd_GRAD_HE"};
+            };
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+
     };
 };
