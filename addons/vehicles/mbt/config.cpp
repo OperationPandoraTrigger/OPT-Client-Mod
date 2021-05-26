@@ -1706,4 +1706,45 @@ class CfgVehicles
         {
         };
     };
+
+    //M60A3 TTS
+    class CUP_B_M60A3_TTS_USMC;
+
+    class OPT_CUP_B_M60A3_TTS_USMC: CUP_B_M60A3_TTS_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //T72
+    class CUP_O_T72_RU;
+
+    class OPT_CUP_O_T72_RU: CUP_O_T72_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
 };
