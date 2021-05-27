@@ -3204,68 +3204,68 @@ class CfgVehicles
         class TransportWeapons
         {
         };
-
-		class Components : Components 
-		{
-			class TransportPylonsComponent 
-			{
-				UIPicture = "\CUP\AirVehicles\CUP_AirVehicles_AH64\Data\UI\CUP_AH64_3DEN_CA.paa";
-								
-				class pylons 
+        
+        class Components : Components 
+        {
+            class TransportPylonsComponent 
+            {
+                UIPicture = "\CUP\AirVehicles\CUP_AirVehicles_AH64\Data\UI\CUP_AH64_3DEN_CA.paa";
+                
+                class pylons 
                 {
-					class pylonLeft1 
+                    class pylonLeft1 
                     {
-						hardpoints[] = {DAR, DAGR, B_SHRIEKER, CUP_NATO_HELO_SMALL, CUP_NATO_HELO_LARGE, CUP_NATO_HELO_AH64, "CUP_PylonPod_1Rnd_AGM65_Maverick_M"};
-						attachment = "CUP_PylonPod_12Rnd_CRV7_KEP_M";
-						priority = 5;
-						UIposition[] = {0.59, 0.35};
-						turret[] = {};
-						bay = 1;
-					};
-					
-					class pylonLeft2 : pylonLeft1 
+                        hardpoints[] = {DAR, DAGR, B_SHRIEKER, CUP_NATO_HELO_SMALL, CUP_NATO_HELO_LARGE, CUP_NATO_HELO_AH64, "CUP_PylonPod_1Rnd_AGM65_Maverick_M"};
+                        attachment = "CUP_PylonPod_12Rnd_CRV7_KEP_M";
+                        priority = 5;
+                        UIposition[] = {0.59, 0.35};
+                        turret[] = {};
+                        bay = 1;
+                    };
+                    
+                    class pylonLeft2 : pylonLeft1 
                     {
-						UIposition[] = {0.57, 0.4};
-						attachment = "CUP_PylonPod_2Rnd_AGM114L_Hellfire_II_M";
-						turret[] = {"MainTurret"};
-						priority = 4;
-					};
-					
-					class pylonRight1 : pylonLeft1 
+                        UIposition[] = {0.57, 0.4};
+                        attachment = "CUP_PylonPod_2Rnd_AGM114L_Hellfire_II_M";
+                        turret[] = {"MainTurret"};
+                        priority = 4;
+                    };
+                    
+                    class pylonRight1 : pylonLeft1 
                     {
-						UIposition[] = {0.08, 0.4};
-						attachment = "CUP_PylonPod_2Rnd_AT2_M";
-						turret[] = {"MainTurret"};
-						mirroredMissilePos = 2;
-					};
-					
-					class pylonRight2 : pylonRight1 
+                        UIposition[] = {0.08, 0.4};
+                        attachment = "CUP_PylonPod_2Rnd_AT2_M";
+                        turret[] = {"MainTurret"};
+                        mirroredMissilePos = 2;
+                    };
+                    
+                    class pylonRight2 : pylonRight1 
                     {
-						UIposition[] = {0.06, 0.35};
-						attachment = "CUP_PylonPod_12Rnd_CRV7_KEP_M";
-						turret[] = {};
-						mirroredMissilePos = 1;
-						priority = 4;
-					};
-					
-					class pylonWingL : pylonLeft1 
+                        UIposition[] = {0.06, 0.35};
+                        attachment = "CUP_PylonPod_12Rnd_CRV7_KEP_M";
+                        turret[] = {};
+                        mirroredMissilePos = 1;
+                        priority = 4;
+                    };
+                    
+                    class pylonWingL : pylonLeft1 
                     {
-						hardpoints[] = {CUP_NATO_HELO_WINGTIP};
-						UIposition[] = {0.61, 0.3};
-						attachment = "";
-						turret[] = {"MainTurret"};
-					};
-					
-					class pylonWingR : pylonWingL 
+                        hardpoints[] = {CUP_NATO_HELO_WINGTIP};
+                        UIposition[] = {0.61, 0.3};
+                        attachment = "";
+                        turret[] = {"MainTurret"};
+                    };
+                    
+                    class pylonWingR : pylonWingL 
                     {
-						mirroredMissilePos = 5;
-						UIposition[] = {0.04, 0.3};
-						attachment = "";
-						turret[] = {"MainTurret"};
-					};
-				};
-			};
-		};
+                        mirroredMissilePos = 5;
+                        UIposition[] = {0.04, 0.3};
+                        attachment = "";
+                        turret[] = {"MainTurret"};
+                    };
+                };
+            };
+        };
 
         class Turrets : Turrets
         {
@@ -3340,72 +3340,72 @@ class CfgVehicles
         class TransportWeapons
         {
         };
-
-		class Components : Components 
-		{
-			class TransportPylonsComponent 
-			{
-				UIPicture = "\CUP\AirVehicles\CUP_AirVehicles_Mi35\data\ui\CUP_Mi35_3DEN_ca.paa";
-							
-				class pylons 
+        
+        class Components : Components 
+        {
+            class TransportPylonsComponent 
+            {
+                UIPicture = "\CUP\AirVehicles\CUP_AirVehicles_Mi35\data\ui\CUP_Mi35_3DEN_ca.paa";
+                
+                class pylons 
                 {
-					class pylons1 
+                    class pylons1 
                     {
-						hardpoints[] = {CUP_EAST_HELO_HIND_WINGTIP};
-						attachment = "CUP_PylonPod_2Rnd_AGM114L_Hellfire_II_M";
-						bay = -1;
-						priority = 6;
-						UIposition[] = {0.02, 0.3};
-						turret[] = {0};
-					};
-					
-					class pylons2 : pylons1 
+                        hardpoints[] = {CUP_EAST_HELO_HIND_WINGTIP};
+                        attachment = "CUP_PylonPod_2Rnd_AGM114L_Hellfire_II_M";
+                        bay = -1;
+                        priority = 6;
+                        UIposition[] = {0.02, 0.3};
+                        turret[] = {0};
+                    };
+                    
+                    class pylons2 : pylons1 
                     {
-						hardpoints[] = {CUP_EAST_HELO_SMALL, CUP_EAST_HELO_LARGE, CUP_EAST_HELO_HIND};
-						priority = 5;
-						UIposition[] = {0.06, 0.35};
-						attachment = "";
-						turret[] = {0};
-					};
-					
-					class pylons3 : pylons2 
+                        hardpoints[] = {CUP_EAST_HELO_SMALL, CUP_EAST_HELO_LARGE, CUP_EAST_HELO_HIND};
+                        priority = 5;
+                        UIposition[] = {0.06, 0.35};
+                        attachment = "";
+                        turret[] = {0};
+                    };
+                    
+                    class pylons3 : pylons2 
                     {
-						priority = 4;
-						UIposition[] = {0.08, 0.4};
-						attachment = "CUP_PylonPod_16Rnd_S5_M";
-						turret[] = {};
-					};
-					
-					class pylons4 : pylons2 
+                        priority = 4;
+                        UIposition[] = {0.08, 0.4};
+                        attachment = "CUP_PylonPod_16Rnd_S5_M";
+                        turret[] = {};
+                    };
+                    
+                    class pylons4 : pylons2 
                     {
-						priority = 4;
-						UIposition[] = {0.57, 0.4};
-						mirroredMissilePos = 3;
-						attachment = "CUP_PylonPod_16Rnd_S5_M";
-						turret[] = {};
-					};
-					
-					class pylons5 : pylons2 
+                        priority = 4;
+                        UIposition[] = {0.57, 0.4};
+                        mirroredMissilePos = 3;
+                        attachment = "CUP_PylonPod_16Rnd_S5_M";
+                        turret[] = {};
+                    };
+                    
+                    class pylons5 : pylons2 
                     {
-						priority = 5;
-						UIposition[] = {0.59, 0.35};
-						mirroredMissilePos = 2;
-						attachment = "";
-						turret[] = {0};
-					};
-					
-					class pylons6 : pylons1 
+                        priority = 5;
+                        UIposition[] = {0.59, 0.35};
+                        mirroredMissilePos = 2;
+                        attachment = "";
+                        turret[] = {0};
+                    };
+                    
+                    class pylons6 : pylons1 
                     {
-						hardpoints[] = {CUP_EAST_HELO_HIND_WINGTIP};
-						priority = 6;
-						UIposition[] = {0.61, 0.3};
-						mirroredMissilePos = 1;
-						turret[] = {0};
-						attachment = "CUP_PylonPod_2Rnd_AT2_M";
-					};
-				};
-			};
-		};
+                        hardpoints[] = {CUP_EAST_HELO_HIND_WINGTIP};
+                        priority = 6;
+                        UIposition[] = {0.61, 0.3};
+                        mirroredMissilePos = 1;
+                        turret[] = {0};
+                        attachment = "CUP_PylonPod_2Rnd_AT2_M";
+                    };
+                };
+            };
+        };
 
         class Turrets : Turrets
         {
