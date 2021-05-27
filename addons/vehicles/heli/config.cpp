@@ -3272,8 +3272,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-				weapons[] = {"CUP_Vhmg_M3P_veh"};
-				magazines[] = {"CUP_250Rnd_TE1_Red_Tracer_127x99_M"};
+                weapons[] = {"CUP_Vhmg_M3P_veh"};
+                magazines[] = {"CUP_250Rnd_TE1_Red_Tracer_127x99_M"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -3412,8 +3412,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-				weapons[] = {"CUP_Vhmg_M3P_veh"};
-				magazines[] = {"CUP_250Rnd_TE1_Red_Tracer_127x99_M"};
+                weapons[] = {"CUP_Vhmg_M3P_veh"};
+                magazines[] = {"CUP_250Rnd_TE1_Red_Tracer_127x99_M"};
 
                 class OpticsIn : OpticsIn
                 {
