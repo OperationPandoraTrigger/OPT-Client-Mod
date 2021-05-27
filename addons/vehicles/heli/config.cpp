@@ -3006,8 +3006,8 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
         
-		class Components : Components 
-		{
+        class Components : Components 
+        {
             class TransportPylonsComponent 
             {
                 uiPicture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_3DEN_CA.paa";
