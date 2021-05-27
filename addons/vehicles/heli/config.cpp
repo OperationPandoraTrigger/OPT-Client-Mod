@@ -44,7 +44,8 @@ class CfgPatches
         requiredAddons[] = {
             "opt_weapons", "opt_characters", "opt_core", "a3_air_f_beta_heli_transport_02", "a3_air_f_epb_heli_light_03", "a3_air_f_heli_heli_transport_04",
             "a3_air_f_heli_heli_transport_03", "a3_air_f_beta_heli_attack_02", "a3_air_f_heli_light_01", "a3_air_f_beta_heli_attack_01", "a3_air_f_beta_heli_transport_01",
-            "a3_air_f_heli_light_02", "a3_air_f_heli_heli_light_02","CUP_AirVehicles_UH60","CUP_AirVehicles_MH60S","CUP_AirVehicles_UH1H","CUP_AirVehicles_Mi8","CUP_AirVehciles_KA60"};
+            "a3_air_f_heli_light_02", "a3_air_f_heli_heli_light_02","CUP_AirVehicles_UH60","CUP_AirVehicles_MH60S","CUP_AirVehicles_UH1H","CUP_AirVehicles_Mi8","CUP_AirVehciles_KA60",
+            "CUP_AirVehicles_CH53E","CUP_AirVehicles_HC3"};
     };
 };
 
@@ -3034,6 +3035,100 @@ class CfgVehicles
                 };
             };
         };
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+        class Turrets : Turrets
+        {
+            class CopilotTurret : CopilotTurret
+            {
+                canEject = 1;
+            };
+        };
+    };
+
+    //CH53G Super Stallion
+    class CUP_CH53E_Base;
+
+    class CUP_B_CH53E_USMC : CUP_CH53E_Base
+    {
+        class Turrets;
+        class CopilotTurret;
+    };
+
+    class OPT_CUP_B_CH53E_USMC : CUP_B_CH53E_USMC
+    {
+        faction = "OPT_NATO_CUP";
+        driverCanEject = 1;
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+        class Turrets : Turrets
+        {
+            class CopilotTurret : CopilotTurret
+            {
+                canEject = 1;
+            };
+        };
+    };
+
+    //Merlin HC3A
+    class CUP_Merlin_HC3_Base;
+
+    class CUP_B_Merlin_HC3_GB : CUP_Merlin_HC3_Base
+    {
+        class Turrets;
+        class CopilotTurret;
+    };
+
+    //
+    class OPT_CUP_O_Merlin_HC3_GB: CUP_B_Merlin_HC3_GB
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
 
         class TransportItems
         {
