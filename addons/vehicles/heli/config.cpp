@@ -44,7 +44,7 @@ class CfgPatches
         requiredAddons[] = {
             "opt_weapons", "opt_characters", "opt_core", "a3_air_f_beta_heli_transport_02", "a3_air_f_epb_heli_light_03", "a3_air_f_heli_heli_transport_04",
             "a3_air_f_heli_heli_transport_03", "a3_air_f_beta_heli_attack_02", "a3_air_f_heli_light_01", "a3_air_f_beta_heli_attack_01", "a3_air_f_beta_heli_transport_01",
-            "a3_air_f_heli_light_02", "a3_air_f_heli_heli_light_02","CUP_AirVehicles_UH60","CUP_AirVehicles_MH60S"};
+            "a3_air_f_heli_light_02", "a3_air_f_heli_heli_light_02","CUP_AirVehicles_UH60","CUP_AirVehicles_MH60S","CUP_AirVehicles_UH1H","CUP_AirVehicles_Mi8","CUP_AirVehciles_KA60"};
     };
 };
 
@@ -2840,6 +2840,226 @@ class CfgVehicles
         crew = "CUP_O_RU_Pilot";
         typicalCargo[] = {"CUP_O_RU_Pilot"};
         driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+        class Turrets : Turrets
+        {
+            class CopilotTurret : CopilotTurret
+            {
+                canEject = 1;
+            };
+        };
+    };
+
+    //UH-1D
+    class CUP_UH1H_armed_base;
+
+    class CUP_B_UH1D_armed_GER_KSK : CUP_UH1H_armed_base
+    {
+        class RenderTargets;
+        class Copilot_display;
+        class CameraView1;
+        class Turrets;
+        class MainTurret;
+        class OpticsIn;
+        class OpticsOut;
+        class Monocular;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class CopilotTurret;
+        class Components;
+    };
+
+    class OPT_CUP_B_UH1D_armed_GER_KSK : CUP_B_UH1D_armed_GER_KSK
+    {
+        faction = "OPT_NATO_CUP";
+        driverCanEject = 1;
+        
+		class Components : Components 
+		{
+			class TransportPylonsComponent 
+			{
+                UIPicture = "\CUP\AirVehicles\CUP_AirVehicles_UH1H\Data\UI\CUP_UH1H_3DEN_CA.paa";
+				
+				class presets {
+					class Empty {
+						displayName = $STR_EMPTY;
+						attachment[] = {};
+					};
+				};	
+                			
+				class pylons 
+                {
+					class pylons1 
+                    {
+						hardpoints[] = {CUP_NATO_CM};
+						attachment = "CUP_PylonPod_CMFlare_Chaff";
+						UIposition[] = {0.56, 0.15};
+						turret[] = {};
+						priority = 4;
+						bay = -1;
+					};
+					
+					class pylons2 : pylons1 
+                    {
+						hardpoints[] = {CUP_NATO_CM};
+						attachment = "";
+						UIposition[] = {0.06, 0.15};
+						turret[] = {};
+						priority = 4;
+					};
+					
+					class pylons3 
+                    {
+						hardpoints[] = {CUP_NATO_HELO_ROCKETS, CUP_NATO_HELO_GUNPOD};
+						attachment = "CUP_PylonPod_7Rnd_Rocket_FFAR_M";
+						bay = -1;
+						priority = 1;
+						UIposition[] = {0.56, 0.45};
+						turret[] = {};
+					};
+					
+					class pylons4 : pylons3 
+                    {
+						UIposition[] = {0.06, 0.45};
+						turret[] = {};
+						mirroredMissilePos = 1;
+						attachment = "CUP_PylonPod_7Rnd_Rocket_FFAR_M";
+					};
+				};
+			};
+		};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+        class Turrets : Turrets
+        {
+            class CopilotTurret : CopilotTurret
+            {
+                canEject = 1;
+            };
+        };
+    };
+
+    //KA-60 Kataska
+    class CUP_Ka60_Base;
+
+    class CUP_O_Ka60_Grey_RU: CUP_Ka60_Base
+    {
+        class RenderTargets;
+        class Copilot_display;
+        class CameraView1;
+        class Turrets;
+        class MainTurret;
+        class OpticsIn;
+        class OpticsOut;
+        class Monocular;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class CopilotTurret;
+        class Components;
+    };
+
+    class OPT_CUP_O_Ka60_Grey_RU : CUP_O_Ka60_Grey_RU
+    {
+        faction = "OPT_WP";
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+        
+		class Components : Components 
+		{
+			class TransportPylonsComponent 
+			{
+				uiPicture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_3DEN_CA.paa";
+				
+				class presets {
+					class Empty {
+						displayName = $STR_EMPTY;
+						attachment[] = {};
+					};
+					
+					class Escort {
+						displayName = "$STR_CUP_dn_Core_Pylon_Escort";
+						attachment[] = {"CUP_PylonPod_7Rnd_S5_M", "CUP_PylonPod_7Rnd_S5_M"};
+					};
+					
+					class AntiAir {
+						displayName = $STR_A3_CFGMAGAZINES_TITAN_AA_DNS;
+						attachment[] = {"CUP_PylonPod_2Rnd_Igla_M", "CUP_PylonPod_2Rnd_Igla_M"};
+					};
+					
+					class Multirole {
+						displayName = "$STR_CUP_dn_Core_Pylon_Multirole";
+						attachment[] = {"CUP_PylonPod_7Rnd_S5_M", "CUP_PylonPod_2Rnd_Igla_M"};
+					};
+				};
+				
+				class pylons 
+				{
+					class pylons1 
+                    {
+						hardpoints[] = {CUP_EAST_HELO_SMALL};
+						attachment = "CUP_PylonPod_7Rnd_S5_M";
+						bay = -1;
+						priority = 5;
+						UIposition[] = {0.06, 0.4};
+						turret[] = {};
+					};
+					
+					class pylons2 : pylons1 
+                    {
+						priority = 5;
+						UIposition[] = {0.59, 0.4};
+						mirroredMissilePos = 1;
+						attachment = "CUP_PylonPod_7Rnd_S5_M";
+					};
+				};
+			};
+		};
 
         class TransportItems
         {
