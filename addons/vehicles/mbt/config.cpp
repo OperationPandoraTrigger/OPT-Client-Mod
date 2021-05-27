@@ -1729,9 +1729,8 @@ class CfgVehicles
     class OPT_CUP_B_M60A3_TTS_USMC: CUP_B_M60A3_TTS_USMC
     {
         faction = "OPT_NATO_CUP";
-
-		class Turrets : Turrets 
-		{
+        class Turrets : Turrets 
+        {
 			class MainTurret : MainTurret 
 			{
 				class Turrets : Turrets 
@@ -1755,7 +1754,7 @@ class CfgVehicles
 					};
 				};
 			};
-		};
+        };
 
         class TransportMagazines
         {
@@ -1768,6 +1767,7 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
     };
 
     //T72
