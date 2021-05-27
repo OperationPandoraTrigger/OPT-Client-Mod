@@ -1731,29 +1731,29 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         class Turrets : Turrets 
         {
-			class MainTurret : MainTurret 
-			{
-				class Turrets : Turrets 
-				{
-					class CommanderOptics : CommanderOptics 
-					{
-						class ViewOptics : ViewOptics 
-						{
-							visionMode[] = {"Normal", NVG};
-							thermalMode[] = {};
-						};
-					};
-				};
-				
-				class OpticsIn : OpticsIn 
-				{
-					class Wide : Wide 
-					{
-						visionMode[] = {"Normal", NVG};
-						thermalMode[] = {};
-					};
-				};
-			};
+            class MainTurret : MainTurret 
+            {
+                class Turrets : Turrets 
+                {
+                    class CommanderOptics : CommanderOptics 
+                    {
+                        class ViewOptics : ViewOptics 
+                        {
+                            visionMode[] = {"Normal", NVG};
+                            thermalMode[] = {};
+                        };
+                    };
+                };
+            
+                class OpticsIn : OpticsIn 
+                {
+                    class Wide : Wide 
+                    {
+                        visionMode[] = {"Normal", NVG};
+                        thermalMode[] = {};
+                    };
+                };
+            };
         };
 
         class TransportMagazines
