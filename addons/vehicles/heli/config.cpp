@@ -2898,69 +2898,64 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         driverCanEject = 1;
         
-		class Components : Components 
-		{
-			class TransportPylonsComponent 
-			{
+        class Components : Components 
+        {
+            class TransportPylonsComponent 
+            {
                 UIPicture = "\CUP\AirVehicles\CUP_AirVehicles_UH1H\Data\UI\CUP_UH1H_3DEN_CA.paa";
-				
-				class presets {
-					class Empty {
-						displayName = $STR_EMPTY;
-						attachment[] = {};
-					};
-				};	
-                			
-				class pylons 
+               
+                class pylons 
                 {
-					class pylons1 
+                    class pylons1 
                     {
-						hardpoints[] = {CUP_NATO_CM};
-						attachment = "CUP_PylonPod_CMFlare_Chaff";
-						UIposition[] = {0.56, 0.15};
-						turret[] = {};
-						priority = 4;
-						bay = -1;
-					};
-					
-					class pylons2 : pylons1 
+                        hardpoints[] = {CUP_NATO_CM};
+                        attachment = "CUP_PylonPod_CMFlare_Chaff";
+                        UIposition[] = {0.56, 0.15};
+                        turret[] = {};
+                        priority = 4;
+                        bay = -1;
+                    };
+                    
+                    class pylons2 : pylons1 
                     {
-						hardpoints[] = {CUP_NATO_CM};
-						attachment = "";
-						UIposition[] = {0.06, 0.15};
-						turret[] = {};
-						priority = 4;
-					};
-					
-					class pylons3 
+                        hardpoints[] = {CUP_NATO_CM};
+                        attachment = "";
+                        UIposition[] = {0.06, 0.15};
+                        turret[] = {};
+                        priority = 4;
+                    };
+                    
+                    class pylons3 
                     {
-						hardpoints[] = {CUP_NATO_HELO_ROCKETS, CUP_NATO_HELO_GUNPOD};
-						attachment = "CUP_PylonPod_7Rnd_Rocket_FFAR_M";
-						bay = -1;
-						priority = 1;
-						UIposition[] = {0.56, 0.45};
-						turret[] = {};
-					};
-					
-					class pylons4 : pylons3 
+                        hardpoints[] = {CUP_NATO_HELO_ROCKETS, CUP_NATO_HELO_GUNPOD};
+                        attachment = "CUP_PylonPod_7Rnd_Rocket_FFAR_M";
+                        bay = -1;
+                        priority = 1;
+                        UIposition[] = {0.56, 0.45};
+                        turret[] = {};
+                    };
+                    
+                    class pylons4 : pylons3 
                     {
-						UIposition[] = {0.06, 0.45};
-						turret[] = {};
-						mirroredMissilePos = 1;
-						attachment = "CUP_PylonPod_7Rnd_Rocket_FFAR_M";
-					};
-				};
-			};
-		};
-
+                        UIposition[] = {0.06, 0.45};
+                        turret[] = {};
+                        mirroredMissilePos = 1;
+                        attachment = "CUP_PylonPod_7Rnd_Rocket_FFAR_M";
+                    };
+                };
+            };
+        };
+        
         class TransportItems
         {
-        };
 
+        };
+        
         class TransportMagazines
         {
-        };
 
+        };
+        
         class TransportBackpacks
         {
             class _xx_B_Parachute
@@ -2969,18 +2964,19 @@ class CfgVehicles
                 count = 14;
             };
         };
-
+        
         class TransportWeapons
         {
-        };
 
+        };
+        
         class Turrets : Turrets
         {
             class CopilotTurret : CopilotTurret
             {
                 canEject = 1;
+                };
             };
-        };
     };
 
     //KA-60 Kataska
@@ -3012,54 +3008,32 @@ class CfgVehicles
         
 		class Components : Components 
 		{
-			class TransportPylonsComponent 
-			{
-				uiPicture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_3DEN_CA.paa";
-				
-				class presets {
-					class Empty {
-						displayName = $STR_EMPTY;
-						attachment[] = {};
-					};
-					
-					class Escort {
-						displayName = "$STR_CUP_dn_Core_Pylon_Escort";
-						attachment[] = {"CUP_PylonPod_7Rnd_S5_M", "CUP_PylonPod_7Rnd_S5_M"};
-					};
-					
-					class AntiAir {
-						displayName = $STR_A3_CFGMAGAZINES_TITAN_AA_DNS;
-						attachment[] = {"CUP_PylonPod_2Rnd_Igla_M", "CUP_PylonPod_2Rnd_Igla_M"};
-					};
-					
-					class Multirole {
-						displayName = "$STR_CUP_dn_Core_Pylon_Multirole";
-						attachment[] = {"CUP_PylonPod_7Rnd_S5_M", "CUP_PylonPod_2Rnd_Igla_M"};
-					};
-				};
-				
-				class pylons 
-				{
-					class pylons1 
+            class TransportPylonsComponent 
+            {
+                uiPicture = "\A3\Air_F\Heli_Light_02\Data\UI\Heli_Light_02_3DEN_CA.paa";
+                
+                class pylons 
+                {
+                    class pylons1 
                     {
-						hardpoints[] = {CUP_EAST_HELO_SMALL};
-						attachment = "CUP_PylonPod_7Rnd_S5_M";
-						bay = -1;
-						priority = 5;
-						UIposition[] = {0.06, 0.4};
-						turret[] = {};
-					};
-					
-					class pylons2 : pylons1 
+                        hardpoints[] = {CUP_EAST_HELO_SMALL};
+                        attachment = "CUP_PylonPod_7Rnd_S5_M";
+                        bay = -1;
+                        priority = 5;
+                        UIposition[] = {0.06, 0.4};
+                        turret[] = {};
+                    };
+                        
+                    class pylons2 : pylons1 
                     {
-						priority = 5;
-						UIposition[] = {0.59, 0.4};
-						mirroredMissilePos = 1;
-						attachment = "CUP_PylonPod_7Rnd_S5_M";
-					};
-				};
-			};
-		};
+                        priority = 5;
+                        UIposition[] = {0.59, 0.4};
+                        mirroredMissilePos = 1;
+                        attachment = "CUP_PylonPod_7Rnd_S5_M";
+                    };
+                };
+            };
+        };
 
         class TransportItems
         {
