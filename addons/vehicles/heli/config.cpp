@@ -44,7 +44,7 @@ class CfgPatches
         requiredAddons[] = {
             "opt_weapons", "opt_characters", "opt_core", "a3_air_f_beta_heli_transport_02", "a3_air_f_epb_heli_light_03", "a3_air_f_heli_heli_transport_04",
             "a3_air_f_heli_heli_transport_03", "a3_air_f_beta_heli_attack_02", "a3_air_f_heli_light_01", "a3_air_f_beta_heli_attack_01", "a3_air_f_beta_heli_transport_01",
-            "a3_air_f_heli_light_02", "a3_air_f_heli_heli_light_02"};
+            "a3_air_f_heli_light_02", "a3_air_f_heli_heli_light_02","CUP_AirVehicles_UH60","CUP_AirVehicles_MH60S"};
     };
 };
 
@@ -2776,6 +2776,98 @@ class CfgVehicles
 
         class TransportWeapons
         {
+        };
+    };
+
+    //MH-60S Seahawk
+    class CUP_UH60_Unarmed_Base;
+
+    class CUP_MH60S_Unarmed_USN : CUP_UH60_Unarmed_Base
+    {
+        class Turrets;
+        class CopilotTurret;
+    };
+
+    class OPT_CUP_MH60S_Unarmed_USN : CUP_MH60S_Unarmed_USN
+    {
+        faction = "OPT_NATO_CUP";
+        driverCanEject = 1;
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+        class Turrets : Turrets
+        {
+            class CopilotTurret : CopilotTurret
+            {
+                canEject = 1;
+            };
+        };
+    };
+
+    //SA-330 Puma
+    class CUP_SA330_Base;
+
+    class CUP_B_SA330_Puma_HC1_BAF : CUP_SA330_Base
+    {
+        class Turrets;
+        class CopilotTurret;
+    };
+
+    //
+    class OPT_CUP_O_SA330_Puma_HC1_BAF: CUP_B_SA330_Puma_HC1_BAF
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+        class Turrets : Turrets
+        {
+            class CopilotTurret : CopilotTurret
+            {
+                canEject = 1;
+            };
         };
     };
 };
