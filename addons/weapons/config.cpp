@@ -894,18 +894,18 @@ class CfgMagazines
     {
         author = $STR_CUP_AUTHOR_STRING;
         dlc = "CommunityUpgradeProject";
-		displayName = "$STR_CUP_dn_stinger_M";
+        displayName = "$STR_CUP_dn_stinger_M";
         displayNameShort = $STR_A3_CFGMAGAZINES_TITAN_AA_DNS;
         ammo = "CUP_M_Stinger_AA";
         type = 6 * 256;
         picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_stinger_ca.paa";
-		model = "\CUP\Weapons\CUP_Weapons_Ammunition\Stinger\CUP_Stinger_Proxy.p3d";
+        model = "\CUP\Weapons\CUP_Weapons_Ammunition\Stinger\CUP_Stinger_Proxy.p3d";
         modelSpecial = "";
-		descriptionShort = "$STR_CUP_dss_stinger_M";
+        descriptionShort = "$STR_CUP_dss_stinger_M";
         mass = 219;
         count = 1;
-		initSpeed = 40;
-		maxLeadSpeed = 320;	// max estimated speed km/h
+        initSpeed = 40;
+        maxLeadSpeed = 320;	// max estimated speed km/h
     };
 
     class CUP_Igla_M;
@@ -914,21 +914,21 @@ class CfgMagazines
     {
         author = $STR_CUP_AUTHOR_STRING;
         dlc = "CommunityUpgradeProject";
-		displayName = "$STR_CUP_dn_igla_M";
-		descriptionShort = "$STR_CUP_dss_igla_M";
-		modelSpecial = "\CUP\Weapons\CUP_Weapons_Igla\CUP_igla_loaded.p3d";
-		ammo = "CUP_M_9K38_Igla_AA";
+        displayName = "$STR_CUP_dn_igla_M";
+        descriptionShort = "$STR_CUP_dss_igla_M";
+        modelSpecial = "\CUP\Weapons\CUP_Weapons_Igla\CUP_igla_loaded.p3d";
+        ammo = "CUP_M_9K38_Igla_AA";
         type = 6 * 256;
         picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_igla_ca.paa";
-		model = "\CUP\Weapons\CUP_Weapons_Ammunition\9K38_Igla\CUP_9K38_Igla";
+        model = "\CUP\Weapons\CUP_Weapons_Ammunition\9K38_Igla\CUP_9K38_Igla";
         modelSpecial = "\CUP\Weapons\CUP_Weapons_Igla\CUP_igla_loaded.p3d";
         initSpeed = 32;
-		maxLeadSpeed = 150;	// max estimated speed km/h
-		mass = 219;
-		maxThrowHoldTime = 2;
-		maxThrowIntensityCoef = 1.4;
-		minThrowIntensityCoef = 0.3;
-		simulation = "ProxyMagazines";
+        maxLeadSpeed = 150;	// max estimated speed km/h
+        mass = 219;
+        maxThrowHoldTime = 2;
+        maxThrowIntensityCoef = 1.4;
+        minThrowIntensityCoef = 0.3;
+        simulation = "ProxyMagazines";
     };
 };
 
@@ -3850,7 +3850,8 @@ class CfgWeapons
     {
         class EventHandlers 
         {
-		};
+
+        };
 
         magazines[] = {"OPT_CUP_Stinger_M"};	
 	};
@@ -3861,7 +3862,8 @@ class CfgWeapons
     {
         class EventHandlers 
         {
-		};
+            
+        };
 
         magazines[] = {"OPT_CUP_Igla_M"};
 	};
