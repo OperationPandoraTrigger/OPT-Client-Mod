@@ -905,7 +905,7 @@ class CfgMagazines
         mass = 219;
         count = 1;
         initSpeed = 40;
-        maxLeadSpeed = 320;	// max estimated speed km/h
+        maxLeadSpeed = 320;
     };
 
     class CUP_Igla_M;
@@ -923,7 +923,7 @@ class CfgMagazines
         model = "\CUP\Weapons\CUP_Weapons_Ammunition\9K38_Igla\CUP_9K38_Igla";
         modelSpecial = "\CUP\Weapons\CUP_Weapons_Igla\CUP_igla_loaded.p3d";
         initSpeed = 32;
-        maxLeadSpeed = 150;	// max estimated speed km/h
+        maxLeadSpeed = 150;
         mass = 219;
         maxThrowHoldTime = 2;
         maxThrowIntensityCoef = 1.4;
@@ -3853,7 +3853,7 @@ class CfgWeapons
 
         };
         
-        magazines[] = {"OPT_CUP_Stinger_M"};	
+        magazines[] = {"OPT_CUP_Stinger_M"};
     };
 
     class CUP_launch_Igla;
