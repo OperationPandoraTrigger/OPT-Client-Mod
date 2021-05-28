@@ -35,7 +35,7 @@ class CfgPatches
         versionAr[] = {VERSION_AR};
         requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
                             "a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
-                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons","CUP_Weapons_Ammunition"};
+                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons","CUP_Weapons_Ammunition","CUP_Weapons_Stinger","CUP_Weapons_IGLA"};
     };
 };
 
@@ -888,6 +888,48 @@ class CfgMagazines
         ammo = "OPT_CUP_R_GRAD_HE";
     };
 
+    class CUP_Stinger_M;
+
+    class OPT_CUP_Stinger_M: CUP_Stinger_M
+    {
+        author = $STR_CUP_AUTHOR_STRING;
+        dlc = "CommunityUpgradeProject";
+		displayName = "$STR_CUP_dn_stinger_M";
+        displayNameShort = $STR_A3_CFGMAGAZINES_TITAN_AA_DNS;
+        ammo = "CUP_M_Stinger_AA";
+        type = 6 * 256;
+        picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_stinger_ca.paa";
+		model = "\CUP\Weapons\CUP_Weapons_Ammunition\Stinger\CUP_Stinger_Proxy.p3d";
+        modelSpecial = "";
+		descriptionShort = "$STR_CUP_dss_stinger_M";
+        mass = 219;
+        count = 1;
+		initSpeed = 40;
+		maxLeadSpeed = 320;	// max estimated speed km/h
+    };
+
+    class CUP_Igla_M;
+
+    class OPT_CUP_Igla_M: CUP_Igla_M
+    {
+        author = $STR_CUP_AUTHOR_STRING;
+        dlc = "CommunityUpgradeProject";
+		displayName = "$STR_CUP_dn_igla_M";
+		descriptionShort = "$STR_CUP_dss_igla_M";
+		modelSpecial = "\CUP\Weapons\CUP_Weapons_Igla\CUP_igla_loaded.p3d";
+		ammo = "CUP_M_9K38_Igla_AA";
+        type = 6 * 256;
+        picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_igla_ca.paa";
+		model = "\CUP\Weapons\CUP_Weapons_Ammunition\9K38_Igla\CUP_9K38_Igla";
+        modelSpecial = "\CUP\Weapons\CUP_Weapons_Igla\CUP_igla_loaded.p3d";
+        initSpeed = 32;
+		maxLeadSpeed = 150;	// max estimated speed km/h
+		mass = 219;
+		maxThrowHoldTime = 2;
+		maxThrowIntensityCoef = 1.4;
+		minThrowIntensityCoef = 0.3;
+		simulation = "ProxyMagazines";
+    };
 };
 
 class CfgWeapons
@@ -3802,6 +3844,27 @@ class CfgWeapons
         };
     };
 
+    class CUP_launch_FIM92Stinger;
+
+	class OPT_CUP_launch_FIM92Stinger : CUP_launch_FIM92Stinger
+    {
+        class EventHandlers 
+        {
+		};
+
+        magazines[] = {"OPT_CUP_Stinger_M"};	
+	};
+
+    class CUP_launch_Igla;
+
+	class OPT_CUP_launch_Igla : CUP_launch_Igla
+    {
+        class EventHandlers 
+        {
+		};
+
+        magazines[] = {"OPT_CUP_Igla_M"};
+	};
 
     class Binocular;
 
@@ -5304,7 +5367,7 @@ class CfgVehicles
 
             class _xx_OPT_hgun_P07_F
             {
-                weapon = "OPT_hgun_P07_F";
+                weapon = "CUP_hgun_M9";
                 count = 70;
             };
         };
@@ -5410,7 +5473,7 @@ class CfgVehicles
             class _xx_ACE_DefusalKitirstAidKit
             {
                 name = "ACE_DefusalKit";
-                count = 20;
+                count = 0;
             };
 
             class _xx_ACE_EntrenchingTool
@@ -5740,58 +5803,34 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_11Rnd_45ACP_Mag
+            class _xx_CUP_15Rnd_9x19_M9
             {
-                magazine = "11Rnd_45ACP_Mag";
+                magazine = "CUP_15Rnd_9x19_M9";
                 count = 10;
             };
 
-            class _xx_16Rnd_9x21_Mag
+            class _xx_CUP_30Rnd_556x45_Stanag
             {
-                magazine = "16Rnd_9x21_Mag";
+                magazine = "CUP_30Rnd_556x45_Stanag";
                 count = 80;
             };
 
-            class _xx_30Rnd_45ACP_Mag_SMG_01
+            class _xx_CUP_30Rnd_45ACP_MAC10_M
             {
-                magazine = "30Rnd_45ACP_Mag_SMG_01";
+                magazine = "CUP_30Rnd_45ACP_MAC10_M";
                 count = 80;
             };
 
-            class _xx_30Rnd_45ACP_Mag_SMG_01_tracer_green
+            class _xx_CUP_200Rnd_TE4_Green_Tracer_556x45_M249
             {
-                magazine = "30Rnd_45ACP_Mag_SMG_01_tracer_green";
-                count = 0;
-            };
-
-            class _xx_30Rnd_556x45_Stanag
-            {
-                magazine = "30Rnd_556x45_Stanag";
-                count = 180;
-            };
-
-            class _xx_150Rnd_556x45_Drum_Mag_F
-            {
-                magazine = "150Rnd_556x45_Drum_Mag_F";
-                count = 0;
-            };
-
-            class _xx_OPT_150Rnd_556x45_Drum_Mag_Tracer_F
-            {
-                magazine = "OPT_150Rnd_556x45_Drum_Mag_Tracer_F";
+                magazine = "CUP_200Rnd_TE4_Green_Tracer_556x45_M249";
                 count = 40;
             };
 
-            class _xx_100Rnd_65x39_caseless_mag
+            class _xx_CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M
             {
-                magazine = "100Rnd_65x39_caseless_mag";
-                count = 0;
-            };
-
-            class _xx_100Rnd_65x39_caseless_mag_Tracer
-            {
-                magazine = "100Rnd_65x39_caseless_mag_Tracer";
-                count = 0;
+                magazine = "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M";
+                count = 40;
             };
         };
     };
@@ -5862,11 +5901,11 @@ class CfgVehicles
     {
     };
 
-    class Land_PlasticCase_01_small_gray_F : Land_PlasticCase_01_small_F
+    class Land_PlasticCase_01_small_olive_F : Land_PlasticCase_01_small_F
     {
     };
 
-    class OPT_Box_NATO_WpsSpecial_F : Land_PlasticCase_01_small_gray_F
+    class OPT_Box_NATO_WpsSpecial_F : Land_PlasticCase_01_small_olive_F
     {
         displayName = "NATO Spezialkiste";
         maximumLoad = 15000;
@@ -5874,16 +5913,6 @@ class CfgVehicles
 
         class TransportWeapons
         {
-            class _xx_OPT_srifle_DMR_02_F
-            {
-                weapon = "OPT_srifle_DMR_02_F";
-                count = 2;
-            };
-            class _xx_OPT_srifle_LRR_F
-            {
-                weapon = "OPT_srifle_LRR_F";
-                count = 2;
-            };
         };
 
         class TransportItems
@@ -5937,53 +5966,17 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_20Rnd_762x51_Mag
+            class _xx_CUP_20Rnd_762x51_HK417
             {
-                magazine = "20Rnd_762x51_Mag";
+                magazine = "CUP_20Rnd_762x51_HK417";
                 count = 60;
             };
 
-            class _xx_7Rnd_408_Mag
+            class _xx_CUP_5Rnd_127x99_as50_M
             {
-                magazine = "7Rnd_408_Mag";
+                magazine = "CUP_5Rnd_127x99_as50_M";
                 count = 40;
-            };
-
-            class _xx_30Rnd_65x39_caseless_mag
-            {
-                magazine = "30Rnd_65x39_caseless_mag";
-                count = 40;
-            };
-
-            class _xx_30Rnd_65x39_caseless_mag_Tracer
-            {
-                magazine = "30Rnd_65x39_caseless_mag_Tracer";
-                count = 0;
-            };
-
-            class _xx_10Rnd_338_Mag
-            {
-                magazine = "10Rnd_338_Mag";
-                count = 60;
-            };
-
-            class _xx_130Rnd_338_Mag
-            {
-                magazine = "130Rnd_338_Mag";
-                count = 30;
-            };
-
-            class _xx_200Rnd_65x39_cased_Box
-            {
-                magazine = "200Rnd_65x39_cased_Box";
-                count = 0;
-            };
-
-            class _xx_200Rnd_65x39_cased_Box_Tracer
-            {
-                magazine = "200Rnd_65x39_cased_Box_Tracer";
-                count = 30;
-            };
+            };       
         };
     };
 
@@ -6069,7 +6062,6 @@ class CfgVehicles
                 magazine = "5Rnd_127x108_Mag";
                 count = 60;
             };
-
         };
     };
 
@@ -6079,18 +6071,13 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_AT_L1 : Box_NATO_WpsSpecial_F
     {
-        displayName = "MAAWS Mk4 Mod 0 Raketenkiste (NATO)";
+        displayName = "MAAWS Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS4.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
-            class _xx_OPT_launch_MRAWS_green_rail_F
-            {
-                weapon = "OPT_launch_MRAWS_green_rail_F";
-                count = 2;
-            };
         };
 
         class TransportItems
@@ -6103,15 +6090,9 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_MRAWS_HEAT_F
+            class _xx_CUP_MAAWS_HEAT_M
             {
-                magazine = "MRAWS_HEAT_F";
-                count = 10;
-            };
-
-            class _xx_MRAWS_HE_F
-            {
-                magazine = "MRAWS_HE_F";
+                magazine = "CUP_MAAWS_HEAT_M";
                 count = 10;
             };
         };
@@ -6119,17 +6100,17 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_AT_L1A : OPT_Box_NATO_WpsSpecial_AT_L1
     {
-        displayName = "MAAWS Mk4 Mod 1 Raketenkiste (NATO)";
+        displayName = "M72A6 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\M72A6.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
-            class _xx_OPT_launch_MRAWS_green_F
+            class _xx_CUP_launch_M72A6_Loaded
             {
-                weapon = "OPT_launch_MRAWS_green_F";
-                count = 2;
+                weapon = "CUP_launch_M72A6_Loaded";
+                count = 10;
             };
         };
 
@@ -6143,17 +6124,6 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_MRAWS_HEAT_F
-            {
-                magazine = "MRAWS_HEAT_F";
-                count = 10;
-            };
-
-            class _xx_MRAWS_HE_F
-            {
-                magazine = "MRAWS_HE_F";
-                count = 10;
-            };
         };
     };
 
@@ -6229,9 +6199,10 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_AA_F : Box_NATO_WpsSpecial_F
     {
-        displayName = "NATO Raketenkiste (AA)";
-        maximumLoad = 2000;
+        displayName = "AA Raketenkiste (NATO)";
+        maximumLoad = 5000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\Stringer.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6247,9 +6218,9 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_Titan_AA
+            class _xx_CUP_Stinger_M
             {
-                magazine = "Titan_AA";
+                magazine = "OPT_CUP_Stinger_M";
                 count = 5;
             };
         };
@@ -6469,159 +6440,80 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_3Rnd_Smoke_Grenade_shell
+            class _xx_CUP_1Rnd_Smoke_M203
             {
-                magazine = "3Rnd_Smoke_Grenade_shell";
-                count = 0;
-            };
-
-            class _xx_1Rnd_Smoke_Grenade_shell
-            {
-                magazine = "1Rnd_Smoke_Grenade_shell";
+                magazine = "CUP_1Rnd_Smoke_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_SmokeRed_Grenade_shell
+            class _xx_CUP_1Rnd_SmokeRed_M203
             {
-                magazine = "3Rnd_SmokeRed_Grenade_shell";
-                count = 0;
-            };
-
-            class _xx_1Rnd_SmokeRed_Grenade_shell
-            {
-                magazine = "1Rnd_SmokeRed_Grenade_shell";
+                magazine = "CUP_1Rnd_SmokeRed_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_SmokeGreen_Grenade_shell
+            class _xx_CUP_1Rnd_SmokeGreen_M203
             {
-                magazine = "3Rnd_SmokeGreen_Grenade_shell";
-                count = 0;
-            };
-
-            class _xx_1Rnd_SmokeGreen_Grenade_shell
-            {
-                magazine = "1Rnd_SmokeGreen_Grenade_shell";
+                magazine = "CUP_1Rnd_SmokeGreen_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_SmokeYellow_Grenade_shell
+            class _xx_CUP_1Rnd_SmokeYellow_M203
             {
-                magazine = "3Rnd_SmokeYellow_Grenade_shell";
-                count = 0;
-            };
-
-            class _xx_1Rnd_SmokeYellow_Grenade_shell
-            {
-                magazine = "1Rnd_SmokeYellow_Grenade_shell";
+                magazine = "CUP_1Rnd_SmokeYellow_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_SmokePurple_Grenade_shell
+            class _xx_CUP_1Rnd_StarFlare_White_M203
             {
-                magazine = "3Rnd_SmokePurple_Grenade_shell";
-                count = 0;
-            };
-
-            class _xx_1Rnd_SmokePurple_Grenade_shell
-            {
-                magazine = "1Rnd_SmokePurple_Grenade_shell";
+                magazine = "CUP_1Rnd_StarFlare_White_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_SmokeBlue_Grenade_shell
+            class _xx_CUP_1Rnd_StarFlare_Red_M203
             {
-                magazine = "3Rnd_SmokeBlue_Grenade_shell";
-                count = 0;
-            };
-
-            class _xx_1Rnd_SmokeBlue_Grenade_shell
-            {
-                magazine = "1Rnd_SmokeBlue_Grenade_shell";
+                magazine = "CUP_1Rnd_StarFlare_Red_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_SmokeOrange_Grenade_shell
+            class _xx_CUP_1Rnd_StarFlare_Green_M203
             {
-                magazine = "3Rnd_SmokeOrange_Grenade_shell";
-                count = 0;
-            };
-
-            class _xx_1Rnd_SmokeOrange_Grenade_shell
-            {
-                magazine = "1Rnd_SmokeOrange_Grenade_shell";
+                magazine = "CUP_1Rnd_StarFlare_Green_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_UGL_FlareWhite_F
+            class _xx_CUP_FlareWhite_M203
             {
-                magazine = "3Rnd_UGL_FlareWhite_F";
-                count = 0;
-            };
-
-            class _xx_UGL_FlareWhite_F
-            {
-                magazine = "UGL_FlareWhite_F";
+                magazine = "CUP_FlareWhite_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_UGL_FlareGreen_F
+            class _xx_CUP_FlareGreen_M203
             {
-                magazine = "3Rnd_UGL_FlareGreen_F";
-                count = 0;
-            };
-
-            class _xx_UGL_FlareGreen_F
-            {
-                magazine = "UGL_FlareGreen_F";
+                magazine = "CUP_FlareGreen_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_UGL_FlareRed_F
+            class _xx_CUP_FlareRed_M203
             {
-                magazine = "3Rnd_UGL_FlareRed_F";
-                count = 0;
-            };
-
-            class _xx_UGL_FlareRed_F
-            {
-                magazine = "UGL_FlareRed_F";
+                magazine = "CUP_FlareRed_M203";
                 count = 30;
             };
 
-            class _xx_3Rnd_UGL_FlareYellow_F
+            class _xx_CUP_FlareYellow_M203
             {
-                magazine = "3Rnd_UGL_FlareYellow_F";
-                count = 0;
-            };
-
-            class _xx_UGL_FlareYellow_F
-            {
-                magazine = "UGL_FlareYellow_F";
+                magazine = "CUP_FlareYellow_M203";
                 count = 30;
             };
-
-            class _xx_3Rnd_UGL_FlareCIR_F
+            class _xx_CUP_1Rnd_HEDP_M203
             {
-                magazine = "3Rnd_UGL_FlareCIR_F";
-                count = 0;
+                magazine = "CUP_1Rnd_HEDP_M203";
+                count = 20;
             };
 
-            class _xx_UGL_FlareCIR_F
+            class _xx_CUP_1Rnd_HE_M203
             {
-                magazine = "UGL_FlareCIR_F";
-                count = 30;
-            };
-
-            class _xx_3Rnd_HE_Grenade_shell
-            {
-                magazine = "3Rnd_HE_Grenade_shell";
-                count = 0;
-            };
-
-            class _xx_1Rnd_HE_Grenade_shell
-            {
-                magazine = "1Rnd_HE_Grenade_shell";
+                magazine = "CUP_1Rnd_HE_M203";
                 count = 20;
             };
 
@@ -6743,11 +6635,11 @@ class CfgVehicles
     {
     };
 
-    class Land_PlasticCase_01_medium_gray_F : Land_PlasticCase_01_medium_F
+    class Land_PlasticCase_01_medium_olive_F : Land_PlasticCase_01_medium_F
     {
     };
 
-    class OPT_NATO_Sprengstoffkiste : Land_PlasticCase_01_medium_gray_F
+    class OPT_NATO_Sprengstoffkiste : Land_PlasticCase_01_medium_olive_F
     {
         displayName = "NATO Sprengstoffkiste";
         maximumLoad = 8500;
@@ -6787,7 +6679,7 @@ class CfgVehicles
         };
     };
 
-    class OPT_NATO_Minenkiste : Land_PlasticCase_01_medium_gray_F
+    class OPT_NATO_Minenkiste : Land_PlasticCase_01_medium_olive_F
     {
         displayName = "NATO Minenkiste";
         maximumLoad = 8500;
