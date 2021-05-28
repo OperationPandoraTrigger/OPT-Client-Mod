@@ -3845,28 +3845,28 @@ class CfgWeapons
     };
 
     class CUP_launch_FIM92Stinger;
-
-	class OPT_CUP_launch_FIM92Stinger : CUP_launch_FIM92Stinger
+    
+    class OPT_CUP_launch_FIM92Stinger : CUP_launch_FIM92Stinger
     {
         class EventHandlers 
         {
 
         };
-
+        
         magazines[] = {"OPT_CUP_Stinger_M"};	
-	};
+    };
 
     class CUP_launch_Igla;
-
-	class OPT_CUP_launch_Igla : CUP_launch_Igla
+    
+    class OPT_CUP_launch_Igla : CUP_launch_Igla
     {
         class EventHandlers 
         {
-            
-        };
 
+        };
+        
         magazines[] = {"OPT_CUP_Igla_M"};
-	};
+    };
 
     class Binocular;
 
