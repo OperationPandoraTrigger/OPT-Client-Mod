@@ -5376,9 +5376,9 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_optic_ACO_grn_smg
+            class _xx_CUP_optic_1P87_RIS
             {
-                name = "optic_ACO_grn_smg";
+                name = "CUP_optic_1P87_RIS";
                 count = 50;
             };
 
@@ -5388,69 +5388,81 @@ class CfgVehicles
                 count = 50;
             };
 
-            class _xx_optic_Holosight_smg
+            class _xx_CUP_optic_AIMM_COMPM4_BLK
             {
-                name = "optic_Holosight_smg";
-                count = 0;
-            };
-
-            class _xx_optic_Holosight_smg_blk_F
-            {
-                name = "optic_Holosight_smg_blk_F";
+                name = "CUP_optic_AIMM_COMPM4_BLK";
                 count = 50;
             };
 
-            class _xx_optic_ACO_grn
+            class _xx_CUP_optic_AC11704_Black
             {
-                name = "optic_ACO_grn";
+                name = "CUP_optic_AC11704_Black";
                 count = 50;
             };
 
-            class _xx_optic_Aco
+            class _xx_CUP_optic_Elcan_SpecterDR_black
             {
-                name = "optic_Aco";
+                name = "CUP_optic_Elcan_SpecterDR_black";
                 count = 50;
             };
 
-            class _xx_optic_Holosight
+            class _xx_CUP_optic_Elcan_reflex
             {
-                name = "optic_Holosight";
-                count = 0;
-            };
-
-            class _xx_optic_Holosight_blk_F
-            {
-                name = "optic_Holosight_blk_F";
+                name = "CUP_optic_Elcan_reflex";
                 count = 50;
             };
 
-            class _xx_optic_Arco
+            class _xx_CUP_optic_Eotech553_Black
             {
-                name = "optic_Arco";
-                count = 0;
-            };
-
-            class _xx_optic_Arco_blk_F
-            {
-                name = "optic_Arco_blk_F";
+                name = "CUP_optic_Eotech553_Black";
                 count = 50;
             };
 
-            class _xx_optic_Hamr
+            class _xx_CUP_optic_HensoldtZO_low
             {
-                name = "optic_Hamr";
+                name = "CUP_optic_HensoldtZO_low";
                 count = 50;
             };
 
-            class _xx_optic_MRCO
+            class _xx_CUP_optic_LeupoldMk4_CQ_T
             {
-                name = "optic_MRCO";
+                name = "CUP_optic_LeupoldMk4_CQ_T";
                 count = 50;
             };
 
-            class _xx_optic_ERCO_blk_F
+            class _xx_CUP_optic_MARS
             {
-                name = "optic_ERCO_blk_F";
+                name = "CUP_optic_MARS";
+                count = 50;
+            };
+
+            class _xx_CUP_optic_MEPRO
+            {
+                name = "CUP_optic_MEPRO";
+                count = 50;
+            };
+
+            class _xx_CUP_optic_ACOG_TA01B_RMR_Black
+            {
+                name = "CUP_optic_ACOG_TA01B_RMR_Black";
+                count = 50;
+            };
+
+            class _xx_CUP_optic_TrijiconRx01_black
+            {
+                name = "CUP_optic_TrijiconRx01_black";
+                count = 50;
+            };
+
+            class _xx_CUP_optic_ZeissZPoint
+            {
+                name = "CUP_optic_ZeissZPoint";
+                count = 50;
+            };
+
+            class _xx_CUP_optic_VortexRazor_UH1_Black
+            {
+                name = "CUP_optic_VortexRazor_UH1_Black";
                 count = 50;
             };
 
@@ -5919,39 +5931,33 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_optic_NVS
+            class _xx_CUP_optic_LeupoldMk4
             {
-                name = "optic_NVS";
+                name = "CUP_optic_LeupoldMk4";
                 count = 50;
             };
 
-            class _xx_optic_DMS
+            class _xx_CUP_optic_LeupoldMk4_25x50_LRT
             {
-                name = "optic_DMS";
+                name = "CUP_optic_LeupoldMk4_25x50_LRT";
                 count = 50;
             };
 
-            class _xx_optic_SOS
+            class _xx_CUP_optic_Leupold_VX3
             {
-                name = "optic_SOS";
+                name = "CUP_optic_Leupold_VX3";
                 count = 50;
             };
 
-            class _xx_optic_KHS_blk
+            class _xx_CUP_optic_SB_11_4x20_PM
             {
-                name = "optic_KHS_blk";
+                name = "CUP_optic_SB_11_4x20_PM";
                 count = 50;
             };
 
-            class _xx_optic_AMS
+            class _xx_CUP_optic_SB_3_12x50_PMII
             {
-                name = "optic_AMS";
-                count = 50;
-            };
-
-            class _xx_optic_LRPS_tna_F
-            {
-                name = "optic_LRPS_tna_F";
+                name = "CUP_optic_SB_3_12x50_PMII";
                 count = 50;
             };
 
