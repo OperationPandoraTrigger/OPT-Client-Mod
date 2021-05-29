@@ -2206,6 +2206,7 @@ class CfgVehicles
     class OPT_CUP_B_LR_Transport_GB_W: CUP_B_LR_Transport_GB_W
     {
         faction = "OPT_NATO_CUP";
+        hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
 
         class TransportMagazines
         {
@@ -2220,7 +2221,7 @@ class CfgVehicles
         };
     };
 
-    //Motorrad TT650
+    //UAZ
     class CUP_O_UAZ_Unarmed_RU;
 
     class OPT_CUP_O_UAZ_Unarmed_RU: CUP_O_UAZ_Unarmed_RU
@@ -2246,6 +2247,7 @@ class CfgVehicles
     class OPT_CUP_B_LR_MG_GB_W: CUP_B_LR_MG_GB_W
     {
         faction = "OPT_NATO_CUP";
+        hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
 
         class TransportMagazines
         {
@@ -2449,6 +2451,7 @@ class CfgVehicles
         side = 1;
         rew = "CUP_B_USMC_Soldier_FROG_WDL";
         typicalCargo[] = {"CUP_B_USMC_Soldier_FROG_WDL"};
+        hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
 
         class TransportMagazines
         {

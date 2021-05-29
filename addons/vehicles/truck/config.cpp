@@ -761,6 +761,7 @@ class CfgVehicles
     class OPT_CUP_B_MTVR_USMC: CUP_B_MTVR_USMC
     {
         faction = "OPT_NATO_CUP";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_tarp_3.paa"};
 
         class TransportMagazines
         {
@@ -801,6 +802,7 @@ class CfgVehicles
     class OPT_CUP_B_MTVR_Ammo_USMC: CUP_B_MTVR_Ammo_USMC
     {
         faction = "OPT_NATO_CUP";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_tarp_3.paa"};
 
         class TransportMagazines
         {
@@ -841,6 +843,7 @@ class CfgVehicles
     class OPT_CUP_B_MTVR_Repair_USMC: CUP_B_MTVR_Repair_USMC
     {
         faction = "OPT_NATO_CUP";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_repair_3.paa"};
 
         class TransportMagazines
         {
@@ -881,6 +884,8 @@ class CfgVehicles
     class OPT_CUP_B_MTVR_Refuel_USMC: CUP_B_MTVR_Refuel_USMC
     {
         faction = "OPT_NATO_CUP";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_fuel_3.paa"};
+
 
         class TransportMagazines
         {
@@ -937,6 +942,7 @@ class CfgVehicles
     class OPT_CUP_B_RM70_CZ: CUP_B_RM70_CZ
     {
         faction = "OPT_NATO_CUP";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\RM70\rm70_0.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_1.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_2.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_3.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_4.paa"};
 
         class Turrets : Turrets 
         {

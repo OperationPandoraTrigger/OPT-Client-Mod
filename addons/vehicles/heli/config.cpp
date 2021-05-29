@@ -2793,6 +2793,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         driverCanEject = 1;
+        hiddenSelectionsTextures[] = {"cup\airvehicles\cup_airvehicles_uh60\data\uh60m_fuselage_co.paa","cup\airvehicles\cup_airvehicles_uh60\data\uh60m_engine_co.paa","cup\airvehicles\cup_airvehicles_uh60\data\default_co.paa"};
 
         class TransportItems
         {
@@ -2898,6 +2899,8 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         driverCanEject = 1;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\uh1d\uh1d_0.paa","\opt\opt_client\addons\vehicles\textures\uh1d\uh1d_1.paa"};
+
         
         class Components : Components 
         {
@@ -3079,6 +3082,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         driverCanEject = 1;
+        hiddenSelectionsTextures[] = {"CUP\AirVehicles\CUP_AirVehicles_CH53E\data\ch53_1_co_GER.paa","CUP\AirVehicles\CUP_AirVehicles_CH53E\data\ch53_2_co_GER.paa"};
 
         class TransportItems
         {
