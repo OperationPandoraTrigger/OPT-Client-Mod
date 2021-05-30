@@ -8733,6 +8733,74 @@ class CfgVehicles
         };
     };
 
+    class OPT_B_Carryall_emr : B_Carryall_ghex_F
+    {
+        displayName = "Grosser Rucksack Eng. (EMR)";
+        maximumLoad = 320;
+        scope = 2;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_emr.paa"};
+
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_Carryall_m81 : B_Carryall_ghex_F
+    {
+        displayName = "Grosser Rucksack Eng. (M81)";
+        maximumLoad = 320;
+        scope = 2;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_m81.paa"};
+
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_Carryall_mccuu : B_Carryall_ghex_F
+    {
+        displayName = "Grosser Rucksack Eng. (MCCUU)";
+        maximumLoad = 320;
+        scope = 2;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_mccuu.paa"};
+
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_Carryall_VSR98Worm : B_Carryall_ghex_F
+    {
+        displayName = "Grosser Rucksack Eng. (VSR98Worm)";
+        maximumLoad = 320;
+        scope = 2;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_VSR98Worm.paa"};
+
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
     class B_FieldPack_ocamo;
 
     class OPT_B_FieldPack_ocamo_AT : B_FieldPack_ocamo
@@ -8977,6 +9045,66 @@ class CfgVehicles
                 name = "FirstAidKit";
                 count = 8;
             };
+        };
+    };
+
+    class OPT_B_AssaultPack_emr : B_AssaultPack_tna_F
+    {
+        displayName = "Angriffspack (EMR)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_emr.paa"};
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_AssaultPack_m81: B_AssaultPack_tna_F
+    {
+        displayName = "Angriffspack (M81)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_m81.paa"};
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_AssaultPack_mccuu : B_AssaultPack_tna_F
+    {
+        displayName = "Angriffspack (MCCUU)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_mccuu.paa"};
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_AssaultPack_VSR98Worm : B_AssaultPack_tna_F
+    {
+        displayName = "Angriffspack (VSR98Worm)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_VSR98Worm.paa"};
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
         };
     };
 
