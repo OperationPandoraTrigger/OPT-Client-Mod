@@ -1674,6 +1674,21 @@ class CfgVehicles
         backpack = "B_TacticalPack_blk";
     };
 
+    class OPT_NATO_PA_Schuetze_lt : OPT_NATO_Soldat
+    {
+        icon = "iconManAT";
+        displayName = "Panzerabwehr (Leicht)";
+        Items[] = {""};
+        respawnItems[] = {""};
+        weapons[] = {"CUP_arifle_HK416_Black", "CUP_launch_M72A6_Loaded", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"CUP_arifle_HK416_Black", "CUP_launch_M72A6_Loaded", "Rangefinder", "Throw", "Put"};
+        magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
+        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
+        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
+        backpack = "B_TacticalPack_blk";
+    };
+
     class OPT_NATO_MG_Schuetze : OPT_NATO_Soldat
     {
         icon = "iconManMG";
@@ -1858,6 +1873,19 @@ class CfgVehicles
         backpack = "B_FieldPack_ocamo";
         Items[] = {"CUP_optic_SMAW_Scope"};
         respawnItems[] = {"CUP_optic_SMAW_Scope"};
+    };
+
+    class OPT_CSAT_PA_Schuetze_lt : OPT_CSAT_Soldat
+    {
+        displayName = "Panzerabwehr (Leicht)";
+        icon = "iconManAT";
+        weapons[] = {"CUP_arifle_AK101_railed", "CUP_launch_RPG18", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"CUP_arifle_AK101_railed", "CUP_launch_RPG18", "Rangefinder", "Throw", "Put"};
+        magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
+        backpack = "B_FieldPack_ocamo";
+        Items[] = {""};
+        respawnItems[] = {""};
     };
 
     class OPT_CSAT_Luftabwehrspezialist : OPT_CSAT_Soldat
