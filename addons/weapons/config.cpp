@@ -3868,6 +3868,286 @@ class CfgWeapons
         magazines[] = {"OPT_CUP_Igla_M"};
     };
 
+    class CUP_arifle_HK416_145_Base;
+
+    class CUP_arifle_HK416_Black : CUP_arifle_HK416_145_Base
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_HK416_Black : CUP_arifle_HK416_Black
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+            };
+        };
+    };
+
+    class CUP_arifle_HK416_M203_Black : CUP_arifle_HK416_Black
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_HK416_M203_Black : CUP_arifle_HK416_M203_Black
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+            };
+        };
+    };
+
+    class CUP_arifle_AK101;
+
+    class CUP_arifle_AK101_railed : CUP_arifle_AK101
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_AK101_railed : CUP_arifle_AK101_railed
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+            };
+        };
+    };
+
+    class CUP_arifle_AK101_GL;
+
+    class CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL_railed
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+            };
+        };
+    };
+  
+    class CUP_lmg_minimi_railed;
+
+    class CUP_lmg_m249_pip3 : CUP_lmg_minimi_railed
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_lmg_m249_pip3 : CUP_lmg_m249_pip3
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+            };
+        };
+    };
+
+    class CUP_lmg_M240;
+
+    class CUP_lmg_M240_B : CUP_lmg_M240
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_lmg_M240_B : CUP_lmg_M240_B
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+            };
+        };
+    };
+
+    class CUP_arifle_RPK74M;
+
+    class CUP_arifle_RPK74M_top_rail : CUP_arifle_RPK74M
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_RPK74M_top_rail : CUP_arifle_RPK74M_top_rail
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+            };
+        };
+    };
+
+    class CUP_lmg_PKM;
+
+    class CUP_lmg_PKM_top_rail : CUP_lmg_PKM
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_lmg_PKM_top_rail : CUP_lmg_PKM_top_rail
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+            };
+        };
+    };
+
+    class CUP_arifle_HK417_Base;
+
+    class CUP_arifle_HK417_20 : CUP_arifle_HK417_Base
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_HK417_20 : CUP_arifle_HK417_20
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F", "optic_NVS", "optic_DMS", "optic_ams", "optic_AMS_snd", "optic_AMS_khk", "optic_KHS_blk", "optic_KHS_tan", "optic_KHS_hex", "optic_KHS_old", "optic_SOS"};
+            };
+        };
+    };
+
+    class CUP_arifle_FNFAL5061;
+
+    class CUP_arifle_FNFAL5061_railed : CUP_arifle_FNFAL5061
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_FNFAL5061_railed : CUP_arifle_FNFAL5061_railed
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F", "optic_NVS", "optic_DMS", "optic_ams", "optic_AMS_snd", "optic_AMS_khk", "optic_KHS_blk", "optic_KHS_tan", "optic_KHS_hex", "optic_KHS_old", "optic_SOS"};
+            };
+        };
+    };
+
+    class CUP_srifle_AS50 : Rifle_Long_Base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_srifle_AS50 : CUP_srifle_AS50
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_NVS", "optic_SOS", "optic_LRPS", "CUP_optic_LeupoldMk4_25x50_LRT","CUP_optic_Leupold_VX3"};
+            };
+        };
+    };
+
+    class CUP_Mac10_Base;
+
+    class CUP_smg_Mac10 : CUP_Mac10_Base
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_smg_Mac10 : CUP_smg_Mac10
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class CUP_smg_SA61 : Rifle_Base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_smg_SA61 : CUP_smg_SA61
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
     class Binocular;
 
     class Laserdesignator : Binocular
@@ -5458,9 +5738,9 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_CUP_optic_1P87_RIS
+            class _xx_optic_ACO_grn_smg
             {
-                name = "CUP_optic_1P87_RIS";
+                name = "optic_ACO_grn_smg";
                 count = 50;
             };
 
@@ -5470,81 +5750,69 @@ class CfgVehicles
                 count = 50;
             };
 
-            class _xx_CUP_optic_AIMM_COMPM4_BLK
+            class _xx_optic_Holosight_smg
             {
-                name = "CUP_optic_AIMM_COMPM4_BLK";
+                name = "optic_Holosight_smg";
+                count = 0;
+            };
+
+            class _xx_optic_Holosight_smg_blk_F
+            {
+                name = "optic_Holosight_smg_blk_F";
                 count = 50;
             };
 
-            class _xx_CUP_optic_AC11704_Black
+            class _xx_optic_ACO_grn
             {
-                name = "CUP_optic_AC11704_Black";
+                name = "optic_ACO_grn";
                 count = 50;
             };
 
-            class _xx_CUP_optic_Elcan_SpecterDR_black
+            class _xx_optic_Aco
             {
-                name = "CUP_optic_Elcan_SpecterDR_black";
+                name = "optic_Aco";
                 count = 50;
             };
 
-            class _xx_CUP_optic_Elcan_reflex
+            class _xx_optic_Holosight
             {
-                name = "CUP_optic_Elcan_reflex";
+                name = "optic_Holosight";
+                count = 0;
+            };
+
+            class _xx_optic_Holosight_blk_F
+            {
+                name = "optic_Holosight_blk_F";
                 count = 50;
             };
 
-            class _xx_CUP_optic_Eotech553_Black
+            class _xx_optic_Arco
             {
-                name = "CUP_optic_Eotech553_Black";
+                name = "optic_Arco";
+                count = 0;
+            };
+
+            class _xx_optic_Arco_blk_F
+            {
+                name = "optic_Arco_blk_F";
                 count = 50;
             };
 
-            class _xx_CUP_optic_HensoldtZO_low
+            class _xx_optic_Hamr
             {
-                name = "CUP_optic_HensoldtZO_low";
+                name = "optic_Hamr";
                 count = 50;
             };
 
-            class _xx_CUP_optic_LeupoldMk4_CQ_T
+            class _xx_optic_MRCO
             {
-                name = "CUP_optic_LeupoldMk4_CQ_T";
+                name = "optic_MRCO";
                 count = 50;
             };
 
-            class _xx_CUP_optic_MARS
+            class _xx_optic_ERCO_blk_F
             {
-                name = "CUP_optic_MARS";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_MEPRO
-            {
-                name = "CUP_optic_MEPRO";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_ACOG_TA01B_RMR_Black
-            {
-                name = "CUP_optic_ACOG_TA01B_RMR_Black";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_TrijiconRx01_black
-            {
-                name = "CUP_optic_TrijiconRx01_black";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_ZeissZPoint
-            {
-                name = "CUP_optic_ZeissZPoint";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_VortexRazor_UH1_Black
-            {
-                name = "CUP_optic_VortexRazor_UH1_Black";
+                name = "optic_ERCO_blk_F";
                 count = 50;
             };
 
@@ -5569,7 +5837,7 @@ class CfgVehicles
             class _xx_ACE_DefusalKitirstAidKit
             {
                 name = "ACE_DefusalKit";
-                count = 0;
+                count = 20;
             };
 
             class _xx_ACE_EntrenchingTool
@@ -5595,7 +5863,7 @@ class CfgVehicles
         {
             class _xx_B_AssaultPack_rgr
             {
-                backpack = "B_AssaultPack_rgr";
+                backpack = "OPT_B_AssaultPack_mccuu";
                 count = 25;
             };
 
@@ -6013,15 +6281,33 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_CUP_optic_LeupoldMk4
+            class _xx_optic_NVS
             {
-                name = "CUP_optic_LeupoldMk4";
+                name = "optic_NVS";
                 count = 50;
             };
 
-            class _xx_CUP_optic_LeupoldMk4_25x50_LRT
+            class _xx_optic_DMS
             {
-                name = "CUP_optic_LeupoldMk4_25x50_LRT";
+                name = "optic_DMS";
+                count = 50;
+            };
+
+            class _xx_optic_SOS
+            {
+                name = "optic_SOS";
+                count = 50;
+            };
+
+            class _xx_optic_KHS_blk
+            {
+                name = "optic_KHS_blk";
+                count = 50;
+            };
+
+            class _xx_optic_AMS
+            {
+                name = "optic_AMS";
                 count = 50;
             };
 
@@ -6031,15 +6317,9 @@ class CfgVehicles
                 count = 50;
             };
 
-            class _xx_CUP_optic_SB_11_4x20_PM
+            class _xx_CUP_optic_LeupoldMk4_25x50_LRT
             {
-                name = "CUP_optic_SB_11_4x20_PM";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_SB_3_12x50_PMII
-            {
-                name = "CUP_optic_SB_3_12x50_PMII";
+                name = "CUP_optic_LeupoldMk4_25x50_LRT";
                 count = 50;
             };
 
@@ -6915,9 +7195,9 @@ class CfgVehicles
 
         class TransportItems
         {
-             class _xx_CUP_optic_1P87_RIS
+            class _xx_optic_ACO_grn_smg
             {
-                name = "CUP_optic_1P87_RIS";
+                name = "optic_ACO_grn_smg";
                 count = 50;
             };
 
@@ -6927,81 +7207,69 @@ class CfgVehicles
                 count = 50;
             };
 
-            class _xx_CUP_optic_AIMM_COMPM4_BLK
+            class _xx_optic_Holosight_smg
             {
-                name = "CUP_optic_AIMM_COMPM4_BLK";
+                name = "optic_Holosight_smg";
+                count = 0;
+            };
+
+            class _xx_optic_Holosight_smg_blk_F
+            {
+                name = "optic_Holosight_smg_blk_F";
                 count = 50;
             };
 
-            class _xx_CUP_optic_AC11704_Black
+            class _xx_optic_ACO_grn
             {
-                name = "CUP_optic_AC11704_Black";
+                name = "optic_ACO_grn";
                 count = 50;
             };
 
-            class _xx_CUP_optic_Elcan_SpecterDR_black
+            class _xx_optic_Aco
             {
-                name = "CUP_optic_Elcan_SpecterDR_black";
+                name = "optic_Aco";
                 count = 50;
             };
 
-            class _xx_CUP_optic_Elcan_reflex
+            class _xx_optic_Holosight
             {
-                name = "CUP_optic_Elcan_reflex";
+                name = "optic_Holosight";
+                count = 0;
+            };
+
+            class _xx_optic_Holosight_blk_F
+            {
+                name = "optic_Holosight_blk_F";
                 count = 50;
             };
 
-            class _xx_CUP_optic_Eotech553_Black
+            class _xx_optic_Arco
             {
-                name = "CUP_optic_Eotech553_Black";
+                name = "optic_Arco";
+                count = 0;
+            };
+
+            class _xx_optic_Arco_blk_F
+            {
+                name = "optic_Arco_blk_F";
                 count = 50;
             };
 
-            class _xx_CUP_optic_HensoldtZO_low
+            class _xx_optic_Hamr
             {
-                name = "CUP_optic_HensoldtZO_low";
+                name = "optic_Hamr";
                 count = 50;
             };
 
-            class _xx_CUP_optic_LeupoldMk4_CQ_T
+            class _xx_optic_MRCO
             {
-                name = "CUP_optic_LeupoldMk4_CQ_T";
+                name = "optic_MRCO";
                 count = 50;
             };
 
-            class _xx_CUP_optic_MARS
+            class _xx_optic_ERCO_blk_F
             {
-                name = "CUP_optic_MARS";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_MEPRO
-            {
-                name = "CUP_optic_MEPRO";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_ACOG_TA01B_RMR_Black
-            {
-                name = "CUP_optic_ACOG_TA01B_RMR_Black";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_TrijiconRx01_black
-            {
-                name = "CUP_optic_TrijiconRx01_black";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_ZeissZPoint
-            {
-                name = "CUP_optic_ZeissZPoint";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_VortexRazor_UH1_Black
-            {
-                name = "CUP_optic_VortexRazor_UH1_Black";
+                name = "optic_ERCO_blk_F";
                 count = 50;
             };
 
@@ -7041,9 +7309,9 @@ class CfgVehicles
                 count = 10;
             };
 
-            class _xx_NVGoggles_OPFOR
+            class _xx_NVGoggles
             {
-                name = "NVGoggles_OPFOR";
+                name = "NVGoggles";
                 count = 70;
             };
         };
@@ -7052,26 +7320,14 @@ class CfgVehicles
         {
             class _xx_B_FieldPack_ocamo
             {
-                backpack = "B_FieldPack_ocamo";
+                backpack = "OPT_B_AssaultPack_VSR98Worm";
                 count = 25;
-            };
-
-            class _xx_B_FieldPack_ghex_F
-            {
-                backpack = "B_FieldPack_ghex_F";
-                count = 0;
             };
 
             class _xx_B_Parachute
             {
                 backpack = "B_Parachute";
-                count = 0;
-            };
-
-            class _xx_TFRA_mr3000_bwmod
-            {
-                backpack = "TFAR_mr3000_bwmod";
-                count = 0;
+                count = 25;
             };
 
             class _xx_TFAR_mr3000
@@ -7197,33 +7453,45 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_CUP_optic_LeupoldMk4
+            class _xx_optic_NVS
             {
-                name = "CUP_optic_LeupoldMk4";
+                name = "optic_NVS";
                 count = 50;
             };
 
-            class _xx_CUP_optic_LeupoldMk4_25x50_LRT
+            class _xx_optic_DMS
             {
-                name = "CUP_optic_LeupoldMk4_25x50_LRT";
+                name = "optic_DMS";
                 count = 50;
             };
 
+            class _xx_optic_SOS
+            {
+                name = "optic_SOS";
+                count = 50;
+            };
+
+            class _xx_optic_KHS_blk
+            {
+                name = "optic_KHS_blk";
+                count = 50;
+            };
+
+            class _xx_optic_AMS
+            {
+                name = "optic_AMS";
+                count = 50;
+            };
+            
             class _xx_CUP_optic_Leupold_VX3
             {
                 name = "CUP_optic_Leupold_VX3";
                 count = 50;
             };
 
-            class _xx_CUP_optic_SB_11_4x20_PM
+            class _xx_CUP_optic_LeupoldMk4_25x50_LRT
             {
-                name = "CUP_optic_SB_11_4x20_PM";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_SB_3_12x50_PMII
-            {
-                name = "CUP_optic_SB_3_12x50_PMII";
+                name = "CUP_optic_LeupoldMk4_25x50_LRT";
                 count = 50;
             };
 
