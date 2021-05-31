@@ -1286,6 +1286,7 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_0.paa","\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_1.paa"};
 
         class Components : Components
         {
@@ -1318,11 +1319,6 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_H_PilotHelmetFighter_O
-            {
-                name = "H_PilotHelmetFighter_O";
-                count = 1;
-            };
         };
     };
 
@@ -1454,11 +1450,6 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_H_PilotHelmetFighter_O
-            {
-                name = "H_PilotHelmetFighter_O";
-                count = 1;
-            };
         };
 
     };   

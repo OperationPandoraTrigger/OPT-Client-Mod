@@ -2901,7 +2901,6 @@ class CfgVehicles
         driverCanEject = 1;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\uh1d\uh1d_0.paa","\opt\opt_client\addons\vehicles\textures\uh1d\uh1d_1.paa"};
 
-        
         class Components : Components 
         {
             class TransportPylonsComponent 
@@ -3009,7 +3008,8 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
-        
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\KA-60\ka60_0.paa"};
+       
         class Components : Components 
         {
             class TransportPylonsComponent 
