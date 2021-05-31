@@ -1394,16 +1394,16 @@ class CfgVehicles
     {
         displayName = "Pilot";
         faction = "OPT_NATO_CUP";
-        weapons[] = {"CUP_smg_Mac10", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_smg_Mac10", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_smg_Mac10", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_smg_Mac10", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "SmokeShell", "SmokeShell"};
         Items[] = {};
         respawnItems[] = {};
-        linkedItems[] = {"OPT_V_TacVest_blk", "H_PilotHelmetHeli_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_TacVest_blk", "H_PilotHelmetHeli_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_SPH4_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "H_PilotHelmetHeli_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
         backpack = "tf_rt1523g_big_bwmod";
-        uniformClass = "U_B_HeliPilotCoveralls";
+        uniformClass = "CUP_U_B_USArmy_PilotOverall";
     };
 
     class B_Soldier_sniper_base_F : B_Soldier_base_F
@@ -1432,14 +1432,14 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"CUP_srifle_AS50", "CUP_hgun_M9", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_srifle_AS50", "CUP_hgun_M9", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_srifle_AS50", "CUP_hgun_M9", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_srifle_AS50", "CUP_hgun_M9", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_15Rnd_9x19_M9", "CUP_15Rnd_9x19_M9", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_15Rnd_9x19_M9", "CUP_15Rnd_9x19_M9", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_Chestrig_rgr", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_Chestrig_rgr", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout","CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout","CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
         backpack = "tf_rt1523g_big_bwmod";
-        uniformClass = "U_B_HeliPilotCoveralls";
+        uniformClass = "CUP_U_B_BAF_DPM_GHILLIE";
     };
 
     class OPT_NATO_Scharfschuetze_2 : OPT_NATO_Scharfschuetze
@@ -1448,12 +1448,12 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         Items[] = {"CUP_bipod_Harris_1A2_L_BLK"};
         respawnItems[] = {"CUP_bipod_Harris_1A2_L_BLK"};
-        weapons[] = {"CUP_arifle_HK417_20", "CUP_hgun_M9", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK417_20", "CUP_hgun_M9", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK417_20", "CUP_hgun_M9", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK417_20", "CUP_hgun_M9", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_20Rnd_762x51_HK417", "CUP_20Rnd_762x51_HK417", "CUP_20Rnd_762x51_HK417", "CUP_15Rnd_9x19_M9", "CUP_15Rnd_9x19_M9", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_20Rnd_762x51_HK417", "CUP_20Rnd_762x51_HK417", "CUP_20Rnd_762x51_HK417", "CUP_15Rnd_9x19_M9", "CUP_15Rnd_9x19_M9", "SmokeShell", "SmokeShell"};
         backpack = "tf_rt1523g_big_bwmod";
-        uniformClass = "U_B_HeliPilotCoveralls";
+        uniformClass = "CUP_U_B_BAF_DPM_GHILLIE";
     };
 
     class B_CTRG_soldier_GL_LAT_F : B_Soldier_base_F
@@ -1481,13 +1481,14 @@ class CfgVehicles
         icon = "iconMan";
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"CUP_arifle_HK416_Black","Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black","Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black","Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black","Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_PlateCarrierH_CTRG", "OPT_H_HelmetB_light_snakeskin", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierH_CTRG", "OPT_H_HelmetB_light_snakeskin", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        backpack = "";
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        backpack = "OPT_B_AssaultPack_mccuu";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class B_Soldier_03_f : B_Soldier_base_F
@@ -1517,15 +1518,16 @@ class CfgVehicles
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         icon = "iconMan";
-        weapons[] = {"CUP_smg_Mac10","Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_smg_Mac10","Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_smg_Mac10","Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_smg_Mac10","Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M","SmokeShell", "SmokeShell"};
         Items[] = {};
         respawnItems[] = {};
-        linkedItems[] = {"OPT_V_BandollierB_rgr", "H_HelmetCrew_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_BandollierB_rgr", "H_HelmetCrew_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_CZ_Helmet05", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_CZ_Helmet05", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
         backpack = "tf_rt1523g_big_bwmod";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class OPT_NATO_Offizier : B_CTRG_soldier_AR_A_F
@@ -1537,13 +1539,14 @@ class CfgVehicles
         editorSubcategory = "EdSubcat_Personnel";
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_BandollierB_rgr", "H_Beret_Colonel", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_BandollierB_rgr", "H_Beret_Colonel", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "H_Beret_Colonel", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "H_Beret_Colonel", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
         backpack = "tf_rt1523g_big_bwmod";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class OPT_NATO_Truppfuehrer : OPT_NATO_Soldat
@@ -1551,13 +1554,14 @@ class CfgVehicles
         icon = "iconManLeader";
         displayName = "Truppführer";
         faction = "OPT_NATO_CUP";
-        weapons[] = {"CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
-        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_snakeskin", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_snakeskin", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
         backpack = "tf_rt1523g_big_bwmod";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class OPT_NATO_Sanitaeter : B_CTRG_soldier_AR_A_F
@@ -1570,13 +1574,14 @@ class CfgVehicles
         attendant = 1;
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        backpack = "OPT_B_AssaultPack_rgr_Medic";
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        backpack = "OPT_B_AssaultPack_mccuu";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class OPT_NATO_Sprengmeister : B_CTRG_soldier_AR_A_F
@@ -1590,13 +1595,14 @@ class CfgVehicles
         engineer = 0;
         canDeactivateMines = 1;
         icon = "iconManEngineer";
-        weapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        backpack = "OPT_B_Kitbag_rgr_Eng";
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        backpack = "OPT_B_Carryall_mccuu";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class OPT_NATO_Ingenieur : B_CTRG_soldier_AR_A_F
@@ -1610,13 +1616,14 @@ class CfgVehicles
         engineer = 0;
         canDeactivateMines = 1;
         icon = "iconManEngineer";
-        weapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        backpack = "OPT_B_Kitbag_rgr_Eng";
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        backpack = "OPT_B_AssaultPack_mccuu";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class OPT_NATO_Operator : B_CTRG_soldier_AR_A_F
@@ -1628,20 +1635,21 @@ class CfgVehicles
         icon = "iconMan";
         Items[] = {};
         respawnItems[] = {};
-        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "NVGoggles", "B_UavTerminal"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "NVGoggles", "B_UavTerminal"};
-        weapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "NVGoggles_tna_F", "B_UavTerminal"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "NVGoggles_tna_F", "B_UavTerminal"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         backpack = "tf_rt1523g_big_bwmod";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class OPT_NATO_Grenadier : OPT_NATO_Soldat
     {
         displayName = "Grenadier";
-        weapons[] = {"CUP_arifle_HK416_M203_Black","Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_M203_Black", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_M203_Black","Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_M203_Black", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
     };
@@ -1650,13 +1658,13 @@ class CfgVehicles
     {
         icon = "iconManAT";
         displayName = "Raketenspezialist (Flugabwehr)";
-        weapons[] = {"CUP_arifle_HK416_Black", "OPT_CUP_launch_FIM92Stinger", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "OPT_CUP_launch_FIM92Stinger", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_CUP_launch_FIM92Stinger", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_CUP_launch_FIM92Stinger", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        backpack = "B_TacticalPack_blk";
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        backpack = "OPT_B_Carryall_mccuu";
     };
 
     class OPT_NATO_PA_Schuetze : OPT_NATO_Soldat
@@ -1665,13 +1673,13 @@ class CfgVehicles
         displayName = "Panzerabwehr (Schwer)";
         Items[] = {"CUP_optic_MAAWS_Scope"};
         respawnItems[] = {"CUP_optic_MAAWS_Scope"};
-        weapons[] = {"CUP_arifle_HK416_Black", "CUP_launch_MAAWS", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "CUP_launch_MAAWS", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_MAAWS", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_MAAWS", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        backpack = "B_TacticalPack_blk";
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        backpack = "OPT_B_Carryall_mccuu";
     };
 
     class OPT_NATO_PA_Schuetze_lt : OPT_NATO_Soldat
@@ -1680,34 +1688,34 @@ class CfgVehicles
         displayName = "Panzerabwehr (Leicht)";
         Items[] = {""};
         respawnItems[] = {""};
-        weapons[] = {"CUP_arifle_HK416_Black", "CUP_launch_M72A6_Loaded", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_HK416_Black", "CUP_launch_M72A6_Loaded", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_M72A6_Loaded", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_M72A6_Loaded", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        respawnLinkedItems[] = {"OPT_V_PlateCarrierL_CTRG", "OPT_H_HelmetB_grass", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles"};
-        backpack = "B_TacticalPack_blk";
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        backpack = "OPT_B_AssaultPack_mccuu";
     };
 
     class OPT_NATO_MG_Schuetze : OPT_NATO_Soldat
     {
         icon = "iconManMG";
         displayName = "MG-Schütze";
-        weapons[] = {"OPT_LMG_Mk200_ACO_BI_pointer_F", "OPT_hgun_P07_F", "Binocular", "Throw", "Put"};
-        magazines[] = {"200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShell"};
-        respawnWeapons[] = {"OPT_LMG_Mk200_ACO_BI_pointer_F", "OPT_hgun_P07_F", "Binocular", "Throw", "Put"};
-        respawnMagazines[] = {"200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShell"};
-        backpack = "";
+        weapons[] = {"OPT_CUP_lmg_M240_B","Binocular", "Throw", "Put"};
+        magazines[] = {"CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "SmokeShell", "SmokeShell"};
+        respawnWeapons[] = {"OPT_CUP_lmg_M240_B", "Binocular", "Throw", "Put"};
+        respawnMagazines[] = {"CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M", "SmokeShell", "SmokeShell"};
+        backpack = "OPT_B_AssaultPack_mccuu";
     };
 
     class OPT_NATO_LMG_Schuetze : OPT_NATO_MG_Schuetze
     {
         displayName = "LMG-Schütze";
-        weapons[] = {"CUP_lmg_m249_pip3","Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_lmg_m249_pip3", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_lmg_m249_pip3","Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_lmg_m249_pip3", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_200Rnd_TE4_Green_Tracer_556x45_M249", "CUP_200Rnd_TE4_Green_Tracer_556x45_M249", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_200Rnd_TE4_Green_Tracer_556x45_M249", "CUP_200Rnd_TE4_Green_Tracer_556x45_M249", "SmokeShell", "SmokeShell"};
-        backpack = "";
+        backpack = "OPT_B_AssaultPack_mccuu";
     };
   
     ////////////////// CSAT /////////////////////
@@ -1756,15 +1764,16 @@ class CfgVehicles
     {
         displayName = "Pilot";
         faction = "OPT_WP";
-        weapons[] = {"CUP_smg_SA61", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_smg_SA61", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
         magazines[] = {"CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_TacVest_2_khk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_TacVest_2_khk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "tf_mr3000";
+        backpack = "tf_mr3000_bwmod";
+        uniformClass = "CUP_U_O_RUS_Gorka_Partizan";
     };
 
     class O_officer_F : O_Soldier_base_F
@@ -1774,13 +1783,14 @@ class CfgVehicles
     class OPT_CSAT_Offizier : O_officer_F
     {
         faction = "OPT_WP";
-        weapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed",  "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed",  "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_BandollierB_2_khk", "H_Beret_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_BandollierB_2_khk", "H_Beret_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        backpack = "tf_mr3000";
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        backpack = "tf_mr3000_bwmod";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
     class O_Soldier_SL_F : O_Soldier_base_F
@@ -1793,13 +1803,14 @@ class CfgVehicles
         faction = "OPT_WP";
         Items[] = {"", ""};
         respawnItems[] = {"", ""};
-        Weapons[] = {"CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "Throw", "Put", "Binocular"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "Throw", "Put", "Binocular"};
+        Weapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "Throw", "Put", "Binocular"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "Throw", "Put", "Binocular"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell", "Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell", "Laserbatteries"};
-        linkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetLeaderO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetLeaderO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        backpack = "tf_mr3000";
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        backpack = "tf_mr3000_bwmod";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
     class O_Soldier_F : O_Soldier_base_F
@@ -1810,22 +1821,23 @@ class CfgVehicles
     {
         displayName = "Schütze";
         faction = "OPT_WP";
-        weapons[] = {"CUP_arifle_AK101_railed","Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed","Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "";
+        backpack = "OPT_B_AssaultPack_VSR98Worm";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
     
     class OPT_CSAT_Grenadier : OPT_CSAT_Soldat
     {
         displayName = "Grenadier";
-        weapons[] = {"CUP_arifle_AK101_GL_railed", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_GL_railed", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_GL_railed", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_GL_railed", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell"};
     };
@@ -1833,21 +1845,21 @@ class CfgVehicles
     class OPT_CSAT_Operator : OPT_CSAT_Soldat
     {
         displayName = "Drohnen-Operator";
-        weapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "NVGoggles_OPFOR", "O_UavTerminal"};
-        respawnLinkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "NVGoggles_OPFOR", "O_UavTerminal"};
-        backpack = "tf_mr3000";
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "NVGoggles_INDEP", "O_UavTerminal"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "NVGoggles_INDEP", "O_UavTerminal"};
+        backpack = "tf_mr3000_bwmod";
     };
 
     class OPT_CSAT_MG_Schuetze : OPT_CSAT_Soldat
     {
         displayName = "MG-Schütze";
         icon = "iconManMG";
-        weapons[] = {"CUP_lmg_PKM_top_rail", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_lmg_PKM_top_rail", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_lmg_PKM_top_rail", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_lmg_PKM_top_rail", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M", "SmokeShell", "SmokeShell"};
     };
@@ -1856,8 +1868,8 @@ class CfgVehicles
     {
         displayName = "LMG-Schütze";
         icon = "iconManMG";
-        weapons[] = {"CUP_arifle_RPK74M_top_rail", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_RPK74M_top_rail", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_RPK74M_top_rail", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_RPK74M_top_rail", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M", "CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M","CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M", "CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M","CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M","SmokeShell", "SmokeShell"};
     };
@@ -1866,11 +1878,11 @@ class CfgVehicles
     {
         displayName = "Panzerabwehr (Schwer)";
         icon = "iconManAT";
-        weapons[] = {"CUP_arifle_AK101_railed", "CUP_launch_Mk153Mod0", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "CUP_launch_Mk153Mod0", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed", "CUP_launch_Mk153Mod0", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "CUP_launch_Mk153Mod0", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
-        backpack = "B_FieldPack_ocamo";
+        backpack = "OPT_B_Carryall_VSR98Worm";
         Items[] = {"CUP_optic_SMAW_Scope"};
         respawnItems[] = {"CUP_optic_SMAW_Scope"};
     };
@@ -1879,11 +1891,11 @@ class CfgVehicles
     {
         displayName = "Panzerabwehr (Leicht)";
         icon = "iconManAT";
-        weapons[] = {"CUP_arifle_AK101_railed", "CUP_launch_RPG18", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "CUP_launch_RPG18", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed", "CUP_launch_RPG18", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "CUP_launch_RPG18", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
-        backpack = "B_FieldPack_ocamo";
+        backpack = "OPT_B_AssaultPack_VSR98Worm";
         Items[] = {""};
         respawnItems[] = {""};
     };
@@ -1891,11 +1903,11 @@ class CfgVehicles
     class OPT_CSAT_Luftabwehrspezialist : OPT_CSAT_Soldat
     {
         displayName = "Raketenspezialist (Flugabwehr)";
-        weapons[] = {"CUP_arifle_AK101_railed", "OPT_CUP_launch_Igla", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "OPT_CUP_launch_Igla", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_CUP_launch_Igla", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_CUP_launch_Igla", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
-        backpack = "B_FieldPack_ocamo";
+        backpack = "OPT_B_Carryall_VSR98Worm";
     };
 
     class O_Soldier_sniper_base_F : O_Soldier_base_F
@@ -1912,25 +1924,27 @@ class CfgVehicles
         faction = "OPT_WP";
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"CUP_srifle_AS50", "CUP_hgun_CZ75", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_srifle_AS50", "CUP_hgun_CZ75", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_srifle_AS50", "CUP_hgun_CZ75", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_srifle_AS50", "CUP_hgun_CZ75", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_16Rnd_9x19_cz75", "CUP_16Rnd_9x19_cz75", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_16Rnd_9x19_cz75", "CUP_16Rnd_9x19_cz75", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_Chestrig_khk", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_Chestrig_khk", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        backpack = "";
+        linkedItems[] = {"OPT_V_Chestrig_khk", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"OPT_V_Chestrig_khk", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        backpack = "tf_mr3000_bwmod";
+        uniformClass = "CUP_U_O_RUS_Ghillie";
     };
 
     class OPT_CSAT_Scharfschuetze_2 : OPT_CSAT_Scharfschuetze
     {
         displayName = "Scharfschütze (FAL)";
         faction = "OPT_WP";
-        weapons[] = {"CUP_arifle_FNFAL5061_railed", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_FNFAL5061_railed", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_FNFAL5061_railed", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_FNFAL5061_railed", "Throw", "Put"};
         magazines[] = {"CUP_20Rnd_762x51_FNFAL_M", "CUP_20Rnd_762x51_FNFAL_M", "CUP_20Rnd_762x51_FNFAL_M","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M", "CUP_20Rnd_762x51_FNFAL_M", "CUP_20Rnd_762x51_FNFAL_M","SmokeShell", "SmokeShell"};
         Items[] = {"CUP_bipod_FNFAL"};
         respawnItems[] = {"CUP_bipod_FNFAL"};
+        uniformClass = "CUP_U_O_RUS_Ghillie";
     };
 
     class O_engineer_F : O_Soldier_base_F
@@ -1943,13 +1957,14 @@ class CfgVehicles
         faction = "OPT_WP";
         Items[] = { "MineDetector"};
         respawnItems[] = {"MineDetector"};
-        weapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        backpack = "OPT_B_Carryall_ocamo_Eng";
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        backpack = "OPT_B_AssaultPack_VSR98Worm";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
     class OPT_CSAT_Sprengmeister : O_engineer_F
@@ -1959,13 +1974,14 @@ class CfgVehicles
         Items[] = { "MineDetector"};
         respawnItems[] = {"MineDetector"};
         engineer = 0;
-        weapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        backpack = "OPT_B_Carryall_ocamo_Eng";
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        backpack = "OPT_B_Carryall_VSR98Worm";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
     class O_medic_F : O_Soldier_base_F
@@ -1976,15 +1992,16 @@ class CfgVehicles
     {
         displayName = "Sanitäter";
         faction = "OPT_WP";
-        weapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_TacVest_khk", "OPT_H_HelmetO_ocamo", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
         items[] = {};
         respawnItems[] = {};
-        backpack = "OPT_B_FieldPack_ocamo_ReconMedic";
+        backpack = "OPT_B_AssaultPack_VSR98Worm";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
     class O_crew_F : O_Soldier_base_F
@@ -1995,14 +2012,15 @@ class CfgVehicles
     {
         displayName = "Besatzungsmitglied";
         faction = "OPT_WP";
-        weapons[] = {"CUP_smg_SA61", "Throw", "Put"};
-        respawnWeapons[] = {"CUP_smg_SA61", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
         magazines[] = {"CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"OPT_V_BandollierB_khk", "H_HelmetCrew_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
-        respawnLinkedItems[] = {"OPT_V_BandollierB_khk", "H_HelmetCrew_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_OPFOR"};
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "H_HelmetCrew_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "H_HelmetCrew_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
         items[] = {};
         respawnItems[] = {};
         backpack = "tf_mr3000_bwmod";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 };
