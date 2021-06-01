@@ -1768,12 +1768,12 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
         magazines[] = {"CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M","SmokeShell", "SmokeShell"};
-        linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_INDEP"};
-        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_4", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_4", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
         Items[] = {};
         respawnItems[] = {};
         backpack = "tf_mr3000_bwmod";
-        uniformClass = "CUP_U_O_RUS_Gorka_Partizan";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
     class O_officer_F : O_Soldier_base_F
