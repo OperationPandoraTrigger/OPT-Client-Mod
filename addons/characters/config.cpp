@@ -1469,7 +1469,7 @@ class CfgVehicles
         magazines[] = {"CUP_20Rnd_762x51_HK417", "CUP_20Rnd_762x51_HK417", "CUP_20Rnd_762x51_HK417", "CUP_15Rnd_9x19_M9", "CUP_15Rnd_9x19_M9", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_20Rnd_762x51_HK417", "CUP_20Rnd_762x51_HK417", "CUP_20Rnd_762x51_HK417", "CUP_15Rnd_9x19_M9", "CUP_15Rnd_9x19_M9", "SmokeShell", "SmokeShell"};
         backpack = "tf_rt1523g_big_bwmod";
-        uniformClass = "CUP_U_B_BAF_DPM_GHILLIE";
+        uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
     class B_CTRG_soldier_GL_LAT_F : B_Soldier_base_F
@@ -1976,7 +1976,7 @@ class CfgVehicles
         respawnMagazines[] = {"CUP_20Rnd_762x51_FNFAL_M", "CUP_20Rnd_762x51_FNFAL_M", "CUP_20Rnd_762x51_FNFAL_M","SmokeShell", "SmokeShell"};
         Items[] = {"CUP_bipod_FNFAL"};
         respawnItems[] = {"CUP_bipod_FNFAL"};
-        uniformClass = "CUP_U_O_RUS_Ghillie";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
     class O_engineer_F : O_Soldier_base_F
