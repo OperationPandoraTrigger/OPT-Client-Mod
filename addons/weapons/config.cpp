@@ -6448,10 +6448,20 @@ class CfgVehicles
 
         class TransportWeapons
         {
+            class _xx_CUP_launch_MAAWS
+            {
+                weapon = "CUP_launch_MAAWS";
+                count = 1;
+            };
         };
 
         class TransportItems
         {
+            class _xx_CUP_optic_MAAWS_Scope
+            {
+                name = "CUP_optic_MAAWS_Scope";
+                count = 1;
+            };
         };
 
         class TransportBackpacks
@@ -6463,7 +6473,7 @@ class CfgVehicles
             class _xx_CUP_MAAWS_HEAT_M
             {
                 magazine = "CUP_MAAWS_HEAT_M";
-                count = 10;
+                count = 5;
             };
         };
     };
@@ -6480,7 +6490,7 @@ class CfgVehicles
             class _xx_CUP_launch_M72A6_Loaded
             {
                 weapon = "CUP_launch_M72A6_Loaded";
-                count = 10;
+                count = 5;
             };
         };
 
@@ -6591,7 +6601,7 @@ class CfgVehicles
             class _xx_CUP_Stinger_M
             {
                 magazine = "OPT_CUP_Stinger_M";
-                count = 5;
+                count = 10;
             };
         };
     };
@@ -7535,10 +7545,20 @@ class CfgVehicles
 
         class TransportWeapons
         {
+            class _xx_CUP_launch_Mk153Mod0
+            {
+                weapon = "CUP_launch_Mk153Mod0";
+                count = 1;
+            };
         };
 
         class TransportItems
         {
+            class _xx_CUP_optic_SMAW_Scope
+            {
+                name = "CUP_optic_SMAW_Scope";
+                count = 1;
+            };
         };
 
         class TransportBackpacks
@@ -7768,7 +7788,7 @@ class CfgVehicles
             class _xx_CUP_launch_RPG18
             {
                 weapon = "CUP_launch_RPG18";
-                count = 10;
+                count = 5;
             };
         };
 
@@ -7878,7 +7898,7 @@ class CfgVehicles
             class _xx_OPT_CUP_Igla_M
             {
                 magazine = "OPT_CUP_Igla_M";
-                count = 5;
+                count = 10;
             };
         };
     };
