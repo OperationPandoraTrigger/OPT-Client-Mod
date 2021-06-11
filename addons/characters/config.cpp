@@ -1406,6 +1406,22 @@ class CfgVehicles
         uniformClass = "CUP_U_B_USArmy_PilotOverall";
     };
 
+    class OPT_NATO_Pilot_jet : B_Helipilot_F
+    {
+        displayName = "Jet Pilot";
+        faction = "OPT_NATO_CUP";
+        weapons[] = {"OPT_CUP_smg_Mac10", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_smg_Mac10", "Throw", "Put"};
+        magazines[] = {"CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "CUP_30Rnd_45ACP_MAC10_M", "SmokeShell", "SmokeShell"};
+        Items[] = {};
+        respawnItems[] = {};
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_SPH4_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "H_PilotHelmetHeli_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
+        backpack = "tf_rt1523g_big_bwmod";
+        uniformClass = "CUP_U_B_USArmy_PilotOverall";
+    };
+
     class B_Soldier_sniper_base_F : B_Soldier_base_F
     {
     };
@@ -1763,6 +1779,22 @@ class CfgVehicles
     class OPT_CSAT_Pilot : O_helipilot_F
     {
         displayName = "Pilot";
+        faction = "OPT_WP";
+        weapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
+        magazines[] = {"CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M","SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M", "CUP_20Rnd_B_765x17_Ball_M","SmokeShell", "SmokeShell"};
+        linkedItems[] = {"CUP_V_RUS_6B3_Flora_4", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_INDEP"};
+        respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_4", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps", "NVGoggles_INDEP"};
+        Items[] = {};
+        respawnItems[] = {};
+        backpack = "tf_mr3000_bwmod";
+        uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
+    };
+
+    class OPT_CSAT_Pilot_jet : O_helipilot_F
+    {
+        displayName = "Jet Pilot";
         faction = "OPT_WP";
         weapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
         respawnWeapons[] = {"OPT_CUP_smg_SA61", "Throw", "Put"};
