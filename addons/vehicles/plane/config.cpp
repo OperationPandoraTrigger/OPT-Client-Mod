@@ -1284,8 +1284,8 @@ class CfgVehicles
     class OPT_CUP_B_L39_CZ_GREY : CUP_B_L39_CZ_GREY
     {
         faction = "OPT_NATO_CUP";
-        weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
+        weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
+        magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_0.paa","\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_1.paa"};
 
         class Components : Components
@@ -1296,7 +1296,7 @@ class CfgVehicles
                 {
                     class Pylons1 : Pylons1
                     {
-                        attachment = "CUP_PylonPod_16Rnd_S5_plane_M";
+                        attachment = "";
                     };
 
                     class Pylons2 : Pylons2
@@ -1311,7 +1311,7 @@ class CfgVehicles
 
                     class Pylons4 : Pylons4
                     {
-                        attachment = "CUP_PylonPod_16Rnd_S5_plane_M";
+                        attachment = "";
                     };
                 };
             };
@@ -1351,8 +1351,8 @@ class CfgVehicles
     class OPT_CUP_O_Su25_Dyn_RU : CUP_O_Su25_Dyn_RU
     {
         faction = "OPT_WP";
-        weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
+        weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
+        magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
 
         class Components : Components
         {
@@ -1381,7 +1381,7 @@ class CfgVehicles
                     class RightWingInner : RightWingOut 
                     {
                         hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
-                        attachment = "CUP_PylonPod_20Rnd_S8_plane_M";
+                        attachment = "";
                         maxweight = 1050;
                         priority = 3;
                         UIposition[] = {0.3+0.02, 0.01+0.10};
@@ -1424,7 +1424,7 @@ class CfgVehicles
                     class LeftWingInner : RightWingInner 
                     {
                         hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
-                        attachment = "CUP_PylonPod_20Rnd_S8_plane_M";
+                        attachment = "";
                         mirroredMissilePos = 3;
                         UIposition[] = {0.3+0.02, 0.01+0.44};
                     };
