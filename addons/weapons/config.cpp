@@ -874,11 +874,21 @@ class CfgMagazines
         count = 50;
     };
 
+    class OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M : CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M
+    {
+        count = 80;
+    };
+
     class CUP_2000Rnd_23mm_AZP23_M;
 
     class OPT_CUP_50Rnd_23mm_AZP23_M : CUP_2000Rnd_23mm_AZP23_M
     {
         count = 50;
+    };
+
+    class OPT_CUP_80Rnd_23mm_AZP23_M : CUP_2000Rnd_23mm_AZP23_M
+    {
+        count = 80;
     };
 
     class CUP_40Rnd_GRAD_HE;
@@ -4653,16 +4663,16 @@ class CfgWeapons
 
     class OPT_CUP_Vacannon_M168_M163VADS : CUP_Vacannon_M168_M163VADS
     {
-        magazineReloadTime=10;
-        magazines[] = {"CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M", "OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M"};
+        magazineReloadTime=5;
+        magazines[] = {"CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M", "OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M", "OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M"};
     };
 
     class CUP_Vacannon_AZP23_veh;
 
     class OPT_CUP_Vacannon_AZP23_veh : CUP_Vacannon_AZP23_veh
     {
-        magazineReloadTime=10;
-        magazines[] = {"CUP_2000Rnd_23mm_AZP23_M", "CUP_2000Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M"};
+        magazineReloadTime=5;
+        magazines[] = {"CUP_2000Rnd_23mm_AZP23_M", "CUP_2000Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M"};
     };
 
     class CUP_Vmlauncher_GRAD_ACR_veh;

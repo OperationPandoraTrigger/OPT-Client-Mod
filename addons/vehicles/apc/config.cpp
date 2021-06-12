@@ -3130,7 +3130,7 @@ class CfgVehicles
             class MainTurret : MainTurret 
             {
                 weapons[] = {"OPT_CUP_Vacannon_M168_M163VADS", "SmokeLauncher"};
-                magazines[] = {"OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M", "SmokeLauncherMag"};
+                magazines[] = {"OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M", "SmokeLauncherMag"};
             };
         };
 
@@ -3175,7 +3175,7 @@ class CfgVehicles
             class MainTurret : MainTurret 
             {
                 weapons[] = {"OPT_CUP_Vacannon_AZP23_veh", "SmokeLauncher"};
-                magazines[] = {"OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M", "SmokeLauncherMag"};
+                magazines[] = {"OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M", "SmokeLauncherMag"};
             };
         };
 
