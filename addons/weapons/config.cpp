@@ -940,6 +940,20 @@ class CfgMagazines
         minThrowIntensityCoef = 0.3;
         simulation = "ProxyMagazines";
     };
+
+    class CUP_8Rnd_AT5_BMP2_M;
+
+    class OPT_CUP_8Rnd_AT5_BMP2_M: CUP_8Rnd_AT5_BMP2_M
+    {
+        count = 5;
+    };
+
+    class CUP_2Rnd_TOW_M;
+
+    class OPT_CUP_1Rnd_TOW_M: CUP_2Rnd_TOW_M
+    {
+        count = 1;
+    };
 };
 
 class CfgWeapons
@@ -4680,6 +4694,20 @@ class CfgWeapons
     class OPT_CUP_Vmlauncher_GRAD_ACR_veh : CUP_Vmlauncher_GRAD_ACR_veh
     {
         magazines[] = {"CUP_40Rnd_GRAD_HE","OPT_CUP_40Rnd_GRAD_HE"};
+    };
+
+    class CUP_Vmlauncher_AT5_single_veh;
+
+    class OPT_CUP_Vmlauncher_AT5_single_veh : CUP_Vmlauncher_AT5_single_veh
+    {
+        magazines[] = {"CUP_8Rnd_AT5_BMP2_M","OPT_CUP_5Rnd_AT5_BMP2_M"};
+    };
+
+    class CUP_Vmlauncher_TOW_veh;
+
+    class OPT_CUP_Vmlauncher_TOW_veh : CUP_Vmlauncher_TOW_veh
+    {
+        magazines[] = {"CUP_2Rnd_TOW2_M","OPT_CUP_1Rnd_TOW2_M"};
     };
 
 };

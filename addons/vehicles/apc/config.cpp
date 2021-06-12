@@ -2983,6 +2983,9 @@ class CfgVehicles
         {
             class MainTurret : MainTurret 
             {
+                weapons[] = {"CUP_Vacannon_M242_veh", "CUP_Vlmg_M240_veh_laser", "OPT_CUP_Vmlauncher_TOW_veh"};
+				magazines[] = {"CUP_210Rnd_TE1_Red_Tracer_25mm_M242_APFSDS", "CUP_210Rnd_TE1_Red_Tracer_25mm_M242_HE", "CUP_210Rnd_TE1_Red_Tracer_25mm_M242_HE", "CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M", "OPT_CUP_1Rnd_TOW2_M", "OPT_CUP_1Rnd_TOW2_M", "OPT_CUP_1Rnd_TOW2_M", "OPT_CUP_1Rnd_TOW2_M" , "OPT_CUP_1Rnd_TOW2_M"};
+                
                 class Turrets : Turrets
                 {
                     class CommanderOptics : CommanderOptics
@@ -3082,8 +3085,8 @@ class CfgVehicles
         {
             class MainTurret : MainTurret 
             {
-                weapons[] = {"CUP_Vacannon_2A42_veh", "CUP_Vhmg_PKT_veh_Noeject", "CUP_Vmlauncher_AT5_single_veh"};
-                magazines[] = {"CUP_250Rnd_TE1_Green_Tracer_30mmHE_2A42_M", "CUP_250Rnd_TE1_Green_Tracer_30mmAP_2A42_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_8Rnd_AT5_BMP2_M"};
+                weapons[] = {"CUP_Vacannon_2A42_veh", "CUP_Vhmg_PKT_veh_Noeject", "OPT_CUP_Vmlauncher_AT5_single_veh"};
+                magazines[] = {"CUP_250Rnd_TE1_Green_Tracer_30mmHE_2A42_M", "CUP_250Rnd_TE1_Green_Tracer_30mmAP_2A42_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "OPT_CUP_5Rnd_AT5_BMP2_M"};
 
             };  
         };
