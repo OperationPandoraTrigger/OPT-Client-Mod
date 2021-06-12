@@ -35,7 +35,7 @@ class CfgPatches
         versionAr[] = {VERSION_AR};
         requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
                             "a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
-                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons","CUP_Weapons_Ammunition","CUP_Weapons_Stinger","CUP_Weapons_IGLA","CUP_Weapons_StaticWeapons"};
+                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons","CUP_Weapons_Ammunition","CUP_Weapons_Stinger","CUP_Weapons_IGLA","CUP_Weapons_StaticWeapons","CUP_TrackedVehicles_Bradley","CUP_AirVehicles_Su25"};
     };
 };
 
@@ -943,16 +943,23 @@ class CfgMagazines
 
     class CUP_8Rnd_AT5_BMP2_M;
 
-    class OPT_CUP_8Rnd_AT5_BMP2_M: CUP_8Rnd_AT5_BMP2_M
+    class OPT_CUP_5Rnd_AT5_BMP2_M: CUP_8Rnd_AT5_BMP2_M
     {
         count = 5;
     };
 
-    class CUP_2Rnd_TOW_M;
+    class CUP_2Rnd_TOW2_M;
 
-    class OPT_CUP_1Rnd_TOW_M: CUP_2Rnd_TOW_M
+    class OPT_CUP_1Rnd_TOW2_M: CUP_2Rnd_TOW2_M
     {
         count = 1;
+    };
+
+    class CUP_250Rnd_TE1_30mm_GSh302K_HE_M;
+
+    class OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M: CUP_250Rnd_TE1_30mm_GSh302K_HE_M
+    {
+        count = 50;
     };
 };
 
@@ -4708,6 +4715,13 @@ class CfgWeapons
     class OPT_CUP_Vmlauncher_TOW_veh : CUP_Vmlauncher_TOW_veh
     {
         magazines[] = {"CUP_2Rnd_TOW2_M","OPT_CUP_1Rnd_TOW2_M"};
+    };
+
+    class CUP_Vacannon_GSh302K_veh;
+
+    class OPT_CUP_Vacannon_GSh302K_veh : CUP_Vacannon_GSh302K_veh
+    {
+        magazines[] = {"CUP_250Rnd_TE1_30mm_GSh302K_HE_M","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
     };
 
 };
