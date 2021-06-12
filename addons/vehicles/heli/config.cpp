@@ -3187,6 +3187,8 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"OPT_72Rnd_CMFlare_Chaff_Magazine"};
 
         class TransportItems
         {
@@ -3230,7 +3232,7 @@ class CfgVehicles
                     class pylonLeft2 : pylonLeft1 
                     {
                         UIposition[] = {0.57, 0.4};
-                        attachment = "CUP_PylonPod_2Rnd_AGM114L_Hellfire_II_M";
+                        attachment = "";
                         turret[] = {"MainTurret"};
                         priority = 4;
                     };
@@ -3323,6 +3325,8 @@ class CfgVehicles
     {
         faction = "OPT_WP";
         driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"OPT_72Rnd_CMFlare_Chaff_Magazine"};
 
         class TransportItems
         {
@@ -3356,7 +3360,7 @@ class CfgVehicles
                     class pylons1 
                     {
                         hardpoints[] = {CUP_EAST_HELO_HIND_WINGTIP};
-                        attachment = "CUP_PylonPod_2Rnd_AGM114L_Hellfire_II_M";
+                        attachment = "";
                         bay = -1;
                         priority = 6;
                         UIposition[] = {0.02, 0.3};
