@@ -1452,6 +1452,294 @@ class CfgVehicles
         {
         };
 
-    };   
+    };
+
+    // Nato Cessna
+    class CUP_C_Cessna_172_CIV_BLUE;
+
+    class OPT_CUP_C_Cessna_172_CIV_BLUE : CUP_C_Cessna_172_CIV_BLUE
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        crew = "CUP_B_USMC_Pilot";
+        typicalCargo[] = {"CUP_B_USMC_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // WP Cessna
+    class CUP_C_Cessna_172_CIV_GREEN;
+
+    class OPT_CUP_C_Cessna_172_CIV_GREEN : CUP_C_Cessna_172_CIV_GREEN
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 4;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    }; 
+
+    // Nato AN-2
+    class CUP_C_AN2_CIV;
+
+    class OPT_CUP_C_AN2_CIV : CUP_C_AN2_CIV
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        crew = "CUP_B_USMC_Pilot";
+        typicalCargo[] = {"CUP_B_USMC_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 4;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // WP AN-2
+    class CUP_O_AN2_TK;
+
+    class OPT_CUP_O_AN2_TK : CUP_O_AN2_TK
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // Nato LI-2
+    class CUP_C_DC3_ChernAvia_CIV;
+
+    class OPT_CUP_C_DC3_ChernAvia_CIV : CUP_C_DC3_ChernAvia_CIV
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        crew = "CUP_B_USMC_Pilot";
+        typicalCargo[] = {"CUP_B_USMC_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // WP LI-2
+    class CUP_O_C47_SLA;
+
+    class OPT_CUP_O_C47_SLA : CUP_O_C47_SLA
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // Nato C130
+    class CUP_B_C130J_USMC;
+
+    class OPT_CUP_B_C130J_USMC : CUP_B_C130J_USMC
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        crew = "CUP_B_USMC_Pilot";
+        typicalCargo[] = {"CUP_B_USMC_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // WP C130
+    class CUP_O_C130J_TKA;
+
+    class OPT_CUP_O_C130J_TKA : CUP_O_C130J_TKA
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };       
 };
 
