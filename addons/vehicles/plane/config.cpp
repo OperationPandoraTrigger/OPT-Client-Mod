@@ -7,7 +7,7 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = 0.100000;
         requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_air_f_gamma_plane_fighter_03", "a3_air_f_epc_plane_cas_02", "a3_air_f_epc_plane_cas_01", "A3_Air_F_Exp", "A3_Air_F_Exp_VTOL_01", "A3_Air_F_Exp_VTOL_02", "A3_Soft_F_Exp", "A3_Soft_F_Exp_LSV_01", "A3_Soft_F_Exp_LSV_02",
-                            "A3_Air_F_Jets", "A3_Air_F_Jets_Plane_Fighter_01", "A3_Air_F_Jets_Plane_Fighter_02"};
+                            "A3_Air_F_Jets", "A3_Air_F_Jets_Plane_Fighter_01", "A3_Air_F_Jets_Plane_Fighter_02","CUP_AirVehicles_L39","CUP_AirVehicles_Su25"};
     };
 };
 
@@ -1257,4 +1257,489 @@ class CfgVehicles
             };
         };
     };
+
+    //L-39AZ
+    class CUP_L39_DYN_Base;
+
+    class CUP_B_L39_CZ_GREY : CUP_L39_DYN_Base
+    {
+        class pilotCamera;
+        class OpticsIn;
+        class Medium;
+        class Narrow;
+        class Wide;
+        class AnimationSources;
+        class Components;
+        class TransportPylonsComponent;
+        class Pylons;
+        class Pylons1;
+        class Pylons2;
+        class Pylons3;
+        class Pylons4;
+        class Pylons5;
+        class Pylons6;
+        class Pylons7;
+    };
+
+    class OPT_CUP_B_L39_CZ_GREY : CUP_B_L39_CZ_GREY
+    {
+        faction = "OPT_NATO_CUP";
+        weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
+        magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_0.paa","\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_1.paa"};
+
+        class Components : Components
+        {
+            class TransportPylonsComponent : TransportPylonsComponent
+            {
+                class Pylons : Pylons
+                {
+                    class Pylons1 : Pylons1
+                    {
+                        attachment = "";
+                    };
+
+                    class Pylons2 : Pylons2
+                    {
+                        attachment = "CUP_PylonPod_16Rnd_S5_plane_M";
+                    };
+
+                    class Pylons3 : Pylons3
+                    {
+                        attachment = "CUP_PylonPod_16Rnd_S5_plane_M";
+                    };
+
+                    class Pylons4 : Pylons4
+                    {
+                        attachment = "";
+                    };
+                };
+            };
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    //SU-25T
+    class CUP_Su25_Dyn_Base;
+
+    class CUP_O_Su25_Dyn_RU : CUP_Su25_Dyn_Base
+    {
+        class pilotCamera;
+        class OpticsIn;
+        class Medium;
+        class Narrow;
+        class Wide;
+        class AnimationSources;
+        class Components;
+        class TransportPylonsComponent;
+        class Pylons;
+        class RightWingOut;
+        class RightWingMiddle;
+        class RightWingInner;
+        class RightWingGear;
+        class RightBody;
+        class LeftBody;
+        class LeftWingGear;
+        class LeftWingInner;
+        class LefttWingMiddle;
+        class LeftWingOut;
+    };
+
+    class OPT_CUP_O_Su25_Dyn_RU : CUP_O_Su25_Dyn_RU
+    {
+        faction = "OPT_WP";
+        weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
+        magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
+
+        class Components : Components
+        {
+            class TransportPylonsComponent : TransportPylonsComponent
+            {
+                class Pylons : Pylons
+                {
+                    class RightWingOut 
+                    {
+                        attachment = "";
+                        hardpoints[] = {CUP_O_AA_MISSILE_PYLON};
+                        maxweight = 300;
+                        priority = 5;
+                        UIposition[] = {0.3+0.04, 0.01+0.0};
+                    };
+                        
+                    class RightWingMiddle : RightWingOut 
+                    {
+                        attachment = "";
+                        hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
+                        maxweight = 500;
+                        priority = 4;
+                        UIposition[] = {0.3+0.03, 0.01+0.05};
+                    };
+                    
+                    class RightWingInner : RightWingOut 
+                    {
+                        hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
+                        attachment = "";
+                        maxweight = 1050;
+                        priority = 3;
+                        UIposition[] = {0.3+0.02, 0.01+0.10};
+                    };
+                    
+                    class RightWingGear : RightWingOut 
+                    {
+                        hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
+                        attachment = "";
+                        maxweight = 1200;
+                        priority = 2;
+                        UIposition[] = {0.3+0.01, 0.01+0.15};
+                    };
+                    
+                    class RightBody : RightWingOut 
+                    {
+                        hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
+                        attachment = "CUP_PylonPod_20Rnd_S8_plane_M";
+                        maxweight = 1200;
+                        priority = 1;
+                        UIposition[] = {0.3, 0.01+0.22};
+                    };
+                    
+                    class LeftBody : RightBody 
+                    {
+                        hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
+                        attachment = "CUP_PylonPod_20Rnd_S8_plane_M";
+                        mirroredMissilePos = 5;
+                        UIposition[] = {0.3, 0.01+0.32};
+                    };
+                    
+                    class LeftWingGear : RightWingGear 
+                    {
+                        hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
+                        attachment = "";
+                        mirroredMissilePos = 4;
+                        UIposition[] = {0.3+0.01, 0.01+0.39};
+                    };
+                    
+                    class LeftWingInner : RightWingInner 
+                    {
+                        hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
+                        attachment = "";
+                        mirroredMissilePos = 3;
+                        UIposition[] = {0.3+0.02, 0.01+0.44};
+                    };
+                    
+                    class LefttWingMiddle : RightWingMiddle 
+                    {
+                        hardpoints[] = {O_MISSILE_PYLON, O_BOMB_PYLON};
+                        attachment = "";
+                        mirroredMissilePos = 2;
+                        UIposition[] = {0.3+0.03, 0.01+0.49};
+                    };
+                    
+                    class LeftWingOut : RightWingOut 
+                    {
+                        hardpoints[] = {CUP_O_AA_MISSILE_PYLON};
+                        attachment = "";
+                        mirroredMissilePos = 1;
+                        UIposition[] = {0.3+0.04, 0.01+0.54};
+                    };
+                };
+            };
+        };
+
+        class TransportItems
+        {
+        };
+
+    };
+
+    // Nato Cessna
+    class CUP_C_Cessna_172_CIV_BLUE;
+
+    class OPT_CUP_C_Cessna_172_CIV_BLUE : CUP_C_Cessna_172_CIV_BLUE
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        crew = "CUP_B_USMC_Pilot";
+        typicalCargo[] = {"CUP_B_USMC_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // WP Cessna
+    class CUP_C_Cessna_172_CIV_GREEN;
+
+    class OPT_CUP_C_Cessna_172_CIV_GREEN : CUP_C_Cessna_172_CIV_GREEN
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 4;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    }; 
+
+    // Nato AN-2
+    class CUP_C_AN2_CIV;
+
+    class OPT_CUP_C_AN2_CIV : CUP_C_AN2_CIV
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        crew = "CUP_B_USMC_Pilot";
+        typicalCargo[] = {"CUP_B_USMC_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 4;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // WP AN-2
+    class CUP_O_AN2_TK;
+
+    class OPT_CUP_O_AN2_TK : CUP_O_AN2_TK
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // Nato LI-2
+    class CUP_C_DC3_ChernAvia_CIV;
+
+    class OPT_CUP_C_DC3_ChernAvia_CIV : CUP_C_DC3_ChernAvia_CIV
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        crew = "CUP_B_USMC_Pilot";
+        typicalCargo[] = {"CUP_B_USMC_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // WP LI-2
+    class CUP_O_C47_SLA;
+
+    class OPT_CUP_O_C47_SLA : CUP_O_C47_SLA
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // Nato C130
+    class CUP_B_C130J_USMC;
+
+    class OPT_CUP_B_C130J_USMC : CUP_B_C130J_USMC
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        crew = "CUP_B_USMC_Pilot";
+        typicalCargo[] = {"CUP_B_USMC_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    // WP C130
+    class CUP_O_C130J_TKA;
+
+    class OPT_CUP_O_C130J_TKA : CUP_O_C130J_TKA
+    {
+        faction = "OPT_WP";
+        side = 0;
+        crew = "CUP_O_RU_Pilot";
+        typicalCargo[] = {"CUP_O_RU_Pilot"};
+        driverCanEject = 1;
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+
+        class TransportItems
+        {
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportBackpacks
+        {
+            class _xx_B_Parachute
+            {
+                backpack = "B_Parachute";
+                count = 14;
+            };
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };       
 };
+

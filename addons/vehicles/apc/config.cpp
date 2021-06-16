@@ -14,7 +14,7 @@ class CfgPatches
                             "a3_soft_f_gamma_offroad", "a3_soft_f_gamma_quadbike", "a3_soft_f_truck", "a3_soft_f_car", "a3_soft_f_offroad_01", "a3_soft_f_quadbike",
                             "a3_soft_f_beta_quadbike", "a3_soft_f_suv", "a3_soft_f_epc_truck_03",
                             "a3_air_f_epc_plane_cas_02", "a3_air_f_epc_plane_cas_01", "a3_armor_f_epc_mbt_01", "a3_soft_f_bootcamp_offroad_01", "a3_air_f_gamma_uav_01", "A3_Air_F_Exp", "A3_Air_F_Exp_VTOL_01", "A3_Air_F_Exp_VTOL_02", "A3_Soft_F_Exp", "A3_Soft_F_Exp_LSV_01", "A3_Soft_F_Exp_LSV_02",
-                            "A3_Soft_F_Exp_MRAP_02", "A3_Soft_F_Exp_Truck_03", "A3_Air_F_Jets", "A3_Air_F_Jets_Plane_Fighter_01", "A3_Air_F_Jets_Plane_Fighter_02"};
+                            "A3_Soft_F_Exp_MRAP_02", "A3_Soft_F_Exp_Truck_03", "A3_Air_F_Jets", "A3_Air_F_Jets_Plane_Fighter_01", "A3_Air_F_Jets_Plane_Fighter_02","CUP_WheeledVehicles_BTR90","CUP_TrackedVehicles_ZSU23","CUP_TrackedVehicles_M113","CUP_TrackedVehicles_Bradley"};
     };
 };
 
@@ -2914,6 +2914,286 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+    };
+
+    //LAV C2
+    class CUP_B_LAV25_HQ_USMC;
+
+    class OPT_CUP_B_LAV25_HQ_USMC: CUP_B_LAV25_HQ_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //BTR-60 PB
+    class CUP_O_BTR60_RU;
+
+    class OPT_CUP_O_BTR60_RU: CUP_O_BTR60_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //M2A2 Bradley IFV
+    class CUP_M2Bradley_Base;
+
+    class CUP_B_M2Bradley_USA_W : CUP_M2Bradley_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
+
+    class OPT_CUP_B_M2Bradley_USA_W: CUP_B_M2Bradley_USA_W
+    {
+        faction = "OPT_NATO_CUP";
+        
+        class Turrets : Turrets 
+        {
+            class MainTurret : MainTurret 
+            {
+                weapons[] = {"CUP_Vacannon_M242_veh", "CUP_Vlmg_M240_veh_laser", "OPT_CUP_Vmlauncher_TOW_veh"};
+                magazines[] = {"CUP_210Rnd_TE1_Red_Tracer_25mm_M242_APFSDS", "CUP_210Rnd_TE1_Red_Tracer_25mm_M242_HE", "CUP_210Rnd_TE1_Red_Tracer_25mm_M242_HE", "CUP_1200Rnd_TE4_Red_Tracer_762x51_M240_M", "OPT_CUP_1Rnd_TOW2_M", "OPT_CUP_1Rnd_TOW2_M", "OPT_CUP_1Rnd_TOW2_M", "OPT_CUP_1Rnd_TOW2_M" , "OPT_CUP_1Rnd_TOW2_M"};
+                
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        class ViewGunner : ViewGunner
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+
+                        class ViewOptics : ViewOptics
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+
+                        class OpticsIn : OpticsIn
+                        {
+                            class Wide : Wide
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+
+                            class Medium : Medium
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+
+                            class Narrow : Narrow
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+                        };
+                    };
+                };
+
+                class ViewOptics : ViewOptics
+                {
+                    visionMode[] = {"Normal", "NVG"};
+                };
+
+                class OpticsIn : OpticsIn
+                {
+                    class Wide : Wide
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Medium : Medium
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Narrow : Narrow
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+                };
+            };    
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //BTR90
+    class CUP_BTR90_Base;
+
+    class CUP_O_BTR90_RU : CUP_BTR90_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
+
+    class OPT_CUP_O_BTR90_RU: CUP_O_BTR90_RU
+    {
+        faction = "OPT_WP";
+
+        class Turrets : Turrets 
+        {
+            class MainTurret : MainTurret 
+            {
+                weapons[] = {"CUP_Vacannon_2A42_veh", "CUP_Vhmg_PKT_veh_Noeject", "OPT_CUP_Vmlauncher_AT5_single_veh"};
+                magazines[] = {"CUP_250Rnd_TE1_Green_Tracer_30mmHE_2A42_M", "CUP_250Rnd_TE1_Green_Tracer_30mmAP_2A42_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "CUP_250Rnd_TE1_Green_Tracer_762x54_PKT_M", "OPT_CUP_5Rnd_AT5_BMP2_M"};
+
+            };  
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+
+    };
+
+    //M163A1 VADS
+    class CUP_M163_Base;
+
+    class CUP_B_M163_USA : CUP_M163_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
+
+    class OPT_CUP_B_M163_USA: CUP_B_M163_USA
+    {
+        faction = "OPT_NATO_CUP";
+
+        class Turrets : Turrets 
+        {
+            class MainTurret : MainTurret 
+            {
+                weapons[] = {"OPT_CUP_Vacannon_M168_M163VADS", "SmokeLauncher"};
+                magazines[] = {"OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M","OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M", "SmokeLauncherMag"};
+            };
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //ZSU-23-4 Afghanski
+    class CUP_ZSU23_Afghan_Base;
+
+    class CUP_O_ZSU23_Afghan_SLA : CUP_ZSU23_Afghan_Base
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+    };
+
+    class OPT_CUP_O_ZSU23_Afghan_SLA: CUP_O_ZSU23_Afghan_SLA
+    {
+        faction = "OPT_WP";
+
+        class Turrets : Turrets 
+        {
+            class MainTurret : MainTurret 
+            {
+                weapons[] = {"OPT_CUP_Vacannon_AZP23_veh", "SmokeLauncher"};
+                magazines[] = {"OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M", "SmokeLauncherMag"};
+            };
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+
     };
 
 };

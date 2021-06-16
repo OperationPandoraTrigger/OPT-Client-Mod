@@ -2175,4 +2175,314 @@ class CfgVehicles
         {
         };
     };
+
+    //Motorrad M1030
+    class CUP_B_M1030_USA;
+
+    class OPT_CUP_B_M1030_USA: CUP_B_M1030_USA
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //Motorrad TT650
+    class CUP_O_TT650_TKA;
+
+    class OPT_CUP_O_TT650_TKA: CUP_O_TT650_TKA
+    {
+        faction = "OPT_WP";
+
+        class TransportItems
+        {
+        };
+    };
+
+    //Land Rover 110
+    class CUP_B_LR_Transport_GB_W;
+
+    class OPT_CUP_B_LR_Transport_GB_W: CUP_B_LR_Transport_GB_W
+    {
+        faction = "OPT_NATO_CUP";
+        hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //UAZ
+    class CUP_O_UAZ_Unarmed_RU;
+
+    class OPT_CUP_O_UAZ_Unarmed_RU: CUP_O_UAZ_Unarmed_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //Land Rover M2
+    class CUP_B_LR_MG_GB_W;
+
+    class OPT_CUP_B_LR_MG_GB_W: CUP_B_LR_MG_GB_W
+    {
+        faction = "OPT_NATO_CUP";
+        hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //UAZ 469 DShKM
+    class CUP_O_UAZ_MG_RU;
+
+    class OPT_CUP_O_UAZ_MG_RU: CUP_O_UAZ_MG_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //HMMWV
+    class CUP_B_HMMWV_Unarmed_USMC;
+
+    class OPT_CUP_B_HMMWV_Unarmed_USMC: CUP_B_HMMWV_Unarmed_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //GAZ 3937 Vodnik
+    class CUP_O_GAZ_Vodnik_Unarmed_RU;
+
+    class OPT_CUP_O_GAZ_Vodnik_Unarmed_RU: CUP_O_GAZ_Vodnik_Unarmed_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //HMMWV M2
+    class CUP_B_HMMWV_M2_USMC;
+
+    class OPT_CUP_B_HMMWV_M2_USMC: CUP_B_HMMWV_M2_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //GAZ 3937 Vodnik 2xPKM
+    class CUP_O_GAZ_Vodnik_PK_RU;
+
+    class OPT_CUP_O_GAZ_Vodnik_PK_RU: CUP_O_GAZ_Vodnik_PK_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //HMMWV TOW
+    class CUP_B_HMMWV_TOW_USMC;
+
+    class OPT_CUP_B_HMMWV_TOW_USMC: CUP_B_HMMWV_TOW_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //BRDM-2 ATGM
+    class CUP_O_BRDM2_ATGM_RUS;
+
+    class OPT_CUP_O_BRDM2_ATGM_RUS: CUP_O_BRDM2_ATGM_RUS
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //HMMWV Ambulance
+    class CUP_B_HMMWV_Ambulance_USMC;
+
+    class OPT_CUP_B_HMMWV_Ambulance_USMC: CUP_B_HMMWV_Ambulance_USMC
+    {
+        faction = "OPT_NATO_CUP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //GAZ 3937 Vodnik Medic
+    class CUP_O_GAZ_Vodnik_MedEvac_RU;
+
+    class OPT_CUP_O_GAZ_Vodnik_MedEvac_RU: CUP_O_GAZ_Vodnik_MedEvac_RU
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //Landrover AA
+    class CUP_I_LR_AA_RACS;
+
+    class OPT_CUP_B_LR_AA_RACS: CUP_I_LR_AA_RACS
+    {
+        faction = "OPT_NATO_CUP";
+        side = 1;
+        rew = "CUP_B_USMC_Soldier_FROG_WDL";
+        typicalCargo[] = {"CUP_B_USMC_Soldier_FROG_WDL"};
+        hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    //UAZ AA
+    class CUP_O_LR_AA_TKA;
+
+    class OPT_CUP_O_LR_AA_TKA: CUP_O_LR_AA_TKA
+    {
+        faction = "OPT_WP";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
 };
