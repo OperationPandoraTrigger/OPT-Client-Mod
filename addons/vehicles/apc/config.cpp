@@ -2964,8 +2964,8 @@ class CfgVehicles
                 memoryPointGunnerOptics = "comgunviewin";
                 gunnerOutOpticsModel = "\cup\wheeledvehicles\cup_wheeledvehicles_lav25\proxies\optika_empty";
                 memoryPointGun = "usti hlavne";
-                gunBeg = "usti hlavne";	// endpoint of the gun
-                gunEnd = "konec hlavne";	// chamber of the gun
+                gunBeg = "usti hlavne";
+                gunEnd = "konec hlavne";
                 body = "ComTurret";
                 gun = "ComGun";
                 viewGunnerInExternal = false;
