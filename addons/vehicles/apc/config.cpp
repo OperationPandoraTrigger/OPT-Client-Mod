@@ -2917,11 +2917,119 @@ class CfgVehicles
     };
 
     //LAV C2
-    class CUP_B_LAV25_HQ_USMC;
+    class CUP_B_LAV25_USMC;
+
+    class CUP_B_LAV25_HQ_USMC : CUP_B_LAV25_USMC
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class Missiles_revolving;
+        class NewTurret;
+    };
 
     class OPT_CUP_B_LAV25_HQ_USMC: CUP_B_LAV25_HQ_USMC
     {
         faction = "OPT_NATO_CUP";
+        
+        class Turrets : Turrets 
+		{
+			class CommanderOptics : NewTurret 
+			{
+				weapons[] = {"CUP_Vlmg_M240_veh3", "SmokeLauncher"};
+				magazines[] = {"CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", "CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M", "SmokeLauncherMag"};
+				minElev = -20;
+				maxElev = 20;
+				initElev = 0;
+				minTurn = -90;
+				maxTurn = 90;
+				initTurn = 0;
+				minOutElev = -20;
+				maxOutElev = 20;
+				initOutElev = 0;
+				minOutTurn = -90;
+				maxOutTurn = 90;
+				initOutTurn = 0;
+				gunnerLeftHandAnimName = "OtocHlaven_Shake";
+				gunnerRightHandAnimName = "OtocHlaven_Shake";
+				memoryPointGunnerOutOptics = "gunnerview";
+				memoryPointGunnerOptics = "comgunviewin";
+				gunnerOutOpticsModel = "\cup\wheeledvehicles\cup_wheeledvehicles_lav25\proxies\optika_empty";
+				memoryPointGun = "usti hlavne";
+				gunBeg = "usti hlavne";	// endpoint of the gun
+				gunEnd = "konec hlavne";	// chamber of the gun
+				body = "ComTurret";
+				gun = "ComGun";
+				viewGunnerInExternal = false;
+				gunnerOpticsModel = "\cup\wheeledvehicles\cup_wheeledvehicles_lav25\2dscope_com1";
+				gunnerOutOpticsColor[] = {0, 0, 0, 1};
+				gunnerOutForceOptics = 0;
+				gunnerOutOpticsShowCursor = 0;
+				proxyType = "CPCommander";
+				proxyIndex = 1;
+				gunnerName = $STR_POSITION_COMMANDER;
+				primaryGunner = 1;
+				primaryObserver = 1;
+				animationSourceBody = "obsTurret";
+				animationSourceGun = "obsGun";
+				memoryPointsGetInGunner = "pos commander";
+				memoryPointsGetInGunnerDir = "pos commander dir";
+				gunnerCompartments = "Compartment2";
+				animationSourceHatch = "hatchGunner";
+				gunnerAction = "CUP_LAV25_commander_out_C2_mg";
+				gunnerGetInAction = "GetInHigh";
+				gunnerGetOutAction = "GetOutHigh";
+				selectionFireAnim = "zasleh_2";
+				InGunnerMayFire = false;
+				outGunnerMayFire = true;
+				gunnerOpticsShowCursor = 0;
+				LODTurnedIn = 1;
+				LODTurnedOut = 1;
+				
+				class ViewGunner 
+				{
+					visionMode[] = {"Normal", NVG};
+					thermalMode[] = {2, 3};
+					initAngleX = 5;
+					minAngleX = -65;
+					maxAngleX = 85;
+					initAngleY = 0;
+					minAngleY = -150;
+					maxAngleY = 150;
+					initFov = 0.7;
+					minFov = 0.25;
+					maxFov = 1.1;
+				};
+				gunnerOpticsEffect[] = {"TankGunnerOptics2", "OpticsBlur1", "OpticsCHAbera1"};
+				gunnerInAction = "CUP_LAV25_Commander";
+				
+				class ViewOptics 
+				{
+					initAngleX = 0;
+					minAngleX = -30;
+					maxAngleX = 30;
+					initAngleY = 0;
+					minAngleY = -100;
+					maxAngleY = 100;
+					initFov = 0.7;
+					minFov = 0.35;
+					maxFov = 0.9;
+					visionMode[] = {"Normal", NVG};
+					thermalMode[] = {0, 1};
+				};
+				discreteDistance[] = {100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200};
+				discreteDistanceInitIndex = 2;
+				turretInfoType = "RscWeaponRangeZeroing";
+			};
+        };
 
         class TransportMagazines
         {
@@ -3102,6 +3210,121 @@ class CfgVehicles
 
             };  
         };
+        
+		class RenderTargets 
+		{
+			class LeftMirror 
+			{
+				renderTarget = "rendertarget0";
+				
+				class CameraView1 
+                {
+					pointPosition = "pip_mirror_left_pos";
+					pointDirection = "pip_mirror_left_dir";
+					renderQuality = 2;
+					renderVisionMode = 0;
+					fov = 1.0;
+				};
+			};
+			
+			class DriverCenter 
+			{
+				renderTarget = "rendertarget2";
+				
+				class CameraView1 
+				{
+					pointPosition = "pip_driver_middle_pos";
+					pointDirection = "pip_driver_middle_dir";
+					renderQuality = 2;
+					renderVisionMode = 0;
+					fov = 1.0;
+				};
+			};
+			
+			class DriverRight 
+            {
+				renderTarget = "rendertarget3";
+				
+				class CameraView1 
+                {
+					pointPosition = "pip_driver_right_pos";
+					pointDirection = "pip_driver_right_dir";
+					renderQuality = 2;
+					renderVisionMode = 0;
+					fov = 1.0;
+				};
+			};
+			
+			class DriverLeft 
+            {
+				renderTarget = "rendertarget4";
+				
+				class CameraView1 
+                {
+					pointPosition = "pip_driver_left_pos";
+					pointDirection = "pip_driver_left_dir";
+					renderQuality = 2;
+					renderVisionMode = 0;
+					fov = 1.0;
+				};
+			};
+			
+			class GunnerLeft 
+            {
+				renderTarget = "rendertarget7";
+				
+				class CameraView1 
+                {
+					pointPosition = "pip_gunner_left_pos";
+					pointDirection = "pip_gunner_left_dir";
+					renderQuality = 2;
+					renderVisionMode = 0;
+					fov = 1.0;
+				};
+			};
+			
+			class GunnerRight 
+            {
+				renderTarget = "rendertarget1";
+				
+				class CameraView1 
+                {
+					pointPosition = "pip_gunner_right_pos";
+					pointDirection = "pip_gunner_right_dir";
+					renderQuality = 2;
+					renderVisionMode = 0;
+					fov = 1.0;
+				};
+			};
+			
+			class CommanderLeft 
+            {
+				renderTarget = "rendertarget5";
+				
+				class CameraView1 
+                {
+					pointPosition = "pip_commander_left_pos";
+					pointDirection = "pip_commander_left_dir";
+					renderQuality = 2;
+					renderVisionMode = 0;
+					fov = 1.0;
+				};
+			};
+			
+			class CommanderRight 
+            {
+				renderTarget = "rendertarget6";
+				
+				class CameraView1 
+                {
+					pointPosition = "pip_commander_right_pos";
+					pointDirection = "pip_commander_right_dir";
+					renderQuality = 2;
+					renderVisionMode = 0;
+					fov = 1.0;
+				};
+			};
+		};
 
         class TransportMagazines
         {
