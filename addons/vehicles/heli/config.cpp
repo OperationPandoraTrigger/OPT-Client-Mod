@@ -3189,6 +3189,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_72Rnd_CMFlare_Chaff_Magazine"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_0.paa","\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_1.paa","\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_2.paa"};
 
         class TransportItems
         {
