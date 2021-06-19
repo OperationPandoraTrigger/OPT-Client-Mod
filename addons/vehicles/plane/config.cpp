@@ -1320,6 +1320,10 @@ class CfgVehicles
         class TransportItems
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //SU-25T
@@ -1450,6 +1454,10 @@ class CfgVehicles
         };
 
         class TransportItems
+        {
+        };
+
+        class TransportBackpacks
         {
         };
 

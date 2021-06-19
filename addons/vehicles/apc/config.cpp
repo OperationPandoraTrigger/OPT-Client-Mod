@@ -2934,6 +2934,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+        
+        class TransportBackpacks
+        {
+        };
     };
 
     //BTR-60 PB
@@ -2952,6 +2956,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+        
+        class TransportBackpacks
         {
         };
     };
@@ -3056,6 +3064,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };        
     };
 
     //BTR90
@@ -3103,6 +3115,10 @@ class CfgVehicles
         {
         };
 
+        class TransportBackpacks
+        {
+        };        
+
     };
 
     //M163A1 VADS
@@ -3148,6 +3164,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };        
     };
 
     //ZSU-23-4 Afghanski
@@ -3193,6 +3213,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };        
 
     };
 

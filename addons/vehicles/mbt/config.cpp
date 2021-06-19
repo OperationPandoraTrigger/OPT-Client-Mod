@@ -1770,6 +1770,10 @@ class CfgVehicles
         {
         };
 
+        class TransportBackpacks
+        {
+        };
+
     };
 
     //T72
@@ -1804,6 +1808,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -1877,6 +1885,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //T90A
@@ -1938,6 +1950,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
 
