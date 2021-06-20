@@ -1704,8 +1704,8 @@ class CfgVehicles
         displayName = "Panzerabwehr (Leicht)";
         Items[] = {""};
         respawnItems[] = {""};
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_M72A6_Loaded", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_M72A6_Loaded", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_M72A6", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_M72A6", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps", "NVGoggles_tna_F"};
