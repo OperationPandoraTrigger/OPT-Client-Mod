@@ -6539,9 +6539,9 @@ class CfgVehicles
 
         class TransportWeapons
         {
-            class _xx_CUP_launch_M72A6_Loaded
+            class _xx_CUP_launch_M72A6
             {
-                weapon = "CUP_launch_M72A6_Loaded";
+                weapon = "CUP_launch_M72A6";
                 count = 5;
             };
         };
