@@ -774,6 +774,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //Ural
@@ -792,6 +796,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -815,6 +823,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //Ural Ammo
@@ -833,6 +845,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -856,6 +872,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //Ural Rep
@@ -874,6 +894,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -898,6 +922,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //Ural Tank
@@ -916,6 +944,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -964,6 +996,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //BM21
@@ -1007,6 +1043,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
 

@@ -2219,6 +2219,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //UAZ
@@ -2237,6 +2241,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -2260,6 +2268,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //UAZ 469 DShKM
@@ -2278,6 +2290,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -2300,6 +2316,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //GAZ 3937 Vodnik
@@ -2318,6 +2338,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -2340,6 +2364,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //GAZ 3937 Vodnik 2xPKM
@@ -2358,6 +2386,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -2380,6 +2412,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //BRDM-2 ATGM
@@ -2398,6 +2434,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -2420,6 +2460,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //GAZ 3937 Vodnik Medic
@@ -2438,6 +2482,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };
@@ -2464,6 +2512,10 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //UAZ AA
@@ -2482,6 +2534,10 @@ class CfgVehicles
         };
 
         class TransportWeapons
+        {
+        };
+
+        class TransportBackpacks
         {
         };
     };

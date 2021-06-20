@@ -1320,6 +1320,10 @@ class CfgVehicles
         class TransportItems
         {
         };
+
+        class TransportBackpacks
+        {
+        };
     };
 
     //SU-25T
@@ -1353,6 +1357,7 @@ class CfgVehicles
         faction = "OPT_WP";
         weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\SU25T\su25t_0.paa","\opt\opt_client\addons\vehicles\textures\SU25T\su25t_1.paa"};
 
         class Components : Components
         {
@@ -1449,6 +1454,10 @@ class CfgVehicles
         };
 
         class TransportItems
+        {
+        };
+
+        class TransportBackpacks
         {
         };
 

@@ -35,7 +35,7 @@ class CfgPatches
         versionAr[] = {VERSION_AR};
         requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
                             "a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
-                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons","CUP_Weapons_Ammunition","CUP_Weapons_Stinger","CUP_Weapons_IGLA","CUP_Weapons_StaticWeapons","CUP_TrackedVehicles_Bradley","CUP_AirVehicles_Su25"};
+                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons","CUP_Weapons_Ammunition","CUP_Weapons_Stinger","CUP_Weapons_IGLA","CUP_Weapons_StaticWeapons","CUP_TrackedVehicles_Bradley","CUP_AirVehicles_Su25","CUP_Weapons_AK"};
     };
 };
 
@@ -3947,7 +3947,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot;
+            class CUP_PicatinnyTopMountAK;
         };
     };
 
@@ -3955,10 +3955,33 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-
-            class CowsSlot : CowsSlot
+            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount 
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+                displayName = "Visier-Slot";
+                iconPosition[] = {0.58, 0.22};
+                iconScale = 0.15;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinPoint = "Bottom";
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+                
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                    optic_MRCO= 1;
+                    optic_Arco= 1;
+                    optic_Arco_blk_F= 1;
+                    optic_hamr= 1; 
+                    optic_DMS= 1; 
+                    optic_ERCO_blk_F= 1;
+                    optic_NVS= 1;
+                    optic_SOS= 1; 
+                    optic_KHS_blk= 1;
+                    optic_AMS= 1;
+                };    
             };
         };
     };
@@ -3969,7 +3992,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot;
+            class CUP_PicatinnyTopMountAK;
         };
     };
 
@@ -3977,10 +4000,33 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-
-            class CowsSlot : CowsSlot
+            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount 
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+                displayName = "Visier-Slot";
+                iconPosition[] = {0.58, 0.22};
+                iconScale = 0.15;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinPoint = "Bottom";
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+                
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                    optic_MRCO= 1;
+                    optic_Arco= 1;
+                    optic_Arco_blk_F= 1;
+                    optic_hamr= 1; 
+                    optic_DMS= 1; 
+                    optic_ERCO_blk_F= 1;
+                    optic_NVS= 1;
+                    optic_SOS= 1; 
+                    optic_KHS_blk= 1;
+                    optic_AMS= 1;
+                };    
             };
         };
     };
@@ -4035,7 +4081,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot;
+            class CUP_PicatinnyTopMountAK;
         };
     };
 
@@ -4043,10 +4089,23 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-
-            class CowsSlot : CowsSlot
+            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount 
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+                displayName = "Visier-Slot";
+                iconPosition[] = {0.62, 0.23};
+                iconScale = 0.15;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinPoint = "Bottom";
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+                
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                };    
             };
         };
     };
@@ -6539,9 +6598,9 @@ class CfgVehicles
 
         class TransportWeapons
         {
-            class _xx_CUP_launch_M72A6_Loaded
+            class _xx_CUP_launch_M72A6
             {
-                weapon = "CUP_launch_M72A6_Loaded";
+                weapon = "CUP_launch_M72A6";
                 count = 5;
             };
         };

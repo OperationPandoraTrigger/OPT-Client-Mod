@@ -805,7 +805,7 @@ class Dialogshopkaufen
             w = 0.08;
             h = 0.05;
             text = "Abbrechen";
-            action = "closeDialog 0";
+            action = "closeDialog 0; OPT_SHOP_LOCK = false;";
             tooltip = "Dialog schliessen";
             default = true;
         };        
@@ -1462,7 +1462,7 @@ class Dialogshopkonfig
             w = 0.08;
             h = 0.05;
             text = "Abbrechen";
-            action = "closeDialog 0";
+            action = "closeDialog 0; OPT_SHOP_LOCK = false;";
             tooltip = "Dialog schliessen";
             default = true;
         };
@@ -1760,7 +1760,7 @@ class DialogVerkaufs
             w = 7 * GUI_GRID_W;
             h = 1.5 * GUI_GRID_H;
             tooltip = "Dialog schliessen";
-            action = "closeDialog 0";
+            action = "closeDialog 0; OPT_SHOP_LOCK = false;";
             sizeEx = FONTSIZE;
         };
     };
