@@ -5825,6 +5825,7 @@ class CfgVehicles
         displayName = "NATO Ausrüstungskiste";
         maximumLoad = 30000;
         supplyRadius = 8;
+        hiddenSelectionsTextures = ["\A3\Weapons_F\Ammoboxes\Data\AmmoBox_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b4.paa"];
 
         class TransportWeapons
         {
@@ -6263,6 +6264,7 @@ class CfgVehicles
         displayName = "NATO Munitionskiste";
         maximumLoad = 14000;
         supplyRadius = 8;
+        hiddenSelectionsTextures = ["\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"];
 
         class TransportItems
         {
@@ -6385,6 +6387,7 @@ class CfgVehicles
         displayName = "NATO Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
+        hiddenSelectionsTextures = ["\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa"];
 
         class TransportWeapons
         {
@@ -6555,7 +6558,7 @@ class CfgVehicles
         displayName = "MAAWS Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS4.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6594,7 +6597,7 @@ class CfgVehicles
         displayName = "M72A6 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\M72A6.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6693,7 +6696,7 @@ class CfgVehicles
         displayName = "AA Raketenkiste (NATO)";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\Stringer.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6756,6 +6759,7 @@ class CfgVehicles
         displayName = "NATO Taucherkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\equipment_blufor_taucher.paa", "\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_blufor_ca.paa"};
 
         class TransportWeapons
         {
@@ -6916,6 +6920,7 @@ class CfgVehicles
         displayName = "NATO Unterlaufgranatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -7021,6 +7026,7 @@ class CfgVehicles
         displayName = "NATO Granatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -7135,6 +7141,7 @@ class CfgVehicles
         displayName = "NATO Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa"};
 
         class TransportWeapons
         {
@@ -7175,6 +7182,7 @@ class CfgVehicles
         displayName = "NATO Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa"};
 
         class TransportWeapons
         {
@@ -7292,6 +7300,7 @@ class CfgVehicles
         displayName = "CSAT Ausrüstungskiste";
         maximumLoad = 30000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Data\AmmoBox_OPFOR_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o4.paa"};
 
         class TransportWeapons
         {
@@ -7514,6 +7523,8 @@ class CfgVehicles
         displayName = "CSAT Munitionskiste";
         maximumLoad = 14000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+
 
         class TransportWeapons
         {
@@ -7567,6 +7578,7 @@ class CfgVehicles
         displayName = "CSAT Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa"};
 
         class TransportWeapons
         {
@@ -7652,7 +7664,7 @@ class CfgVehicles
         displayName = "Mk153 Mod 0 SMAW Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\SMAW.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o3.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -7892,7 +7904,7 @@ class CfgVehicles
         displayName = "RPG-18 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP18.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -7989,7 +8001,7 @@ class CfgVehicles
         displayName = "AA Raketenkiste (CSAT)";
         maximumLoad = 2000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\igla.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
 
         class TransportWeapons
@@ -8023,6 +8035,7 @@ class CfgVehicles
         displayName = "CSAT Taucherkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\equipment_opfor_taucher.paa", "\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_opfor_ca.paa"};
 
         class TransportWeapons
         {
@@ -8126,6 +8139,7 @@ class CfgVehicles
         displayName = "CSAT Unterlaufgranatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -8226,6 +8240,7 @@ class CfgVehicles
         displayName = "CSAT Granatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -8624,6 +8639,7 @@ class CfgVehicles
         displayName = "CSAT Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa"};
 
         class TransportWeapons
         {
@@ -8664,6 +8680,7 @@ class CfgVehicles
         displayName = "CSAT Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa"};
 
         class TransportWeapons
         {
