@@ -5785,6 +5785,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         displayName = "M119-AT";
+        side = 1;
         
         class Turrets : Turrets
         {
