@@ -5805,6 +5805,7 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         displayName = "M119-AT";
         side = 1;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\d30\d30.paa"};
         
         class Turrets : Turrets
         {
@@ -7595,7 +7596,7 @@ class CfgVehicles
 
     class OPT_Box_East_WpsSpecial_F : Land_PlasticCase_01_small_F
     {
-        displayName = " Spezialkiste";
+        displayName = "Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa"};
@@ -8656,7 +8657,7 @@ class CfgVehicles
 
     class OPT_CSAT_Sprengstoffkiste : Land_PlasticCase_01_medium_F
     {
-        displayName = " Sprengstoffkiste";
+        displayName = "Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa"};
@@ -8697,7 +8698,7 @@ class CfgVehicles
 
     class OPT_CSAT_Minenkiste : Land_PlasticCase_01_medium_F
     {
-        displayName = " Minenkiste";
+        displayName = "Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa"};
