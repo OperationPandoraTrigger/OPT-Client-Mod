@@ -5825,8 +5825,8 @@ class CfgVehicles
         displayName = "NATO Ausrüstungskiste";
         maximumLoad = 30000;
         supplyRadius = 8;
-        hiddenSelectionsTextures = ["\A3\Weapons_F\Ammoboxes\Data\AmmoBox_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b4.paa"];
-
+        hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Data\AmmoBox_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b4.paa"};
+ 
         class TransportWeapons
         {
             class _xx_OPT_Laserdesignator
@@ -5966,7 +5966,7 @@ class CfgVehicles
 
             class _xx_NVGoggles
             {
-                name = "NVGoggles";
+                name = "NVGoggles_tna_F";
                 count = 70;
             };
         };
@@ -6264,7 +6264,7 @@ class CfgVehicles
         displayName = "NATO Munitionskiste";
         maximumLoad = 14000;
         supplyRadius = 8;
-        hiddenSelectionsTextures = ["\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"];
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportItems
         {
@@ -6387,7 +6387,7 @@ class CfgVehicles
         displayName = "NATO Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
-        hiddenSelectionsTextures = ["\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa"];
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa"};
 
         class TransportWeapons
         {
@@ -6759,7 +6759,7 @@ class CfgVehicles
         displayName = "NATO Taucherkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\equipment_blufor_taucher.paa", "\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_blufor_ca.paa"};
+        hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\uniforms_box_blufor_co.paa","\opt\opt_client\addons\weapons\textures\ammobox\equipment_blufor_taucher.paa"};
 
         class TransportWeapons
         {
@@ -7441,7 +7441,7 @@ class CfgVehicles
 
             class _xx_NVGoggles
             {
-                name = "NVGoggles";
+                name = "NVGoggles_INDEP";
                 count = 70;
             };
         };
@@ -8035,7 +8035,7 @@ class CfgVehicles
         displayName = "CSAT Taucherkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\equipment_opfor_taucher.paa", "\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_opfor_ca.paa"};
+        hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\uniforms_box_opfor_co.paa","\opt\opt_client\addons\weapons\textures\ammobox\equipment_opfor_taucher.paa"};
 
         class TransportWeapons
         {
