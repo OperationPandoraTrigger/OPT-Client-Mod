@@ -4048,6 +4048,14 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
+                access = 1;
+                displayName = "Visier-Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = {0,0};
+                iconScale = 0;
+                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
                 compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
             };
         };
@@ -4059,7 +4067,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot;
+            class CUP_PicatinnyTopMountAK;
         };
     };
 
@@ -4067,10 +4075,23 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-
-            class CowsSlot : CowsSlot
+            class CUP_PicatinnyTopMountM240 : CUP_PicatinnyTopShortMount 
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+                displayName = "Visier-Slot";
+                iconPosition[] = {0.605882,0.376471};
+                iconScale = 0.15;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinPoint = "Bottom";
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+                
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                };    
             };
         };
     };
@@ -4213,7 +4234,6 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
             };
         };
     };
@@ -4233,7 +4253,6 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
             };
         };
     };
