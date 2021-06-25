@@ -5842,7 +5842,7 @@ class CfgVehicles
 
     class OPT_B_CargoNet_01_ammo_F : B_CargoNet_01_ammo_F
     {
-        displayName = "NATO Ausrüstungskiste";
+        displayName = "Ausrüstungskiste";
         maximumLoad = 30000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Data\AmmoBox_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b4.paa"};
@@ -6225,7 +6225,7 @@ class CfgVehicles
 
     class OPT_B_supplyCrate_F : B_supplyCrate_F
     {
-        displayName = "NATO Transportkiste";
+        displayName = "Transportkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
 
@@ -6281,7 +6281,7 @@ class CfgVehicles
 
     class OPT_Box_NATO_Ammo_F : Box_NATO_Ammo_F
     {
-        displayName = "NATO Munitionskiste";
+        displayName = "Munitionskiste";
         maximumLoad = 14000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -6404,7 +6404,7 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_F : Land_PlasticCase_01_small_olive_F
     {
-        displayName = "NATO Spezialkiste";
+        displayName = "Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa"};
@@ -6776,7 +6776,7 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_Diver_F : Box_NATO_Uniforms_F
     {
-        displayName = "NATO Taucherkiste";
+        displayName = "Taucherkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\uniforms_box_blufor_co.paa","\opt\opt_client\addons\weapons\textures\ammobox\equipment_blufor_taucher.paa"};
@@ -6937,7 +6937,7 @@ class CfgVehicles
 
     class OPT_Box_NATO_UGL_F : Box_NATO_Grenades_F
     {
-        displayName = "NATO Unterlaufgranatenkiste";
+        displayName = "Unterlaufgranatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -7043,7 +7043,7 @@ class CfgVehicles
 
     class OPT_Box_NATO_Grenades_F : Box_NATO_Grenades_F
     {
-        displayName = "NATO Granatenkiste";
+        displayName = "Granatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -7158,7 +7158,7 @@ class CfgVehicles
 
     class OPT_NATO_Sprengstoffkiste : Land_PlasticCase_01_medium_olive_F
     {
-        displayName = "NATO Sprengstoffkiste";
+        displayName = "Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa"};
@@ -7199,7 +7199,7 @@ class CfgVehicles
 
     class OPT_NATO_Minenkiste : Land_PlasticCase_01_medium_olive_F
     {
-        displayName = "NATO Minenkiste";
+        displayName = "Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa"};
@@ -7317,7 +7317,7 @@ class CfgVehicles
 
     class OPT_O_CargoNet_01_ammo_F : O_CargoNet_01_ammo_F
     {
-        displayName = "CSAT Ausrüstungskiste";
+        displayName = "Ausrüstungskiste";
         maximumLoad = 30000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Data\AmmoBox_OPFOR_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o4.paa"};
@@ -7509,7 +7509,7 @@ class CfgVehicles
 
     class OPT_O_supplyCrate_F : O_supplyCrate_F
     {
-        displayName = "CSAT Transportkiste";
+        displayName = "Transportkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
 
@@ -7540,7 +7540,7 @@ class CfgVehicles
 
     class OPT_Box_East_Ammo_F : Box_East_Ammo_F
     {
-        displayName = "CSAT Munitionskiste";
+        displayName = "Munitionskiste";
         maximumLoad = 14000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
@@ -7595,7 +7595,7 @@ class CfgVehicles
 
     class OPT_Box_East_WpsSpecial_F : Land_PlasticCase_01_small_F
     {
-        displayName = "CSAT Spezialkiste";
+        displayName = " Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa"};
@@ -8018,7 +8018,7 @@ class CfgVehicles
 
     class OPT_Box_East_WpsSpecial_AA_F : Box_East_WpsSpecial_F
     {
-        displayName = "AA Raketenkiste (CSAT)";
+        displayName = "AA Raketenkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
@@ -8046,13 +8046,13 @@ class CfgVehicles
         };
     };
 
-    class Box_CSAT_Uniforms_F : Box_NATO_Uniforms_F
+    class Box__Uniforms_F : Box_NATO_Uniforms_F
     {
     };
 
-    class OPT_Box_East_WpsSpecial_Diver_F : Box_CSAT_Uniforms_F
+    class OPT_Box_East_WpsSpecial_Diver_F : Box__Uniforms_F
     {
-        displayName = "CSAT Taucherkiste";
+        displayName = "Taucherkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\uniforms_box_opfor_co.paa","\opt\opt_client\addons\weapons\textures\ammobox\equipment_opfor_taucher.paa"};
@@ -8154,9 +8154,9 @@ class CfgVehicles
     {
     };
 
-    class OPT_Box_CSAT_UGL_F : Box_East_Grenades_F
+    class OPT_Box__UGL_F : Box_East_Grenades_F
     {
-        displayName = "CSAT Unterlaufgranatenkiste";
+        displayName = "Unterlaufgranatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
@@ -8257,7 +8257,7 @@ class CfgVehicles
 
     class OPT_Box_East_Grenades_F : Box_East_Grenades_F
     {
-        displayName = "CSAT Granatenkiste";
+        displayName = "Granatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
@@ -8656,7 +8656,7 @@ class CfgVehicles
 
     class OPT_CSAT_Sprengstoffkiste : Land_PlasticCase_01_medium_F
     {
-        displayName = "CSAT Sprengstoffkiste";
+        displayName = " Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa"};
@@ -8697,7 +8697,7 @@ class CfgVehicles
 
     class OPT_CSAT_Minenkiste : Land_PlasticCase_01_medium_F
     {
-        displayName = "CSAT Minenkiste";
+        displayName = " Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa"};
