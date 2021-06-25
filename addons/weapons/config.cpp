@@ -8154,7 +8154,7 @@ class CfgVehicles
     {
     };
 
-    class OPT_Box__UGL_F : Box_East_Grenades_F
+    class OPT_Box_CSAT_UGL_F : Box_East_Grenades_F
     {
         displayName = "Unterlaufgranatenkiste";
         maximumLoad = 8500;
