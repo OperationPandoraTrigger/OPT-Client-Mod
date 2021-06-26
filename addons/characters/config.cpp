@@ -1572,8 +1572,8 @@ class CfgVehicles
         icon = "iconManLeader";
         displayName = "Truppführer";
         faction = "OPT_NATO_CUP";
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator","ACE_HuntIR_monitor", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator","ACE_HuntIR_monitor", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1590,8 +1590,8 @@ class CfgVehicles
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         attendant = 1;
-        Items[] = {};
-        respawnItems[] = {};
+        Items[] = {"Medikit"};
+        respawnItems[] = {"Medikit"};
         weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
@@ -1839,8 +1839,8 @@ class CfgVehicles
         faction = "OPT_WP";
         Items[] = {};
         respawnItems[] = {};
-        Weapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "Throw", "Put"};
+        Weapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "ACE_HuntIR_monitor","Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "ACE_HuntIR_monitor", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell", "Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell", "Laserbatteries"};
         linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
@@ -1874,8 +1874,8 @@ class CfgVehicles
         displayName = "Grenadier";
         weapons[] = {"OPT_CUP_arifle_AK101_GL_railed","Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_CUP_arifle_AK101_GL_railed","Binocular", "Throw", "Put"};
-        magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell"};
-        respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell"};
+        magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK","SmokeShell", "SmokeShell"};
     };
 
     class OPT_CSAT_Operator : OPT_CSAT_Soldat
@@ -2037,8 +2037,8 @@ class CfgVehicles
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        items[] = {};
-        respawnItems[] = {};
+        items[] = {"Medikit"};
+        respawnItems[] = {"Medikit"};
         backpack = "OPT_B_AssaultPack_VSR98Worm";
         uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
