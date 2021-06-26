@@ -2900,6 +2900,7 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         driverCanEject = 1;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\uh1d\uh1d_0.paa","\opt\opt_client\addons\vehicles\textures\uh1d\uh1d_1.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\uh1d.png";
 
         class Components : Components 
         {
@@ -3009,6 +3010,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\KA-60\ka60_0.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\ka60.png";
        
         class Components : Components 
         {
