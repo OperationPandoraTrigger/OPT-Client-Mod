@@ -9192,7 +9192,6 @@ class CfgVehicles
         scope = 2;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_emr.paa"};
 
-
         class TransportMagazines
         {
         };
@@ -9225,7 +9224,7 @@ class CfgVehicles
         maximumLoad = 320;
         scope = 2;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_mccuu.paa"};
-
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_großerucksack_mccuu.paa";
 
         class TransportMagazines
         {
@@ -9242,7 +9241,7 @@ class CfgVehicles
         maximumLoad = 320;
         scope = 2;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_VSR98Worm.paa"};
-
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_großerucksack_VSR98Worm.paa";
 
         class TransportMagazines
         {
@@ -9535,6 +9534,7 @@ class CfgVehicles
         displayName = "Angriffspack (MCCUU)";
         maximumLoad = 160;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_mccuu.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_angriffsrucksack_mccuu.paa";
 
         class TransportMagazines
         {
@@ -9550,6 +9550,7 @@ class CfgVehicles
         displayName = "Angriffspack (VSR98Worm)";
         maximumLoad = 160;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_VSR98Worm.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_angriffsrucksack_vsr98worm.paa";
 
         class TransportMagazines
         {
