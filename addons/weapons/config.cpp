@@ -4182,6 +4182,7 @@ class CfgWeapons
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             class CowsSlot;
+            class UnderBarrelSlot;
         };
     };
 
@@ -4194,6 +4195,20 @@ class CfgWeapons
             {
                 compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F", "optic_NVS", "optic_DMS", "optic_ams", "optic_AMS_snd", "optic_AMS_khk", "optic_KHS_blk", "optic_KHS_tan", "optic_KHS_hex", "optic_KHS_old", "optic_SOS"};
             };
+
+            class UnderBarrelSlot : UnderBarrelSlot
+            {
+                access = 1;
+                compatibleItems[] = {"CUP_bipod_FNFAL"};
+                iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+                iconPinpoint = "center";
+                iconPosition[] = {0.22,0.52};
+                iconScale = 0.25;
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                scope = 0;
+            };
+
+
         };
     };
 
