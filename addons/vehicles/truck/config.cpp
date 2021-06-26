@@ -860,6 +860,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_repair_3.paa"};
+        transportRepair = 0; 
 
         class TransportMagazines
         {
@@ -884,6 +885,7 @@ class CfgVehicles
     class OPT_CUP_O_Ural_Repair_TKA: CUP_O_Ural_Repair_TKA
     {
         faction = "OPT_WP";
+        transportRepair = 0;
 
         class TransportMagazines
         {
