@@ -911,7 +911,8 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_fuel_3.paa"};
-
+        ace_refuel_fuelCargo = 10000;
+        ace_refuel_hooks[] = {{-0.05,-3.66,-0.43}};
 
         class TransportMagazines
         {
