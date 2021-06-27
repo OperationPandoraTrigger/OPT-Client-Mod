@@ -1561,8 +1561,8 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
-        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "H_Beret_Colonel", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
-        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "H_Beret_Colonel", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
+        linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
+        respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "tf_rt1523g_big_bwmod";
         uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
@@ -1572,8 +1572,10 @@ class CfgVehicles
         icon = "iconManLeader";
         displayName = "Truppführer";
         faction = "OPT_NATO_CUP";
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator","ACE_HuntIR_monitor", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator","ACE_HuntIR_monitor", "Throw", "Put"};
+        Items[] = {"ACE_HuntIR_monitor"};
+        respawnItems[] = {"ACE_HuntIR_monitor"};
+        weapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1837,10 +1839,10 @@ class CfgVehicles
     {
         displayName = "Truppführer";
         faction = "OPT_WP";
-        Items[] = {};
-        respawnItems[] = {};
-        Weapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "ACE_HuntIR_monitor","Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "ACE_HuntIR_monitor", "Throw", "Put"};
+        Items[] = {"ACE_HuntIR_monitor"};
+        respawnItems[] = {"ACE_HuntIR_monitor"};
+        Weapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "OPT_Laserdesignator_02", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell", "Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell", "Laserbatteries"};
         linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
