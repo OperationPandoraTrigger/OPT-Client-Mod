@@ -6423,7 +6423,8 @@ class CfgVehicles
         displayName = "Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_b_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sniper_b_preview.jpg";
 
         class TransportWeapons
         {
@@ -7177,7 +7178,8 @@ class CfgVehicles
         displayName = "Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sprengstoff_b_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sprengstoff_b_preview.jpg";
 
         class TransportWeapons
         {
@@ -7218,7 +7220,8 @@ class CfgVehicles
         displayName = "Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\minen_b_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\minen_b_preview.jpg";
 
         class TransportWeapons
         {
@@ -7609,12 +7612,13 @@ class CfgVehicles
         };
     };
 
-    class OPT_Box_East_WpsSpecial_F : Land_PlasticCase_01_small_F
+    class OPT_Box_East_WpsSpecial_F : Land_PlasticCase_01_small_olive_F
     {
         displayName = "Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_o_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sniper_o_preview.jpg";
 
         class TransportWeapons
         {
@@ -8670,12 +8674,13 @@ class CfgVehicles
         };
     };
 
-    class OPT_CSAT_Sprengstoffkiste : Land_PlasticCase_01_medium_F
+    class OPT_CSAT_Sprengstoffkiste : Land_PlasticCase_01_medium_black_F
     {
         displayName = "Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sprengstoff_o_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sprengstoff_o_preview.jpg";
 
         class TransportWeapons
         {
@@ -8711,12 +8716,13 @@ class CfgVehicles
         };
     };
 
-    class OPT_CSAT_Minenkiste : Land_PlasticCase_01_medium_F
+    class OPT_CSAT_Minenkiste : Land_PlasticCase_01_medium_black_F
     {
         displayName = "Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\minen_o_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\minen_o_preview.jpg";
 
         class TransportWeapons
         {
