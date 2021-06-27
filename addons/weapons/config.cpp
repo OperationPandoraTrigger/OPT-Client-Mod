@@ -39,6 +39,14 @@ class CfgPatches
     };
 };
 
+class CfgMagazineWells 
+{
+    class CBA_40mm_GP 
+    {
+        ADDON[] = {"ACE_HuntIR_M203"};
+    };   
+};
+
 class CfgAmmo
 {
     class B_20mm;
@@ -3994,6 +4002,8 @@ class CfgWeapons
         {
             class CUP_PicatinnyTopMountAK;
         };
+
+        class GP25Muzzle;
     };
 
     class OPT_CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL_railed
@@ -4027,6 +4037,11 @@ class CfgWeapons
                     optic_KHS_blk= 1;
                     optic_AMS= 1;
                 };    
+            };
+
+            class GP25Muzzle : GP25Muzzle 
+            {
+                magazines[] += {"ACE_HuntIR_M203"};
             };
         };
     };
