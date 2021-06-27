@@ -39,6 +39,14 @@ class CfgPatches
     };
 };
 
+class CfgMagazineWells 
+{
+    class CBA_40mm_GP 
+    {
+        ADDON[] = {"ACE_HuntIR_M203"};
+    };   
+};
+
 class CfgAmmo
 {
     class B_20mm;
@@ -3994,6 +4002,8 @@ class CfgWeapons
         {
             class CUP_PicatinnyTopMountAK;
         };
+
+        class GP25Muzzle;
     };
 
     class OPT_CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL_railed
@@ -4028,6 +4038,11 @@ class CfgWeapons
                     optic_AMS= 1;
                 };    
             };
+
+            class GP25Muzzle : GP25Muzzle 
+            {
+                magazines[] += {"ACE_HuntIR_M203"};
+            };
         };
     };
   
@@ -4048,6 +4063,14 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
+                access = 1;
+                displayName = "Visier-Slot";
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "Bottom";
+                iconPosition[] = {0,0};
+                iconScale = 0;
+                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
                 compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
             };
         };
@@ -4059,7 +4082,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot;
+            class CUP_PicatinnyTopMountAK;
         };
     };
 
@@ -4067,10 +4090,23 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-
-            class CowsSlot : CowsSlot
+            class CUP_PicatinnyTopMountM240 : CUP_PicatinnyTopShortMount 
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+                displayName = "Visier-Slot";
+                iconPosition[] = {0.605882,0.376471};
+                iconScale = 0.15;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinPoint = "Bottom";
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+                
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                };    
             };
         };
     };
@@ -4161,6 +4197,7 @@ class CfgWeapons
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             class CowsSlot;
+            class UnderBarrelSlot;
         };
     };
 
@@ -4173,6 +4210,20 @@ class CfgWeapons
             {
                 compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F", "optic_NVS", "optic_DMS", "optic_ams", "optic_AMS_snd", "optic_AMS_khk", "optic_KHS_blk", "optic_KHS_tan", "optic_KHS_hex", "optic_KHS_old", "optic_SOS"};
             };
+
+            class UnderBarrelSlot : UnderBarrelSlot
+            {
+                access = 1;
+                compatibleItems[] = {"CUP_bipod_FNFAL"};
+                iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+                iconPinpoint = "center";
+                iconPosition[] = {0.22,0.52};
+                iconScale = 0.25;
+                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
+                scope = 0;
+            };
+
+
         };
     };
 
@@ -4213,7 +4264,6 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
             };
         };
     };
@@ -4233,7 +4283,6 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
             };
         };
     };
@@ -5785,6 +5834,8 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         displayName = "M119-AT";
+        side = 1;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\d30\d30.paa"};
         
         class Turrets : Turrets
         {
@@ -5822,10 +5873,11 @@ class CfgVehicles
 
     class OPT_B_CargoNet_01_ammo_F : B_CargoNet_01_ammo_F
     {
-        displayName = "NATO Ausrüstungskiste";
+        displayName = "Ausrüstungskiste";
         maximumLoad = 30000;
         supplyRadius = 8;
-
+        hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Data\AmmoBox_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b4.paa"};
+ 
         class TransportWeapons
         {
             class _xx_OPT_Laserdesignator
@@ -5965,7 +6017,7 @@ class CfgVehicles
 
             class _xx_NVGoggles
             {
-                name = "NVGoggles";
+                name = "NVGoggles_tna_F";
                 count = 70;
             };
         };
@@ -6204,7 +6256,7 @@ class CfgVehicles
 
     class OPT_B_supplyCrate_F : B_supplyCrate_F
     {
-        displayName = "NATO Transportkiste";
+        displayName = "Transportkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
 
@@ -6260,9 +6312,10 @@ class CfgVehicles
 
     class OPT_Box_NATO_Ammo_F : Box_NATO_Ammo_F
     {
-        displayName = "NATO Munitionskiste";
+        displayName = "Munitionskiste";
         maximumLoad = 14000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportItems
         {
@@ -6382,9 +6435,11 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_F : Land_PlasticCase_01_small_olive_F
     {
-        displayName = "NATO Spezialkiste";
+        displayName = "Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_b_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sniper_b_preview.jpg";
 
         class TransportWeapons
         {
@@ -6555,7 +6610,7 @@ class CfgVehicles
         displayName = "MAAWS Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS4.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6594,7 +6649,7 @@ class CfgVehicles
         displayName = "M72A6 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\M72A6.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6693,7 +6748,7 @@ class CfgVehicles
         displayName = "AA Raketenkiste (NATO)";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\Stringer.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6753,9 +6808,10 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_Diver_F : Box_NATO_Uniforms_F
     {
-        displayName = "NATO Taucherkiste";
+        displayName = "Taucherkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\uniforms_box_blufor_co.paa","\opt\opt_client\addons\weapons\textures\ammobox\equipment_blufor_taucher.paa"};
 
         class TransportWeapons
         {
@@ -6913,9 +6969,10 @@ class CfgVehicles
 
     class OPT_Box_NATO_UGL_F : Box_NATO_Grenades_F
     {
-        displayName = "NATO Unterlaufgranatenkiste";
+        displayName = "Unterlaufgranatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -7018,9 +7075,10 @@ class CfgVehicles
 
     class OPT_Box_NATO_Grenades_F : Box_NATO_Grenades_F
     {
-        displayName = "NATO Granatenkiste";
+        displayName = "Granatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -7132,9 +7190,11 @@ class CfgVehicles
 
     class OPT_NATO_Sprengstoffkiste : Land_PlasticCase_01_medium_olive_F
     {
-        displayName = "NATO Sprengstoffkiste";
+        displayName = "Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sprengstoff_b_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sprengstoff_b_preview.jpg";
 
         class TransportWeapons
         {
@@ -7172,9 +7232,11 @@ class CfgVehicles
 
     class OPT_NATO_Minenkiste : Land_PlasticCase_01_medium_olive_F
     {
-        displayName = "NATO Minenkiste";
+        displayName = "Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\minen_b_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\minen_b_preview.jpg";
 
         class TransportWeapons
         {
@@ -7289,9 +7351,10 @@ class CfgVehicles
 
     class OPT_O_CargoNet_01_ammo_F : O_CargoNet_01_ammo_F
     {
-        displayName = "CSAT Ausrüstungskiste";
+        displayName = "Ausrüstungskiste";
         maximumLoad = 30000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Data\AmmoBox_OPFOR_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o4.paa"};
 
         class TransportWeapons
         {
@@ -7432,7 +7495,7 @@ class CfgVehicles
 
             class _xx_NVGoggles
             {
-                name = "NVGoggles";
+                name = "NVGoggles_INDEP";
                 count = 70;
             };
         };
@@ -7480,7 +7543,7 @@ class CfgVehicles
 
     class OPT_O_supplyCrate_F : O_supplyCrate_F
     {
-        displayName = "CSAT Transportkiste";
+        displayName = "Transportkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
 
@@ -7511,9 +7574,11 @@ class CfgVehicles
 
     class OPT_Box_East_Ammo_F : Box_East_Ammo_F
     {
-        displayName = "CSAT Munitionskiste";
+        displayName = "Munitionskiste";
         maximumLoad = 14000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+
 
         class TransportWeapons
         {
@@ -7562,11 +7627,13 @@ class CfgVehicles
         };
     };
 
-    class OPT_Box_East_WpsSpecial_F : Land_PlasticCase_01_small_F
+    class OPT_Box_East_WpsSpecial_F : Land_PlasticCase_01_small_olive_F
     {
-        displayName = "CSAT Spezialkiste";
+        displayName = "Spezialkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_o_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sniper_o_preview.jpg";
 
         class TransportWeapons
         {
@@ -7652,7 +7719,7 @@ class CfgVehicles
         displayName = "Mk153 Mod 0 SMAW Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\SMAW.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o3.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -7892,7 +7959,7 @@ class CfgVehicles
         displayName = "RPG-18 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP18.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -7986,10 +8053,10 @@ class CfgVehicles
 
     class OPT_Box_East_WpsSpecial_AA_F : Box_East_WpsSpecial_F
     {
-        displayName = "AA Raketenkiste (CSAT)";
+        displayName = "AA Raketenkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\igla.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
 
         class TransportWeapons
@@ -8014,15 +8081,16 @@ class CfgVehicles
         };
     };
 
-    class Box_CSAT_Uniforms_F : Box_NATO_Uniforms_F
+    class Box__Uniforms_F : Box_NATO_Uniforms_F
     {
     };
 
-    class OPT_Box_East_WpsSpecial_Diver_F : Box_CSAT_Uniforms_F
+    class OPT_Box_East_WpsSpecial_Diver_F : Box__Uniforms_F
     {
-        displayName = "CSAT Taucherkiste";
+        displayName = "Taucherkiste";
         maximumLoad = 2000;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\uniforms_box_opfor_co.paa","\opt\opt_client\addons\weapons\textures\ammobox\equipment_opfor_taucher.paa"};
 
         class TransportWeapons
         {
@@ -8123,9 +8191,10 @@ class CfgVehicles
 
     class OPT_Box_CSAT_UGL_F : Box_East_Grenades_F
     {
-        displayName = "CSAT Unterlaufgranatenkiste";
+        displayName = "Unterlaufgranatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -8223,9 +8292,10 @@ class CfgVehicles
 
     class OPT_Box_East_Grenades_F : Box_East_Grenades_F
     {
-        displayName = "CSAT Granatenkiste";
+        displayName = "Granatenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -8619,11 +8689,13 @@ class CfgVehicles
         };
     };
 
-    class OPT_CSAT_Sprengstoffkiste : Land_PlasticCase_01_medium_F
+    class OPT_CSAT_Sprengstoffkiste : Land_PlasticCase_01_medium_black_F
     {
-        displayName = "CSAT Sprengstoffkiste";
+        displayName = "Sprengstoffkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sprengstoff_o_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sprengstoff_o_preview.jpg";
 
         class TransportWeapons
         {
@@ -8659,11 +8731,13 @@ class CfgVehicles
         };
     };
 
-    class OPT_CSAT_Minenkiste : Land_PlasticCase_01_medium_F
+    class OPT_CSAT_Minenkiste : Land_PlasticCase_01_medium_black_F
     {
-        displayName = "CSAT Minenkiste";
+        displayName = "Minenkiste";
         maximumLoad = 8500;
         supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\minen_o_1.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\minen_o_preview.jpg";
 
         class TransportWeapons
         {
@@ -9139,7 +9213,6 @@ class CfgVehicles
         scope = 2;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_emr.paa"};
 
-
         class TransportMagazines
         {
         };
@@ -9172,7 +9245,7 @@ class CfgVehicles
         maximumLoad = 320;
         scope = 2;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_mccuu.paa"};
-
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_großerucksack_mccuu.paa";
 
         class TransportMagazines
         {
@@ -9189,7 +9262,7 @@ class CfgVehicles
         maximumLoad = 320;
         scope = 2;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_VSR98Worm.paa"};
-
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_großerucksack_VSR98Worm.paa";
 
         class TransportMagazines
         {
@@ -9482,6 +9555,7 @@ class CfgVehicles
         displayName = "Angriffspack (MCCUU)";
         maximumLoad = 160;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_mccuu.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_angriffsrucksack_mccuu.paa";
 
         class TransportMagazines
         {
@@ -9497,6 +9571,7 @@ class CfgVehicles
         displayName = "Angriffspack (VSR98Worm)";
         maximumLoad = 160;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_VSR98Worm.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_angriffsrucksack_vsr98worm.paa";
 
         class TransportMagazines
         {
