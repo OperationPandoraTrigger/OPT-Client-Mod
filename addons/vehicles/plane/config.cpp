@@ -1287,7 +1287,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_0.paa","\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_1.paa"};
-        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\l39za.png";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\l39za.jpg";
 
         class Components : Components
         {
@@ -1359,7 +1359,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\SU25T\su25t_0.paa","\opt\opt_client\addons\vehicles\textures\SU25T\su25t_1.paa"};
-        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\su25t.png";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\su25t.jpg";
 
         class Components : Components
         {

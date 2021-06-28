@@ -978,7 +978,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\RM70\rm70_0.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_1.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_2.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_3.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_4.paa"};
-        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\rm70.png";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\rm70.jpg";
 
         class Turrets : Turrets 
         {
