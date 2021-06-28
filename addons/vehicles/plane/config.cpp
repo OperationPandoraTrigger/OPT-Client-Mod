@@ -1287,7 +1287,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_0.paa","\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_1.paa"};
-        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\l39za.png";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\l39za.jpg";
 
         class Components : Components
         {
@@ -1359,7 +1359,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher","OPT_CUP_Vacannon_GSh302K_veh"};
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\SU25T\su25t_0.paa","\opt\opt_client\addons\vehicles\textures\SU25T\su25t_1.paa"};
-        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\su25t.png";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\su25t.jpg";
 
         class Components : Components
         {
@@ -1466,9 +1466,9 @@ class CfgVehicles
     };
 
     // Nato Cessna
-    class CUP_C_Cessna_172_CIV_BLUE;
+    class C_Plane_Civil_01_racing_F;
 
-    class OPT_CUP_C_Cessna_172_CIV_BLUE : CUP_C_Cessna_172_CIV_BLUE
+    class OPT_CUP_C_Cessna_172_CIV_BLUE : C_Plane_Civil_01_racing_F
     {
         faction = "OPT_NATO_CUP";
         side = 1;
@@ -1477,6 +1477,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+        hiddenSelectionsTextures[] = {"A3\Air_F_Exp\Plane_Civil_01\Data\btt_ext_01_RedLine_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_ext_02_RedLine_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_int_01_tan_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_int_02_tan_co.paa"};
 
         class TransportItems
         {
@@ -1502,9 +1503,9 @@ class CfgVehicles
     };
 
     // WP Cessna
-    class CUP_C_Cessna_172_CIV_GREEN;
+    class I_C_Plane_Civil_01_F;
 
-    class OPT_CUP_C_Cessna_172_CIV_GREEN : CUP_C_Cessna_172_CIV_GREEN
+    class OPT_CUP_C_Cessna_172_CIV_GREEN : I_C_Plane_Civil_01_F
     {
         faction = "OPT_WP";
         side = 0;
