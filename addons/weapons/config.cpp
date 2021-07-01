@@ -3983,12 +3983,12 @@ class CfgWeapons
                     optic_Arco= 1;
                     optic_Arco_blk_F= 1;
                     optic_hamr= 1; 
-                    optic_DMS= 1; 
+                    optic_DMS= 0; 
                     optic_ERCO_blk_F= 1;
-                    optic_NVS= 1;
-                    optic_SOS= 1; 
-                    optic_KHS_blk= 1;
-                    optic_AMS= 1;
+                    optic_NVS= 0;
+                    optic_SOS= 0; 
+                    optic_KHS_blk= 0;
+                    optic_AMS= 0;
                 };    
             };
         };
@@ -4030,12 +4030,12 @@ class CfgWeapons
                     optic_Arco= 1;
                     optic_Arco_blk_F= 1;
                     optic_hamr= 1; 
-                    optic_DMS= 1; 
+                    optic_DMS= 0; 
                     optic_ERCO_blk_F= 1;
-                    optic_NVS= 1;
-                    optic_SOS= 1; 
-                    optic_KHS_blk= 1;
-                    optic_AMS= 1;
+                    optic_NVS= 0;
+                    optic_SOS= 0; 
+                    optic_KHS_blk= 0;
+                    optic_AMS= 0;
                 };    
             };
 
