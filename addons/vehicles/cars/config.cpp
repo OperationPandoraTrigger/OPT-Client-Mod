@@ -2182,6 +2182,7 @@ class CfgVehicles
     class OPT_CUP_B_M1030_USA: CUP_B_M1030_USA
     {
         faction = "OPT_NATO_CUP";
+        fuelCapacity = 2.2;// 50 //
 
         class TransportItems
         {
@@ -2194,6 +2195,7 @@ class CfgVehicles
     class OPT_CUP_O_TT650_TKA: CUP_O_TT650_TKA
     {
         faction = "OPT_WP";
+        fuelCapacity = 2.2;// 50 //
 
         class TransportItems
         {
@@ -2207,6 +2209,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
+        fuelCapacity = 2.8;// 60 //
 
         class TransportMagazines
         {
@@ -2231,6 +2234,7 @@ class CfgVehicles
     class OPT_CUP_O_UAZ_Unarmed_RU: CUP_O_UAZ_Unarmed_RU
     {
         faction = "OPT_WP";
+        fuelCapacity = 5.3;// 75 //
 
         class TransportMagazines
         {
@@ -2256,6 +2260,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
+        fuelCapacity = 2.8;// 60 //
 
         class TransportMagazines
         {
@@ -2280,6 +2285,7 @@ class CfgVehicles
     class OPT_CUP_O_UAZ_MG_RU: CUP_O_UAZ_MG_RU
     {
         faction = "OPT_WP";
+        fuelCapacity = 5.3;// 75 //
 
         class TransportMagazines
         {
@@ -2304,6 +2310,7 @@ class CfgVehicles
     class OPT_CUP_B_HMMWV_Unarmed_USMC: CUP_B_HMMWV_Unarmed_USMC
     {
         faction = "OPT_NATO_CUP";
+        fuelCapacity = 3.3;// 250 //
 
         class TransportMagazines
         {
@@ -2328,6 +2335,7 @@ class CfgVehicles
     class OPT_CUP_O_GAZ_Vodnik_Unarmed_RU: CUP_O_GAZ_Vodnik_Unarmed_RU
     {
         faction = "OPT_WP";
+        fuelCapacity = 3.5;// 280 //
 
         class TransportMagazines
         {
@@ -2352,6 +2360,7 @@ class CfgVehicles
     class OPT_CUP_B_HMMWV_M2_USMC: CUP_B_HMMWV_M2_USMC
     {
         faction = "OPT_NATO_CUP";
+        fuelCapacity = 3.3;// 250 //
 
         class TransportMagazines
         {
@@ -2376,6 +2385,7 @@ class CfgVehicles
     class OPT_CUP_O_GAZ_Vodnik_PK_RU: CUP_O_GAZ_Vodnik_PK_RU
     {
         faction = "OPT_WP";
+        fuelCapacity = 3.5;// 280 //
 
         class TransportMagazines
         {
@@ -2400,6 +2410,7 @@ class CfgVehicles
     class OPT_CUP_B_HMMWV_TOW_USMC: CUP_B_HMMWV_TOW_USMC
     {
         faction = "OPT_NATO_CUP";
+        fuelCapacity = 3.3;// 250 //
 
         class TransportMagazines
         {
@@ -2424,6 +2435,7 @@ class CfgVehicles
     class OPT_CUP_O_BRDM2_ATGM_RUS: CUP_O_BRDM2_ATGM_RUS
     {
         faction = "OPT_WP";
+        fuelCapacity = 3.4;// 280 //
 
         class TransportMagazines
         {
@@ -2448,6 +2460,7 @@ class CfgVehicles
     class OPT_CUP_B_HMMWV_Ambulance_USMC: CUP_B_HMMWV_Ambulance_USMC
     {
         faction = "OPT_NATO_CUP";
+        fuelCapacity = 3.3;// 250 //
 
         class TransportMagazines
         {
@@ -2472,6 +2485,7 @@ class CfgVehicles
     class OPT_CUP_O_GAZ_Vodnik_MedEvac_RU: CUP_O_GAZ_Vodnik_MedEvac_RU
     {
         faction = "OPT_WP";
+        fuelCapacity = 3.5;// 280 //
 
         class TransportMagazines
         {
@@ -2500,6 +2514,7 @@ class CfgVehicles
         rew = "CUP_B_USMC_Soldier_FROG_WDL";
         typicalCargo[] = {"CUP_B_USMC_Soldier_FROG_WDL"};
         hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
+        fuelCapacity = 14.3;// 60 //
 
         class TransportMagazines
         {
@@ -2524,6 +2539,7 @@ class CfgVehicles
     class OPT_CUP_O_LR_AA_TKA: CUP_O_LR_AA_TKA
     {
         faction = "OPT_WP";
+        fuelCapacity = 14.3;// 60 //
 
         class TransportMagazines
         {

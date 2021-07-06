@@ -762,6 +762,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_tarp_3.paa"};
+        fuelCapacity = 5.5;// 300 //
 
         class TransportMagazines
         {
@@ -786,6 +787,7 @@ class CfgVehicles
     class OPT_CUP_O_Ural_TKA: CUP_O_Ural_TKA
     {
         faction = "OPT_WP";
+        fuelCapacity = 5.8;// 300 //
 
         class TransportMagazines
         {
@@ -811,6 +813,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_tarp_3.paa"};
+        fuelCapacity = 5.5;// 300 //
 
         class TransportMagazines
         {
@@ -835,6 +838,7 @@ class CfgVehicles
     class OPT_CUP_O_Ural_Reammo_TKA: CUP_O_Ural_Reammo_TKA
     {
         faction = "OPT_WP";
+        fuelCapacity = 5.8;// 300 //
 
         class TransportMagazines
         {
@@ -861,6 +865,7 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_repair_3.paa"};
         transportRepair = 0; 
+        fuelCapacity = 5.5;// 300 //
 
         class TransportMagazines
         {
@@ -886,6 +891,7 @@ class CfgVehicles
     {
         faction = "OPT_WP";
         transportRepair = 0;
+        fuelCapacity = 5.8;// 300 //
 
         class TransportMagazines
         {
@@ -913,6 +919,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_fuel_3.paa"};
         ace_refuel_fuelCargo = 10000;
         ace_refuel_hooks[] = {{-0.05,-3.66,-0.43}};
+        fuelCapacity = 5.5;// 300 //
 
         class TransportMagazines
         {
@@ -937,6 +944,7 @@ class CfgVehicles
     class OPT_CUP_O_Ural_Refuel_TKA: CUP_O_Ural_Refuel_TKA
     {
         faction = "OPT_WP";
+        fuelCapacity = 5.8;// 300 //
 
         class TransportMagazines
         {
@@ -979,6 +987,7 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\RM70\rm70_0.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_1.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_2.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_3.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_4.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\rm70.jpg";
+        fuelCapacity = 16.2;// 300 //
 
         class Turrets : Turrets 
         {
@@ -1028,6 +1037,7 @@ class CfgVehicles
     class OPT_CUP_O_BM21_RU: CUP_O_BM21_RU
     {
         faction = "OPT_WP";
+        fuelCapacity = 15.7;// 300 //
 
         class Turrets : Turrets 
         {
