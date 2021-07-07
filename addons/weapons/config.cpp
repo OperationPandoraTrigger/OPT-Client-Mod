@@ -4053,7 +4053,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopShortMount  
+            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount  
             {
                 displayName = "Visier-Slot";
                 iconPinpoint = "center";
@@ -4084,7 +4084,6 @@ class CfgWeapons
         };
     };
     
-
     class CUP_arifle_AK101_GL;
 
     class CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL
