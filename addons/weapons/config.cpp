@@ -4084,7 +4084,6 @@ class CfgWeapons
         };
     };
     
-
     class CUP_arifle_AK101_GL;
 
     class CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL
