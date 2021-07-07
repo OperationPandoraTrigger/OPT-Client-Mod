@@ -1288,6 +1288,7 @@ class CfgVehicles
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_0.paa","\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_1.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\l39za.jpg";
+        fuelCapacity = 922.78;// 1914 //
 
         class Components : Components
         {
@@ -1360,6 +1361,7 @@ class CfgVehicles
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\SU25T\su25t_0.paa","\opt\opt_client\addons\vehicles\textures\SU25T\su25t_1.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\su25t.jpg";
+        fuelCapacity = 973.26;// 3600 //
 
         class Components : Components
         {
@@ -1478,6 +1480,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"A3\Air_F_Exp\Plane_Civil_01\Data\btt_ext_01_RedLine_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_ext_02_RedLine_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_int_01_tan_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_int_02_tan_co.paa"};
+        fuelCapacity = 877.93;// 1000 //
 
         class TransportItems
         {
@@ -1514,6 +1517,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 877.93;// 1000 //
 
         class TransportItems
         {
@@ -1550,6 +1554,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 938.29;// 2000 //
 
         class TransportItems
         {
@@ -1586,6 +1591,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 938.29;// 2000 //
 
         class TransportItems
         {
@@ -1622,6 +1628,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 928.51;// 3736 //
 
         class TransportItems
         {
@@ -1658,6 +1665,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 928.51;// 3736 //
 
         class TransportItems
         {
@@ -1694,6 +1702,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 745.55;// 25704 //
 
         class TransportItems
         {
@@ -1730,6 +1739,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 745.55;// 25704 //
 
         class TransportItems
         {
