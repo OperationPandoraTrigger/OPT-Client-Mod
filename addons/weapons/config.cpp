@@ -3949,6 +3949,48 @@ class CfgWeapons
         };
     };
 
+    class CUP_arifle_Mk16_STD;
+
+    class CUP_arifle_Mk16_STD_FG_black : CUP_arifle_Mk16_STD
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_Mk16_STD_FG_black : CUP_arifle_Mk16_STD_FG_black
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+            };
+        };
+    };
+
+    class CUP_arifle_Mk16_STD_EGLM_black : CUP_arifle_Mk16_STD
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_CUP_arifle_Mk16_STD_EGLM_black : CUP_arifle_Mk16_STD_EGLM_black
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+            };
+        };
+    };
+
     class CUP_arifle_AK101;
 
     class CUP_arifle_AK101_railed : CUP_arifle_AK101
@@ -4299,6 +4341,8 @@ class CfgWeapons
             };
         };
     };
+
+
 
     class Binocular;
 
