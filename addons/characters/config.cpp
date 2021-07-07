@@ -1499,8 +1499,8 @@ class CfgVehicles
         icon = "iconMan";
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"OPT_CUP_arifle_HK416_Black","Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black","Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black","Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black","Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1557,8 +1557,8 @@ class CfgVehicles
         editorSubcategory = "EdSubcat_Personnel";
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1574,8 +1574,8 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         Items[] = {"ACE_HuntIR_monitor"};
         respawnItems[] = {"ACE_HuntIR_monitor"};
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_Laserdesignator", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "OPT_Laserdesignator", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "OPT_Laserdesignator", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1594,8 +1594,8 @@ class CfgVehicles
         attendant = 1;
         Items[] = {"Medikit"};
         respawnItems[] = {"Medikit"};
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1615,8 +1615,8 @@ class CfgVehicles
         engineer = 0;
         canDeactivateMines = 1;
         icon = "iconManEngineer";
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1636,8 +1636,8 @@ class CfgVehicles
         engineer = 0;
         canDeactivateMines = 1;
         icon = "iconManEngineer";
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1657,8 +1657,8 @@ class CfgVehicles
         respawnItems[] = {};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "B_UavTerminal"};
         respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "B_UavTerminal"};
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         backpack = "tf_rt1523g_big_bwmod";
@@ -1668,8 +1668,8 @@ class CfgVehicles
     class OPT_NATO_Grenadier : OPT_NATO_Soldat
     {
         displayName = "Grenadier";
-        weapons[] = {"OPT_CUP_arifle_HK416_M203_Black","Binocular","Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_M203_Black","Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_EGLM_black","Binocular","Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_EGLM_black","Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
     };
@@ -1678,8 +1678,8 @@ class CfgVehicles
     {
         icon = "iconManAT";
         displayName = "Raketenspezialist (Flugabwehr)";
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_CUP_launch_FIM92Stinger", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "OPT_CUP_launch_FIM92Stinger", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "OPT_CUP_launch_FIM92Stinger", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "OPT_CUP_launch_FIM92Stinger", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1693,8 +1693,8 @@ class CfgVehicles
         displayName = "Panzerabwehr (Schwer)";
         Items[] = {"CUP_optic_MAAWS_Scope"};
         respawnItems[] = {"CUP_optic_MAAWS_Scope"};
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_MAAWS", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_MAAWS", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "CUP_launch_MAAWS", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "CUP_launch_MAAWS", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1708,8 +1708,8 @@ class CfgVehicles
         displayName = "Panzerabwehr (Leicht)";
         Items[] = {""};
         respawnItems[] = {""};
-        weapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_M72A6", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_CUP_arifle_HK416_Black", "CUP_launch_M72A6", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "CUP_launch_M72A6", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "CUP_launch_M72A6", "Rangefinder", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag","SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};

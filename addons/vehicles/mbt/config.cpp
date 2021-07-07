@@ -1730,6 +1730,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\M60\m60_0.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_1.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_2.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_3.paa","CUP\TrackedVehicles\CUP_TrackedVehicles_M60\data\m60_fuelcan_co.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_5.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_6.paa","CUP\TrackedVehicles\CUP_TrackedVehicles_M1_Abrams\data\m1abrams_02_co.paa","CUP\TrackedVehicles\CUP_TrackedVehicles_M60\data\bk_eg_co.paa","CUP\TrackedVehicles\CUP_TrackedVehicles_M60\data\m60_alp_uvs_1024s_ca.paa"};
+        fuelCapacity = 0.13;// 1885 //
 
         class Turrets : Turrets 
         {
@@ -1798,6 +1799,7 @@ class CfgVehicles
     class OPT_CUP_O_T72_RU: CUP_O_T72_RU
     {
         faction = "OPT_WP";
+        fuelCapacity = 2.3;// 672 //
 
         class TransportMagazines
         {
@@ -1838,6 +1840,7 @@ class CfgVehicles
     class OPT_CUP_B_Leopard2A6_GER: CUP_B_Leopard2A6_GER
     {
         faction = "OPT_NATO_CUP";
+        fuelCapacity = 0.92;// 1885 //
 
         class Turrets : Turrets
         {
@@ -1913,6 +1916,7 @@ class CfgVehicles
     class OPT_CUP_O_T90_RU: CUP_O_T90_RU
     {
         faction = "OPT_WP";
+        fuelCapacity = 3.2;// 672 //
 
         class Turrets : Turrets
         {

@@ -3949,21 +3949,21 @@ class CfgWeapons
         };
     };
 
-    class CUP_arifle_AK101;
+    class CUP_arifle_Mk16_STD;
 
-    class CUP_arifle_AK101_railed : CUP_arifle_AK101
+    class CUP_arifle_Mk16_STD_FG_black : CUP_arifle_Mk16_STD
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK;
+            class CUP_PicatinnyTopMount;
         };
     };
 
-    class OPT_CUP_arifle_AK101_railed : CUP_arifle_AK101_railed
+    class OPT_CUP_arifle_Mk16_STD_FG_black : CUP_arifle_Mk16_STD_FG_black
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount 
+            class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopMount 
             {
                 displayName = "Visier-Slot";
                 iconPosition[] = {0.58, 0.22};
@@ -3993,6 +3993,97 @@ class CfgWeapons
             };
         };
     };
+
+    class CUP_arifle_Mk16_STD_EGLM;
+
+    class CUP_arifle_Mk16_STD_EGLM_black : CUP_arifle_Mk16_STD_EGLM
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CUP_PicatinnyTopMount;
+        };
+    };
+
+    class OPT_CUP_arifle_Mk16_STD_EGLM_black : CUP_arifle_Mk16_STD_EGLM_black
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopShortMount 
+            {
+                displayName = "Visier-Slot";
+                iconPinpoint = "center";
+                iconPosition[] = {0.59, 0.281};
+                iconScale = 0.17;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+                
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                    optic_MRCO= 1;
+                    optic_Arco= 1;
+                    optic_Arco_blk_F= 1;
+                    optic_hamr= 1; 
+                    optic_DMS= 0; 
+                    optic_ERCO_blk_F= 1;
+                    optic_NVS= 0;
+                    optic_SOS= 0; 
+                    optic_KHS_blk= 0;
+                    optic_AMS= 0;
+                };    
+            };
+        };
+    };
+
+    class CUP_arifle_AK101;
+
+    class CUP_arifle_AK101_railed : CUP_arifle_AK101
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CUP_PicatinnyTopMountAK;
+        };
+    };
+
+    class OPT_CUP_arifle_AK101_railed : CUP_arifle_AK101_railed
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopShortMount  
+            {
+                displayName = "Visier-Slot";
+                iconPinpoint = "center";
+                iconPosition[] = {0.59, 0.281};
+                iconScale = 0.17;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+                
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                    optic_MRCO= 1;
+                    optic_Arco= 1;
+                    optic_Arco_blk_F= 1;
+                    optic_hamr= 1; 
+                    optic_DMS= 0; 
+                    optic_ERCO_blk_F= 1;
+                    optic_NVS= 0;
+                    optic_SOS= 0; 
+                    optic_KHS_blk= 0;
+                    optic_AMS= 0;
+                };    
+            };
+        };
+    };
+    
 
     class CUP_arifle_AK101_GL;
 
@@ -4231,7 +4322,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot;
+            class CUP_PicatinnyTopMountAK;
         };
     };
 
@@ -4239,10 +4330,23 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-
-            class CowsSlot : CowsSlot
+            class CUP_PicatinnyTopMountAS50 : CUP_PicatinnyTopShortMount 
             {
-                compatibleItems[] = {"optic_NVS", "optic_SOS", "optic_LRPS", "CUP_optic_LeupoldMk4_25x50_LRT","CUP_optic_Leupold_VX3"};
+                displayName = "Visier-Slot";
+                iconPosition[] = {0.62,0.45};
+                iconScale = 0.15;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinPoint = "Bottom";
+                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
+                scope = 0;
+                
+                class compatibleItems 
+                {
+                    optic_NVS=1;
+                    optic_SOS=1; 
+                    optic_LRPS=1;
+                    optic_LRPS_tna_F=1;
+                };    
             };
         };
     };
@@ -4286,6 +4390,8 @@ class CfgWeapons
             };
         };
     };
+
+
 
     class Binocular;
 
@@ -5901,30 +6007,6 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_optic_ACO_grn_smg
-            {
-                name = "optic_ACO_grn_smg";
-                count = 50;
-            };
-
-            class _xx_optic_Aco_smg
-            {
-                name = "optic_Aco_smg";
-                count = 50;
-            };
-
-            class _xx_optic_Holosight_smg
-            {
-                name = "optic_Holosight_smg";
-                count = 0;
-            };
-
-            class _xx_optic_Holosight_smg_blk_F
-            {
-                name = "optic_Holosight_smg_blk_F";
-                count = 50;
-            };
-
             class _xx_optic_ACO_grn
             {
                 name = "optic_ACO_grn";
@@ -5982,13 +6064,13 @@ class CfgVehicles
             class _xx_acc_flashlight
             {
                 name = "acc_flashlight";
-                count = 50;
+                count = 0;
             };
 
             class _xx_acc_pointer_IR
             {
                 name = "acc_pointer_IR";
-                count = 50;
+                count = 0;
             };
 
             class _xx_FirstAidKit
@@ -6435,7 +6517,7 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_F : Land_PlasticCase_01_small_olive_F
     {
-        displayName = "Spezialkiste";
+        displayName = "Scharfschützenkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_b_1.paa"};
@@ -6477,15 +6559,9 @@ class CfgVehicles
                 count = 50;
             };
 
-            class _xx_CUP_optic_Leupold_VX3
+            class _xx_optic_LRPS
             {
-                name = "CUP_optic_Leupold_VX3";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_LeupoldMk4_25x50_LRT
-            {
-                name = "CUP_optic_LeupoldMk4_25x50_LRT";
+                name = "optic_LRPS";
                 count = 50;
             };
 
@@ -6522,7 +6598,7 @@ class CfgVehicles
 
     class OPT_Box_EAF_WpsSpecial_F : Land_PlasticCase_01_small_black_F
     {
-        displayName = "AAF Spezialkiste";
+        displayName = "AAF Scharfschützenkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
 
@@ -7379,30 +7455,6 @@ class CfgVehicles
 
         class TransportItems
         {
-            class _xx_optic_ACO_grn_smg
-            {
-                name = "optic_ACO_grn_smg";
-                count = 50;
-            };
-
-            class _xx_optic_Aco_smg
-            {
-                name = "optic_Aco_smg";
-                count = 50;
-            };
-
-            class _xx_optic_Holosight_smg
-            {
-                name = "optic_Holosight_smg";
-                count = 0;
-            };
-
-            class _xx_optic_Holosight_smg_blk_F
-            {
-                name = "optic_Holosight_smg_blk_F";
-                count = 50;
-            };
-
             class _xx_optic_ACO_grn
             {
                 name = "optic_ACO_grn";
@@ -7460,13 +7512,13 @@ class CfgVehicles
             class _xx_acc_flashlight
             {
                 name = "acc_flashlight";
-                count = 50;
+                count = 0;
             };
 
             class _xx_acc_pointer_IR
             {
                 name = "acc_pointer_IR";
-                count = 50;
+                count = 0;
             };
 
             class _xx_FirstAidKit
@@ -7629,7 +7681,7 @@ class CfgVehicles
 
     class OPT_Box_East_WpsSpecial_F : Land_PlasticCase_01_small_olive_F
     {
-        displayName = "Spezialkiste";
+        displayName = "Scharfschützenkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_o_1.paa"};
@@ -7671,15 +7723,9 @@ class CfgVehicles
                 count = 50;
             };
             
-            class _xx_CUP_optic_Leupold_VX3
+            class _xx_optic_LRPS
             {
-                name = "CUP_optic_Leupold_VX3";
-                count = 50;
-            };
-
-            class _xx_CUP_optic_LeupoldMk4_25x50_LRT
-            {
-                name = "CUP_optic_LeupoldMk4_25x50_LRT";
+                name = "optic_LRPS";
                 count = 50;
             };
 

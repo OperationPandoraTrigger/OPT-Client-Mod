@@ -2794,6 +2794,7 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         driverCanEject = 1;
         hiddenSelectionsTextures[] = {"cup\airvehicles\cup_airvehicles_uh60\data\uh60m_fuselage_co.paa","cup\airvehicles\cup_airvehicles_uh60\data\uh60m_engine_co.paa","cup\airvehicles\cup_airvehicles_uh60\data\default_co.paa"};
+        fuelCapacity = 202.97;// 1360 //
 
         class TransportItems
         {
@@ -2844,6 +2845,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 1.78;// 2060 //
 
         class TransportItems
         {
@@ -2901,6 +2903,7 @@ class CfgVehicles
         driverCanEject = 1;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\uh1d\uh1d_0.paa","\opt\opt_client\addons\vehicles\textures\uh1d\uh1d_1.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\uh1d.jpg";
+        fuelCapacity = 14.13;// 920 //
 
         class Components : Components 
         {
@@ -3011,6 +3014,7 @@ class CfgVehicles
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\KA-60\ka60_0.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\ka60.jpg";
+        fuelCapacity = 19.93;// 1450 //
        
         class Components : Components 
         {
@@ -3085,6 +3089,7 @@ class CfgVehicles
         faction = "OPT_NATO_CUP";
         driverCanEject = 1;
         hiddenSelectionsTextures[] = {"CUP\AirVehicles\CUP_AirVehicles_CH53E\data\ch53_1_co_GER.paa","CUP\AirVehicles\CUP_AirVehicles_CH53E\data\ch53_2_co_GER.paa"};
+        fuelCapacity = 225.45;// 4000 //
 
         class TransportItems
         {
@@ -3135,6 +3140,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 1.86;// 3222 //
 
         class TransportItems
         {
@@ -3192,6 +3198,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_72Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_0.paa","\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_1.paa","\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_2.paa"};
+        fuelCapacity = 20.56;// 1420 //
 
         class TransportItems
         {
@@ -3330,6 +3337,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_72Rnd_CMFlare_Chaff_Magazine"};
+        fuelCapacity = 22.03;// 1851 //
 
         class TransportItems
         {
