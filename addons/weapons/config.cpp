@@ -4083,6 +4083,7 @@ class CfgWeapons
             };
         };
     };
+    
 
     class CUP_arifle_AK101_GL;
 
