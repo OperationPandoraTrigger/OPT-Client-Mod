@@ -4053,7 +4053,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopShortMount  
+            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount  
             {
                 displayName = "Visier-Slot";
                 iconPinpoint = "center";
