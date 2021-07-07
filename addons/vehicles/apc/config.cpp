@@ -2939,7 +2939,7 @@ class CfgVehicles
     class OPT_CUP_B_LAV25_HQ_USMC: CUP_B_LAV25_HQ_USMC
     {
         faction = "OPT_NATO_CUP";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\lavc2\lavc2_0.paa", "\opt\opt_client\addons\vehicles\textures\lavc2\lavc2_1.paa", "\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lav_hq_co.paa", "\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavalfa_ca.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\lavc2\lavc2_0.paa","cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavbody2_co.paa", "\opt\opt_client\addons\vehicles\textures\lavc2\lavc2_1.paa", "\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavalfa_ca.paa"};
         fuelCapacity = 15.3;// 300 //
 
         class Turrets : Turrets 
