@@ -4011,10 +4011,10 @@ class CfgWeapons
             class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopShortMount 
             {
                 displayName = "Visier-Slot";
-				iconPinpoint = "center";
-				iconPosition[] = {0.59, 0.281};
-				iconScale = 0.17;
-				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "center";
+                iconPosition[] = {0.59, 0.281};
+                iconScale = 0.17;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 scope = 0;
                 
@@ -4056,10 +4056,10 @@ class CfgWeapons
             class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopShortMount  
             {
                 displayName = "Visier-Slot";
-				iconPinpoint = "center";
-				iconPosition[] = {0.59, 0.281};
-				iconScale = 0.17;
-				iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
+                iconPinpoint = "center";
+                iconPosition[] = {0.59, 0.281};
+                iconScale = 0.17;
+                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                 scope = 0;
                 
