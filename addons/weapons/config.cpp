@@ -3884,7 +3884,7 @@ class CfgWeapons
     };
 
     class CUP_launch_FIM92Stinger;
-    
+
     class OPT_CUP_launch_FIM92Stinger : CUP_launch_FIM92Stinger
     {
         class EventHandlers 
@@ -3895,7 +3895,12 @@ class CfgWeapons
         magazines[] = {"OPT_CUP_Stinger_M"};
     };
 
-    class CUP_launch_Igla;
+    class CUP_launch_Igla_Loaded;
+
+    class CUP_launch_Igla : CUP_launch_Igla_Loaded
+    {
+        class WeaponSlotsInfo;
+    };
     
     class OPT_CUP_launch_Igla : CUP_launch_Igla
     {
@@ -3905,6 +3910,11 @@ class CfgWeapons
         };
         
         magazines[] = {"OPT_CUP_Igla_M"};
+
+        class WeaponSlotsInfo : WeaponSlotsInfo 
+        {
+            mass = 241.2; // 285.5
+        };
     };
 
     class CUP_arifle_HK416_145_Base : Rifle_Base_F
