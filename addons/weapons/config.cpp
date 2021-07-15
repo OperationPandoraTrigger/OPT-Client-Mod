@@ -4321,7 +4321,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK;
+            class CUP_PicatinnyTopMountAS50;
         };
     };
 
