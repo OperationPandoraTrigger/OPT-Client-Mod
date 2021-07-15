@@ -1733,8 +1733,8 @@ class CfgVehicles
         displayName = "LMG-Schütze";
         weapons[] = {"OPT_CUP_lmg_m249_pip3","Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_CUP_lmg_m249_pip3", "Binocular", "Throw", "Put"};
-        magazines[] = {"CUP_200Rnd_TE4_Green_Tracer_556x45_M249", "CUP_200Rnd_TE4_Green_Tracer_556x45_M249", "SmokeShell", "SmokeShell"};
-        respawnMagazines[] = {"CUP_200Rnd_TE4_Green_Tracer_556x45_M249", "CUP_200Rnd_TE4_Green_Tracer_556x45_M249", "SmokeShell", "SmokeShell"};
+        magazines[] = {"CUP_100Rnd_TE4_Green_Tracer_556x45_M249", "CUP_100Rnd_TE4_Green_Tracer_556x45_M249", "SmokeShell", "SmokeShell"};
+        respawnMagazines[] = {"CUP_100Rnd_TE4_Green_Tracer_556x45_M249", "CUP_100Rnd_TE4_Green_Tracer_556x45_M249", "SmokeShell", "SmokeShell"};
         backpack = "OPT_B_AssaultPack_mccuu";
     };
   
