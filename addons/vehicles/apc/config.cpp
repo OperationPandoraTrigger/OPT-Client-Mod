@@ -3098,7 +3098,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\m2a2\m2a2_0.paa", "\opt\opt_client\addons\vehicles\textures\m2a2\m2a2_1.paa","cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\ultralp_wdl_co.paa"};
-        fuelCapacity = 0.02;// 746 //
+        fuelCapacity = 3.15;// 746 //
 
         class Turrets : Turrets 
         {
