@@ -4532,7 +4532,7 @@ class CfgWeapons
     
     class OPT_CUP_H_HIL_HelmetACH_Headset_TTS : CUP_H_HIL_HelmetACH_Headset_TTS 
     {
-            hiddenSelectionsTextures[] = {"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\data\ssh68_cover_vsr98_co.paa"};
+        hiddenSelectionsTextures[] = {"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\data\ssh68_cover_vsr98_co.paa"};
     };
     
     class CMFlareLauncher;
