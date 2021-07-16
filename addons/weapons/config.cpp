@@ -4527,6 +4527,7 @@ class CfgWeapons
         displayName = "OPT FADAK";
         descriptionShort = "Mit 20km Reichweite";
     };
+    
 
     class CUP_H_HIL_HelmetACH_Headset_TTS;	
         
