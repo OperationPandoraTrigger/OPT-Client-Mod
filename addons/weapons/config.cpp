@@ -4528,8 +4528,8 @@ class CfgWeapons
         descriptionShort = "Mit 20km Reichweite";
     };
     
-    class CUP_H_HIL_HelmetACH_Headset_TTS;	
-        
+    class CUP_H_HIL_HelmetACH_Headset_TTS;
+    
     class OPT_CUP_H_HIL_HelmetACH_Headset_TTS : CUP_H_HIL_HelmetACH_Headset_TTS 
     {
             hiddenSelectionsTextures[] = {"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\data\ssh68_cover_vsr98_co.paa"};
