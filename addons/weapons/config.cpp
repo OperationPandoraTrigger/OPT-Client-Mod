@@ -4528,7 +4528,6 @@ class CfgWeapons
         descriptionShort = "Mit 20km Reichweite";
     };
     
-
     class CUP_H_HIL_HelmetACH_Headset_TTS;	
         
     class OPT_CUP_H_HIL_HelmetACH_Headset_TTS : CUP_H_HIL_HelmetACH_Headset_TTS 
