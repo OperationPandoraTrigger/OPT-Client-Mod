@@ -3884,7 +3884,7 @@ class CfgWeapons
     };
 
     class CUP_launch_FIM92Stinger;
-    
+
     class OPT_CUP_launch_FIM92Stinger : CUP_launch_FIM92Stinger
     {
         class EventHandlers 
@@ -3895,7 +3895,12 @@ class CfgWeapons
         magazines[] = {"OPT_CUP_Stinger_M"};
     };
 
-    class CUP_launch_Igla;
+    class CUP_launch_Igla_Loaded;
+
+    class CUP_launch_Igla : CUP_launch_Igla_Loaded
+    {
+        class WeaponSlotsInfo;
+    };
     
     class OPT_CUP_launch_Igla : CUP_launch_Igla
     {
@@ -3905,9 +3910,18 @@ class CfgWeapons
         };
         
         magazines[] = {"OPT_CUP_Igla_M"};
+
+        class WeaponSlotsInfo : WeaponSlotsInfo 
+        {
+            mass = 241.2; // 285.5
+        };
     };
 
-    class CUP_arifle_HK416_145_Base;
+    class CUP_arifle_HK416_145_Base : Rifle_Base_F
+    {
+        class WeaponSlotsInfo;
+
+    };
 
     class CUP_arifle_HK416_Black : CUP_arifle_HK416_145_Base
     {
@@ -3949,7 +3963,12 @@ class CfgWeapons
         };
     };
 
-    class CUP_arifle_Mk16_STD;
+    class CUP_arifle_SCAR_L_Base;
+
+    class CUP_arifle_Mk16_STD : CUP_arifle_SCAR_L_Base
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_arifle_Mk16_STD_FG_black : CUP_arifle_Mk16_STD
     {
@@ -3994,13 +4013,16 @@ class CfgWeapons
         };
     };
 
-    class CUP_arifle_Mk16_STD_EGLM;
+    class CUP_arifle_Mk16_STD_EGLM : CUP_arifle_Mk16_STD
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_arifle_Mk16_STD_EGLM_black : CUP_arifle_Mk16_STD_EGLM
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMount;
+            class CUP_PicatinnyTopShortMount;
         };
     };
 
@@ -4039,13 +4061,18 @@ class CfgWeapons
         };
     };
 
-    class CUP_arifle_AK101;
+    class CUP_arifle_AK74M;
+
+    class CUP_arifle_AK101 : CUP_arifle_AK74M
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_arifle_AK101_railed : CUP_arifle_AK101
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK;
+            class CUP_PicatinnyTopShortMount;
         };
     };
 
@@ -4084,13 +4111,18 @@ class CfgWeapons
         };
     };
     
-    class CUP_arifle_AK101_GL;
+    class CUP_arifle_AK74M_GL;
+
+    class CUP_arifle_AK101_GL : CUP_arifle_AK74M_GL
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK;
+            class CUP_PicatinnyTopShortMount;
         };
 
         class GP25Muzzle;
@@ -4136,13 +4168,18 @@ class CfgWeapons
         };
     };
   
-    class CUP_lmg_minimi_railed;
+    class CUP_lmg_minimipara;
+
+    class CUP_lmg_minimi_railed : CUP_lmg_minimipara
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_lmg_m249_pip3 : CUP_lmg_minimi_railed
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CowsSlot;
+            class CUP_PicatinnyTopMount;
         };
     };
 
@@ -4151,7 +4188,7 @@ class CfgWeapons
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
 
-            class CowsSlot : CowsSlot
+            class CUP_PicatinnyTopMountM249 : CUP_PicatinnyTopMount
             {
                 access = 1;
                 displayName = "Visier-Slot";
@@ -4161,18 +4198,28 @@ class CfgWeapons
                 iconScale = 0;
                 linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
                 scope = 0;
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+                                                               
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                }; 
             };
         };
     };
 
-    class CUP_lmg_M240;
+    class CUP_lmg_M240 : Rifle_Long_Base_F
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_lmg_M240_B : CUP_lmg_M240
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK;
+            class CUP_PicatinnyTopShortMount;
         };
     };
 
@@ -4201,13 +4248,18 @@ class CfgWeapons
         };
     };
 
-    class CUP_arifle_RPK74M;
+    class CUP_arifle_RPK74;
+
+    class CUP_arifle_RPK74M : CUP_arifle_RPK74
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_arifle_RPK74M_top_rail : CUP_arifle_RPK74M
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK;
+            class CUP_PicatinnyTopShortMount;
         };
     };
 
@@ -4236,7 +4288,10 @@ class CfgWeapons
         };
     };
 
-    class CUP_lmg_PKM;
+    class CUP_lmg_PKM : Rifle_Long_Base_F
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_lmg_PKM_top_rail : CUP_lmg_PKM
     {
@@ -4253,12 +4308,23 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+                class compatibleItems 
+                {
+                    optic_aco = 1;
+                    optic_ACO_grn= 1;
+                    optic_Holosight= 1;
+                    optic_Holosight_blk_F= 1;
+                };
             };
         };
     };
 
-    class CUP_arifle_HK417_Base;
+    class CUP_arifle_HK416_145_Base;
+
+    class CUP_arifle_HK417_Base : CUP_arifle_HK416_145_Base
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_arifle_HK417_20 : CUP_arifle_HK417_Base
     {
@@ -4280,7 +4346,12 @@ class CfgWeapons
         };
     };
 
-    class CUP_arifle_FNFAL5061;
+    class CUP_arifle_FNFAL;
+
+    class CUP_arifle_FNFAL5061 : CUP_arifle_FNFAL
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_arifle_FNFAL5061_railed : CUP_arifle_FNFAL5061
     {
@@ -4321,7 +4392,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK;
+            class CUP_PicatinnyTopShortMount;
         };
     };
 
@@ -4350,7 +4421,10 @@ class CfgWeapons
         };
     };
 
-    class CUP_Mac10_Base;
+    class CUP_Mac10_Base : Rifle_Base_F
+    {
+        class WeaponSlotsInfo;
+    };
 
     class CUP_smg_Mac10 : CUP_Mac10_Base
     {
@@ -4453,7 +4527,31 @@ class CfgWeapons
         displayName = "OPT FADAK";
         descriptionShort = "Mit 20km Reichweite";
     };
+    
+    class CUP_H_RUS_SSH68_cover_base;
 
+    class CUP_H_RUS_SSH68_cover_vsr98 : CUP_H_RUS_SSH68_cover_base
+    {
+        class ItemInfo;        
+    };
+    
+    class OPT_CUP_H_HIL_HelmetACH_Headset_TTS : CUP_H_RUS_SSH68_cover_vsr98
+    {
+        class ItemInfo : ItemInfo
+        {
+            hiddenSelectionsTextures[] = {"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\data\ssh68_cover_vsr98_co.paa"};
+            class HitpointsProtectionInfo 
+            {
+                class Head 
+                {
+                    hitpointName = "HitHead";
+                    armor = 6;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+    
     class CMFlareLauncher;
 
     class OPT_CMFlareLauncher : CMFlareLauncher
@@ -6430,9 +6528,9 @@ class CfgVehicles
                 count = 80;
             };
 
-            class _xx_CUP_200Rnd_TE4_Green_Tracer_556x45_M249
+            class _xx_CUP_100Rnd_TE4_Green_Tracer_556x45_M249
             {
-                magazine = "CUP_200Rnd_TE4_Green_Tracer_556x45_M249";
+                magazine = "CUP_100Rnd_TE4_Green_Tracer_556x45_M249";
                 count = 40;
             };
 

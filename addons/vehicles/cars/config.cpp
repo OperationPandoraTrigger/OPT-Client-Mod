@@ -2514,7 +2514,7 @@ class CfgVehicles
         rew = "CUP_B_USMC_Soldier_FROG_WDL";
         typicalCargo[] = {"CUP_B_USMC_Soldier_FROG_WDL"};
         hiddenselectionstextures[] = {"\opt\opt_client\addons\vehicles\textures\LandRover\landrover_0.paa","\opt\opt_client\addons\vehicles\textures\LandRover\landrover_1.paa"};
-        fuelCapacity = 14.3;// 60 //
+        fuelCapacity = 3.06;// 60 //
 
         class TransportMagazines
         {
@@ -2539,7 +2539,7 @@ class CfgVehicles
     class OPT_CUP_O_LR_AA_TKA: CUP_O_LR_AA_TKA
     {
         faction = "OPT_WP";
-        fuelCapacity = 14.3;// 60 //
+        fuelCapacity = 3.06;// 60 //
 
         class TransportMagazines
         {
