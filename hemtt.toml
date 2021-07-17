@@ -6,7 +6,8 @@ author = "Operation Pandora Trigger"
 files = [
     "mod.cpp",
     "README.md",
-    "opt4_icon.paa"
+    "opt4_icon.paa",
+    "extras/addons"
 ]
 
 releasebuild = [
