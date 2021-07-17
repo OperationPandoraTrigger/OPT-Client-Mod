@@ -3938,7 +3938,7 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F", "optic_KHS_blk"};
             };
         };
     };
@@ -3958,7 +3958,7 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_DMS", "optic_ERCO_blk_F", "optic_NVS", "optic_SOS", "optic_KHS_blk", "optic_AMS"};
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F","optic_KHS_blk"};
             };
         };
     };
@@ -4072,7 +4072,6 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopShortMount;
         };
     };
 
@@ -4080,7 +4079,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount  
+            class CUP_PicatinnyTopMountAK
             {
                 displayName = "Visier-Slot";
                 iconPinpoint = "center";
@@ -4122,7 +4121,6 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopShortMount;
         };
 
         class GP25Muzzle;
@@ -4132,7 +4130,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount 
+            class CUP_PicatinnyTopMountAK
             {
                 displayName = "Visier-Slot";
                 iconPosition[] = {0.58, 0.22};
@@ -4392,7 +4390,6 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopShortMount;
         };
     };
 
@@ -4400,7 +4397,7 @@ class CfgWeapons
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
-            class CUP_PicatinnyTopMountAS50 : CUP_PicatinnyTopShortMount 
+            class CUP_PicatinnyTopMountAS50
             {
                 displayName = "Visier-Slot";
                 iconPosition[] = {0.62,0.45};
