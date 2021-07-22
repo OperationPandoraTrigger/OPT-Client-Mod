@@ -1817,6 +1817,7 @@ class CfgVehicles
     {
         faction = "OPT_WP";
         fuelCapacity = 9.47;// 672 //
+        turnCoef = 2;
 
         class TransportMagazines
         {
@@ -1934,6 +1935,7 @@ class CfgVehicles
     {
         faction = "OPT_WP";
         fuelCapacity = 11.2;// 672 //
+        turnCoef = 2;
 
         class Turrets : Turrets
         {
