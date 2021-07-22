@@ -1288,7 +1288,7 @@ class CfgVehicles
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_0.paa","\opt\opt_client\addons\vehicles\textures\L-39ZA\l39za_1.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\l39za.jpg";
-        fuelCapacity = 922.78;// 1914 //
+        fuelCapacity = 868.5;// 1914 //
 
         class Components : Components
         {
@@ -1361,7 +1361,7 @@ class CfgVehicles
         magazines[] = {"60Rnd_CMFlare_Chaff_Magazine","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\SU25T\su25t_0.paa","\opt\opt_client\addons\vehicles\textures\SU25T\su25t_1.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\su25t.jpg";
-        fuelCapacity = 973.26;// 3600 //
+        fuelCapacity = 648.84;// 3600 //
 
         class Components : Components
         {

@@ -2940,7 +2940,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\lavc2\lavc2_0.paa","cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavbody2_co.paa", "\opt\opt_client\addons\vehicles\textures\lavc2\lavc2_1.paa", "\cup\wheeledvehicles\cup_wheeledvehicles_lav25\data\lavalfa_ca.paa"};
-        fuelCapacity = 15.3;// 300 //
+        fuelCapacity = 18.2;// 300 //
 
         class Turrets : Turrets 
         {
@@ -2990,7 +2990,7 @@ class CfgVehicles
                 gunnerGetInAction = "GetInHigh";
                 gunnerGetOutAction = "GetOutHigh";
                 selectionFireAnim = "zasleh_2";
-                InGunnerMayFire = false;
+                InGunnerMayFire = true;
                 outGunnerMayFire = true;
                 gunnerOpticsShowCursor = 0;
                 LODTurnedIn = 1;
@@ -3056,7 +3056,7 @@ class CfgVehicles
     class OPT_CUP_O_BTR60_RU: CUP_O_BTR60_RU
     {
         faction = "OPT_WP";
-        fuelCapacity = 16.9;// 350 //
+        fuelCapacity = 14.42;// 350 //
 
         class TransportMagazines
         {
@@ -3098,7 +3098,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\m2a2\m2a2_0.paa", "\opt\opt_client\addons\vehicles\textures\m2a2\m2a2_1.paa","cup\TrackedVehicles\CUP_TrackedVehicles_Bradley\data\ultralp_wdl_co.paa"};
-        fuelCapacity = 3.15;// 746 //
+        fuelCapacity = 11.60;// 746 //
 
         class Turrets : Turrets 
         {
@@ -3205,7 +3205,7 @@ class CfgVehicles
     class OPT_CUP_O_BTR90_RU: CUP_O_BTR90_RU
     {
         faction = "OPT_WP";
-        fuelCapacity = 18.2;// 350 //
+        fuelCapacity = 9.87;// 350 //
 
         class Turrets : Turrets 
         {
@@ -3373,7 +3373,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\M163\m163_0.paa", "\opt\opt_client\addons\vehicles\textures\M163\m163_1.paa"};
-        fuelCapacity = 14.5;// 360 //
+        fuelCapacity = 9.85;// 360 //
 
         class Turrets : Turrets 
         {
@@ -3423,7 +3423,7 @@ class CfgVehicles
     class OPT_CUP_O_ZSU23_Afghan_SLA: CUP_O_ZSU23_Afghan_SLA
     {
         faction = "OPT_WP";
-        fuelCapacity = 0.9;// 520 //
+        fuelCapacity = 7;// 520 //
 
         class Turrets : Turrets 
         {

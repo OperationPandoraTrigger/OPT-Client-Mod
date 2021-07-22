@@ -1730,7 +1730,7 @@ class CfgVehicles
     {
         faction = "OPT_NATO_CUP";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\M60\m60_0.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_1.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_2.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_3.paa","CUP\TrackedVehicles\CUP_TrackedVehicles_M60\data\m60_fuelcan_co.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_5.paa","\opt\opt_client\addons\vehicles\textures\M60\m60_6.paa","CUP\TrackedVehicles\CUP_TrackedVehicles_M1_Abrams\data\m1abrams_02_co.paa","CUP\TrackedVehicles\CUP_TrackedVehicles_M60\data\bk_eg_co.paa","CUP\TrackedVehicles\CUP_TrackedVehicles_M60\data\m60_alp_uvs_1024s_ca.paa"};
-        fuelCapacity = 10.5;// 1885 //
+        fuelCapacity = 11.84;// 1885 //
 
         class Turrets : Turrets 
         {
@@ -1752,8 +1752,25 @@ class CfgVehicles
                 {
                     class Wide : Wide 
                     {
+                        initAngleX = 0;
+                        minAngleX = -30;
+                        maxAngleX = 30;
+                        initAngleY = 0;
+                        minAngleY = -100;
+                        maxAngleY = 100;
+                        initFov = 0.155;
+                        minFov = 0.155;
+                        maxFov = 0.155;
                         visionMode[] = {"Normal", NVG};
                         thermalMode[] = {};
+                    };
+
+                    class Narrow : Wide 
+                    {
+                        gunnerOpticsModel = "CUP\TrackedVehicles\CUP_TrackedVehicles_m1_abrams\gunnerOptics_M1A1_2";
+                        initFov = 0.047;
+                        minFov = 0.047;
+                        maxFov = 0.047;
                     };
                 };
             };
@@ -1799,7 +1816,7 @@ class CfgVehicles
     class OPT_CUP_O_T72_RU: CUP_O_T72_RU
     {
         faction = "OPT_WP";
-        fuelCapacity = 2.3;// 672 //
+        fuelCapacity = 9.47;// 672 //
 
         class TransportMagazines
         {
@@ -1840,7 +1857,7 @@ class CfgVehicles
     class OPT_CUP_B_Leopard2A6_GER: CUP_B_Leopard2A6_GER
     {
         faction = "OPT_NATO_CUP";
-        fuelCapacity = 59.27;// 1885 //
+        fuelCapacity = 11.72;// 1885 //
 
         class Turrets : Turrets
         {
@@ -1916,7 +1933,7 @@ class CfgVehicles
     class OPT_CUP_O_T90_RU: CUP_O_T90_RU
     {
         faction = "OPT_WP";
-        fuelCapacity = 3.2;// 672 //
+        fuelCapacity = 11.2;// 672 //
 
         class Turrets : Turrets
         {
