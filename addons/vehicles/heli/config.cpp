@@ -2845,7 +2845,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
-        fuelCapacity = 1.78;// 2060 //
+        fuelCapacity = 15.48;// 2060 //
 
         class TransportItems
         {
@@ -3014,7 +3014,7 @@ class CfgVehicles
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\KA-60\ka60_0.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\ka60.jpg";
-        fuelCapacity = 19.93;// 1450 //
+        fuelCapacity = 15.33;// 1450 //
        
         class Components : Components 
         {
@@ -3140,7 +3140,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
-        fuelCapacity = 1.86;// 3222 //
+        fuelCapacity = 14.88;// 3222 //
 
         class TransportItems
         {
@@ -3198,7 +3198,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_72Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_0.paa","\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_1.paa","\opt\opt_client\addons\vehicles\textures\ah64d\ah64d_2.paa"};
-        fuelCapacity = 20.56;// 1420 //
+        fuelCapacity = 15.82;// 1420 //
 
         class TransportItems
         {
@@ -3337,7 +3337,7 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_72Rnd_CMFlare_Chaff_Magazine"};
-        fuelCapacity = 22.03;// 1851 //
+        fuelCapacity = 16.32;// 1851 //
 
         class TransportItems
         {
