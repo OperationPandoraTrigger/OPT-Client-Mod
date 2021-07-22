@@ -939,7 +939,6 @@ class CfgMagazines
         type = 6 * 256;
         picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_igla_ca.paa";
         model = "\CUP\Weapons\CUP_Weapons_Ammunition\9K38_Igla\CUP_9K38_Igla";
-        modelSpecial = "\CUP\Weapons\CUP_Weapons_Igla\CUP_igla_loaded.p3d";
         initSpeed = 32;
         maxLeadSpeed = 150;
         mass = 219;
@@ -4316,8 +4315,6 @@ class CfgWeapons
             };
         };
     };
-
-    class CUP_arifle_HK416_145_Base;
 
     class CUP_arifle_HK417_Base : CUP_arifle_HK416_145_Base
     {
