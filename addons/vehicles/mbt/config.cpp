@@ -1752,8 +1752,25 @@ class CfgVehicles
                 {
                     class Wide : Wide 
                     {
+                        initAngleX = 0;
+                        minAngleX = -30;
+                        maxAngleX = 30;
+                        initAngleY = 0;
+                        minAngleY = -100;
+                        maxAngleY = 100;
+                        initFov = 0.155;
+                        minFov = 0.155;
+                        maxFov = 0.155;
                         visionMode[] = {"Normal", NVG};
                         thermalMode[] = {};
+                    };
+
+                    class Narrow : Wide 
+                    {
+                        gunnerOpticsModel = "CUP\TrackedVehicles\CUP_TrackedVehicles_m1_abrams\gunnerOptics_M1A1_2";
+                        initFov = 0.047;
+                        minFov = 0.047;
+                        maxFov = 0.047;
                     };
                 };
             };
