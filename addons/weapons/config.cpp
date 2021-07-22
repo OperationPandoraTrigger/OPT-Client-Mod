@@ -934,7 +934,6 @@ class CfgMagazines
         dlc = "CommunityUpgradeProject";
         displayName = "$STR_CUP_dn_igla_M";
         descriptionShort = "$STR_CUP_dss_igla_M";
-        modelSpecial = "\CUP\Weapons\CUP_Weapons_Igla\CUP_igla_loaded.p3d";
         ammo = "CUP_M_9K38_Igla_AA";
         type = 6 * 256;
         picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_igla_ca.paa";
