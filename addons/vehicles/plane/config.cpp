@@ -7,7 +7,7 @@ class CfgPatches
         weapons[] = {};
         requiredVersion = 0.100000;
         requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_air_f_gamma_plane_fighter_03", "a3_air_f_epc_plane_cas_02", "a3_air_f_epc_plane_cas_01", "A3_Air_F_Exp", "A3_Air_F_Exp_VTOL_01", "A3_Air_F_Exp_VTOL_02", "A3_Soft_F_Exp", "A3_Soft_F_Exp_LSV_01", "A3_Soft_F_Exp_LSV_02",
-                            "A3_Air_F_Jets", "A3_Air_F_Jets_Plane_Fighter_01", "A3_Air_F_Jets_Plane_Fighter_02","CUP_AirVehicles_L39","CUP_AirVehicles_Su25"};
+                            "A3_Air_F_Jets", "A3_Air_F_Jets_Plane_Fighter_01", "A3_Air_F_Jets_Plane_Fighter_02","CUP_AirVehicles_L39","CUP_AirVehicles_Su25","CUP_AirVehciles_Cessna"};
     };
 };
 
@@ -1468,9 +1468,9 @@ class CfgVehicles
     };
 
     // Nato Cessna
-    class C_Plane_Civil_01_racing_F;
+    class CUP_I_CESSNA_T41_UNARMED_USA;
 
-    class OPT_CUP_C_Cessna_172_CIV_BLUE : C_Plane_Civil_01_racing_F
+    class OPT_CUP_I_CESSNA_T41_UNARMED_USA : CUP_I_CESSNA_T41_UNARMED_USA
     {
         faction = "OPT_NATO_CUP";
         side = 1;
@@ -1479,8 +1479,8 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
-        hiddenSelectionsTextures[] = {"A3\Air_F_Exp\Plane_Civil_01\Data\btt_ext_01_RedLine_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_ext_02_RedLine_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_int_01_tan_co.paa","A3\Air_F_Exp\Plane_Civil_01\Data\btt_int_02_tan_co.paa"};
-        fuelCapacity = 877.93;// 1000 //
+        hiddenSelectionsTextures[] = {"CUP\AirVehicles\CUP_AirVehicles_Cessna\data\skins\body_mil_tan_co.paa"};
+        fuelCapacity = 75.0; // 212 //
 
         class TransportItems
         {
@@ -1506,9 +1506,9 @@ class CfgVehicles
     };
 
     // WP Cessna
-    class I_C_Plane_Civil_01_F;
+    class CUP_I_CESSNA_T41_UNARMED_ION;
 
-    class OPT_CUP_C_Cessna_172_CIV_GREEN : I_C_Plane_Civil_01_F
+    class OPT_CUP_I_CESSNA_T41_UNARMED_ION : CUP_I_CESSNA_T41_UNARMED_ION
     {
         faction = "OPT_WP";
         side = 0;
@@ -1517,7 +1517,8 @@ class CfgVehicles
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"96Rnd_CMFlare_Chaff_Magazine"};
-        fuelCapacity = 877.93;// 1000 //
+        hiddenSelectionsTextures[] = {"CUP\AirVehicles\CUP_AirVehicles_Cessna\data\skins\body_mil_olive_co.paa"};
+        fuelCapacity = 75.0; // 212 //
 
         class TransportItems
         {
