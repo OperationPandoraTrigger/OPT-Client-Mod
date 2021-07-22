@@ -2990,7 +2990,7 @@ class CfgVehicles
                 gunnerGetInAction = "GetInHigh";
                 gunnerGetOutAction = "GetOutHigh";
                 selectionFireAnim = "zasleh_2";
-                InGunnerMayFire = false;
+                InGunnerMayFire = true;
                 outGunnerMayFire = true;
                 gunnerOpticsShowCursor = 0;
                 LODTurnedIn = 1;
