@@ -920,7 +920,7 @@ class CfgMagazines
         model = "\CUP\Weapons\CUP_Weapons_Ammunition\Stinger\CUP_Stinger_Proxy.p3d";
         modelSpecial = "";
         descriptionShort = "$STR_CUP_dss_stinger_M";
-        mass = 219;
+        mass = 90;
         count = 1;
         initSpeed = 40;
         maxLeadSpeed = 320;
@@ -940,7 +940,7 @@ class CfgMagazines
         model = "\CUP\Weapons\CUP_Weapons_Ammunition\9K38_Igla\CUP_9K38_Igla";
         initSpeed = 32;
         maxLeadSpeed = 150;
-        mass = 219;
+        mass = 90;
         maxThrowHoldTime = 2;
         maxThrowIntensityCoef = 1.4;
         minThrowIntensityCoef = 0.3;
