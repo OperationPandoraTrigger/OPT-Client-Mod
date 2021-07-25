@@ -2934,8 +2934,8 @@ class CfgVehicles
                     
                     class pylons3 
                     {
-                        hardpoints[] = {CUP_NATO_HELO_ROCKETS, CUP_NATO_HELO_GUNPOD};
-                        attachment = "CUP_PylonPod_7Rnd_Rocket_FFAR_M";
+                        hardpoints[] = {CUP_NATO_HELO_ROCKETS, CUP_NATO_HELO_GUNPOD,CUP_EAST_HELO_SMALL};
+                        attachment = "CUP_PylonPod_7Rnd_S5_M";
                         bay = -1;
                         priority = 1;
                         UIposition[] = {0.56, 0.45};
@@ -2947,7 +2947,7 @@ class CfgVehicles
                         UIposition[] = {0.06, 0.45};
                         turret[] = {};
                         mirroredMissilePos = 1;
-                        attachment = "CUP_PylonPod_7Rnd_Rocket_FFAR_M";
+                        attachment = "CUP_PylonPod_7Rnd_S5_M";
                     };
                 };
             };
@@ -3231,8 +3231,8 @@ class CfgVehicles
                 {
                     class pylonLeft1 
                     {
-                        hardpoints[] = {DAR, DAGR, B_SHRIEKER, CUP_NATO_HELO_SMALL, CUP_NATO_HELO_LARGE, CUP_NATO_HELO_AH64, "CUP_PylonPod_1Rnd_AGM65_Maverick_M"};
-                        attachment = "CUP_PylonPod_12Rnd_CRV7_KEP_M";
+                        hardpoints[] = {DAR, DAGR, B_SHRIEKER, CUP_NATO_HELO_SMALL, CUP_NATO_HELO_LARGE, CUP_NATO_HELO_AH64, "CUP_PylonPod_1Rnd_AGM65_Maverick_M", CUP_EAST_HELO_SMALL, CUP_EAST_HELO_LARGE, CUP_EAST_HELO_HIND};
+                        attachment = "CUP_PylonPod_16Rnd_S5_M";
                         priority = 5;
                         UIposition[] = {0.59, 0.35};
                         turret[] = {};
@@ -3258,7 +3258,7 @@ class CfgVehicles
                     class pylonRight2 : pylonRight1 
                     {
                         UIposition[] = {0.06, 0.35};
-                        attachment = "CUP_PylonPod_12Rnd_CRV7_KEP_M";
+                        attachment = "CUP_PylonPod_16Rnd_S5_M";
                         turret[] = {};
                         mirroredMissilePos = 1;
                         priority = 4;
