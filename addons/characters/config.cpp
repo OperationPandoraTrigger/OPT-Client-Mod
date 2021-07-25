@@ -1402,7 +1402,7 @@ class CfgVehicles
         respawnItems[] = {};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_SPH4_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
         respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "H_PilotHelmetHeli_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
-        backpack = "tf_rt1523g_big_bwmod";
+        backpack = "TFAR_rt1523g_big_bwmod";
         uniformClass = "CUP_U_B_USArmy_PilotOverall";
     };
 
@@ -1418,7 +1418,7 @@ class CfgVehicles
         respawnItems[] = {};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_SPH4_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
         respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "H_PilotHelmetHeli_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
-        backpack = "tf_rt1523g_big_bwmod";
+        backpack = "TFAR_rt1523g_big_bwmod";
         uniformClass = "CUP_U_B_USArmy_PilotOverall";
     };
 
@@ -1454,7 +1454,7 @@ class CfgVehicles
         respawnMagazines[] = {"CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_15Rnd_9x19_M9", "CUP_15Rnd_9x19_M9", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout","CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout","CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
-        backpack = "tf_rt1523g_big_bwmod";
+        backpack = "TFAR_rt1523g_big_bwmod";
         uniformClass = "CUP_U_B_BAF_DPM_GHILLIE";
     };
 
@@ -1544,7 +1544,7 @@ class CfgVehicles
         respawnItems[] = {};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_CZ_Helmet05", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_CZ_Helmet05", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
-        backpack = "tf_rt1523g_big_bwmod";
+        backpack = "TFAR_rt1523g_big_bwmod";
         uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
@@ -1563,7 +1563,7 @@ class CfgVehicles
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
-        backpack = "tf_rt1523g_big_bwmod";
+        backpack = "TFAR_rt1523g_big_bwmod";
         uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
@@ -1580,7 +1580,7 @@ class CfgVehicles
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries"};
         linkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         respawnLinkedItems[] = {"CUP_V_B_Eagle_SPC_Scout", "CUP_H_USArmy_ECH_Headset_MARPAT", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
-        backpack = "tf_rt1523g_big_bwmod";
+        backpack = "TFAR_rt1523g_big_bwmod";
         uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
@@ -1661,7 +1661,7 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_CUP_arifle_Mk16_STD_FG_black", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
         respawnMagazines[] = {"CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "CUP_30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell"};
-        backpack = "tf_rt1523g_big_bwmod";
+        backpack = "TFAR_rt1523g_big_bwmod";
         uniformClass = "CUP_U_B_USMC_MCCUU_gloves";
     };
 
@@ -1792,7 +1792,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_4", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "tf_mr3000_bwmod";
+        backpack = "TFAR_mr3000_bwmod";
         uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
@@ -1808,7 +1808,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_4", "CUP_H_SPH4_khaki_visor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "tf_mr3000_bwmod";
+        backpack = "TFAR_mr3000_bwmod";
         uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
@@ -1827,7 +1827,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "OPT_CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "tf_mr3000_bwmod";
+        backpack = "TFAR_mr3000_bwmod";
         uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
@@ -1847,7 +1847,7 @@ class CfgVehicles
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell", "Laserbatteries"};
         linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "OPT_CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "OPT_CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        backpack = "tf_mr3000_bwmod";
+        backpack = "TFAR_mr3000_bwmod";
         uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 
@@ -1889,7 +1889,7 @@ class CfgVehicles
         respawnMagazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "OPT_CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "O_UavTerminal"};
         respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "OPT_CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "O_UavTerminal"};
-        backpack = "tf_mr3000_bwmod";
+        backpack = "TFAR_mr3000_bwmod";
     };
 
     class OPT_CSAT_MG_Schuetze : OPT_CSAT_Soldat
@@ -1968,7 +1968,7 @@ class CfgVehicles
         respawnMagazines[] = {"CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_5Rnd_127x99_as50_M", "CUP_16Rnd_9x19_cz75", "CUP_16Rnd_9x19_cz75", "SmokeShell", "SmokeShell"};
         linkedItems[] = {"CUP_V_RUS_6B3_Flora_3","OPT_CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3","OPT_CUP_H_HIL_HelmetACH_Headset_TTS", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        backpack = "tf_mr3000_bwmod";
+        backpack = "TFAR_mr3000_bwmod";
         uniformClass = "CUP_U_O_RUS_Ghillie";
     };
 
@@ -2061,7 +2061,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"CUP_V_RUS_6B3_Flora_3", "H_HelmetCrew_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         items[] = {};
         respawnItems[] = {};
-        backpack = "tf_mr3000_bwmod";
+        backpack = "TFAR_mr3000_bwmod";
         uniformClass = "CUP_U_O_RUS_VSR98_worn_MSV";
     };
 };
