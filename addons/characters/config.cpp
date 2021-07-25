@@ -1996,8 +1996,8 @@ class CfgVehicles
     {
         displayName = "Ingenieur";
         faction = "OPT_WP";
-        Items[] = { "MineDetector"};
-        respawnItems[] = {"MineDetector"};
+        Items[] = {};
+        respawnItems[] = {};
         weapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_CUP_arifle_AK101_railed", "Binocular", "Throw", "Put"};
         magazines[] = {"CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "CUP_30Rnd_556x45_AK", "SmokeShell", "SmokeShell"};
