@@ -10,7 +10,7 @@ class CfgPatches
                    "OPT_O_T_Truck_02_F","OPT_O_T_Truck_02_transport_F","OPT_O_T_Truck_02_fuel_F","OPT_O_T_Truck_02_ammo_F","OPT_O_T_Truck_02_box_F","OPT_O_Truck_02_medical_F","OPT_O_T_Truck_02_Medical_F","OPT_I_Truck_02_medical_F"};
         weapons[] = {};
         requiredVersion = 0.100000;
-        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03","CUP_WheeledVehicles_RM70","CUP_WheeledVehicles_Ural"};
+        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03"};
     };
 };
 
