@@ -44,8 +44,7 @@ class CfgPatches
         requiredAddons[] = {
             "opt_weapons", "opt_characters", "opt_core", "a3_air_f_beta_heli_transport_02", "a3_air_f_epb_heli_light_03", "a3_air_f_heli_heli_transport_04",
             "a3_air_f_heli_heli_transport_03", "a3_air_f_beta_heli_attack_02", "a3_air_f_heli_light_01", "a3_air_f_beta_heli_attack_01", "a3_air_f_beta_heli_transport_01",
-            "a3_air_f_heli_light_02", "a3_air_f_heli_heli_light_02","CUP_AirVehicles_UH60","CUP_AirVehicles_MH60S","CUP_AirVehicles_UH1H","CUP_AirVehicles_Mi8","CUP_AirVehciles_KA60",
-            "CUP_AirVehicles_CH53E","CUP_AirVehicles_HC3","CUP_AirVehicles_AH64","CUP_AirVehicles_Mi24"};
+            "a3_air_f_heli_light_02", "a3_air_f_heli_heli_light_02"};
     };
 };
 
