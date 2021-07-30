@@ -474,6 +474,91 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+    };
+
+    class OPT_O_APC_Wheeled_01_cannon_F : OPT_B_APC_Wheeled_01_cannon_ghex_F
+    {
+        faction = "OPT_CSAT";
+        side = 0;
+        fuelCapacity = 8; // 60 //
+        crew = "O_Soldier_F";
+        typicalCargo[] = {"O_Soldier_lite_F"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_0_base_hex_pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_1_adds_hex_Pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_2_tows_hex_Pazifik.paa"};
+
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        class ViewGunner : ViewGunner
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+
+                        class ViewOptics : ViewOptics
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+
+                        class OpticsIn : OpticsIn
+                        {
+                            class Wide : Wide
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+
+                            class Medium : Medium
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+
+                            class Narrow : Narrow
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+                        };
+                    };
+                };
+
+                class ViewOptics : ViewOptics
+                {
+                    visionMode[] = {"Normal", "NVG"};
+                };
+
+                class OpticsIn : OpticsIn
+                {
+                    class Wide : Wide
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Medium : Medium
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Narrow : Narrow
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+                };
+            };
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
     };        
 
 
@@ -1027,7 +1112,7 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax"};
-                magazines[] = {"140Rnd_30mm_MP_shells", "60Rnd_30mm_APFSDS_shells","60Rnd_30mm_APFSDS_shells", "2000Rnd_762x51_Belt"};
+                magazines[] = {"140Rnd_30mm_MP_shells","140Rnd_30mm_MP_shells", "60Rnd_30mm_APFSDS_shells","60Rnd_30mm_APFSDS_shells", "2000Rnd_762x51_Belt"};
 
                 class Turrets : Turrets
                 {
@@ -1246,7 +1331,7 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan"};
-                magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt", "2Rnd_GAT_missiles"};
+                magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow","140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow","60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt", "2Rnd_GAT_missiles"};
 
                 class Turrets : Turrets
                 {
@@ -2634,6 +2719,103 @@ class CfgVehicles
         };
     };
 
+    class OPT_B_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F
+    {
+        side = 1;
+        faction = "OPT_NATO";
+        crew = "OPT_NATO_Besatzungsmitglied";
+        typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"}; 
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
+
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+                weapons[] = {"OPT_autocannon_30mm_CTWS", "LMG_coax", "OPT_missiles_titan"};
+                magazines[] = {"140Rnd_30mm_MP_shells_Tracer_Yellow","140Rnd_30mm_MP_shells_Tracer_Yellow", "60Rnd_30mm_APFSDS_shells_Tracer_Yellow","60Rnd_30mm_APFSDS_shells_Tracer_Yellow", "2000Rnd_762x51_Belt", "2Rnd_GAT_missiles"};
+
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        class ViewGunner : ViewGunner
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+
+                        class ViewOptics : ViewOptics
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+
+                        class OpticsIn : OpticsIn
+                        {
+                            class Wide : Wide
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+
+                            class Medium : Medium
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+
+                            class Narrow : Narrow
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+                        };
+                    };
+                };
+
+                class ViewOptics : ViewOptics
+                {
+                    visionMode[] = {"Normal", "NVG"};
+                };
+
+                class OpticsIn : OpticsIn
+                {
+                    class Wide : Wide
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Medium : Medium
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Narrow : Narrow
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+                };
+            };
+        };
+
+        class AnimationSources : AnimationSources
+        {
+            class Missiles_revolving
+            {
+                source = "revolving";
+                weapon = "OPT_missiles_titan";
+            };
+
+            class muzzle_hide
+            {
+                source = "reload";
+                weapon = "OPT_autocannon_30mm_CTWS";
+            };
+
+            class muzzle_rot
+            {
+                source = "ammorandom";
+                weapon = "OPT_autocannon_30mm_CTWS";
+            };
+        };
+
+    };
+
 
 
     //// AWC 301 Nyx (AT) ////
@@ -2915,5 +3097,118 @@ class CfgVehicles
         {
         };
     };
+
+    class AFV_Wheeled_01_base_F;
+
+    class B_AFV_Wheeled_01_cannon_F : AFV_Wheeled_01_base_F
+    {
+        class Turrets;
+        class MainTurret;
+        class CommanderOptics;
+        class ViewOptics;
+        class OpticsIn;
+        class ViewGunner;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class AnimationSources;
+        class muzzle_rot;
+        class muzzle_hide;
+    };
+
+    //// Rhino ////
+    class OPT_B_AFV_Wheeled_01_cannon_F : B_AFV_Wheeled_01_cannon_F
+    {
+        faction = "OPT_NATO";
+        fuelCapacity = 5; // 24 //
+        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_0_base_hex_pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_1_adds_hex_Pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_2_tows_hex_Pazifik.paa"};
+
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+                weapons[] = {"MMG_02_coax","cannon_120mm"};
+                magazines[] = {"200Rnd_338_Mag","200Rnd_338_Mag", "20Rnd_120mm_APFSDS_shells"};
+
+                class Turrets : Turrets
+                {
+                    class CommanderOptics : CommanderOptics
+                    {
+                        class ViewGunner : ViewGunner
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+
+                        class ViewOptics : ViewOptics
+                        {
+                            visionMode[] = {"Normal", "NVG"};
+                        };
+
+                        class OpticsIn : OpticsIn
+                        {
+                            class Wide : Wide
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+
+                            class Medium : Medium
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+
+                            class Narrow : Narrow
+                            {
+                                visionMode[] = {"Normal", "NVG"};
+                            };
+                        };
+                    };
+                };
+
+                class ViewOptics : ViewOptics
+                {
+                    visionMode[] = {"Normal", "NVG"};
+                };
+
+                class OpticsIn : OpticsIn
+                {
+                    class Wide : Wide
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Medium : Medium
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+
+                    class Narrow : Narrow
+                    {
+                        visionMode[] = {"Normal", "NVG"};
+                    };
+                };
+            };
+        };
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportWeapons
+        {
+        };
+    };
+
+    class OPT_O_AFV_Wheeled_01_cannon_F : OPT_B_AFV_Wheeled_01_cannon_F
+    {
+        faction = "OPT_CSAT";
+        side = 0;
+        crew = "O_Soldier_F";
+        typicalCargo[] = {"O_Soldier_lite_F"};
+        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_0_base_hex_pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_1_adds_hex_Pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_2_tows_hex_Pazifik.paa"};
+   };
 
 };
