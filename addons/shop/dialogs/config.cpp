@@ -744,13 +744,13 @@ class Dialogshopkaufen
     {
         class Flagge : RscPicture
         {
-            idc = 20001;
+            idc = 20001;    // Kauf-Flagge
             colorText[] = COLOR_TEXT;
             colorBackground[] = COLOR_BACK;
             x = 0.15;
-            y = 0.1;
-            w = 0.2;
-            h = 0.2;
+            y = 0.03;
+            w = 0.15;
+            h = 0.3;
             text = "";
             default = true;
         };
@@ -1739,18 +1739,18 @@ class DialogVerkaufs
     {
         class IGUIBack_Main: IGUIBack
         {
-            idc = 23001;
+            idc = 23001;    // Verkaufs-Flagge
             x = 0 * GUI_GRID_W + GUI_GRID_X;
-            y = 0 * GUI_GRID_H + GUI_GRID_Y;
+            y = -0.2 * GUI_GRID_H + GUI_GRID_Y;
             w = 40 * GUI_GRID_W;
             h = 25.1 * GUI_GRID_H;
         };
         class RscFrame_Main: RscFrame
         {
             idc = 23002;
-            text = "Bestellsystem"; //--- ToDo: Localize;
+            text = "Verkaufen";
             x = 0 * GUI_GRID_W + GUI_GRID_X;
-            y = -0.83 * GUI_GRID_H + GUI_GRID_Y;
+            y = -0.4 * GUI_GRID_H + GUI_GRID_Y;
             w = 40 * GUI_GRID_W;
             h = 26 * GUI_GRID_H;
             colorText[] = {1,1,1,1};
@@ -1760,10 +1760,10 @@ class DialogVerkaufs
         {
             idc = 23003;
             text = "";
-            x = 1 * GUI_GRID_W + GUI_GRID_X;
-            y = 1 * GUI_GRID_H + GUI_GRID_Y;
-            w = 8 * GUI_GRID_W;
-            h = 3.5 * GUI_GRID_H;
+            x = 1.5 * GUI_GRID_W + GUI_GRID_X;
+            y = 0.1 * GUI_GRID_H + GUI_GRID_Y;
+            w = 6 * GUI_GRID_W;
+            h = 6 * GUI_GRID_H;
         };
         class RscFrame_Vehicle: RscFrame
         {
