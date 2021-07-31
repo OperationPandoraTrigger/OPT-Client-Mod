@@ -710,6 +710,14 @@ class CfgMagazines
         pylonWeapon = "OPT_Twin_Cannon_20mm";
     };
 
+    class OPT_PylonWeapon_25Rnd_20mm_shells : PylonWeapon_300Rnd_20mm_shells
+    {
+        ammo = "OPT_B_20mm";
+        displayName = "OPT Zwillingsgeschütz 20mm";
+        pylonWeapon = "OPT_Twin_Cannon_20mm_25Rnd";
+        count = 25;
+    };
+
     class PylonRack_19Rnd_Rocket_Skyfire;
 
     class OPT_PylonRack_19Rnd_Rocket_Skyfire : PylonRack_19Rnd_Rocket_Skyfire
@@ -880,6 +888,14 @@ class CfgMagazines
     {
         count = 1;
         ammo = "OPT_M_Titan_AT_long";
+    };
+
+    class 300Rnd_20mm_shells;
+
+    class OPT_25Rnd_20mm_shells : 300Rnd_20mm_shells
+    {
+        count = 25;
+        ammo = "OPT_B_20mm";
     };
 };
 
@@ -3939,6 +3955,12 @@ class CfgWeapons
     class OPT_Twin_Cannon_20mm : Twin_Cannon_20mm
     {
         magazines[] = {"2000Rnd_20mm_shells", "1000Rnd_20mm_shells", "300Rnd_20mm_shells", "OPT_PylonWeapon_300Rnd_20mm_shells"};
+        displayName = "Zwillingsgeschütz 20 mm";
+    };
+
+    class OPT_Twin_Cannon_20mm_25Rnd : Twin_Cannon_20mm
+    {
+        magazines[] = {"OPT_25Rnd_20mm_shells","OPT_PylonWeapon_25Rnd_20mm_shells"};
         displayName = "Zwillingsgeschütz 20 mm";
     };
 

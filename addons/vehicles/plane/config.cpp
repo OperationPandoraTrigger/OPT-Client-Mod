@@ -65,8 +65,9 @@ class CfgVehicles
         faction = "OPT_AAF";
         displayName = "A-143 Buzzard (CAS)";
         weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"60Rnd_CMFlare_Chaff_Magazine"};
+        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
         fuelCapacity = 500; // 1000 //
+        driverCanEject = 1;
 
         class Components : Components
         {
@@ -76,37 +77,112 @@ class CfgVehicles
                 {
                     class Pylons1 : Pylons1
                     {
-                        attachment = "OPT_PylonRack_1Rnd_LG_scalpel";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_HE_F";
                     };
 
                     class Pylons2 : Pylons2
                     {
-                        attachment = "OPT_PylonRack_1Rnd_AAA_missiles";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_HE_F";
                     };
 
                     class Pylons3 : Pylons3
                     {
-                        attachment = "OPT_PylonMissile_1Rnd_Bomb_04_F";
+                        attachment = "OPT_PylonWeapon_25Rnd_20mm_shells";
                     };
 
                     class Pylons4 : Pylons4
                     {
-                        attachment = "OPT_PylonWeapon_300Rnd_20mm_shells";
+                        attachment = "";
                     };
 
                     class Pylons5 : Pylons5
                     {
-                        attachment = "OPT_PylonMissile_1Rnd_Bomb_04_F";
+                        attachment = "OPT_PylonWeapon_25Rnd_20mm_shells";
                     };
 
                     class Pylons6 : Pylons6
                     {
-                        attachment = "OPT_PylonRack_1Rnd_AAA_missiles";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_AP_F";
                     };
 
                     class Pylons7 : Pylons7
                     {
-                        attachment = "OPT_PylonRack_1Rnd_LG_scalpel";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_AP_F";
+                    };
+                };
+            };
+
+            class SensorsManagerComponent 
+            {
+                class Components 
+                {                   
+                    class PassiveRadarSensorComponent
+                    {
+                        aimDown = 0;
+                        class AirTarget 
+                        {
+                            maxRange = 16000;
+                            minRange = 16000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        allowsMarking = 0;
+                        angleRangeHorizontal = 360;
+                        angleRangeVertical = 360;
+                        animDirection = "";
+                        color = [0.5,1,0.5,0.5];
+                        componentType = "PassiveRadarSensorComponent";
+                        groundNoiseDistanceCoef = -1;
+                        class GroundTarget 
+                        {
+                            maxRange = 16000;
+                            minRange = 16000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };                  
+                        maxGroundNoiseDistance = -1;
+                        maxSpeedThreshold = 0;
+                        maxTrackableATL = 1e+10;
+                        maxTrackableSpeed = 1e+10;
+                        minSpeedThreshold = 0;
+                        minTrackableATL = -1e+10;
+                        minTrackableSpeed = -1e+10;
+                        typeRecognitionDistance = 12000;
+                    };
+                    class VisualSensorComponent
+                    {
+                        aimdown = -0.25;
+                        class AirTarget 
+                        {
+                            maxRange = 2000;
+                            minRange = 500;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        allowsMarking = 1;
+                        angleRangeHorizontal = 46;
+                        angleRangeVertical = 34;
+                        animDirection = "mainGun";
+                        color = [1,1,0.5,0.8];
+                        componentType = "VisualSensorComponent";
+                        groundNoiseDistanceCoef = -1;
+                        class GroundTarget 
+                        {
+                            maxRange = 1500;
+                            minRange = 500;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        maxFogSeeThrough = 0.94;
+                        maxGroundNoiseDistance = -1;
+                        maxSpeedThreshold = 0;
+                        maxTrackableATL = 1e+10;
+                        maxTrackableSpeed = 70;
+                        minSpeedThreshold = 0;
+                        minTrackableATL = -1e+10;
+                        minTrackableSpeed = -1e+10;
+                        nightRangeCoef = 0;
+                        typeRecognitionDistance = 2000;
                     };
                 };
             };
@@ -152,18 +228,26 @@ class CfgVehicles
         };
     };
 
-    class OPT_O_Plane_Fighter_03_CAS_F : OPT_I_Plane_Fighter_03_CAS_F
+    class OPT_O_Plane_Fighter_03_dynamicLoadout_F : OPT_I_Plane_Fighter_03_CAS_F
     {
         faction = "OPT_CSAT";
         side = 0;
         crew = "OPT_CSAT_Pilot";
-        hiddenSelectionsTextures[] = {"A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_1_brownhex_CO.paa", "A3\Air_F_Gamma\Plane_Fighter_03\Data\Plane_Fighter_03_body_2_brownhex_CO.paa"};
         //hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_1CSAT.paa","\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_2CSAT.paa"};
         typicalCargo[] = {"OPT_CSAT_Pilot"};
     };
 
+    class OPT_B_Plane_Fighter_03_dynamicLoadout_F : OPT_I_Plane_Fighter_03_CAS_F
+    {
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "OPT_NATO_Pilot";
+        //hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_1CSAT.paa","\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_2CSAT.paa"};
+        typicalCargo[] = {"OPT_NATO_Pilot"};
+    };
+
     //// A-143 Buzzard (AA) ////
-    class OPT_O_Plane_Fighter_03_AA_F : OPT_O_Plane_Fighter_03_CAS_F
+    class OPT_O_Plane_Fighter_03_AA_F : OPT_O_Plane_Fighter_03_dynamicLoadout_F
     {
         displayName = "A-143 Buzzard (AA)";
 
