@@ -522,6 +522,21 @@ class CfgVehicles
 
     };
 
+    //// Zamak Transport (Covered) ////
+    class O_Truck_02_covered_F;
+
+    class OPT_O_Truck_02_covered_F : O_Truck_02_covered_F
+    {
+
+        faction = "OPT_CSAT";
+        fuelCapacity = 6; // 250 //
+
+        class TransportItems
+        {
+        };
+
+    };
+
     //// Zamak Transport ////
     class O_Truck_02_transport_F;
 
@@ -531,7 +546,6 @@ class CfgVehicles
         faction = "OPT_CSAT";
         fuelCapacity = 6; // 250 //
         transportSoldier = 1; // 11 //
-        displayName = "Zamak Logistik";
 
         class TransportItems
         {
@@ -604,7 +618,6 @@ class CfgVehicles
 
         faction = "OPT_CSAT_T";
         fuelCapacity = 6; // 250 //
-        displayName = "Zamak Infanterie";
 
         class TransportItems
         {
@@ -684,6 +697,102 @@ class CfgVehicles
         class TransportItems
         {
         };
+    };
+
+    //// Zamak Transport (Covered) ////
+    class OPT_B_Truck_02_covered_F : I_Truck_02_covered_F
+    {
+
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+
+        class TransportItems
+        {
+        };
+
+    };
+
+    //// Zamak Transport ////
+    class OPT_B_Truck_02_transport_F : I_Truck_02_transport_F
+    {
+
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+        transportSoldier = 1; // 11 //
+
+        class TransportItems
+        {
+        };
+
+    };
+
+    //// Zamak Fuel ////
+    class OPT_B_Truck_02_fuel_F : I_Truck_02_fuel_F
+    {
+
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 200; // 250 //
+        transportFuel = 3000;
+
+        class TransportItems
+        {
+        };
+
+    };
+
+    //// Zamak Ammo ////
+    class OPT_B_Truck_02_ammo_F : I_Truck_02_ammo_F
+    {
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+        transportAmmo = 30000;
+
+        class TransportItems
+        {
+        };
+    };
+
+    //// Zamak Repair ////
+    class OPT_B_Truck_02_box_F : I_Truck_02_box_F
+    {
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+        transportRepair = 0; // 200000000;
+
+        class TransportItems
+        {
+        };
+    };
+
+    //// Zamak Medical ////
+    class OPT_B_Truck_02_medical_F : I_Truck_02_medical_F
+    {
+
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+
+        class TransportItems
+        {
+        };
+
     };
 
     //// Zamak MRL ////
