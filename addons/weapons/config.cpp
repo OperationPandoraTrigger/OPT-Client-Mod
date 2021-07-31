@@ -107,6 +107,7 @@ class CfgAmmo
 
     class OPT_M_Titan_AT_long : M_Titan_AT_long
     {
+        proxyShape = "\A3\Weapons_F\Ammo\Missile_AT_03_F";
     };
 
     class M_Titan_AA_long;
@@ -394,6 +395,13 @@ class CfgAmmo
     class Rocket_03_HE_F;
 
     class OPT_Rocket_03_HE_F : Rocket_03_HE_F
+    {
+        cost = 1000;
+    };
+
+    class Rocket_03_AP_F;
+
+    class OPT_Rocket_03_AP_F : Rocket_03_AP_F
     {
         cost = 1000;
     };
@@ -747,6 +755,14 @@ class CfgMagazines
         pylonWeapon = "OPT_Rocket_03_AP_Plane_CAS_02_F";
     };
 
+    class OPT_PylonMissile_1Rnd_missiles_titan : PylonMissile_1Rnd_LG_scalpel
+    {
+        ammo = "OPT_M_Titan_AT_long";
+        displayName = "OPT Titan";
+        pylonWeapon = "OPT_Veh_missiles_titan";
+        displayNameShort = "AG";
+    };
+
     class 1000Rnd_Gatling_30mm_Plane_CAS_01_F;
 
     class OPT_1000Rnd_Gatling_30mm_Plane_CAS_01_F : 1000Rnd_Gatling_30mm_Plane_CAS_01_F
@@ -858,6 +874,12 @@ class CfgMagazines
 
     class OPT_100Rnd_580x42_Mag_Tracer_F : 100Rnd_580x42_Mag_Tracer_F
     {
+    };
+
+    class OPT_1Rnd_GAT_missiles : 2Rnd_GAT_missiles
+    {
+        count = 1;
+        ammo = "OPT_M_Titan_AT_long";
     };
 };
 
@@ -4072,7 +4094,7 @@ class CfgWeapons
     class OPT_M134_minigun : M134_minigun
     {
         showAimCursorInternal = 0;
-        displayName = "2x M134 Minigun 7,62 mm";
+        displayName = "Gatting 7,62 mm";
     };
 
     class Laserdesignator_mounted;
@@ -4189,6 +4211,12 @@ class CfgWeapons
         lockingTargetSound[] = {"\A3\Sounds_F\weapons\Rockets\locked_1", 0.562341, 1};
         magazines[] = {"OPT_4Rnd_Bomb_04_F", "OPT_PylonMissile_1Rnd_Bomb_04_F"};
         displayName = "GBU-12";
+    };
+
+    class OPT_Veh_missiles_titan : OPT_missiles_titan
+    {
+        magazines[] = {"OPT_1Rnd_GAT_missiles","OPT_PylonMissile_1Rnd_missiles_titan","1Rnd_GAT_missiles"};
+        displayName = "Titan";
     };
 
     class mortar_82mm;

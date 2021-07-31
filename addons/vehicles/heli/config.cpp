@@ -104,7 +104,7 @@ class CfgVehicles
         faction = "OPT_CSAT";
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"192Rnd_CMFlare_Chaff_Magazine"};
+        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
         fuelCapacity = 330; // 2500 //
 
         class Components : Components
@@ -115,12 +115,12 @@ class CfgVehicles
                 {
                     class PylonLeft1 : PylonLeft1
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "OPT_PylonMissile_1Rnd_missiles_titan";
                     };
 
                     class PylonLeft2
                     {
-                        attachment = "OPT_PylonRack_19Rnd_Rocket_Skyfire";
+                        attachment = "OPT_PylonRack_12Rnd_missiles";
                         hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
                         priority = 4;
                         //turret[] = {0};
@@ -129,17 +129,92 @@ class CfgVehicles
 
                     class PylonRight1 : PylonRight1
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "OPT_PylonMissile_1Rnd_missiles_titan";
                     };
 
                     class PylonRight2
                     {
-                        attachment = "OPT_PylonRack_19Rnd_Rocket_Skyfire";
+                        attachment = "";
                         hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
                         mirroredMissilePos = 2;
                         priority = 4;
                         //turret[] = {0};
                         UIposition[] = {0.57, 0.35};
+                    };
+                };
+            };
+
+            class SensorsManagerComponent 
+            {
+                class Components 
+                {                   
+                    class PassiveRadarSensorComponent
+                    {
+                        aimDown = 0;
+                        class AirTarget 
+                        {
+                            maxRange = 16000;
+                            minRange = 16000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        allowsMarking = 0;
+                        angleRangeHorizontal = 360;
+                        angleRangeVertical = 360;
+                        animDirection = "";
+                        color = [0.5,1,0.5,0.5];
+                        componentType = "PassiveRadarSensorComponent";
+                        groundNoiseDistanceCoef = -1;
+                        class GroundTarget 
+                        {
+                            maxRange = 16000;
+                            minRange = 16000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };                  
+                        maxGroundNoiseDistance = -1;
+                        maxSpeedThreshold = 0;
+                        maxTrackableATL = 1e+10;
+                        maxTrackableSpeed = 1e+10;
+                        minSpeedThreshold = 0;
+                        minTrackableATL = -1e+10;
+                        minTrackableSpeed = -1e+10;
+                        typeRecognitionDistance = 12000;
+                    };
+                    class VisualSensorComponent
+                    {
+                        aimdown = -0.25;
+                        class AirTarget 
+                        {
+                            maxRange = 2000;
+                            minRange = 500;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        allowsMarking = 1;
+                        angleRangeHorizontal = 46;
+                        angleRangeVertical = 34;
+                        animDirection = "mainGun";
+                        color = [1,1,0.5,0.8];
+                        componentType = "VisualSensorComponent";
+                        groundNoiseDistanceCoef = -1;
+                        class GroundTarget 
+                        {
+                            maxRange = 1500;
+                            minRange = 500;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        maxFogSeeThrough = 0.94;
+                        maxGroundNoiseDistance = -1;
+                        maxSpeedThreshold = 0;
+                        maxTrackableATL = 1e+10;
+                        maxTrackableSpeed = 70;
+                        minSpeedThreshold = 0;
+                        minTrackableATL = -1e+10;
+                        minTrackableSpeed = -1e+10;
+                        nightRangeCoef = 0;
+                        typeRecognitionDistance = 2000;
                     };
                 };
             };
@@ -171,8 +246,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"OPT_gatling_30mm"};
-                magazines[] = {"250Rnd_30mm_HE_shells_Tracer_Green", "250Rnd_30mm_APDS_shells_Tracer_Green"};
+                weapons[] = {"OPT_M134_minigun"};
+                magazines[] = {"5000Rnd_762x51_Belt"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -199,19 +274,19 @@ class CfgVehicles
             class Missiles_revolving
             {
                 source = "revolving";
-                weapon = "OPT_rockets_Skyfire";
+                weapon = "OPT_missiles_DAGR";
             };
 
             class Muzzle_flash
             {
                 source = "ammorandom";
-                weapon = "OPT_gatling_30mm";
+                weapon = "OPT_M134_minigun";
             };
 
             class Gatling
             {
                 source = "revolving";
-                weapon = "OPT_gatling_30mm";
+                weapon = "OPT_M134_minigun";
             };
         };
     };
@@ -1398,6 +1473,8 @@ class CfgVehicles
         displayName = "AH-99 Blackfoot";
         driverCanEject = 1;
         fuelCapacity = 130; // 500 //
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
 
         class TransportItems
         {
@@ -1437,7 +1514,7 @@ class CfgVehicles
                 {
                     class PylonLeft1
                     {
-                        attachment = "OPT_PylonMissile_1Rnd_LG_scalpel";
+                        attachment = "OPT_PylonMissile_1Rnd_missiles_titan";
                         bay = 1;
                         hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "DAR", "DAGR"};
                         priority = 5;
@@ -1447,7 +1524,7 @@ class CfgVehicles
 
                     class PylonLeft2
                     {
-                        attachment = "OPT_PylonMissile_1Rnd_AAA_missiles";
+                        attachment = "";
                         bay = 1;
                         hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM"};
                         priority = 4;
@@ -1467,6 +1544,7 @@ class CfgVehicles
 
                     class PylonRight1 : PylonLeft1
                     {
+                        attachment = "OPT_PylonMissile_1Rnd_missiles_titan";
                         mirroredMissilePos = 1;
                         UIposition[] = {0.59, 0.4};
                     };
@@ -1479,8 +1557,84 @@ class CfgVehicles
 
                     class PylonRight3 : PylonLeft3
                     {
+                        attachment = "";
                         mirroredMissilePos = 3;
                         UIposition[] = {0.55, 0.3};
+                    };
+                };
+            };
+
+            class SensorsManagerComponent 
+            {
+                class Components 
+                {                   
+                    class PassiveRadarSensorComponent
+                    {
+                        aimDown = 0;
+                        class AirTarget 
+                        {
+                            maxRange = 16000;
+                            minRange = 16000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        allowsMarking = 0;
+                        angleRangeHorizontal = 360;
+                        angleRangeVertical = 360;
+                        animDirection = "";
+                        color = [0.5,1,0.5,0.5];
+                        componentType = "PassiveRadarSensorComponent";
+                        groundNoiseDistanceCoef = -1;
+                        class GroundTarget 
+                        {
+                            maxRange = 16000;
+                            minRange = 16000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };                  
+                        maxGroundNoiseDistance = -1;
+                        maxSpeedThreshold = 0;
+                        maxTrackableATL = 1e+10;
+                        maxTrackableSpeed = 1e+10;
+                        minSpeedThreshold = 0;
+                        minTrackableATL = -1e+10;
+                        minTrackableSpeed = -1e+10;
+                        typeRecognitionDistance = 12000;
+                    };
+                    class VisualSensorComponent
+                    {
+                        aimdown = -0.25;
+                        class AirTarget 
+                        {
+                            maxRange = 2000;
+                            minRange = 500;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        allowsMarking = 1;
+                        angleRangeHorizontal = 46;
+                        angleRangeVertical = 34;
+                        animDirection = "mainGun";
+                        color = [1,1,0.5,0.8];
+                        componentType = "VisualSensorComponent";
+                        groundNoiseDistanceCoef = -1;
+                        class GroundTarget 
+                        {
+                            maxRange = 1500;
+                            minRange = 500;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        maxFogSeeThrough = 0.94;
+                        maxGroundNoiseDistance = -1;
+                        maxSpeedThreshold = 0;
+                        maxTrackableATL = 1e+10;
+                        maxTrackableSpeed = 70;
+                        minSpeedThreshold = 0;
+                        minTrackableATL = -1e+10;
+                        minTrackableSpeed = -1e+10;
+                        nightRangeCoef = 0;
+                        typeRecognitionDistance = 2000;
                     };
                 };
             };
@@ -1491,8 +1645,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"OPT_gatling_20mm"};
-                magazines[] = {"1000Rnd_20mm_shells"};
+                weapons[] = {"OPT_M134_minigun"};
+                magazines[] = {"5000Rnd_762x51_Belt"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -1518,7 +1672,7 @@ class CfgVehicles
         {
             class Gatling : Gatling
             {
-                weapon = "OPT_gatling_20mm";
+                weapon = "OPT_M134_minigun";
             };
 
             class Missiles : Missiles
@@ -1528,7 +1682,7 @@ class CfgVehicles
 
             class Muzzle_flash : Muzzle_flash
             {
-                weapon = "OPT_gatling_20mm";
+                weapon = "OPT_M134_minigun";
             };
         };
 
