@@ -2659,11 +2659,12 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_CO.paa"};
     };
 
-    class OPT_B_Heli_light_03_unarmed_green_F : OPT_O_Heli_light_03_unarmed_green_F
+    class OPT_B_Heli_light_03_unarmed_F : OPT_O_Heli_light_03_unarmed_green_F
     {
         faction = "OPT_NATO";
         side = 1;
         crew = "OPT_NATO_Pilot";
+        hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_CO.paa"};
     };
 
     // Hellcat Ligt
@@ -2802,6 +2803,14 @@ class CfgVehicles
         };
     };
 
+    class OPT_B_Heli_light_03_dynamicLoadout_F : OPT_I_Heli_light_03_v2_F
+    {
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "OPT_NATO_Pilot";
+        //hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_CO.paa"};
+    };
+
     // Hellcat Heavy
     class OPT_I_Heli_light_03_v3_F : I_Heli_light_03_dynamicLoadout_F
     {
@@ -2931,5 +2940,13 @@ class CfgVehicles
         class TransportWeapons
         {
         };
+    };
+
+    class OPT_B_Heli_heavy_03_dynamicLoadout_F : OPT_I_Heli_light_03_v3_F
+    {
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "OPT_NATO_Pilot";
+        //hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_CO.paa"};
     };
 };
