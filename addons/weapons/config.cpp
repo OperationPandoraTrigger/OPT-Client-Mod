@@ -1535,7 +1535,7 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
             };
         };
     };
@@ -2279,6 +2279,32 @@ class CfgWeapons
         };
     };
 
+    class OPT_srifle_EBR_ERCO_F​ : OPT_srifle_EBR_F
+    {
+        _generalMacro = "OPT_srifle_EBR_DMS_LP_BI_snds_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+
+            class LinkedItemsUnder
+            {
+                item = "bipod_01_F_blk";
+                slot = "UnderBarrelSlot";
+            };
+        };
+    };
+
     class DMR_02_base_F : Rifle_Long_Base_F
     {
     };
@@ -2461,16 +2487,42 @@ class CfgWeapons
         };
     };
 
-    class OPT_srifle_DMR_03_AMS_LP_BI_snds_F : OPT_srifle_DMR_03_F
+    class OPT_srifle_DMR_03_ERCO_F : OPT_srifle_DMR_03_F
     {
-        _generalMacro = "OPT_srifle_DMR_03_AMS_LP_BI_snds_F";
+        _generalMacro = "srifle_DMR_03_ACO_F";
 
         class LinkedItems
         {
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "optic_AMS";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+
+            class LinkedItemsUnder
+            {
+                slot = "UnderBarrelSlot";
+                item = "bipod_01_F_blk";
+            };
+        };
+    };
+
+    class OPT_srifle_DMR_03_RCO_LP_BI_snds_F : OPT_srifle_DMR_03_F
+    {
+        _generalMacro = "OPT_srifle_DMR_03_RCO_LP_BI_snds_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_hamr";
             };
 
             class LinkedItemsAcc
@@ -3068,6 +3120,39 @@ class CfgWeapons
         };
     };
 
+    class OPT_arifle_CTAR_ERCO_Pointer_F​ : arifle_CTAR_blk_F
+    {
+        _generalMacro = "OPT_arifle_CTAR_blk_F";
+        displayName = "CAR-95 5,8 mm";
+        baseWeapon = "OPT_arifle_CTAR_blk_F";
+
+        magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_Tracer_F"};
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
     class mk20_base_F : Rifle_Base_F
     {
         class WeaponSlotsInfo;
@@ -3166,6 +3251,30 @@ class CfgWeapons
             class CowsSlot : CowsSlot
             {
                 compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class OPT_hgun_PDW2000_ACO_F : hgun_PDW2000_F
+    {
+        _generalMacro = "OPT_hgun_PDW2000_F";
+        baseWeapon = "OPT_hgun_PDW2000_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco_smg", "optic_ACO_grn_smg", "optic_Holosight_smg", "optic_Holosight_smg_blk_F"};
+            };
+        };
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_Aco";
             };
         };
     };
@@ -3460,6 +3569,97 @@ class CfgWeapons
             {
                 item = "muzzle_snds_65_TI_blk_F";
                 slot = "MuzzleSlot";
+            };
+        };
+    };
+
+    class SMG_03C_BASE;
+
+    class SMG_03C_TR_black : SMG_03C_BASE
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+            class MuzzleSlot;
+        };
+    };
+
+    class OPT_SMG_03C_TR_black : SMG_03C_TR_black
+    {
+       _generalMacro = "SMG_03C_TR_black";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco_smg", "optic_ACO_grn_smg", "optic_Holosight_smg", "optic_Holosight_smg_blk_F"};
+            };
+
+            class MuzzleSlot : MuzzleSlot
+            {
+                compatibleItems[] = {};
+            };
+        };
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ACO_grn_smg";
+            };
+        };
+    };
+
+    class arifle_RPK12_base_F;
+
+    class arifle_RPK12_F : arifle_RPK12_base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_RPK12_F : arifle_RPK12_F
+    {
+        _generalMacro = "arifle_RPK12_F";
+        baseWeapon = "arifle_RPK12_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+            };
+        };
+    };
+
+    class OPT_arifle_RPK12_ACO_BI_pointer_F : OPT_arifle_RPK12_F
+    {
+        _generalMacro = "OPT_LMG_Mk200_ACO_BI_pointer_F";
+        displayName = "Mk200 6,5 mm";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_Aco";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+
+            class LinkedItemsUnder
+            {
+                item = "bipod_01_F_blk";
+                slot = "UnderBarrelSlot";
             };
         };
     };
