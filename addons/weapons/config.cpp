@@ -897,6 +897,27 @@ class CfgMagazines
         count = 25;
         ammo = "OPT_B_20mm";
     };
+
+    class 150Rnd_762x54_Box;
+
+    class OPT_100Rnd_762x54_Box : 150Rnd_762x54_Box
+    {
+        count = 100;
+    };
+
+    class 75rnd_762x39_AK12_Mag_F;
+
+    class OPT_100rnd_762x39_AK12_Mag_F: 75rnd_762x39_AK12_Mag_F
+    {
+        count = 100;
+    };
+
+    class 200Rnd_65x39_cased_Box;
+
+    class OPT_150Rnd_65x39_cased_Box: 200Rnd_65x39_cased_Box
+    {
+        count = 150;
+    };
 };
 
 class CfgWeapons
@@ -1176,6 +1197,7 @@ class CfgWeapons
         _generalMacro = "OPT_LMG_Zafir_F";
         displayName = "Zafir 7,62 mm";
         baseWeapon = "OPT_LMG_Zafir_F";
+        magazines[] = {"150Rnd_762x54_Box", "150Rnd_762x54_Box_Tracer", "OPT_100Rnd_762x54_Box"};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -1221,6 +1243,7 @@ class CfgWeapons
         _generalMacro = "OPT_LMG_Mk200_F";
         displayName = "Mk200 6,5 mm";
         baseWeapon = "OPT_LMG_Mk200_F";
+        magazines[] = {"200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box_Tracer", "OPT_150Rnd_65x39_cased_Box"};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -1828,6 +1851,7 @@ class CfgWeapons
     {
         _generalMacro = "OPT_arifle_MXC_Black_F";
         baseWeapon = "OPT_arifle_MXC_Black_F";
+        magazines[] = {"30Rnd_65x39_caseless_black_mag"};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -2142,8 +2166,8 @@ class CfgWeapons
 
     class OPT_hgun_PDW2000_F : hgun_PDW2000_F
     {
-        _generalMacro = "OPT_hgun_PDW2000_F";
-        baseWeapon = "OPT_hgun_PDW2000_F";
+        _generalMacro = "hgun_PDW2000_F";
+        baseWeapon = "hgun_PDW2000_F";
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -2155,10 +2179,10 @@ class CfgWeapons
         };
     };
 
-    class OPT_hgun_PDW2000_ACO_F : hgun_PDW2000_F
+    class OPT_hgun_PDW2000_ACO_F : OPT_hgun_PDW2000_F
     {
-        _generalMacro = "OPT_hgun_PDW2000_F";
-        baseWeapon = "OPT_hgun_PDW2000_F";
+        _generalMacro = "hgun_PDW2000_F";
+        baseWeapon = "hgun_PDW2000_F";
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -2174,7 +2198,7 @@ class CfgWeapons
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "optic_Aco";
+                item = "optic_aco_smg";
             };
         };
     };
@@ -3596,6 +3620,7 @@ class CfgWeapons
     {
         _generalMacro = "arifle_RPK12_F";
         baseWeapon = "arifle_RPK12_F";
+        magazines[] = {"75rnd_762x39_AK12_Mag_F", "OPT_100rnd_762x39_AK12_Mag_F"};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -3609,7 +3634,7 @@ class CfgWeapons
 
     class OPT_arifle_RPK12_ACO_BI_pointer_F : OPT_arifle_RPK12_F
     {
-        _generalMacro = "OPT_LMG_Mk200_ACO_BI_pointer_F";
+        _generalMacro = "arifle_RPK12_F";
 
         class LinkedItems
         {
@@ -9085,6 +9110,22 @@ class CfgVehicles
     class OPT_B_AssaultPack_VSR98Worm : B_AssaultPack_tna_F
     {
         displayName = "Angriffspack (VSR98Worm)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_VSR98Worm.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_angriffsrucksack_vsr98worm.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_AssaultPack_blk : B_AssaultPack_blk
+    {
+        displayName = "Angriffspack (OPT)";
         maximumLoad = 160;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_VSR98Worm.paa"};
         picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_angriffsrucksack_vsr98worm.paa";
