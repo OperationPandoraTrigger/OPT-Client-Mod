@@ -162,7 +162,7 @@ class CfgVehicles
                         angleRangeHorizontal = 360;
                         angleRangeVertical = 360;
                         animDirection = "";
-                        color = [0.5,1,0.5,0.5];
+                        color[] = {0.5, 1, 0.5, 0.5};
                         componentType = "PassiveRadarSensorComponent";
                         groundNoiseDistanceCoef = -1;
                         class GroundTarget 
@@ -195,7 +195,7 @@ class CfgVehicles
                         angleRangeHorizontal = 46;
                         angleRangeVertical = 34;
                         animDirection = "mainGun";
-                        color = [1,1,0.5,0.8];
+                        color[] = {0.5, 1, 0.5, 0.5};
                         componentType = "VisualSensorComponent";
                         groundNoiseDistanceCoef = -1;
                         class GroundTarget 
@@ -1582,7 +1582,7 @@ class CfgVehicles
                         angleRangeHorizontal = 360;
                         angleRangeVertical = 360;
                         animDirection = "";
-                        color = [0.5,1,0.5,0.5];
+                        color[] = {0.5, 1, 0.5, 0.5};
                         componentType = "PassiveRadarSensorComponent";
                         groundNoiseDistanceCoef = -1;
                         class GroundTarget 
@@ -1615,7 +1615,7 @@ class CfgVehicles
                         angleRangeHorizontal = 46;
                         angleRangeVertical = 34;
                         animDirection = "mainGun";
-                        color = [1,1,0.5,0.8];
+                        color[] = {0.5, 1, 0.5, 0.5};
                         componentType = "VisualSensorComponent";
                         groundNoiseDistanceCoef = -1;
                         class GroundTarget 
