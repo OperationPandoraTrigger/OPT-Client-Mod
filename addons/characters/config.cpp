@@ -1909,8 +1909,8 @@ class CfgVehicles
         icon = "iconManMG";
         weapons[] = {"OPT_LMG_Mk200_ACO_BI_pointer_F", "Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_LMG_Mk200_ACO_BI_pointer_F", "Binocular", "Throw", "Put"};
-        magazines[] = {"OPT_150Rnd_65x39_cased_Box", "OPT_150Rnd_65x39_cased_Box","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
-        respawnMagazines[] = {"OPT_150Rnd_65x39_cased_Box", "OPT_150Rnd_65x39_cased_Box","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
+        magazines[] = {"OPT_100Rnd_65x39_cased_Box", "OPT_100Rnd_65x39_cased_Box","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
+        respawnMagazines[] = {"OPT_100Rnd_65x39_cased_Box", "OPT_100Rnd_65x39_cased_Box","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
     };
 
     class OPT_CSAT_PA_Schuetze : OPT_CSAT_Soldat
