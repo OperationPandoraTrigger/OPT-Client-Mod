@@ -35,16 +35,8 @@ class CfgPatches
         versionAr[] = {VERSION_AR};
         requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
                             "a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
-                            "A3_Weapons_F_Jets","CUP_Weapons_VehicleWeapons","CUP_Weapons_Ammunition","CUP_Weapons_Stinger","CUP_Weapons_IGLA","CUP_Weapons_StaticWeapons","CUP_TrackedVehicles_Bradley","CUP_AirVehicles_Su25","CUP_Weapons_AK"};
+                            "A3_Weapons_F_Jets"};
     };
-};
-
-class CfgMagazineWells 
-{
-    class CBA_40mm_GP 
-    {
-        ADDON[] = {"ACE_HuntIR_M203"};
-    };   
 };
 
 class CfgAmmo
@@ -115,6 +107,7 @@ class CfgAmmo
 
     class OPT_M_Titan_AT_long : M_Titan_AT_long
     {
+        proxyShape = "\A3\Weapons_F\Ammo\Missile_AT_03_F";
     };
 
     class M_Titan_AA_long;
@@ -413,11 +406,9 @@ class CfgAmmo
         cost = 1000;
     };
 
-    class CUP_R_GRAD_HE;
-
-    class OPT_CUP_R_GRAD_HE : CUP_R_GRAD_HE
+    class OPT_Rocket_03_AP_F : Rocket_03_AP_F
     {
-        cost = 100000;
+        cost = 1000;
     };
     
 };
@@ -717,6 +708,14 @@ class CfgMagazines
         pylonWeapon = "OPT_Twin_Cannon_20mm";
     };
 
+    class OPT_PylonWeapon_25Rnd_20mm_shells : PylonWeapon_300Rnd_20mm_shells
+    {
+        ammo = "OPT_B_20mm";
+        displayName = "OPT Zwillingsgeschütz 20mm";
+        pylonWeapon = "OPT_Twin_Cannon_20mm_25Rnd";
+        count = 25;
+    };
+
     class PylonRack_19Rnd_Rocket_Skyfire;
 
     class OPT_PylonRack_19Rnd_Rocket_Skyfire : PylonRack_19Rnd_Rocket_Skyfire
@@ -760,6 +759,14 @@ class CfgMagazines
         ammo = "OPT_Rocket_03_AP_F";
         displayName = "OPT Tratnyr 20x AP";
         pylonWeapon = "OPT_Rocket_03_AP_Plane_CAS_02_F";
+    };
+
+    class OPT_PylonMissile_1Rnd_missiles_titan : PylonMissile_1Rnd_LG_scalpel
+    {
+        ammo = "OPT_M_Titan_AT_long";
+        displayName = "OPT Titan";
+        pylonWeapon = "OPT_Veh_missiles_titan";
+        displayNameShort = "AG";
     };
 
     class 1000Rnd_Gatling_30mm_Plane_CAS_01_F;
@@ -875,97 +882,47 @@ class CfgMagazines
     {
     };
 
-    class CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M;
+    class 2Rnd_GAT_missiles;
 
-    class OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M : CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M
-    {
-        count = 50;
-    };
-
-    class OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M : CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M
-    {
-        count = 80;
-    };
-
-    class CUP_2000Rnd_23mm_AZP23_M;
-
-    class OPT_CUP_50Rnd_23mm_AZP23_M : CUP_2000Rnd_23mm_AZP23_M
-    {
-        count = 50;
-    };
-
-    class OPT_CUP_80Rnd_23mm_AZP23_M : CUP_2000Rnd_23mm_AZP23_M
-    {
-        count = 80;
-    };
-
-    class CUP_40Rnd_GRAD_HE;
-
-    class OPT_CUP_40Rnd_GRAD_HE: CUP_40Rnd_GRAD_HE
-    {
-        ammo = "OPT_CUP_R_GRAD_HE";
-    };
-
-    class CUP_Stinger_M;
-
-    class OPT_CUP_Stinger_M: CUP_Stinger_M
-    {
-        author = $STR_CUP_AUTHOR_STRING;
-        dlc = "CommunityUpgradeProject";
-        displayName = "$STR_CUP_dn_stinger_M";
-        displayNameShort = $STR_A3_CFGMAGAZINES_TITAN_AA_DNS;
-        ammo = "CUP_M_Stinger_AA";
-        type = 6 * 256;
-        picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_stinger_ca.paa";
-        model = "\CUP\Weapons\CUP_Weapons_Ammunition\Stinger\CUP_Stinger_Proxy.p3d";
-        modelSpecial = "";
-        descriptionShort = "$STR_CUP_dss_stinger_M";
-        mass = 90;
-        count = 1;
-        initSpeed = 40;
-        maxLeadSpeed = 320;
-    };
-
-    class CUP_Igla_M;
-
-    class OPT_CUP_Igla_M: CUP_Igla_M
-    {
-        author = $STR_CUP_AUTHOR_STRING;
-        dlc = "CommunityUpgradeProject";
-        displayName = "$STR_CUP_dn_igla_M";
-        descriptionShort = "$STR_CUP_dss_igla_M";
-        ammo = "CUP_M_9K38_Igla_AA";
-        type = 6 * 256;
-        picture = "\CUP\Weapons\CUP_Weapons_Ammunition\data\ui\m_igla_ca.paa";
-        model = "\CUP\Weapons\CUP_Weapons_Ammunition\9K38_Igla\CUP_9K38_Igla";
-        initSpeed = 32;
-        maxLeadSpeed = 150;
-        mass = 90;
-        maxThrowHoldTime = 2;
-        maxThrowIntensityCoef = 1.4;
-        minThrowIntensityCoef = 0.3;
-        simulation = "ProxyMagazines";
-    };
-
-    class CUP_8Rnd_AT5_BMP2_M;
-
-    class OPT_CUP_5Rnd_AT5_BMP2_M: CUP_8Rnd_AT5_BMP2_M
-    {
-        count = 5;
-    };
-
-    class CUP_2Rnd_TOW2_M;
-
-    class OPT_CUP_1Rnd_TOW2_M: CUP_2Rnd_TOW2_M
+    class OPT_1Rnd_GAT_missiles : 2Rnd_GAT_missiles
     {
         count = 1;
+        ammo = "OPT_M_Titan_AT_long";
     };
 
-    class CUP_250Rnd_TE1_30mm_GSh302K_HE_M;
+    class 300Rnd_20mm_shells;
 
-    class OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M: CUP_250Rnd_TE1_30mm_GSh302K_HE_M
+    class OPT_25Rnd_20mm_shells : 300Rnd_20mm_shells
     {
-        count = 50;
+        count = 25;
+        ammo = "OPT_B_20mm";
+    };
+
+    class 150Rnd_762x54_Box;
+
+    class OPT_100Rnd_762x54_Box : 150Rnd_762x54_Box
+    {
+        count = 100;
+        displayName = "100Rnd 7.62x54 mm";
+        displayNameShort = "100Rnd 7.62x54 mm";
+    };
+
+    class 75rnd_762x39_AK12_Mag_F;
+
+    class OPT_100rnd_762x39_AK12_Mag_F: 75rnd_762x39_AK12_Mag_F
+    {
+        count = 100;
+        displayName = "100Rnd 7.62x39 mm";
+        displayNameShort = "100Rnd 7.62x39 mm";
+    };
+
+    class 200Rnd_65x39_cased_Box;
+
+    class OPT_100Rnd_65x39_cased_Box: 200Rnd_65x39_cased_Box
+    {
+        count = 100;
+        displayName = "100Rnd 6.5x39 mm";
+        displayNameShort = "100Rnd 6.5x39 mm";
     };
 };
 
@@ -1246,6 +1203,7 @@ class CfgWeapons
         _generalMacro = "OPT_LMG_Zafir_F";
         displayName = "Zafir 7,62 mm";
         baseWeapon = "OPT_LMG_Zafir_F";
+        magazines[] = {"150Rnd_762x54_Box", "150Rnd_762x54_Box_Tracer", "OPT_100Rnd_762x54_Box"};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -1291,6 +1249,7 @@ class CfgWeapons
         _generalMacro = "OPT_LMG_Mk200_F";
         displayName = "Mk200 6,5 mm";
         baseWeapon = "OPT_LMG_Mk200_F";
+        magazines[] = {"200Rnd_65x39_cased_Box", "200Rnd_65x39_cased_Box_Tracer", "OPT_100Rnd_65x39_cased_Box"};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -1605,7 +1564,7 @@ class CfgWeapons
 
             class CowsSlot : CowsSlot
             {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
             };
         };
     };
@@ -1898,6 +1857,7 @@ class CfgWeapons
     {
         _generalMacro = "OPT_arifle_MXC_Black_F";
         baseWeapon = "OPT_arifle_MXC_Black_F";
+        magazines[] = {"30Rnd_65x39_caseless_black_mag"};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -2197,7 +2157,59 @@ class CfgWeapons
         };
     };
 
-    class DMR_01_base_F : Rifle_Long_Base_F
+    class pdw2000_base_F : Rifle_Short_Base_F
+    {
+        class WeaponSlotsInfo;
+    };
+
+    class hgun_PDW2000_F : pdw2000_base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_hgun_PDW2000_F : hgun_PDW2000_F
+    {
+        _generalMacro = "hgun_PDW2000_F";
+        baseWeapon = "hgun_PDW2000_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class OPT_hgun_PDW2000_ACO_F : OPT_hgun_PDW2000_F
+    {
+        _generalMacro = "hgun_PDW2000_F";
+        baseWeapon = "hgun_PDW2000_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco_smg", "optic_ACO_grn_smg", "optic_Holosight_smg", "optic_Holosight_smg_blk_F"};
+            };
+        };
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_aco_smg";
+            };
+        };
+    };
+
+       class DMR_01_base_F : Rifle_Long_Base_F
     {
     };
 
@@ -2345,6 +2357,32 @@ class CfgWeapons
             {
                 slot = "MuzzleSlot";
                 item = "muzzle_snds_B";
+            };
+        };
+    };
+
+    class OPT_srifle_EBR_ERCO_F : OPT_srifle_EBR_F
+    {
+        _generalMacro = "OPT_srifle_EBR_DMS_LP_BI_snds_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+
+            class LinkedItemsUnder
+            {
+                item = "bipod_01_F_blk";
+                slot = "UnderBarrelSlot";
             };
         };
     };
@@ -2531,16 +2569,16 @@ class CfgWeapons
         };
     };
 
-    class OPT_srifle_DMR_03_AMS_LP_BI_snds_F : OPT_srifle_DMR_03_F
+    class OPT_srifle_DMR_03_ERCO_F : OPT_srifle_DMR_03_F
     {
-        _generalMacro = "OPT_srifle_DMR_03_AMS_LP_BI_snds_F";
+        _generalMacro = "srifle_DMR_03_ACO_F";
 
         class LinkedItems
         {
             class LinkedItemsOptic
             {
                 slot = "CowsSlot";
-                item = "optic_AMS";
+                item = "optic_ERCO_blk_F";
             };
 
             class LinkedItemsAcc
@@ -2553,12 +2591,6 @@ class CfgWeapons
             {
                 slot = "UnderBarrelSlot";
                 item = "bipod_01_F_blk";
-            };
-
-            class LinkedItemsMuzzle
-            {
-                slot = "MuzzleSlot";
-                item = "muzzle_snds_B";
             };
         };
     };
@@ -3107,6 +3139,7 @@ class CfgWeapons
         };
     };
 
+
     class arifle_CTAR_base_F : Rifle_Base_F
     {
         class WeaponSlotsInfo;
@@ -3127,108 +3160,6 @@ class CfgWeapons
         baseWeapon = "OPT_arifle_CTAR_blk_F";
 
         magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_Tracer_F"};
-
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
-            };
-        };
-    };
-
-    class mk20_base_F : Rifle_Base_F
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class arifle_Mk20C_F : mk20_base_F
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_arifle_Mk20C_F : arifle_Mk20C_F
-    {
-        _generalMacro = "OPT_arifle_Mk20C_F";
-        baseWeapon = "OPT_arifle_Mk20C_F";
-
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
-            };
-        };
-    };
-
-    class arifle_Mk20_F : mk20_base_F
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_arifle_Mk20_F : arifle_Mk20_F
-    {
-        _generalMacro = "OPT_arifle_Mk20_F";
-        baseWeapon = "OPT_arifle_Mk20_F";
-
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
-            };
-        };
-    };
-
-    class arifle_Mk20_GL_F : mk20_base_F
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_arifle_Mk20_GL_F : arifle_Mk20_GL_F
-    {
-        _generalMacro = "OPT_arifle_Mk20_GL_F";
-        baseWeapon = "OPT_arifle_Mk20_GL_F";
-
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
-            };
-        };
-    };
-
-    class pdw2000_base_F : Rifle_Short_Base_F
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class hgun_PDW2000_F : pdw2000_base_F
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_hgun_PDW2000_F : hgun_PDW2000_F
-    {
-        _generalMacro = "OPT_hgun_PDW2000_F";
-        baseWeapon = "OPT_hgun_PDW2000_F";
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -3322,6 +3253,39 @@ class CfgWeapons
         };
     };
 
+    class OPT_arifle_CTAR_ERCO_Pointer_F : arifle_CTAR_blk_F
+    {
+        _generalMacro = "OPT_arifle_CTAR_blk_F";
+        displayName = "CAR-95 5,8 mm";
+        baseWeapon = "OPT_arifle_CTAR_blk_F";
+
+        magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_Tracer_F"};
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
     class arifle_CTAR_GL_base_F : arifle_CTAR_base_F
     {
     };
@@ -3366,6 +3330,80 @@ class CfgWeapons
             {
                 slot = "PointerSlot";
                 item = "acc_pointer_IR";
+            };
+        };
+    };
+
+    class mk20_base_F : Rifle_Base_F
+    {
+        class WeaponSlotsInfo;
+    };
+
+    class arifle_Mk20C_F : mk20_base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_Mk20C_F : arifle_Mk20C_F
+    {
+        _generalMacro = "OPT_arifle_Mk20C_F";
+        baseWeapon = "OPT_arifle_Mk20C_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class arifle_Mk20_F : mk20_base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_Mk20_F : arifle_Mk20_F
+    {
+        _generalMacro = "OPT_arifle_Mk20_F";
+        baseWeapon = "OPT_arifle_Mk20_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class arifle_Mk20_GL_F : mk20_base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_Mk20_GL_F : arifle_Mk20_GL_F
+    {
+        _generalMacro = "OPT_arifle_Mk20_GL_F";
+        baseWeapon = "OPT_arifle_Mk20_GL_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
             };
         };
     };
@@ -3530,6 +3568,98 @@ class CfgWeapons
             {
                 item = "muzzle_snds_65_TI_blk_F";
                 slot = "MuzzleSlot";
+            };
+        };
+    };
+
+    class SMG_03C_BASE;
+
+    class SMG_03C_TR_black : SMG_03C_BASE
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+            class MuzzleSlot;
+            class WeaponSlotsInfo;
+        };
+    };
+
+    class OPT_SMG_03C_TR_black : SMG_03C_TR_black
+    {
+       _generalMacro = "SMG_03C_TR_black";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco_smg", "optic_ACO_grn_smg", "optic_Holosight_smg", "optic_Holosight_smg_blk_F"};
+            };
+
+            class MuzzleSlot : MuzzleSlot
+            {
+                compatibleItems[] = {};
+            };
+        };
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ACO_grn_smg";
+            };
+        };
+    };
+
+    class arifle_RPK12_base_F;
+
+    class arifle_RPK12_F : arifle_RPK12_base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_RPK12_F : arifle_RPK12_F
+    {
+        _generalMacro = "arifle_RPK12_F";
+        baseWeapon = "arifle_RPK12_F";
+        magazines[] = {"75rnd_762x39_AK12_Mag_F", "OPT_100rnd_762x39_AK12_Mag_F"};
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F"};
+            };
+        };
+    };
+
+    class OPT_arifle_RPK12_ACO_BI_pointer_F : OPT_arifle_RPK12_F
+    {
+        _generalMacro = "arifle_RPK12_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_Aco";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+
+            class LinkedItemsUnder
+            {
+                item = "bipod_01_F_blk";
+                slot = "UnderBarrelSlot";
             };
         };
     };
@@ -3881,584 +4011,6 @@ class CfgWeapons
         };
     };
 
-    class CUP_launch_FIM92Stinger;
-
-    class OPT_CUP_launch_FIM92Stinger : CUP_launch_FIM92Stinger
-    {
-        class EventHandlers 
-        {
-
-        };
-        
-        magazines[] = {"OPT_CUP_Stinger_M"};
-    };
-
-    class CUP_launch_Igla_Loaded;
-
-    class CUP_launch_Igla : CUP_launch_Igla_Loaded
-    {
-        class WeaponSlotsInfo;
-    };
-    
-    class OPT_CUP_launch_Igla : CUP_launch_Igla
-    {
-        class EventHandlers 
-        {
-
-        };
-        
-        magazines[] = {"OPT_CUP_Igla_M"};
-
-        class WeaponSlotsInfo : WeaponSlotsInfo 
-        {
-            mass = 241.2; // 285.5
-        };
-    };
-
-    class CUP_arifle_HK416_145_Base : Rifle_Base_F
-    {
-        class WeaponSlotsInfo;
-
-    };
-
-    class CUP_arifle_HK416_Black : CUP_arifle_HK416_145_Base
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_CUP_arifle_HK416_Black : CUP_arifle_HK416_Black
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F", "optic_KHS_blk"};
-            };
-        };
-    };
-
-    class CUP_arifle_HK416_M203_Black : CUP_arifle_HK416_Black
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_CUP_arifle_HK416_M203_Black : CUP_arifle_HK416_M203_Black
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F","optic_KHS_blk"};
-            };
-        };
-    };
-
-    class CUP_arifle_SCAR_L_Base;
-
-    class CUP_arifle_Mk16_STD : CUP_arifle_SCAR_L_Base
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_arifle_Mk16_STD_FG_black : CUP_arifle_Mk16_STD
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMount;
-        };
-    };
-
-    class OPT_CUP_arifle_Mk16_STD_FG_black : CUP_arifle_Mk16_STD_FG_black
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopMount 
-            {
-                displayName = "Visier-Slot";
-                iconPosition[] = {0.58, 0.22};
-                iconScale = 0.15;
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinPoint = "Bottom";
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                
-                class compatibleItems 
-                {
-                    optic_aco = 1;
-                    optic_ACO_grn= 1;
-                    optic_Holosight= 1;
-                    optic_Holosight_blk_F= 1;
-                    optic_MRCO= 1;
-                    optic_Arco= 1;
-                    optic_Arco_blk_F= 1;
-                    optic_hamr= 1; 
-                    optic_DMS= 0; 
-                    optic_ERCO_blk_F= 1;
-                    optic_NVS= 0;
-                    optic_SOS= 0; 
-                    optic_KHS_blk= 0;
-                    optic_AMS= 0;
-                };    
-            };
-        };
-    };
-
-    class CUP_arifle_Mk16_STD_EGLM : CUP_arifle_Mk16_STD
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_arifle_Mk16_STD_EGLM_black : CUP_arifle_Mk16_STD_EGLM
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopShortMount;
-        };
-    };
-
-    class OPT_CUP_arifle_Mk16_STD_EGLM_black : CUP_arifle_Mk16_STD_EGLM_black
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMountSCAR : CUP_PicatinnyTopShortMount 
-            {
-                displayName = "Visier-Slot";
-                iconPinpoint = "center";
-                iconPosition[] = {0.59, 0.281};
-                iconScale = 0.17;
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                
-                class compatibleItems 
-                {
-                    optic_aco = 1;
-                    optic_ACO_grn= 1;
-                    optic_Holosight= 1;
-                    optic_Holosight_blk_F= 1;
-                    optic_MRCO= 1;
-                    optic_Arco= 1;
-                    optic_Arco_blk_F= 1;
-                    optic_hamr= 1; 
-                    optic_DMS= 0; 
-                    optic_ERCO_blk_F= 1;
-                    optic_NVS= 0;
-                    optic_SOS= 0; 
-                    optic_KHS_blk= 0;
-                    optic_AMS= 0;
-                };    
-            };
-        };
-    };
-
-    class CUP_arifle_AK74M;
-
-    class CUP_arifle_AK101 : CUP_arifle_AK74M
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_arifle_AK101_railed : CUP_arifle_AK101
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-        };
-    };
-
-    class OPT_CUP_arifle_AK101_railed : CUP_arifle_AK101_railed
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMountAK
-            {
-                displayName = "Visier-Slot";
-                iconPinpoint = "center";
-                iconPosition[] = {0.59, 0.281};
-                iconScale = 0.17;
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                
-                class compatibleItems 
-                {
-                    optic_aco = 1;
-                    optic_ACO_grn= 1;
-                    optic_Holosight= 1;
-                    optic_Holosight_blk_F= 1;
-                    optic_MRCO= 1;
-                    optic_Arco= 1;
-                    optic_Arco_blk_F= 1;
-                    optic_hamr= 1; 
-                    optic_DMS= 0; 
-                    optic_ERCO_blk_F= 1;
-                    optic_NVS= 0;
-                    optic_SOS= 0; 
-                    optic_KHS_blk= 0;
-                    optic_AMS= 0;
-                };    
-            };
-        };
-    };
-    
-    class CUP_arifle_AK74M_GL;
-
-    class CUP_arifle_AK101_GL : CUP_arifle_AK74M_GL
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-        };
-
-        class GP25Muzzle;
-    };
-
-    class OPT_CUP_arifle_AK101_GL_railed : CUP_arifle_AK101_GL_railed
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMountAK
-            {
-                displayName = "Visier-Slot";
-                iconPosition[] = {0.58, 0.22};
-                iconScale = 0.15;
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinPoint = "Bottom";
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                
-                class compatibleItems 
-                {
-                    optic_aco = 1;
-                    optic_ACO_grn= 1;
-                    optic_Holosight= 1;
-                    optic_Holosight_blk_F= 1;
-                    optic_MRCO= 1;
-                    optic_Arco= 1;
-                    optic_Arco_blk_F= 1;
-                    optic_hamr= 1; 
-                    optic_DMS= 0; 
-                    optic_ERCO_blk_F= 1;
-                    optic_NVS= 0;
-                    optic_SOS= 0; 
-                    optic_KHS_blk= 0;
-                    optic_AMS= 0;
-                };    
-            };
-
-            class GP25Muzzle : GP25Muzzle 
-            {
-                magazines[] += {"ACE_HuntIR_M203"};
-            };
-        };
-    };
-  
-    class CUP_lmg_minimipara;
-
-    class CUP_lmg_minimi_railed : CUP_lmg_minimipara
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_lmg_m249_pip3 : CUP_lmg_minimi_railed
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMount;
-        };
-    };
-
-    class OPT_CUP_lmg_m249_pip3 : CUP_lmg_m249_pip3
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CUP_PicatinnyTopMountM249 : CUP_PicatinnyTopMount
-            {
-                access = 1;
-                displayName = "Visier-Slot";
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinpoint = "Bottom";
-                iconPosition[] = {0,0};
-                iconScale = 0;
-                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                                                               
-                class compatibleItems 
-                {
-                    optic_aco = 1;
-                    optic_ACO_grn= 1;
-                    optic_Holosight= 1;
-                    optic_Holosight_blk_F= 1;
-                }; 
-            };
-        };
-    };
-
-    class CUP_lmg_M240 : Rifle_Long_Base_F
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_lmg_M240_B : CUP_lmg_M240
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopShortMount;
-        };
-    };
-
-    class OPT_CUP_lmg_M240_B : CUP_lmg_M240_B
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMountM240 : CUP_PicatinnyTopShortMount 
-            {
-                displayName = "Visier-Slot";
-                iconPosition[] = {0.605882,0.376471};
-                iconScale = 0.15;
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinPoint = "Bottom";
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                
-                class compatibleItems 
-                {
-                    optic_aco = 1;
-                    optic_ACO_grn= 1;
-                    optic_Holosight= 1;
-                    optic_Holosight_blk_F= 1;
-                };    
-            };
-        };
-    };
-
-    class CUP_arifle_RPK74;
-
-    class CUP_arifle_RPK74M : CUP_arifle_RPK74
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_arifle_RPK74M_top_rail : CUP_arifle_RPK74M
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopShortMount;
-        };
-    };
-
-    class OPT_CUP_arifle_RPK74M_top_rail : CUP_arifle_RPK74M_top_rail
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMountAK : CUP_PicatinnyTopShortMount 
-            {
-                displayName = "Visier-Slot";
-                iconPosition[] = {0.62, 0.23};
-                iconScale = 0.15;
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinPoint = "Bottom";
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                
-                class compatibleItems 
-                {
-                    optic_aco = 1;
-                    optic_ACO_grn= 1;
-                    optic_Holosight= 1;
-                    optic_Holosight_blk_F= 1;
-                };    
-            };
-        };
-    };
-
-    class CUP_lmg_PKM : Rifle_Long_Base_F
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_lmg_PKM_top_rail : CUP_lmg_PKM
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_CUP_lmg_PKM_top_rail : CUP_lmg_PKM_top_rail
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                class compatibleItems 
-                {
-                    optic_aco = 1;
-                    optic_ACO_grn= 1;
-                    optic_Holosight= 1;
-                    optic_Holosight_blk_F= 1;
-                };
-            };
-        };
-    };
-
-    class CUP_arifle_HK417_Base : CUP_arifle_HK416_145_Base
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_arifle_HK417_20 : CUP_arifle_HK417_Base
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_CUP_arifle_HK417_20 : CUP_arifle_HK417_20
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F", "optic_NVS", "optic_DMS", "optic_ams", "optic_AMS_snd", "optic_AMS_khk", "optic_KHS_blk", "optic_KHS_tan", "optic_KHS_hex", "optic_KHS_old", "optic_SOS"};
-            };
-        };
-    };
-
-    class CUP_arifle_FNFAL;
-
-    class CUP_arifle_FNFAL5061 : CUP_arifle_FNFAL
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_arifle_FNFAL5061_railed : CUP_arifle_FNFAL5061
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-            class UnderBarrelSlot;
-        };
-    };
-
-    class OPT_CUP_arifle_FNFAL5061_railed : CUP_arifle_FNFAL5061_railed
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F", "optic_NVS", "optic_DMS", "optic_ams", "optic_AMS_snd", "optic_AMS_khk", "optic_KHS_blk", "optic_KHS_tan", "optic_KHS_hex", "optic_KHS_old", "optic_SOS"};
-            };
-
-            class UnderBarrelSlot : UnderBarrelSlot
-            {
-                access = 1;
-                compatibleItems[] = {"CUP_bipod_FNFAL"};
-                iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
-                iconPinpoint = "center";
-                iconPosition[] = {0.22,0.52};
-                iconScale = 0.25;
-                linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
-                scope = 0;
-            };
-
-
-        };
-    };
-
-    class CUP_srifle_AS50 : Rifle_Long_Base_F
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-        };
-    };
-
-    class OPT_CUP_srifle_AS50 : CUP_srifle_AS50
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CUP_PicatinnyTopMountAS50
-            {
-                displayName = "Visier-Slot";
-                iconPosition[] = {0.62,0.45};
-                iconScale = 0.15;
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinPoint = "Bottom";
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                
-                class compatibleItems 
-                {
-                    optic_NVS=1;
-                    optic_SOS=1; 
-                    optic_LRPS=1;
-                    optic_LRPS_tna_F=1;
-                };    
-            };
-        };
-    };
-
-    class CUP_Mac10_Base : Rifle_Base_F
-    {
-        class WeaponSlotsInfo;
-    };
-
-    class CUP_smg_Mac10 : CUP_Mac10_Base
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_CUP_smg_Mac10 : CUP_smg_Mac10
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-            };
-        };
-    };
-
-    class CUP_smg_SA61 : Rifle_Base_F
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
-    };
-
-    class OPT_CUP_smg_SA61 : CUP_smg_SA61
-    {
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-
-            class CowsSlot : CowsSlot
-            {
-            };
-        };
-    };
-
-
-
     class Binocular;
 
     class Laserdesignator : Binocular
@@ -4520,31 +4072,7 @@ class CfgWeapons
         displayName = "OPT FADAK";
         descriptionShort = "Mit 20km Reichweite";
     };
-    
-    class CUP_H_RUS_SSH68_cover_base;
-
-    class CUP_H_RUS_SSH68_cover_vsr98 : CUP_H_RUS_SSH68_cover_base
-    {
-        class ItemInfo;        
-    };
-    
-    class OPT_CUP_H_HIL_HelmetACH_Headset_TTS : CUP_H_RUS_SSH68_cover_vsr98
-    {
-        class ItemInfo : ItemInfo
-        {
-            hiddenSelectionsTextures[] = {"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_Russia\data\ssh68_cover_vsr98_co.paa"};
-            class HitpointsProtectionInfo 
-            {
-                class Head 
-                {
-                    hitpointName = "HitHead";
-                    armor = 6;
-                    passThrough = 0.5;
-                };
-            };
-        };
-    };
-    
+      
     class CMFlareLauncher;
 
     class OPT_CMFlareLauncher : CMFlareLauncher
@@ -4627,6 +4155,12 @@ class CfgWeapons
     class OPT_Twin_Cannon_20mm : Twin_Cannon_20mm
     {
         magazines[] = {"2000Rnd_20mm_shells", "1000Rnd_20mm_shells", "300Rnd_20mm_shells", "OPT_PylonWeapon_300Rnd_20mm_shells"};
+        displayName = "Zwillingsgeschütz 20 mm";
+    };
+
+    class OPT_Twin_Cannon_20mm_25Rnd : Twin_Cannon_20mm
+    {
+        magazines[] = {"OPT_25Rnd_20mm_shells","OPT_PylonWeapon_25Rnd_20mm_shells"};
         displayName = "Zwillingsgeschütz 20 mm";
     };
 
@@ -4782,7 +4316,7 @@ class CfgWeapons
     class OPT_M134_minigun : M134_minigun
     {
         showAimCursorInternal = 0;
-        displayName = "2x M134 Minigun 7,62 mm";
+        displayName = "Gatting 7,62 mm";
     };
 
     class Laserdesignator_mounted;
@@ -4901,6 +4435,12 @@ class CfgWeapons
         displayName = "GBU-12";
     };
 
+    class OPT_Veh_missiles_titan : OPT_missiles_titan
+    {
+        magazines[] = {"OPT_1Rnd_GAT_missiles","OPT_PylonMissile_1Rnd_missiles_titan","1Rnd_GAT_missiles"};
+        displayName = "Titan";
+    };
+
     class mortar_82mm;
 
     class OPT_mortar_82mm : mortar_82mm
@@ -4983,51 +4523,6 @@ class CfgWeapons
     {
         magazines[] = {"OPT_PylonMissile_Bomb_KAB250_x1"};
     };
-
-    class CUP_Vacannon_M168_M163VADS;
-
-    class OPT_CUP_Vacannon_M168_M163VADS : CUP_Vacannon_M168_M163VADS
-    {
-        magazineReloadTime=5;
-        magazines[] = {"CUP_1100Rnd_TE1_Red_Tracer_20mm_M168_M", "OPT_CUP_50Rnd_TE1_Red_Tracer_20mm_M168_M", "OPT_CUP_80Rnd_TE1_Red_Tracer_20mm_M168_M"};
-    };
-
-    class CUP_Vacannon_AZP23_veh;
-
-    class OPT_CUP_Vacannon_AZP23_veh : CUP_Vacannon_AZP23_veh
-    {
-        magazineReloadTime=5;
-        magazines[] = {"CUP_2000Rnd_23mm_AZP23_M", "CUP_2000Rnd_23mm_AZP23_M","OPT_CUP_50Rnd_23mm_AZP23_M","OPT_CUP_80Rnd_23mm_AZP23_M"};
-    };
-
-    class CUP_Vmlauncher_GRAD_ACR_veh;
-
-    class OPT_CUP_Vmlauncher_GRAD_ACR_veh : CUP_Vmlauncher_GRAD_ACR_veh
-    {
-        magazines[] = {"CUP_40Rnd_GRAD_HE","OPT_CUP_40Rnd_GRAD_HE"};
-    };
-
-    class CUP_Vmlauncher_AT5_single_veh;
-
-    class OPT_CUP_Vmlauncher_AT5_single_veh : CUP_Vmlauncher_AT5_single_veh
-    {
-        magazines[] = {"CUP_8Rnd_AT5_BMP2_M","OPT_CUP_5Rnd_AT5_BMP2_M"};
-    };
-
-    class CUP_Vmlauncher_TOW_veh;
-
-    class OPT_CUP_Vmlauncher_TOW_veh : CUP_Vmlauncher_TOW_veh
-    {
-        magazines[] = {"CUP_2Rnd_TOW2_M","OPT_CUP_1Rnd_TOW2_M"};
-    };
-
-    class CUP_Vacannon_GSh302K_veh;
-
-    class OPT_CUP_Vacannon_GSh302K_veh : CUP_Vacannon_GSh302K_veh
-    {
-        magazines[] = {"CUP_250Rnd_TE1_30mm_GSh302K_HE_M","OPT_CUP_50Rnd_TE1_30mm_GSh302K_HE_M"};
-    };
-
 };
 
 class CfgVehicles
@@ -5961,90 +5456,6 @@ class CfgVehicles
         };
     };
 
-    class CUP_M119_base;
-
-    class CUP_B_M119_USMC : CUP_M119_base
-    {
-        class Turrets;
-        class MainTurret;
-        class ViewOptics;
-    };
-
-    class OPT_CUP_B_M119_USMC : CUP_B_M119_USMC
-    {
-        faction = "OPT_NATO_CUP";
-
-        class Turrets : Turrets
-        {
-            class MainTurret : MainTurret
-            {
-                weapons[] = {"CUP_Vcannon_M119_veh"};
-                magazines[] = {"CUP_30Rnd_105mmHE_M119_M", "CUP_30Rnd_105mmWP_M119_M", "CUP_30Rnd_105mmSMOKE_M119_M", "CUP_30Rnd_105mmILLUM_M119_M"};
-
-                class ViewOptics : ViewOptics
-                {
-                    visionMode[] = {"Normal", "NVG"};
-                };
-            };
-        };
-    };
-
-    class CUP_D30_base;
-
-    class CUP_O_D30_RU : CUP_D30_base
-    {
-        class Turrets;
-        class MainTurret;
-        class ViewOptics;
-    };
-
-    class OPT_CUP_O_D30_RU : CUP_O_D30_RU
-    {
-        faction = "OPT_WP";
-        
-        class Turrets : Turrets
-        {
-            class MainTurret : MainTurret
-            {
-                weapons[] = {"CUP_Vcannon_D30_veh"};
-                magazines[] = {"CUP_30Rnd_122mmHE_D30_M", "CUP_30Rnd_122mmWP_D30_M", "CUP_30Rnd_122mmSMOKE_D30_M", "CUP_30Rnd_122mmILLUM_D30_M"};
-               
-                class ViewOptics : ViewOptics
-                {
-                    visionMode[] = {"Normal", "NVG"};
-                };
-            };
-        };
-    };
-
-    class CUP_D30_AT_base;
-
-    class CUP_O_D30_AT_RU : CUP_D30_AT_base
-    {
-        class Turrets;
-        class MainTurret;
-        class ViewOptics;
-    };
-
-    class OPT_CUP_B_M119_AT_USMC : CUP_O_D30_AT_RU
-    {
-        faction = "OPT_NATO_CUP";
-        displayName = "M119-AT";
-        side = 1;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\d30\d30.paa"};
-        
-        class Turrets : Turrets
-        {
-            class MainTurret : MainTurret
-            {              
-                class ViewOptics : ViewOptics
-                {
-                    visionMode[] = {"Normal", "NVG"};
-                };
-            };
-        };
-    };
-
     class ThingX;
 
     class ReammoBox_F : ThingX
@@ -6090,7 +5501,7 @@ class CfgVehicles
 
             class _xx_OPT_hgun_P07_F
             {
-                weapon = "CUP_hgun_M9";
+                weapon = "OPT_hgun_P07_khk_F";
                 count = 70;
             };
         };
@@ -6503,33 +5914,45 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_CUP_15Rnd_9x19_M9
+            class _xx_16Rnd_9x21_Mag
             {
-                magazine = "CUP_15Rnd_9x19_M9";
+                magazine = "16Rnd_9x21_Mag";
                 count = 10;
             };
 
-            class _xx_CUP_30Rnd_556x45_Stanag
+            class _xx_30Rnd_65x39_caseless_black_mag
             {
-                magazine = "CUP_30Rnd_556x45_Stanag";
+                magazine = "30Rnd_65x39_caseless_black_mag";
                 count = 80;
             };
 
-            class _xx_CUP_30Rnd_45ACP_MAC10_M
+            class _xx_30Rnd_556x45_Stanag
             {
-                magazine = "CUP_30Rnd_45ACP_MAC10_M";
+                magazine = "30Rnd_556x45_Stanag";
                 count = 80;
             };
 
-            class _xx_CUP_100Rnd_TE4_Green_Tracer_556x45_M249
+            class _xx_30Rnd_9x21_Mag_SMG_02
             {
-                magazine = "CUP_100Rnd_TE4_Green_Tracer_556x45_M249";
+                magazine = "30Rnd_9x21_Mag_SMG_02";
+                count = 80;
+            };
+
+            class _xx_50Rnd_570x28_SMG_03
+            {
+                magazine = "50Rnd_570x28_SMG_03";
+                count = 80;
+            };
+
+            class _xx_OPT_100Rnd_762x54_Box
+            {
+                magazine = "OPT_100Rnd_762x54_Box";
                 count = 40;
             };
 
-            class _xx_CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M
+            class _xx_100Rnd_65x39_caseless_black_mag
             {
-                magazine = "CUP_100Rnd_TE4_LRT4_Green_Tracer_762x51_Belt_M";
+                magazine = "100Rnd_65x39_caseless_black_mag";
                 count = 40;
             };
         };
@@ -6575,15 +5998,15 @@ class CfgVehicles
                 count = 180;
             };
 
-            class _xx_OPT_150Rnd_556x45_Drum_Mag_Tracer_F
+            class _xx_100Rnd_65x39_caseless_black_mag
             {
-                magazine = "OPT_150Rnd_556x45_Drum_Mag_Tracer_F";
+                magazine = "100Rnd_65x39_caseless_black_mag";
                 count = 40;
             };
 
-            class _xx_200Rnd_65x39_cased_Box
+            class _xx_OPT_100Rnd_762x54_Box
             {
-                magazine = "200Rnd_65x39_cased_Box";
+                magazine = "OPT_100Rnd_762x54_Box";
                 count = 40;
             };
         };
@@ -6668,16 +6091,16 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_CUP_20Rnd_762x51_HK417
+            class _xx_20Rnd_762x51_Mag
             {
-                magazine = "CUP_20Rnd_762x51_HK417";
+                magazine = "20Rnd_762x51_Mag";
                 count = 60;
             };
 
-            class _xx_CUP_5Rnd_127x99_as50_M
+            class _xx_5Rnd_127x108_APDS_Mag
             {
-                magazine = "CUP_5Rnd_127x99_as50_M";
-                count = 40;
+                magazine = "5Rnd_127x108_APDS_Mag";
+                count = 60;
             };       
         };
     };
@@ -6776,53 +6199,14 @@ class CfgVehicles
         displayName = "MAAWS Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
             class _xx_CUP_launch_MAAWS
             {
-                weapon = "CUP_launch_MAAWS";
-                count = 1;
-            };
-        };
-
-        class TransportItems
-        {
-            class _xx_CUP_optic_MAAWS_Scope
-            {
-                name = "CUP_optic_MAAWS_Scope";
-                count = 1;
-            };
-        };
-
-        class TransportBackpacks
-        {
-        };
-
-        class TransportMagazines
-        {
-            class _xx_CUP_MAAWS_HEAT_M
-            {
-                magazine = "CUP_MAAWS_HEAT_M";
-                count = 5;
-            };
-        };
-    };
-
-    class OPT_Box_NATO_WpsSpecial_AT_L1A : OPT_Box_NATO_WpsSpecial_AT_L1
-    {
-        displayName = "M72A6 Raketenkiste";
-        maximumLoad = 5000;
-        supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
-
-        class TransportWeapons
-        {
-            class _xx_CUP_launch_M72A6
-            {
-                weapon = "CUP_launch_M72A6";
-                count = 5;
+                weapon = "OPT_launch_MRAWS_green_F";
+                count = 2;
             };
         };
 
@@ -6836,24 +6220,27 @@ class CfgVehicles
 
         class TransportMagazines
         {
+            class _xx_MRAWS_HEAT_F
+            {
+                magazine = "MRAWS_HEAT_F";
+                count = 5;
+            };
         };
     };
-
-    
 
     class OPT_Box_NATO_WpsSpecial_AT_L2 : Box_NATO_WpsSpecial_F
     {
-        displayName = "PCML-M Raketenkiste (NATO)";
-        maximumLoad = 2000;
+        displayName = "RPG42 Raketenkiste";
+        maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\PCML.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
-            class _xx_OPT_launch_NLAW_F
+            class _xx_OPT_launch_RPG32_ghex_F
             {
-                weapon = "OPT_launch_NLAW_F";
-                count = 1;
+                weapon = "OPT_launch_RPG32_ghex_F";
+                count = 2;
             };
         };
 
@@ -6867,10 +6254,44 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_NLAW_F
+            class _xx_RPG32_F
             {
-                magazine = "NLAW_F";
-                count = 10;
+                magazine = "RPG32_F";
+                count = 5;
+            };
+        };
+    };
+
+    class OPT_Box_NATO_WpsSpecial_AT_L3 : Box_NATO_WpsSpecial_F
+    {
+        displayName = "RPG7 Raketenkiste";
+        maximumLoad = 5000;
+        supplyRadius = 8;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+
+        class TransportWeapons
+        {
+            class _xx_launch_RPG7_F
+            {
+                weapon = "launch_RPG7_F";
+                count = 2;
+            };
+        };
+
+        class TransportItems
+        {
+        };
+
+        class TransportBackpacks
+        {
+        };
+
+        class TransportMagazines
+        {
+            class _xx_RPG7_F
+            {
+                magazine = "RPG7_F";
+                count = 5;
             };
         };
     };
@@ -6911,7 +6332,7 @@ class CfgVehicles
 
     class OPT_Box_NATO_WpsSpecial_AA_F : Box_NATO_WpsSpecial_F
     {
-        displayName = "AA Raketenkiste (NATO)";
+        displayName = "AA Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
@@ -6930,9 +6351,9 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_CUP_Stinger_M
+            class _xx_Titan_AA
             {
-                magazine = "OPT_CUP_Stinger_M";
+                magazine = "Titan_AA";
                 count = 10;
             };
         };
@@ -7154,80 +6575,159 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_CUP_1Rnd_Smoke_M203
+            class _xx_3Rnd_Smoke_Grenade_shell
             {
-                magazine = "CUP_1Rnd_Smoke_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_1Rnd_SmokeRed_M203
-            {
-                magazine = "CUP_1Rnd_SmokeRed_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_1Rnd_SmokeGreen_M203
-            {
-                magazine = "CUP_1Rnd_SmokeGreen_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_1Rnd_SmokeYellow_M203
-            {
-                magazine = "CUP_1Rnd_SmokeYellow_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_1Rnd_StarFlare_White_M203
-            {
-                magazine = "CUP_1Rnd_StarFlare_White_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_1Rnd_StarFlare_Red_M203
-            {
-                magazine = "CUP_1Rnd_StarFlare_Red_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_1Rnd_StarFlare_Green_M203
-            {
-                magazine = "CUP_1Rnd_StarFlare_Green_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_FlareWhite_M203
-            {
-                magazine = "CUP_FlareWhite_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_FlareGreen_M203
-            {
-                magazine = "CUP_FlareGreen_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_FlareRed_M203
-            {
-                magazine = "CUP_FlareRed_M203";
-                count = 30;
-            };
-
-            class _xx_CUP_FlareYellow_M203
-            {
-                magazine = "CUP_FlareYellow_M203";
-                count = 30;
-            };
-            class _xx_CUP_1Rnd_HEDP_M203
-            {
-                magazine = "CUP_1Rnd_HEDP_M203";
+                magazine = "3Rnd_Smoke_Grenade_shell";
                 count = 0;
             };
 
-            class _xx_CUP_1Rnd_HE_M203
+            class _xx_1Rnd_Smoke_Grenade_shell
             {
-                magazine = "CUP_1Rnd_HE_M203";
+                magazine = "1Rnd_Smoke_Grenade_shell";
+                count = 30;
+            };
+
+            class _xx_3Rnd_SmokeRed_Grenade_shell
+            {
+                magazine = "3Rnd_SmokeRed_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeRed_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeRed_Grenade_shell";
+                count = 30;
+            };
+
+            class _xx_3Rnd_SmokeGreen_Grenade_shell
+            {
+                magazine = "3Rnd_SmokeGreen_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeGreen_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeGreen_Grenade_shell";
+                count = 30;
+            };
+
+            class _xx_3Rnd_SmokeYellow_Grenade_shell
+            {
+                magazine = "3Rnd_SmokeYellow_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeYellow_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeYellow_Grenade_shell";
+                count = 30;
+            };
+
+            class _xx_3Rnd_SmokePurple_Grenade_shell
+            {
+                magazine = "3Rnd_SmokePurple_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokePurple_Grenade_shell
+            {
+                magazine = "1Rnd_SmokePurple_Grenade_shell";
+                count = 30;
+            };
+
+            class _xx_3Rnd_SmokeBlue_Grenade_shell
+            {
+                magazine = "3Rnd_SmokeBlue_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeBlue_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeBlue_Grenade_shell";
+                count = 30;
+            };
+
+            class _xx_3Rnd_SmokeOrange_Grenade_shell
+            {
+                magazine = "3Rnd_SmokeOrange_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeOrange_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeOrange_Grenade_shell";
+                count = 30;
+            };
+
+            class _xx_3Rnd_UGL_FlareWhite_F
+            {
+                magazine = "3Rnd_UGL_FlareWhite_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareWhite_F
+            {
+                magazine = "UGL_FlareWhite_F";
+                count = 30;
+            };
+
+            class _xx_3Rnd_UGL_FlareGreen_F
+            {
+                magazine = "3Rnd_UGL_FlareGreen_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareGreen_F
+            {
+                magazine = "UGL_FlareGreen_F";
+                count = 30;
+            };
+
+            class _xx_3Rnd_UGL_FlareRed_F
+            {
+                magazine = "3Rnd_UGL_FlareRed_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareRed_F
+            {
+                magazine = "UGL_FlareRed_F";
+                count = 30;
+            };
+
+            class _xx_3Rnd_UGL_FlareYellow_F
+            {
+                magazine = "3Rnd_UGL_FlareYellow_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareYellow_F
+            {
+                magazine = "UGL_FlareYellow_F";
+                count = 30;
+            };
+
+            class _xx_3Rnd_UGL_FlareCIR_F
+            {
+                magazine = "3Rnd_UGL_FlareCIR_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareCIR_F
+            {
+                magazine = "UGL_FlareCIR_F";
+                count = 30;
+            };
+
+            class _xx_3Rnd_HE_Grenade_shell
+            {
+                magazine = "3Rnd_HE_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_HE_Grenade_shell
+            {
+                magazine = "1Rnd_HE_Grenade_shell";
                 count = 20;
             };
 
@@ -7538,7 +7038,7 @@ class CfgVehicles
 
             class _xx_CUP_hgun_CZ75
             {
-                weapon = "CUP_hgun_CZ75";
+                weapon = "OPT_hgun_Rook40_F";
                 count = 70;
             };
         };
@@ -7739,31 +7239,43 @@ class CfgVehicles
 
             class _xx_16Rnd_9x21_Mag
             {
-                magazine = "CUP_16Rnd_9x19_cz75";
+                magazine = "16Rnd_9x21_Mag";
                 count = 80;
             };
 
-            class _xx_CUP_30Rnd_556x45_AK
+            class _xx_30Rnd_580x42_Mag_F
             {
-                magazine = "CUP_30Rnd_556x45_AK";
+                magazine = "30Rnd_580x42_Mag_F";
                 count = 80;
             };
 
-            class _xx_CUP_20Rnd_B_765x17_Ball_M
+            class _xx_30Rnd_65x39_caseless_green
             {
-                magazine = "CUP_20Rnd_B_765x17_Ball_M";
-                count = 180;
-            };
-
-            class _xx_CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M
-            {
-                magazine = "CUP_60Rnd_TE1_Red_Tracer_545x39_AK74M_M";
+                magazine = "30Rnd_65x39_caseless_green";
                 count = 80;
             };
 
-            class _xx_OPT_100Rnd_580x42_Mag_Tracer_F
+            class _xx_30Rnd_9x21_Mag
             {
-                magazine = "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Red_M";
+                magazine = "30Rnd_9x21_Mag";
+                count = 80;
+            };
+
+            class _xx_50Rnd_570x28_SMG_03
+            {
+                magazine = "50Rnd_570x28_SMG_03";
+                count = 80;
+            };
+
+            class _xx_OPT_100rnd_762x39_AK12_Mag_F
+            {
+                magazine = "OPT_100rnd_762x39_AK12_Mag_F";
+                count = 40;
+            };
+
+            class _xx_OPT_100Rnd_65x39_cased_Box
+            {
+                magazine = "OPT_100Rnd_65x39_cased_Box";
                 count = 40;
             };
         };
@@ -7832,15 +7344,15 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_CUP_20Rnd_762x51_FNFAL_M
+            class _xx_20Rnd_762x51_Mag
             {
-                magazine = "CUP_20Rnd_762x51_FNFAL_M";
+                magazine = "20Rnd_762x51_Mag";
                 count = 60;
             };
             
-            class _xx_CUP_5Rnd_127x99_as50_M
+            class _xx_5Rnd_127x108_APDS_Mag
             {
-                magazine = "CUP_5Rnd_127x99_as50_M";
+                magazine = "5Rnd_127x108_APDS_Mag";
                 count = 60;
             };
         };
@@ -7852,27 +7364,22 @@ class CfgVehicles
 
     class OPT_Box_East_WpsSpecial_AT_L1 : Box_East_WpsSpecial_F
     {
-        displayName = "Mk153 Mod 0 SMAW Raketenkiste";
+        displayName = "MAAWS Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o3.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS3.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
-            class _xx_CUP_launch_Mk153Mod0
+            class _xx_OPT_launch_MRAWS_green_F
             {
-                weapon = "CUP_launch_Mk153Mod0";
-                count = 1;
+                weapon = "OPT_launch_MRAWS_green_F";
+                count = 2;
             };
         };
 
         class TransportItems
         {
-            class _xx_CUP_optic_SMAW_Scope
-            {
-                name = "CUP_optic_SMAW_Scope";
-                count = 1;
-            };
         };
 
         class TransportBackpacks
@@ -7881,9 +7388,9 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_CUP_SMAW_HEAA_M
+            class _xx_MRAWS_HEAT_F
             {
-                magazine = "CUP_SMAW_HEAA_M";
+                magazine = "MRAWS_HEAT_F";
                 count = 5;
             };
 
@@ -8012,16 +7519,16 @@ class CfgVehicles
 
     class OPT_Box_East_WpsSpecial_AT_L3 : Box_East_WpsSpecial_F
     {
-        displayName = "MAAWS Mk4 Mod 0 Raketenkiste (CSAT)";
+        displayName = "RPG-7 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
-            class _xx_OPT_launch_MRAWS_green_rail_F
+            class _xx_launch_RPG7_F
             {
-                weapon = "OPT_launch_MRAWS_green_rail_F";
+                weapon = "launch_RPG7_F";
                 count = 2;
             };
         };
@@ -8036,16 +7543,10 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_MRAWS_HEAT_F
+            class _xx_RPG7_F
             {
-                magazine = "MRAWS_HEAT_F";
+                magazine = "RPG7_F";
                 count = 5;
-            };
-
-            class _xx_MRAWS_HE_F
-            {
-                magazine = "MRAWS_HE_F";
-                count = 0;
             };
         };
     };
@@ -8092,17 +7593,17 @@ class CfgVehicles
 
     class OPT_Box_East_WpsSpecial_AT_L2 : Box_East_WpsSpecial_F
     {
-        displayName = "RPG-18 Raketenkiste";
+        displayName = "RPG42 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
-            class _xx_CUP_launch_RPG18
+            class _xx_OPT_launch_RPG32_ghex_F
             {
-                weapon = "CUP_launch_RPG18";
-                count = 5;
+                weapon = "OPT_launch_RPG32_ghex_F";
+                count = 2;
             };
         };
 
@@ -8116,6 +7617,11 @@ class CfgVehicles
 
         class TransportMagazines
         {
+            class _xx_RPG32_F
+            {
+                magazine = "RPG32_F";
+                count = 5;
+            };
         };
     };
 
@@ -8209,9 +7715,9 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_OPT_CUP_Igla_M
+            class _xx_Titan_AA
             {
-                magazine = "OPT_CUP_Igla_M";
+                magazine = "Titan_AA";
                 count = 10;
             };
         };
@@ -8346,75 +7852,159 @@ class CfgVehicles
 
         class TransportMagazines
         {
-            class _xx_CUP_1Rnd_Smoke_GP25_M
+            class _xx_3Rnd_Smoke_Grenade_shell
             {
-                magazine = "CUP_1Rnd_Smoke_GP25_M";
+                magazine = "3Rnd_Smoke_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_Smoke_Grenade_shell
+            {
+                magazine = "1Rnd_Smoke_Grenade_shell";
                 count = 30;
             };
 
-            class _xx_CUP_1Rnd_SmokeRed_GP25_M
+            class _xx_3Rnd_SmokeRed_Grenade_shell
             {
-                magazine = "CUP_1Rnd_SmokeRed_GP25_M";
+                magazine = "3Rnd_SmokeRed_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeRed_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeRed_Grenade_shell";
                 count = 30;
             };
 
-            class _xx_CUP_1Rnd_SmokeGreen_GP25_M
+            class _xx_3Rnd_SmokeGreen_Grenade_shell
             {
-                magazine = "CUP_1Rnd_SmokeGreen_GP25_M";
+                magazine = "3Rnd_SmokeGreen_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeGreen_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeGreen_Grenade_shell";
                 count = 30;
             };
 
-            class _xx_CUP_1Rnd_SmokeYellow_GP25_M
+            class _xx_3Rnd_SmokeYellow_Grenade_shell
             {
-                magazine = "CUP_1Rnd_SmokeYellow_GP25_M";
+                magazine = "3Rnd_SmokeYellow_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeYellow_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeYellow_Grenade_shell";
                 count = 30;
             };
 
-            class _xx_CUP_IlumFlareWhite_GP25_M
+            class _xx_3Rnd_SmokePurple_Grenade_shell
             {
-                magazine = "CUP_IlumFlareWhite_GP25_M";
+                magazine = "3Rnd_SmokePurple_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokePurple_Grenade_shell
+            {
+                magazine = "1Rnd_SmokePurple_Grenade_shell";
                 count = 30;
             };
 
-            class _xx_CUP_IlumFlareRed_GP25_M
+            class _xx_3Rnd_SmokeBlue_Grenade_shell
             {
-                magazine = "CUP_IlumFlareRed_GP25_M";
+                magazine = "3Rnd_SmokeBlue_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeBlue_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeBlue_Grenade_shell";
                 count = 30;
             };
 
-            class _xx_CUP_IlumFlareGreen_GP25_M
+            class _xx_3Rnd_SmokeOrange_Grenade_shell
             {
-                magazine = "CUP_IlumFlareGreen_GP25_M";
+                magazine = "3Rnd_SmokeOrange_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_SmokeOrange_Grenade_shell
+            {
+                magazine = "1Rnd_SmokeOrange_Grenade_shell";
                 count = 30;
             };
 
-            class _xx_CUP_FlareWhite_GP25_M
+            class _xx_3Rnd_UGL_FlareWhite_F
             {
-                magazine = "CUP_FlareWhite_GP25_M";
+                magazine = "3Rnd_UGL_FlareWhite_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareWhite_F
+            {
+                magazine = "UGL_FlareWhite_F";
                 count = 30;
             };
 
-            class _xx_CUP_FlareGreen_GP25_M
+            class _xx_3Rnd_UGL_FlareGreen_F
             {
-                magazine = "CUP_FlareGreen_GP25_M";
+                magazine = "3Rnd_UGL_FlareGreen_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareGreen_F
+            {
+                magazine = "UGL_FlareGreen_F";
                 count = 30;
             };
 
-            class _xx_CUP_FlareRed_GP25_M
+            class _xx_3Rnd_UGL_FlareRed_F
             {
-                magazine = "CUP_FlareRed_GP25_M";
+                magazine = "3Rnd_UGL_FlareRed_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareRed_F
+            {
+                magazine = "UGL_FlareRed_F";
                 count = 30;
             };
 
-            class _xx_CUP_FlareYellow_GP25_M
+            class _xx_3Rnd_UGL_FlareYellow_F
             {
-                magazine = "CUP_FlareYellow_GP25_M";
+                magazine = "3Rnd_UGL_FlareYellow_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareYellow_F
+            {
+                magazine = "UGL_FlareYellow_F";
                 count = 30;
             };
 
-            class _xx_CUP_1Rnd_HE_GP25_M
+            class _xx_3Rnd_UGL_FlareCIR_F
             {
-                magazine = "CUP_1Rnd_HE_GP25_M";
+                magazine = "3Rnd_UGL_FlareCIR_F";
+                count = 0;
+            };
+
+            class _xx_UGL_FlareCIR_F
+            {
+                magazine = "UGL_FlareCIR_F";
+                count = 30;
+            };
+
+            class _xx_3Rnd_HE_Grenade_shell
+            {
+                magazine = "3Rnd_HE_Grenade_shell";
+                count = 0;
+            };
+
+            class _xx_1Rnd_HE_Grenade_shell
+            {
+                magazine = "1Rnd_HE_Grenade_shell";
                 count = 20;
             };
 
@@ -8445,7 +8035,7 @@ class CfgVehicles
         {
         };
 
-        class TransportMagazines
+       class TransportMagazines
         {
             class _xx_SmokeShell
             {
@@ -9705,6 +9295,22 @@ class CfgVehicles
     class OPT_B_AssaultPack_VSR98Worm : B_AssaultPack_tna_F
     {
         displayName = "Angriffspack (VSR98Worm)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_VSR98Worm.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_angriffsrucksack_vsr98worm.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_AssaultPack_blk : B_AssaultPack_blk
+    {
+        displayName = "Angriffspack (OPT)";
         maximumLoad = 160;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_VSR98Worm.paa"};
         picture = "\opt\opt_client\addons\weapons\textures\rucksack\icon_angriffsrucksack_vsr98worm.paa";
