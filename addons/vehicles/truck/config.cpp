@@ -10,7 +10,7 @@ class CfgPatches
                    "OPT_O_T_Truck_02_F","OPT_O_T_Truck_02_transport_F","OPT_O_T_Truck_02_fuel_F","OPT_O_T_Truck_02_ammo_F","OPT_O_T_Truck_02_box_F","OPT_O_Truck_02_medical_F","OPT_O_T_Truck_02_Medical_F","OPT_I_Truck_02_medical_F"};
         weapons[] = {};
         requiredVersion = 0.100000;
-        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03","CUP_WheeledVehicles_RM70","CUP_WheeledVehicles_Ural"};
+        requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_soft_f_hemtt", "a3_soft_f_gamma_hemtt", "a3_soft_f_truck", "a3_soft_f_epc_truck_03"};
     };
 };
 
@@ -522,6 +522,21 @@ class CfgVehicles
 
     };
 
+    //// Zamak Transport (Covered) ////
+    class O_Truck_02_covered_F;
+
+    class OPT_O_Truck_02_covered_F : O_Truck_02_covered_F
+    {
+
+        faction = "OPT_CSAT";
+        fuelCapacity = 6; // 250 //
+
+        class TransportItems
+        {
+        };
+
+    };
+
     //// Zamak Transport ////
     class O_Truck_02_transport_F;
 
@@ -531,7 +546,6 @@ class CfgVehicles
         faction = "OPT_CSAT";
         fuelCapacity = 6; // 250 //
         transportSoldier = 1; // 11 //
-        displayName = "Zamak Logistik";
 
         class TransportItems
         {
@@ -604,7 +618,6 @@ class CfgVehicles
 
         faction = "OPT_CSAT_T";
         fuelCapacity = 6; // 250 //
-        displayName = "Zamak Infanterie";
 
         class TransportItems
         {
@@ -686,6 +699,102 @@ class CfgVehicles
         };
     };
 
+    //// Zamak Transport (Covered) ////
+    class OPT_B_Truck_02_covered_F : I_Truck_02_covered_F
+    {
+
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+
+        class TransportItems
+        {
+        };
+
+    };
+
+    //// Zamak Transport ////
+    class OPT_B_Truck_02_transport_F : I_Truck_02_transport_F
+    {
+
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+        transportSoldier = 1; // 11 //
+
+        class TransportItems
+        {
+        };
+
+    };
+
+    //// Zamak Fuel ////
+    class OPT_B_Truck_02_fuel_F : I_Truck_02_fuel_F
+    {
+
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 200; // 250 //
+        transportFuel = 3000;
+
+        class TransportItems
+        {
+        };
+
+    };
+
+    //// Zamak Ammo ////
+    class OPT_B_Truck_02_ammo_F : I_Truck_02_ammo_F
+    {
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+        transportAmmo = 30000;
+
+        class TransportItems
+        {
+        };
+    };
+
+    //// Zamak Repair ////
+    class OPT_B_Truck_02_box_F : I_Truck_02_box_F
+    {
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+        transportRepair = 0; // 200000000;
+
+        class TransportItems
+        {
+        };
+    };
+
+    //// Zamak Medical ////
+    class OPT_B_Truck_02_medical_F : I_Truck_02_medical_F
+    {
+
+        faction = "OPT_NATO";
+        side = 1;
+        crew = "B_soldier_F";
+        typicalCargo[] = {"B_Soldier_lite_F"};
+        fuelCapacity = 6; // 250 //
+
+        class TransportItems
+        {
+        };
+
+    };
+
     //// Zamak MRL ////
     class Truck_02_MRL_base_F;
 
@@ -753,316 +862,5 @@ class CfgVehicles
         crew = "OPT_CSAT_Soldat";
         typicalCargo[] = {"OPT_CSAT_Soldat"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_kab_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_mrl_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
-    };
-
-    //MTVR
-    class CUP_B_MTVR_USMC;
-
-    class OPT_CUP_B_MTVR_USMC: CUP_B_MTVR_USMC
-    {
-        faction = "OPT_NATO_CUP";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_tarp_3.paa"};
-        fuelCapacity = 5.5;// 300 //
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //Ural
-    class CUP_O_Ural_TKA;
-
-    class OPT_CUP_O_Ural_TKA: CUP_O_Ural_TKA
-    {
-        faction = "OPT_WP";
-        fuelCapacity = 5.8;// 300 //
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //MTVR Ammo
-    class CUP_B_MTVR_Ammo_USMC;
-
-    class OPT_CUP_B_MTVR_Ammo_USMC: CUP_B_MTVR_Ammo_USMC
-    {
-        faction = "OPT_NATO_CUP";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_tarp_3.paa"};
-        fuelCapacity = 5.5;// 300 //
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //Ural Ammo
-    class CUP_O_Ural_Reammo_TKA;
-
-    class OPT_CUP_O_Ural_Reammo_TKA: CUP_O_Ural_Reammo_TKA
-    {
-        faction = "OPT_WP";
-        fuelCapacity = 5.8;// 300 //
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //MTVR Rep
-    class CUP_B_MTVR_Repair_USMC;
-
-    class OPT_CUP_B_MTVR_Repair_USMC: CUP_B_MTVR_Repair_USMC
-    {
-        faction = "OPT_NATO_CUP";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_repair_3.paa"};
-        transportRepair = 0; 
-        fuelCapacity = 5.5;// 300 //
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //Ural Rep
-    class CUP_O_Ural_Repair_TKA;
-
-    class OPT_CUP_O_Ural_Repair_TKA: CUP_O_Ural_Repair_TKA
-    {
-        faction = "OPT_WP";
-        transportRepair = 0;
-        fuelCapacity = 5.8;// 300 //
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //MTVR Tank
-    class CUP_B_MTVR_Refuel_USMC;
-
-    class OPT_CUP_B_MTVR_Refuel_USMC: CUP_B_MTVR_Refuel_USMC
-    {
-        faction = "OPT_NATO_CUP";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_0.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_1.paa","CUP\WheeledVehicles\CUP_WheeledVehicles_MTVR\Data\mtvr_interier_co.paa","\opt\opt_client\addons\vehicles\textures\MTVR\mtvr_fuel_3.paa"};
-        ace_refuel_fuelCargo = 10000;
-        ace_refuel_hooks[] = {{-0.05,-3.66,-0.43}};
-        fuelCapacity = 5.5;// 300 //
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //Ural Tank
-    class CUP_O_Ural_Refuel_TKA;
-
-    class OPT_CUP_O_Ural_Refuel_TKA: CUP_O_Ural_Refuel_TKA
-    {
-        faction = "OPT_WP";
-        fuelCapacity = 5.8;// 300 //
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //RM-70
-    class CUP_B_RM70_Base;
-
-    class CUP_B_RM70_CZ : CUP_B_RM70_Base
-    {
-        class Turrets;
-        class MainTurret;
-        class CommanderOptics;
-        class ViewOptics;
-        class OpticsIn;
-        class ViewGunner;
-        class Wide;
-        class Medium;
-        class Narrow;
-        class AnimationSources;
-        class muzzle_rot;
-        class Missiles_revolving;
-    };
-
-    class OPT_CUP_B_RM70_CZ: CUP_B_RM70_CZ
-    {
-        faction = "OPT_NATO_CUP";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\RM70\rm70_0.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_1.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_2.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_3.paa","\opt\opt_client\addons\vehicles\textures\RM70\rm70_4.paa"};
-        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\rm70.jpg";
-        fuelCapacity = 16.2;// 300 //
-
-        class Turrets : Turrets 
-        {
-            class MainTurret : MainTurret 
-            {
-                weapons[] = {"OPT_CUP_Vmlauncher_GRAD_ACR_veh"};
-                magazines[] = {"OPT_CUP_40Rnd_GRAD_HE"};
-            };
-        };
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-    };
-
-    //BM21
-    class CUP_BM21_Base;
-
-    class CUP_O_BM21_RU : CUP_BM21_Base
-    {
-        class Turrets;
-        class MainTurret;
-        class CommanderOptics;
-        class ViewOptics;
-        class OpticsIn;
-        class ViewGunner;
-        class Wide;
-        class Medium;
-        class Narrow;
-        class AnimationSources;
-        class muzzle_rot;
-        class Missiles_revolving;
-    };
-
-    class OPT_CUP_O_BM21_RU: CUP_O_BM21_RU
-    {
-        faction = "OPT_WP";
-        fuelCapacity = 15.7;// 300 //
-
-        class Turrets : Turrets 
-        {
-            class MainTurret : MainTurret 
-            {
-                weapons[] = {"OPT_CUP_Vmlauncher_GRAD_ACR_veh"};
-                magazines[] = {"OPT_CUP_40Rnd_GRAD_HE"};
-            };
-        };
-
-        class TransportMagazines
-        {
-        };
-
-        class TransportItems
-        {
-        };
-
-        class TransportWeapons
-        {
-        };
-
-        class TransportBackpacks
-        {
-        };
-
     };
 };
