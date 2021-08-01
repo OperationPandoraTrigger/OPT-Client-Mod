@@ -52,7 +52,7 @@ class RscListBox_OPT
     colorDisabled[] = {0,0,0,0.3};
     colorPicture[] = {1,1,1,0.9};
     colorPictureSelected[] = {1,1,1,1};
-    colorPictudeDisabled[] = {1,1,1,0.25};
+    colorPictureDisabled[] = {1,1,1,0.25};
     tooltipColorText[] = {1,1,1,1};
     tooltipColorBox[] = {1,1,1,1};
     tooltipColorShade[] = {1,1,1,0.65};
@@ -123,7 +123,7 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB2 : RscPicture
@@ -135,7 +135,7 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB3 : RscPicture
@@ -147,7 +147,7 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB4 : RscPicture
@@ -159,7 +159,7 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB5 : RscPicture
@@ -171,7 +171,7 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB6 : RscPicture
@@ -183,7 +183,7 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB7 : RscPicture
@@ -195,7 +195,7 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB8 : RscPicture
@@ -207,7 +207,7 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB9 : RscPicture
@@ -219,7 +219,7 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB10 : RscPicture
@@ -231,7 +231,7 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB11 : RscPicture
@@ -243,7 +243,7 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB12 : RscPicture
@@ -255,7 +255,7 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB13 : RscPicture
@@ -267,7 +267,7 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB14 : RscPicture
@@ -279,7 +279,7 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB15 : RscPicture
@@ -291,7 +291,7 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB16 : RscPicture
@@ -303,7 +303,7 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB17 : RscPicture
@@ -315,7 +315,7 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB18 : RscPicture
@@ -327,7 +327,7 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB19 : RscPicture
@@ -339,7 +339,7 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB20 : RscPicture
@@ -351,7 +351,7 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB21 : RscPicture
@@ -363,7 +363,7 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB22 : RscPicture
@@ -375,7 +375,7 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB23 : RscPicture
@@ -387,7 +387,7 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBB24 : RscPicture
@@ -399,7 +399,7 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            text = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_MBT_02_cannon_ghex_F.jpg";
+            text = "";
             default = true;
         };
         class KBT1 : RSCText
@@ -413,7 +413,7 @@ class Dialogshopkaufen
             y = 0.41;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT2 : RSCText
@@ -427,7 +427,7 @@ class Dialogshopkaufen
             y = 0.41;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT3 : RSCText
@@ -441,7 +441,7 @@ class Dialogshopkaufen
             y = 0.41;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT4 : RSCText
@@ -455,7 +455,7 @@ class Dialogshopkaufen
             y = 0.41;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT5 : RSCText
@@ -469,7 +469,7 @@ class Dialogshopkaufen
             y = 0.41;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT6 : RSCText
@@ -483,7 +483,7 @@ class Dialogshopkaufen
             y = 0.41;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT7 : RSCText
@@ -497,7 +497,7 @@ class Dialogshopkaufen
             y = 0.56;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT8 : RSCText
@@ -511,7 +511,7 @@ class Dialogshopkaufen
             y = 0.56;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT9 : RSCText
@@ -525,7 +525,7 @@ class Dialogshopkaufen
             y = 0.56;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT10 : RSCText
@@ -539,7 +539,7 @@ class Dialogshopkaufen
             y = 0.56;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT11 : RSCText
@@ -553,7 +553,7 @@ class Dialogshopkaufen
             y = 0.56;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT12 : RSCText
@@ -567,7 +567,7 @@ class Dialogshopkaufen
             y = 0.56;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT13 : RSCText
@@ -581,7 +581,7 @@ class Dialogshopkaufen
             y = 0.71;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT14 : RSCText
@@ -595,7 +595,7 @@ class Dialogshopkaufen
             y = 0.71;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT15 : RSCText
@@ -609,7 +609,7 @@ class Dialogshopkaufen
             y = 0.71;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT16 : RSCText
@@ -623,7 +623,7 @@ class Dialogshopkaufen
             y = 0.71;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT17 : RSCText
@@ -637,7 +637,7 @@ class Dialogshopkaufen
             y = 0.71;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT18 : RSCText
@@ -651,7 +651,7 @@ class Dialogshopkaufen
             y = 0.71;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT19 : RSCText
@@ -665,7 +665,7 @@ class Dialogshopkaufen
             y = 0.86;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT20 : RSCText
@@ -679,7 +679,7 @@ class Dialogshopkaufen
             y = 0.86;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT21 : RSCText
@@ -693,7 +693,7 @@ class Dialogshopkaufen
             y = 0.86;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT22 : RSCText
@@ -707,7 +707,7 @@ class Dialogshopkaufen
             y = 0.86;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT23 : RSCText
@@ -721,7 +721,7 @@ class Dialogshopkaufen
             y = 0.86;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class KBT24 : RSCText
@@ -735,7 +735,7 @@ class Dialogshopkaufen
             y = 0.86;
             w = 0.15;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
     };        
@@ -744,14 +744,14 @@ class Dialogshopkaufen
     {
         class Flagge : RscPicture
         {
-            idc = 20001;
+            idc = 20001;    // Kauf-Flagge
             colorText[] = COLOR_TEXT;
             colorBackground[] = COLOR_BACK;
             x = 0.15;
-            y = 0.1;
-            w = 0.2;
-            h = 0.2;
-            text = "\A3\Data_F\Flags\Flag_NATO_CO.paa";
+            y = 0.03;
+            w = 0.15;
+            h = 0.3;
+            text = "";
             default = true;
         };
         class Kosten : RSCText
@@ -765,7 +765,7 @@ class Dialogshopkaufen
             y = 0.92;
             w = 0.2;
             h = 0.05;
-            text = "360.000 €";
+            text = "";
             default = true;
         };
         class PadBox : RSCText
@@ -874,8 +874,11 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -888,8 +891,11 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -902,8 +908,11 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -916,8 +925,11 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -930,8 +942,11 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -944,8 +959,11 @@ class Dialogshopkaufen
             y = 0.31;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -958,8 +976,11 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -972,8 +993,11 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -986,8 +1010,11 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1000,8 +1027,11 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1014,8 +1044,11 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1028,8 +1061,11 @@ class Dialogshopkaufen
             y = 0.46;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1042,8 +1078,11 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1056,8 +1095,11 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1070,8 +1112,11 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1084,8 +1129,11 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1098,8 +1146,11 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1112,8 +1163,11 @@ class Dialogshopkaufen
             y = 0.61;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1126,8 +1180,11 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1140,8 +1197,11 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1154,8 +1214,11 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1168,8 +1231,11 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1182,8 +1248,11 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1196,8 +1265,11 @@ class Dialogshopkaufen
             y = 0.76;
             w = 0.15;
             h = 0.15;
-            colorBackground[] = Color_NoColor;
-            text = "T-100 Varsuk";
+            colorBackground[] = {0,0,0,0};
+            colorBackgroundActive[] = {0,0,0,0.5};
+            colorFocused[] = {0,0,0,0.5};
+            colorFocused2[] = {0,0,0,0.7};
+            text = "";
             tooltip = "";
             action = "";
         };
@@ -1667,18 +1739,18 @@ class DialogVerkaufs
     {
         class IGUIBack_Main: IGUIBack
         {
-            idc = 23001;
+            idc = 23001;    // Verkaufs-Flagge
             x = 0 * GUI_GRID_W + GUI_GRID_X;
-            y = 0 * GUI_GRID_H + GUI_GRID_Y;
+            y = -0.2 * GUI_GRID_H + GUI_GRID_Y;
             w = 40 * GUI_GRID_W;
             h = 25.1 * GUI_GRID_H;
         };
         class RscFrame_Main: RscFrame
         {
             idc = 23002;
-            text = "Bestellsystem"; //--- ToDo: Localize;
+            text = "Verkaufen";
             x = 0 * GUI_GRID_W + GUI_GRID_X;
-            y = -0.83 * GUI_GRID_H + GUI_GRID_Y;
+            y = -0.4 * GUI_GRID_H + GUI_GRID_Y;
             w = 40 * GUI_GRID_W;
             h = 26 * GUI_GRID_H;
             colorText[] = {1,1,1,1};
@@ -1688,10 +1760,10 @@ class DialogVerkaufs
         {
             idc = 23003;
             text = "";
-            x = 1 * GUI_GRID_W + GUI_GRID_X;
-            y = 1 * GUI_GRID_H + GUI_GRID_Y;
-            w = 8 * GUI_GRID_W;
-            h = 3.5 * GUI_GRID_H;
+            x = 1.5 * GUI_GRID_W + GUI_GRID_X;
+            y = 0.1 * GUI_GRID_H + GUI_GRID_Y;
+            w = 6 * GUI_GRID_W;
+            h = 6 * GUI_GRID_H;
         };
         class RscFrame_Vehicle: RscFrame
         {
