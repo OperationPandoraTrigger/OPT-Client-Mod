@@ -5516,6 +5516,29 @@ class CfgVehicles
 
         class TransportItems
         {
+            class _xx_optic_ACO_grn_smg
+            {
+                name = "optic_ACO_grn_smg";
+                count = 50;
+            };
+
+            class _xx_optic_Aco_smg
+            {
+                name = "optic_Aco_smg";
+                count = 50;
+            };
+
+            class _xx_optic_Holosight_smg
+            {
+                name = "optic_Holosight_smg";
+                count = 0;
+            };
+
+            class _xx_optic_Holosight_smg_blk_F
+            {
+                name = "optic_Holosight_smg_blk_F";
+                count = 50;
+            };
             class _xx_optic_ACO_grn
             {
                 name = "optic_ACO_grn";
@@ -7053,6 +7076,30 @@ class CfgVehicles
 
         class TransportItems
         {
+            class _xx_optic_ACO_grn_smg
+            {
+                name = "optic_ACO_grn_smg";
+                count = 50;
+            };
+
+            class _xx_optic_Aco_smg
+            {
+                name = "optic_Aco_smg";
+                count = 50;
+            };
+
+            class _xx_optic_Holosight_smg
+            {
+                name = "optic_Holosight_smg";
+                count = 0;
+            };
+
+            class _xx_optic_Holosight_smg_blk_F
+            {
+                name = "optic_Holosight_smg_blk_F";
+                count = 50;
+            };
+            
             class _xx_optic_ACO_grn
             {
                 name = "optic_ACO_grn";
