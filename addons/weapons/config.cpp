@@ -35,7 +35,7 @@ class CfgPatches
         versionAr[] = {VERSION_AR};
         requiredAddons[] = {"A3_Supplies_F_Heli_CargoNets", "A3_Air_F_Heli_Heli_Transport_04", "A3_Static_F_Gamma_AA", "a3_weapons_f_epb_rifles_mx_black", "a3_weapons_f_gamma", "a3_weapons_f_beta_ammoboxes",
                             "a3_weapons_f_ammoboxes", "a3_uav_f_weapons_f_gamma_ammoboxes", "a3_weapons_f_bootcamp", "A3_Weapons_F_Rifles_MX_Black", "A3_Weapons_f_Exp", "task_force_radio_items", "task_force_radio",
-                            "A3_Weapons_F_Jets"};
+                            "A3_Weapons_F_Jets","A3_Weapons_F_Enoch_Rifles_AK12"};
     };
 };
 
@@ -2187,8 +2187,7 @@ class CfgWeapons
 
     class OPT_hgun_PDW2000_ACO_F : OPT_hgun_PDW2000_F
     {
-        _generalMacro = "hgun_PDW2000_F";
-        baseWeapon = "hgun_PDW2000_F";
+        _generalMacro = "OPT_hgun_PDW2000_ACO_F";
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -2363,7 +2362,7 @@ class CfgWeapons
 
     class OPT_srifle_EBR_ERCO_F : OPT_srifle_EBR_F
     {
-        _generalMacro = "OPT_srifle_EBR_DMS_LP_BI_snds_F";
+        _generalMacro = "OPT_srifle_EBR_ERCO_F";
 
         class LinkedItems
         {
@@ -2571,7 +2570,7 @@ class CfgWeapons
 
     class OPT_srifle_DMR_03_ERCO_F : OPT_srifle_DMR_03_F
     {
-        _generalMacro = "srifle_DMR_03_ACO_F";
+        _generalMacro = "OPT_srifle_DMR_03_ERCO_F";
 
         class LinkedItems
         {
@@ -3255,9 +3254,7 @@ class CfgWeapons
 
     class OPT_arifle_CTAR_ERCO_Pointer_F : arifle_CTAR_blk_F
     {
-        _generalMacro = "OPT_arifle_CTAR_blk_F";
-        displayName = "CAR-95 5,8 mm";
-        baseWeapon = "OPT_arifle_CTAR_blk_F";
+        _generalMacro = "OPT_arifle_CTAR_ERCO_Pointer_F";
 
         magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_Tracer_F"};
 
@@ -3572,7 +3569,12 @@ class CfgWeapons
         };
     };
 
-    class SMG_03C_BASE;
+    class SMG_03_TR_BASE;
+
+    class SMG_03C_BASE : SMG_03_TR_BASE
+    {
+        class WeaponSlotsInfo;
+    };
 
     class SMG_03C_TR_black : SMG_03C_BASE
     {
@@ -3580,13 +3582,13 @@ class CfgWeapons
         {
             class CowsSlot;
             class MuzzleSlot;
-            class WeaponSlotsInfo;
         };
     };
 
     class OPT_SMG_03C_TR_black : SMG_03C_TR_black
     {
-       _generalMacro = "SMG_03C_TR_black";
+        _generalMacro = "OPT_SMG_03C_TR_black";
+        baseWeapon = "OPT_SMG_03C_TR_black";
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -3612,7 +3614,12 @@ class CfgWeapons
         };
     };
 
-    class arifle_RPK12_base_F;
+    class arifle_AK12_base_F;
+
+    class arifle_RPK12_base_F : arifle_AK12_base_F
+    {
+        class WeaponSlotsInfo;
+    };
 
     class arifle_RPK12_F : arifle_RPK12_base_F
     {
@@ -3622,10 +3629,11 @@ class CfgWeapons
         };
     };
 
+
     class OPT_arifle_RPK12_F : arifle_RPK12_F
     {
-        _generalMacro = "arifle_RPK12_F";
-        baseWeapon = "arifle_RPK12_F";
+        _generalMacro = "OPT_arifle_RPK12_F";
+        baseWeapon = "OPT_arifle_RPK12_F";
         magazines[] = {"75rnd_762x39_AK12_Mag_F", "OPT_100rnd_762x39_AK12_Mag_F"};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
@@ -3640,7 +3648,7 @@ class CfgWeapons
 
     class OPT_arifle_RPK12_ACO_BI_pointer_F : OPT_arifle_RPK12_F
     {
-        _generalMacro = "arifle_RPK12_F";
+        _generalMacro = "OPT_arifle_RPK12_ACO_BI_pointer_F";
 
         class LinkedItems
         {
@@ -3932,7 +3940,7 @@ class CfgWeapons
 
     class OPT_launch_RPG32_ghex_F : launch_RPG32_ghex_F
     {
-        _generalMacro = "OPT_launch_RPG32_F";
+        _generalMacro = "OPT_launch_RPG32_ghex_F";
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
