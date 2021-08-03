@@ -2725,7 +2725,7 @@ class CfgVehicles
         faction = "OPT_FIN";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"}; 
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
+        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
 
         class Turrets : Turrets
         {
@@ -3121,7 +3121,8 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 5; // 24 //
-        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_0_base_hex_pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_1_adds_hex_Pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_2_tows_hex_Pazifik.paa"};
+        hiddenSelectionsTextures[] = {"a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT1_green_CO.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT2_green_CO.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
+        textureList[] = {"Green",0,"Sand",0};
 
         class Turrets : Turrets
         {
@@ -3208,7 +3209,8 @@ class CfgVehicles
         side = 0;
         crew = "O_Soldier_F";
         typicalCargo[] = {"O_Soldier_lite_F"};
-        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_0_base_hex_pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_1_adds_hex_Pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_2_tows_hex_Pazifik.paa"};
+        hiddenSelectionsTextures[] = {"a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT1_CO.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT2_CO.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_CO.paa","a3\Armor_F\Data\camonet_NATO_Desert_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_sand_CO.paa"};
+        textureList[] = {"Green",0,"Sand",0};
    };
 
 };
