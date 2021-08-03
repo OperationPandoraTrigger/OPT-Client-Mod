@@ -417,7 +417,7 @@ class CfgVehicles
     //// M4 Scorcher ////
     class OPT_B_MBT_01_arty_F : B_MBT_01_arty_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         fuelCapacity = 12; // 100 //
 
         class Turrets : Turrets
@@ -594,7 +594,7 @@ class CfgVehicles
     };
 
     //// M5 Sandstorm MLRS ////
-    class OPT_B_MBT_01_mlrs_F : B_MBT_01_mlrs_F
+    class OPT_B_MBT_01_mlrs_F2 : B_MBT_01_mlrs_F
     {
         faction = "OPT_NATO";
         fuelCapacity = 12; // 100 //
@@ -690,7 +690,7 @@ class CfgVehicles
     //// T-100 Varsuk ////
     class OPT_O_MBT_02_cannon_F : O_MBT_02_cannon_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 12; // 75 //
 
         class Turrets : Turrets
@@ -1321,7 +1321,7 @@ class CfgVehicles
     //// 2S9 Sochor ////
     class OPT_O_MBT_02_arty_F : O_MBT_02_arty_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 12; // 75 //
 
         class Turrets : Turrets
@@ -1443,7 +1443,7 @@ class CfgVehicles
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
-            {
+            {               
                 class Turrets : Turrets
                 {
                     class CommanderOptics : CommanderOptics
@@ -1519,7 +1519,7 @@ class CfgVehicles
     class OPT_B_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F
     {
         side = 1;
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\nato\TankBodyTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretMGTexture.paa"};

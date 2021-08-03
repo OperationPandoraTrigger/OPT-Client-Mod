@@ -36,6 +36,8 @@ class CfgVehicles
 
     class OPT4_B_MRAP_01_gmg_F : OPT_B_MRAP_01_gmg_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -56,6 +58,7 @@ class CfgVehicles
 
     class OPT4_B_MRAP_01_gmg_ghex_F : OPT_B_MRAP_01_gmg_ghex_F
     {
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -77,6 +80,8 @@ class CfgVehicles
 
     class OPT4_B_MRAP_01_hmg_F : OPT_B_MRAP_01_hmg_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -97,6 +102,7 @@ class CfgVehicles
 
     class OPT4_B_MRAP_01_hmg_ghex_F : OPT_B_MRAP_01_hmg_ghex_F
     {
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -118,6 +124,8 @@ class CfgVehicles
 
     class OPT4_O_MRAP_02_hmg_F : OPT_O_MRAP_02_hmg_F
     {
+        faction = "OPT_CSAT";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -200,6 +208,8 @@ class CfgVehicles
 
     class OPT4_B_MRAP_03_hmg_F : OPT_B_MRAP_03_hmg_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -248,6 +258,8 @@ class CfgVehicles
 
     class OPT4_B_MRAP_03_gmg_F : OPT_B_MRAP_03_gmg_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -417,6 +429,7 @@ class CfgVehicles
     {
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        faction = "OPT_CSAT";
 
         class Turrets : Turrets
         {
@@ -467,10 +480,14 @@ class CfgVehicles
 
     class OPT_O_Heli_Attack_02_black_F : OPT_O_Heli_Attack_02_F
     {
+        faction = "OPT_CSAT";
     };
 
     class OPT4_O_Heli_Attack_02_black_F : OPT_O_Heli_Attack_02_black_F
     {
+       
+        faction = "OPT_CSAT";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -540,6 +557,7 @@ class CfgVehicles
     {
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        faction = "OPT_NATO";
 
         class Turrets : Turrets
         {
@@ -761,6 +779,8 @@ class CfgVehicles
 
     class OPT4_B_APC_Wheeled_01_cannon_F : OPT_B_APC_Wheeled_01_cannon_F
     {
+        faction = "OPT_NATO";
+        
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -801,6 +821,8 @@ class CfgVehicles
 
     class OPT4_B_APC_Tracked_01_rcws_F : OPT_B_APC_Tracked_01_rcws_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -840,6 +862,8 @@ class CfgVehicles
 
     class OPT4_B_APC_Tracked_01_AA_F : OPT_B_APC_Tracked_01_AA_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1010,6 +1034,8 @@ class CfgVehicles
 
     class OPT4_B_MBT_01_cannon_F : OPT_B_MBT_01_cannon_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1049,6 +1075,8 @@ class CfgVehicles
 
     class OPT4_B_MBT_01_TUSK_F : OPT_B_MBT_01_TUSK_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1088,6 +1116,8 @@ class CfgVehicles
 
     class OPT4_B_MBT_01_arty_F : OPT_B_MBT_01_arty_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1127,6 +1157,8 @@ class CfgVehicles
 
     class OPT4_B_MBT_01_mlrs_F : OPT_B_MBT_01_mlrs_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1208,6 +1240,8 @@ class CfgVehicles
 
     class OPT4_B_APC_tracked_03_cannon_F : OPT_B_APC_tracked_03_cannon_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1265,6 +1299,8 @@ class CfgVehicles
 
     class OPT4_O_APC_Tracked_02_cannon_F : OPT_O_APC_Tracked_02_cannon_F
     {
+        faction = "OPT_CSAT";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1306,6 +1342,8 @@ class CfgVehicles
 
     class OPT4_O_APC_Tracked_02_AA_F : OPT_O_APC_Tracked_02_AA_F
     {
+        faction = "OPT_CSAT";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1480,6 +1518,8 @@ class CfgVehicles
 
     class OPT4_O_MBT_02_cannon_F : OPT_O_MBT_02_cannon_F
     {
+        faction = "OPT_CSAT";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1521,6 +1561,8 @@ class CfgVehicles
 
     class OPT4_O_MBT_04_cannon_F : OPT_O_MBT_04_cannon_F
     {
+        faction = "OPT_CSAT";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1541,6 +1583,8 @@ class CfgVehicles
 
     class OPT4_O_MBT_02_arty_F : OPT_O_MBT_02_arty_F
     {
+        faction = "OPT_CSAT";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1641,6 +1685,8 @@ class CfgVehicles
 
     class OPT4_B_MBT_03_cannon_F : OPT_B_MBT_03_cannon_F
     {
+        faction = "OPT_NATO";
+
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
@@ -1943,6 +1989,8 @@ class CfgVehicles
 
     class OPT4_O_Truck_02_MRL_F : OPT_O_Truck_02_MRL_F
     {
+        faction = "OPT_CSAT";
+        
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
