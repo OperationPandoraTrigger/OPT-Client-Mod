@@ -1748,7 +1748,7 @@ class DialogVerkaufs
         class RscFrame_Main: RscFrame
         {
             idc = 23002;
-            text = "Bestellsystem"; //--- ToDo: Localize;
+            text = "Verkaufen";
             x = 0 * GUI_GRID_W + GUI_GRID_X;
             y = -0.83 * GUI_GRID_H + GUI_GRID_Y;
             w = 40 * GUI_GRID_W;
