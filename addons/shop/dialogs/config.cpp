@@ -877,7 +877,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -894,7 +894,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -911,7 +911,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -928,7 +928,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -945,7 +945,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -962,7 +962,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -979,7 +979,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -996,7 +996,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1013,7 +1013,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1030,7 +1030,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1047,7 +1047,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1064,7 +1064,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1081,7 +1081,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1098,7 +1098,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1115,7 +1115,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1132,7 +1132,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1149,7 +1149,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1166,7 +1166,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1183,7 +1183,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1200,7 +1200,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1217,7 +1217,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1234,7 +1234,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1251,7 +1251,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
@@ -1268,7 +1268,7 @@ class Dialogshopkaufen
             colorBackground[] = Color_NoColor;
             colorBackgroundActive[] = Color_Black_Alpha1;
             colorFocused[] = Color_Black_Alpha1;
-            colorFocused2[] = Color_Black_Alpha2
+            colorFocused2[] = Color_Black_Alpha2;
             text = "";
             tooltip = "";
             action = "";
