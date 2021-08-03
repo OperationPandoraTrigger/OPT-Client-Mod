@@ -32,7 +32,8 @@
 #define Color_Red                     {0.9, 0.2, 0.2, 1}
 #define Color_Blue                     {0.2, 0.2, 0.9, 1}
 #define Color_NoColor                {0, 0, 0, 0}
-#define Color_Black_Alpha        {0, 0, 0, 0.85}
+#define Color_Black_Alpha1        {0, 0, 0, 0.5}
+#define Color_Black_Alpha2        {0, 0, 0, 0.7}
 
 #define FONTSIZE GUI_GRID_H 
 
