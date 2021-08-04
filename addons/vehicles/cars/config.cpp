@@ -112,6 +112,8 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 4; // 94 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_2.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_fin.jpg";
 
         class TransportMagazines
         {
@@ -344,6 +346,8 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 4;// 94 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_2.paa",  "\opt\opt_client\addons\vehicles\textures\Hunter\opt_rcws_fin.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
 
         class TransportMagazines
         {
@@ -529,6 +533,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 4;                     // 94 //
+        textureList = ["Hex",0];
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Ifrit\opt_ifrit_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Ifrit\opt_ifrit_rus_2.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_ifrit_rus.jpg";
 
         class TransportMagazines
         {
@@ -585,6 +592,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 4;                     // 94 //
+        textureList = ["Hex",0];
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Ifrit\opt_ifrit_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Ifrit\opt_ifrit_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Ifrit\opt_rcws_rus.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_ifrit_hmg_rus.jpg";
 
         class TransportMagazines
         {
@@ -1338,7 +1348,9 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 3; // 45 //
-        textureList[] = {"Black",0,"Olive",0,"Sand",1};
+        textureList[] = {"Black",0,"Olive",0,"Sand",0};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_prowler_fin.jpg";
 
         class TransportMagazines
         {
@@ -1383,7 +1395,9 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 3; // 45 //
-        textureList[] = {"Black",0,"Olive",0,"Sand",1};
+        textureList[] = {"Black",0,"Olive",0,"Sand",0};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_prowler_hmg_fin.jpg";
 
         class TransportMagazines
         {
@@ -1434,7 +1448,9 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 3; // 20 //
-        textureList[] = {"Black",0,"Olive",0,"Sand",1};
+        textureList[] = {"Black",0,"Olive",0,"Sand",0};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_prowler_pa_fin.jpg";
 
         class TransportMagazines
         {
@@ -1587,7 +1603,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 4; // 55 //
-        textureList[] = {"Black",0,"GreenHex",0,"Arid",1};
+        textureList[] = {"Black",0,"GreenHex",0,"Arid",0};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_3.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_qilin_rus.jpg";
 
         class TransportMagazines
         {
@@ -1654,7 +1672,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 4; // 55 //
-        textureList[] = {"Black",0,"GreenHex",0,"Arid",1};
+        textureList[] = {"Black",0,"GreenHex",0,"Arid",0};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_3.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_qilin_mg_rus.jpg";
 
         class TransportMagazines
         {
@@ -1690,6 +1710,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 4; // 20 //
+        textureList[] = {"Black",0,"GreenHex",0,"Arid",0};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_3.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_qilin_pa_rus.jpg";
 
         class TransportMagazines
         {

@@ -106,6 +106,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
         fuelCapacity = 330; // 2500 //
+        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
 
         class Components : Components
         {

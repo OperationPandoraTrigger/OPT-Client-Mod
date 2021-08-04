@@ -530,6 +530,8 @@ class CfgVehicles
 
         faction = "OPT_Sowjet";
         fuelCapacity = 6; // 250 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf.jpg";
 
         class TransportItems
         {
@@ -562,6 +564,8 @@ class CfgVehicles
         faction = "OPT_Sowjet";
         fuelCapacity = 200; // 250 //
         transportFuel = 3000;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fuel_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_fuel.jpg";
 
         class TransportItems
         {
@@ -577,6 +581,8 @@ class CfgVehicles
         faction = "OPT_Sowjet";
         fuelCapacity = 6; // 250 //
         transportAmmo = 30000;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_ammo_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_muni.jpg";
 
         class TransportItems
         {
@@ -591,6 +597,8 @@ class CfgVehicles
         faction = "OPT_Sowjet";
         fuelCapacity = 6; // 250 //
         transportRepair = 0; // 200000000;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_repair_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_repair.jpg";
 
         class TransportItems
         {
@@ -604,6 +612,8 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 6; // 250 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_sani.jpg";
 
         class TransportItems
         {
@@ -708,6 +718,8 @@ class CfgVehicles
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";
 
         class TransportItems
         {
@@ -742,6 +754,8 @@ class CfgVehicles
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 200; // 250 //
         transportFuel = 3000;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fuel_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_fuel_fin.jpg";
 
         class TransportItems
         {
@@ -758,6 +772,8 @@ class CfgVehicles
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
         transportAmmo = 30000;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_ammo_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_muni_fin.jpg";
 
         class TransportItems
         {
@@ -773,6 +789,8 @@ class CfgVehicles
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
         transportRepair = 0; // 200000000;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_repair_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_repair_fin.jpg";
 
         class TransportItems
         {
@@ -788,6 +806,8 @@ class CfgVehicles
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_san_fin.jpg";
 
         class TransportItems
         {
@@ -851,7 +871,9 @@ class CfgVehicles
         faction = "OPT_Sowjet";
         crew = "OPT_CSAT_Soldat";
         typicalCargo[] = {"OPT_CSAT_Soldat"};
-        hiddenSelectionsTextures[] = {"A3\Soft_F_Beta\Truck_02\Data\truck_02_kab_OPFOR_CO.paa", "a3\soft_f_beta\truck_02\data\truck_02_int_co.paa", "a3\soft_f_gamma\truck_02\data\Truck_02_MRL_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_mrl.jpg";
+
     };
 
     class OPT_O_Truck_02_MRL_ghex_F : OPT_I_Truck_02_MRL_F
@@ -871,6 +893,7 @@ class CfgVehicles
         faction = "OPT_FIN";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_kab_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_mrl_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_mrl_fin.jpg";
     };
 };
