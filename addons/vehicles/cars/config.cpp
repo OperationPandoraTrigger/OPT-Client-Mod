@@ -110,7 +110,7 @@ class CfgVehicles
     //// Hunter ////
     class OPT_B_MRAP_01_F : B_MRAP_01_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         fuelCapacity = 4; // 94 //
 
         class TransportMagazines
@@ -342,7 +342,7 @@ class CfgVehicles
     //// Hunter HMG ////
     class OPT_B_MRAP_01_hmg_F : B_MRAP_01_hmg_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         fuelCapacity = 4;// 94 //
 
         class TransportMagazines
@@ -527,7 +527,7 @@ class CfgVehicles
     //// Ifrit ////
     class OPT_O_MRAP_02_F : O_MRAP_02_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 4;                     // 94 //
 
         class TransportMagazines
@@ -583,7 +583,7 @@ class CfgVehicles
     //// Ifrit HMG ////
     class OPT_O_MRAP_02_hmg_F : O_MRAP_02_hmg_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 4;                     // 94 //
 
         class TransportMagazines
@@ -1336,7 +1336,7 @@ class CfgVehicles
 
     class OPT_B_T_LSV_01_unarmed_F : B_T_LSV_01_unarmed_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         fuelCapacity = 3; // 45 //
         textureList[] = {"Black",0,"Olive",0,"Sand",1};
 
@@ -1381,7 +1381,7 @@ class CfgVehicles
 
     class OPT_B_T_LSV_01_armed_F : B_T_LSV_01_armed_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         fuelCapacity = 3; // 45 //
         textureList[] = {"Black",0,"Olive",0,"Sand",1};
 
@@ -1432,7 +1432,7 @@ class CfgVehicles
 
     class OPT_B_LSV_01_AT_F : B_LSV_01_AT_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         fuelCapacity = 3; // 20 //
         textureList[] = {"Black",0,"Olive",0,"Sand",1};
 
@@ -1585,7 +1585,7 @@ class CfgVehicles
 
     class OPT_O_T_LSV_02_unarmed_F : O_T_LSV_02_unarmed_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 4; // 55 //
         textureList[] = {"Black",0,"GreenHex",0,"Arid",1};
 
@@ -1652,7 +1652,7 @@ class CfgVehicles
 
     class OPT_O_T_LSV_02_armed_F : O_T_LSV_02_armed_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 4; // 55 //
         textureList[] = {"Black",0,"GreenHex",0,"Arid",1};
 
@@ -1688,7 +1688,7 @@ class CfgVehicles
 
     class OPT_O_LSV_02_AT_F : O_LSV_02_AT_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 4; // 20 //
 
         class TransportMagazines
@@ -1820,7 +1820,7 @@ class CfgVehicles
     //// Quadbike ////
     class OPT_B_Quadbike_01_F : B_Quadbike_01_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         fuelCapacity = 2; // 30 //
 
         class TransportItems
@@ -1859,7 +1859,7 @@ class CfgVehicles
 
     class OPT_O_Quadbike_01_F : O_Quadbike_01_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 2; // 30 //
 
         class TransportItems

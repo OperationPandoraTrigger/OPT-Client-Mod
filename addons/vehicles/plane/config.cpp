@@ -230,7 +230,7 @@ class CfgVehicles
 
     class OPT_O_Plane_Fighter_03_dynamicLoadout_F : OPT_I_Plane_Fighter_03_CAS_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         side = 0;
         crew = "OPT_CSAT_Pilot";
         //hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_1CSAT.paa","\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_2CSAT.paa"};
@@ -239,7 +239,7 @@ class CfgVehicles
 
     class OPT_B_Plane_Fighter_03_dynamicLoadout_F : OPT_I_Plane_Fighter_03_CAS_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
         //hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_1CSAT.paa","\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_2CSAT.paa"};
@@ -250,6 +250,7 @@ class CfgVehicles
     class OPT_O_Plane_Fighter_03_AA_F : OPT_O_Plane_Fighter_03_dynamicLoadout_F
     {
         displayName = "A-143 Buzzard (AA)";
+        faction = "OPT_CSAT";
 
         class Components : Components
         {

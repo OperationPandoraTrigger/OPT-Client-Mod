@@ -528,7 +528,7 @@ class CfgVehicles
     class OPT_O_Truck_02_covered_F : O_Truck_02_covered_F
     {
 
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 6; // 250 //
 
         class TransportItems
@@ -559,7 +559,7 @@ class CfgVehicles
     class OPT_O_Truck_02_fuel_F : O_Truck_02_fuel_F
     {
 
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 200; // 250 //
         transportFuel = 3000;
 
@@ -574,7 +574,7 @@ class CfgVehicles
 
     class OPT_O_Truck_02_ammo_F : O_Truck_02_ammo_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 6; // 250 //
         transportAmmo = 30000;
 
@@ -588,7 +588,7 @@ class CfgVehicles
 
     class OPT_O_Truck_02_box_F : O_Truck_02_box_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 6; // 250 //
         transportRepair = 0; // 200000000;
 
@@ -602,7 +602,7 @@ class CfgVehicles
 
     class OPT_O_Truck_02_medical_F : O_Truck_02_medical_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         fuelCapacity = 6; // 250 //
 
         class TransportItems
@@ -703,7 +703,7 @@ class CfgVehicles
     class OPT_B_Truck_02_covered_F : I_Truck_02_covered_F
     {
 
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -736,7 +736,7 @@ class CfgVehicles
     class OPT_B_Truck_02_fuel_F : I_Truck_02_fuel_F
     {
 
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -752,7 +752,7 @@ class CfgVehicles
     //// Zamak Ammo ////
     class OPT_B_Truck_02_ammo_F : I_Truck_02_ammo_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -767,7 +767,7 @@ class CfgVehicles
     //// Zamak Repair ////
     class OPT_B_Truck_02_box_F : I_Truck_02_box_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -783,7 +783,7 @@ class CfgVehicles
     class OPT_B_Truck_02_medical_F : I_Truck_02_medical_F
     {
 
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -848,7 +848,7 @@ class CfgVehicles
     {
         maximumLoad = 2500;
         side = 0;
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         crew = "OPT_CSAT_Soldat";
         typicalCargo[] = {"OPT_CSAT_Soldat"};
         hiddenSelectionsTextures[] = {"A3\Soft_F_Beta\Truck_02\Data\truck_02_kab_OPFOR_CO.paa", "a3\soft_f_beta\truck_02\data\truck_02_int_co.paa", "a3\soft_f_gamma\truck_02\data\Truck_02_MRL_OPFOR_CO.paa"};
@@ -862,5 +862,15 @@ class CfgVehicles
         crew = "OPT_CSAT_Soldat";
         typicalCargo[] = {"OPT_CSAT_Soldat"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_kab_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_mrl_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
+    };
+
+    class OPT_B_Truck_02_MRL_F : OPT_I_Truck_02_MRL_F
+    {
+        maximumLoad = 2500;
+        side = 1;
+        faction = "OPT_FIN";
+        crew = "OPT_NATO_Besatzungsmitglied";
+        typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
+        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_kab_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_02_mrl_hex_pazifik.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
     };
 };
