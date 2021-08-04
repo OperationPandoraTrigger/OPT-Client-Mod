@@ -122,7 +122,7 @@ class CfgVehicles
                     class PylonLeft2
                     {
                         attachment = "OPT_PylonRack_12Rnd_missiles";
-                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
+                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON", "DAR", "DAGR"};
                         priority = 4;
                         //turret[] = {0};
                         UIposition[] = {0.08, 0.35};
@@ -136,7 +136,7 @@ class CfgVehicles
                     class PylonRight2
                     {
                         attachment = "";
-                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
+                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON", "DAR", "DAGR"};
                         mirroredMissilePos = 2;
                         priority = 4;
                         //turret[] = {0};
