@@ -419,6 +419,8 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 12; // 100 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_fin_1.paa","\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_fin_2.paa","\opt\opt_client\addons\vehicles\textures\Hunter\opt_rcws_fin.paa","A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_scorcher_fin.jpg";
 
         class Turrets : Turrets
         {
@@ -692,6 +694,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 12; // 75 //
+        textureList = ["Hex",0];
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_1.paa","\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_2.paa","\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_3.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_t100_rus.jpg";
 
         class Turrets : Turrets
         {
@@ -1323,6 +1328,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 12; // 75 //
+        textureList = ["Hex",0];
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Sochor\opt_sochor_rus_2.paa","\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_3.paa","\opt\opt_client\addons\vehicles\textures\Ifrit\opt_rcws_rus.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_sochor_rus.jpg";
 
         class Turrets : Turrets
         {
@@ -1522,7 +1530,8 @@ class CfgVehicles
         faction = "OPT_FIN";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\nato\TankBodyTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\kuma\nato\TankTurretMGTexture.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_3.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_kuma_fin.jpg";
     };
 
     class OPT_B_MBT_03_cannon_ghex_F : OPT_I_MBT_03_cannon_F

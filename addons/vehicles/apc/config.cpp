@@ -483,7 +483,7 @@ class CfgVehicles
         fuelCapacity = 8; // 60 //
         crew = "O_Soldier_F";
         typicalCargo[] = {"O_Soldier_lite_F"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_0_base_hex_pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_1_adds_hex_Pazifik.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_2_tows_hex_Pazifik.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_rus_3.paa"};
 
         class Turrets : Turrets
         {
@@ -685,8 +685,10 @@ class CfgVehicles
     //// IFV-6a Cheetah ////
     class OPT_B_APC_Tracked_01_AA_F : B_APC_Tracked_01_AA_F
     {
-        faction = "OPT_NATO";
+        faction = "OPT_FIN";
         fuelCapacity = 12; // 45 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_2.paa","\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_3.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_cheetah_fin.jpg";
 
         class Turrets : Turrets
         {
@@ -1195,7 +1197,8 @@ class CfgVehicles
         faction = "OPT_FIN";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mora\nato\TurretTexture.paa", "\opt\opt_client\addons\vehicles\textures\mora\nato\BodyTexture.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mora\opt_mora_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\mora\opt_mora_fin_2.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_mora_fin.jpg";
     };
 
     class OPT_B_APC_tracked_03_cannon_ghex_F : OPT_I_APC_tracked_03_cannon_F
@@ -1325,6 +1328,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 12; // 45 //
+        textureList = ["Hex",0];
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_2.paa","\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_3.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_btrk_rus.jpg";
 
         class Turrets : Turrets
         {
@@ -1985,6 +1991,9 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         fuelCapacity = 12; // 45 //
+        textureList = ["Hex",0];
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Tigris\opt_tigris_rus_3.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_tigris_rus.jpg";
 
         class Turrets : Turrets
         {
@@ -2725,7 +2734,8 @@ class CfgVehicles
         faction = "OPT_FIN";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"}; 
-        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext2_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\rcws30_coCSAT.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\csat\apc_wheeled_03_ext_alpha_coCSAT.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_3.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_4.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_gorgon_fin.jpg";
 
         class Turrets : Turrets
         {
@@ -3121,8 +3131,9 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 5; // 24 //
-        hiddenSelectionsTextures[] = {"a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT1_green_CO.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT2_green_CO.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_2.paa", "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
         textureList[] = {"Green",0,"Sand",0};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_rhino_fin.jpg";
 
         class Turrets : Turrets
         {
@@ -3209,8 +3220,9 @@ class CfgVehicles
         side = 0;
         crew = "O_Soldier_F";
         typicalCargo[] = {"O_Soldier_lite_F"};
-        hiddenSelectionsTextures[] = {"a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT1_CO.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_EXT2_CO.paa","a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_CO.paa","a3\Armor_F\Data\camonet_NATO_Desert_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_sand_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_3.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
         textureList[] = {"Green",0,"Sand",0};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_rhino_rus.jpg";
    };
 
 };

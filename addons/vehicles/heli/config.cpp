@@ -106,6 +106,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
         fuelCapacity = 330; // 2500 //
+        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
 
         class Components : Components
         {
@@ -121,7 +122,7 @@ class CfgVehicles
                     class PylonLeft2
                     {
                         attachment = "OPT_PylonRack_12Rnd_missiles";
-                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
+                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON", "DAR", "DAGR"};
                         priority = 4;
                         //turret[] = {0};
                         UIposition[] = {0.08, 0.35};
@@ -135,7 +136,7 @@ class CfgVehicles
                     class PylonRight2
                     {
                         attachment = "";
-                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON"};
+                        hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON", "DAR", "DAGR"};
                         mirroredMissilePos = 2;
                         priority = 4;
                         //turret[] = {0};
