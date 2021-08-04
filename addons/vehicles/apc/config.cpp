@@ -3131,7 +3131,7 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 5; // 24 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_1.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_2.paa", "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
         textureList[] = {"Green",0,"Sand",0};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_rhino_fin.jpg";
 
@@ -3220,7 +3220,7 @@ class CfgVehicles
         side = 0;
         crew = "O_Soldier_F";
         typicalCargo[] = {"O_Soldier_lite_F"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_3.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_rus_3.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
         textureList[] = {"Green",0,"Sand",0};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_rhino_rus.jpg";
    };
