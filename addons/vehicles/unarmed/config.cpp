@@ -1232,15 +1232,18 @@ class CfgVehicles
     //// FV-720 Mora ////
     class I_APC_tracked_03_cannon_F;
 
-    class OPT_B_APC_tracked_03_cannon_F : I_APC_tracked_03_cannon_F
+    class OPT_I_APC_tracked_03_cannon_F : I_APC_tracked_03_cannon_F
     {
         class Turrets;
         class MainTurret;
     };
 
-    class OPT4_B_APC_tracked_03_cannon_F : OPT_B_APC_tracked_03_cannon_F
+    class OPT4_B_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F
     {
         faction = "OPT_NATO";
+        side = 1;
+        crew = "OPT_NATO_Besatzungsmitglied";
+        typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
 
         class Turrets : Turrets
         {
@@ -1677,15 +1680,18 @@ class CfgVehicles
     //// MBT-52 Kuma ////
     class I_MBT_03_cannon_F;
 
-    class OPT_B_MBT_03_cannon_F : I_MBT_03_cannon_F
+    class OPT_I_MBT_03_cannon_F : I_MBT_03_cannon_F
     {
         class Turrets;
         class MainTurret;
     };
 
-    class OPT4_B_MBT_03_cannon_F : OPT_B_MBT_03_cannon_F
+    class OPT4_B_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F
     {
         faction = "OPT_NATO";
+        side = 1;
+        crew = "OPT_NATO_Besatzungsmitglied";
+        typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
 
         class Turrets : Turrets
         {

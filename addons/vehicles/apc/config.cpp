@@ -484,6 +484,7 @@ class CfgVehicles
         crew = "O_Soldier_F";
         typicalCargo[] = {"O_Soldier_lite_F"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Marshall\opt_marshall_rus_3.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_marshall_rus.jpg";
 
         class Turrets : Turrets
         {

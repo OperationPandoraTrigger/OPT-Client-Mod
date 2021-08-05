@@ -718,7 +718,7 @@ class CfgVehicles
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";
 
         class TransportItems
@@ -806,7 +806,7 @@ class CfgVehicles
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_san_fin.jpg";
 
         class TransportItems
