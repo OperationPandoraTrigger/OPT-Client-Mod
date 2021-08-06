@@ -566,11 +566,10 @@ class CfgVehicles
     //// Mi-290 Taru ////
     class OPT_O_Heli_Transport_04_F : O_Heli_Transport_04_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         displayName = "Mi-290 Taru";
         maximumLoad = 2500;
         driverCanEject = 1;
-        radarType = 4;        // 8 //
         fuelCapacity = 330; // 2500 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa"};
         textureList[] = {"Opfor",0};
@@ -584,7 +583,7 @@ class CfgVehicles
             class _xx_B_Parachute
             {
                 backpack = "B_Parachute";
-                count = 30;
+                count = 8;
             };
         };
 
@@ -658,7 +657,6 @@ class CfgVehicles
         displayName = "Mi-290 Taru (Bank)";
         maximumLoad = 2500;
         driverCanEject = 1;
-        radarType = 4;        // 8 //
         fuelCapacity = 330; // 2500 //
 
         class TransportItems
@@ -670,7 +668,7 @@ class CfgVehicles
             class _xx_B_Parachute
             {
                 backpack = "B_Parachute";
-                count = 30;
+                count = 8;
             };
         };
 
