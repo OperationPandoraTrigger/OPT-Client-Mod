@@ -1793,7 +1793,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "TFAR_mr3000_bwmod";
+        backpack = "OPT_TFAR_mr3000";
         uniformClass = "U_O_R_Gorka_01_camo_F";
     };
 
@@ -1809,7 +1809,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "TFAR_mr3000_bwmod";
+        backpack = "OPT_TFAR_mr3000";
         uniformClass = "U_O_R_Gorka_01_camo_F";
     };
 
@@ -1828,7 +1828,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "TFAR_mr3000_bwmod";
+        backpack = "OPT_TFAR_mr3000";
         uniformClass = "U_O_R_Gorka_01_camo_F";
     };
 
@@ -1848,7 +1848,7 @@ class CfgVehicles
         respawnMagazines[] = {"30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F", "SmokeShell", "SmokeShell", "Laserbatteries","HandGrenade","HandGrenade"};
         linkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        backpack = "TFAR_mr3000_bwmod";
+        backpack = "OPT_TFAR_mr3000";
         uniformClass = "U_O_R_Gorka_01_camo_F";
     };
 
@@ -1890,7 +1890,7 @@ class CfgVehicles
         respawnMagazines[] = {"30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F",  "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "O_UavTerminal"};
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "O_UavTerminal"};
-        backpack = "TFAR_mr3000_bwmod";
+        backpack = "OPT_TFAR_mr3000";
     };
 
     class OPT_CSAT_MG_Schuetze : OPT_CSAT_Soldat
@@ -1969,7 +1969,7 @@ class CfgVehicles
         respawnMagazines[] = {"5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"V_PlateCarrier1_blk","H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        backpack = "TFAR_mr3000_bwmod";
+        backpack = "OPT_TFAR_mr3000";
         uniformClass = "U_O_T_FullGhillie_tna_F";
     };
 
@@ -2063,7 +2063,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetCrew_O_ghex_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         items[] = {};
         respawnItems[] = {};
-        backpack = "TFAR_mr3000_bwmod";
+        backpack = "OPT_TFAR_mr3000";
         uniformClass = "U_O_R_Gorka_01_camo_F";
     };
 };
