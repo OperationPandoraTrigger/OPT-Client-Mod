@@ -7213,7 +7213,7 @@ class CfgVehicles
 
             class _xx_TFAR_mr3000
             {
-                backpack = "TFAR_mr3000_bwmod";
+                backpack = "OPT_TFAR_mr3000";
                 count = 25;
             };
 
