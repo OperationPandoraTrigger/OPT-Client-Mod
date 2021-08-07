@@ -567,7 +567,7 @@ class CfgVehicles
     class OPT_O_Heli_Transport_04_F : O_Heli_Transport_04_F
     {
         faction = "OPT_Sowjet";
-        displayName = "Mi-290 Taru";
+        displayName = "Mi-290 Taru (Kran)";
         maximumLoad = 2500;
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
