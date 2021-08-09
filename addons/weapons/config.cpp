@@ -6230,7 +6230,7 @@ class CfgVehicles
         displayName = "MAAWS Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6264,7 +6264,7 @@ class CfgVehicles
         displayName = "RPG42 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b3b.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -6298,7 +6298,7 @@ class CfgVehicles
         displayName = "RPG7 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
 
         class TransportWeapons
         {
@@ -7422,7 +7422,7 @@ class CfgVehicles
         displayName = "MAAWS Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\MAAWS3.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o3.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -7577,7 +7577,7 @@ class CfgVehicles
         displayName = "RPG-7 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-7.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
@@ -7651,7 +7651,7 @@ class CfgVehicles
         displayName = "RPG42 Raketenkiste";
         maximumLoad = 5000;
         supplyRadius = 8;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\RGP-42.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o3b.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 
         class TransportWeapons
         {
