@@ -247,8 +247,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"OPT_M134_minigun"};
-                magazines[] = {"5000Rnd_762x51_Belt"};
+                weapons[] = {"HMG_127"};
+                magazines[] = {"200Rnd_127x99_mag_Tracer_Green","200Rnd_127x99_mag_Tracer_Green","200Rnd_127x99_mag_Tracer_Green","200Rnd_127x99_mag_Tracer_Green","200Rnd_127x99_mag_Tracer_Green"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -1646,8 +1646,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"OPT_M134_minigun"};
-                magazines[] = {"5000Rnd_762x51_Belt"};
+                weapons[] = {"HMG_127"};
+                magazines[] = {"200Rnd_127x99_mag_Tracer_Green","200Rnd_127x99_mag_Tracer_Green","200Rnd_127x99_mag_Tracer_Green","200Rnd_127x99_mag_Tracer_Green","200Rnd_127x99_mag_Tracer_Green"};
 
                 class OpticsIn : OpticsIn
                 {
