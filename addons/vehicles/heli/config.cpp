@@ -248,8 +248,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"OPT_M134_minigun"};
-                magazines[] = {"5000Rnd_762x51_Belt"};
+                weapons[] = {"HMG_127"};
+                magazines[] = {"200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -282,13 +282,13 @@ class CfgVehicles
             class Muzzle_flash
             {
                 source = "ammorandom";
-                weapon = "OPT_M134_minigun";
+                weapon = "HMG_127";
             };
 
             class Gatling
             {
                 source = "revolving";
-                weapon = "OPT_M134_minigun";
+                weapon = "HMG_127";
             };
         };
     };
@@ -414,8 +414,8 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         displayName = "PO-30 Orca (Light)";
-        weapons[] = {"OPT_CMFlareLauncher","OPT_M134_minigun"};
-        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Yellow_Belt"};
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_rus_1.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
         //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
 
@@ -427,12 +427,12 @@ class CfgVehicles
                 {
                     class PylonLeft1 : PylonLeft1
                     {
-                        attachment = OPT_PylonRack_12Rnd_missiles; 
+                        attachment = "OPT_PylonWeapon_5000Rnd_M134_minigun"; 
                     };
 
                     class PylonRight1 : PylonRight1
                     {
-                        attachment = ""; 
+                        attachment = "OPT_PylonRack_12Rnd_missiles";
                     };
                 };
             };
@@ -1657,8 +1657,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"OPT_M134_minigun"};
-                magazines[] = {"5000Rnd_762x51_Belt"};
+                weapons[] = {"HMG_127"};
+                magazines[] = {"200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -1684,7 +1684,7 @@ class CfgVehicles
         {
             class Gatling : Gatling
             {
-                weapon = "OPT_M134_minigun";
+                weapon = "HMG_127";
             };
 
             class Missiles : Missiles
@@ -1694,7 +1694,7 @@ class CfgVehicles
 
             class Muzzle_flash : Muzzle_flash
             {
-                weapon = "OPT_M134_minigun";
+                weapon = "HMG_127";
             };
         };
 
@@ -2677,7 +2677,7 @@ class CfgVehicles
         faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa"};
         //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
     };
 
@@ -2822,7 +2822,7 @@ class CfgVehicles
         faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
         //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
     };
 
@@ -2962,7 +2962,7 @@ class CfgVehicles
         faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
         //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
 
     };

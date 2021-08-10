@@ -769,6 +769,16 @@ class CfgMagazines
         displayNameShort = "AG";
     };
 
+    class PylonWeapon_2000Rnd_65x39_belt;
+
+    class OPT_PylonWeapon_5000Rnd_M134_minigun : PylonWeapon_2000Rnd_65x39_belt
+    {
+        ammo = "B_762x51_Minigun_Tracer_Red_splash";
+        displayName = "Minigun 7.62 mm";
+        pylonWeapon = "OPT_M134_minigun";
+        count = 5000;
+    };
+
     class 1000Rnd_Gatling_30mm_Plane_CAS_01_F;
 
     class OPT_1000Rnd_Gatling_30mm_Plane_CAS_01_F : 1000Rnd_Gatling_30mm_Plane_CAS_01_F
@@ -4325,6 +4335,7 @@ class CfgWeapons
     {
         showAimCursorInternal = 0;
         displayName = "Gatting 7,62 mm";
+        magazines[] = {"5000Rnd_762x51_Yellow_Belt","5000Rnd_762x51_Belt", "OPT_PylonWeapon_5000Rnd_M134_minigun"};
     };
 
     class Laserdesignator_mounted;
