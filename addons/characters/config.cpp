@@ -1338,7 +1338,6 @@ class cfgWeapons
 
         };
     };
-    
 };
 
 class CfgVehicles
@@ -1868,7 +1867,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
-        backpack = "OPT_B_AssaultPack_blk";
+        backpack = "OPT_B_AssaultPack_blk_rus";
         uniformClass = "U_O_R_Gorka_01_camo_F";
     };
     
@@ -1934,7 +1933,7 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_arifle_CTAR_ERCO_Pointer_F", "launch_RPG7_F", "Rangefinder", "Throw", "Put"};
         magazines[] = {"30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
-        backpack = "OPT_B_AssaultPack_blk";
+        backpack = "OPT_B_AssaultPack_blk_rus";
         Items[] = {};
         respawnItems[] = {};
     };
@@ -1986,7 +1985,7 @@ class CfgVehicles
         linkedItems[] = {"V_PlateCarrier1_blk","H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         uniformClass = "U_O_R_Gorka_01_camo_F";
-        backpack = "OPT_B_AssaultPack_blk";
+        backpack = "OPT_B_AssaultPack_blk_rus";
     };
 
     class O_engineer_F : O_Soldier_base_F
@@ -2006,7 +2005,7 @@ class CfgVehicles
         respawnMagazines[] = {"30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F", "30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        backpack = "OPT_B_AssaultPack_blk";
+        backpack = "OPT_B_AssaultPack_blk_rus";
         uniformClass = "U_O_R_Gorka_01_camo_F";
     };
 
@@ -2043,7 +2042,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         items[] = {"Medikit"};
         respawnItems[] = {"Medikit"};
-        backpack = "OPT_B_AssaultPack_blk";
+        backpack = "OPT_B_AssaultPack_blk_rus";
         uniformClass = "U_O_R_Gorka_01_camo_F";
     };
 

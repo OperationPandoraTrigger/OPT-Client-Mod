@@ -107,7 +107,7 @@ class CfgVehicles
         magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
         fuelCapacity = 330; // 2500 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_2.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_kajman_rus.jpg";
 
         class Components : Components
         {
@@ -417,7 +417,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_rus_1.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_orca_cas_rus.jpg";
 
         class Components : Components
         {
@@ -465,7 +465,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher","OPT_M134_minigun"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Yellow_Belt"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_rus_1.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_orca_cas_rus.jpg";
 
         class Components : Components
         {
@@ -517,7 +517,7 @@ class CfgVehicles
         radarType = 4;        // 8 //
         fuelCapacity = 210; // 800 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_rus_1.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_orca_trapo_rus.jpg";
 
         class TransportItems
         {
@@ -577,7 +577,7 @@ class CfgVehicles
         fuelCapacity = 330; // 2500 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa"};
         textureList[] = {"Opfor",0};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_lifter_rus.jpg";
 
         class TransportItems
         {
@@ -873,7 +873,7 @@ class CfgVehicles
         fuelCapacity = 330; // 2500 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_3.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_4.paa"};
         textureList[] = {"Opfor",0};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
 
         class TransportItems
         {
@@ -1032,7 +1032,7 @@ class CfgVehicles
         fuelCapacity = 330; // 2500 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_3.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_4.paa"};
         textureList[] = {"Opfor",0};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_repair_rus.jpg";
 
         class TransportItems
         {
@@ -1120,7 +1120,7 @@ class CfgVehicles
         transportAmmo = 30000; // 1e+012 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_3.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_4.paa"};
         textureList[] = {"Opfor",0};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_ammo_rus.jpg";
 
         class TransportItems
         {
@@ -1199,7 +1199,7 @@ class CfgVehicles
         fuelCapacity = 330; // 2500 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_fuel_rus_3.paa"};
         textureList[] = {"Opfor",0};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_fuel_rus.jpg";
 
         class TransportItems
         {
@@ -1486,7 +1486,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
         //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_2.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_Heli_Attack_01_F.jpg";
 
         class TransportItems
         {
@@ -2206,7 +2206,7 @@ class CfgVehicles
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_3.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_mohawk_fin.jpg";
     };
 
     class OPT_O_Heli_Transport_02_F : OPT_I_Heli_Transport_02_F
@@ -2678,7 +2678,7 @@ class CfgVehicles
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_trapo_fin.jpg";
     };
 
     // Hellcat Ligt
@@ -2823,7 +2823,7 @@ class CfgVehicles
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_cas_fin.jpg";
     };
 
     // Hellcat Heavy
@@ -2963,7 +2963,7 @@ class CfgVehicles
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_cas_fin.jpg";
 
     };
 };

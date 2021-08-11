@@ -1847,7 +1847,7 @@ class CfgVehicles
         fuelCapacity = 2; // 30 //
         textureList = ["Blufor",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Quadbike\opt_quadbike_fin_1.paa","\A3\Soft_F\Quadbike_01\Data\Quadbike_01_wheel_co.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_quadbike_fin.jpg";
 
         class TransportItems
         {
@@ -1889,7 +1889,7 @@ class CfgVehicles
         fuelCapacity = 2; // 30 //
         textureList = ["Opfor",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Quadbike\opt_quadbike_rus_1.paa","\A3\Soft_F\Quadbike_01\Data\Quadbike_01_wheel_co.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
 
         class TransportItems
         {

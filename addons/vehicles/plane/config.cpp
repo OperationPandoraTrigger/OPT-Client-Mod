@@ -235,7 +235,7 @@ class CfgVehicles
         crew = "OPT_CSAT_Pilot";
         hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\opt_Buzzard_rus_1.paa","\opt\opt_client\addons\vehicles\textures\buzzard\opt_Buzzard_rus_2.paa"};
         typicalCargo[] = {"OPT_CSAT_Pilot"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_buzzard_rus.jpg";
     };
 
     class OPT_B_Plane_Fighter_03_dynamicLoadout_F : OPT_I_Plane_Fighter_03_CAS_F
@@ -245,7 +245,7 @@ class CfgVehicles
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\opt_buzzard_fin_1.paa","\opt\opt_client\addons\vehicles\textures\buzzard\opt_buzzard_fin_2.paa"};
         typicalCargo[] = {"OPT_NATO_Pilot"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_buzzard_fin.jpg";
     };
 
     //// A-143 Buzzard (AA) ////

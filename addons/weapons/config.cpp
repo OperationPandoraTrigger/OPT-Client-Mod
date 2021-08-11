@@ -4702,6 +4702,7 @@ class CfgVehicles
     class OPT_B_HMG_01_F : B_HMG_01_F
     {
         faction = "OPT_FIN";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_hmg_low.jpg";
 
         class Turrets : Turrets
         {
@@ -4770,6 +4771,7 @@ class CfgVehicles
     class OPT_O_HMG_01_F : O_HMG_01_F
     {
         faction = "OPT_Sowjet";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_hmg_low.jpg";
 
         class Turrets : Turrets
         {
@@ -4808,6 +4810,7 @@ class CfgVehicles
     class OPT_B_HMG_01_high_F : B_HMG_01_high_F
     {
         faction = "OPT_FIN";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_hmg_high.jpg";
 
         class Turrets : Turrets
         {
@@ -4876,6 +4879,7 @@ class CfgVehicles
     class OPT_O_HMG_01_high_F : O_HMG_01_high_F
     {
         faction = "OPT_Sowjet";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_hmg_high.jpg";
 
         class Turrets : Turrets
         {
@@ -4921,6 +4925,7 @@ class CfgVehicles
     class OPT_B_GMG_01_F : B_GMG_01_F
     {
         faction = "OPT_FIN";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_gmg_low.jpg";
 
         class Turrets : Turrets
         {
@@ -4990,6 +4995,7 @@ class CfgVehicles
     class OPT_O_GMG_01_F : O_GMG_01_F
     {
         faction = "OPT_Sowjet";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_gmg_low.jpg";
 
         class Turrets : Turrets
         {
@@ -5028,6 +5034,7 @@ class CfgVehicles
     class OPT_B_GMG_01_high_F : B_GMG_01_high_F
     {
         faction = "OPT_FIN";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_gmg_high.jpg";
 
         class Turrets : Turrets
         {
@@ -5096,6 +5103,7 @@ class CfgVehicles
     class OPT_O_GMG_01_high_F : O_GMG_01_high_F
     {
         faction = "OPT_Sowjet";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_gmg_high.jpg";
 
         class Turrets : Turrets
         {
@@ -5140,7 +5148,9 @@ class CfgVehicles
     class OPT_B_static_AA_F : B_static_AA_F
     {
         faction = "OPT_FIN";
-        displayName = "Statischer AA Titan-Werfer (Nato)";
+        displayName = "Statischer AA Titan-Werfer";
+        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_aa_fin_2.paa"};
 
         class Turrets : Turrets
         {
@@ -5198,7 +5208,9 @@ class CfgVehicles
     class OPT_O_static_AA_F : O_static_AA_F
     {
         faction = "OPT_Sowjet";
-        displayName = "Statischer AA Titan-Werfer (CSAT)";
+        displayName = "Statischer AA Titan-Werfer";
+        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_aa_rus_2.paa"};       
 
         class Turrets : Turrets
         {
@@ -5235,7 +5247,9 @@ class CfgVehicles
     class OPT_B_static_AT_F : B_static_AT_F
     {
         faction = "OPT_FIN";
-        displayName = "Statischer AT Titan-Werfer (Nato)";
+        displayName = "Statischer AT Titan-Werfer";
+        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_at_fin_2.paa"};
 
         class Turrets : Turrets
         {
@@ -5294,6 +5308,8 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         displayName = "Statischer AT Titan-Werfer (CSAT)";
+        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_at_rus_2.paa"};
 
         class Turrets : Turrets
         {
@@ -5407,6 +5423,8 @@ class CfgVehicles
     class OPT_B_Mortar_01_F : B_Mortar_01_F
     {
         faction = "OPT_FIN";
+        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_mortar_fin_1.paa"};
 
         class assembleInfo : assembleInfo
         {
@@ -5459,6 +5477,8 @@ class CfgVehicles
     class OPT_O_Mortar_01_F : O_Mortar_01_F
     {
         faction = "OPT_Sowjet";
+        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_mortar_rus_1.paa"};
 
         class assembleInfo : assembleInfo
         {
@@ -5503,6 +5523,7 @@ class CfgVehicles
         maximumLoad = 30000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Data\AmmoBox_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b4.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_ausruestungskiste_fin.jpg";
  
         class TransportWeapons
         {
@@ -5884,6 +5905,7 @@ class CfgVehicles
         displayName = "Transportkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_supplyCrate_F.jpg";
 
         class TransportItems
         {
@@ -5941,6 +5963,7 @@ class CfgVehicles
         maximumLoad = 14000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_ammo_fin.jpg";
 
         class TransportItems
         {
@@ -6242,6 +6265,7 @@ class CfgVehicles
         maximumLoad = 5000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b3.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_maaws_fin.jpg";
 
         class TransportWeapons
         {
@@ -6276,6 +6300,7 @@ class CfgVehicles
         maximumLoad = 5000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b3b.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_rpg42_fin.jpg";
 
         class TransportWeapons
         {
@@ -6310,6 +6335,7 @@ class CfgVehicles
         maximumLoad = 5000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_rpg7_fin.jpg";
 
         class TransportWeapons
         {
@@ -6378,6 +6404,7 @@ class CfgVehicles
         maximumLoad = 5000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_titan_aa_fin.jpg";
 
         class TransportWeapons
         {
@@ -6441,6 +6468,7 @@ class CfgVehicles
         maximumLoad = 2000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\uniforms_box_blufor_co.paa","\opt\opt_client\addons\weapons\textures\ammobox\equipment_blufor_taucher.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_taucher_fin.jpg";
 
         class TransportWeapons
         {
@@ -6602,6 +6630,7 @@ class CfgVehicles
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_ugl_fin.jpg";
 
         class TransportWeapons
         {
@@ -6787,6 +6816,7 @@ class CfgVehicles
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_b1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_granaten_fin.jpg";
 
         class TransportWeapons
         {
@@ -6902,7 +6932,7 @@ class CfgVehicles
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sprengstoff_b_1.paa"};
-        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sprengstoff_b_preview.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_sprengstoffkiste_fin.jpg";
 
         class TransportWeapons
         {
@@ -6944,7 +6974,7 @@ class CfgVehicles
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\minen_b_1.paa"};
-        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\minen_b_preview.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_minenkiste_fin.jpg";
 
         class TransportWeapons
         {
@@ -7063,6 +7093,7 @@ class CfgVehicles
         maximumLoad = 30000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\A3\Weapons_F\Ammoboxes\Data\AmmoBox_OPFOR_CO.paa","\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o4.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_ausruestungskiste_rus.jpg";
 
         class TransportWeapons
         {
@@ -7212,7 +7243,7 @@ class CfgVehicles
         {
             class _xx_B_FieldPack_ocamo
             {
-                backpack = "OPT_B_AssaultPack_VSR98Worm";
+                backpack = "OPT_B_AssaultPack_blk_rus";
                 count = 25;
             };
 
@@ -7254,6 +7285,7 @@ class CfgVehicles
         displayName = "Transportkiste";
         maximumLoad = 15000;
         supplyRadius = 8;
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_supplyCrate_F.jpg";
 
         class TransportItems
         {
@@ -7286,7 +7318,7 @@ class CfgVehicles
         maximumLoad = 14000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
-
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_ammo_rus.jpg";
 
         class TransportWeapons
         {
@@ -7434,6 +7466,7 @@ class CfgVehicles
         maximumLoad = 5000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o3.paa",  "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_maaws_rus.jpg";
 
         class TransportWeapons
         {
@@ -7589,6 +7622,7 @@ class CfgVehicles
         maximumLoad = 5000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_rpg7_rus.jpg";
 
         class TransportWeapons
         {
@@ -7663,6 +7697,7 @@ class CfgVehicles
         maximumLoad = 5000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o3b.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_rpg42_rus.jpg";
 
         class TransportWeapons
         {
@@ -7765,7 +7800,7 @@ class CfgVehicles
         maximumLoad = 2000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
-
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_titan_aa_rus.jpg";
 
         class TransportWeapons
         {
@@ -7799,6 +7834,7 @@ class CfgVehicles
         maximumLoad = 2000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\uniforms_box_opfor_co.paa","\opt\opt_client\addons\weapons\textures\ammobox\equipment_opfor_taucher.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_taucher_rus.jpg";
 
         class TransportWeapons
         {
@@ -7903,6 +7939,7 @@ class CfgVehicles
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o2.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_ugl_rus.jpg";
 
         class TransportWeapons
         {
@@ -8088,6 +8125,7 @@ class CfgVehicles
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\ammobox_signs_o1.paa", "A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_granaten_rus.jpg";
 
         class TransportWeapons
         {
@@ -8487,7 +8525,7 @@ class CfgVehicles
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sprengstoff_o_1.paa"};
-        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sprengstoff_o_preview.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_sprengstoffkiste_rus.jpg";
 
         class TransportWeapons
         {
@@ -8529,7 +8567,7 @@ class CfgVehicles
         maximumLoad = 8500;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\minen_o_1.paa"};
-        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\minen_o_preview.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_minenkiste_rus.jpg";
 
         class TransportWeapons
         {
@@ -9389,6 +9427,24 @@ class CfgVehicles
         {
         };
     };
+
+    class OPT_B_AssaultPack_blk_rus : B_AssaultPack_blk
+    {
+        displayName = "Angriffspack (RUS)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\opt_angriffsrucksack_rus.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\opt_angriffsrucksack_rus_vorschau.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+
 
     class B_FieldPack_ocamo_ReconMedic;
 
