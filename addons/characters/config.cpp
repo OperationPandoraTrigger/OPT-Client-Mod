@@ -1452,9 +1452,9 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_srifle_GM6_camo_LRPS_F", "OPT_hgun_P07_khk_F", "Rangefinder", "Throw", "Put"};
         magazines[] = {"5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag","5Rnd_127x108_APDS_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
-        linkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F","H_HelmetHBK_headset_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
-        respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F","H_HelmetHBK_headset_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
-        backpack = "TFAR_rt1523g_big_bwmod";
+        linkedItems[] = {"V_BandollierB_oli","ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
+        respawnLinkedItems[] = {"V_BandollierB_oli", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
+        backpack = "";
         uniformClass = "U_B_T_FullGhillie_tna_F";
     };
 
@@ -1966,9 +1966,9 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_srifle_GM6_ghex_LRPS_F", "OPT_hgun_Rook40_F", "Rangefinder", "Throw", "Put"};
         magazines[] = {"5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "5Rnd_127x108_APDS_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
-        linkedItems[] = {"V_PlateCarrier1_blk","H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        respawnLinkedItems[] = {"V_PlateCarrier1_blk","H_HelmetAggressor_cover_taiga_F", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        backpack = "OPT_TFAR_mr3000";
+        linkedItems[] = {"V_BandollierB_oli","ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
+        respawnLinkedItems[] = {"V_BandollierB_oli","ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
+        backpack = "";
         uniformClass = "U_O_T_FullGhillie_tna_F";
     };
 

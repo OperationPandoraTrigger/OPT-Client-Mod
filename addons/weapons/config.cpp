@@ -3673,12 +3673,6 @@ class CfgWeapons
                 slot = "PointerSlot";
                 item = "acc_pointer_IR";
             };
-
-            class LinkedItemsUnder
-            {
-                item = "bipod_01_F_blk";
-                slot = "UnderBarrelSlot";
-            };
         };
     };
 
