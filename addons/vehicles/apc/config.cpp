@@ -3141,12 +3141,14 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 weapons[] = {"MMG_02_coax","cannon_120mm"};
-                magazines[] = {"200Rnd_338_Mag","200Rnd_338_Mag", "20Rnd_120mm_APFSDS_shells"};
+                magazines[] = {"200Rnd_338_Mag","200Rnd_338_Mag", "12Rnd_120mm_APFSDS_shells"};
 
                 class Turrets : Turrets
                 {
                     class CommanderOptics : CommanderOptics
                     {
+                        weapons[] = {"SmokeLauncher"};
+
                         class ViewGunner : ViewGunner
                         {
                             visionMode[] = {"Normal", "NVG"};

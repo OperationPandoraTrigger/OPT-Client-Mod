@@ -104,9 +104,10 @@ class CfgVehicles
         faction = "OPT_Sowjet";
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        magazines[] = {"120Rnd_CMFlareMagazine"};
         fuelCapacity = 330; // 2500 //
-        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_2.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_kajman_rus.jpg";
 
         class Components : Components
         {
@@ -247,8 +248,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"OPT_M134_minigun"};
-                magazines[] = {"5000Rnd_762x51_Belt"};
+                weapons[] = {"HMG_127"};
+                magazines[] = {"200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -281,13 +282,13 @@ class CfgVehicles
             class Muzzle_flash
             {
                 source = "ammorandom";
-                weapon = "OPT_M134_minigun";
+                weapon = "HMG_127";
             };
 
             class Gatling
             {
                 source = "revolving";
-                weapon = "OPT_M134_minigun";
+                weapon = "HMG_127";
             };
         };
     };
@@ -413,9 +414,10 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         displayName = "PO-30 Orca (Light)";
-        weapons[] = {"OPT_CMFlareLauncher","OPT_M134_minigun"};
-        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Yellow_Belt"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_rus_1.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_orca_cas_rus.jpg";
 
         class Components : Components
         {
@@ -425,12 +427,12 @@ class CfgVehicles
                 {
                     class PylonLeft1 : PylonLeft1
                     {
-                        attachment = OPT_PylonRack_12Rnd_missiles; 
+                        attachment = "OPT_PylonWeapon_5000Rnd_M134_minigun"; 
                     };
 
                     class PylonRight1 : PylonRight1
                     {
-                        attachment = ""; 
+                        attachment = "OPT_PylonRack_12Rnd_missiles";
                     };
                 };
             };
@@ -462,7 +464,8 @@ class CfgVehicles
         faction = "OPT_Sowjet";
         weapons[] = {"OPT_CMFlareLauncher","OPT_M134_minigun"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Yellow_Belt"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_rus_1.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_orca_cas_rus.jpg";
 
         class Components : Components
         {
@@ -513,7 +516,8 @@ class CfgVehicles
         driverCanEject = 1;
         radarType = 4;        // 8 //
         fuelCapacity = 210; // 800 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_common_Pazifik.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_rus_1.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_orca_trapo_rus.jpg";
 
         class TransportItems
         {
@@ -567,12 +571,13 @@ class CfgVehicles
     class OPT_O_Heli_Transport_04_F : O_Heli_Transport_04_F
     {
         faction = "OPT_Sowjet";
-        displayName = "Mi-290 Taru";
+        displayName = "Mi-290 Taru (Kran)";
         maximumLoad = 2500;
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa"};
         textureList[] = {"Opfor",0};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_lifter_rus.jpg";
 
         class TransportItems
         {
@@ -866,8 +871,9 @@ class CfgVehicles
         displayName = "Mi-290 Taru (Transport)";
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext02_pazifik.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_3.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_4.paa"};
         textureList[] = {"Opfor",0};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
 
         class TransportItems
         {
@@ -1024,8 +1030,9 @@ class CfgVehicles
         displayName = "Mi-290 Taru (Repair)";
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext02_pazifik.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_3.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_4.paa"};
         textureList[] = {"Opfor",0};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_repair_rus.jpg";
 
         class TransportItems
         {
@@ -1111,8 +1118,9 @@ class CfgVehicles
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
         transportAmmo = 30000; // 1e+012 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_Pod_Ext02_pazifik.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_3.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_pod_rus_4.paa"};
         textureList[] = {"Opfor",0};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_ammo_rus.jpg";
 
         class TransportItems
         {
@@ -1189,8 +1197,9 @@ class CfgVehicles
         displayName = "Mi-290 Taru (Fuel)";
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_01_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_base_02_pazifik.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_04_fuel.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Mi-290Taru\opt_taru_fuel_rus_3.paa"};
         textureList[] = {"Opfor",0};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_fuel_rus.jpg";
 
         class TransportItems
         {
@@ -1475,7 +1484,9 @@ class CfgVehicles
         driverCanEject = 1;
         fuelCapacity = 130; // 500 //
         weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        magazines[] = {"120Rnd_CMFlareMagazine"};
+        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_2.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_Heli_Attack_01_F.jpg";
 
         class TransportItems
         {
@@ -1646,8 +1657,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"OPT_M134_minigun"};
-                magazines[] = {"5000Rnd_762x51_Belt"};
+                weapons[] = {"HMG_127"};
+                magazines[] = {"200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -1673,7 +1684,7 @@ class CfgVehicles
         {
             class Gatling : Gatling
             {
-                weapon = "OPT_M134_minigun";
+                weapon = "HMG_127";
             };
 
             class Missiles : Missiles
@@ -1683,7 +1694,7 @@ class CfgVehicles
 
             class Muzzle_flash : Muzzle_flash
             {
-                weapon = "OPT_M134_minigun";
+                weapon = "HMG_127";
             };
         };
 
@@ -2194,7 +2205,8 @@ class CfgVehicles
         faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mohawk\nato\blufor_mohawk_1.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\nato\blufor_mohawk_2.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\nato\blufor_mohawk_3.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_3.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_mohawk_fin.jpg";
     };
 
     class OPT_O_Heli_Transport_02_F : OPT_I_Heli_Transport_02_F
@@ -2665,7 +2677,8 @@ class CfgVehicles
         faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_trapo_fin.jpg";
     };
 
     // Hellcat Ligt
@@ -2809,7 +2822,8 @@ class CfgVehicles
         faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        //hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_cas_fin.jpg";
     };
 
     // Hellcat Heavy
@@ -2948,6 +2962,8 @@ class CfgVehicles
         faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        //hiddenSelectionsTextures[] = {"\A3\Air_F_EPB\Heli_Light_03\data\Heli_Light_03_base_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_cas_fin.jpg";
+
     };
 };

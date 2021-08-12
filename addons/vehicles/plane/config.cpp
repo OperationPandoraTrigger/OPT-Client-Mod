@@ -65,7 +65,7 @@ class CfgVehicles
         faction = "OPT_AAF";
         displayName = "A-143 Buzzard (CAS)";
         weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        magazines[] = {"60Rnd_CMFlareMagazine"};
         fuelCapacity = 500; // 1000 //
         driverCanEject = 1;
 
@@ -233,8 +233,9 @@ class CfgVehicles
         faction = "OPT_Sowjet";
         side = 0;
         crew = "OPT_CSAT_Pilot";
-        //hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_1CSAT.paa","\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_2CSAT.paa"};
+        hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\opt_Buzzard_rus_1.paa","\opt\opt_client\addons\vehicles\textures\buzzard\opt_Buzzard_rus_2.paa"};
         typicalCargo[] = {"OPT_CSAT_Pilot"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_buzzard_rus.jpg";
     };
 
     class OPT_B_Plane_Fighter_03_dynamicLoadout_F : OPT_I_Plane_Fighter_03_CAS_F
@@ -242,8 +243,9 @@ class CfgVehicles
         faction = "OPT_FIN";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        //hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_1CSAT.paa","\opt\opt_client\addons\vehicles\textures\buzzard\csat\Plane_Fighter_03_2CSAT.paa"};
+        hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\opt_buzzard_fin_1.paa","\opt\opt_client\addons\vehicles\textures\buzzard\opt_buzzard_fin_2.paa"};
         typicalCargo[] = {"OPT_NATO_Pilot"};
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_buzzard_fin.jpg";
     };
 
     //// A-143 Buzzard (AA) ////
@@ -904,16 +906,16 @@ class CfgVehicles
     //// To-199 Neophron (CAS) ////
     class OPT_O_Plane_CAS_02_F : O_Plane_CAS_02_dynamicLoadout_F
     {
-        faction = "OPT_CSAT";
+        faction = "OPT_Sowjet";
         displayName = "To-199 Neophron";
-        weapons[] = {"OPT_Cannon_30mm_Plane_CAS_02_F", "OPT_CMFlareLauncher"};
-        magazines[] = {"OPT_500Rnd_Cannon_30mm_Plane_CAS_02_F","OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        weapons[] = {"OPT_CMFlareLauncher"};
+        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
         fuelCapacity = 150; // 1000 //
-        //#include "\opt_vehicles\bremsfallschirm.hpp"
+        hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_rus_2.paa"};
+        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
 
         class Components : Components
         {
-            //#include "\opt_vehicles\aktivradar.hpp"
 
             class TransportPylonsComponent : TransportPylonsComponent
             {
@@ -921,12 +923,12 @@ class CfgVehicles
                 {
                     class Pylons1 : Pylons1
                     {
-                        attachment = "";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_HE_F";
                     };
 
                     class Pylons2 : Pylons2
                     {
-                        attachment = "";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_HE_F";
                     };
 
                     class Pylons3 : Pylons3
@@ -941,12 +943,12 @@ class CfgVehicles
 
                     class Pylons5 : Pylons5
                     {
-                        attachment = "";
+                        attachment = "OPT_PylonWeapon_25Rnd_20mm_shells";
                     };
 
                     class Pylons6 : Pylons6
                     {
-                        attachment = "";
+                        attachment = "OPT_PylonWeapon_25Rnd_20mm_shells";
                     };
 
                     class Pylons7 : Pylons7
@@ -961,12 +963,87 @@ class CfgVehicles
 
                     class Pylons9 : Pylons9
                     {
-                        attachment = "";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_AP_F";
                     };
 
                     class Pylons10 : Pylons10
                     {
-                        attachment = "";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_AP_F";
+                    };
+                };
+            };
+
+            class SensorsManagerComponent 
+            {
+                class Components 
+                {                   
+                    class PassiveRadarSensorComponent
+                    {
+                        aimDown = 0;
+                        class AirTarget 
+                        {
+                            maxRange = 16000;
+                            minRange = 16000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };
+                        allowsMarking = 0;
+                        angleRangeHorizontal = 360;
+                        angleRangeVertical = 360;
+                        animDirection = "";
+                        color[] = {0.5, 1, 0.5, 0.5};
+                        componentType = "PassiveRadarSensorComponent";
+                        groundNoiseDistanceCoef = -1;
+                        class GroundTarget 
+                        {
+                            maxRange = 16000;
+                            minRange = 16000;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = -1;
+                        };                  
+                        maxGroundNoiseDistance = -1;
+                        maxSpeedThreshold = 0;
+                        maxTrackableATL = 1e+10;
+                        maxTrackableSpeed = 1e+10;
+                        minSpeedThreshold = 0;
+                        minTrackableATL = -1e+10;
+                        minTrackableSpeed = -1e+10;
+                        typeRecognitionDistance = 12000;
+                    };
+                    class VisualSensorComponent
+                    {
+                        aimdown = -0.25;
+                        class AirTarget 
+                        {
+                            maxRange = 2000;
+                            minRange = 500;
+                            objectDistanceLimitCoef = -1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        allowsMarking = 1;
+                        angleRangeHorizontal = 46;
+                        angleRangeVertical = 34;
+                        animDirection = "mainGun";
+                        color[] = {0.5, 1, 0.5, 0.5};
+                        componentType = "VisualSensorComponent";
+                        groundNoiseDistanceCoef = -1;
+                        class GroundTarget 
+                        {
+                            maxRange = 1500;
+                            minRange = 500;
+                            objectDistanceLimitCoef = 1;
+                            viewDistanceLimitCoef = 1;
+                        };
+                        maxFogSeeThrough = 0.94;
+                        maxGroundNoiseDistance = -1;
+                        maxSpeedThreshold = 0;
+                        maxTrackableATL = 1e+10;
+                        maxTrackableSpeed = 70;
+                        minSpeedThreshold = 0;
+                        minTrackableATL = -1e+10;
+                        minTrackableSpeed = -1e+10;
+                        nightRangeCoef = 0;
+                        typeRecognitionDistance = 2000;
                     };
                 };
             };
@@ -977,7 +1054,7 @@ class CfgVehicles
             class _xx_H_PilotHelmetFighter_O
             {
                 name = "H_PilotHelmetFighter_O";
-                count = 1;
+                count = 0;
             };
         };
 
@@ -1004,18 +1081,22 @@ class CfgVehicles
 
         class AnimationSources : AnimationSources
         {
-            class Cannon_30mm_ammorandom
+            class Muzzle_flash
             {
                 source = "ammorandom";
-                weapon = "OPT_Cannon_30mm_Plane_CAS_02_F";
-            };
-
-            class Cannon_30mm_revolving
-            {
-                source = "revolving";
-                weapon = "OPT_Cannon_30mm_Plane_CAS_02_F";
+                weapon = "OPT_Twin_Cannon_20mm";
             };
         };
+    };
+
+    class OPT_B_Plane_CAS_02_F : OPT_O_Plane_CAS_02_F
+    {
+        faction = "OPT_FIN";
+        side = 1;
+        crew = "OPT_NATO_Pilot";
+        hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_fin_2.paa"};
+        typicalCargo[] = {"OPT_NATO_Pilot"};
+        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
     };
 
     class Plane_Fighter_02_Base_F : Plane_Base_F
