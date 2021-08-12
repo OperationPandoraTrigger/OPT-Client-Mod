@@ -104,7 +104,7 @@ class CfgVehicles
         faction = "OPT_Sowjet";
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        magazines[] = {"120Rnd_CMFlareMagazine"};
         fuelCapacity = 330; // 2500 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_2.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_kajman_rus.jpg";
@@ -1484,7 +1484,7 @@ class CfgVehicles
         driverCanEject = 1;
         fuelCapacity = 130; // 500 //
         weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        magazines[] = {"120Rnd_CMFlareMagazine"};
         //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_2.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_Heli_Attack_01_F.jpg";
 
