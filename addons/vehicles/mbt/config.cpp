@@ -702,6 +702,9 @@ class CfgVehicles
         {
             class MainTurret : MainTurret
             {
+                weapons[] = {"LMG_coax","cannon_125mm"};
+                magazines[] = {"2000Rnd_762x51_Belt","12Rnd_125mm_HE","20Rnd_125mm_APFSDS"};
+
                 class Turrets : Turrets
                 {
                     class CommanderOptics : CommanderOptics
@@ -1451,7 +1454,10 @@ class CfgVehicles
         class Turrets : Turrets
         {
             class MainTurret : MainTurret
-            {               
+            {   
+                weapons[] = {"LMG_coax","cannon_120mm"};
+                magazines[] = {"2000Rnd_762x51_Belt","12Rnd_120mm_HE_shells","20Rnd_120mm_APFSDS_shells"};
+
                 class Turrets : Turrets
                 {
                     class CommanderOptics : CommanderOptics
