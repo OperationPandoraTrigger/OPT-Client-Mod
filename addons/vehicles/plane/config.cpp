@@ -65,7 +65,7 @@ class CfgVehicles
         faction = "OPT_AAF";
         displayName = "A-143 Buzzard (CAS)";
         weapons[] = {"OPT_CMFlareLauncher"};
-        magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
+        magazines[] = {"60Rnd_CMFlareMagazine"};
         fuelCapacity = 500; // 1000 //
         driverCanEject = 1;
 
