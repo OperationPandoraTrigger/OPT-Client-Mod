@@ -7237,7 +7237,7 @@ class CfgVehicles
         {
             class _xx_B_FieldPack_ocamo
             {
-                backpack = "OPT_B_AssaultPack_blk_rus";
+                backpack = "OPT_B_AssaultPack_emr";
                 count = 25;
             };
 
