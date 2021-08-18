@@ -1485,7 +1485,7 @@ class CfgVehicles
         fuelCapacity = 130; // 500 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"120Rnd_CMFlareMagazine"};
-        //hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Kajman\opt_kajman_rus_2.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Blackfoot\opt_Blackfoot_fin_1.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_Heli_Attack_01_F.jpg";
 
         class TransportItems
