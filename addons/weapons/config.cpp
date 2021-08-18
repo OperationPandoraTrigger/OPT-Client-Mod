@@ -9102,6 +9102,23 @@ class CfgVehicles
         };
     };
 
+    class OPT_B_Carryall_wz93 : B_Carryall_ghex_F
+    {
+        displayName = "Grosser Rucksack Eng. (WZ93)";
+        maximumLoad = 320;
+        scope = 2;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_wz93.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\großerrucksack_wz93_vorschau.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
     class B_FieldPack_ocamo;
 
     class OPT_B_FieldPack_ocamo_AT : B_FieldPack_ocamo
@@ -9433,6 +9450,22 @@ class CfgVehicles
         maximumLoad = 160;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\opt_angriffsrucksack_rus.paa"};
         picture = "\opt\opt_client\addons\weapons\textures\rucksack\opt_angriffsrucksack_rus_vorschau.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_AssaultPack_blk_wz93 : B_AssaultPack_blk
+    {
+        displayName = "Angriffspack (WZ93)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_wz93.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_wz93_vorschau.paa";
 
         class TransportMagazines
         {
