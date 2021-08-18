@@ -8599,6 +8599,11 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\funk\tfar_mr3000.paa"};
     };
 
+    class OPT_TFAR_mr3000_emr : TFAR_mr3000
+    {
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\funk\opt_mr3000_emr.paa"};
+    };
+
 
     class Weapon_Bag_Base;
 
