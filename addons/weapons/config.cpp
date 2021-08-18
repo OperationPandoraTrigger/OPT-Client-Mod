@@ -5143,7 +5143,7 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         displayName = "Statischer AA Titan-Werfer";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_static_AA_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_aa_fin_2.paa"};
 
         class Turrets : Turrets
@@ -5203,7 +5203,7 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         displayName = "Statischer AA Titan-Werfer";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_static_AA_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_aa_rus_2.paa"};       
 
         class Turrets : Turrets
@@ -5242,7 +5242,7 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         displayName = "Statischer AT Titan-Werfer";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_static_AT_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_at_fin_2.paa"};
 
         class Turrets : Turrets
@@ -5302,7 +5302,7 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         displayName = "Statischer AT Titan-Werfer (CSAT)";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_static_AT_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_at_rus_2.paa"};
 
         class Turrets : Turrets
@@ -5417,7 +5417,7 @@ class CfgVehicles
     class OPT_B_Mortar_01_F : B_Mortar_01_F
     {
         faction = "OPT_FIN";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_Mortar_01_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_mortar_fin_1.paa"};
 
         class assembleInfo : assembleInfo
@@ -5471,7 +5471,7 @@ class CfgVehicles
     class OPT_O_Mortar_01_F : O_Mortar_01_F
     {
         faction = "OPT_Sowjet";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_Mortar_01_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_mortar_rus_1.paa"};
 
         class assembleInfo : assembleInfo
