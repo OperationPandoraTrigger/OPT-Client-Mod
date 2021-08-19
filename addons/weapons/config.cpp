@@ -4674,6 +4674,7 @@ class CfgVehicles
     {
         transportFuel = 300;
         disableInventory = 1;
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_FlexibleTank_01_sand_F.jpg";
     };
 
     class FlexibleTank_01_forest_F;
@@ -4682,6 +4683,7 @@ class CfgVehicles
     {
         transportFuel = 300;
         disableInventory = 1;
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_FlexibleTank_01_forest_F.jpg";
     };
 
     class HMG_01_base_F;
@@ -6093,7 +6095,7 @@ class CfgVehicles
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_b_1.paa"};
-        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sniper_b_preview.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_Box_NATO_WpsSpecial_F.jpg";
 
         class TransportWeapons
         {
@@ -7379,7 +7381,7 @@ class CfgVehicles
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_o_1.paa"};
-        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sniper_o_preview.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_Box_East_WpsSpecial_F.jpg";
 
         class TransportWeapons
         {
