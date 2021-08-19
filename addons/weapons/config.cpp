@@ -4651,6 +4651,7 @@ class CfgVehicles
     {
         transportAmmo = 30000;
         disableInventory = 1;
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_Slingload_01_Ammo_F.jpg";
     };
 
     class B_Slingload_01_Fuel_F;
@@ -4659,6 +4660,7 @@ class CfgVehicles
     {
         transportFuel = 3000;
         disableInventory = 1;
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_Slingload_01_Fuel_F.jpg";
     };
 
     class B_Slingload_01_Medevac_F;
