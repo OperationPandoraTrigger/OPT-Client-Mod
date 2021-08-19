@@ -4674,6 +4674,7 @@ class CfgVehicles
     {
         transportFuel = 300;
         disableInventory = 1;
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_FlexibleTank_01_sand_F.jpg";
     };
 
     class FlexibleTank_01_forest_F;
@@ -4682,6 +4683,7 @@ class CfgVehicles
     {
         transportFuel = 300;
         disableInventory = 1;
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_FlexibleTank_01_forest_F.jpg";
     };
 
     class HMG_01_base_F;
@@ -5143,7 +5145,7 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         displayName = "Statischer AA Titan-Werfer";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_static_AA_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_aa_fin_2.paa"};
 
         class Turrets : Turrets
@@ -5203,7 +5205,7 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         displayName = "Statischer AA Titan-Werfer";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_static_AA_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_aa_rus_2.paa"};       
 
         class Turrets : Turrets
@@ -5242,7 +5244,7 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         displayName = "Statischer AT Titan-Werfer";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_static_AT_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_at_fin_2.paa"};
 
         class Turrets : Turrets
@@ -5302,7 +5304,7 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         displayName = "Statischer AT Titan-Werfer (CSAT)";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_static_AT_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_at_rus_2.paa"};
 
         class Turrets : Turrets
@@ -5417,7 +5419,7 @@ class CfgVehicles
     class OPT_B_Mortar_01_F : B_Mortar_01_F
     {
         faction = "OPT_FIN";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_Mortar_01_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_mortar_fin_1.paa"};
 
         class assembleInfo : assembleInfo
@@ -5471,7 +5473,7 @@ class CfgVehicles
     class OPT_O_Mortar_01_F : O_Mortar_01_F
     {
         faction = "OPT_Sowjet";
-        //editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_quadbike_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_Mortar_01_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_mortar_rus_1.paa"};
 
         class assembleInfo : assembleInfo
@@ -6093,7 +6095,7 @@ class CfgVehicles
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_b_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_b_1.paa"};
-        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sniper_b_preview.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_Box_NATO_WpsSpecial_F.jpg";
 
         class TransportWeapons
         {
@@ -7379,7 +7381,7 @@ class CfgVehicles
         maximumLoad = 15000;
         supplyRadius = 8;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\ammobox\plasticbox_o_0.paa","\opt\opt_client\addons\weapons\textures\ammobox\sniper_o_1.paa"};
-        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\sniper_o_preview.jpg";
+        editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_Box_East_WpsSpecial_F.jpg";
 
         class TransportWeapons
         {
@@ -8599,6 +8601,11 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\funk\tfar_mr3000.paa"};
     };
 
+    class OPT_TFAR_mr3000_emr : TFAR_mr3000
+    {
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\funk\opt_mr3000_emr.paa"};
+    };
+
 
     class Weapon_Bag_Base;
 
@@ -9097,6 +9104,23 @@ class CfgVehicles
         };
     };
 
+    class OPT_B_Carryall_wz93 : B_Carryall_ghex_F
+    {
+        displayName = "Grosser Rucksack Eng. (WZ93)";
+        maximumLoad = 320;
+        scope = 2;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\großerucksack_wz93.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\großerrucksack_wz93_vorschau.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
     class B_FieldPack_ocamo;
 
     class OPT_B_FieldPack_ocamo_AT : B_FieldPack_ocamo
@@ -9428,6 +9452,22 @@ class CfgVehicles
         maximumLoad = 160;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\opt_angriffsrucksack_rus.paa"};
         picture = "\opt\opt_client\addons\weapons\textures\rucksack\opt_angriffsrucksack_rus_vorschau.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_AssaultPack_blk_wz93 : B_AssaultPack_blk
+    {
+        displayName = "Angriffspack (WZ93)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_wz93.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\angriffsrucksack_wz93_vorschau.paa";
 
         class TransportMagazines
         {

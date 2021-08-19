@@ -193,7 +193,7 @@ class CfgVehicles
             class _xx_H_PilotHelmetFighter_O
             {
                 name = "H_PilotHelmetFighter_O";
-                count = 1;
+                count = 0;
             };
         };
 
