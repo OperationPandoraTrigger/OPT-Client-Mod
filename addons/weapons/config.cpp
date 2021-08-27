@@ -934,6 +934,13 @@ class CfgMagazines
         displayName = "100Rnd 6.5x39 mm";
         displayNameShort = "100Rnd 6.5x39 mm";
     };
+
+    class 1Rnd_HE_Grenade_shell;
+
+    class OPT_1Rnd_HE_Grenade_shell: 1Rnd_HE_Grenade_shell
+    {
+        mass = 15;
+    };
 };
 
 class CfgWeapons
@@ -2998,6 +3005,8 @@ class CfgWeapons
 
     class arifle_SPAR_01_GL_blk_F : arifle_SPAR_01_GL_base_F
     {
+        class EGLM;
+
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             class CowsSlot;
@@ -3009,6 +3018,11 @@ class CfgWeapons
         _generalMacro = "OPT_arifle_SPAR_01_GL_blk_F";
         displayName = "SPAR-16 GL 5,56 mm (Schwarz)";
         baseWeapon = "OPT_arifle_SPAR_01_GL_blk_F";
+
+        class EGLM : EGLM
+        {
+            magazines[] += {"OPT_1Rnd_HE_Grenade_shell"};
+        };    
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -3299,6 +3313,8 @@ class CfgWeapons
 
     class arifle_CTAR_GL_blk_F : arifle_CTAR_GL_base_F
     {
+        class EGLM;
+
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             class CowsSlot;
@@ -3310,6 +3326,11 @@ class CfgWeapons
         _generalMacro = "OPT_arifle_CTAR_GL_blk_F";
         displayName = "CAR-95 GL 5,8 mm (Schwarz)";
         baseWeapon = "OPT_arifle_CTAR_GL_blk_F";
+
+        class EGLM : EGLM
+        {
+            magazines[] += {"OPT_1Rnd_HE_Grenade_shell"};
+        };
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
@@ -5980,7 +6001,7 @@ class CfgVehicles
             class _xx_16Rnd_9x21_Mag
             {
                 magazine = "16Rnd_9x21_Mag";
-                count = 10;
+                count = 80;
             };
 
             class _xx_30Rnd_65x39_caseless_black_mag
@@ -6421,7 +6442,7 @@ class CfgVehicles
             class _xx_Titan_AA
             {
                 magazine = "Titan_AA";
-                count = 10;
+                count = 5;
             };
         };
     };
@@ -6794,9 +6815,9 @@ class CfgVehicles
                 count = 0;
             };
 
-            class _xx_1Rnd_HE_Grenade_shell
+            class _xx_OPT_1Rnd_HE_Grenade_shell
             {
-                magazine = "1Rnd_HE_Grenade_shell";
+                magazine = "OPT_1Rnd_HE_Grenade_shell";
                 count = 20;
             };
 
@@ -7817,7 +7838,7 @@ class CfgVehicles
             class _xx_Titan_AA
             {
                 magazine = "Titan_AA";
-                count = 10;
+                count = 5;
             };
         };
     };
@@ -8103,9 +8124,9 @@ class CfgVehicles
                 count = 0;
             };
 
-            class _xx_1Rnd_HE_Grenade_shell
+            class _xx_OPT_1Rnd_HE_Grenade_shell
             {
-                magazine = "1Rnd_HE_Grenade_shell";
+                magazine = "OPT_1Rnd_HE_Grenade_shell";
                 count = 20;
             };
 
@@ -8397,9 +8418,9 @@ class CfgVehicles
                 count = 0;
             };
 
-            class _xx_1Rnd_HE_Grenade_shell
+            class _xx_OPT_1Rnd_HE_Grenade_shell
             {
-                magazine = "1Rnd_HE_Grenade_shell";
+                magazine = "OPT_1Rnd_HE_Grenade_shell";
                 count = 20;
             };
 
