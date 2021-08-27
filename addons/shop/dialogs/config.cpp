@@ -747,10 +747,10 @@ class Dialogshopkaufen
             idc = 20001;    // Kauf-Flagge
             colorText[] = COLOR_TEXT;
             colorBackground[] = COLOR_BACK;
-            x = 0.126;
-            y = 0.045;
-            w = 0.248;
-            h = 0.2977;
+            x = 0.1;
+            y = 0.1;
+            w = 0.2;
+            h = 0.2;
             text = "";
             default = true;
         };
@@ -1760,10 +1760,10 @@ class DialogVerkaufs
         {
             idc = 23003;    // Verkaufs-Flagge
             text = "";
-            x = 1.5 * GUI_GRID_W + GUI_GRID_X;
-            y = 0.1 * GUI_GRID_H + GUI_GRID_Y;
-            w = 8.06 * GUI_GRID_W;
-            h = 6.04 * GUI_GRID_H;
+            x = 1 * GUI_GRID_W + GUI_GRID_X;
+            y = 1 * GUI_GRID_H + GUI_GRID_Y;
+            w = 6 * GUI_GRID_W;
+            h = 3.5 * GUI_GRID_H;
         };
         class RscFrame_Vehicle: RscFrame
         {
