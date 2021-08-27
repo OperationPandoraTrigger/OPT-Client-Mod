@@ -6001,7 +6001,7 @@ class CfgVehicles
             class _xx_16Rnd_9x21_Mag
             {
                 magazine = "16Rnd_9x21_Mag";
-                count = 10;
+                count = 80;
             };
 
             class _xx_30Rnd_65x39_caseless_black_mag
