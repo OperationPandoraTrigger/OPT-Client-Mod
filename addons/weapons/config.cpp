@@ -6421,7 +6421,7 @@ class CfgVehicles
             class _xx_Titan_AA
             {
                 magazine = "Titan_AA";
-                count = 10;
+                count = 5;
             };
         };
     };
@@ -7817,7 +7817,7 @@ class CfgVehicles
             class _xx_Titan_AA
             {
                 magazine = "Titan_AA";
-                count = 10;
+                count = 5;
             };
         };
     };
