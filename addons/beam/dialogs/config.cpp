@@ -29,8 +29,8 @@ class RscShortcutButton;
 
 class DialogBeam
 {
-    idd = 444001;
-    onload = "[] spawn OPT_BEAM_fnc_onLoadDialog;";
+    idd = 10000;
+    onload = "";
     movingEnable = true;
     controlsBackground[] = {BACKGROUND3};
 
@@ -49,6 +49,7 @@ class DialogBeam
 
     class Name0 : RSCText
     {
+        idc = 10001;
         style = ST_CENTER;
         sizeEx = 0.06;
         colorText[] = {1.0,1.0,1.0,1};
@@ -56,7 +57,7 @@ class DialogBeam
         y = 0.00;
         w = 0.5;
         h = 0.15;
-        text = "Ortswahl";
+        text = "Beampoints";
         default = true;
     };
 
@@ -71,7 +72,7 @@ class DialogBeam
         y = 0.12;
         w = 0.40;
         h = 0.8;
-        onLBSelChanged = "[lbCurSel 10002] spawn OPT_BEAM_fnc_beamMapmove;";
+        onLBSelChanged = "";
         default = true;
     };
 
@@ -85,7 +86,7 @@ class DialogBeam
         w = 0.1;
         h = 0.05;
         text = "OK";
-        action = "[lbCurSel 10002] spawn OPT_BEAM_fnc_beam2;";
+        action = "";
         default = true;
     };
 
@@ -98,7 +99,7 @@ class DialogBeam
         y = 0.93;
         w = 0.1;
         h = 0.05;
-        text = "Abbrechen";
+        text = "Exit";
         action = "closeDialog 0";
         default = true;
     };
