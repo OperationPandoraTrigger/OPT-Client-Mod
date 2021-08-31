@@ -95,12 +95,12 @@ class RscProgress_OPT
 
 class opt_DefaultMenu
 { 
-    idd = 5000;
+    idd = 6000;
     objects[] = {};
 
     class BackgroundBar: IGUIBack 
     {
-        idc = 2200;
+        idc = 6001;
         x = safezoneX;
         y = safezoneY + safezoneH - 0.025 * safezoneH;
         w = safezoneW;
@@ -110,7 +110,7 @@ class opt_DefaultMenu
     // 1. Feld
     class PlayersDisplay : RSCText
     {
-        idc = 5101;
+        idc = 6101;
         x = safezoneX + 0/6 * safezoneW;
         y = safezoneY + safezoneH - 0.025 * safezoneH;
         w = 1/6 * 0.9 * safezoneW;
@@ -124,7 +124,7 @@ class opt_DefaultMenu
     // 2. Feld
     class BudgetDisplay : RSCText 
     {
-        idc = 5103;
+        idc = 6103;
         x = safezoneX + 2/6 * 0.9 * safezoneW;
         y = safezoneY + safezoneH - 0.025 * safezoneH;
         w = 1/6 * 0.9 * safezoneW;
@@ -138,7 +138,7 @@ class opt_DefaultMenu
     // 3. Feld
     class ScoreDisplay : RSCText 
     {
-        idc = 5104;
+        idc = 6104;
         x = safezoneX + 0.1 * safezoneW +  3/6 * 0.9 * safezoneW;
         y = safezoneY + safezoneH - 0.025 * safezoneH;
         w = 1/6 * 0.9 * safezoneW;
@@ -152,7 +152,7 @@ class opt_DefaultMenu
     // 4. Feld
     class TimerDisplay : RSCText 
     {
-        idc = 5105;
+        idc = 6105;
         x = safezoneX + 0.1 * safezoneW +  4/6 * 0.9 * safezoneW;
         y = safezoneY + safezoneH - 0.025 * safezoneH;
         w = 1/6 * 0.9 * safezoneW;
@@ -175,7 +175,7 @@ class opt_DefaultMenu
     {
         duration = 15000;
         name = "";
-        idd = 4999;            
+        idd = 6200;            
         onLoad = "uiNamespace setVariable ['opt_hud_anzeige', _this select 0]";    
         movingEnable = false;
         moving = false;
