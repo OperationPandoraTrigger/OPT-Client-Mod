@@ -15,6 +15,10 @@ class CfgPatches
     };
 };
 
+//ATOC Fix 
+//Verhindern das abschalten der Blätter und Gras darstellung in Arma
+#include "CfgVideoOptions.hpp"
+
 class CfgFactionClasses
 {
     class BLU_F;
