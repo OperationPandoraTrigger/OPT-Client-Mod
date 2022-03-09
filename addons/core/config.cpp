@@ -17,7 +17,8 @@ class CfgPatches
 
 //ATOC Fix 
 //Verhindern das abschalten der Blätter und Gras darstellung in Arma
-#include "CfgVideoOptions.hpp"
+// #include "CfgVideoOptions.hpp"
+// Wieder deaktiviert, da AMD ihre Treiber inzwischen gefixt haben.
 
 class CfgFactionClasses
 {
