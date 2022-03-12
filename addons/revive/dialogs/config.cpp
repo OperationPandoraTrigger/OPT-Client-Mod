@@ -140,7 +140,7 @@ class opt_revive_blackscreen
                 shadow = 1;
                 x = 0.35 * safezoneW + safezoneX; y= 0.25 * safezoneH + safezoneY;
                 w = 0.4 * safezoneW; h = 0.07 * safezoneH;
-                text = "Sie sind verwundet.";
+                text = "";
             };
         };    
 
@@ -174,7 +174,7 @@ class opt_revive_blackscreen
             y= 0.65 * safezoneH + safezoneY;
             w = 0.2 * safezoneW; 
             h = 0.025 * safezoneH;
-            text = "Nächster Sani";
+            text = "";
         };
 
         class opt_revive_MedicNearLabel_Meter : RscText  
