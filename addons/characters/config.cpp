@@ -1498,7 +1498,7 @@ class CfgVehicles
         backpack = "TFAR_rt1523g_big_bwmod";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-        uniformClass = "opt_u_blufor";	
+        uniformClass = "opt_u_blufor";
     };
 
     class OPT_NATO_Pilot_jet : B_Helipilot_F
@@ -1570,7 +1570,7 @@ class CfgVehicles
         backpack = "OPT_B_AssaultPack_VSR98Worm";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-        uniformClass = "opt_u_blufor";	
+        uniformClass = "opt_u_blufor";
     };
 
     class B_CTRG_soldier_GL_LAT_F : B_Soldier_base_F
@@ -1902,13 +1902,13 @@ class CfgVehicles
         uniformClass = "opt_u_opfor";
         // outfit from B_Soldier_base_F
         weapons[] = {"arifle_Katiba_F", "hgun_Rook40_F", "Throw", "Put"};
-        respawnWeapons[] = {"arifle_Katiba_ACO_pointer_F", "hgun_Rook40_F", "Throw", "Put"};		
+        respawnWeapons[] = {"arifle_Katiba_ACO_pointer_F", "hgun_Rook40_F", "Throw", "Put"};	
         Items[] = {"FirstAidKit"};
         RespawnItems[] = {"FirstAidKit"};
         magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
         respawnMagazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
         linkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
-        respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};		
+        respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
     };
     
     //////////////////////////////////////
