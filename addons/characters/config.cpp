@@ -1372,6 +1372,7 @@ class cfgWeapons
 
     //// Uniformen //////
 
+
     class UniformItem;
     class Uniform_Base;
     class ItemCore;
