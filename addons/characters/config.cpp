@@ -1909,6 +1909,7 @@ class CfgVehicles
         linkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
         respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};		
     };
+    
     //////////////////////////////////////
 
     class O_helipilot_F : O_Soldier_02_F
