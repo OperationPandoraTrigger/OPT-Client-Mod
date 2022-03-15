@@ -3162,6 +3162,126 @@ class CfgWeapons
         };
     };
 
+    class Tavor_base_F : Rifle_Base_F
+    {
+        magazines[] = {"30Rnd_556x45_Stanag"};
+        class WeaponSlotsInfo;
+    };
+
+    class arifle_TRG21_F : Tavor_base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_TRG21_F : arifle_TRG21_F
+    {
+        displayName = "TRG-21 5.56 mm";
+        _generalMacro = "OPT_arifle_TRG21_F";
+        baseWeapon = "OPT_arifle_TRG21_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class OPT_arifle_TRG21_ERCO_Pointer_F : OPT_arifle_TRG21_F
+    {
+        _generalMacro = "OPT_arifle_TRG21_ERCO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
+    class arifle_TRG21_GL_F : arifle_TRG21_F
+    {
+        class EGLM;
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_TRG21_GL_F : arifle_TRG21_GL_F
+    {
+        _generalMacro = "OPT_arifle_TRG21_GL_F";
+        displayName = "TRG-21 EGLM 5.56 mm";
+        baseWeapon = "OPT_arifle_TRG21_GL_F";
+
+        class EGLM : EGLM
+        {
+            magazines[] += {"OPT_1Rnd_HE_Grenade_shell"};
+        };    
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class OPT_arifle_TRG21_GL_ACO_Pointer_F : OPT_arifle_TRG21_GL_F
+    {
+        _generalMacro = "OPT_arifle_TRG21_GL_ACO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_aco";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
+    class OPT_arifle_TRG21_GL_ERCO_Pointer_F : OPT_arifle_TRG21_GL_F
+    {
+        _generalMacro = "OPT_arifle_TRG21_GL_ERCO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
 
     class arifle_CTAR_base_F : Rifle_Base_F
     {
