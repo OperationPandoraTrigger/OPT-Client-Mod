@@ -1890,7 +1890,7 @@ class CfgVehicles
         class HitLegs;
     };
 
-    //// Basisclasse für uniform /////
+    //// Basisclasse für uniform //////////
     class opt_men_opfor: O_Soldier_02_F
     {
         scope = 2;
