@@ -1902,7 +1902,7 @@ class CfgVehicles
         uniformClass = "opt_u_opfor";
         // outfit from B_Soldier_base_F
         weapons[] = {"arifle_Katiba_F", "hgun_Rook40_F", "Throw", "Put"};
-        respawnWeapons[] = {"arifle_Katiba_ACO_pointer_F", "hgun_Rook40_F", "Throw", "Put"};	
+        respawnWeapons[] = {"arifle_Katiba_ACO_pointer_F", "hgun_Rook40_F", "Throw", "Put"};
         Items[] = {"FirstAidKit"};
         RespawnItems[] = {"FirstAidKit"};
         magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
