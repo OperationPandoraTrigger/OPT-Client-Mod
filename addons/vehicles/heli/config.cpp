@@ -117,12 +117,12 @@ class CfgVehicles
                 {
                     class PylonLeft1 : PylonLeft1
                     {
-                        attachment = "OPT_PylonMissile_1Rnd_missiles_titan";
+                        attachment = "OPT_PylonRack_6Rnd_PG_missiles";
                     };
 
                     class PylonLeft2
                     {
-                        attachment = "OPT_PylonRack_12Rnd_missiles";
+                        attachment = "OPT_PylonRack_6Rnd_missiles";
                         hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON", "DAR", "DAGR"};
                         priority = 4;
                         //turret[] = {0};
@@ -131,12 +131,12 @@ class CfgVehicles
 
                     class PylonRight1 : PylonRight1
                     {
-                        attachment = "OPT_PylonMissile_1Rnd_missiles_titan";
+                        attachment = "OPT_PylonRack_6Rnd_PG_missiles";
                     };
 
                     class PylonRight2
                     {
-                        attachment = "";
+                        attachment = "OPT_PylonRack_6Rnd_missiles";
                         hardpoints[] = {"O_MISSILE_PYLON", "O_BOMB_PYLON_HELI", "UNI_SCALPEL", "20MM_TWIN_CANNON", "DAR", "DAGR"};
                         mirroredMissilePos = 2;
                         priority = 4;
@@ -248,8 +248,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"HMG_127"};
-                magazines[] = {"200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow"};
+                weapons[] = {"OPT_gatling_20mm"};
+                magazines[] = {"OPT_100Rnd_20mm_shells"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -282,13 +282,13 @@ class CfgVehicles
             class Muzzle_flash
             {
                 source = "ammorandom";
-                weapon = "HMG_127";
+                weapon = "OPT_gatling_20mm";
             };
 
             class Gatling
             {
                 source = "revolving";
-                weapon = "HMG_127";
+                weapon = "OPT_gatling_20mm";
             };
         };
     };
@@ -1526,7 +1526,7 @@ class CfgVehicles
                 {
                     class PylonLeft1
                     {
-                        attachment = "OPT_PylonMissile_1Rnd_missiles_titan";
+                        attachment = "OPT_PylonRack_6Rnd_PG_missiles";
                         bay = 1;
                         hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "DAR", "DAGR"};
                         priority = 5;
@@ -1546,7 +1546,7 @@ class CfgVehicles
 
                     class PylonLeft3
                     {
-                        attachment = "OPT_PylonRack_12Rnd_missiles";
+                        attachment = "OPT_PylonRack_6Rnd_missiles";
                         bay = 1;
                         hardpoints[] = {"SCALPEL_1RND", "B_ASRAAM", "DAR", "DAGR"};
                         priority = 3;
@@ -1556,7 +1556,7 @@ class CfgVehicles
 
                     class PylonRight1 : PylonLeft1
                     {
-                        attachment = "OPT_PylonMissile_1Rnd_missiles_titan";
+                        attachment = "OPT_PylonRack_6Rnd_PG_missiles";
                         mirroredMissilePos = 1;
                         UIposition[] = {0.59, 0.4};
                     };
@@ -1569,7 +1569,7 @@ class CfgVehicles
 
                     class PylonRight3 : PylonLeft3
                     {
-                        attachment = "";
+                        attachment = "OPT_PylonRack_6Rnd_missiles";
                         mirroredMissilePos = 3;
                         UIposition[] = {0.55, 0.3};
                     };
@@ -1657,8 +1657,8 @@ class CfgVehicles
             class MainTurret : MainTurret
             {
                 canEject = 1;
-                weapons[] = {"HMG_127"};
-                magazines[] = {"200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow","200Rnd_127x99_mag_Tracer_Yellow"};
+                weapons[] = {"OPT_gatling_20mm"};
+                magazines[] = {"OPT_100Rnd_20mm_shells"};
 
                 class OpticsIn : OpticsIn
                 {
@@ -1684,7 +1684,7 @@ class CfgVehicles
         {
             class Gatling : Gatling
             {
-                weapon = "HMG_127";
+                weapon = "OPT_gatling_20mm";
             };
 
             class Missiles : Missiles
@@ -1694,7 +1694,7 @@ class CfgVehicles
 
             class Muzzle_flash : Muzzle_flash
             {
-                weapon = "HMG_127";
+                weapon = "OPT_gatling_20mm";
             };
         };
 
