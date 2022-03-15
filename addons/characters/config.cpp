@@ -331,19 +331,19 @@ class cfgWeapons
 
     class H_HelmetB;
 
-	class opt_h_blufor: H_HelmetB
-	{
-		displayName = "[OPT] Bluefor";
-		hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\helm_blufor.paa" };
-	};
+    class opt_h_blufor: H_HelmetB
+    {
+        displayName = "[OPT] Bluefor";
+        hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\helm_blufor.paa" };
+    };
 
     class H_HelmetIA;
 
-	class opt_h_opfor: H_HelmetIA
-	{
-		displayName = "[OPT] OPFOR";
-		hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\helm_opfor.paa" };
-	};
+    class opt_h_opfor: H_HelmetIA
+    {
+        displayName = "[OPT] OPFOR";
+        hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\helm_opfor.paa" };
+    };
 
     /////////////////// Westen ///////////////////
 
@@ -1356,59 +1356,59 @@ class cfgWeapons
     };
 
     class opt_v_blufor: V_PlateCarrier1_blk
-	{
-		displayName = "[OPT] Bluefor";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\weste_blufor.paa" };
-	};
+    {
+        displayName = "[OPT] Bluefor";
+        hiddenSelections[] = {"camo"};
+        hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\weste_blufor.paa" };
+    };
 
     class V_PlateCarrierIA1_dgtl;
 
     class opt_v_opfor: V_PlateCarrierIA1_dgtl
-	{
-		displayName = "[OPT] OPFOR";
-		hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\weste_opfor.paa" };
-	};
+    {
+        displayName = "[OPT] OPFOR";
+        hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\weste_opfor.paa" };
+    };
 
     //// Uniformen //////
 
     class UniformItem;
-	class Uniform_Base;
-	class ItemCore;
+    class Uniform_Base;
+    class ItemCore;
 
-	class opt_u_blufor: Uniform_Base 
-	{
-		author = "OPT";
-		scope = 2;
-		displayName = "[OPT] Bluefor";
-		model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
-		hiddenSelections[] = { "camo1" };
-		hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\uniform_blufor.paa" };
-
-		class ItemInfo: UniformItem 
-        {
-			uniformClass = "opt_men_blufor";
-			containerClass = "Supply30";
-			mass = 30;
-		};
-	};
-
-	class opt_u_opfor: opt_u_blufor
-	{
+    class opt_u_blufor: Uniform_Base 
+    {
         author = "OPT";
-		scope = 2;
-		displayName = "[OPT] OPFOR";
+        scope = 2;
+        displayName = "[OPT] Bluefor";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
-		hiddenSelections[] = { "camo1" };
-		hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\uniform_opfor.paa" };
+        hiddenSelections[] = { "camo1" };
+        hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\uniform_blufor.paa" };
 
-		class ItemInfo: UniformItem 
+        class ItemInfo: UniformItem 
         {
-			uniformClass = "opt_men_opfor";
-			containerClass = "Supply30";
-			mass = 30;
-		};
-	};
+            uniformClass = "opt_men_blufor";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
+
+    class opt_u_opfor: opt_u_blufor
+    {
+        author = "OPT";
+        scope = 2;
+        displayName = "[OPT] OPFOR";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
+        hiddenSelections[] = { "camo1" };
+        hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\uniform_opfor.paa" };
+
+        class ItemInfo: UniformItem 
+        {
+            uniformClass = "opt_men_opfor";
+            containerClass = "Supply30";
+            mass = 30;
+        };
+    };
 };
 
 class CfgVehicles
@@ -1462,24 +1462,24 @@ class CfgVehicles
     };
 
     //// Basisclasse für uniform /////
-	class opt_men_blufor: B_Soldier_base_F
-	{
-		scope = 2;
-		side = 1;
-		faction = "OPT_FIN";
+    class opt_men_blufor: B_Soldier_base_F
+    {
+        scope = 2;
+        side = 1;
+        faction = "OPT_FIN";
         displayName = "Basisclass uniform";
-		hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";		
-		weapons[] = {"arifle_MXC_Black_F", "hgun_P07_F", "Throw", "Put"};
-		respawnWeapons[] = {"arifle_MX_ACO_pointer_F", "hgun_P07_F", "Throw", "Put"};
-		magazines[] = {"30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green", "HandGrenade", "HandGrenade"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green", "HandGrenade", "HandGrenade"};
-		Items[] = {"FirstAidKit"};
-		RespawnItems[] = {"FirstAidKit"};
-		linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
-		respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};		
-	};
+        hiddenSelections[] = {"camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";		
+        weapons[] = {"arifle_MXC_Black_F", "hgun_P07_F", "Throw", "Put"};
+        respawnWeapons[] = {"arifle_MX_ACO_pointer_F", "hgun_P07_F", "Throw", "Put"};
+        magazines[] = {"30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green", "HandGrenade", "HandGrenade"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "SmokeShell", "SmokeShellGreen", "Chemlight_green", "Chemlight_green", "HandGrenade", "HandGrenade"};
+        Items[] = {"FirstAidKit"};
+        RespawnItems[] = {"FirstAidKit"};
+        linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+        respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};		
+    };
     /////////////////////////////
 
     class OPT_NATO_Pilot : B_Helipilot_F
@@ -1496,8 +1496,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "H_PilotHelmetHeli_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
         backpack = "TFAR_rt1523g_big_bwmod";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class OPT_NATO_Pilot_jet : B_Helipilot_F
@@ -1514,8 +1514,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "H_PilotHelmetHeli_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
         backpack = "TFAR_rt1523g_big_bwmod";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class B_Soldier_sniper_base_F : B_Soldier_base_F
@@ -1568,8 +1568,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor","opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "OPT_B_AssaultPack_VSR98Worm";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class B_CTRG_soldier_GL_LAT_F : B_Soldier_base_F
@@ -1605,8 +1605,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "OPT_B_AssaultPack_VSR98Worm";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class B_Soldier_03_f : B_Soldier_base_F
@@ -1646,8 +1646,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "H_HelmetCrew_B", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "TFAR_rt1523g_big_bwmod";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class OPT_NATO_Offizier : B_CTRG_soldier_AR_A_F
@@ -1667,8 +1667,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "TFAR_rt1523g_big_bwmod";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class OPT_NATO_Truppfuehrer : OPT_NATO_Soldat
@@ -1686,8 +1686,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "TFAR_rt1523g_big_bwmod";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class OPT_NATO_Sanitaeter : B_CTRG_soldier_AR_A_F
@@ -1708,8 +1708,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "OPT_B_AssaultPack_VSR98Worm";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class OPT_NATO_Sprengmeister : B_CTRG_soldier_AR_A_F
@@ -1731,8 +1731,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "OPT_B_Carryall_VSR98Worm";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class OPT_NATO_Ingenieur : B_CTRG_soldier_AR_A_F
@@ -1754,8 +1754,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "OPT_B_AssaultPack_VSR98Worm";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class OPT_NATO_Operator : B_CTRG_soldier_AR_A_F
@@ -1775,8 +1775,8 @@ class CfgVehicles
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         backpack = "TFAR_rt1523g_big_bwmod";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
-		uniformClass = "opt_u_blufor";	
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";	
     };
 
     class OPT_NATO_Grenadier : OPT_NATO_Soldat
@@ -1891,24 +1891,24 @@ class CfgVehicles
     };
 
     //// Basisclasse für uniform /////
-	class opt_men_opfor: O_Soldier_02_F
-	{
-		scope = 2;
-		faction = "OPT_Sowjet";
+    class opt_men_opfor: O_Soldier_02_F
+    {
+        scope = 2;
+        faction = "OPT_Sowjet";
         displayName = "Basisclass uniform";
-		hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
-		// outfit from B_Soldier_base_F
-		weapons[] = {"arifle_Katiba_F", "hgun_Rook40_F", "Throw", "Put"};
-		respawnWeapons[] = {"arifle_Katiba_ACO_pointer_F", "hgun_Rook40_F", "Throw", "Put"};		
-		Items[] = {"FirstAidKit"};
-		RespawnItems[] = {"FirstAidKit"};
-		magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-		respawnMagazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
-		linkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
-		respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};		
-	};
+        hiddenSelections[] = {"camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
+        // outfit from B_Soldier_base_F
+        weapons[] = {"arifle_Katiba_F", "hgun_Rook40_F", "Throw", "Put"};
+        respawnWeapons[] = {"arifle_Katiba_ACO_pointer_F", "hgun_Rook40_F", "Throw", "Put"};		
+        Items[] = {"FirstAidKit"};
+        RespawnItems[] = {"FirstAidKit"};
+        magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "16Rnd_9x21_Mag", "HandGrenade", "HandGrenade", "SmokeShell", "SmokeShellRed", "Chemlight_red", "Chemlight_red"};
+        linkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+        respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};		
+    };
     //////////////////////////////////////
 
     class O_helipilot_F : O_Soldier_02_F
@@ -1964,8 +1964,8 @@ class CfgVehicles
         respawnItems[] = {};
         backpack = "OPT_TFAR_mr3000_emr";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
     };
 
     class O_Soldier_SL_F : O_Soldier_base_F
@@ -1986,8 +1986,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         backpack = "OPT_TFAR_mr3000_emr";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
     };
 
     class O_Soldier_F : O_Soldier_base_F
@@ -2008,8 +2008,8 @@ class CfgVehicles
         respawnItems[] = {};
         backpack = "OPT_B_AssaultPack_emr";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
     };
     
     class OPT_CSAT_Grenadier : OPT_CSAT_Soldat
@@ -2126,8 +2126,8 @@ class CfgVehicles
         linkedItems[] = {"opt_v_opfor","opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"opt_v_opfor","opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
         backpack = "OPT_B_AssaultPack_emr";
     };
 
@@ -2150,8 +2150,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         backpack = "OPT_B_AssaultPack_emr";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
     };
 
     class OPT_CSAT_Sprengmeister : O_engineer_F
@@ -2169,8 +2169,8 @@ class CfgVehicles
         respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         backpack = "OPT_B_Carryall_emr";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
     };
 
     class O_medic_F : O_Soldier_base_F
@@ -2191,8 +2191,8 @@ class CfgVehicles
         respawnItems[] = {"Medikit"};
         backpack = "OPT_B_AssaultPack_emr";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
     };
 
     class O_crew_F : O_Soldier_base_F
@@ -2213,7 +2213,7 @@ class CfgVehicles
         respawnItems[] = {};
         backpack = "OPT_TFAR_mr3000_emr";
         hiddenSelections[] = {"camo", "insignia"};
-		hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
-		uniformClass = "opt_u_opfor";
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
     };
 };
