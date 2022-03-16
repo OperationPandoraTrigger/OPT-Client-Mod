@@ -477,4 +477,121 @@ class CfgVehicles
             };
         };
     };
+
+    class rksla3_lcvpmk5_base;
+
+    class rksla3_lcvpmk5_1 : rksla3_lcvpmk5_base
+    {
+        class RenderTargets;
+        class Monitor_1;
+        class CameraView1;
+        class Monitor_4;
+        class Gunner_TV;
+        class Turrets;
+        class FrontTurret;
+        class RearTurret;
+        class MainTurret;
+        class ViewOptics;
+        class ViewGunner;
+        class CmdrTurret;
+        class NewTurret;
+    };
+
+    class rksla3_lcvpmk5_1_opfor_camo : rksla3_lcvpmk5_1
+    {
+    };
+
+    //// Landungsboot LCVP MK5  ////
+    class OPT_rksla3_lcvpmk5_viv : rksla3_lcvpmk5_1
+    {
+        faction = "OPT_FIN";
+        maxSpeed = 96;
+        enginePower = 1500; //800
+        idleRpm = 500; // 550
+        redRpm = 2000; // 2200
+        transportSoldier = 10; // 2 //
+      
+        class TransportItems
+        {
+        };
+
+        class RenderTargets : RenderTargets
+        {
+            class Monitor_1 : Monitor_1
+            {
+                renderTarget = "rendertarget0";
+
+                class CameraView1 : CameraView1
+                {
+                    renderVisionMode = 1;
+                };
+            };
+
+            class Monitor_4 : Monitor_4
+            {
+                renderTarget = "rendertarget1";
+
+                class CameraView1 : CameraView1
+                {
+                    renderVisionMode = 0;
+                };
+            };
+        };
+
+        class Components
+        {
+        };    
+
+        class Turrets
+        {
+        };
+        
+    };
+
+    //// Landungsboot LCVP MK5  ////
+    class OPT_rksla3_lcvpmk5_viv_opfor_camo : rksla3_lcvpmk5_1_opfor_camo
+    {
+        faction = "OPT_Sowjet";
+        maxSpeed = 96;
+        enginePower = 1500; //800
+        idleRpm = 500; // 550
+        redRpm = 2000; // 2200
+        transportSoldier = 10; // 2 //
+        rudderForceCoefAtMaxSpeed	 = 0.005;
+
+        class TransportItems
+        {
+        };
+
+        class RenderTargets : RenderTargets
+        {
+            class Monitor_1 : Monitor_1
+            {
+                renderTarget = "rendertarget0";
+
+                class CameraView1 : CameraView1
+                {
+                    renderVisionMode = 1;
+                };
+            };
+
+            class Monitor_4 : Monitor_4
+            {
+                renderTarget = "rendertarget1";
+
+                class CameraView1 : CameraView1
+                {
+                    renderVisionMode = 0;
+                };
+            };
+        };
+
+        class Components
+        {
+        };
+
+        class Turrets
+        {
+        };     
+    };
 };
