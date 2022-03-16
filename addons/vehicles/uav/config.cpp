@@ -1125,4 +1125,57 @@ class CfgVehicles
             };
         };
     };
+
+    class UAV_06_base_F;
+
+    class B_UAV_06_F : UAV_06_base_F
+    {
+        class assembleInfo;
+        class Turrets;
+        class MainTurret;
+        class Viewoptics;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class OpticsIn;
+        class Components;
+    };
+
+    //// Pelican ////
+    class OPT_B_UAV_06_F : B_UAV_06_F
+    {
+        faction = "OPT_FIN";
+        fuelCapacity = 10; // 16 //
+
+        class Components : Components
+        {
+            class SensorsManagerComponent
+            {
+            };
+        };
+
+        class Viewoptics : Viewoptics
+        {
+            visionMode[] = {"Normal", "NVG"};
+        };
+    };
+
+    class OPT_O_UAV_06_F : OPT_B_UAV_06_F
+    {
+        faction = "OPT_Sowjet";
+        side = 0;
+        fuelCapacity = 10; // 16 //
+
+        class Components : Components
+        {
+            class SensorsManagerComponent
+            {
+            };
+        };
+
+        class Viewoptics : Viewoptics
+        {
+            visionMode[] = {"Normal", "NVG"};
+        };
+    };
 };
