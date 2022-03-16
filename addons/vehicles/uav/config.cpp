@@ -501,6 +501,7 @@ class CfgVehicles
         class Components;
     };
 
+
     //// AR-2 Darter AAF ////
     class OPT_I_UAV_01_F : I_UAV_01_F
     {
