@@ -68,9 +68,9 @@ class CfgVehicles
     //// MQ4A Greyhawk ////
     class OPT_B_UAV_02_F : B_UAV_02_dynamicLoadout_F
     {
-        displayName = "MQ-4A Greyhawk (Scarpel)";
-        faction = "OPT_NATO";
-        fuelCapacity = 500; // 1000 //
+        displayName = "MQ-4A Greyhawk (Shrieker)";
+        faction = "OPT_FIN";
+        fuelCapacity = 347; // 1000 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
 
@@ -83,8 +83,8 @@ class CfgVehicles
         {
             class MainTurret : MainTurret
             {
-                weapons[] = {"OPT_Laserdesignator_mounted"};
-                magazines[] = {"Laserbatteries"};
+                weapons[] = {};
+                magazines[] = {};
 
                 class OpticsIn : OpticsIn
                 {
@@ -114,12 +114,12 @@ class CfgVehicles
                 {
                     class Pylons1 : Pylons1
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_AP_F";
                     };
 
                     class Pylons2 : Pylons2
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "";
                     };
                 };
             };
@@ -129,7 +129,7 @@ class CfgVehicles
     class OPT_B_UAV_02_light_F : OPT_B_UAV_02_F
     {
         displayName = "MQ-4A Greyhawk (Unbewaffnet)";
-        fuelCapacity = 1000;
+        fuelCapacity = 520;
 
         class Viewoptics : Viewoptics
         {
@@ -183,7 +183,7 @@ class CfgVehicles
     class OPT_I_UAV_02_light_F : OPT_B_UAV_02_light_F
     {
         displayName = "MQ-4A Greyhawk (Unbewaffnet)";
-        fuelCapacity = 1000;
+        fuelCapacity = 347;
         faction = "OPT_AAF";
         side = 2;    
     };
@@ -257,9 +257,9 @@ class CfgVehicles
     //// K40 Ababil-3 ////
     class OPT_O_UAV_02_F : O_UAV_02_dynamicLoadout_F
     {
-        displayName = "K40 Ababil-3 (Scarpel)";
-        faction = "OPT_CSAT";
-        fuelCapacity = 500; // 1000 //
+        displayName = "K40 Ababil-3 (Shrieker)";
+        faction = "OPT_Sowjet";
+        fuelCapacity = 347; // 1000 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
 
@@ -272,8 +272,8 @@ class CfgVehicles
         {
             class MainTurret : MainTurret
             {
-                weapons[] = {"OPT_Laserdesignator_mounted"};
-                magazines[] = {"Laserbatteries"};
+                weapons[] = {};
+                magazines[] = {};
 
                 class OpticsIn : OpticsIn
                 {
@@ -303,12 +303,12 @@ class CfgVehicles
                 {
                     class Pylons1 : Pylons1
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_AP_F";
                     };
 
                     class Pylons2 : Pylons2
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "";
                     };
                 };
             };
@@ -318,7 +318,7 @@ class CfgVehicles
     class OPT_O_UAV_02_light_F : OPT_O_UAV_02_F
     {
         displayName = "K40 Ababil-3 (Unbewaffnet)";
-        fuelCapacity = 1000;
+        fuelCapacity = 347;
 
         class Viewoptics : Viewoptics
         {
