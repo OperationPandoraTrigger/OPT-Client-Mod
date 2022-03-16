@@ -510,6 +510,7 @@ class CfgVehicles
         idleRpm = 500; // 550
         redRpm = 2000; // 2200
         transportSoldier = 10; // 2 //
+        rudderForceCoefAtMaxSpeed = 0.005;
       
         class TransportItems
         {
@@ -557,7 +558,7 @@ class CfgVehicles
         idleRpm = 500; // 550
         redRpm = 2000; // 2200
         transportSoldier = 10; // 2 //
-        rudderForceCoefAtMaxSpeed	 = 0.005;
+        rudderForceCoefAtMaxSpeed = 0.005;
 
         class TransportItems
         {
