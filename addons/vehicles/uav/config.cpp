@@ -1178,4 +1178,154 @@ class CfgVehicles
             visionMode[] = {"Normal", "NVG"};
         };
     };
+
+    class UGV_02_Demining_Base_F;
+
+    class B_UGV_02_Demining_F : UGV_02_Demining_Base_F
+    {
+        class assembleInfo;
+        class Turrets;
+        class MainTurret;
+        class Viewoptics;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class OpticsIn;
+        class Components;
+    };
+
+    //// Pelter ////
+    class OPT_B_UGV_02_Demining_F : B_UGV_02_Demining_F
+    {
+        faction = "OPT_FIN";
+        fuelCapacity = 1; // 2 //
+        
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+                weapons[] = {"DeminingDisruptor_01_F"};
+                magazines[] = {"15Rnd_12Gauge_Slug"};
+
+                class OpticsIn 
+                {
+                    class CameraArm : ViewOptics 
+                    {
+                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_demining_cam3_F";
+                        initAngleX = 0;
+                        initAngleY = 0;
+                        initFov = 0.35;
+                        maxAngleX = 30;
+                        maxAngleY = 100;
+                        maxFov = 0.35;
+                        maxMoveX = 0;
+                        maxMoveY = 0;
+                        maxMoveZ = 0;
+                        minAngleX = -30;
+                        minAngleY = -100;
+                        minFov = 0.35;
+                        minMoveX = 0;
+                        minMoveY = 0;
+                        minMoveZ = 0;
+                        opticsDisplayName = "cam1";
+                        speedZoomMaxFOV = 0;
+                        speedZoomMaxSpeed = 1e+10;
+                        thermalMode = [2];
+                        visionMode = ["Normal","NVG"];
+                    };
+                        
+                    class CameraArmZoom : CameraArm 
+                    {
+                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_demining_cam3_zoom_F";
+                        initAngleX = 0;
+                        initAngleY = 0;
+                        initFov = 0.0583333;
+                        maxAngleX = 30;
+                        maxAngleY = 100;
+                        maxFov = 0.0583333;
+                        maxMoveX = 0;
+                        maxMoveY = 0;
+                        maxMoveZ = 0;
+                        minAngleX = -30;
+                        minAngleY = -100;
+                        minFov = 0.0583333;
+                        minMoveX = 0;
+                        minMoveY = 0;
+                        minMoveZ = 0;
+                        opticsDisplayName = "cam1";
+                        speedZoomMaxFOV = 0;
+                        speedZoomMaxSpeed = 1e+10;
+                        thermalMode = [2];
+                        visionMode = ["Normal","NVG"];
+                    };
+                            
+                    class CameraBottom : ViewOptics 
+                    {
+                        camDir = "driverview_dir";
+                        camPos = "driverview";
+                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_cam1_F";
+                        initAngleX = 0;
+                        initAngleY = 0;
+                        initFov = 0.7;
+                        maxAngleX = 30;
+                        maxAngleY = 100;
+                        maxFov = 0.7;
+                        maxMoveX = 0;
+                        maxMoveY = 0;
+                        maxMoveZ = 0;
+                        minAngleX = -30;
+                        minAngleY = -100;
+                        minFov = 0.7;
+                        minMoveX = 0;
+                        minMoveY = 0;
+                        minMoveZ = 0;
+                        opticsDisplayName = "cam2";
+                        speedZoomMaxFOV = 0;
+                        speedZoomMaxSpeed = 1e+10;
+                        thermalMode = [2];
+                        visionMode = ["Normal","NVG"];
+                    };
+                    
+                    class CameraClaw : ViewOptics 
+                    {
+                        camDir = "cam_rear_dir";
+                        camPos = "cam_rear";
+                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_cam2_F";
+                        initAngleX = 0;
+                        initAngleY = 0;
+                        initFov = 0.35;
+                        maxAngleX = 30;
+                        maxAngleY = 100;
+                        maxFov = 0.35;
+                        maxMoveX = 0;
+                        maxMoveY = 0;
+                        maxMoveZ = 0;
+                        minAngleX = -30;
+                        minAngleY = -100;
+                        minFov = 0.35;
+                        minMoveX = 0;
+                        minMoveY = 0;
+                        minMoveZ = 0;
+                        opticsDisplayName = "cam3";
+                        speedZoomMaxFOV = 0;
+                        speedZoomMaxSpeed = 1e+10;
+                        thermalMode = [2];
+                        visionMode = ["Normal","NVG"];
+                    };
+                };
+
+                class ViewOptics : ViewOptics
+                {
+                    visionmode[] = {"Normal", "NVG"};
+                };
+            };
+        };
+    };
+
+    class OPT_O_UGV_02_Demining_F : OPT_B_UGV_02_Demining_F
+    {
+        faction = "OPT_Sowjet";
+        side = 0;
+
+    };
 };
