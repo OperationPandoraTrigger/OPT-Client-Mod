@@ -3558,6 +3558,26 @@ class CfgWeapons
         };
     };
 
+    class OPT_arifle_Mk20_blk_ERCO_Pointer_F : OPT_arifle_Mk20_F
+    {
+        _generalMacro = "OPT_arifle_Mk20_blk_ERCO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
     class arifle_Mk20_GL_F : mk20_base_F
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
@@ -3577,6 +3597,26 @@ class CfgWeapons
             class CowsSlot : CowsSlot
             {
                 compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class OPT_arifle_Mk20_GL_blk_ERCO_Pointer_F : OPT_arifle_Mk20_GL_F
+    {
+        _generalMacro = "OPT_arifle_Mk20_blk_ERCO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
             };
         };
     };
