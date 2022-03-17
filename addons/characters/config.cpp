@@ -1660,8 +1660,8 @@ class CfgVehicles
         editorSubcategory = "EdSubcat_Personnel";
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1679,8 +1679,8 @@ class CfgVehicles
         faction = "OPT_FIN";
         Items[] = {"ACE_HuntIR_monitor"};
         respawnItems[] = {"ACE_HuntIR_monitor"};
-        weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "OPT_Laserdesignator", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "OPT_Laserdesignator", "Throw", "Put"};
+        weapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "OPT_Laserdesignator", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "OPT_Laserdesignator", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell", "Laserbatteries","HandGrenade","HandGrenade"};
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1701,8 +1701,8 @@ class CfgVehicles
         attendant = 1;
         Items[] = {"Medikit"};
         respawnItems[] = {"Medikit"};
-        weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1747,8 +1747,8 @@ class CfgVehicles
         engineer = 0;
         canDeactivateMines = 0;
         icon = "iconManEngineer";
-        weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1770,8 +1770,8 @@ class CfgVehicles
         respawnItems[] = {};
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "B_UavTerminal"};
         respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "B_UavTerminal"};
-        weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         backpack = "TFAR_rt1523g_big_bwmod";
@@ -1793,8 +1793,8 @@ class CfgVehicles
     {
         icon = "iconManAT";
         displayName = "Raketenspezialist (Flugabwehr)";
-        weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "OPT_launch_B_Titan_tna_F", "Binocular", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "OPT_launch_B_Titan_tna_F", "Binocular", "Throw", "Put"};
+        weapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "OPT_launch_B_Titan_tna_F", "Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "OPT_launch_B_Titan_tna_F", "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1808,8 +1808,8 @@ class CfgVehicles
         displayName = "Panzerabwehr (Schwer)";
         Items[] = {};
         respawnItems[] = {};
-        weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "OPT_launch_MRAWS_green_F", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "OPT_launch_MRAWS_green_F", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "OPT_launch_MRAWS_green_F", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "OPT_launch_MRAWS_green_F", "Rangefinder", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
@@ -1823,8 +1823,8 @@ class CfgVehicles
         displayName = "Panzerabwehr (Leicht)";
         Items[] = {""};
         respawnItems[] = {""};
-        weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "launch_RPG7_F", "Rangefinder", "Throw", "Put"};
-        respawnWeapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "launch_RPG7_F", "Rangefinder", "Throw", "Put"};
+        weapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "launch_RPG7_F", "Rangefinder", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_TRG21_ERCO_Pointer_F", "launch_RPG7_F", "Rangefinder", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
