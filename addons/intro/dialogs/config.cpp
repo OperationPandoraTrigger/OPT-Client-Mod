@@ -27,7 +27,7 @@ class RscButtonMenuCancel;
 class IGUIBack;
 class RscShortcutButton;
 
-class DialogOutro
+class Dialogintro
 {
   	idd = 55000;
     onload = "";
