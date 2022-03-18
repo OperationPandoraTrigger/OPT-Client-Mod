@@ -46,8 +46,8 @@
 
 #define GUI_GRID_TOPLEFT_X    (safezoneX)
 #define GUI_GRID_TOPLEFT_Y    (safezoneY)
-#define GUI_GRID_TOPLEFT_W	   GUI_GRID_W
-#define GUI_GRID_TOPLEFT_H	   GUI_GRID_H
+#define GUI_GRID_TOPLEFT_W   GUI_GRID_W
+#define GUI_GRID_TOPLEFT_H   GUI_GRID_H
 
 #define DEFAULTFONT            "PuristaMedium"
 #define SECONDARY_FONT        "Bitstream"
