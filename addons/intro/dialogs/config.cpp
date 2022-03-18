@@ -46,9 +46,10 @@ class Dialogintro
           };
         
     };
-
-    objects[] = {};
-      class controls
+    
+    objects[]={};
+    
+    class controls
       {
         class Bild : RscPicture
         {
