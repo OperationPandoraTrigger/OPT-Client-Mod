@@ -86,9 +86,9 @@ class Dialogintro
             idc = 54003;
             text="MAP_NAME";
             colorText[]={1,1,1,1};
-            sizeEx=0.05;	  	  	
+            sizeEx=0.05;
             y = GUI_GRID_TOPLEFT_Y + 8 * GUI_GRID_TOPLEFT_H;
-        };	
+        };
         class Ueberschrift1 : RscText
         {
             idc = 55000;
