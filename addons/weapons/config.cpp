@@ -662,6 +662,15 @@ class CfgMagazines
         displayNameShort = "Explosiv";
     };
 
+    class OPT_PylonRack_6Rnd_missiles : PylonRack_12Rnd_missiles
+    {
+        ammo = "OPT_M_AT";
+        displayName = "OPT DAR";
+        pylonWeapon = "OPT_missiles_DAR_6RND";
+        displayNameShort = "Explosiv";
+        count = 6;
+    };
+
     class PylonRack_12Rnd_PG_missiles;
 
     class OPT_PylonRack_12Rnd_PG_missiles : PylonRack_12Rnd_PG_missiles
@@ -670,6 +679,15 @@ class CfgMagazines
         displayName = "OPT DAGR";
         pylonWeapon = "OPT_missiles_DAGR";
         displayNameShort = "Explosiv";
+    };
+
+    class OPT_PylonRack_6Rnd_PG_missiles : PylonRack_12Rnd_PG_missiles
+    {
+        ammo = "OPT_M_PG_AT";
+        displayName = "OPT DAGR";
+        pylonWeapon = "OPT_missiles_DAGR_6RND";
+        displayNameShort = "Explosiv";
+        count = 6;
     };
 
     class PylonRack_1Rnd_AAA_missiles;
@@ -940,6 +958,13 @@ class CfgMagazines
     class OPT_1Rnd_HE_Grenade_shell: 1Rnd_HE_Grenade_shell
     {
         mass = 15;
+    };
+
+    class 1000Rnd_20mm_shells;
+
+    class OPT_100Rnd_20mm_shells : 1000Rnd_20mm_shells
+    {
+        count = 100;
     };
 };
 
@@ -3162,6 +3187,126 @@ class CfgWeapons
         };
     };
 
+    class Tavor_base_F : Rifle_Base_F
+    {
+        magazines[] = {"30Rnd_556x45_Stanag"};
+        class WeaponSlotsInfo;
+    };
+
+    class arifle_TRG21_F : Tavor_base_F
+    {
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_TRG21_F : arifle_TRG21_F
+    {
+        displayName = "TRG-21 5.56 mm";
+        _generalMacro = "OPT_arifle_TRG21_F";
+        baseWeapon = "OPT_arifle_TRG21_F";
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class OPT_arifle_TRG21_ERCO_Pointer_F : OPT_arifle_TRG21_F
+    {
+        _generalMacro = "OPT_arifle_TRG21_ERCO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
+    class arifle_TRG21_GL_F : arifle_TRG21_F
+    {
+        class EGLM;
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+
+    class OPT_arifle_TRG21_GL_F : arifle_TRG21_GL_F
+    {
+        _generalMacro = "OPT_arifle_TRG21_GL_F";
+        displayName = "TRG-21 EGLM 5.56 mm";
+        baseWeapon = "OPT_arifle_TRG21_GL_F";
+
+        class EGLM : EGLM
+        {
+            magazines[] += {"OPT_1Rnd_HE_Grenade_shell"};
+        };    
+
+        class WeaponSlotsInfo : WeaponSlotsInfo
+        {
+
+            class CowsSlot : CowsSlot
+            {
+                compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class OPT_arifle_TRG21_GL_ACO_Pointer_F : OPT_arifle_TRG21_GL_F
+    {
+        _generalMacro = "OPT_arifle_TRG21_GL_ACO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_aco";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
+    class OPT_arifle_TRG21_GL_ERCO_Pointer_F : OPT_arifle_TRG21_GL_F
+    {
+        _generalMacro = "OPT_arifle_TRG21_GL_ERCO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
 
     class arifle_CTAR_base_F : Rifle_Base_F
     {
@@ -3413,6 +3558,26 @@ class CfgWeapons
         };
     };
 
+    class OPT_arifle_Mk20_blk_ERCO_Pointer_F : OPT_arifle_Mk20_F
+    {
+        _generalMacro = "OPT_arifle_Mk20_blk_ERCO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
+            };
+        };
+    };
+
     class arifle_Mk20_GL_F : mk20_base_F
     {
         class WeaponSlotsInfo : WeaponSlotsInfo
@@ -3432,6 +3597,26 @@ class CfgWeapons
             class CowsSlot : CowsSlot
             {
                 compatibleItems[] = {"optic_aco", "optic_ACO_grn", "optic_Holosight", "optic_Holosight_blk_F", "optic_MRCO", "optic_Arco", "optic_Arco_blk_F", "optic_hamr", "optic_ERCO_blk_F"};
+            };
+        };
+    };
+
+    class OPT_arifle_Mk20_GL_blk_ERCO_Pointer_F : OPT_arifle_Mk20_GL_F
+    {
+        _generalMacro = "OPT_arifle_Mk20_blk_ERCO_Pointer_F";
+
+        class LinkedItems
+        {
+            class LinkedItemsOptic
+            {
+                slot = "CowsSlot";
+                item = "optic_ERCO_blk_F";
+            };
+
+            class LinkedItemsAcc
+            {
+                slot = "PointerSlot";
+                item = "acc_pointer_IR";
             };
         };
     };
@@ -4134,6 +4319,14 @@ class CfgWeapons
     {
         magazines[] = {"OPT_PylonRack_12Rnd_missiles"};
         showAimCursorInternal = 0; // 1 //
+        canLock = 0; // Disabled
+    };
+
+    class OPT_missiles_DAR_6RND : missiles_DAR
+    {
+        magazines[] = {"OPT_PylonRack_6Rnd_missiles"};
+        showAimCursorInternal = 0; // 1 //
+        canLock = 0; // Disabled
     };
 
     class missiles_DAGR;
@@ -4142,6 +4335,14 @@ class CfgWeapons
     {
         magazines[] = {"OPT_PylonRack_12Rnd_PG_missiles"};
         showAimCursorInternal = 0; // 1 //
+        canLock = 0; // Disabled
+    };
+
+    class OPT_missiles_DAGR_6RND : missiles_DAGR
+    {
+        magazines[] = {"OPT_PylonRack_6Rnd_PG_missiles"};
+        showAimCursorInternal = 0; // 1 //
+        canLock = 0; // Disabled
     };
 
     class missiles_SCALPEL;
@@ -4164,7 +4365,7 @@ class CfgWeapons
     class OPT_gatling_20mm : gatling_20mm
     {
         showAimCursorInternal = 0;
-        displayName = "Minigun 20 mm";
+        magazines[] = {"OPT_100Rnd_20mm_shells", "1000Rnd_20mm_shells"};
     };
 
     class gatling_30mm;

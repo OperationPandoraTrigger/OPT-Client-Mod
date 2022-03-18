@@ -68,9 +68,9 @@ class CfgVehicles
     //// MQ4A Greyhawk ////
     class OPT_B_UAV_02_F : B_UAV_02_dynamicLoadout_F
     {
-        displayName = "MQ-4A Greyhawk (Scarpel)";
-        faction = "OPT_NATO";
-        fuelCapacity = 500; // 1000 //
+        displayName = "MQ-4A Greyhawk (Shrieker)";
+        faction = "OPT_FIN";
+        fuelCapacity = 347; // 1000 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
 
@@ -83,8 +83,8 @@ class CfgVehicles
         {
             class MainTurret : MainTurret
             {
-                weapons[] = {"OPT_Laserdesignator_mounted"};
-                magazines[] = {"Laserbatteries"};
+                weapons[] = {};
+                magazines[] = {};
 
                 class OpticsIn : OpticsIn
                 {
@@ -114,12 +114,12 @@ class CfgVehicles
                 {
                     class Pylons1 : Pylons1
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_AP_F";
                     };
 
                     class Pylons2 : Pylons2
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "";
                     };
                 };
             };
@@ -129,7 +129,7 @@ class CfgVehicles
     class OPT_B_UAV_02_light_F : OPT_B_UAV_02_F
     {
         displayName = "MQ-4A Greyhawk (Unbewaffnet)";
-        fuelCapacity = 1000;
+        fuelCapacity = 520;
 
         class Viewoptics : Viewoptics
         {
@@ -183,7 +183,7 @@ class CfgVehicles
     class OPT_I_UAV_02_light_F : OPT_B_UAV_02_light_F
     {
         displayName = "MQ-4A Greyhawk (Unbewaffnet)";
-        fuelCapacity = 1000;
+        fuelCapacity = 347;
         faction = "OPT_AAF";
         side = 2;    
     };
@@ -257,9 +257,9 @@ class CfgVehicles
     //// K40 Ababil-3 ////
     class OPT_O_UAV_02_F : O_UAV_02_dynamicLoadout_F
     {
-        displayName = "K40 Ababil-3 (Scarpel)";
-        faction = "OPT_CSAT";
-        fuelCapacity = 500; // 1000 //
+        displayName = "K40 Ababil-3 (Shrieker)";
+        faction = "OPT_Sowjet";
+        fuelCapacity = 347; // 1000 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
 
@@ -272,8 +272,8 @@ class CfgVehicles
         {
             class MainTurret : MainTurret
             {
-                weapons[] = {"OPT_Laserdesignator_mounted"};
-                magazines[] = {"Laserbatteries"};
+                weapons[] = {};
+                magazines[] = {};
 
                 class OpticsIn : OpticsIn
                 {
@@ -303,12 +303,12 @@ class CfgVehicles
                 {
                     class Pylons1 : Pylons1
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "OPT_PylonRack_7Rnd_Rocket_04_AP_F";
                     };
 
                     class Pylons2 : Pylons2
                     {
-                        attachment = "OPT_PylonRack_3Rnd_LG_scalpel";
+                        attachment = "";
                     };
                 };
             };
@@ -318,7 +318,7 @@ class CfgVehicles
     class OPT_O_UAV_02_light_F : OPT_O_UAV_02_F
     {
         displayName = "K40 Ababil-3 (Unbewaffnet)";
-        fuelCapacity = 1000;
+        fuelCapacity = 347;
 
         class Viewoptics : Viewoptics
         {
@@ -500,6 +500,7 @@ class CfgVehicles
         class OpticsIn;
         class Components;
     };
+
 
     //// AR-2 Darter AAF ////
     class OPT_I_UAV_01_F : I_UAV_01_F
@@ -1123,5 +1124,208 @@ class CfgVehicles
                 };
             };
         };
+    };
+
+    class UAV_06_base_F;
+
+    class B_UAV_06_F : UAV_06_base_F
+    {
+        class assembleInfo;
+        class Turrets;
+        class MainTurret;
+        class Viewoptics;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class OpticsIn;
+        class Components;
+    };
+
+    //// Pelican ////
+    class OPT_B_UAV_06_F : B_UAV_06_F
+    {
+        faction = "OPT_FIN";
+        fuelCapacity = 10; // 16 //
+
+        class Components : Components
+        {
+            class SensorsManagerComponent
+            {
+            };
+        };
+
+        class Viewoptics : Viewoptics
+        {
+            visionMode[] = {"Normal", "NVG"};
+        };
+    };
+
+    class OPT_O_UAV_06_F : OPT_B_UAV_06_F
+    {
+        faction = "OPT_Sowjet";
+        side = 0;
+        fuelCapacity = 10; // 16 //
+
+        class Components : Components
+        {
+            class SensorsManagerComponent
+            {
+            };
+        };
+
+        class Viewoptics : Viewoptics
+        {
+            visionMode[] = {"Normal", "NVG"};
+        };
+    };
+
+    class UGV_02_Demining_Base_F;
+
+    class B_UGV_02_Demining_F : UGV_02_Demining_Base_F
+    {
+        class assembleInfo;
+        class Turrets;
+        class MainTurret;
+        class Viewoptics;
+        class Wide;
+        class Medium;
+        class Narrow;
+        class OpticsIn;
+        class Components;
+    };
+
+    //// Pelter ////
+    class OPT_B_UGV_02_Demining_F : B_UGV_02_Demining_F
+    {
+        faction = "OPT_FIN";
+        fuelCapacity = 1; // 2 //
+        
+        class Turrets : Turrets
+        {
+            class MainTurret : MainTurret
+            {
+                weapons[] = {"DeminingDisruptor_01_F"};
+                magazines[] = {"15Rnd_12Gauge_Slug"};
+
+                class OpticsIn 
+                {
+                    class CameraArm : ViewOptics 
+                    {
+                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_demining_cam3_F";
+                        initAngleX = 0;
+                        initAngleY = 0;
+                        initFov = 0.35;
+                        maxAngleX = 30;
+                        maxAngleY = 100;
+                        maxFov = 0.35;
+                        maxMoveX = 0;
+                        maxMoveY = 0;
+                        maxMoveZ = 0;
+                        minAngleX = -30;
+                        minAngleY = -100;
+                        minFov = 0.35;
+                        minMoveX = 0;
+                        minMoveY = 0;
+                        minMoveZ = 0;
+                        opticsDisplayName = "cam1";
+                        speedZoomMaxFOV = 0;
+                        speedZoomMaxSpeed = 1e+10;
+                        thermalMode = [2];
+                        visionMode = ["Normal","NVG"];
+                    };
+                        
+                    class CameraArmZoom : CameraArm 
+                    {
+                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_demining_cam3_zoom_F";
+                        initAngleX = 0;
+                        initAngleY = 0;
+                        initFov = 0.0583333;
+                        maxAngleX = 30;
+                        maxAngleY = 100;
+                        maxFov = 0.0583333;
+                        maxMoveX = 0;
+                        maxMoveY = 0;
+                        maxMoveZ = 0;
+                        minAngleX = -30;
+                        minAngleY = -100;
+                        minFov = 0.0583333;
+                        minMoveX = 0;
+                        minMoveY = 0;
+                        minMoveZ = 0;
+                        opticsDisplayName = "cam1";
+                        speedZoomMaxFOV = 0;
+                        speedZoomMaxSpeed = 1e+10;
+                        thermalMode = [2];
+                        visionMode = ["Normal","NVG"];
+                    };
+                            
+                    class CameraBottom : ViewOptics 
+                    {
+                        camDir = "driverview_dir";
+                        camPos = "driverview";
+                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_cam1_F";
+                        initAngleX = 0;
+                        initAngleY = 0;
+                        initFov = 0.7;
+                        maxAngleX = 30;
+                        maxAngleY = 100;
+                        maxFov = 0.7;
+                        maxMoveX = 0;
+                        maxMoveY = 0;
+                        maxMoveZ = 0;
+                        minAngleX = -30;
+                        minAngleY = -100;
+                        minFov = 0.7;
+                        minMoveX = 0;
+                        minMoveY = 0;
+                        minMoveZ = 0;
+                        opticsDisplayName = "cam2";
+                        speedZoomMaxFOV = 0;
+                        speedZoomMaxSpeed = 1e+10;
+                        thermalMode = [2];
+                        visionMode = ["Normal","NVG"];
+                    };
+                    
+                    class CameraClaw : ViewOptics 
+                    {
+                        camDir = "cam_rear_dir";
+                        camPos = "cam_rear";
+                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_cam2_F";
+                        initAngleX = 0;
+                        initAngleY = 0;
+                        initFov = 0.35;
+                        maxAngleX = 30;
+                        maxAngleY = 100;
+                        maxFov = 0.35;
+                        maxMoveX = 0;
+                        maxMoveY = 0;
+                        maxMoveZ = 0;
+                        minAngleX = -30;
+                        minAngleY = -100;
+                        minFov = 0.35;
+                        minMoveX = 0;
+                        minMoveY = 0;
+                        minMoveZ = 0;
+                        opticsDisplayName = "cam3";
+                        speedZoomMaxFOV = 0;
+                        speedZoomMaxSpeed = 1e+10;
+                        thermalMode = [2];
+                        visionMode = ["Normal","NVG"];
+                    };
+                };
+
+                class ViewOptics : ViewOptics
+                {
+                    visionmode[] = {"Normal", "NVG"};
+                };
+            };
+        };
+    };
+
+    class OPT_O_UGV_02_Demining_F : OPT_B_UGV_02_Demining_F
+    {
+        faction = "OPT_Sowjet";
+        side = 0;
+
     };
 };
