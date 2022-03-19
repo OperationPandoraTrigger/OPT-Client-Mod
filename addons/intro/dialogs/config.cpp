@@ -27,23 +27,29 @@ class RscButtonMenuCancel;
 class IGUIBack;
 class RscShortcutButton;
 
-class Dialogintro
-{
-      idd = 55000;
-    onload = "";
-    movingEnable = true;
+class RscTitles
+{  
+  class opt_intro_anzeige
+  {
+    idd = 55000;
+    duration = 15000;
+    name = "";          
+    onLoad = "uiNamespace setVariable ['opt_intro_anzeige', _this select 0]";    
+    movingEnable = false;
+    moving = false;
+    enableSimulation = true;
 
-      class controlsBackground
+    class controlsBackground
     {
-          class Hintergrund : RscText
-          {
+        class Hintergrund : RscText
+        {
         colorBackground[] = {0.2, 0.2, 0.2, 0.0};
         text = ;
-            x = GUI_GRID_TOPLEFT_X + 1 * GUI_GRID_TOPLEFT_W;
-            y = GUI_GRID_TOPLEFT_Y + 1 * GUI_GRID_TOPLEFT_H;
-            w = 95 * GUI_GRID_TOPLEFT_W;
-            h = 43 * GUI_GRID_TOPLEFT_H;
-          };
+        x = GUI_GRID_TOPLEFT_X + 1 * GUI_GRID_TOPLEFT_W;
+        y = GUI_GRID_TOPLEFT_Y + 1 * GUI_GRID_TOPLEFT_H;
+        w = 95 * GUI_GRID_TOPLEFT_W;
+        h = 43 * GUI_GRID_TOPLEFT_H;
+        };
         
     };
     
@@ -96,7 +102,7 @@ class Dialogintro
             style = ST_CENTER;
             colorText[] = {1, 1, 1, 1};
             font = "TahomaB";
-            sizeEx = 0.04;
+            sizeEx = 0.035;
             text = "";
             x = GUI_GRID_TOPLEFT_X + 40 * GUI_GRID_TOPLEFT_W;
             y = GUI_GRID_TOPLEFT_Y + 8 * GUI_GRID_TOPLEFT_H;
@@ -107,7 +113,7 @@ class Dialogintro
         {
             idc = 55001;
             sizeEx = 0.04;
-            x = GUI_GRID_TOPLEFT_X + 30 * GUI_GRID_TOPLEFT_W;
+            x = GUI_GRID_TOPLEFT_X + 28 * GUI_GRID_TOPLEFT_W;
             y = GUI_GRID_TOPLEFT_Y + 9 * GUI_GRID_TOPLEFT_H;
             w = 10 * GUI_GRID_TOPLEFT_W;
             h = 5 * GUI_GRID_TOPLEFT_H;
@@ -116,7 +122,7 @@ class Dialogintro
         class Seite2 : Seite1
         {
             idc = 55003;
-            x = GUI_GRID_TOPLEFT_X + 50 * GUI_GRID_TOPLEFT_W;
+            x = GUI_GRID_TOPLEFT_X + 52 * GUI_GRID_TOPLEFT_W;
             text = "";
         };
         class Punkte1 : Ueberschrift1
@@ -125,7 +131,7 @@ class Dialogintro
             colorText[] = {0.071,0.153,0.58,1};
             style = ST_LEFT;
             sizeEx = 0.06;
-            x = GUI_GRID_TOPLEFT_X + 34 * GUI_GRID_TOPLEFT_W;
+            x = GUI_GRID_TOPLEFT_X + 32 * GUI_GRID_TOPLEFT_W;
             y = GUI_GRID_TOPLEFT_Y + 13 * GUI_GRID_TOPLEFT_H;
             w = 10 * GUI_GRID_TOPLEFT_W;
             h = 5 * GUI_GRID_TOPLEFT_H;
@@ -146,7 +152,7 @@ class Dialogintro
             idc = 55006;
             colorText[] = {0.749,0.075,0.075,1};
             style = ST_LEFT;
-            x = GUI_GRID_TOPLEFT_X + 54 * GUI_GRID_TOPLEFT_W;
+            x = GUI_GRID_TOPLEFT_X + 56 * GUI_GRID_TOPLEFT_W;
             text = "00000";
         };
         class Ueberschrift2 : Ueberschrift1
@@ -154,7 +160,7 @@ class Dialogintro
             idc = 55007;
             colorText[] = {0.071,0.153,0.58,1};
             style = ST_LEFT;
-            x = GUI_GRID_TOPLEFT_X + 7 * GUI_GRID_TOPLEFT_W;
+            x = GUI_GRID_TOPLEFT_X + 2 * GUI_GRID_TOPLEFT_W;
             y = GUI_GRID_TOPLEFT_Y + 1 * GUI_GRID_TOPLEFT_H;
             w = 10 * GUI_GRID_TOPLEFT_W;
             h = 5 * GUI_GRID_TOPLEFT_H;
@@ -165,7 +171,7 @@ class Dialogintro
             idc = 55008;
             colorText[] = {0.749,0.075,0.075,1};
             style = ST_LEFT;
-            x = GUI_GRID_TOPLEFT_X + 84 * GUI_GRID_TOPLEFT_W;
+            x = GUI_GRID_TOPLEFT_X + 86 * GUI_GRID_TOPLEFT_W;
         };
         class Seite1_Spieler1 : RscText
         {
@@ -189,90 +195,90 @@ class Dialogintro
         {
             idc = 55103;
             y = GUI_GRID_TOPLEFT_Y + 4 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler4 : Seite1_Spieler1
-         {
-              idc = 55104;
+        };
+        class Seite1_Spieler4 : Seite1_Spieler1
+        {
+            idc = 55104;
             y = GUI_GRID_TOPLEFT_Y + 5 * GUI_GRID_TOPLEFT_H;
-         };
-         class Seite1_Spieler5 : Seite1_Spieler1
-          {
-              idc = 55105;
+        };
+        class Seite1_Spieler5 : Seite1_Spieler1
+        {
+            idc = 55105;
             y = GUI_GRID_TOPLEFT_Y + 6 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler6 : Seite1_Spieler1
-          {
-              idc = 55106;
+        };
+        class Seite1_Spieler6 : Seite1_Spieler1
+        {
+            idc = 55106;
             y = GUI_GRID_TOPLEFT_Y + 7 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler7 : Seite1_Spieler1
-          {
-              idc = 55107;
+        };
+        class Seite1_Spieler7 : Seite1_Spieler1
+        {
+            idc = 55107;
             y = GUI_GRID_TOPLEFT_Y + 8 * GUI_GRID_TOPLEFT_H;
-         };
-         class Seite1_Spieler8 : Seite1_Spieler1
-         {
-              idc = 55108;
+        };
+        class Seite1_Spieler8 : Seite1_Spieler1
+        {
+            idc = 55108;
             y = GUI_GRID_TOPLEFT_Y + 9 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler9 : Seite1_Spieler1
-          {
-              idc = 55109;
+        };
+        class Seite1_Spieler9 : Seite1_Spieler1
+        {
+            idc = 55109;
             y = GUI_GRID_TOPLEFT_Y + 10 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler10 : Seite1_Spieler1
-          {
-              idc = 55110;
+        };
+        class Seite1_Spieler10 : Seite1_Spieler1
+        {
+            idc = 55110;
             y = GUI_GRID_TOPLEFT_Y + 11 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler11 : Seite1_Spieler1
-          {
-              idc = 55111;
+        };
+        class Seite1_Spieler11 : Seite1_Spieler1
+        {
+            idc = 55111;
             y = GUI_GRID_TOPLEFT_Y + 12 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler12 : Seite1_Spieler1
-          {
-              idc = 55112;
+        };
+        class Seite1_Spieler12 : Seite1_Spieler1
+        {
+            idc = 55112;
             y = GUI_GRID_TOPLEFT_Y + 13 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler13 : Seite1_Spieler1
-          {
-              idc = 55113;
+        };
+        class Seite1_Spieler13 : Seite1_Spieler1
+        {
+            idc = 55113;
             y = GUI_GRID_TOPLEFT_Y + 14 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler14 : Seite1_Spieler1
-         {
-              idc = 55114;
+        };
+        class Seite1_Spieler14 : Seite1_Spieler1
+        {
+            idc = 55114;
             y = GUI_GRID_TOPLEFT_Y + 15 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler15 : Seite1_Spieler1
-          {
-              idc = 55115;
+        };
+        class Seite1_Spieler15 : Seite1_Spieler1
+        {
+            idc = 55115;
             y = GUI_GRID_TOPLEFT_Y + 16 * GUI_GRID_TOPLEFT_H;
-          };
-          class Seite1_Spieler16 : Seite1_Spieler1
-          {
-              idc = 55116;
+        };
+        class Seite1_Spieler16 : Seite1_Spieler1
+        {
+            idc = 55116;
             y = GUI_GRID_TOPLEFT_Y + 17 * GUI_GRID_TOPLEFT_H;
-          };
+        };
           class Seite1_Spieler17 : Seite1_Spieler1
           {
-              idc = 55117;
+            idc = 55117;
             y = GUI_GRID_TOPLEFT_Y + 18 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler18 : Seite1_Spieler1
           {
-              idc = 55118;
+            idc = 55118;
             y = GUI_GRID_TOPLEFT_Y + 19 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler19 : Seite1_Spieler1
           {
-              idc = 55119;
+            idc = 55119;
             y = GUI_GRID_TOPLEFT_Y + 20 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler20 : Seite1_Spieler1
           {
-              idc = 55120;
+            idc = 55120;
             y = GUI_GRID_TOPLEFT_Y + 21 * GUI_GRID_TOPLEFT_H;
           };
         class Seite1_Spieler21 : Seite1_Spieler1
@@ -286,98 +292,98 @@ class Dialogintro
             y = GUI_GRID_TOPLEFT_Y + 23 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler23 : Seite1_Spieler1
-         {
-              idc = 55123;
+        {
+            idc = 55123;
             y = GUI_GRID_TOPLEFT_Y + 24 * GUI_GRID_TOPLEFT_H;
-         };
-         class Seite1_Spieler24 : Seite1_Spieler1
+        };
+        class Seite1_Spieler24 : Seite1_Spieler1
           {
-              idc = 55124;
+            idc = 55124;
             y = GUI_GRID_TOPLEFT_Y + 25 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler25 : Seite1_Spieler1
           {
-              idc = 55125;
+            idc = 55125;
             y = GUI_GRID_TOPLEFT_Y + 26 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler26 : Seite1_Spieler1
           {
-              idc = 55126;
+            idc = 55126;
             y = GUI_GRID_TOPLEFT_Y + 27 * GUI_GRID_TOPLEFT_H;
-         };
-         class Seite1_Spieler27 : Seite1_Spieler1
-         {
-              idc = 55127;
+        };
+        class Seite1_Spieler27 : Seite1_Spieler1
+        {
+            idc = 55127;
             y = GUI_GRID_TOPLEFT_Y + 28 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler28 : Seite1_Spieler1
           {
-              idc = 55128;
+            idc = 55128;
             y = GUI_GRID_TOPLEFT_Y + 29 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler29 : Seite1_Spieler1
           {
-              idc = 55129;
+            idc = 55129;
             y = GUI_GRID_TOPLEFT_Y + 30 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler30 : Seite1_Spieler1
           {
-              idc = 55130;
+            idc = 55130;
             y = GUI_GRID_TOPLEFT_Y + 31 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler31 : Seite1_Spieler1
           {
-              idc = 55131;
+            idc = 55131;
             y = GUI_GRID_TOPLEFT_Y + 32 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler32 : Seite1_Spieler1
           {
-              idc = 55132;
+            idc = 55132;
             y = GUI_GRID_TOPLEFT_Y + 33 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler33 : Seite1_Spieler1
-         {
-              idc = 55133;
+        {
+            idc = 55133;
             y = GUI_GRID_TOPLEFT_Y + 34 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler34 : Seite1_Spieler1
           {
-              idc = 55134;
+            idc = 55134;
             y = GUI_GRID_TOPLEFT_Y + 35 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler35 : Seite1_Spieler1
           {
-              idc = 55135;
+            idc = 55135;
             y = GUI_GRID_TOPLEFT_Y + 36 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler36 : Seite1_Spieler1
           {
-              idc = 55136;
+            idc = 55136;
             y = GUI_GRID_TOPLEFT_Y + 37 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler37 : Seite1_Spieler1
           {
-              idc = 55137;
+            idc = 55137;
             y = GUI_GRID_TOPLEFT_Y + 38 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler38 : Seite1_Spieler1
           {
-              idc = 55138;
+            idc = 55138;
             y = GUI_GRID_TOPLEFT_Y + 39 * GUI_GRID_TOPLEFT_H;
           };
           class Seite1_Spieler39 : Seite1_Spieler1
           {
-              idc = 55139;
+            idc = 55139;
             y = GUI_GRID_TOPLEFT_Y + 40 * GUI_GRID_TOPLEFT_H;
           };
           class Seite2_Spieler1 : RscText
           {
-              idc = 55201;
+            idc = 55201;
             sizeEx = 0.05;
             rowHeight = 0.019;
             style = ST_CENTER;
             colorText[] = {0.749,0.075,0.075,1};
-            x = GUI_GRID_TOPLEFT_X + 80 * GUI_GRID_TOPLEFT_W;
+            x = GUI_GRID_TOPLEFT_X + 86 * GUI_GRID_TOPLEFT_W;
             y = GUI_GRID_TOPLEFT_Y + 2 * GUI_GRID_TOPLEFT_H;
             w = 15 * GUI_GRID_TOPLEFT_W;
             h = 5 * GUI_GRID_TOPLEFT_H;
@@ -394,13 +400,13 @@ class Dialogintro
             y = GUI_GRID_TOPLEFT_Y + 4 * GUI_GRID_TOPLEFT_H;
           };
           class Seite2_Spieler4 : Seite2_Spieler1
-         {
-              idc = 55204;
+        {
+            idc = 55204;
             y = GUI_GRID_TOPLEFT_Y + 5 * GUI_GRID_TOPLEFT_H;
-         };
-         class Seite2_Spieler5 : Seite2_Spieler1
+        };
+        class Seite2_Spieler5 : Seite2_Spieler1
           {
-              idc = 55205;
+            idc = 55205;
             y = GUI_GRID_TOPLEFT_Y + 6 * GUI_GRID_TOPLEFT_H;
           };
           class Seite2_Spieler6 : Seite2_Spieler1
@@ -412,9 +418,9 @@ class Dialogintro
           {
               idc = 55207;
             y = GUI_GRID_TOPLEFT_Y + 8 * GUI_GRID_TOPLEFT_H;
-         };
-         class Seite2_Spieler8 : Seite2_Spieler1
-         {
+        };
+        class Seite2_Spieler8 : Seite2_Spieler1
+        {
               idc = 55208;
             y = GUI_GRID_TOPLEFT_Y + 9 * GUI_GRID_TOPLEFT_H;
           };
@@ -444,7 +450,7 @@ class Dialogintro
             y = GUI_GRID_TOPLEFT_Y + 14 * GUI_GRID_TOPLEFT_H;
           };
           class Seite2_Spieler14 : Seite2_Spieler1
-         {
+        {
               idc = 55214;
             y = GUI_GRID_TOPLEFT_Y + 15 * GUI_GRID_TOPLEFT_H;
           };
@@ -489,11 +495,11 @@ class Dialogintro
             y = GUI_GRID_TOPLEFT_Y + 23 * GUI_GRID_TOPLEFT_H;
           };
           class Seite2_Spieler23 : Seite2_Spieler1
-         {
+        {
               idc = 55223;
             y = GUI_GRID_TOPLEFT_Y + 24 * GUI_GRID_TOPLEFT_H;
-         };
-         class Seite2_Spieler24 : Seite2_Spieler1
+        };
+        class Seite2_Spieler24 : Seite2_Spieler1
           {
               idc = 55224;
             y = GUI_GRID_TOPLEFT_Y + 25 * GUI_GRID_TOPLEFT_H;
@@ -507,9 +513,9 @@ class Dialogintro
           {
               idc = 55226;
             y = GUI_GRID_TOPLEFT_Y + 27 * GUI_GRID_TOPLEFT_H;
-         };
-         class Seite2_Spieler27 : Seite2_Spieler1
-         {
+        };
+        class Seite2_Spieler27 : Seite2_Spieler1
+        {
               idc = 55227;
             y = GUI_GRID_TOPLEFT_Y + 28 * GUI_GRID_TOPLEFT_H;
           };
@@ -539,7 +545,7 @@ class Dialogintro
             y = GUI_GRID_TOPLEFT_Y + 33 * GUI_GRID_TOPLEFT_H;
           };
           class Seite2_Spieler33 : Seite2_Spieler1
-         {
+        {
               idc = 55233;
             y = GUI_GRID_TOPLEFT_Y + 34 * GUI_GRID_TOPLEFT_H;
           };
@@ -574,4 +580,6 @@ class Dialogintro
             y = GUI_GRID_TOPLEFT_Y + 40 * GUI_GRID_TOPLEFT_H;
           };
     };
+  };
 };
+
