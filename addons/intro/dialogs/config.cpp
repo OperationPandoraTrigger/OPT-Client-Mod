@@ -21,6 +21,8 @@ class RscTitles
     class opt_intro_anzeige
     {
         idd = 55000;
+        fadein = 0.5;
+        fadeout = 0.5;
         duration = 15000;
         name = "";          
         onLoad = "uiNamespace setVariable ['opt_intro_anzeige', _this select 0]";    
@@ -117,7 +119,7 @@ class RscTitles
             class Punkte1 : Ueberschrift1
             {
                 idc = 55004; // Sektoren WEST
-                colorText[] = {0.071,0.153,0.58,1};
+                colorText[] = Color_Blue;
                 style = ST_LEFT;
                 sizeEx = 0.06;
                 x = GUI_GRID_TOPLEFT_X + 28 * GUI_GRID_TOPLEFT_W;
@@ -139,7 +141,7 @@ class RscTitles
             class Punkte2 : Punkte1
             {
                 idc = 55006; // Sektoren EAST
-                colorText[] = {0.749,0.075,0.075,1};
+                colorText[] = Color_Red;
                 style = ST_LEFT;
                 x = GUI_GRID_TOPLEFT_X + 52 * GUI_GRID_TOPLEFT_W;
             };
@@ -147,7 +149,7 @@ class RscTitles
             class Ueberschrift2 : Ueberschrift1
             {
                 idc = 55007;
-                colorText[] = {0.071,0.153,0.58,1};
+                colorText[] = Color_Blue;
                 style = ST_LEFT;
                 x = GUI_GRID_TOPLEFT_X + 6 * GUI_GRID_TOPLEFT_W;
                 y = GUI_GRID_TOPLEFT_Y + 1 * GUI_GRID_TOPLEFT_H;
@@ -159,16 +161,16 @@ class RscTitles
             class Ueberschrift3 : Ueberschrift2
             {
                 idc = 55008;
-                colorText[] = {0.749,0.075,0.075,1};
+                colorText[] = Color_Red;
                 style = ST_LEFT;
                 x = GUI_GRID_TOPLEFT_X + 85 * GUI_GRID_TOPLEFT_W;
             };
 
-            class Seite1_Spieler1 : RscTextMulti
+            class Players_west : RscTextMulti
             {
                 idc = 55101;
-                colorText[] = {0.071,0.153,0.58,1};
-                colorBackground[] = {0, 0, 0, 0.7};
+                colorText[] = Color_Blue;
+                colorBackground[] = {0, 0, 0, 0.25};
                 lineSpacing = 1;
                 x = GUI_GRID_TOPLEFT_X + 2 * GUI_GRID_TOPLEFT_W;
                 y = GUI_GRID_TOPLEFT_Y + 5 * GUI_GRID_TOPLEFT_H;
@@ -176,11 +178,11 @@ class RscTitles
                 h = 40 * GUI_GRID_TOPLEFT_H;
             };
 
-            class Seite2_Spieler1 : RscTextMulti
+            class Players_east : RscTextMulti
             {
                 idc = 55201;
-                colorText[] = {0.749,0.075,0.075,1};
-                colorBackground[] = {0, 0, 0, 0.7};
+                colorText[] = Color_Red;
+                colorBackground[] = {0, 0, 0, 0.25};
                 lineSpacing = 1;
                 x = GUI_GRID_TOPLEFT_X + 80 * GUI_GRID_TOPLEFT_W;
                 y = GUI_GRID_TOPLEFT_Y + 5 * GUI_GRID_TOPLEFT_H;
