@@ -1891,10 +1891,13 @@ class CfgVehicles
         class HitLegs;
     };
 
+    class I_Soldier_base_F;
+
     //// Basisclasse für uniform //////////
-    class opt_men_opfor: O_Soldier_02_F
+    class opt_men_opfor: I_Soldier_base_F
     {
         scope = 2;
+        side = 0;
         faction = "OPT_Sowjet";
         displayName = "Basisclass uniform";
         hiddenSelections[] = {"camo", "insignia"};
