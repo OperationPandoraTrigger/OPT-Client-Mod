@@ -9355,6 +9355,40 @@ class CfgVehicles
         };
     };
 
+    class OPT_B_Carryall_cr2020_blufor : B_Carryall_ghex_F
+    {
+        displayName = "Grosser Rucksack Eng. (cr2020 Bluefor)";
+        maximumLoad = 320;
+        scope = 2;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_blufor_carryall_backpack.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_blufor_carryall_backpack_icon.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_Carryall_cr2020_opfor : B_Carryall_ghex_F
+    {
+        displayName = "Grosser Rucksack Eng. (cr2020 Opfor)";
+        maximumLoad = 320;
+        scope = 2;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_opforgreen_carryall_backpack.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_opforgreen_carryall_backpack_icon.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
     class B_FieldPack_ocamo;
 
     class OPT_B_FieldPack_ocamo_AT : B_FieldPack_ocamo
@@ -9712,7 +9746,37 @@ class CfgVehicles
         };
     };
 
+    class OPT_B_AssaultPack_blk_cr2020_blufor : B_AssaultPack_blk
+    {
+        displayName = "Angriffspack (cr2020 Blufor)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_blufor_compact.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_blufor_compact_icon.paa";
 
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
+
+    class OPT_B_AssaultPack_blk_cr2020_opfor : B_AssaultPack_blk
+    {
+        displayName = "Angriffspack (cr2020 Opfor)";
+        maximumLoad = 160;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_opforgreen_compact.paa"};
+        picture = "\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_opforgreen_compact_icon.paa";
+
+        class TransportMagazines
+        {
+        };
+
+        class TransportItems
+        {
+        };
+    };
 
     class B_FieldPack_ocamo_ReconMedic;
 
