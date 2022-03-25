@@ -73,6 +73,8 @@ class CfgVehicles
         fuelCapacity = 347; // 1000 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\UAV\UAV_02_Blufor.paa"};
+        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
 
         class Viewoptics : Viewoptics
         {
@@ -130,6 +132,8 @@ class CfgVehicles
     {
         displayName = "MQ-4A Greyhawk (Unbewaffnet)";
         fuelCapacity = 520;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\UAV\UAV_02_Blufor.paa"};
+        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
 
         class Viewoptics : Viewoptics
         {
@@ -262,6 +266,8 @@ class CfgVehicles
         fuelCapacity = 347; // 1000 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\UAV\UAV_02_Opfor.paa"};
+        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
 
         class Viewoptics : Viewoptics
         {
@@ -319,6 +325,8 @@ class CfgVehicles
     {
         displayName = "K40 Ababil-3 (Unbewaffnet)";
         fuelCapacity = 347;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\UAV\UAV_02_Opfor.paa"};
+        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
 
         class Viewoptics : Viewoptics
         {
