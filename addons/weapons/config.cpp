@@ -935,6 +935,15 @@ class CfgMagazines
         displayNameShort = "100Rnd 7.62x54 mm";
     };
 
+    class 150Rnd_762x54_Box;
+
+    class OPT_100Rnd_762x54_Box : 150Rnd_762x54_Box
+    {
+        count = 100;
+        displayName = "100Rnd 7.62x54 mm";
+        displayNameShort = "100Rnd 7.62x54 mm";
+    };
+
     class 75rnd_762x39_AK12_Mag_F;
 
     class OPT_100rnd_762x39_AK12_Mag_F: 75rnd_762x39_AK12_Mag_F
@@ -1900,6 +1909,7 @@ class CfgWeapons
         _generalMacro = "OPT_arifle_MXC_Black_F";
         baseWeapon = "OPT_arifle_MXC_Black_F";
         magazines[] = {"30Rnd_65x39_caseless_black_mag"};
+        magazineWell[] = {};
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
