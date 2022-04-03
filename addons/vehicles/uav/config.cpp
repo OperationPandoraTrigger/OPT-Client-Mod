@@ -1200,6 +1200,11 @@ class CfgVehicles
         class Narrow;
         class OpticsIn;
         class Components;
+        class ViewOptics;
+        class CameraArm;
+        class CameraArmZoom;
+        class CameraBottom;
+        class CameraClaw;
     };
 
     //// Pelter ////
@@ -1214,117 +1219,33 @@ class CfgVehicles
             {
                 weapons[] = {"DeminingDisruptor_01_F"};
                 magazines[] = {"15Rnd_12Gauge_Slug"};
+             
+                class ViewOptics : ViewOptics
+                {
+                    visionmode[] = {"Normal", "NVG"};
+                };
 
                 class OpticsIn 
                 {
                     class CameraArm : ViewOptics 
                     {
-                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_demining_cam3_F";
-                        initAngleX = 0;
-                        initAngleY = 0;
-                        initFov = 0.35;
-                        maxAngleX = 30;
-                        maxAngleY = 100;
-                        maxFov = 0.35;
-                        maxMoveX = 0;
-                        maxMoveY = 0;
-                        maxMoveZ = 0;
-                        minAngleX = -30;
-                        minAngleY = -100;
-                        minFov = 0.35;
-                        minMoveX = 0;
-                        minMoveY = 0;
-                        minMoveZ = 0;
-                        opticsDisplayName = "cam1";
-                        speedZoomMaxFOV = 0;
-                        speedZoomMaxSpeed = 1e+10;
-                        thermalMode = [2];
-                        visionMode = ["Normal","NVG"];
+                        visionmode[] = {"Normal", "NVG"};
                     };
-                        
+                    
                     class CameraArmZoom : CameraArm 
                     {
-                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_demining_cam3_zoom_F";
-                        initAngleX = 0;
-                        initAngleY = 0;
-                        initFov = 0.0583333;
-                        maxAngleX = 30;
-                        maxAngleY = 100;
-                        maxFov = 0.0583333;
-                        maxMoveX = 0;
-                        maxMoveY = 0;
-                        maxMoveZ = 0;
-                        minAngleX = -30;
-                        minAngleY = -100;
-                        minFov = 0.0583333;
-                        minMoveX = 0;
-                        minMoveY = 0;
-                        minMoveZ = 0;
-                        opticsDisplayName = "cam1";
-                        speedZoomMaxFOV = 0;
-                        speedZoomMaxSpeed = 1e+10;
-                        thermalMode = [2];
-                        visionMode = ["Normal","NVG"];
+                        visionmode[] = {"Normal", "NVG"};
                     };
-                            
+                    
                     class CameraBottom : ViewOptics 
                     {
-                        camDir = "driverview_dir";
-                        camPos = "driverview";
-                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_cam1_F";
-                        initAngleX = 0;
-                        initAngleY = 0;
-                        initFov = 0.7;
-                        maxAngleX = 30;
-                        maxAngleY = 100;
-                        maxFov = 0.7;
-                        maxMoveX = 0;
-                        maxMoveY = 0;
-                        maxMoveZ = 0;
-                        minAngleX = -30;
-                        minAngleY = -100;
-                        minFov = 0.7;
-                        minMoveX = 0;
-                        minMoveY = 0;
-                        minMoveZ = 0;
-                        opticsDisplayName = "cam2";
-                        speedZoomMaxFOV = 0;
-                        speedZoomMaxSpeed = 1e+10;
-                        thermalMode = [2];
-                        visionMode = ["Normal","NVG"];
+                        visionmode[] = {"Normal", "NVG"};
                     };
                     
                     class CameraClaw : ViewOptics 
                     {
-                        camDir = "cam_rear_dir";
-                        camPos = "cam_rear";
-                        gunnerOpticsModel = "\a3\Weapons_F_Enoch\Reticle\Optics_Gunner_UGV_02_cam2_F";
-                        initAngleX = 0;
-                        initAngleY = 0;
-                        initFov = 0.35;
-                        maxAngleX = 30;
-                        maxAngleY = 100;
-                        maxFov = 0.35;
-                        maxMoveX = 0;
-                        maxMoveY = 0;
-                        maxMoveZ = 0;
-                        minAngleX = -30;
-                        minAngleY = -100;
-                        minFov = 0.35;
-                        minMoveX = 0;
-                        minMoveY = 0;
-                        minMoveZ = 0;
-                        opticsDisplayName = "cam3";
-                        speedZoomMaxFOV = 0;
-                        speedZoomMaxSpeed = 1e+10;
-                        thermalMode = [2];
-                        visionMode = ["Normal","NVG"];
+                        visionmode[] = {"Normal", "NVG"};
                     };
-                };
-
-                class ViewOptics : ViewOptics
-                {
-                    visionmode[] = {"Normal", "NVG"};
                 };
             };
         };
