@@ -7587,6 +7587,12 @@ class CfgVehicles
                 count = 80;
             };
 
+            class _xx_30Rnd_556x45_Stanag
+            {
+                magazine = "30Rnd_556x45_Stanag";
+                count = 80;
+            };
+
             class _xx_30Rnd_65x39_caseless_green
             {
                 magazine = "30Rnd_65x39_caseless_green";
