@@ -333,7 +333,7 @@ class cfgWeapons
 
     class opt_h_blufor: H_HelmetB
     {
-        displayName = "[OPT] Bluefor";
+        displayName = "[OPT] Blufor";
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\helm_blufor.paa" };
         editorPreview = "\opt\opt_client\addons\characters\data\helm_blufor_icon.paa";
         picture = "\opt\opt_client\addons\characters\data\helm_blufor_icon.paa";
@@ -1361,7 +1361,7 @@ class cfgWeapons
 
     class opt_v_blufor: V_PlateCarrier1_blk
     {
-        displayName = "[OPT] Bluefor";
+        displayName = "[OPT] Blufor";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\weste_blufor.paa" };
         editorPreview = "\opt\opt_client\addons\characters\data\weste_blufor_icon.paa";
@@ -1434,7 +1434,7 @@ class cfgWeapons
     {
         author = "OPT";
         scope = 2;
-        displayName = "[OPT] Bluefor";
+        displayName = "[OPT] Blufor";
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\uniform_blufor.paa" };

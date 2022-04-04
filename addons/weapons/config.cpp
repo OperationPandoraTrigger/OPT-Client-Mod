@@ -9367,7 +9367,7 @@ class CfgVehicles
 
     class OPT_B_Carryall_cr2020_blufor : B_Carryall_ghex_F
     {
-        displayName = "Grosser Rucksack Eng. (cr2020 Bluefor)";
+        displayName = "Grosser Rucksack Eng. (cr2020 Blufor)";
         maximumLoad = 320;
         scope = 2;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\rucksack\opt_cr2020_blufor_carryall_backpack.paa"};
