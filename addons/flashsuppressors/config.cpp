@@ -7,9 +7,6 @@ class CfgPatches
         units[] = {};
         weapons[] = {};
         requiredVersion = 0.100000;
-        version = VERSION;
-        versionStr = QUOTE(VERSION);
-        versionAr[] = {VERSION_AR};
         requiredAddons[] = {"opt_weapons", "opt_characters", "opt_core", "a3_armor_f", "opt_vehicles", "ace_flashsuppressors"};
     };
 };

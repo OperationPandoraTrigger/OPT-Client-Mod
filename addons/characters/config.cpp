@@ -26,9 +26,6 @@ class CfgPatches
                      "OPT_V_BandollierB_ghex_F", "OPT_V_BandollierB_2_ghex_F", "OPT_V_Chestrig_khk", "OPT_V_Chestrig_rgr", "OPT_V_Chestrig_oli", "OPT_V_PlateCarrierL_CTRG", "OPT_V_PlateCarrier1_tna_F",
                      "OPT_V_PlateCarrierH_CTRG", "OPT_V_PlateCarrier2_tna_F", "OPT_V_RebreatherB", "OPT_V_RebreatherIR"};
         requiredVersion = 0.100000;
-        version = VERSION;
-        versionStr = QUOTE(VERSION);
-        versionAr[] = {VERSION_AR};
         requiredAddons[] = {"opt_weapons", "A3_Characters_F_Beta", "A3_Characters_F_Gamma", "a3_characters_f_epa", "A3_Characters_F_EPB", "a3_characters_f_epc",
                             "A3_Characters_F_BLUFOR", "A3_Characters_F_OPFOR", "A3_Characters_F_INDEP", "A3_Characters_F_Bootcamp", "a3_characters_f_civil",
                             "A3_Characters_F_Exp_Vests", "A3_Characters_F_Exp_Headgear", "A3_Characters_F_Exp", "A3_Characters_F_Mark", "A3_Characters_F_Jets", "A3_Characters_F"};
