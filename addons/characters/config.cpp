@@ -335,6 +335,8 @@ class cfgWeapons
     {
         displayName = "[OPT] Bluefor";
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\helm_blufor.paa" };
+        editorPreview = "\opt\opt_client\addons\characters\data\helm_blufor_icon.paa";
+        picture = "\opt\opt_client\addons\characters\data\helm_blufor_icon.paa";
     };
 
     class H_HelmetIA;
@@ -343,6 +345,8 @@ class cfgWeapons
     {
         displayName = "[OPT] OPFOR";
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\helm_opfor.paa" };
+        editorPreview = "\opt\opt_client\addons\characters\data\helm_opfor_icon.paa";
+        picture = "\opt\opt_client\addons\characters\data\helm_opfor_icon.paa";
     };
 
     /////////////////// Westen ///////////////////
@@ -1360,14 +1364,64 @@ class cfgWeapons
         displayName = "[OPT] Bluefor";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\weste_blufor.paa" };
+        editorPreview = "\opt\opt_client\addons\characters\data\weste_blufor_icon.paa";
+        picture = "\opt\opt_client\addons\characters\data\weste_blufor_icon.paa";
     };
+
 
     class V_PlateCarrierIA1_dgtl;
 
     class opt_v_opfor: V_PlateCarrierIA1_dgtl
     {
         displayName = "[OPT] OPFOR";
+        hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\weste_opfor.paa" };
+        editorPreview = "\opt\opt_client\addons\characters\data\weste_opfor_icon.paa";
+        picture = "\opt\opt_client\addons\characters\data\weste_opfor_icon.paa";
+
+        class ItemInfo : VestItem 
+        {
+            _generalMacro = "VestItem";
+            author = "$STR_A3_Bohemia_Interactive";
+            containerClass = "Supply120";
+            hiddenSelections[] = {"camo"};
+            class HitpointsProtectionInfo 
+            {
+                class Chest 
+                {
+                    hitpointName = "HitChest";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+                
+                class Diaphragm 
+                {
+                    hitpointName = "HitDiaphragm";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+                
+                class Abdomen 
+                {
+                    hitpointName = "HitAbdomen";
+                    armor = 16;
+                    passThrough = 0.3;
+                };
+                
+                class Body 
+                {
+                    hitpointName = "HitBody";
+                    passThrough = 0.3;
+                };
+            };
+            mass = 60;
+            overlaySelectionsInfo[] = {"Ghillie_hide"};
+            scope = 0;
+            showHolsteredPistol = 0;
+            type = 701;
+            uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest01";
+            uniformType = "Default";
+        };
     };
 
     //// Uniformen //////
@@ -1384,6 +1438,8 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\uniform_blufor.paa" };
+        editorPreview = "\opt\opt_client\addons\characters\data\uniform_blufor_icon.paa";
+        picture = "\opt\opt_client\addons\characters\data\uniform_blufor_icon.paa";
 
         class ItemInfo: UniformItem 
         {
@@ -1401,6 +1457,8 @@ class cfgWeapons
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         hiddenSelections[] = { "camo1" };
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\uniform_opfor.paa" };
+        editorPreview = "\opt\opt_client\addons\characters\data\uniform_opfor_icon.paa";
+        picture = "\opt\opt_client\addons\characters\data\uniform_opfor_icon.paa";
 
         class ItemInfo: UniformItem 
         {
