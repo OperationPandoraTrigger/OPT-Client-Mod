@@ -7346,9 +7346,9 @@ class CfgVehicles
                 weapon = "OPT_hgun_Rook40_F";
                 count = 70;
             };
-            class _xx_OPT_arifle_CTAR_ERCO_Pointer_F
+            class _xx_OPT_arifle_Mk20_blk_ERCO_Pointer_F
             {
-                weapon = "OPT_arifle_CTAR_ERCO_Pointer_F";
+                weapon = "OPT_arifle_Mk20_blk_ERCO_Pointer_F";
                 count = 20;
             };
         };
