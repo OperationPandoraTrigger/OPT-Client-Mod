@@ -1212,6 +1212,8 @@ class CfgVehicles
     {
         faction = "OPT_FIN";
         fuelCapacity = 1; // 2 //
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Pelter\ugv_pelter_blufor.paa"};
+        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";
         
         class Turrets : Turrets
         {
@@ -1255,6 +1257,8 @@ class CfgVehicles
     {
         faction = "OPT_Sowjet";
         side = 0;
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Pelter\ugv_pelter_opfor.paa"};
+        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";
 
     };
 };
