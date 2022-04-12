@@ -3587,6 +3587,8 @@ class CfgWeapons
 
     class arifle_Mk20_GL_F : mk20_base_F
     {
+         class EGLM;   
+
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             class CowsSlot;
@@ -3597,6 +3599,11 @@ class CfgWeapons
     {
         _generalMacro = "OPT_arifle_Mk20_GL_F";
         baseWeapon = "OPT_arifle_Mk20_GL_F";
+
+        class EGLM : EGLM
+        {
+            magazines[] += {"OPT_1Rnd_HE_Grenade_shell"};
+        };
 
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
