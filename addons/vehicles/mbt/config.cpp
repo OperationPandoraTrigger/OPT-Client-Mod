@@ -417,7 +417,7 @@ class CfgVehicles
     //// M4 Scorcher ////
     class OPT_B_MBT_01_arty_F : B_MBT_01_arty_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 12; // 100 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_fin_1.paa","\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_fin_2.paa","\opt\opt_client\addons\vehicles\textures\Hunter\opt_rcws_fin.paa","A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_scorcher_fin.jpg";
@@ -692,7 +692,7 @@ class CfgVehicles
     //// T-100 Varsuk ////
     class OPT_O_MBT_02_cannon_F : O_MBT_02_cannon_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 12; // 75 //
         textureList = ["Hex",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_1.paa","\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_2.paa","\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_3.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"};
@@ -1329,7 +1329,7 @@ class CfgVehicles
     //// 2S9 Sochor ////
     class OPT_O_MBT_02_arty_F : O_MBT_02_arty_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 12; // 75 //
         textureList = ["Hex",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Sochor\opt_sochor_rus_2.paa","\opt\opt_client\addons\vehicles\textures\T100\opt_t100_rus_3.paa","\opt\opt_client\addons\vehicles\textures\Ifrit\opt_rcws_rus.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"};
@@ -1533,7 +1533,7 @@ class CfgVehicles
     class OPT_B_MBT_03_cannon_F : OPT_I_MBT_03_cannon_F
     {
         side = 1;
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_3.paa"};

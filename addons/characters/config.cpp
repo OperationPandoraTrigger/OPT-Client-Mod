@@ -1498,7 +1498,7 @@ class CfgVehicles
     {
     };
 
-    ////////////////// Finland /////////////////////
+    ////////////////// OPT Blufor /////////////////////
 
     class B_Helipilot_F : B_Soldier_04_f
     {
@@ -1521,7 +1521,7 @@ class CfgVehicles
     {
         scope = 2;
         side = 1;
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         displayName = "Basisclass uniform";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
@@ -1541,7 +1541,7 @@ class CfgVehicles
     class OPT_NATO_Pilot : B_Helipilot_F
     {
         displayName = "Pilot";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         weapons[] = {"OPT_SMG_02_ACO_F", "Throw", "Put"};
         respawnWeapons[] = {"OPT_SMG_02_ACO_F", "Throw", "Put"};
         magazines[] = {"30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
@@ -1559,7 +1559,7 @@ class CfgVehicles
     class OPT_NATO_Pilot_jet : B_Helipilot_F
     {
         displayName = "Jet Pilot";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         weapons[] = {"OPT_SMG_02_ACO_F", "Throw", "Put"};
         respawnWeapons[] = {"OPT_SMG_02_ACO_F", "Throw", "Put"};
         magazines[] = {"30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02", "30Rnd_9x21_Mag_SMG_02","30Rnd_9x21_Mag_SMG_02","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
@@ -1597,7 +1597,7 @@ class CfgVehicles
     class OPT_NATO_Scharfschuetze : B_sniper_F
     {
         displayName = "Scharfschütze";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         Items[] = {};
         respawnItems[] = {};
         weapons[] = {"OPT_srifle_GM6_camo_LRPS_F", "OPT_hgun_P07_khk_F", "Rangefinder", "Throw", "Put"};
@@ -1613,7 +1613,7 @@ class CfgVehicles
     class OPT_NATO_Scharfschuetze_2 : OPT_NATO_Scharfschuetze
     {
         displayName = "Scharfschütze (DMR)";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         Items[] = {};
         respawnItems[] = {};
         weapons[] = {"OPT_srifle_DMR_03_ERCO_F", "Binocular", "Throw", "Put"};
@@ -1647,7 +1647,7 @@ class CfgVehicles
     class OPT_NATO_Soldat : B_CTRG_soldier_GL_LAT_F
     {
         displayName = "Schütze";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         icon = "iconMan";
@@ -1688,7 +1688,7 @@ class CfgVehicles
     class OPT_NATO_Besatzungsmitglied : B_CTRG_soldier_AR_A_F
     {
         displayName = "Besatzungsmitglied";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         icon = "iconMan";
@@ -1710,7 +1710,7 @@ class CfgVehicles
     {
         icon = "iconManOfficer";
         displayName = "Offizier";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         Items[] = {};
@@ -1731,7 +1731,7 @@ class CfgVehicles
     {
         icon = "iconManLeader";
         displayName = "Truppführer";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         Items[] = {"ACE_HuntIR_monitor"};
         respawnItems[] = {"ACE_HuntIR_monitor"};
         weapons[] = {"OPT_arifle_SPAR_01_blk_ERCO_Pointer_F", "OPT_Laserdesignator", "Throw", "Put"};
@@ -1750,7 +1750,7 @@ class CfgVehicles
     {
         icon = "iconManMedic";
         displayName = "Sanitäter";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         attendant = 1;
@@ -1771,7 +1771,7 @@ class CfgVehicles
     class OPT_NATO_Sprengmeister : B_CTRG_soldier_AR_A_F
     {
         displayName = "Sprengmeister";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         Items[] = { "MineDetector"};
@@ -1794,7 +1794,7 @@ class CfgVehicles
     class OPT_NATO_Ingenieur : B_CTRG_soldier_AR_A_F
     {
         displayName = "Ingenieur";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         Items[] = {};
@@ -1817,7 +1817,7 @@ class CfgVehicles
     class OPT_NATO_Operator : B_CTRG_soldier_AR_A_F
     {
         displayName = "Drohnen-Operator";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         vehicleClass = "Men";
         editorSubcategory = "EdSubcat_Personnel";
         icon = "iconMan";
@@ -1908,7 +1908,7 @@ class CfgVehicles
         backpack = "OPT_B_AssaultPack_blk_cr2020_blufor";
     };
   
-    ////////////////// Sowjet /////////////////////
+    ////////////////// OPT Opfor /////////////////////
 
     class SoldierEB : CAManBase
     {
@@ -1953,7 +1953,7 @@ class CfgVehicles
     {
         scope = 2;
         side = 0;
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "Basisclass uniform";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
@@ -1978,7 +1978,7 @@ class CfgVehicles
     class OPT_CSAT_Pilot : O_helipilot_F
     {
         displayName = "Pilot";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         weapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular" , "Throw", "Put"};
         respawnWeapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular" , "Throw", "Put"};
         magazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
@@ -1994,7 +1994,7 @@ class CfgVehicles
     class OPT_CSAT_Pilot_jet : O_helipilot_F
     {
         displayName = "Jet Pilot";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         weapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular" , "Throw", "Put"};
         respawnWeapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular" , "Throw", "Put"};
         magazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
@@ -2013,7 +2013,7 @@ class CfgVehicles
 
     class OPT_CSAT_Offizier : O_officer_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         weapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F",  "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
@@ -2035,7 +2035,7 @@ class CfgVehicles
     class OPT_CSAT_Truppfuehrer : O_Soldier_SL_F
     {
         displayName = "Truppführer";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         Items[] = {"ACE_HuntIR_monitor"};
         respawnItems[] = {"ACE_HuntIR_monitor"};
         Weapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F", "OPT_Laserdesignator_02", "Throw", "Put"};
@@ -2057,7 +2057,7 @@ class CfgVehicles
     class OPT_CSAT_Soldat : O_Soldier_F
     {
         displayName = "Schütze";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         weapons[] = {"OPT_arifle_Katiba_C_ACO_pointer_F","Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_arifle_Katiba_C_ACO_pointer_F", "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
@@ -2160,7 +2160,7 @@ class CfgVehicles
     class OPT_CSAT_Scharfschuetze : O_sniper_F
     {
         displayName = "Scharfschütze";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         Items[] = {};
         respawnItems[] = {};
         weapons[] = {"OPT_srifle_GM6_ghex_LRPS_F", "OPT_hgun_Rook40_F", "Rangefinder", "Throw", "Put"};
@@ -2176,7 +2176,7 @@ class CfgVehicles
     class OPT_CSAT_Scharfschuetze_2 : OPT_CSAT_Scharfschuetze
     {
         displayName = "Scharfschütze (DMR)";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         weapons[] = {"OPT_srifle_EBR_ERCO_F","Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_srifle_EBR_ERCO_F","Binocular", "Throw", "Put"};
         magazines[] = {"20Rnd_762x51_Mag", "20Rnd_762x51_Mag", "20Rnd_762x51_Mag","20Rnd_762x51_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
@@ -2198,7 +2198,7 @@ class CfgVehicles
     class OPT_CSAT_Ingenieur: O_engineer_F
     {
         displayName = "Ingenieur";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         Items[] = {};
         respawnItems[] = {};
         canDeactivateMines = 0;
@@ -2217,7 +2217,7 @@ class CfgVehicles
     class OPT_CSAT_Sprengmeister : O_engineer_F
     {
         displayName = "Sprengmeister";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         Items[] = { "MineDetector"};
         respawnItems[] = {"MineDetector"};
         engineer = 0;
@@ -2240,7 +2240,7 @@ class CfgVehicles
     class OPT_CSAT_Sanitaeter : O_medic_F
     {
         displayName = "Sanitäter";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         weapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
@@ -2262,7 +2262,7 @@ class CfgVehicles
     class OPT_CSAT_Besatzungsmitglied : O_crew_F
     {
         displayName = "Besatzungsmitglied";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         weapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};

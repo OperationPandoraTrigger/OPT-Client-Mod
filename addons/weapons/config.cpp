@@ -4935,7 +4935,7 @@ class CfgVehicles
 
     class OPT_B_HMG_01_F : B_HMG_01_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_hmg_low.jpg";
 
         class Turrets : Turrets
@@ -5004,7 +5004,7 @@ class CfgVehicles
 
     class OPT_O_HMG_01_F : O_HMG_01_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_hmg_low.jpg";
 
         class Turrets : Turrets
@@ -5043,7 +5043,7 @@ class CfgVehicles
 
     class OPT_B_HMG_01_high_F : B_HMG_01_high_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_hmg_high.jpg";
 
         class Turrets : Turrets
@@ -5112,7 +5112,7 @@ class CfgVehicles
 
     class OPT_O_HMG_01_high_F : O_HMG_01_high_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_hmg_high.jpg";
 
         class Turrets : Turrets
@@ -5158,7 +5158,7 @@ class CfgVehicles
 
     class OPT_B_GMG_01_F : B_GMG_01_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_gmg_low.jpg";
 
         class Turrets : Turrets
@@ -5228,7 +5228,7 @@ class CfgVehicles
 
     class OPT_O_GMG_01_F : O_GMG_01_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_gmg_low.jpg";
 
         class Turrets : Turrets
@@ -5267,7 +5267,7 @@ class CfgVehicles
 
     class OPT_B_GMG_01_high_F : B_GMG_01_high_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_gmg_high.jpg";
 
         class Turrets : Turrets
@@ -5336,7 +5336,7 @@ class CfgVehicles
 
     class OPT_O_GMG_01_high_F : O_GMG_01_high_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\opt_gmg_high.jpg";
 
         class Turrets : Turrets
@@ -5381,7 +5381,7 @@ class CfgVehicles
 
     class OPT_B_static_AA_F : B_static_AA_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         displayName = "Statischer AA Titan-Werfer";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_static_AA_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_aa_fin_2.paa"};
@@ -5441,7 +5441,7 @@ class CfgVehicles
 
     class OPT_O_static_AA_F : O_static_AA_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "Statischer AA Titan-Werfer";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_static_AA_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_aa_rus_2.paa"};       
@@ -5480,7 +5480,7 @@ class CfgVehicles
 
     class OPT_B_static_AT_F : B_static_AT_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         displayName = "Statischer AT Titan-Werfer";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_static_AT_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_at_fin_2.paa"};
@@ -5540,7 +5540,7 @@ class CfgVehicles
 
     class OPT_O_static_AT_F : O_static_AT_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "Statischer AT Titan-Werfer (CSAT)";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_static_AT_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_basis_1.paa","\opt\opt_client\addons\weapons\textures\Waffen\opt_titan_at_rus_2.paa"};
@@ -5656,7 +5656,7 @@ class CfgVehicles
 
     class OPT_B_Mortar_01_F : B_Mortar_01_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_B_Mortar_01_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_mortar_fin_1.paa"};
 
@@ -5710,7 +5710,7 @@ class CfgVehicles
 
     class OPT_O_Mortar_01_F : O_Mortar_01_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         editorPreview = "\opt\opt_client\addons\weapons\Vorschaubilder_Shop\OPT_O_Mortar_01_F.jpg";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\weapons\textures\Waffen\opt_mortar_rus_1.paa"};
 

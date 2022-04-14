@@ -46,7 +46,7 @@ class CfgVehicles
     //// Speedboat Minigun ////
     class OPT_B_Boat_Armed_01_minigun_F : B_Boat_Armed_01_minigun_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
 
         class TransportItems
         {
@@ -126,7 +126,7 @@ class CfgVehicles
     //// Speedboat HMG ////
     class OPT_O_Boat_Armed_01_hmg_F : O_Boat_Armed_01_hmg_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
 
         class TransportItems
         {
@@ -291,7 +291,7 @@ class CfgVehicles
     //// Assault Boat ////
     class OPT_B_Boat_Transport_01_F : B_Boat_Transport_01_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
 
         class TransportItems
         {
@@ -304,7 +304,7 @@ class CfgVehicles
 
     class OPT_O_Boat_Transport_01_F : O_Boat_Transport_01_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
 
         class TransportItems
         {
@@ -336,7 +336,7 @@ class CfgVehicles
     class OPT_B_C_Boat_Transport_02_F : I_C_Boat_Transport_02_F
     {
         _generalMacro = "B_C_Boat_Transport_02_F";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\rhib\nato\rhib_nato_0.paa", "\opt\opt_client\addons\vehicles\textures\rhib\nato\rhib_nato_1.paa"};
         textureList[] = {};
         side = 1;
@@ -352,7 +352,7 @@ class CfgVehicles
     class OPT_O_C_Boat_Transport_02_F : I_C_Boat_Transport_02_F
     {
         _generalMacro = "O_C_Boat_Transport_02_F";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\rhib\csat\rhib_csat_0.paa", "\opt\opt_client\addons\vehicles\textures\rhib\csat\rhib_csat_1.paa"};
         textureList[] = {};
         side = 0;
@@ -388,7 +388,7 @@ class CfgVehicles
 
     class OPT_B_SDV_01_F : B_SDV_01_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         maximumLoad = 800;
 
         class TransportItems
@@ -422,7 +422,7 @@ class CfgVehicles
 
     class OPT_O_SDV_01_F : O_SDV_01_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
 
         class TransportItems
         {
@@ -504,7 +504,7 @@ class CfgVehicles
     //// Landungsboot LCVP MK5  ////
     class OPT_rksla3_lcvpmk5_viv : rksla3_lcvpmk5_1
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         maxSpeed = 96;
         enginePower = 1500; //800
         idleRpm = 500; // 550
@@ -554,7 +554,7 @@ class CfgVehicles
     //// Landungsboot LCVP MK5  ////
     class OPT_rksla3_lcvpmk5_viv_opfor_camo : rksla3_lcvpmk5_1_opfor_camo
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         maxSpeed = 96;
         enginePower = 1500; //800
         idleRpm = 500; // 550
