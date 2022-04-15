@@ -478,7 +478,7 @@ class CfgVehicles
 
     class OPT_O_APC_Wheeled_01_cannon_F : OPT_B_APC_Wheeled_01_cannon_ghex_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         side = 0;
         fuelCapacity = 8; // 60 //
         crew = "O_Soldier_F";
@@ -686,7 +686,7 @@ class CfgVehicles
     //// IFV-6a Cheetah ////
     class OPT_B_APC_Tracked_01_AA_F : B_APC_Tracked_01_AA_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 12; // 45 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_2.paa","\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_3.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_cheetah_fin.jpg";
@@ -1195,7 +1195,7 @@ class CfgVehicles
     class OPT_B_APC_tracked_03_cannon_F : OPT_I_APC_tracked_03_cannon_F
     {
         side = 1;
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mora\opt_mora_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\mora\opt_mora_fin_2.paa"};
@@ -1327,7 +1327,7 @@ class CfgVehicles
     //// BTR-K Kamysh ////
     class OPT_O_APC_Tracked_02_cannon_F : O_APC_Tracked_02_cannon_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 12; // 45 //
         textureList = ["Hex",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_2.paa","\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_3.paa"};
@@ -1990,7 +1990,7 @@ class CfgVehicles
     //// ZSU-39 Tigris ////
     class OPT_O_APC_Tracked_02_AA_F : O_APC_Tracked_02_AA_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 12; // 45 //
         textureList = ["Hex",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\BTR-K\opt_btrk_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Tigris\opt_tigris_rus_3.paa"};
@@ -2732,7 +2732,7 @@ class CfgVehicles
     class OPT_B_APC_Wheeled_03_cannon_F : OPT_I_APC_Wheeled_03_cannon_F
     {
         side = 1;
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"}; 
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_3.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_4.paa"};
@@ -3130,7 +3130,7 @@ class CfgVehicles
     //// Rhino ////
     class OPT_B_AFV_Wheeled_01_cannon_F : B_AFV_Wheeled_01_cannon_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 5; // 24 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_2.paa", "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
         textureList[] = {"Green",0,"Sand",0};
@@ -3219,7 +3219,7 @@ class CfgVehicles
 
     class OPT_O_AFV_Wheeled_01_cannon_F : OPT_B_AFV_Wheeled_01_cannon_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         side = 0;
         crew = "O_Soldier_F";
         typicalCargo[] = {"O_Soldier_lite_F"};

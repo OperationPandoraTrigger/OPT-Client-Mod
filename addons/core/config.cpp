@@ -67,13 +67,13 @@ class CfgFactionClasses
         displayName = "OPT NATO kalter Krieg";
     };
 
-    class OPT_Sowjet : OPF_F
+    class OPT_OPFOR : OPF_F
     {
-        displayName = "OPT Sowjet";
+        displayName = "OPT Opfor";
     };
 
-    class OPT_FIN : BLU_F
+    class OPT_BLUFOR: BLU_F
     {
-        displayName = "OPT Finland";
+        displayName = "OPT Blufor";
     };
 };

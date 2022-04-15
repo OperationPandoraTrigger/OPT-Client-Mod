@@ -230,7 +230,7 @@ class CfgVehicles
 
     class OPT_O_Plane_Fighter_03_dynamicLoadout_F : OPT_I_Plane_Fighter_03_CAS_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         side = 0;
         crew = "OPT_CSAT_Pilot";
         hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\opt_Buzzard_rus_1.paa","\opt\opt_client\addons\vehicles\textures\buzzard\opt_Buzzard_rus_2.paa"};
@@ -240,7 +240,7 @@ class CfgVehicles
 
     class OPT_B_Plane_Fighter_03_dynamicLoadout_F : OPT_I_Plane_Fighter_03_CAS_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\buzzard\opt_buzzard_fin_1.paa","\opt\opt_client\addons\vehicles\textures\buzzard\opt_buzzard_fin_2.paa"};
@@ -906,7 +906,7 @@ class CfgVehicles
     //// To-199 Neophron (CAS) ////
     class OPT_O_Plane_CAS_02_F : O_Plane_CAS_02_dynamicLoadout_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "To-199 Neophron";
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
@@ -1091,7 +1091,7 @@ class CfgVehicles
 
     class OPT_B_Plane_CAS_02_F : OPT_O_Plane_CAS_02_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_fin_2.paa"};

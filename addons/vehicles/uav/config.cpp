@@ -69,7 +69,7 @@ class CfgVehicles
     class OPT_B_UAV_02_F : B_UAV_02_dynamicLoadout_F
     {
         displayName = "MQ-4A Greyhawk (Shrieker)";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 347; // 1000 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
@@ -262,7 +262,7 @@ class CfgVehicles
     class OPT_O_UAV_02_F : O_UAV_02_dynamicLoadout_F
     {
         displayName = "K40 Ababil-3 (Shrieker)";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 347; // 1000 //
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
@@ -1152,7 +1152,7 @@ class CfgVehicles
     //// Pelican ////
     class OPT_B_UAV_06_F : B_UAV_06_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 10; // 16 //
 
         class Components : Components
@@ -1170,7 +1170,7 @@ class CfgVehicles
 
     class OPT_O_UAV_06_F : OPT_B_UAV_06_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         side = 0;
         fuelCapacity = 10; // 16 //
 
@@ -1210,7 +1210,7 @@ class CfgVehicles
     //// Pelter ////
     class OPT_B_UGV_02_Demining_F : B_UGV_02_Demining_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 1; // 2 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Pelter\ugv_pelter_blufor.paa"};
         //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";
@@ -1255,7 +1255,7 @@ class CfgVehicles
 
     class OPT_O_UGV_02_Demining_F : OPT_B_UGV_02_Demining_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         side = 0;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Pelter\ugv_pelter_opfor.paa"};
         //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";

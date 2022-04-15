@@ -110,7 +110,7 @@ class CfgVehicles
     //// Hunter ////
     class OPT_B_MRAP_01_F : B_MRAP_01_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 4; // 94 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_2.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_fin.jpg";
@@ -344,7 +344,7 @@ class CfgVehicles
     //// Hunter HMG ////
     class OPT_B_MRAP_01_hmg_F : B_MRAP_01_hmg_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 4;// 94 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_2.paa",  "\opt\opt_client\addons\vehicles\textures\Hunter\opt_rcws_fin.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
@@ -531,7 +531,7 @@ class CfgVehicles
     //// Ifrit ////
     class OPT_O_MRAP_02_F : O_MRAP_02_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 4;                     // 94 //
         textureList = ["Hex",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Ifrit\opt_ifrit_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Ifrit\opt_ifrit_rus_2.paa"};
@@ -590,7 +590,7 @@ class CfgVehicles
     //// Ifrit HMG ////
     class OPT_O_MRAP_02_hmg_F : O_MRAP_02_hmg_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 4;                     // 94 //
         textureList = ["Hex",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Ifrit\opt_ifrit_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Ifrit\opt_ifrit_rus_2.paa", "\opt\opt_client\addons\vehicles\textures\Ifrit\opt_rcws_rus.paa"};
@@ -1346,7 +1346,7 @@ class CfgVehicles
 
     class OPT_B_T_LSV_01_unarmed_F : B_T_LSV_01_unarmed_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 3; // 45 //
         textureList[] = {"Black",0,"Olive",0,"Sand",0};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
@@ -1393,7 +1393,7 @@ class CfgVehicles
 
     class OPT_B_T_LSV_01_armed_F : B_T_LSV_01_armed_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 3; // 45 //
         textureList[] = {"Black",0,"Olive",0,"Sand",0};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
@@ -1446,7 +1446,7 @@ class CfgVehicles
 
     class OPT_B_LSV_01_AT_F : B_LSV_01_AT_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 3; // 20 //
         textureList[] = {"Black",0,"Olive",0,"Sand",0};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
@@ -1601,7 +1601,7 @@ class CfgVehicles
 
     class OPT_O_T_LSV_02_unarmed_F : O_T_LSV_02_unarmed_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 4; // 55 //
         textureList[] = {"Black",0,"GreenHex",0,"Arid",0};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_3.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"};
@@ -1670,7 +1670,7 @@ class CfgVehicles
 
     class OPT_O_T_LSV_02_armed_F : O_T_LSV_02_armed_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 4; // 55 //
         textureList[] = {"Black",0,"GreenHex",0,"Arid",0};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_3.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"};
@@ -1708,7 +1708,7 @@ class CfgVehicles
 
     class OPT_O_LSV_02_AT_F : O_LSV_02_AT_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 4; // 20 //
         textureList[] = {"Black",0,"GreenHex",0,"Arid",0};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_2.paa","\opt\opt_client\addons\vehicles\textures\Qilin\opt_qilin_rus_3.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa","\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_F_CO.paa"};
@@ -1843,7 +1843,7 @@ class CfgVehicles
     //// Quadbike ////
     class OPT_B_Quadbike_01_F : B_Quadbike_01_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         fuelCapacity = 2; // 30 //
         textureList = ["Blufor",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Quadbike\opt_quadbike_fin_1.paa","\A3\Soft_F\Quadbike_01\Data\Quadbike_01_wheel_co.paa"};
@@ -1885,7 +1885,7 @@ class CfgVehicles
 
     class OPT_O_Quadbike_01_F : O_Quadbike_01_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 2; // 30 //
         textureList = ["Opfor",0];
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Quadbike\opt_quadbike_rus_1.paa","\A3\Soft_F\Quadbike_01\Data\Quadbike_01_wheel_co.paa"};

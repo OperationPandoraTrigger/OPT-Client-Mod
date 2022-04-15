@@ -101,7 +101,7 @@ class CfgVehicles
 
     class OPT_O_Heli_Attack_02_F : O_Heli_Attack_02_dynamicLoadout_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         driverCanEject = 1;
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"120Rnd_CMFlareMagazine"};
@@ -412,7 +412,7 @@ class CfgVehicles
     // PO-30 Orca Light 
     class OPT_O_Heli_Light_02_v2_F : OPT_O_Heli_Light_02_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "PO-30 Orca (Light)";
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine"};
@@ -461,7 +461,7 @@ class CfgVehicles
     class OPT_O_Heli_Light_02_v3_F : OPT_O_Heli_Light_02_F
     {
         displayName = "PO-30 Orca (Heavy)";
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         weapons[] = {"OPT_CMFlareLauncher","OPT_M134_minigun"};
         magazines[] = {"168Rnd_CMFlare_Chaff_Magazine","5000Rnd_762x51_Yellow_Belt"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Orca\opt_Orca_U_rus_1.paa", "\A3\Air_F_Heli\Heli_Light_02\Data\Rockets_CO.paa"};
@@ -511,7 +511,7 @@ class CfgVehicles
     //// PO-30 Orca (Unbewaffnet) ////
     class OPT_O_Heli_Light_02_unarmed_F : O_Heli_Light_02_unarmed_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "PO-30 Orca (Unbewaffnet)";
         driverCanEject = 1;
         radarType = 4;        // 8 //
@@ -570,7 +570,7 @@ class CfgVehicles
     //// Mi-290 Taru ////
     class OPT_O_Heli_Transport_04_F : O_Heli_Transport_04_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "Mi-290 Taru (Kran)";
         maximumLoad = 2500;
         driverCanEject = 1;
@@ -867,7 +867,7 @@ class CfgVehicles
     //// Mi-290 Taru (Transport) ////
     class OPT_O_Heli_Transport_04_covered_F : O_Heli_Transport_04_covered_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "Mi-290 Taru (Transport)";
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
@@ -1026,7 +1026,7 @@ class CfgVehicles
     //// Mi-290 Taru (Repair) ////
     class OPT_O_Heli_Transport_04_box_F : O_Heli_Transport_04_box_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "Mi-290 Taru (Repair)";
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
@@ -1113,7 +1113,7 @@ class CfgVehicles
     //// Mi-290 Taru (Ammo) ////
     class OPT_O_Heli_Transport_04_ammo_F : O_Heli_Transport_04_ammo_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "Mi-290 Taru (Ammo)";
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
@@ -1193,7 +1193,7 @@ class CfgVehicles
     //// Mi-290 Taru (Fuel) ////
     class OPT_O_Heli_Transport_04_fuel_F : O_Heli_Transport_04_fuel_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         displayName = "Mi-290 Taru (Fuel)";
         driverCanEject = 1;
         fuelCapacity = 330; // 2500 //
@@ -1479,7 +1479,7 @@ class CfgVehicles
     //// AH-99 Blackfoot ////
     class OPT_B_Heli_Attack_01_F : B_Heli_Attack_01_dynamicLoadout_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         displayName = "AH-99 Blackfoot";
         driverCanEject = 1;
         fuelCapacity = 130; // 500 //
@@ -2202,7 +2202,7 @@ class CfgVehicles
     class OPT_B_Heli_Transport_02_F : OPT_I_Heli_Transport_02_F
     {
         _generalMacro = "OPT_B_Heli_Transport_02_F";
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_3.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
@@ -2674,7 +2674,7 @@ class CfgVehicles
 
     class OPT_B_Heli_light_03_unarmed_F : OPT_O_Heli_light_03_unarmed_green_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa"};
@@ -2819,7 +2819,7 @@ class CfgVehicles
 
     class OPT_B_Heli_light_03_dynamicLoadout_F : OPT_I_Heli_light_03_v2_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
@@ -2959,7 +2959,7 @@ class CfgVehicles
 
     class OPT_B_Heli_heavy_03_dynamicLoadout_F : OPT_I_Heli_light_03_v3_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};

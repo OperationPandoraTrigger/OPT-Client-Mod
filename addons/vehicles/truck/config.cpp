@@ -528,7 +528,7 @@ class CfgVehicles
     class OPT_O_Truck_02_covered_F : O_Truck_02_covered_F
     {
 
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 6; // 250 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf.jpg";
@@ -561,7 +561,7 @@ class CfgVehicles
     class OPT_O_Truck_02_fuel_F : O_Truck_02_fuel_F
     {
 
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 200; // 250 //
         transportFuel = 3000;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fuel_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
@@ -578,7 +578,7 @@ class CfgVehicles
 
     class OPT_O_Truck_02_ammo_F : O_Truck_02_ammo_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 6; // 250 //
         transportAmmo = 30000;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_ammo_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
@@ -594,7 +594,7 @@ class CfgVehicles
 
     class OPT_O_Truck_02_box_F : O_Truck_02_box_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 6; // 250 //
         transportRepair = 0; // 200000000;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_repair_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
@@ -610,7 +610,7 @@ class CfgVehicles
 
     class OPT_O_Truck_02_medical_F : O_Truck_02_medical_F
     {
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         fuelCapacity = 6; // 250 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_sani.jpg";
@@ -713,7 +713,7 @@ class CfgVehicles
     class OPT_B_Truck_02_covered_F : I_Truck_02_covered_F
     {
 
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -748,7 +748,7 @@ class CfgVehicles
     class OPT_B_Truck_02_fuel_F : I_Truck_02_fuel_F
     {
 
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -766,7 +766,7 @@ class CfgVehicles
     //// Zamak Ammo ////
     class OPT_B_Truck_02_ammo_F : I_Truck_02_ammo_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -783,7 +783,7 @@ class CfgVehicles
     //// Zamak Repair ////
     class OPT_B_Truck_02_box_F : I_Truck_02_box_F
     {
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -801,7 +801,7 @@ class CfgVehicles
     class OPT_B_Truck_02_medical_F : I_Truck_02_medical_F
     {
 
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         side = 1;
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
@@ -868,7 +868,7 @@ class CfgVehicles
     {
         maximumLoad = 2500;
         side = 0;
-        faction = "OPT_Sowjet";
+        faction = "OPT_OPFOR";
         crew = "OPT_CSAT_Soldat";
         typicalCargo[] = {"OPT_CSAT_Soldat"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
@@ -890,7 +890,7 @@ class CfgVehicles
     {
         maximumLoad = 2500;
         side = 1;
-        faction = "OPT_FIN";
+        faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
