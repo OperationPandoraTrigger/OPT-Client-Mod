@@ -912,7 +912,7 @@ class CfgVehicles
         magazines[] = {"OPT_30Rnd_CMFlare_Chaff_Magazine"};
         fuelCapacity = 150; // 1000 //
         hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_rus_1.paa","\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_rus_2.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_O_Plane_CAS_02_F.jpg";
 
         class Components : Components
         {
@@ -1096,7 +1096,7 @@ class CfgVehicles
         crew = "OPT_NATO_Pilot";
         hiddenSelectionsTextures[]= {"\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Neophon\opt_neophon_fin_2.paa"};
         typicalCargo[] = {"OPT_NATO_Pilot"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_Plane_CAS_02_F.jpg";
     };
 
     class Plane_Fighter_02_Base_F : Plane_Base_F

@@ -74,7 +74,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\UAV\UAV_02_Blufor.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_UAV_02_F.jpg";
 
         class Viewoptics : Viewoptics
         {
@@ -133,7 +133,7 @@ class CfgVehicles
         displayName = "MQ-4A Greyhawk (Unbewaffnet)";
         fuelCapacity = 520;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\UAV\UAV_02_Blufor.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_UAV_02_light_F.jpg";
 
         class Viewoptics : Viewoptics
         {
@@ -267,7 +267,7 @@ class CfgVehicles
         weapons[] = {"OPT_CMFlareLauncher"};
         magazines[] = {"240Rnd_CMFlare_Chaff_Magazine"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\UAV\UAV_02_Opfor.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_O_UAV_02_F.jpg";
 
         class Viewoptics : Viewoptics
         {
@@ -326,7 +326,7 @@ class CfgVehicles
         displayName = "K40 Ababil-3 (Unbewaffnet)";
         fuelCapacity = 347;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\UAV\UAV_02_Opfor.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_taru_transpor_rus.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_O_UAV_02_light_F.jpg";
 
         class Viewoptics : Viewoptics
         {
@@ -1154,6 +1154,7 @@ class CfgVehicles
     {
         faction = "OPT_BLUFOR";
         fuelCapacity = 10; // 16 //
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_UAV_06_F.jpg";
 
         class Components : Components
         {
@@ -1173,6 +1174,7 @@ class CfgVehicles
         faction = "OPT_OPFOR";
         side = 0;
         fuelCapacity = 10; // 16 //
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_O_UAV_06_F.jpg";
 
         class Components : Components
         {
@@ -1213,7 +1215,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         fuelCapacity = 1; // 2 //
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Pelter\ugv_pelter_blufor.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_UGV_02_Demining_F.jpg";
         
         class Turrets : Turrets
         {
@@ -1258,7 +1260,7 @@ class CfgVehicles
         faction = "OPT_OPFOR";
         side = 0;
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Pelter\ugv_pelter_opfor.paa"};
-        //editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";
+        editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_O_UGV_02_Demining_F.jpg";
 
     };
 };
