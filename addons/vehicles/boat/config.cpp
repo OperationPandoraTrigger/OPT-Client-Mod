@@ -511,7 +511,7 @@ class CfgVehicles
         redRpm = 2000; // 2200
         transportSoldier = 10; // 2 //
         rudderForceCoefAtMaxSpeed = 0.005;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\LCVP\rksl_lcvp_blufor_0.paa", "\opt\opt_client\addons\vehicles\textures\LCVP\rksl_lcvp_blufor_1.paa","\opt\opt_client\addons\vehicles\textures\LCVP\Logo_opt_3.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\LCVP\rksl_lcvp_blufor_0.paa", "\opt\opt_client\addons\vehicles\textures\LCVP\rksl_lcvp_blufor_1.paa","\rksla3\rksla3-ship-lcvp\data\rksl_lcvp_cabin_co.paa","\opt\opt_client\addons\vehicles\textures\LCVP\Logo_opt_3.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_rksla3_lcvpmk5_viv.jpg";
       
         class TransportItems
@@ -561,7 +561,7 @@ class CfgVehicles
         redRpm = 2000; // 2200
         transportSoldier = 10; // 2 //
         rudderForceCoefAtMaxSpeed = 0.005;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\LCVP\rksl_lcvp_opfor_0.paa", "\opt\opt_client\addons\vehicles\textures\LCVP\rksl_lcvp_opfor_1.paa","\opt\opt_client\addons\vehicles\textures\LCVP\Logo_opt_3.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\LCVP\rksl_lcvp_opfor_0.paa", "\opt\opt_client\addons\vehicles\textures\LCVP\rksl_lcvp_opfor_1.paa","\rksla3\rksla3-ship-lcvp\data\rksl_lcvp_cabin_co.paa","\opt\opt_client\addons\vehicles\textures\LCVP\Logo_opt_3.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_rksla3_lcvpmk5_viv_opfor_camo.jpg";
 
         class TransportItems
