@@ -871,7 +871,7 @@ class CfgVehicles
         faction = "OPT_OPFOR";
         crew = "OPT_CSAT_Soldat";
         typicalCargo[] = {"OPT_CSAT_Soldat"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa", "\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_rus_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_rus_1.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa","\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_rus_2.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_mrl.jpg";
 
     };
@@ -893,7 +893,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa", "\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_fin_2.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_mrl_fin.jpg";
     };
 };
