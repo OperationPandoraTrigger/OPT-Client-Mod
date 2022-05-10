@@ -5911,7 +5911,7 @@ class CfgVehicles
         {
             class _xx_B_AssaultPack_rgr
             {
-                backpack = "OPT_B_AssaultPack_mccuu";
+                backpack = "OPT_B_AssaultPack_blk_cr2020_blufor";
                 count = 25;
             };
 
