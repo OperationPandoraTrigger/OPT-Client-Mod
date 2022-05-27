@@ -1983,7 +1983,7 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular" , "Throw", "Put"};
         magazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
-        linkedItems[] = {"V_PlateCarrier1_blk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
+        linkedItems[] = {"V_PlateCarrier1_blk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
@@ -1999,7 +1999,7 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular" , "Throw", "Put"};
         magazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
-        linkedItems[] = {"opt_v_opfor", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
+        linkedItems[] = {"opt_v_opfor", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         respawnLinkedItems[] = {"opt_v_opfor", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
