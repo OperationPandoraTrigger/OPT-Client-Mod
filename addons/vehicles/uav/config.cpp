@@ -1209,6 +1209,7 @@ class CfgVehicles
         class CameraClaw;
     };
 
+
     //// Pelter ////
     class OPT_B_UGV_02_Demining_F : B_UGV_02_Demining_F
     {
