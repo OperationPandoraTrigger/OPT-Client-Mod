@@ -1147,6 +1147,7 @@ class CfgVehicles
         class Narrow;
         class OpticsIn;
         class Components;
+        class PilotCamera;
     };
 
     //// Pelican ////
@@ -1163,6 +1164,17 @@ class CfgVehicles
             };
         };
 
+        class NewTurret {};
+        class PilotCamera : PilotCamera 
+        {
+            controllable = 0;
+            initElev = 0;
+            initTurn = 0;
+            maxElev = 0;
+            maxTurn = 0;
+            minElev = 0;
+            minTurn = 0;
+        };
         class Viewoptics : Viewoptics
         {
             visionMode[] = {"Normal", "NVG"};
@@ -1181,6 +1193,18 @@ class CfgVehicles
             class SensorsManagerComponent
             {
             };
+        };
+
+        class NewTurret {};
+        class PilotCamera : PilotCamera 
+        {
+            controllable = 0;
+            initElev = 0;
+            initTurn = 0;
+            maxElev = 0;
+            maxTurn = 0;
+            minElev = 0;
+            minTurn = 0;
         };
 
         class Viewoptics : Viewoptics
@@ -1208,6 +1232,7 @@ class CfgVehicles
         class CameraBottom;
         class CameraClaw;
     };
+
 
     //// Pelter ////
     class OPT_B_UGV_02_Demining_F : B_UGV_02_Demining_F
