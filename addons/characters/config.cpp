@@ -2100,6 +2100,23 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
         uniformClass = "opt_u_opfor";
     };
+    class OPT_CSAT_Soldatmuni : O_Soldier_F
+    {
+        displayName = "Munitionsträger";
+        faction = "OPT_OPFOR";
+        weapons[] = {"OPT_arifle_Katiba_C_ACO_pointer_F","Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_Katiba_C_ACO_pointer_F", "Binocular", "Throw", "Put"};
+        magazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "30Rnd_65x39_caseless_green", "SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
+        linkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
+        respawnLinkedItems[] = {"opt_v_opfor", "opt_h_opfor", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
+        Items[] = {};
+        respawnItems[] = {};
+        backpack = "OPT_B_Carryall_cr2020_opfor";
+        hiddenSelections[] = {"camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
+        uniformClass = "opt_u_opfor";
+    };
     
     class OPT_CSAT_Grenadier : OPT_CSAT_Soldat
     {
