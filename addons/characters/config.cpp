@@ -35,9 +35,9 @@ class CfgPatches
 //Erhöhung der Ausdauer
 class CfgMovesFatigue
 {
-    staminaDuration = 300;	//60
+    staminaDuration = 300;//60
     //staminaCooldown = 0.10;
-    //staminaRestoration = 30;	//30
+    //staminaRestoration = 30;//30
 };
 
 class cfgWeapons
