@@ -33,7 +33,7 @@ class CfgPatches
 };
 
 //Erhöhung der Ausdauer
-class CfgMovesFatigue 
+class CfgMovesFatigue
 {
     staminaDuration = 300;	//60
     //staminaCooldown = 0.10;
@@ -1668,6 +1668,27 @@ class CfgVehicles
         linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
         backpack = "OPT_B_AssaultPack_blk_cr2020_blufor";
+        hiddenSelections[] = {"camo", "insignia"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
+        uniformClass = "opt_u_blufor";
+    };
+
+    class OPT_NATO_Soldatmuni : B_CTRG_soldier_GL_LAT_F
+    {
+        displayName = "Munitionsträger";
+        faction = "OPT_BLUFOR";
+        vehicleClass = "Men";
+        editorSubcategory = "EdSubcat_Personnel";
+        icon = "iconMan";
+        Items[] = {};
+        respawnItems[] = {};
+        weapons[] = {"OPT_arifle_MXC_Black_ACO_pointer_F","Binocular", "Throw", "Put"};
+        respawnWeapons[] = {"OPT_arifle_MXC_Black_ACO_pointer_F","Binocular", "Throw", "Put"};
+        magazines[] = {"30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag","30Rnd_65x39_caseless_black_mag","30Rnd_65x39_caseless_black_mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
+        respawnMagazines[] = {"30Rnd_65x39_caseless_black_mag", "30Rnd_65x39_caseless_black_mag","30Rnd_65x39_caseless_black_mag","30Rnd_65x39_caseless_black_mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
+        linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
+        respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps"};
+        backpack = "OPT_B_Carryall_cr2020_blufor";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_blufor.paa", ""};
         uniformClass = "opt_u_blufor";
