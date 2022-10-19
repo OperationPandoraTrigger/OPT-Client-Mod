@@ -1440,7 +1440,7 @@ class cfgWeapons
         author = "OPT";
         scope = 2;
         displayName = "[OPT] Blufor";
-        model = "\A3\Characters_F\Common\Suitpacks\suitpack_original_F.p3d";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_CO.paa"};
         editorPreview = "\a3\Characters_F_Enoch\Uniforms\data\ui\icon_U_I_E_Uniform_01_F_ca.paa";
@@ -1524,8 +1524,10 @@ class CfgVehicles
         class HitLegs;
     };
 
+    class I_Soldier_base_F;
+
     //// Basisclasse für uniform /////
-    class opt_men_blufor: B_Soldier_base_F
+    class opt_men_blufor: I_Soldier_base_F
     {
         scope = 2;
         side = 1;
@@ -1540,8 +1542,8 @@ class CfgVehicles
         respawnMagazines[] = {};
         Items[] = {};
         RespawnItems[] = {};
-        linkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
-        respawnLinkedItems[] = {"opt_v_blufor", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+        linkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
+        respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
     };
 
     /////////////////////////////
@@ -1975,10 +1977,10 @@ class CfgVehicles
         class HitLegs;
     };
 
-    class I_Soldier_base_F;
+    class B_Soldier_base_F;
 
     //// Basisclasse für uniform //////////
-    class opt_men_opfor: I_Soldier_base_F
+    class opt_men_opfor: B_Soldier_base_F
     {
         scope = 2;
         side = 0;
