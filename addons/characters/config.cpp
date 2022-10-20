@@ -1440,8 +1440,8 @@ class cfgWeapons
         author = "OPT";
         scope = 2;
         displayName = "[OPT] Blufor";
-        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
-        hiddenSelections[] = {"camo1"};
+        model = "\a3\Characters_F_Enoch\Uniforms\I_E_Soldier_01_F.p3d";
+        hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_CO.paa"};
         editorPreview = "\a3\Characters_F_Enoch\Uniforms\data\ui\icon_U_I_E_Uniform_01_F_ca.paa";
         picture = "\a3\Characters_F_Enoch\Uniforms\data\ui\icon_U_I_E_Uniform_01_F_ca.paa";
@@ -1548,7 +1548,7 @@ class CfgVehicles
 
     /////////////////////////////
 
-    class OPT_NATO_Pilot : B_Helipilot_F
+    class OPT_NATO_Pilot : opt_men_blufor
     {
         displayName = "Pilot";
         faction = "OPT_BLUFOR";
@@ -1564,7 +1564,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class OPT_NATO_Pilot_jet : B_Helipilot_F
+    class OPT_NATO_Pilot_jet : opt_men_blufor
     {
         displayName = "Jet Pilot";
         faction = "OPT_BLUFOR";
@@ -1580,27 +1580,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class B_Soldier_sniper_base_F : B_Soldier_base_F
-    {
-    };
-
-    class B_sniper_F : B_Soldier_sniper_base_F
-    {
-        class HitPoints;
-        class HitFace;
-        class HitNeck;
-        class HitHead;
-        class HitPelvis;
-        class HitAbdomen;
-        class HitDiaphragm;
-        class HitChest;
-        class HitBody;
-        class HitArms;
-        class HitHands;
-        class HitLegs;
-    };
-
-    class OPT_NATO_Scharfschuetze : B_sniper_F
+    class OPT_NATO_Scharfschuetze : opt_men_blufor
     {
         displayName = "Scharfschütze";
         faction = "OPT_BLUFOR";
@@ -1616,7 +1596,7 @@ class CfgVehicles
         uniformClass = "U_B_T_Sniper_F";
     };
 
-    class OPT_NATO_Scharfschuetze_2 : OPT_NATO_Scharfschuetze
+    class OPT_NATO_Scharfschuetze_2 : opt_men_blufor
     {
         displayName = "Scharfschütze (DMR)";
         faction = "OPT_BLUFOR";
@@ -1632,23 +1612,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class B_CTRG_soldier_GL_LAT_F : B_Soldier_base_F
-    {
-        class HitPoints;
-        class HitFace;
-        class HitNeck;
-        class HitHead;
-        class HitPelvis;
-        class HitAbdomen;
-        class HitDiaphragm;
-        class HitChest;
-        class HitBody;
-        class HitArms;
-        class HitHands;
-        class HitLegs;
-    };
-
-    class OPT_NATO_Soldat : B_CTRG_soldier_GL_LAT_F
+    class OPT_NATO_Soldat : opt_men_blufor
     {
         displayName = "Schütze";
         faction = "OPT_BLUFOR";
@@ -1667,7 +1631,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class OPT_NATO_Soldatmuni : B_CTRG_soldier_GL_LAT_F
+    class OPT_NATO_Soldatmuni : opt_men_blufor
     {
         displayName = "Munitionsträger";
         faction = "OPT_BLUFOR";
@@ -1686,27 +1650,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class B_Soldier_03_f : B_Soldier_base_F
-    {
-    };
-
-    class B_CTRG_soldier_AR_A_F : B_Soldier_03_f
-    {
-        class HitPoints;
-        class HitFace;
-        class HitNeck;
-        class HitHead;
-        class HitPelvis;
-        class HitAbdomen;
-        class HitDiaphragm;
-        class HitChest;
-        class HitBody;
-        class HitArms;
-        class HitHands;
-        class HitLegs;
-    };
-
-    class OPT_NATO_Besatzungsmitglied : B_CTRG_soldier_AR_A_F
+    class OPT_NATO_Besatzungsmitglied : opt_men_blufor
     {
         displayName = "Besatzungsmitglied";
         faction = "OPT_BLUFOR";
@@ -1725,7 +1669,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class OPT_NATO_Offizier : B_CTRG_soldier_AR_A_F
+    class OPT_NATO_Offizier : opt_men_blufor
     {
         icon = "iconManOfficer";
         displayName = "Offizier";
@@ -1744,7 +1688,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class OPT_NATO_Truppfuehrer : OPT_NATO_Soldat
+    class OPT_NATO_Truppfuehrer : opt_men_blufor
     {
         icon = "iconManLeader";
         displayName = "Truppführer";
@@ -1761,7 +1705,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class OPT_NATO_Sanitaeter : B_CTRG_soldier_AR_A_F
+    class OPT_NATO_Sanitaeter : opt_men_blufor
     {
         icon = "iconManMedic";
         displayName = "Sanitäter";
@@ -1781,7 +1725,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class OPT_NATO_Sprengmeister : B_CTRG_soldier_AR_A_F
+    class OPT_NATO_Sprengmeister : opt_men_blufor
     {
         displayName = "Sprengmeister";
         faction = "OPT_BLUFOR";
@@ -1802,7 +1746,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class OPT_NATO_Ingenieur : B_CTRG_soldier_AR_A_F
+    class OPT_NATO_Ingenieur : opt_men_blufor
     {
         displayName = "Ingenieur";
         faction = "OPT_BLUFOR";
@@ -1823,7 +1767,7 @@ class CfgVehicles
         uniformClass = "opt_u_blufor";
     };
 
-    class OPT_NATO_Operator : B_CTRG_soldier_AR_A_F
+    class OPT_NATO_Operator : opt_men_blufor
     {
         displayName = "Drohnen-Operator";
         faction = "OPT_BLUFOR";
