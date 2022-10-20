@@ -1440,7 +1440,7 @@ class cfgWeapons
         author = "OPT";
         scope = 2;
         displayName = "[OPT] Blufor";
-        model = "\a3\Characters_F_Enoch\Uniforms\I_E_Soldier_01_F.p3d";
+        model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
         hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"\a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_CO.paa"};
         editorPreview = "\a3\Characters_F_Enoch\Uniforms\data\ui\icon_U_I_E_Uniform_01_F_ca.paa";
@@ -1524,10 +1524,10 @@ class CfgVehicles
         class HitLegs;
     };
 
-    class I_Soldier_base_F;
+    class I_e_Soldier_base_F;
 
     //// Basisclasse für uniform /////
-    class opt_men_blufor: I_Soldier_base_F
+    class opt_men_blufor: I_e_Soldier_base_F
     {
         scope = 2;
         side = 1;
@@ -1535,6 +1535,7 @@ class CfgVehicles
         displayName = "Basisclass uniform";
         hiddenSelections[] = {"camo", "insignia"};
         hiddenSelectionsTextures[] = {"\a3\Characters_F_Enoch\Uniforms\Data\I_E_Soldier_01_CO.paa", ""};
+        model = "\a3\Characters_F_Enoch\Uniforms\I_E_Soldier_01_F.p3d";
         uniformClass = "opt_u_blufor";
         weapons[] = {};
         respawnWeapons[] = {};
@@ -1561,7 +1562,7 @@ class CfgVehicles
         linkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F", "H_PilotHelmetHeli_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
         respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F", "H_PilotHelmetHeli_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
         backpack = "TFAR_rt1523g_big_bwmod";
-        uniformClass = "opt_u_blufor";
+        uniformClass = "CamoU_flora_sweater";
     };
 
     class OPT_NATO_Pilot_jet : opt_men_blufor
@@ -1577,7 +1578,7 @@ class CfgVehicles
         linkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F", "H_PilotHelmetHeli_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
         respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F", "H_PilotHelmetHeli_I_E", "ItemMap", "ItemCompass", "ItemWatch", "tf_anprc152", "ItemGps","Binocular"};
         backpack = "TFAR_rt1523g_big_bwmod";
-        uniformClass = "opt_u_blufor";
+        uniformClass = "CamoU_flora_sweater";
     };
 
     class OPT_NATO_Scharfschuetze : opt_men_blufor
@@ -1861,42 +1862,6 @@ class CfgVehicles
   
     ////////////////// OPT Opfor /////////////////////
 
-    class SoldierEB : CAManBase
-    {
-    };
-
-    class O_Soldier_base_F : SoldierEB
-    {
-        class HitPoints;
-        class HitFace;
-        class HitNeck;
-        class HitHead;
-        class HitPelvis;
-        class HitAbdomen;
-        class HitDiaphragm;
-        class HitChest;
-        class HitBody;
-        class HitArms;
-        class HitHands;
-        class HitLegs;
-    };
-
-    class O_Soldier_02_F : O_Soldier_base_F
-    {
-        class HitPoints;
-        class HitFace;
-        class HitNeck;
-        class HitHead;
-        class HitPelvis;
-        class HitAbdomen;
-        class HitDiaphragm;
-        class HitChest;
-        class HitBody;
-        class HitArms;
-        class HitHands;
-        class HitLegs;
-    };
-
     class B_Soldier_base_F;
 
     //// Basisclasse für uniform //////////
@@ -1921,12 +1886,7 @@ class CfgVehicles
     };
     
     //////////////////////////////////////
-
-    class O_helipilot_F : O_Soldier_02_F
-    {
-    };
-
-    class OPT_CSAT_Pilot : O_helipilot_F
+    class OPT_CSAT_Pilot : opt_men_opfor
     {
         displayName = "Pilot";
         faction = "OPT_OPFOR";
@@ -1942,7 +1902,7 @@ class CfgVehicles
         uniformClass = "CamoU_gorkaemr";
     };
 
-    class OPT_CSAT_Pilot_jet : O_helipilot_F
+    class OPT_CSAT_Pilot_jet : opt_men_opfor
     {
         displayName = "Jet Pilot";
         faction = "OPT_OPFOR";
@@ -1957,13 +1917,9 @@ class CfgVehicles
         backpack = "OPT_TFAR_mr3000_emr";
         uniformClass = "CamoU_gorkaemr";
     };
-
-    class O_officer_F : O_Soldier_base_F
+    class OPT_CSAT_Offizier : opt_men_opfor
     {
-    };
-
-    class OPT_CSAT_Offizier : O_officer_F
-    {
+        displayName = "Offizier";
         faction = "OPT_OPFOR";
         weapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F",  "Binocular", "Throw", "Put"};
@@ -1978,12 +1934,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
         uniformClass = "opt_u_opfor";
     };
-
-    class O_Soldier_SL_F : O_Soldier_base_F
-    {
-    };
-
-    class OPT_CSAT_Truppfuehrer : O_Soldier_SL_F
+    class OPT_CSAT_Truppfuehrer : opt_men_opfor
     {
         displayName = "Truppführer";
         faction = "OPT_OPFOR";
@@ -2000,12 +1951,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
         uniformClass = "opt_u_opfor";
     };
-
-    class O_Soldier_F : O_Soldier_base_F
-    {
-    };
-
-    class OPT_CSAT_Soldat : O_Soldier_F
+    class OPT_CSAT_Soldat : opt_men_opfor
     {
         displayName = "Schütze";
         faction = "OPT_OPFOR";
@@ -2022,7 +1968,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
         uniformClass = "opt_u_opfor";
     };
-    class OPT_CSAT_Soldatmuni : O_Soldier_F
+    class OPT_CSAT_Soldatmuni : OPT_CSAT_Soldat
     {
         displayName = "Munitionsträger";
         faction = "OPT_OPFOR";
@@ -2117,15 +2063,7 @@ class CfgVehicles
         backpack = "B_Carryall_wdl_F";
     };
 
-    class O_Soldier_sniper_base_F : O_Soldier_base_F
-    {
-    };
-
-    class O_sniper_F : O_Soldier_sniper_base_F
-    {
-    };
-
-    class OPT_CSAT_Scharfschuetze : O_sniper_F
+    class OPT_CSAT_Scharfschuetze : opt_men_opfor
     {
         displayName = "Scharfschütze";
         faction = "OPT_OPFOR";
@@ -2158,12 +2096,7 @@ class CfgVehicles
         uniformClass = "opt_u_opfor";
         backpack = "B_AssaultPack_wdl_F";
     };
-
-    class O_engineer_F : O_Soldier_base_F
-    {
-    };
-
-    class OPT_CSAT_Ingenieur: O_engineer_F
+    class OPT_CSAT_Ingenieur: opt_men_opfor
     {
         displayName = "Ingenieur";
         faction = "OPT_OPFOR";
@@ -2182,7 +2115,7 @@ class CfgVehicles
         uniformClass = "opt_u_opfor";
     };
 
-    class OPT_CSAT_Sprengmeister : O_engineer_F
+    class OPT_CSAT_Sprengmeister : opt_men_opfor
     {
         displayName = "Sprengmeister";
         faction = "OPT_OPFOR";
@@ -2201,11 +2134,7 @@ class CfgVehicles
         uniformClass = "opt_u_opfor";
     };
 
-    class O_medic_F : O_Soldier_base_F
-    {
-    };
-
-    class OPT_CSAT_Sanitaeter : O_medic_F
+    class OPT_CSAT_Sanitaeter : opt_men_opfor
     {
         displayName = "Sanitäter";
         faction = "OPT_OPFOR";
@@ -2222,12 +2151,7 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\uniform_opfor.paa", ""};
         uniformClass = "opt_u_opfor";
     };
-
-    class O_crew_F : O_Soldier_base_F
-    {
-    };
-
-    class OPT_CSAT_Besatzungsmitglied : O_crew_F
+    class OPT_CSAT_Besatzungsmitglied : opt_men_opfor
     {
         displayName = "Besatzungsmitglied";
         faction = "OPT_OPFOR";
