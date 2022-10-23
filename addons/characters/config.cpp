@@ -1547,7 +1547,7 @@ class CfgVehicles
         respawnLinkedItems[] = {"V_CarrierRigKBT_01_light_EAF_F", "opt_h_blufor", "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio"};
     };
 
-    /////////////////////////////
+    ////////////////////////////
 
     class OPT_NATO_Pilot : opt_men_blufor
     {
