@@ -2205,7 +2205,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\opt_mohawk_fin_3.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mohawk\mohawk_ldf_01.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\mohawk_ldf_02.paa", "\opt\opt_client\addons\vehicles\textures\mohawk\mohawk_ldf_03.paa", "A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_mohawk_fin.jpg";
     };
 
@@ -2677,7 +2677,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa"};
+        hiddenSelectionsTextures[] = {"\A3\Air_F_Enoch\Heli_Light_03\data\Heli_Light_03_base_EAF_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_trapo_fin.jpg";
     };
 
@@ -2822,7 +2822,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
+        hiddenSelectionsTextures[] = {"\A3\Air_F_Enoch\Heli_Light_03\data\Heli_Light_03_base_EAF_CO.paa","\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa","\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_signs_EAF_CA.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_cas_fin.jpg";
     };
 
@@ -2962,7 +2962,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         side = 1;
         crew = "OPT_NATO_Pilot";
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hellcat\opt_hellcat_fin_1.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
+        hiddenSelectionsTextures[] = {"\A3\Air_F_Enoch\Heli_Light_03\data\Heli_Light_03_base_EAF_CO.paa","\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_EAF_CO.paa","\a3\Supplies_F_Enoch\Ammoboxes\Data\AmmoBox_signs_EAF_CA.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hellcat_cas_fin.jpg";
 
     };

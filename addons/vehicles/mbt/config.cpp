@@ -419,7 +419,7 @@ class CfgVehicles
     {
         faction = "OPT_BLUFOR";
         fuelCapacity = 12; // 100 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_fin_1.paa","\opt\opt_client\addons\vehicles\textures\M4Scorcher\opt_scorcher_fin_2.paa","\opt\opt_client\addons\vehicles\textures\Hunter\opt_rcws_fin.paa","A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\M4Scorcher\scorcher_ldf_01.paa","\opt\opt_client\addons\vehicles\textures\M4Scorcher\scorcher_ldf_02.paa","\opt\opt_client\addons\vehicles\textures\Hunter\opt_rcws_ldf.paa","A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_scorcher_fin.jpg";
 
         class Turrets : Turrets
@@ -1536,7 +1536,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\kuma\opt_kuma_fin_3.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\kuma\kuma_ldf_01.paa", "\opt\opt_client\addons\vehicles\textures\kuma\kuma_ldf_02.paa", "\opt\opt_client\addons\vehicles\textures\kuma\kuma_ldf_03.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_kuma_fin.jpg";
     };
 

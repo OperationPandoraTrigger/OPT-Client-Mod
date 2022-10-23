@@ -688,7 +688,7 @@ class CfgVehicles
     {
         faction = "OPT_BLUFOR";
         fuelCapacity = 12; // 45 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_2.paa","\opt\opt_client\addons\vehicles\textures\Cheetah\opt_cheetah_fin_3.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Cheetah\cheetah_ldf_01.paa", "\opt\opt_client\addons\vehicles\textures\Cheetah\cheetah_ldf_02.paa","\opt\opt_client\addons\vehicles\textures\Cheetah\cheetah_ldf_03.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_cheetah_fin.jpg";
 
         class Turrets : Turrets
@@ -1198,7 +1198,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\mora\opt_mora_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\mora\opt_mora_fin_2.paa"};
+        hiddenSelectionsTextures[] = {"A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext_eaf_co.paa","A3\Armor_F_Enoch\apc_tracked_03\data\apc_tracked_03_ext2_eaf_co.paa","A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa","A3\Armor_F_Enoch\apc_tracked_03\data\cage_EAF_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_mora_fin.jpg";
     };
 
@@ -2735,7 +2735,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"}; 
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_2.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_3.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\opt_gorgon_fin_4.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\gorgon\gorgon_ldf_01.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\gorgon_ldf_02.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\gorgon_ldf_03.paa", "\opt\opt_client\addons\vehicles\textures\gorgon\gorgon_ldf_04.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_gorgon_fin.jpg";
 
         class Turrets : Turrets
@@ -3132,7 +3132,7 @@ class CfgVehicles
     {
         faction = "OPT_BLUFOR";
         fuelCapacity = 5; // 24 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\opt_rhino_fin_2.paa", "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Rhino\rhino_ldf_01.paa", "\opt\opt_client\addons\vehicles\textures\Rhino\rhino_ldf_02.paa", "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa","a3\Armor_F\Data\camonet_NATO_Green_CO.paa","A3\Armor_F_Tank\AFV_Wheeled_01\Data\afv_wheeled_01_EXT3_CO.paa"};
         textureList[] = {"Green",0,"Sand",0};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_rhino_fin.jpg";
 

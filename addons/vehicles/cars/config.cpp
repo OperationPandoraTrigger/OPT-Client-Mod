@@ -112,7 +112,7 @@ class CfgVehicles
     {
         faction = "OPT_BLUFOR";
         fuelCapacity = 4; // 94 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_2.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hunter\hunter_ldf_01.paa", "\opt\opt_client\addons\vehicles\textures\Hunter\hunter_ldf_02.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_fin.jpg";
 
         class TransportMagazines
@@ -346,7 +346,7 @@ class CfgVehicles
     {
         faction = "OPT_BLUFOR";
         fuelCapacity = 4;// 94 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Hunter\opt_hunter_fin_2.paa",  "\opt\opt_client\addons\vehicles\textures\Hunter\opt_rcws_fin.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Hunter\hunter_ldf_01.paa","\opt\opt_client\addons\vehicles\textures\Hunter\hunter_ldf_02.paa",  "\opt\opt_client\addons\vehicles\textures\Hunter\opt_rcws_ldf.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_hunter_hmg_fin.jpg";
 
         class TransportMagazines
@@ -1349,7 +1349,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         fuelCapacity = 3; // 45 //
         textureList[] = {"Black",0,"Olive",0,"Sand",0};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\prowler_ldf_01.paa","\opt\opt_client\addons\vehicles\textures\Prowler\prowler_ldf_02.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_prowler_fin.jpg";
 
         class TransportMagazines
@@ -1396,7 +1396,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         fuelCapacity = 3; // 45 //
         textureList[] = {"Black",0,"Olive",0,"Sand",0};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\prowler_ldf_01.paa","\opt\opt_client\addons\vehicles\textures\Prowler\prowler_ldf_02.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_prowler_hmg_fin.jpg";
 
         class TransportMagazines
@@ -1449,7 +1449,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         fuelCapacity = 3; // 20 //
         textureList[] = {"Black",0,"Olive",0,"Sand",0};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_1.paa","\opt\opt_client\addons\vehicles\textures\Prowler\opt_prowler_fin_2.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Prowler\prowler_ldf_01.paa","\opt\opt_client\addons\vehicles\textures\Prowler\prowler_ldf_02.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_olive_CO.paa","\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_olive_CO.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\launcher_INDP_co.paa","\A3\Weapons_F_Beta\Launchers\Titan\data\tubem_INDP_co.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_prowler_pa_fin.jpg";
 
         class TransportMagazines
@@ -1846,7 +1846,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         fuelCapacity = 2; // 30 //
         textureList = ["Blufor",0];
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Quadbike\opt_quadbike_fin_1.paa","\A3\Soft_F\Quadbike_01\Data\Quadbike_01_wheel_co.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Quadbike\quadbike_ldf_01.paa","\A3\Soft_F\Quadbike_01\Data\Quadbike_01_wheel_co.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_quadbike_fin.jpg";
 
         class TransportItems
