@@ -1239,7 +1239,7 @@ class CfgVehicles
     {
         faction = "OPT_BLUFOR";
         fuelCapacity = 1; // 2 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Pelter\ugv_pelter_blufor.paa"};
+        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Pelter\ugv_pelter_ldf.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\OPT_B_UGV_02_Demining_F.jpg";
         
         class Turrets : Turrets

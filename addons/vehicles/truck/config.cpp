@@ -718,7 +718,7 @@ class CfgVehicles
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kuz_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_inf_fin.jpg";
 
         class TransportItems
@@ -754,7 +754,7 @@ class CfgVehicles
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 200; // 250 //
         transportFuel = 3000;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fuel_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_fuel_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_fuel_fin.jpg";
 
         class TransportItems
@@ -772,7 +772,7 @@ class CfgVehicles
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
         transportAmmo = 30000;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_ammo_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_repair_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_muni_fin.jpg";
 
         class TransportItems
@@ -789,7 +789,7 @@ class CfgVehicles
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
         transportRepair = 0; // 200000000;
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_repair_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_repair_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_repair_fin.jpg";
 
         class TransportItems
@@ -806,7 +806,7 @@ class CfgVehicles
         crew = "B_soldier_F";
         typicalCargo[] = {"B_Soldier_lite_F"};
         fuelCapacity = 6; // 250 //
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa", "\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_2.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa"};
+        hiddenSelectionsTextures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kuz_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_san_fin.jpg";
 
         class TransportItems
@@ -893,7 +893,7 @@ class CfgVehicles
         faction = "OPT_BLUFOR";
         crew = "OPT_NATO_Besatzungsmitglied";
         typicalCargo[] = {"OPT_NATO_Besatzungsmitglied"};
-        hiddenSelectionsTextures[] = {"\opt\opt_client\addons\vehicles\textures\Zamak\opt_zamak_fin_1.paa","\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa", "\opt\opt_client\addons\vehicles\textures\ZamakMRL\opt_zamak_mrl_fin_2.paa"};
+        hiddenSelectionsTextures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_MRL_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
         editorPreview = "\opt\opt_client\addons\vehicles\Vorschaubilder_Shop\opt_zamak_mrl_fin.jpg";
     };
 };
