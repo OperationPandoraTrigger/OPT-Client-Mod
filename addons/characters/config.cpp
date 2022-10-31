@@ -1374,9 +1374,9 @@ class cfgWeapons
     };
 
 
-    class V_PlateCarrierIA1_dgtl;
+    class V_PlateCarrier1_wdl;
 
-    class opt_v_opfor: V_PlateCarrierIA1_dgtl
+    class opt_v_opfor: V_PlateCarrier1_wdl
     {
         displayName = "[OPT] OPFOR";
         hiddenSelections[] = {"camo"};
