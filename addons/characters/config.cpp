@@ -1383,50 +1383,6 @@ class cfgWeapons
         hiddenSelectionsTextures[] = { "\opt\opt_client\addons\characters\data\weste_opfor.paa" };
         editorPreview = "\opt\opt_client\addons\characters\data\weste_opfor_icon.paa";
         picture = "\opt\opt_client\addons\characters\data\weste_opfor_icon.paa";
-
-        class ItemInfo : VestItem 
-        {
-            _generalMacro = "VestItem";
-            author = "$STR_A3_Bohemia_Interactive";
-            containerClass = "Supply120";
-            hiddenSelections[] = {"camo"};
-            class HitpointsProtectionInfo 
-            {
-                class Chest 
-                {
-                    hitpointName = "HitChest";
-                    armor = 16;
-                    passThrough = 0.3;
-                };
-                
-                class Diaphragm 
-                {
-                    hitpointName = "HitDiaphragm";
-                    armor = 16;
-                    passThrough = 0.3;
-                };
-                
-                class Abdomen 
-                {
-                    hitpointName = "HitAbdomen";
-                    armor = 16;
-                    passThrough = 0.3;
-                };
-                
-                class Body 
-                {
-                    hitpointName = "HitBody";
-                    passThrough = 0.3;
-                };
-            };
-            mass = 60;
-            overlaySelectionsInfo[] = {"Ghillie_hide"};
-            scope = 0;
-            showHolsteredPistol = 0;
-            type = 701;
-            uniformModel = "A3\Characters_F_Beta\INDEP\equip_ia_vest01";
-            uniformType = "Default";
-        };
     };
 
     //// Uniformen //////
@@ -1894,8 +1850,8 @@ class CfgVehicles
         respawnWeapons[] = {"OPT_hgun_PDW2000_ACO_F","Binocular" , "Throw", "Put"};
         magazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
         respawnMagazines[] = {"30Rnd_9x21_Mag", "30Rnd_9x21_Mag", "30Rnd_9x21_Mag","30Rnd_9x21_Mag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
-        linkedItems[] = {"V_PlateCarrier1_blk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
-        respawnLinkedItems[] = {"V_PlateCarrier1_blk", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
+        linkedItems[] = {"opt_v_opfor", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
+        respawnLinkedItems[] = {"opt_v_opfor", "H_PilotHelmetHeli_O", "ItemMap", "ItemCompass", "ItemWatch", "tf_fadak", "ItemGps"};
         Items[] = {};
         respawnItems[] = {};
         backpack = "OPT_TFAR_mr3000_emr";
