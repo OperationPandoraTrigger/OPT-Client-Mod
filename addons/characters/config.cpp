@@ -2094,6 +2094,10 @@ class CfgVehicles
     {
         displayName = "Sanitäter";
         faction = "OPT_OPFOR";
+        icon = "iconManMedic";
+        vehicleClass = "Men";
+        editorSubcategory = "EdSubcat_Personnel";
+        attendant = 1;
         weapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         respawnWeapons[] = {"OPT_arifle_Mk20_blk_ERCO_Pointer_F", "Binocular", "Throw", "Put"};
         magazines[] = {"30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","SmokeShell", "SmokeShell","HandGrenade","HandGrenade"};
