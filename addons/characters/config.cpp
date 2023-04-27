@@ -47,18 +47,18 @@ class CfgGlasses
     {
     author = "[OPT]";
     displayName = "[OPT] ARF";
-	picture = "\opt\opt_client\addons\characters\data\armband_yellow_ui_ca.paa";
-	hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_arf.paa"};
-	};
+    picture = "\opt\opt_client\addons\characters\data\armband_yellow_ui_ca.paa";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_arf.paa"};
+    };
     class OPT_Armband_SWORD_XL : Armband_Green_XL 
     {
     author = "[OPT]";
     displayName = "[OPT] SWORD";
-	picture = "\opt\opt_client\addons\characters\data\armband_yellow_ui_ca.paa";
-	hiddenSelections[] = {"camo"};
-	hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_sword.paa"};
-	};
+    picture = "\opt\opt_client\addons\characters\data\armband_yellow_ui_ca.paa";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_sword.paa"};
+    };
 
 };
 
