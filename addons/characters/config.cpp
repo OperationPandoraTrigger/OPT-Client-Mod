@@ -43,8 +43,8 @@ class CfgMovesFatigue
 //Armbinden
 class CfgGlasses
 {
-    class Armband_Green_XL;
-    class OPT_Armband_ARF_XL : Armband_Green_XL 
+    class Armband_Yellow_medium;
+    class OPT_Armband_ARF : Armband_Yellow_medium
     {
     author = "[OPT]";
     displayName = "[OPT] ARF";
@@ -52,7 +52,7 @@ class CfgGlasses
     hiddenSelections[] = {"camo"};
     hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_arf_co.paa"};
     };
-    class OPT_Armband_SWORD_XL : Armband_Green_XL 
+    class OPT_Armband_SWORD : Armband_Yellow_medium
     {
     author = "[OPT]";
     displayName = "[OPT] SWORD";
@@ -60,7 +60,7 @@ class CfgGlasses
     hiddenSelections[] = {"camo"};
     hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_sword_co.paa"};
     };
-    class OPT_Armband_TEAMKILL_XL : Armband_Green_XL 
+    class OPT_Armband_TEAMKILL : Armband_Yellow_medium
     {
     author = "[OPT]";
     displayName = "[OPT] TEAMKILL";
