@@ -40,6 +40,7 @@ class CfgMovesFatigue
     //staminaRestoration = 30;//30
 };
 
+//Armbinden
 class CfgGlasses
 {
     class Armband_Green_XL;
@@ -49,7 +50,7 @@ class CfgGlasses
     displayName = "[OPT] ARF";
     picture = "\opt\opt_client\addons\characters\data\armband_yellow_ui_ca.paa";
     hiddenSelections[] = {"camo"};
-    hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_arf.paa"};
+    hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_arf_co.paa"};
     };
     class OPT_Armband_SWORD_XL : Armband_Green_XL 
     {
@@ -57,7 +58,15 @@ class CfgGlasses
     displayName = "[OPT] SWORD";
     picture = "\opt\opt_client\addons\characters\data\armband_yellow_ui_ca.paa";
     hiddenSelections[] = {"camo"};
-    hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_sword.paa"};
+    hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_sword_co.paa"};
+    };
+    class OPT_Armband_TEAMKILL_XL : Armband_Green_XL 
+    {
+    author = "[OPT]";
+    displayName = "[OPT] TEAMKILL";
+    picture = "\opt\opt_client\addons\characters\data\armband_yellow_ui_ca.paa";
+    hiddenSelections[] = {"camo"};
+    hiddenSelectionsTextures[] = {"\opt\opt_client\addons\characters\data\armband_teamkiller_co.paa"};
     };
 
 };
