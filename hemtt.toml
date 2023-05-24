@@ -5,14 +5,14 @@ author = "Operation Pandora Trigger"
 
 files = [
     "mod.cpp",
-    "README.md",
+    "readme.md",
     "opt4_icon.paa",
     "extras/addons",
     "extras/keys"
 ]
 
 releasebuild = [
-    "@zip opt-clientmod_v{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
+#    "@zip opt-clientmod_v{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
 ]
 
 key_name = "opt_client_v{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
